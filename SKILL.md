@@ -12,10 +12,6 @@ description: >-
   Do NOT use for Claude Code, Cursor, or other agents -- in particular, do
   not use for "Claude Code hooks" or general OpenAI API, ChatGPT, Realtime,
   or non-Codex coding help.
-# disable-model-invocation: false is intentional. Codex implicit invocation
-# is governed by agents/openai.yaml.policy.allow_implicit_invocation; for
-# Cursor/Claude Code we want this skill to remain auto-invocable on Codex
-# questions, so we explicitly opt in here even though Cursor's default is true.
 disable-model-invocation: false
 ---
 

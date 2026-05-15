@@ -1,7 +1,7 @@
 # Codex Docs Skill
 
 Local Agent Skill mirror of the OpenAI Codex documentation from
-<https://developers.openai.com/codex>.
+[https://developers.openai.com/codex](https://developers.openai.com/codex).
 
 The repository is the skill: `SKILL.md` is the entry point, cleaned Markdown
 copies of every relevant Codex page live under `references/`, and a 3-hour
@@ -10,11 +10,8 @@ GitHub Action keeps them in sync with upstream.
 ## Install
 
 ```bash
-npx skills add <owner>/codex-docs -g
+npx skills add mehmetbaykar/codex-docs-skill -g
 ```
-
-Replace `<owner>` with the GitHub owner of this repository. Add `-a codex` or
-`-a claude-code` to scope to one agent.
 
 The `npx skills` CLI handles install, update, and removal across Codex CLI,
 Codex IDE/App, Claude Code, Cursor, and other agents that follow the
@@ -22,9 +19,8 @@ Codex IDE/App, Claude Code, Cursor, and other agents that follow the
 
 ## Usage
 
-Once installed, invoke the skill with a topic from your agent (`$codex-docs
-hooks` in Codex, `/codex-docs hooks` in Claude Code) or with no argument to
-list topics. The full agent-facing usage contract lives in [`SKILL.md`](SKILL.md).
+Once installed, invoke the skill with a topic from your agent (`$codex-docs hooks` in Codex, `/codex-docs hooks` in Claude Code) or with no argument to
+list topics. The full agent-facing usage contract lives in `[SKILL.md](SKILL.md)`.
 
 ## What's mirrored
 
@@ -81,15 +77,18 @@ whose content hash is unchanged are not rewritten.
 
 ## Troubleshooting
 
-- If docs look stale, check the latest run of [`Update Codex
-  Documentation`](../../actions/workflows/update-docs.yml) on this repository
-  and reproduce locally with the steps in "Refresh locally" above.
+- If docs look stale, check the latest run of `[Update Codex Documentation](actions/workflows/update-docs.yml)` on this repository
+and reproduce locally with the steps in "Refresh locally" above.
 - If the scheduled fetch fails, the workflow opens an issue automatically.
 - If a single page renders poorly, the upstream MDX is preserved under
-  `references/_raw/` whenever the cleaner falls back, so the source of truth
-  is never lost.
+`references/_raw/` whenever the cleaner falls back, so the source of truth
+is never lost.
 
 ## Notes
 
-Documentation content belongs to OpenAI. This repository is an unofficial
-local mirror packaged as an Agent Skill.
+This repository is an unofficial local mirror packaged as an Agent Skill. It is
+not affiliated with, endorsed by, or sponsored by OpenAI.
+
+Documentation content belongs to OpenAI and is subject to OpenAI's applicable
+terms and policies. The MIT license in this repository applies only to the
+mirroring tool, scripts, skill metadata, and repository-specific code.
