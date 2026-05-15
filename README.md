@@ -19,7 +19,7 @@ Codex IDE/App, Claude Code, Cursor, and other agents that follow the
 
 ## Usage
 
-Once installed, invoke the skill with a topic from your agent (`$codex-docs hooks` in Codex, `/codex-docs hooks` in Claude Code) or with no argument to
+Once installed, invoke the skill with a topic from your agent (`$codex-docs-skill hooks` in Codex, `/codex-docs-skill hooks` in Claude Code) or with no argument to
 list topics. The full agent-facing usage contract lives in `[SKILL.md](SKILL.md)`.
 
 ## What's mirrored
@@ -42,7 +42,7 @@ entries we intentionally skip are recorded in `docs_manifest.json` under
 ## Update
 
 ```bash
-npx skills update codex-docs   # update an installed local copy
+npx skills update codex-docs-skill   # update an installed local copy
 ```
 
 Upstream refreshes happen automatically every 3 hours; there is nothing to
