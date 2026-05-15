@@ -19,3 +19,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Note: This license applies to the mirroring tool, scripts, skill metadata, and
+repository-specific code in this repository. The mirrored documentation content
+under references/ belongs to OpenAI and is subject to OpenAI's applicable terms
+and policies.
