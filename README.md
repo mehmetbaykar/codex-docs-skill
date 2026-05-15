@@ -77,7 +77,7 @@ whose content hash is unchanged are not rewritten.
 
 ## Troubleshooting
 
-- If docs look stale, check the latest run of `[Update Codex Documentation](actions/workflows/update-docs.yml)` on this repository
+- If docs look stale, check the latest run of [Update Codex Documentation](actions/workflows/update-docs.yml) on this repository
 and reproduce locally with the steps in "Refresh locally" above.
 - If the scheduled fetch fails, the workflow opens an issue automatically.
 - If a single page renders poorly, the upstream MDX is preserved under
