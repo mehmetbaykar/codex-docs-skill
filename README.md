@@ -3,9 +3,9 @@
 Local Agent Skill mirror of the OpenAI Codex documentation from
 [https://developers.openai.com/codex](https://developers.openai.com/codex).
 
-The repository is the skill: `SKILL.md` is the entry point, cleaned Markdown
-copies of every relevant Codex page live under `references/`, and a 3-hour
-GitHub Action keeps them in sync with upstream.
+The repository packages the skill: `SKILL.md` is the entry point, cleaned
+Markdown copies live under `references/`, and a 3-hour GitHub Action keeps them
+in sync with upstream.
 
 ## Install
 
@@ -17,32 +17,37 @@ The `npx skills` CLI handles install, update, and removal across Codex CLI,
 Codex IDE/App, Claude Code, Cursor, and other agents that follow the
 [agentskills.io](https://agentskills.io) standard.
 
+The repository slug is `codex-docs-skill`; the installed skill name is
+`codex-docs`.
+
 ## Usage
 
-Once installed, invoke the skill with a topic from your agent (`$codex-docs-skill hooks` in Codex, `/codex-docs-skill hooks` in Claude Code) or with no argument to
-list topics. The full agent-facing usage contract lives in `[SKILL.md](SKILL.md)`.
+Once installed, invoke the skill with a topic from your agent
+(`$codex-docs hooks` in Codex, `/codex-docs hooks` in Claude Code) or with no
+argument to list topics. The full agent-facing usage contract lives in
+[SKILL.md](SKILL.md).
 
 ## What's mirrored
 
-The fetcher reads `https://developers.openai.com/sitemap-index.xml`, keeps
-every URL whose path starts with `/codex/`, and excludes:
+The fetcher reads `https://developers.openai.com/sitemap-index.xml` and mirrors
+Codex pages under `/codex` and `/codex/*` when they expose a `.md` source or
+have a special fetcher. It excludes:
 
 - `/codex/enterprise/*`
 - `/codex/videos`
 - non-doc cross-domain URLs (blog, cookbook, community, resources, showcase)
 - query-string variants of the same page
 
-The current mirror contains 129 cleaned Markdown files plus
-`references/INDEX.md` and `references/docs_manifest.json`. The Codex changelog
-is rendered from `https://developers.openai.com/codex/changelog/rss.xml`
-because the changelog page does not expose an `.md` endpoint. Any sitemap
-entries we intentionally skip are recorded in `docs_manifest.json` under
-`skipped`.
+Current counts, fetched files, skipped entries, and failed pages are recorded in
+`references/docs_manifest.json`; the generated topic list lives in
+`references/INDEX.md`. The Codex changelog is rendered from
+`https://developers.openai.com/codex/changelog/rss.xml` because the changelog
+page does not expose an `.md` endpoint.
 
 ## Update
 
 ```bash
-npx skills update codex-docs-skill   # update an installed local copy
+npx skills update codex-docs   # update an installed local copy
 ```
 
 Upstream refreshes happen automatically every 3 hours; there is nothing to
@@ -77,12 +82,13 @@ whose content hash is unchanged are not rewritten.
 
 ## Troubleshooting
 
-- If docs look stale, check the latest run of [Update Codex Documentation](../../actions/workflows/update-docs.yml) on this repository
-and reproduce locally with the steps in "Refresh locally" above.
-- If the scheduled fetch fails, the workflow opens an issue automatically.
-- If a single page renders poorly, the upstream MDX is preserved under
-`references/_raw/` whenever the cleaner falls back, so the source of truth
-is never lost.
+- If docs look stale, check the latest run of [Update Codex Documentation](../../actions/workflows/update-docs.yml)
+  on this repository and reproduce locally with the steps in "Refresh locally"
+  above.
+- If the scheduled fetch fails, the workflow opens or updates a
+`docs-fetch-failure` issue automatically.
+- If a single page renders poorly and the cleaner fell back, the upstream MDX is
+preserved under `references/_raw/`, so the source of truth is never lost.
 
 ## Notes
 
