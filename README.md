@@ -10,7 +10,7 @@ GitHub Action keeps them in sync with upstream.
 ## Install
 
 ```bash
-npx skills add mehmetbaykar/codex-docs-skill -g
+npx skills add mehmetbaykar/codex-docs-skill
 ```
 
 The `npx skills` CLI handles install, update, and removal across Codex CLI,
