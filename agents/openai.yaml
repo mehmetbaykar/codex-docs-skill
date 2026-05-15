@@ -1,0 +1,7 @@
+interface:
+  display_name: "Codex Docs"
+  short_description: "Search and read OpenAI Codex documentation locally"
+  brand_color: "#10A37F"
+
+policy:
+  allow_implicit_invocation: true

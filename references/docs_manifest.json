@@ -1,0 +1,1104 @@
+{
+  "description": "Codex documentation mirror manifest. Files live beside this manifest in references/.",
+  "fetch_metadata": {
+    "failed_pages": [],
+    "fetch_tool_version": "1.0",
+    "pages_failed": 0,
+    "pages_fetched_successfully": 129,
+    "pages_skipped": 8,
+    "total_pages_discovered": 137
+  },
+  "files": {
+    "agent-approvals-security.md": {
+      "hash": "3aef79fcc49cd6e80aade6b7ecc821fbaa20c5966995e39b0b5d2ad540922d11",
+      "last_updated": "2026-05-15T20:08:22+00:00",
+      "original_url": "https://developers.openai.com/codex/agent-approvals-security",
+      "path": "/codex/agent-approvals-security",
+      "source_url": "https://developers.openai.com/codex/agent-approvals-security.md",
+      "title": "Agent approvals & security"
+    },
+    "app-server.md": {
+      "hash": "49b42a8d3a5b69a77d4bbdcd54b7ca69def9765d4a137da2c22c139ee9423b65",
+      "last_updated": "2026-05-15T20:08:22+00:00",
+      "original_url": "https://developers.openai.com/codex/app-server",
+      "path": "/codex/app-server",
+      "source_url": "https://developers.openai.com/codex/app-server.md",
+      "title": "Codex App Server"
+    },
+    "app.md": {
+      "hash": "11157921add4b2e671ae07d4188aefe16596c77f7377a640aca166577d4d476e",
+      "last_updated": "2026-05-15T20:08:23+00:00",
+      "original_url": "https://developers.openai.com/codex/app",
+      "path": "/codex/app",
+      "source_url": "https://developers.openai.com/codex/app.md",
+      "title": "Codex app"
+    },
+    "app__automations.md": {
+      "hash": "f9b2220e64a77e37046e82bf49b4c27837c66c4d17c331029b056c619871dd28",
+      "last_updated": "2026-05-15T20:08:23+00:00",
+      "original_url": "https://developers.openai.com/codex/app/automations",
+      "path": "/codex/app/automations",
+      "source_url": "https://developers.openai.com/codex/app/automations.md",
+      "title": "Automations"
+    },
+    "app__browser.md": {
+      "hash": "e8990f9b5f1c112857a5950e3bcf516f0fd8a6555346775a8db86395611677cd",
+      "last_updated": "2026-05-15T20:10:24+00:00",
+      "original_url": "https://developers.openai.com/codex/app/browser",
+      "path": "/codex/app/browser",
+      "source_url": "https://developers.openai.com/codex/app/browser.md",
+      "title": "In-app browser"
+    },
+    "app__chrome-extension.md": {
+      "hash": "cd112a75b335d204c232b51a0abc5bd4f9f800de9efb388b7a01a653d39bb0ef",
+      "last_updated": "2026-05-15T20:08:24+00:00",
+      "original_url": "https://developers.openai.com/codex/app/chrome-extension",
+      "path": "/codex/app/chrome-extension",
+      "source_url": "https://developers.openai.com/codex/app/chrome-extension.md",
+      "title": "Codex Chrome extension"
+    },
+    "app__commands.md": {
+      "hash": "f6553d029d10d28a3b9184e1d4a9733ec9dea0066d0253bd00afdbb756a11413",
+      "last_updated": "2026-05-15T20:10:25+00:00",
+      "original_url": "https://developers.openai.com/codex/app/commands",
+      "path": "/codex/app/commands",
+      "source_url": "https://developers.openai.com/codex/app/commands.md",
+      "title": "Codex app commands"
+    },
+    "app__computer-use.md": {
+      "hash": "13a58f61bd7aa89d9b0048853bd7e42f61df9e433746afeff98a4d1dbbf73ee6",
+      "last_updated": "2026-05-15T20:08:24+00:00",
+      "original_url": "https://developers.openai.com/codex/app/computer-use",
+      "path": "/codex/app/computer-use",
+      "source_url": "https://developers.openai.com/codex/app/computer-use.md",
+      "title": "Computer Use"
+    },
+    "app__features.md": {
+      "hash": "686a3e364a3dd960e63ab2b1ee66c8a8d9d57346f44d2007eec2c2452e7a865c",
+      "last_updated": "2026-05-15T20:10:25+00:00",
+      "original_url": "https://developers.openai.com/codex/app/features",
+      "path": "/codex/app/features",
+      "source_url": "https://developers.openai.com/codex/app/features.md",
+      "title": "Codex app features"
+    },
+    "app__local-environments.md": {
+      "hash": "f2a0a7c424bfa8c9bae5408f3cbd85ea76d98450c955b387efac45d0dce7740b",
+      "last_updated": "2026-05-15T20:08:25+00:00",
+      "original_url": "https://developers.openai.com/codex/app/local-environments",
+      "path": "/codex/app/local-environments",
+      "source_url": "https://developers.openai.com/codex/app/local-environments.md",
+      "title": "Local environments"
+    },
+    "app__review.md": {
+      "hash": "29fa5c00bd09a23be071cb37561b4aae190fd2dda70f78f79bcfc12a0fd657e8",
+      "last_updated": "2026-05-15T20:10:26+00:00",
+      "original_url": "https://developers.openai.com/codex/app/review",
+      "path": "/codex/app/review",
+      "source_url": "https://developers.openai.com/codex/app/review.md",
+      "title": "Review"
+    },
+    "app__settings.md": {
+      "hash": "2cb36177e0c43f4da866aac45e33e4b5cbe18d1806048a5c9e79a2cd8d07c0e7",
+      "last_updated": "2026-05-15T20:10:26+00:00",
+      "original_url": "https://developers.openai.com/codex/app/settings",
+      "path": "/codex/app/settings",
+      "source_url": "https://developers.openai.com/codex/app/settings.md",
+      "title": "Codex app settings"
+    },
+    "app__troubleshooting.md": {
+      "hash": "9e53e3c0e379c7f1d4cb2ed2b36ddee49bd514a44824c6ed9bd8be2762c64d15",
+      "last_updated": "2026-05-15T20:10:26+00:00",
+      "original_url": "https://developers.openai.com/codex/app/troubleshooting",
+      "path": "/codex/app/troubleshooting",
+      "source_url": "https://developers.openai.com/codex/app/troubleshooting.md",
+      "title": "Troubleshooting"
+    },
+    "app__windows.md": {
+      "hash": "1e2ff7724cd5f34cdf3de2f18de202e291077f1d5b3abf854c0f8fa51236fbf6",
+      "last_updated": "2026-05-15T21:20:36+00:00",
+      "original_url": "https://developers.openai.com/codex/app/windows",
+      "path": "/codex/app/windows",
+      "source_url": "https://developers.openai.com/codex/app/windows.md",
+      "title": "Windows"
+    },
+    "app__worktrees.md": {
+      "hash": "8d3019cba77731dbe0b8169d5db00a8c74c9a23768dc68b05bb258f142e52cc8",
+      "last_updated": "2026-05-15T20:08:27+00:00",
+      "original_url": "https://developers.openai.com/codex/app/worktrees",
+      "path": "/codex/app/worktrees",
+      "source_url": "https://developers.openai.com/codex/app/worktrees.md",
+      "title": "Worktrees"
+    },
+    "auth.md": {
+      "hash": "f5f7c7f0b7fb2a81a170c82e9595e8f62528b4c2c574e9168cd48b56f5687fd9",
+      "last_updated": "2026-05-15T21:20:37+00:00",
+      "original_url": "https://developers.openai.com/codex/auth",
+      "path": "/codex/auth",
+      "source_url": "https://developers.openai.com/codex/auth.md",
+      "title": "Authentication"
+    },
+    "auth__ci-cd-auth.md": {
+      "hash": "c7410f4effcb5b3b5c90b29a764fb46f2d163aa56ed53ec3eef6767386e75a64",
+      "last_updated": "2026-05-15T20:08:28+00:00",
+      "original_url": "https://developers.openai.com/codex/auth/ci-cd-auth",
+      "path": "/codex/auth/ci-cd-auth",
+      "source_url": "https://developers.openai.com/codex/auth/ci-cd-auth.md",
+      "title": "Maintain Codex account auth in CI/CD (advanced)"
+    },
+    "changelog.md": {
+      "hash": "17b0791286f36afd9bc683b0fcba984faa6434a3a6e155e8fd6bac97c3b9307e",
+      "last_updated": "2026-05-15T20:08:28+00:00",
+      "original_url": "https://developers.openai.com/codex/changelog",
+      "path": "/codex/changelog",
+      "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
+      "title": "Codex Changelog"
+    },
+    "cli.md": {
+      "hash": "f1088969444df91384cedfabbc735a5e9f3dfcded014fd306a32065c92258fee",
+      "last_updated": "2026-05-15T20:08:28+00:00",
+      "original_url": "https://developers.openai.com/codex/cli",
+      "path": "/codex/cli",
+      "source_url": "https://developers.openai.com/codex/cli.md",
+      "title": "Codex CLI"
+    },
+    "cli__features.md": {
+      "hash": "d2d1226ed1335422634b5c2cfa383aa60d07d190d9a46989c057da7f5e1009c3",
+      "last_updated": "2026-05-15T21:20:38+00:00",
+      "original_url": "https://developers.openai.com/codex/cli/features",
+      "path": "/codex/cli/features",
+      "source_url": "https://developers.openai.com/codex/cli/features.md",
+      "title": "Codex CLI features"
+    },
+    "cli__reference.md": {
+      "hash": "65e3d15037b3b6e6ff7da44ff6deb1ceba1e5eaabbfa8e756c6b533d0840665e",
+      "last_updated": "2026-05-15T20:08:29+00:00",
+      "original_url": "https://developers.openai.com/codex/cli/reference",
+      "path": "/codex/cli/reference",
+      "source_url": "https://developers.openai.com/codex/cli/reference.md",
+      "title": "Command line options"
+    },
+    "cli__slash-commands.md": {
+      "hash": "52d92075772bb368924d59de947cfc3dce1b201c7497c1d598f556dc95d131f7",
+      "last_updated": "2026-05-15T20:10:29+00:00",
+      "original_url": "https://developers.openai.com/codex/cli/slash-commands",
+      "path": "/codex/cli/slash-commands",
+      "source_url": "https://developers.openai.com/codex/cli/slash-commands.md",
+      "title": "Slash commands in Codex CLI"
+    },
+    "cloud.md": {
+      "hash": "2a9fd45630346952562da7249380ce62e7b6cc6c255bdf26b6a52f843fb5ad38",
+      "last_updated": "2026-05-15T20:08:29+00:00",
+      "original_url": "https://developers.openai.com/codex/cloud",
+      "path": "/codex/cloud",
+      "source_url": "https://developers.openai.com/codex/cloud.md",
+      "title": "Codex web"
+    },
+    "cloud__environments.md": {
+      "hash": "8f8e65788ba85da2553319370959e6a8ffe408ee997fd1a957a36e53155f14ed",
+      "last_updated": "2026-05-15T20:08:30+00:00",
+      "original_url": "https://developers.openai.com/codex/cloud/environments",
+      "path": "/codex/cloud/environments",
+      "source_url": "https://developers.openai.com/codex/cloud/environments.md",
+      "title": "Cloud environments"
+    },
+    "cloud__internet-access.md": {
+      "hash": "49072ef3762801f4d41e86238d4717bd005ea293da3a90f4a1de78a690bb6e43",
+      "last_updated": "2026-05-15T20:08:30+00:00",
+      "original_url": "https://developers.openai.com/codex/cloud/internet-access",
+      "path": "/codex/cloud/internet-access",
+      "source_url": "https://developers.openai.com/codex/cloud/internet-access.md",
+      "title": "Agent internet access"
+    },
+    "codex-for-oss-terms.md": {
+      "hash": "6323c6bd17e241e57cdfdc91e8016ad8351cc1951d6014e64ded9fcb57369f31",
+      "last_updated": "2026-05-15T20:08:30+00:00",
+      "original_url": "https://developers.openai.com/codex/codex-for-oss-terms",
+      "path": "/codex/codex-for-oss-terms",
+      "source_url": "https://developers.openai.com/codex/codex-for-oss-terms.md",
+      "title": "Codex for Open Source Program Terms"
+    },
+    "codex.md": {
+      "hash": "7cee080ada22752e17f91b00017744ca9cb533ed6e07ba2916d97148041d89f6",
+      "last_updated": "2026-05-15T20:08:22+00:00",
+      "original_url": "https://developers.openai.com/codex",
+      "path": "/codex",
+      "source_url": "https://developers.openai.com/codex.md",
+      "title": "Codex"
+    },
+    "concepts__customization.md": {
+      "hash": "f68ce37117aba9326d2a54918d33cc772c6ddb042843a0316124b965bfbf047f",
+      "last_updated": "2026-05-15T20:08:31+00:00",
+      "original_url": "https://developers.openai.com/codex/concepts/customization",
+      "path": "/codex/concepts/customization",
+      "source_url": "https://developers.openai.com/codex/concepts/customization.md",
+      "title": "Customization"
+    },
+    "concepts__cyber-safety.md": {
+      "hash": "438b139f90ccccf0928fcaa1848de96f2085fabd65415aa990b369f5d98c22f9",
+      "last_updated": "2026-05-15T20:08:31+00:00",
+      "original_url": "https://developers.openai.com/codex/concepts/cyber-safety",
+      "path": "/codex/concepts/cyber-safety",
+      "source_url": "https://developers.openai.com/codex/concepts/cyber-safety.md",
+      "title": "Cyber Safety"
+    },
+    "concepts__sandboxing.md": {
+      "hash": "ccdc1b5a0f6311e61eea19015c80b39caf12dca24a047ddba63c554a74d13d9f",
+      "last_updated": "2026-05-15T20:08:32+00:00",
+      "original_url": "https://developers.openai.com/codex/concepts/sandboxing",
+      "path": "/codex/concepts/sandboxing",
+      "source_url": "https://developers.openai.com/codex/concepts/sandboxing.md",
+      "title": "Sandbox"
+    },
+    "concepts__sandboxing__auto-review.md": {
+      "hash": "c319e7a9de0af9ef16104546570cf762530e0cd66b0866388841f51b3748b60e",
+      "last_updated": "2026-05-15T20:08:32+00:00",
+      "original_url": "https://developers.openai.com/codex/concepts/sandboxing/auto-review",
+      "path": "/codex/concepts/sandboxing/auto-review",
+      "source_url": "https://developers.openai.com/codex/concepts/sandboxing/auto-review.md",
+      "title": "Auto-review"
+    },
+    "concepts__subagents.md": {
+      "hash": "9d48a512b2797e7ab91a0fcd0a8fe6f32be32376826ff7b90ce1614ad4fc7673",
+      "last_updated": "2026-05-15T20:08:33+00:00",
+      "original_url": "https://developers.openai.com/codex/concepts/subagents",
+      "path": "/codex/concepts/subagents",
+      "source_url": "https://developers.openai.com/codex/concepts/subagents.md",
+      "title": "Subagents"
+    },
+    "config-advanced.md": {
+      "hash": "eceaf03804ff5d55d25b2a1be2e5f905f68ada9ddbf9e2b32bccbae66e92ef75",
+      "last_updated": "2026-05-15T21:20:41+00:00",
+      "original_url": "https://developers.openai.com/codex/config-advanced",
+      "path": "/codex/config-advanced",
+      "source_url": "https://developers.openai.com/codex/config-advanced.md",
+      "title": "Advanced Configuration"
+    },
+    "config-basic.md": {
+      "hash": "af50e9ef89ec3cceee6febc5827e46e0009f9f6f13662b0ee1e52e9caa755555",
+      "last_updated": "2026-05-15T20:08:33+00:00",
+      "original_url": "https://developers.openai.com/codex/config-basic",
+      "path": "/codex/config-basic",
+      "source_url": "https://developers.openai.com/codex/config-basic.md",
+      "title": "Config basics"
+    },
+    "config-reference.md": {
+      "hash": "42cbb12b4f674844533a7eaf07877651a391032b3d69e607d25a1209143e5264",
+      "last_updated": "2026-05-15T20:08:33+00:00",
+      "original_url": "https://developers.openai.com/codex/config-reference",
+      "path": "/codex/config-reference",
+      "source_url": "https://developers.openai.com/codex/config-reference.md",
+      "title": "Configuration Reference"
+    },
+    "config-sample.md": {
+      "hash": "7c0654110a3feb91fd24b3241e6e3559e4597eb6b11ec1ac515e839705f1910c",
+      "last_updated": "2026-05-15T20:08:34+00:00",
+      "original_url": "https://developers.openai.com/codex/config-sample",
+      "path": "/codex/config-sample",
+      "source_url": "https://developers.openai.com/codex/config-sample.md",
+      "title": "Sample Configuration"
+    },
+    "custom-prompts.md": {
+      "hash": "323ab5402038b94255c0ee5e8ecda5d43d524b7e949154711d8364796e9e3e54",
+      "last_updated": "2026-05-15T20:08:34+00:00",
+      "original_url": "https://developers.openai.com/codex/custom-prompts",
+      "path": "/codex/custom-prompts",
+      "source_url": "https://developers.openai.com/codex/custom-prompts.md",
+      "title": "Custom Prompts"
+    },
+    "feature-maturity.md": {
+      "hash": "56efb0ab26a7af5170f3cde0f22fbc6b83240ec028b940e48a71a97cbd2aa547",
+      "last_updated": "2026-05-15T20:08:34+00:00",
+      "original_url": "https://developers.openai.com/codex/feature-maturity",
+      "path": "/codex/feature-maturity",
+      "source_url": "https://developers.openai.com/codex/feature-maturity.md",
+      "title": "Feature Maturity"
+    },
+    "github-action.md": {
+      "hash": "320d2b451d4737661e1911010c740a9cb4237127435f4403d33c0a4508d945b9",
+      "last_updated": "2026-05-15T20:08:35+00:00",
+      "original_url": "https://developers.openai.com/codex/github-action",
+      "path": "/codex/github-action",
+      "source_url": "https://developers.openai.com/codex/github-action.md",
+      "title": "Codex GitHub Action"
+    },
+    "guides__agents-md.md": {
+      "hash": "c5f79dd6e07b357d9b5ff5df6f0426f3cda9ee2f344d53f41f56b12052f411e5",
+      "last_updated": "2026-05-15T20:08:35+00:00",
+      "original_url": "https://developers.openai.com/codex/guides/agents-md",
+      "path": "/codex/guides/agents-md",
+      "source_url": "https://developers.openai.com/codex/guides/agents-md.md",
+      "title": "Custom instructions with AGENTS.md"
+    },
+    "guides__agents-sdk.md": {
+      "hash": "95de85fefc6e8a528ebb36d19687d8869944ef05ef0956a45b0fb3fe6f05a09c",
+      "last_updated": "2026-05-15T21:20:43+00:00",
+      "original_url": "https://developers.openai.com/codex/guides/agents-sdk",
+      "path": "/codex/guides/agents-sdk",
+      "source_url": "https://developers.openai.com/codex/guides/agents-sdk.md",
+      "title": "Use Codex with the Agents SDK"
+    },
+    "guides__build-ai-native-engineering-team.md": {
+      "hash": "edfea89120d11c6324f706cd787ad6a36d9b65ffc38b54c68e0044960ef82060",
+      "last_updated": "2026-05-15T20:08:35+00:00",
+      "original_url": "https://developers.openai.com/codex/guides/build-ai-native-engineering-team",
+      "path": "/codex/guides/build-ai-native-engineering-team",
+      "source_url": "https://developers.openai.com/codex/guides/build-ai-native-engineering-team.md",
+      "title": "Building an AI-Native Engineering Team"
+    },
+    "hooks.md": {
+      "hash": "0bddb18d4084020d361ae4ea831a8adde72f628e73ddb0c90b22985512efaf8f",
+      "last_updated": "2026-05-15T20:08:36+00:00",
+      "original_url": "https://developers.openai.com/codex/hooks",
+      "path": "/codex/hooks",
+      "source_url": "https://developers.openai.com/codex/hooks.md",
+      "title": "Hooks"
+    },
+    "ide.md": {
+      "hash": "968e15adf7b824493b2c0f4df58883c5fd6074e8c8cf3a90db49f140353c092f",
+      "last_updated": "2026-05-15T20:08:36+00:00",
+      "original_url": "https://developers.openai.com/codex/ide",
+      "path": "/codex/ide",
+      "source_url": "https://developers.openai.com/codex/ide.md",
+      "title": "Codex IDE extension"
+    },
+    "ide__commands.md": {
+      "hash": "50fd6612df4afc018c4712862823dfe38ca14edd4e9855453291ea1bbced1268",
+      "last_updated": "2026-05-15T20:08:36+00:00",
+      "original_url": "https://developers.openai.com/codex/ide/commands",
+      "path": "/codex/ide/commands",
+      "source_url": "https://developers.openai.com/codex/ide/commands.md",
+      "title": "Codex IDE extension commands"
+    },
+    "ide__features.md": {
+      "hash": "59c98c0e002d2d6c3031d2dc0c5c585e17628797b910f62f87920b0797084b09",
+      "last_updated": "2026-05-15T20:08:37+00:00",
+      "original_url": "https://developers.openai.com/codex/ide/features",
+      "path": "/codex/ide/features",
+      "source_url": "https://developers.openai.com/codex/ide/features.md",
+      "title": "Codex IDE extension features"
+    },
+    "ide__settings.md": {
+      "hash": "fbcb75d0a4c7d922ffcace212b26a9b7eea60bc80208d44581b170b0fe1d9786",
+      "last_updated": "2026-05-15T20:08:37+00:00",
+      "original_url": "https://developers.openai.com/codex/ide/settings",
+      "path": "/codex/ide/settings",
+      "source_url": "https://developers.openai.com/codex/ide/settings.md",
+      "title": "Codex IDE extension settings"
+    },
+    "ide__slash-commands.md": {
+      "hash": "b7e3004a8e47e7a1ae1c691b9e01c32bfe30f1ed856a6226897ebc4a7f390b12",
+      "last_updated": "2026-05-15T20:08:37+00:00",
+      "original_url": "https://developers.openai.com/codex/ide/slash-commands",
+      "path": "/codex/ide/slash-commands",
+      "source_url": "https://developers.openai.com/codex/ide/slash-commands.md",
+      "title": "Codex IDE extension slash commands"
+    },
+    "integrations__github.md": {
+      "hash": "93d16b9f69e23d21e177b02c0076a867ce92145e3fc8a62b123377609de93a67",
+      "last_updated": "2026-05-15T20:08:37+00:00",
+      "original_url": "https://developers.openai.com/codex/integrations/github",
+      "path": "/codex/integrations/github",
+      "source_url": "https://developers.openai.com/codex/integrations/github.md",
+      "title": "Codex code review in GitHub"
+    },
+    "integrations__linear.md": {
+      "hash": "4fea2041d7a21051383c6962c08016b3a705e4093dca96a0c62bb5bb6724c01a",
+      "last_updated": "2026-05-15T20:08:38+00:00",
+      "original_url": "https://developers.openai.com/codex/integrations/linear",
+      "path": "/codex/integrations/linear",
+      "source_url": "https://developers.openai.com/codex/integrations/linear.md",
+      "title": "Use Codex in Linear"
+    },
+    "integrations__slack.md": {
+      "hash": "f08c575cbb478d2239c5e76dd59811f2eafcf51f4160bffd9e0141fbf128e2a7",
+      "last_updated": "2026-05-15T20:08:38+00:00",
+      "original_url": "https://developers.openai.com/codex/integrations/slack",
+      "path": "/codex/integrations/slack",
+      "source_url": "https://developers.openai.com/codex/integrations/slack.md",
+      "title": "Use Codex in Slack"
+    },
+    "learn__best-practices.md": {
+      "hash": "4c8647acda14ba0c88415eb2a3a16c49f111465d3deb130dc74c20a0f0d56aca",
+      "last_updated": "2026-05-15T20:10:36+00:00",
+      "original_url": "https://developers.openai.com/codex/learn/best-practices",
+      "path": "/codex/learn/best-practices",
+      "source_url": "https://developers.openai.com/codex/learn/best-practices.md",
+      "title": "Best practices"
+    },
+    "mcp.md": {
+      "hash": "aad4f41ec059755b4ba55a9b97fd41c3bb044e56eec5c1b0ddd3be6143c12097",
+      "last_updated": "2026-05-15T20:08:38+00:00",
+      "original_url": "https://developers.openai.com/codex/mcp",
+      "path": "/codex/mcp",
+      "source_url": "https://developers.openai.com/codex/mcp.md",
+      "title": "Model Context Protocol"
+    },
+    "memories.md": {
+      "hash": "86598aceb4918c9af326cd2a18942990e04a2e288118a7b72618142aa3e6b4a3",
+      "last_updated": "2026-05-15T20:08:39+00:00",
+      "original_url": "https://developers.openai.com/codex/memories",
+      "path": "/codex/memories",
+      "source_url": "https://developers.openai.com/codex/memories.md",
+      "title": "Memories"
+    },
+    "memories__chronicle.md": {
+      "hash": "939925c10ae69828b57f6eecd071fbd211cb17463dbed7b132ab85ac1b24b2e5",
+      "last_updated": "2026-05-15T20:08:39+00:00",
+      "original_url": "https://developers.openai.com/codex/memories/chronicle",
+      "path": "/codex/memories/chronicle",
+      "source_url": "https://developers.openai.com/codex/memories/chronicle.md",
+      "title": "Chronicle"
+    },
+    "migrate.md": {
+      "hash": "b85096170181fc3a6258a1fca9dc4aa2e88268d15a00bdd1518b3ce5f4475699",
+      "last_updated": "2026-05-15T20:08:39+00:00",
+      "original_url": "https://developers.openai.com/codex/migrate",
+      "path": "/codex/migrate",
+      "source_url": "https://developers.openai.com/codex/migrate.md",
+      "title": "Migrate to Codex"
+    },
+    "models.md": {
+      "hash": "d18154dcb7f3016f16e1a6a3f1209610e26a6fecbf57f38a3028a41267641186",
+      "last_updated": "2026-05-15T20:08:39+00:00",
+      "original_url": "https://developers.openai.com/codex/models",
+      "path": "/codex/models",
+      "source_url": "https://developers.openai.com/codex/models.md",
+      "title": "Codex Models"
+    },
+    "noninteractive.md": {
+      "hash": "b4430e90abf0ffb4e1b311eb8f34b81656500450adaad09d19ab0a4c764ced17",
+      "last_updated": "2026-05-15T20:08:40+00:00",
+      "original_url": "https://developers.openai.com/codex/noninteractive",
+      "path": "/codex/noninteractive",
+      "source_url": "https://developers.openai.com/codex/noninteractive.md",
+      "title": "Non-interactive mode"
+    },
+    "open-source.md": {
+      "hash": "2a696dc5ad4a8aae239af4253162b98761b3d86d8aa6b028595f0fc6ec322735",
+      "last_updated": "2026-05-15T20:08:40+00:00",
+      "original_url": "https://developers.openai.com/codex/open-source",
+      "path": "/codex/open-source",
+      "source_url": "https://developers.openai.com/codex/open-source.md",
+      "title": "Open Source"
+    },
+    "plugins.md": {
+      "hash": "00bc06adccbf2d6f8dff2ddb329a65b1f113e135647acd89d1b09d45dd427039",
+      "last_updated": "2026-05-15T20:10:38+00:00",
+      "original_url": "https://developers.openai.com/codex/plugins",
+      "path": "/codex/plugins",
+      "source_url": "https://developers.openai.com/codex/plugins.md",
+      "title": "Plugins"
+    },
+    "plugins__build.md": {
+      "hash": "0a72dc2c928ab12263d476d1bf8a644265e1acb09e2c08ee09c2e03ea6dbc397",
+      "last_updated": "2026-05-15T20:08:40+00:00",
+      "original_url": "https://developers.openai.com/codex/plugins/build",
+      "path": "/codex/plugins/build",
+      "source_url": "https://developers.openai.com/codex/plugins/build.md",
+      "title": "Build plugins"
+    },
+    "pricing.md": {
+      "hash": "b5ff0b3d09cf77c2014214f1f2183673be28691ad182dc92ae25f95bbbade380",
+      "last_updated": "2026-05-15T20:08:41+00:00",
+      "original_url": "https://developers.openai.com/codex/pricing",
+      "path": "/codex/pricing",
+      "source_url": "https://developers.openai.com/codex/pricing.md",
+      "title": "Codex Pricing"
+    },
+    "prompting.md": {
+      "hash": "d419c49175a262c3eb693a2628587aff169336661f6f39245d074b64e8f1baf7",
+      "last_updated": "2026-05-15T20:08:41+00:00",
+      "original_url": "https://developers.openai.com/codex/prompting",
+      "path": "/codex/prompting",
+      "source_url": "https://developers.openai.com/codex/prompting.md",
+      "title": "Prompting"
+    },
+    "quickstart.md": {
+      "hash": "70cf4b40feda02e025e04249ba29351c61e938444228ab699ae33f2e944bffa6",
+      "last_updated": "2026-05-15T20:08:41+00:00",
+      "original_url": "https://developers.openai.com/codex/quickstart",
+      "path": "/codex/quickstart",
+      "source_url": "https://developers.openai.com/codex/quickstart.md",
+      "title": "Quickstart"
+    },
+    "remote-connections.md": {
+      "hash": "fc5bc709bc588d9ccae03ae3327c831e753a05da1086c217d36e3d4d8766c774",
+      "last_updated": "2026-05-15T20:08:42+00:00",
+      "original_url": "https://developers.openai.com/codex/remote-connections",
+      "path": "/codex/remote-connections",
+      "source_url": "https://developers.openai.com/codex/remote-connections.md",
+      "title": "Remote connections"
+    },
+    "rules.md": {
+      "hash": "91c1866c12542d0705ac891ecc00572df7d254edd4c3aa619c7714372555bedd",
+      "last_updated": "2026-05-15T20:08:42+00:00",
+      "original_url": "https://developers.openai.com/codex/rules",
+      "path": "/codex/rules",
+      "source_url": "https://developers.openai.com/codex/rules.md",
+      "title": "Rules"
+    },
+    "sdk.md": {
+      "hash": "d2200793349c7914a10f4f743e13277f0e7ef6abcd90cb298e9d5ba961f71005",
+      "last_updated": "2026-05-15T21:20:50+00:00",
+      "original_url": "https://developers.openai.com/codex/sdk",
+      "path": "/codex/sdk",
+      "source_url": "https://developers.openai.com/codex/sdk.md",
+      "title": "Codex SDK"
+    },
+    "security.md": {
+      "hash": "eb351f3f2e0fe0c583ac81d164b961b704bafa55968e8d58d5eda11f3311d121",
+      "last_updated": "2026-05-15T20:08:42+00:00",
+      "original_url": "https://developers.openai.com/codex/security",
+      "path": "/codex/security",
+      "source_url": "https://developers.openai.com/codex/security.md",
+      "title": "Codex Security"
+    },
+    "security__faq.md": {
+      "hash": "44cd9065042d5cb0a34c99272f2e0ca69a149efcf1cf0dcfd487286d152bc937",
+      "last_updated": "2026-05-15T20:08:43+00:00",
+      "original_url": "https://developers.openai.com/codex/security/faq",
+      "path": "/codex/security/faq",
+      "source_url": "https://developers.openai.com/codex/security/faq.md",
+      "title": "FAQ"
+    },
+    "security__setup.md": {
+      "hash": "271f64bc242b8230b1acd0e9ecba3403b1a30b6eb6d0425f01b61cd2fd40ecd3",
+      "last_updated": "2026-05-15T20:08:43+00:00",
+      "original_url": "https://developers.openai.com/codex/security/setup",
+      "path": "/codex/security/setup",
+      "source_url": "https://developers.openai.com/codex/security/setup.md",
+      "title": "Codex Security setup"
+    },
+    "security__threat-model.md": {
+      "hash": "be2bbb2a083984a150eb2af16ab7c97911c803c8eb94c4ec760421cf021207e9",
+      "last_updated": "2026-05-15T20:08:43+00:00",
+      "original_url": "https://developers.openai.com/codex/security/threat-model",
+      "path": "/codex/security/threat-model",
+      "source_url": "https://developers.openai.com/codex/security/threat-model.md",
+      "title": "Improving the threat model"
+    },
+    "skills.md": {
+      "hash": "3c57a444554b5f85345b6973bdda70988b2d20c2ba50fc0215561812c155ee52",
+      "last_updated": "2026-05-15T20:08:43+00:00",
+      "original_url": "https://developers.openai.com/codex/skills",
+      "path": "/codex/skills",
+      "source_url": "https://developers.openai.com/codex/skills.md",
+      "title": "Agent Skills"
+    },
+    "speed.md": {
+      "hash": "d893a9ea9e3d0af33be17d34369a68ed4baf8278a8e925530f02bd55a01eef7a",
+      "last_updated": "2026-05-15T20:08:44+00:00",
+      "original_url": "https://developers.openai.com/codex/speed",
+      "path": "/codex/speed",
+      "source_url": "https://developers.openai.com/codex/speed.md",
+      "title": "Speed"
+    },
+    "subagents.md": {
+      "hash": "ed77e0c4a44f5ab525b4583333c249801350360bdbe5b438df84d6e2c8fe43a7",
+      "last_updated": "2026-05-15T20:08:44+00:00",
+      "original_url": "https://developers.openai.com/codex/subagents",
+      "path": "/codex/subagents",
+      "source_url": "https://developers.openai.com/codex/subagents.md",
+      "title": "Subagents"
+    },
+    "use-cases__agent-friendly-clis.md": {
+      "hash": "c4f914d33d12fc173a41eb78496cbbe2435f03f2f7cef5ce0c900a2bba162f53",
+      "last_updated": "2026-05-15T20:08:45+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/agent-friendly-clis",
+      "path": "/codex/use-cases/agent-friendly-clis",
+      "source_url": "https://developers.openai.com/codex/use-cases/agent-friendly-clis.md",
+      "title": "Use Cases Agent Friendly Clis"
+    },
+    "use-cases__ai-app-evals.md": {
+      "hash": "9f115f54bd85e421da44d35e58a85dbf07f9ebcbde1929306050990e6dc751be",
+      "last_updated": "2026-05-15T20:08:45+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/ai-app-evals",
+      "path": "/codex/use-cases/ai-app-evals",
+      "source_url": "https://developers.openai.com/codex/use-cases/ai-app-evals.md",
+      "title": "Use Cases Ai App Evals"
+    },
+    "use-cases__analyze-data-export.md": {
+      "hash": "bd75ed004eb2ca7d1f61f2c5fb3499bab28e8e6135ca6744ae211d3d74748f8f",
+      "last_updated": "2026-05-15T20:08:45+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/analyze-data-export",
+      "path": "/codex/use-cases/analyze-data-export",
+      "source_url": "https://developers.openai.com/codex/use-cases/analyze-data-export.md",
+      "title": "Use Cases Analyze Data Export"
+    },
+    "use-cases__api-integration-migrations.md": {
+      "hash": "0688fc8d11513c9695f0c4914201ebcb9d99a1f56752d87870dab1d19eb6aa6b",
+      "last_updated": "2026-05-15T20:08:46+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/api-integration-migrations",
+      "path": "/codex/use-cases/api-integration-migrations",
+      "source_url": "https://developers.openai.com/codex/use-cases/api-integration-migrations.md",
+      "title": "Use Cases Api Integration Migrations"
+    },
+    "use-cases__automation-bug-triage.md": {
+      "hash": "5ea28fe50187d971485fdeb17d468cb9344fb1ab4baf4fd08fda018b5458003d",
+      "last_updated": "2026-05-15T20:08:46+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/automation-bug-triage",
+      "path": "/codex/use-cases/automation-bug-triage",
+      "source_url": "https://developers.openai.com/codex/use-cases/automation-bug-triage.md",
+      "title": "Use Cases Automation Bug Triage"
+    },
+    "use-cases__browser-games.md": {
+      "hash": "d7aeef3d3d6ea7011cfde9f698bc7dd688825b3eb76bc86a390e27a5b43bcbc1",
+      "last_updated": "2026-05-15T20:08:47+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/browser-games",
+      "path": "/codex/use-cases/browser-games",
+      "source_url": "https://developers.openai.com/codex/use-cases/browser-games.md",
+      "title": "Game name"
+    },
+    "use-cases__budget-vs-actuals-review.md": {
+      "hash": "f97f921079f08b12a6c7c3022d1795f14f50674c28ebd35693c8519e37af125c",
+      "last_updated": "2026-05-15T20:08:47+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/budget-vs-actuals-review",
+      "path": "/codex/use-cases/budget-vs-actuals-review",
+      "source_url": "https://developers.openai.com/codex/use-cases/budget-vs-actuals-review.md",
+      "title": "Use Cases Budget Vs Actuals Review"
+    },
+    "use-cases__cash-flow-forecast.md": {
+      "hash": "91cbaa78fcdc8337281eabe18714426178b36dabfdf62ec7ba998b3bc91fb7d1",
+      "last_updated": "2026-05-15T20:08:48+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/cash-flow-forecast",
+      "path": "/codex/use-cases/cash-flow-forecast",
+      "source_url": "https://developers.openai.com/codex/use-cases/cash-flow-forecast.md",
+      "title": "Use Cases Cash Flow Forecast"
+    },
+    "use-cases__chatgpt-apps.md": {
+      "hash": "1538f48a636dee01417bae6e7c2f4a512ebf8ec3583c7db8fb5eccf75fe0823a",
+      "last_updated": "2026-05-15T20:08:48+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/chatgpt-apps",
+      "path": "/codex/use-cases/chatgpt-apps",
+      "source_url": "https://developers.openai.com/codex/use-cases/chatgpt-apps.md",
+      "title": "Use Cases Chatgpt Apps"
+    },
+    "use-cases__clean-messy-data.md": {
+      "hash": "90de31e7ccd7bcb886253e5121b3b595513cbff4f5624c4865dd2c6b6e956d64",
+      "last_updated": "2026-05-15T20:08:49+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/clean-messy-data",
+      "path": "/codex/use-cases/clean-messy-data",
+      "source_url": "https://developers.openai.com/codex/use-cases/clean-messy-data.md",
+      "title": "Use Cases Clean Messy Data"
+    },
+    "use-cases__code-migrations.md": {
+      "hash": "5aacaa306878c2e18d41eedf8a6b9596fc708bd12ee4992cbd5e39a60cc6a65a",
+      "last_updated": "2026-05-15T20:08:49+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/code-migrations",
+      "path": "/codex/use-cases/code-migrations",
+      "source_url": "https://developers.openai.com/codex/use-cases/code-migrations.md",
+      "title": "Use Cases Code Migrations"
+    },
+    "use-cases__codebase-onboarding.md": {
+      "hash": "756eee00b0615b39e406419b4b1a5335fc2c3659c227413ac46a06673958ac21",
+      "last_updated": "2026-05-15T20:08:49+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/codebase-onboarding",
+      "path": "/codex/use-cases/codebase-onboarding",
+      "source_url": "https://developers.openai.com/codex/use-cases/codebase-onboarding.md",
+      "title": "Use Cases Codebase Onboarding"
+    },
+    "use-cases__collections__game-development.md": {
+      "hash": "b777900f5b39bd75ba289d6751723076f16b54a0fc4b41c757c6e83bbca0089d",
+      "last_updated": "2026-05-15T20:08:50+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/collections/game-development",
+      "path": "/codex/use-cases/collections/game-development",
+      "source_url": "https://developers.openai.com/codex/use-cases/collections/game-development.md",
+      "title": "Game development"
+    },
+    "use-cases__collections__native-development.md": {
+      "hash": "200514274f6beae9f11d2a786f5c8a90ebb2457a8af516ae28d73c32035be695",
+      "last_updated": "2026-05-15T20:08:50+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/collections/native-development",
+      "path": "/codex/use-cases/collections/native-development",
+      "source_url": "https://developers.openai.com/codex/use-cases/collections/native-development.md",
+      "title": "Native development"
+    },
+    "use-cases__collections__production-systems.md": {
+      "hash": "1268c3ced504e6f50e7e58d996e13c608a726bb88617353bf56fd83d06321cd4",
+      "last_updated": "2026-05-15T20:08:50+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/collections/production-systems",
+      "path": "/codex/use-cases/collections/production-systems",
+      "source_url": "https://developers.openai.com/codex/use-cases/collections/production-systems.md",
+      "title": "Production systems"
+    },
+    "use-cases__collections__productivity-and-collaboration.md": {
+      "hash": "4c17726698ec98ed0adb58e27d6a443f7d8c2e62ae68d7e9efbe68fd34fdb99f",
+      "last_updated": "2026-05-15T20:08:51+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/collections/productivity-and-collaboration",
+      "path": "/codex/use-cases/collections/productivity-and-collaboration",
+      "source_url": "https://developers.openai.com/codex/use-cases/collections/productivity-and-collaboration.md",
+      "title": "Productivity and collaboration"
+    },
+    "use-cases__collections__web-development.md": {
+      "hash": "3887b505d646233c053b34a06424389022e825efe740c13e1e17438bb9fa0a3a",
+      "last_updated": "2026-05-15T20:08:51+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/collections/web-development",
+      "path": "/codex/use-cases/collections/web-development",
+      "source_url": "https://developers.openai.com/codex/use-cases/collections/web-development.md",
+      "title": "Web development"
+    },
+    "use-cases__complete-tasks-from-messages.md": {
+      "hash": "e99908d838460ee68ac49521b22f23532b6ab020621f8e2feedf22d9cabc10da",
+      "last_updated": "2026-05-15T20:08:52+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/complete-tasks-from-messages",
+      "path": "/codex/use-cases/complete-tasks-from-messages",
+      "source_url": "https://developers.openai.com/codex/use-cases/complete-tasks-from-messages.md",
+      "title": "Use Cases Complete Tasks From Messages"
+    },
+    "use-cases__datasets-and-reports.md": {
+      "hash": "bfa77cae7c5ed2adc53de7d8bc48dc93a775484fca01ee53bf62b682ccf1a864",
+      "last_updated": "2026-05-15T20:08:52+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/datasets-and-reports",
+      "path": "/codex/use-cases/datasets-and-reports",
+      "source_url": "https://developers.openai.com/codex/use-cases/datasets-and-reports.md",
+      "title": "Use Cases Datasets And Reports"
+    },
+    "use-cases__dcf-model.md": {
+      "hash": "a67bc80d7c260c14263234d00ad6efa193e21dcc33cec25482f8902c67fb174f",
+      "last_updated": "2026-05-15T20:08:52+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/dcf-model",
+      "path": "/codex/use-cases/dcf-model",
+      "source_url": "https://developers.openai.com/codex/use-cases/dcf-model.md",
+      "title": "Use Cases Dcf Model"
+    },
+    "use-cases__deploy-app-or-website.md": {
+      "hash": "6d95a41b1d1c9457bc4886b76214e54a289f8461cb0086a63be13ec3383d7cd2",
+      "last_updated": "2026-05-15T20:08:53+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/deploy-app-or-website",
+      "path": "/codex/use-cases/deploy-app-or-website",
+      "source_url": "https://developers.openai.com/codex/use-cases/deploy-app-or-website.md",
+      "title": "Use Cases Deploy App Or Website"
+    },
+    "use-cases__draft-prds-from-sources.md": {
+      "hash": "7e71d0b69bb039e99abf0f110afc03c4b9a30806b89b871827b0e2f872be0cc0",
+      "last_updated": "2026-05-15T20:08:53+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/draft-prds-from-sources",
+      "path": "/codex/use-cases/draft-prds-from-sources",
+      "source_url": "https://developers.openai.com/codex/use-cases/draft-prds-from-sources.md",
+      "title": "Use Cases Draft Prds From Sources"
+    },
+    "use-cases__feedback-synthesis.md": {
+      "hash": "5ef707428d15c3c52d78be8bea93bd4ce2fc5d5bd0352f725afe812268ce85ab",
+      "last_updated": "2026-05-15T20:08:54+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/feedback-synthesis",
+      "path": "/codex/use-cases/feedback-synthesis",
+      "source_url": "https://developers.openai.com/codex/use-cases/feedback-synthesis.md",
+      "title": "Use Cases Feedback Synthesis"
+    },
+    "use-cases__figma-designs-to-code.md": {
+      "hash": "78f380e895d790fa95d07319b7c940adf78386aeabe0be3b6c797417698c1a96",
+      "last_updated": "2026-05-15T20:08:54+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/figma-designs-to-code",
+      "path": "/codex/use-cases/figma-designs-to-code",
+      "source_url": "https://developers.openai.com/codex/use-cases/figma-designs-to-code.md",
+      "title": "Use Cases Figma Designs To Code"
+    },
+    "use-cases__follow-goals.md": {
+      "hash": "f26878428f25cdb2b8b0aa8717c2a1ca509fd18dbe686428841324ffd679d866",
+      "last_updated": "2026-05-15T20:08:54+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/follow-goals",
+      "path": "/codex/use-cases/follow-goals",
+      "source_url": "https://developers.openai.com/codex/use-cases/follow-goals.md",
+      "title": "Use Cases Follow Goals"
+    },
+    "use-cases__frontend-designs.md": {
+      "hash": "a1cc6aae0386739a3603d0c3742a9e7ddce0d75a088b3c2f43deac88bc90b24d",
+      "last_updated": "2026-05-15T20:08:55+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/frontend-designs",
+      "path": "/codex/use-cases/frontend-designs",
+      "source_url": "https://developers.openai.com/codex/use-cases/frontend-designs.md",
+      "title": "Use Cases Frontend Designs"
+    },
+    "use-cases__generate-slide-decks.md": {
+      "hash": "9d105757202df0fcbb8ee1403bd4d839b48916afbef820e51e70ccd6bcaa9c9e",
+      "last_updated": "2026-05-15T20:08:55+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/generate-slide-decks",
+      "path": "/codex/use-cases/generate-slide-decks",
+      "source_url": "https://developers.openai.com/codex/use-cases/generate-slide-decks.md",
+      "title": "Use Cases Generate Slide Decks"
+    },
+    "use-cases__github-code-reviews.md": {
+      "hash": "88a547fb787710673b4c6bec1b511e34112a561f9e3808b4a0e3011243ec346b",
+      "last_updated": "2026-05-15T20:08:56+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/github-code-reviews",
+      "path": "/codex/use-cases/github-code-reviews",
+      "source_url": "https://developers.openai.com/codex/use-cases/github-code-reviews.md",
+      "title": "Use Cases Github Code Reviews"
+    },
+    "use-cases__idea-to-proof-of-concept.md": {
+      "hash": "603e9eb2b9481277069681818a7af30540411e203866cbb0a5a4c827db8e38fd",
+      "last_updated": "2026-05-15T20:08:56+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/idea-to-proof-of-concept",
+      "path": "/codex/use-cases/idea-to-proof-of-concept",
+      "source_url": "https://developers.openai.com/codex/use-cases/idea-to-proof-of-concept.md",
+      "title": "Use Cases Idea To Proof Of Concept"
+    },
+    "use-cases__ios-app-intents.md": {
+      "hash": "cf0571b42a83471ff19ea13c9221d234fa672961c18abd8d553afcaca6985667",
+      "last_updated": "2026-05-15T20:08:56+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/ios-app-intents",
+      "path": "/codex/use-cases/ios-app-intents",
+      "source_url": "https://developers.openai.com/codex/use-cases/ios-app-intents.md",
+      "title": "Use Cases Ios App Intents"
+    },
+    "use-cases__ios-liquid-glass.md": {
+      "hash": "4a6cd25ece3418e3f672440a4d2eabe87456b2cb7482578eda864f455bf7531d",
+      "last_updated": "2026-05-15T20:08:57+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/ios-liquid-glass",
+      "path": "/codex/use-cases/ios-liquid-glass",
+      "source_url": "https://developers.openai.com/codex/use-cases/ios-liquid-glass.md",
+      "title": "Use Cases Ios Liquid Glass"
+    },
+    "use-cases__ios-simulator-bug-debugging.md": {
+      "hash": "f84d87287bc7fd5f185982c67105133fc8a33106efdc23f6edd4a4fe6be5069d",
+      "last_updated": "2026-05-15T20:08:57+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/ios-simulator-bug-debugging",
+      "path": "/codex/use-cases/ios-simulator-bug-debugging",
+      "source_url": "https://developers.openai.com/codex/use-cases/ios-simulator-bug-debugging.md",
+      "title": "Use Cases Ios Simulator Bug Debugging"
+    },
+    "use-cases__ios-swiftui-view-refactor.md": {
+      "hash": "8c70f28c3da1941cae9d21e5a237533f8e864da25402a0500f386b42f4f1df95",
+      "last_updated": "2026-05-15T20:08:58+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/ios-swiftui-view-refactor",
+      "path": "/codex/use-cases/ios-swiftui-view-refactor",
+      "source_url": "https://developers.openai.com/codex/use-cases/ios-swiftui-view-refactor.md",
+      "title": "Use Cases Ios Swiftui View Refactor"
+    },
+    "use-cases__iterate-on-difficult-problems.md": {
+      "hash": "9c71c03a1bcc87f8908f2dcb25afd678f77e8c698ed0910b79fe707ddf8595d4",
+      "last_updated": "2026-05-15T20:08:58+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/iterate-on-difficult-problems",
+      "path": "/codex/use-cases/iterate-on-difficult-problems",
+      "source_url": "https://developers.openai.com/codex/use-cases/iterate-on-difficult-problems.md",
+      "title": "Use Cases Iterate On Difficult Problems"
+    },
+    "use-cases__learn-a-new-concept.md": {
+      "hash": "76a55dcab4c4ac0e8164c9c7f621ce7826994310a6815e0db03c65f8ec684f50",
+      "last_updated": "2026-05-15T20:08:59+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/learn-a-new-concept",
+      "path": "/codex/use-cases/learn-a-new-concept",
+      "source_url": "https://developers.openai.com/codex/use-cases/learn-a-new-concept.md",
+      "title": "Use Cases Learn A New Concept"
+    },
+    "use-cases__macos-sidebar-detail-inspector.md": {
+      "hash": "dd779de0d570ef89e85ea634052b75d64e269e7c8de638bd1a955766f8d5cd55",
+      "last_updated": "2026-05-15T20:08:59+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/macos-sidebar-detail-inspector",
+      "path": "/codex/use-cases/macos-sidebar-detail-inspector",
+      "source_url": "https://developers.openai.com/codex/use-cases/macos-sidebar-detail-inspector.md",
+      "title": "Use Cases Macos Sidebar Detail Inspector"
+    },
+    "use-cases__macos-telemetry-logs.md": {
+      "hash": "7b0db3ea6dda412d36092781a7fa9d98e908ed61882dce917f3a522fc7972955",
+      "last_updated": "2026-05-15T21:21:03+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/macos-telemetry-logs",
+      "path": "/codex/use-cases/macos-telemetry-logs",
+      "source_url": "https://developers.openai.com/codex/use-cases/macos-telemetry-logs.md",
+      "title": "Use Cases Macos Telemetry Logs"
+    },
+    "use-cases__make-granular-ui-changes.md": {
+      "hash": "c26165b2ec2f3c5942832f4a4674b0eb57762ec48f2946c1c15f6f1f5a5d61b7",
+      "last_updated": "2026-05-15T20:09:00+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/make-granular-ui-changes",
+      "path": "/codex/use-cases/make-granular-ui-changes",
+      "source_url": "https://developers.openai.com/codex/use-cases/make-granular-ui-changes.md",
+      "title": "Use Cases Make Granular Ui Changes"
+    },
+    "use-cases__manage-your-inbox.md": {
+      "hash": "bf4b8e34b9527c23aefe74dcb1002ab81c6eb6d818011bea79fd7dcd5f47d77d",
+      "last_updated": "2026-05-15T20:09:00+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/manage-your-inbox",
+      "path": "/codex/use-cases/manage-your-inbox",
+      "source_url": "https://developers.openai.com/codex/use-cases/manage-your-inbox.md",
+      "title": "Use Cases Manage Your Inbox"
+    },
+    "use-cases__native-ios-apps.md": {
+      "hash": "49573cd0351713bd7299a5147cdbe224c636bb6f7683819ac4cd81a8b14ff0fa",
+      "last_updated": "2026-05-15T20:09:01+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/native-ios-apps",
+      "path": "/codex/use-cases/native-ios-apps",
+      "source_url": "https://developers.openai.com/codex/use-cases/native-ios-apps.md",
+      "title": "Use Cases Native Ios Apps"
+    },
+    "use-cases__native-macos-apps.md": {
+      "hash": "961169a38e21515ce423d693231c1b09e36deb09da62293d51b9346a5293e37a",
+      "last_updated": "2026-05-15T20:09:01+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/native-macos-apps",
+      "path": "/codex/use-cases/native-macos-apps",
+      "source_url": "https://developers.openai.com/codex/use-cases/native-macos-apps.md",
+      "title": "Use Cases Native Macos Apps"
+    },
+    "use-cases__new-hire-onboarding.md": {
+      "hash": "01c7c7806cff0e1946f5f10b75aba13c53667bda38e091f0b518660997f85e60",
+      "last_updated": "2026-05-15T20:09:01+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/new-hire-onboarding",
+      "path": "/codex/use-cases/new-hire-onboarding",
+      "source_url": "https://developers.openai.com/codex/use-cases/new-hire-onboarding.md",
+      "title": "Use Cases New Hire Onboarding"
+    },
+    "use-cases__proactive-teammate.md": {
+      "hash": "3b091365d51efff381168db963ee8cc3e65e342b8b55319621079cc816d9c0b7",
+      "last_updated": "2026-05-15T20:09:02+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/proactive-teammate",
+      "path": "/codex/use-cases/proactive-teammate",
+      "source_url": "https://developers.openai.com/codex/use-cases/proactive-teammate.md",
+      "title": "Use Cases Proactive Teammate"
+    },
+    "use-cases__qa-your-app-with-computer-use.md": {
+      "hash": "02793b88391c6b8b1d0cd8c042f70c6f6e3913d06b244360343c6b3da55604ab",
+      "last_updated": "2026-05-15T20:09:02+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/qa-your-app-with-computer-use",
+      "path": "/codex/use-cases/qa-your-app-with-computer-use",
+      "source_url": "https://developers.openai.com/codex/use-cases/qa-your-app-with-computer-use.md",
+      "title": "Use Cases Qa Your App With Computer Use"
+    },
+    "use-cases__react-native-expo-apps.md": {
+      "hash": "d22738b53c3748aa1e35409d684131d34e57cbc28068bf82deaba489610da0a3",
+      "last_updated": "2026-05-15T20:09:03+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/react-native-expo-apps",
+      "path": "/codex/use-cases/react-native-expo-apps",
+      "source_url": "https://developers.openai.com/codex/use-cases/react-native-expo-apps.md",
+      "title": "Use Cases React Native Expo Apps"
+    },
+    "use-cases__refactor-your-codebase.md": {
+      "hash": "a154a2fe9d9282a0329c73363c08eafb9b3a120fe8c70ceaf1518e1df89d7482",
+      "last_updated": "2026-05-15T20:09:03+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/refactor-your-codebase",
+      "path": "/codex/use-cases/refactor-your-codebase",
+      "source_url": "https://developers.openai.com/codex/use-cases/refactor-your-codebase.md",
+      "title": "Use Cases Refactor Your Codebase"
+    },
+    "use-cases__reusable-codex-skills.md": {
+      "hash": "505e0495aade9c5223ee72699d73162d3d1fa4bc24e869cb867e72920ecf0ad0",
+      "last_updated": "2026-05-15T20:09:03+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/reusable-codex-skills",
+      "path": "/codex/use-cases/reusable-codex-skills",
+      "source_url": "https://developers.openai.com/codex/use-cases/reusable-codex-skills.md",
+      "title": "Use Cases Reusable Codex Skills"
+    },
+    "use-cases__slack-action-triage.md": {
+      "hash": "86f0b2127b20a988932f8316cdc970fe86acffa64e6bfd6ddb57fcb6df696ef5",
+      "last_updated": "2026-05-15T20:09:04+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/slack-action-triage",
+      "path": "/codex/use-cases/slack-action-triage",
+      "source_url": "https://developers.openai.com/codex/use-cases/slack-action-triage.md",
+      "title": "Use Cases Slack Action Triage"
+    },
+    "use-cases__slack-coding-tasks.md": {
+      "hash": "868e3b14bfe9472090856b295cfe0653929571d52de536942f3356338b41c941",
+      "last_updated": "2026-05-15T20:09:04+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/slack-coding-tasks",
+      "path": "/codex/use-cases/slack-coding-tasks",
+      "source_url": "https://developers.openai.com/codex/use-cases/slack-coding-tasks.md",
+      "title": "Use Cases Slack Coding Tasks"
+    },
+    "use-cases__update-documentation.md": {
+      "hash": "35d0d66542c5d9e2df0ec177b095ea10fa3c3917bf4bccdc730d0614eabe5ef8",
+      "last_updated": "2026-05-15T20:09:05+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/update-documentation",
+      "path": "/codex/use-cases/update-documentation",
+      "source_url": "https://developers.openai.com/codex/use-cases/update-documentation.md",
+      "title": "Use Cases Update Documentation"
+    },
+    "use-cases__use-your-computer-with-codex.md": {
+      "hash": "04b94cff02afd94a73d958d24946bbd18006bc117edccdf612a869e26ffcc428",
+      "last_updated": "2026-05-15T20:09:05+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/use-your-computer-with-codex",
+      "path": "/codex/use-cases/use-your-computer-with-codex",
+      "source_url": "https://developers.openai.com/codex/use-cases/use-your-computer-with-codex.md",
+      "title": "Use Cases Use Your Computer With Codex"
+    },
+    "use-cases__user-stories-to-ui-mocks.md": {
+      "hash": "f5bc0bcaf829d327458317d37c309aab514c3f02b7856617d9a109301361089f",
+      "last_updated": "2026-05-15T20:09:06+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/user-stories-to-ui-mocks",
+      "path": "/codex/use-cases/user-stories-to-ui-mocks",
+      "source_url": "https://developers.openai.com/codex/use-cases/user-stories-to-ui-mocks.md",
+      "title": "Use Cases User Stories To Ui Mocks"
+    },
+    "use-cases__verified-operations-workflows.md": {
+      "hash": "4a2f631cea6b6480b0e08f0eefa8ae19cd6f39ede3a9b7aa0a8d4d261a26f4e4",
+      "last_updated": "2026-05-15T20:09:06+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/verified-operations-workflows",
+      "path": "/codex/use-cases/verified-operations-workflows",
+      "source_url": "https://developers.openai.com/codex/use-cases/verified-operations-workflows.md",
+      "title": "Use Cases Verified Operations Workflows"
+    },
+    "windows.md": {
+      "hash": "98ddb05d28eff4504d126b430db36ba4695a5e57d066832d9594cabb29e626ae",
+      "last_updated": "2026-05-15T20:09:06+00:00",
+      "original_url": "https://developers.openai.com/codex/windows",
+      "path": "/codex/windows",
+      "source_url": "https://developers.openai.com/codex/windows.md",
+      "title": "Windows"
+    },
+    "workflows.md": {
+      "hash": "105d118e7c026acc74ead8e61bff3e5c863f2e29678570bac95c8279c5b20671",
+      "last_updated": "2026-05-15T20:09:07+00:00",
+      "original_url": "https://developers.openai.com/codex/workflows",
+      "path": "/codex/workflows",
+      "source_url": "https://developers.openai.com/codex/workflows.md",
+      "title": "Workflows"
+    }
+  },
+  "filters": {
+    "exclude_cross_domain": true,
+    "exclude_exact_paths": [
+      "/codex/videos"
+    ],
+    "exclude_prefixes": [
+      "/codex/enterprise/"
+    ],
+    "include": [
+      "/codex/*"
+    ]
+  },
+  "last_updated": "2026-05-15T21:21:08+00:00",
+  "skipped": [
+    {
+      "path": "/codex/tracks/game-development",
+      "reason": "No .md endpoint and no special fetcher",
+      "url": "https://developers.openai.com/codex/tracks/game-development"
+    },
+    {
+      "path": "/codex/tracks/native-development",
+      "reason": "No .md endpoint and no special fetcher",
+      "url": "https://developers.openai.com/codex/tracks/native-development"
+    },
+    {
+      "path": "/codex/tracks/production-systems",
+      "reason": "No .md endpoint and no special fetcher",
+      "url": "https://developers.openai.com/codex/tracks/production-systems"
+    },
+    {
+      "path": "/codex/tracks/productivity-and-collaboration",
+      "reason": "No .md endpoint and no special fetcher",
+      "url": "https://developers.openai.com/codex/tracks/productivity-and-collaboration"
+    },
+    {
+      "path": "/codex/tracks/web-development",
+      "reason": "No .md endpoint and no special fetcher",
+      "url": "https://developers.openai.com/codex/tracks/web-development"
+    },
+    {
+      "path": "/codex/use-cases",
+      "reason": "No .md endpoint and no special fetcher",
+      "url": "https://developers.openai.com/codex/use-cases"
+    },
+    {
+      "path": "/codex/use-cases/collections",
+      "reason": "No .md endpoint and no special fetcher",
+      "url": "https://developers.openai.com/codex/use-cases/collections"
+    },
+    {
+      "path": "/codex/use-cases/tracks",
+      "reason": "No .md endpoint and no special fetcher",
+      "url": "https://developers.openai.com/codex/use-cases/tracks"
+    }
+  ],
+  "source": {
+    "base_url": "https://developers.openai.com",
+    "sitemap_index_url": "https://developers.openai.com/sitemap-index.xml"
+  }
+}
