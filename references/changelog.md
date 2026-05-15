@@ -3,11 +3,11 @@
 > Source: https://developers.openai.com/codex/changelog
 > RSS: https://developers.openai.com/codex/changelog/rss.xml
 
-## Codex mobile documentation (2026-05-13)
+## Work with Codex from anywhere (2026-05-14)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-05-13-app
 
-Codex mobile documentation
+Work with Codex from anywhere
 
 ## Expanded Auto-review documentation (2026-05-11)
 

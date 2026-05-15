@@ -146,8 +146,8 @@
       "title": "Maintain Codex account auth in CI/CD (advanced)"
     },
     "changelog.md": {
-      "hash": "17b0791286f36afd9bc683b0fcba984faa6434a3a6e155e8fd6bac97c3b9307e",
-      "last_updated": "2026-05-15T20:08:28+00:00",
+      "hash": "4d891dbe6b168598bcff073d71dc3ecb8609e85dbc827a76b681072e87382915",
+      "last_updated": "2026-05-15T22:13:13+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -1054,7 +1054,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-15T21:21:08+00:00",
+  "last_updated": "2026-05-15T22:13:47+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
