@@ -22,7 +22,8 @@ import requests
 
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
-REFERENCES_DIR = ROOT_DIR / "references"
+SKILL_DIR = ROOT_DIR / "skills" / "codex-docs"
+REFERENCES_DIR = SKILL_DIR / "references"
 RAW_DIR = REFERENCES_DIR / "_raw"
 MANIFEST_FILE = "docs_manifest.json"
 
@@ -50,6 +51,15 @@ EXCLUDED_EXACT_PATHS = {
 SPECIAL_RSS_PATHS = {
     "/codex/changelog": CODEX_CHANGELOG_RSS_URL,
 }
+PAGE_PROCESSING_ERRORS = (
+    RuntimeError,
+    requests.RequestException,
+    OSError,
+    ValueError,
+    KeyError,
+    TypeError,
+    ET.ParseError,
+)
 
 
 logging.basicConfig(
@@ -689,7 +699,7 @@ def fetch_and_save_pages(
 
             successful += 1
             time.sleep(RATE_LIMIT_SECONDS)
-        except Exception as error:  # noqa: BLE001 - collect per-page failures.
+        except PAGE_PROCESSING_ERRORS as error:
             logger.error("Failed to process %s: %s", page.path, error)
             failed.append({"path": page.path, "url": page.url, "error": str(error)})
 
@@ -745,8 +755,8 @@ def _manifest_projection(manifest: dict) -> dict:
 
 def main() -> int:
     start = time.monotonic()
-    REFERENCES_DIR.mkdir(exist_ok=True)
-    RAW_DIR.mkdir(exist_ok=True)
+    REFERENCES_DIR.mkdir(parents=True, exist_ok=True)
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
 
     manifest = load_manifest()
     with requests.Session() as session:
@@ -770,6 +780,6 @@ def main() -> int:
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
-    except Exception as error:  # noqa: BLE001 - clear CLI failure message.
+    except RuntimeError as error:
         logger.error("%s", error)
-        raise SystemExit(1)
+        raise SystemExit(1) from error
