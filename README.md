@@ -3,9 +3,9 @@
 Local Agent Skill mirror of the OpenAI Codex documentation from
 [https://developers.openai.com/codex](https://developers.openai.com/codex).
 
-The repository packages the skill: `SKILL.md` is the entry point, cleaned
-Markdown copies live under `references/`, and a 3-hour GitHub Action keeps them
-in sync with upstream.
+The installable skill lives in `skills/codex-docs/`: `SKILL.md` is the entry
+point, cleaned Markdown copies live under `skills/codex-docs/references/`, and
+a 3-hour GitHub Action keeps them in sync with upstream.
 
 ## Install
 
@@ -13,9 +13,9 @@ in sync with upstream.
 npx skills add mehmetbaykar/codex-docs-skill
 ```
 
-The `npx skills` CLI handles install, update, and removal across Codex CLI,
-Codex IDE/App, Claude Code, Cursor, and other agents that follow the
-[agentskills.io](https://agentskills.io) standard.
+The `npx skills` CLI discovers the nested skill automatically. Installing the
+repo exposes only the skill directory (`SKILL.md` plus `references/`) to the
+target agent while repository maintenance files stay at the repo root.
 
 The repository slug is `codex-docs-skill`; the installed skill name is
 `codex-docs`.
@@ -25,7 +25,7 @@ The repository slug is `codex-docs-skill`; the installed skill name is
 Once installed, invoke the skill with a topic from your agent
 (`$codex-docs hooks` in Codex, `/codex-docs hooks` in Claude Code) or with no
 argument to list topics. The full agent-facing usage contract lives in
-[SKILL.md](SKILL.md).
+[skills/codex-docs/SKILL.md](skills/codex-docs/SKILL.md).
 
 ## What's mirrored
 
@@ -39,10 +39,10 @@ have a special fetcher. It excludes:
 - query-string variants of the same page
 
 Current counts, fetched files, skipped entries, and failed pages are recorded in
-`references/docs_manifest.json`; the generated topic list lives in
-`references/INDEX.md`. The Codex changelog is rendered from
-`https://developers.openai.com/codex/changelog/rss.xml` because the changelog
-page does not expose an `.md` endpoint.
+`skills/codex-docs/references/docs_manifest.json`; the generated topic list
+lives in `skills/codex-docs/references/INDEX.md`. The Codex changelog is
+rendered from `https://developers.openai.com/codex/changelog/rss.xml` because
+the changelog page does not expose an `.md` endpoint.
 
 ## Update
 
@@ -63,16 +63,19 @@ python3 -m venv .venv
 
 The fetcher reads the sitemap, downloads each page's `.md` source, cleans MDX
 and JSX wrappers into plain Markdown, renders the changelog from RSS, and
-rewrites `references/INDEX.md` and `references/docs_manifest.json`. Files
-whose content hash is unchanged are not rewritten.
+rewrites `skills/codex-docs/references/INDEX.md` and
+`skills/codex-docs/references/docs_manifest.json`. Files whose content hash is
+unchanged are not rewritten.
 
 ## Repository layout
 
-```
+```text
 .
-├── SKILL.md                   # agent-facing instructions and routing
 ├── agents/openai.yaml         # Codex App UI metadata + invocation policy
-├── references/                # mirrored Codex docs + INDEX + manifest
+├── skills/
+│   └── codex-docs/
+│       ├── SKILL.md           # installed skill instructions and routing
+│       └── references/        # mirrored Codex docs + INDEX + manifest
 ├── scripts/
 │   ├── fetch_codex_docs.py    # sitemap -> fetch -> clean -> write
 │   └── requirements.txt
@@ -82,13 +85,14 @@ whose content hash is unchanged are not rewritten.
 
 ## Troubleshooting
 
-- If docs look stale, check the latest run of [Update Codex Documentation](../../actions/workflows/update-docs.yml)
-  on this repository and reproduce locally with the steps in "Refresh locally"
-  above.
+- If docs look stale, check the latest run of
+  [Update Codex Documentation](../../actions/workflows/update-docs.yml) on this
+  repository and reproduce locally with the steps in "Refresh locally" above.
 - If the scheduled fetch fails, the workflow opens or updates a
 `docs-fetch-failure` issue automatically.
 - If a single page renders poorly and the cleaner fell back, the upstream MDX is
-preserved under `references/_raw/`, so the source of truth is never lost.
+preserved under `skills/codex-docs/references/_raw/`, so the source of truth is
+never lost.
 
 ## Notes
 
