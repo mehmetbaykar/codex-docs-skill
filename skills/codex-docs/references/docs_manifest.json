@@ -10,8 +10,8 @@
   },
   "files": {
     "agent-approvals-security.md": {
-      "hash": "3aef79fcc49cd6e80aade6b7ecc821fbaa20c5966995e39b0b5d2ad540922d11",
-      "last_updated": "2026-05-15T20:08:22+00:00",
+      "hash": "efe7a504eff01d67cfb6e62c37576e1e349b2cf8b4a79edb575a6a406eee52c1",
+      "last_updated": "2026-05-18T22:00:39+00:00",
       "original_url": "https://developers.openai.com/codex/agent-approvals-security",
       "path": "/codex/agent-approvals-security",
       "source_url": "https://developers.openai.com/codex/agent-approvals-security.md",
@@ -282,16 +282,16 @@
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "7eb9d0e156275d7e016f7286ec08331935b8d4903abca0a4a55733ddbc7722e6",
-      "last_updated": "2026-05-18T15:27:09+00:00",
+      "hash": "856fb07e045b516c663548ae074a5a1a56bafa11e3194fdfe2e3e3a90fd3ce99",
+      "last_updated": "2026-05-18T22:00:48+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
       "title": "Configuration Reference"
     },
     "config-sample.md": {
-      "hash": "b28b2747dd0cf2594146a821b93c245a79526ade4eb99834267b45f43bbfdb4f",
-      "last_updated": "2026-05-18T15:27:10+00:00",
+      "hash": "e01c26dacaa922a109a0a1becbd7124d23072efcf48b74c95377f98df29e07ab",
+      "last_updated": "2026-05-18T22:00:48+00:00",
       "original_url": "https://developers.openai.com/codex/config-sample",
       "path": "/codex/config-sample",
       "source_url": "https://developers.openai.com/codex/config-sample.md",
@@ -522,8 +522,8 @@
       "title": "Quickstart"
     },
     "remote-connections.md": {
-      "hash": "b5e36cc87c23c88c78971972eb1f110b020121d92650cc4f841dce9e859436cc",
-      "last_updated": "2026-05-18T15:27:18+00:00",
+      "hash": "1503d8f10fbf537ea67552e4746746dc0c77e274fc04c4780912c9b6de0d63bd",
+      "last_updated": "2026-05-18T22:00:55+00:00",
       "original_url": "https://developers.openai.com/codex/remote-connections",
       "path": "/codex/remote-connections",
       "source_url": "https://developers.openai.com/codex/remote-connections.md",
@@ -1054,7 +1054,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-18T19:43:10+00:00",
+  "last_updated": "2026-05-18T22:01:19+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
