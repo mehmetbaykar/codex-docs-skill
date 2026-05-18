@@ -18,8 +18,8 @@
       "title": "Agent approvals & security"
     },
     "app-server.md": {
-      "hash": "49b42a8d3a5b69a77d4bbdcd54b7ca69def9765d4a137da2c22c139ee9423b65",
-      "last_updated": "2026-05-15T20:08:22+00:00",
+      "hash": "8cd2278674b5409d7cf109508412eae13f2afbbc5f5f30af30fbbf0c06a41505",
+      "last_updated": "2026-05-18T15:26:59+00:00",
       "original_url": "https://developers.openai.com/codex/app-server",
       "path": "/codex/app-server",
       "source_url": "https://developers.openai.com/codex/app-server.md",
@@ -130,8 +130,8 @@
       "title": "Worktrees"
     },
     "auth.md": {
-      "hash": "f5f7c7f0b7fb2a81a170c82e9595e8f62528b4c2c574e9168cd48b56f5687fd9",
-      "last_updated": "2026-05-15T21:20:37+00:00",
+      "hash": "2ce6cddb8a1102f662e17de3aa23e8ec0cf4a8a91b6944ddb7610b62095304bf",
+      "last_updated": "2026-05-18T15:27:04+00:00",
       "original_url": "https://developers.openai.com/codex/auth",
       "path": "/codex/auth",
       "source_url": "https://developers.openai.com/codex/auth.md",
@@ -162,24 +162,24 @@
       "title": "Codex CLI"
     },
     "cli__features.md": {
-      "hash": "d2d1226ed1335422634b5c2cfa383aa60d07d190d9a46989c057da7f5e1009c3",
-      "last_updated": "2026-05-15T21:20:38+00:00",
+      "hash": "e5fae428ceba856b42dad271f3687194ae0156beb771d0e760db930af3f78931",
+      "last_updated": "2026-05-18T15:27:05+00:00",
       "original_url": "https://developers.openai.com/codex/cli/features",
       "path": "/codex/cli/features",
       "source_url": "https://developers.openai.com/codex/cli/features.md",
       "title": "Codex CLI features"
     },
     "cli__reference.md": {
-      "hash": "65e3d15037b3b6e6ff7da44ff6deb1ceba1e5eaabbfa8e756c6b533d0840665e",
-      "last_updated": "2026-05-15T20:08:29+00:00",
+      "hash": "7f7b8302730b672b39fb4138991f570b3fbc2ca6b1a4d2183cc78007e2cd477a",
+      "last_updated": "2026-05-18T15:27:05+00:00",
       "original_url": "https://developers.openai.com/codex/cli/reference",
       "path": "/codex/cli/reference",
       "source_url": "https://developers.openai.com/codex/cli/reference.md",
       "title": "Command line options"
     },
     "cli__slash-commands.md": {
-      "hash": "52d92075772bb368924d59de947cfc3dce1b201c7497c1d598f556dc95d131f7",
-      "last_updated": "2026-05-15T20:10:29+00:00",
+      "hash": "2ab2321a5b7fa5445dfb80f5ef79e74f5d79ff2a569c9d3faadfb5b78b994098",
+      "last_updated": "2026-05-18T15:27:06+00:00",
       "original_url": "https://developers.openai.com/codex/cli/slash-commands",
       "path": "/codex/cli/slash-commands",
       "source_url": "https://developers.openai.com/codex/cli/slash-commands.md",
@@ -266,8 +266,8 @@
       "title": "Subagents"
     },
     "config-advanced.md": {
-      "hash": "eceaf03804ff5d55d25b2a1be2e5f905f68ada9ddbf9e2b32bccbae66e92ef75",
-      "last_updated": "2026-05-15T21:20:41+00:00",
+      "hash": "c2a9ead9af84fac454cd0392dba13378cad384903a3382886023aa16522a761f",
+      "last_updated": "2026-05-18T15:27:09+00:00",
       "original_url": "https://developers.openai.com/codex/config-advanced",
       "path": "/codex/config-advanced",
       "source_url": "https://developers.openai.com/codex/config-advanced.md",
@@ -282,16 +282,16 @@
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "42cbb12b4f674844533a7eaf07877651a391032b3d69e607d25a1209143e5264",
-      "last_updated": "2026-05-15T20:08:33+00:00",
+      "hash": "7eb9d0e156275d7e016f7286ec08331935b8d4903abca0a4a55733ddbc7722e6",
+      "last_updated": "2026-05-18T15:27:09+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
       "title": "Configuration Reference"
     },
     "config-sample.md": {
-      "hash": "7c0654110a3feb91fd24b3241e6e3559e4597eb6b11ec1ac515e839705f1910c",
-      "last_updated": "2026-05-15T20:08:34+00:00",
+      "hash": "b28b2747dd0cf2594146a821b93c245a79526ade4eb99834267b45f43bbfdb4f",
+      "last_updated": "2026-05-18T15:27:10+00:00",
       "original_url": "https://developers.openai.com/codex/config-sample",
       "path": "/codex/config-sample",
       "source_url": "https://developers.openai.com/codex/config-sample.md",
@@ -346,8 +346,8 @@
       "title": "Building an AI-Native Engineering Team"
     },
     "hooks.md": {
-      "hash": "0bddb18d4084020d361ae4ea831a8adde72f628e73ddb0c90b22985512efaf8f",
-      "last_updated": "2026-05-15T20:08:36+00:00",
+      "hash": "ccc83524da16e1f8782b9336f638a39c108e09cdb9d75c63a9ae71bf398f7c3d",
+      "last_updated": "2026-05-18T15:27:12+00:00",
       "original_url": "https://developers.openai.com/codex/hooks",
       "path": "/codex/hooks",
       "source_url": "https://developers.openai.com/codex/hooks.md",
@@ -426,8 +426,8 @@
       "title": "Best practices"
     },
     "mcp.md": {
-      "hash": "aad4f41ec059755b4ba55a9b97fd41c3bb044e56eec5c1b0ddd3be6143c12097",
-      "last_updated": "2026-05-15T20:08:38+00:00",
+      "hash": "6e8dc307010153fe0ac00fe62e507fed732b17ed7966afddc7036df4c72447e1",
+      "last_updated": "2026-05-18T15:27:14+00:00",
       "original_url": "https://developers.openai.com/codex/mcp",
       "path": "/codex/mcp",
       "source_url": "https://developers.openai.com/codex/mcp.md",
@@ -490,8 +490,8 @@
       "title": "Plugins"
     },
     "plugins__build.md": {
-      "hash": "0a72dc2c928ab12263d476d1bf8a644265e1acb09e2c08ee09c2e03ea6dbc397",
-      "last_updated": "2026-05-15T20:08:40+00:00",
+      "hash": "a699dcb265d5e881ebd261e743d33bc26560ea739b552816c459271d27ca15d2",
+      "last_updated": "2026-05-18T15:27:17+00:00",
       "original_url": "https://developers.openai.com/codex/plugins/build",
       "path": "/codex/plugins/build",
       "source_url": "https://developers.openai.com/codex/plugins/build.md",
@@ -522,8 +522,8 @@
       "title": "Quickstart"
     },
     "remote-connections.md": {
-      "hash": "fc5bc709bc588d9ccae03ae3327c831e753a05da1086c217d36e3d4d8766c774",
-      "last_updated": "2026-05-15T20:08:42+00:00",
+      "hash": "b5e36cc87c23c88c78971972eb1f110b020121d92650cc4f841dce9e859436cc",
+      "last_updated": "2026-05-18T15:27:18+00:00",
       "original_url": "https://developers.openai.com/codex/remote-connections",
       "path": "/codex/remote-connections",
       "source_url": "https://developers.openai.com/codex/remote-connections.md",
@@ -594,8 +594,8 @@
       "title": "Speed"
     },
     "subagents.md": {
-      "hash": "ed77e0c4a44f5ab525b4583333c249801350360bdbe5b438df84d6e2c8fe43a7",
-      "last_updated": "2026-05-15T20:08:44+00:00",
+      "hash": "79913ee6873bc37fe59af99d0c144f61fc622f40aba23e3355cdd5747da31775",
+      "last_updated": "2026-05-18T15:27:21+00:00",
       "original_url": "https://developers.openai.com/codex/subagents",
       "path": "/codex/subagents",
       "source_url": "https://developers.openai.com/codex/subagents.md",
@@ -1054,7 +1054,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-15T22:13:47+00:00",
+  "last_updated": "2026-05-18T15:27:42+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
