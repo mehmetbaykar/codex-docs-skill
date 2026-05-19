@@ -12,7 +12,6 @@ description: >-
   Do NOT use for Claude Code, Cursor, or other agents -- in particular, do
   not use for "Claude Code hooks" or general OpenAI API, ChatGPT, Realtime,
   or non-Codex coding help.
-disable-model-invocation: false
 ---
 
 # Codex Docs
