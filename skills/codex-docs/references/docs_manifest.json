@@ -706,40 +706,40 @@
       "title": "Use Cases Codebase Onboarding"
     },
     "use-cases__collections__game-development.md": {
-      "hash": "b777900f5b39bd75ba289d6751723076f16b54a0fc4b41c757c6e83bbca0089d",
-      "last_updated": "2026-05-15T20:08:50+00:00",
+      "hash": "bc591417624d1124a7173285f4ff49dc341920b5c33a19b320b50f94664c0c37",
+      "last_updated": "2026-05-19T22:14:44+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/collections/game-development",
       "path": "/codex/use-cases/collections/game-development",
       "source_url": "https://developers.openai.com/codex/use-cases/collections/game-development.md",
       "title": "Game development"
     },
     "use-cases__collections__native-development.md": {
-      "hash": "200514274f6beae9f11d2a786f5c8a90ebb2457a8af516ae28d73c32035be695",
-      "last_updated": "2026-05-15T20:08:50+00:00",
+      "hash": "b2b440f1974d76ae0b37412facc081808189ea4d8021c1b2e1b0542fac5a7360",
+      "last_updated": "2026-05-19T22:14:44+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/collections/native-development",
       "path": "/codex/use-cases/collections/native-development",
       "source_url": "https://developers.openai.com/codex/use-cases/collections/native-development.md",
       "title": "Native development"
     },
     "use-cases__collections__production-systems.md": {
-      "hash": "1268c3ced504e6f50e7e58d996e13c608a726bb88617353bf56fd83d06321cd4",
-      "last_updated": "2026-05-15T20:08:50+00:00",
+      "hash": "ff8ced09f8aa09305c8c08e50b6ae54b4beb2c8ba2f756b74e8233066c285fdc",
+      "last_updated": "2026-05-19T22:14:44+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/collections/production-systems",
       "path": "/codex/use-cases/collections/production-systems",
       "source_url": "https://developers.openai.com/codex/use-cases/collections/production-systems.md",
       "title": "Production systems"
     },
     "use-cases__collections__productivity-and-collaboration.md": {
-      "hash": "4c17726698ec98ed0adb58e27d6a443f7d8c2e62ae68d7e9efbe68fd34fdb99f",
-      "last_updated": "2026-05-15T20:08:51+00:00",
+      "hash": "e0d4a2bd2d105950a0ca13009dcd2bfe916ff7b7551b654f65685f7c171f6edd",
+      "last_updated": "2026-05-19T22:14:45+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/collections/productivity-and-collaboration",
       "path": "/codex/use-cases/collections/productivity-and-collaboration",
       "source_url": "https://developers.openai.com/codex/use-cases/collections/productivity-and-collaboration.md",
-      "title": "Productivity and collaboration"
+      "title": "Productivity & Collaboration"
     },
     "use-cases__collections__web-development.md": {
-      "hash": "3887b505d646233c053b34a06424389022e825efe740c13e1e17438bb9fa0a3a",
-      "last_updated": "2026-05-15T20:08:51+00:00",
+      "hash": "a1945f0fecd3aa2ba691f7c983d059dafe8ec01a366cdafeaf1a3224b3079fb0",
+      "last_updated": "2026-05-19T22:14:45+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/collections/web-development",
       "path": "/codex/use-cases/collections/web-development",
       "source_url": "https://developers.openai.com/codex/use-cases/collections/web-development.md",
@@ -810,8 +810,8 @@
       "title": "Use Cases Follow Goals"
     },
     "use-cases__frontend-designs.md": {
-      "hash": "a1cc6aae0386739a3603d0c3742a9e7ddce0d75a088b3c2f43deac88bc90b24d",
-      "last_updated": "2026-05-15T20:08:55+00:00",
+      "hash": "ba49e6cc1072c4ef0bde56656545f707ab9dfce192eb615c7033641479843392",
+      "last_updated": "2026-05-19T22:14:47+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/frontend-designs",
       "path": "/codex/use-cases/frontend-designs",
       "source_url": "https://developers.openai.com/codex/use-cases/frontend-designs.md",
@@ -826,8 +826,8 @@
       "title": "Use Cases Generate Slide Decks"
     },
     "use-cases__github-code-reviews.md": {
-      "hash": "88a547fb787710673b4c6bec1b511e34112a561f9e3808b4a0e3011243ec346b",
-      "last_updated": "2026-05-15T20:08:56+00:00",
+      "hash": "90c68bc9358febf681191ee327bc530de8313c1d4c0dea583dbd4f1a32514e98",
+      "last_updated": "2026-05-19T22:14:48+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/github-code-reviews",
       "path": "/codex/use-cases/github-code-reviews",
       "source_url": "https://developers.openai.com/codex/use-cases/github-code-reviews.md",
@@ -1062,7 +1062,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-19T19:50:25+00:00",
+  "last_updated": "2026-05-19T22:14:55+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
