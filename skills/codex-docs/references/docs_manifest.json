@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 129,
+    "pages_fetched_successfully": 130,
     "pages_skipped": 8,
-    "total_pages_discovered": 137
+    "total_pages_discovered": 138
   },
   "files": {
     "agent-approvals-security.md": {
@@ -146,8 +146,8 @@
       "title": "Maintain Codex account auth in CI/CD (advanced)"
     },
     "changelog.md": {
-      "hash": "3fc904264a644f0da85d4149addfff18d4187b47ef217f458631527fbf127547",
-      "last_updated": "2026-05-18T19:42:35+00:00",
+      "hash": "37ae144fd250b7f10797d133414208f2c4a3054260d5ac1e70472ab15a3aeb61",
+      "last_updated": "2026-05-19T12:08:16+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -216,6 +216,14 @@
       "path": "/codex/codex-for-oss-terms",
       "source_url": "https://developers.openai.com/codex/codex-for-oss-terms.md",
       "title": "Codex for Open Source Program Terms"
+    },
+    "codex-manual.md": {
+      "hash": "cddfde8e514a4b14ee235ec5b408dbeb7ec37d4b24a001bd5cea718a8bcb1025",
+      "last_updated": "2026-05-19T12:08:19+00:00",
+      "original_url": "https://developers.openai.com/codex/codex-manual",
+      "path": "/codex/codex-manual",
+      "source_url": "https://developers.openai.com/codex/codex-manual.md",
+      "title": "Codex Manual"
     },
     "codex.md": {
       "hash": "7cee080ada22752e17f91b00017744ca9cb533ed6e07ba2916d97148041d89f6",
@@ -1054,7 +1062,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-18T22:01:19+00:00",
+  "last_updated": "2026-05-19T12:08:47+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",

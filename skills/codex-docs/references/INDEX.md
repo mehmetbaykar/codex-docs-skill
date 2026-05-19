@@ -32,6 +32,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `cloud__environments` - [Cloud environments](https://developers.openai.com/codex/cloud/environments)
 - `cloud__internet-access` - [Agent internet access](https://developers.openai.com/codex/cloud/internet-access)
 - `codex-for-oss-terms` - [Codex for Open Source Program Terms](https://developers.openai.com/codex/codex-for-oss-terms)
+- `codex-manual` - [Codex Manual](https://developers.openai.com/codex/codex-manual)
 - `codex` - [Codex](https://developers.openai.com/codex)
 - `concepts__customization` - [Customization](https://developers.openai.com/codex/concepts/customization)
 - `concepts__cyber-safety` - [Cyber Safety](https://developers.openai.com/codex/concepts/cyber-safety)

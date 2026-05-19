@@ -21,6 +21,12 @@ Work with Codex from anywhere
 
 Expanded Auto-review documentation
 
+## Codex app (2026-05-08)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-05-08-app
+
+Codex app
+
 ## Codex CLI Release: 0.130.0 (2026-05-08)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-319777370
@@ -51,11 +57,23 @@ Codex analytics governance docs update
 
 Create Codex access tokens
 
+## Codex app (2026-05-05)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-05-05-app
+
+Codex app
+
 ## Codex CLI Release: 0.128.0 (2026-04-30)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-315916672
 
 0.128.0
+
+## Codex app (2026-04-24)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-04-24-app
+
+Codex app
 
 ## Codex CLI Release: 0.125.0 (2026-04-24)
 
@@ -81,6 +99,12 @@ GPT-5.5 and Codex app updates
 
 0.123.0
 
+## Codex app (2026-04-20)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-04-20-app
+
+Codex app
+
 ## Codex CLI Release: 0.122.0 (2026-04-20)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-311361536
@@ -99,11 +123,23 @@ Codex can now help with more of your work
 
 0.121.0
 
+## Codex app (2026-04-12)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-04-12-app
+
+Codex app
+
 ## Codex CLI Release: 0.120.0 (2026-04-11)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-307789275
 
 0.120.0
+
+## Codex app (2026-04-10)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-04-10-app
+
+Codex app
 
 ## Codex CLI Release: 0.119.0 (2026-04-10)
 
@@ -111,11 +147,23 @@ Codex can now help with more of your work
 
 0.119.0
 
+## Codex app (2026-04-09)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-04-09-app
+
+Codex app
+
 ## Codex model availability update (2026-04-07)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-04-07
 
 Codex model availability update
+
+## Codex app (2026-04-01)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-04-01-app
+
+Codex app
 
 ## Build and install plugins in Codex (2026-03-25)
 
@@ -123,9 +171,21 @@ Codex model availability update
 
 Build and install plugins in Codex
 
+## Codex app (2026-03-25)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-03-25-app
+
+Codex app
+
 ## Codex app (2026-03-24)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-03-24-app
+
+Codex app
+
+## Codex app (2026-03-20)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-03-20-app
 
 Codex app
 
