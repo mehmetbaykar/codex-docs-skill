@@ -6,7 +6,7 @@ path: /codex/use-cases/collections/web-development
 
 # Web development
 
-Turn design inputs into responsive UI, and iterate on the frontend with scoped changes and fast reviews.
+Build responsive UI from designs and prompts.
 
 Codex works great with existing design systems, taking into account constraints and visual inputs to produce a responsive UI.
 These use cases are helpful when you are building web apps and need to iterate on frontend designs.

@@ -96,7 +96,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `use-cases__collections__game-development` - [Game development](https://developers.openai.com/codex/use-cases/collections/game-development)
 - `use-cases__collections__native-development` - [Native development](https://developers.openai.com/codex/use-cases/collections/native-development)
 - `use-cases__collections__production-systems` - [Production systems](https://developers.openai.com/codex/use-cases/collections/production-systems)
-- `use-cases__collections__productivity-and-collaboration` - [Productivity and collaboration](https://developers.openai.com/codex/use-cases/collections/productivity-and-collaboration)
+- `use-cases__collections__productivity-and-collaboration` - [Productivity & Collaboration](https://developers.openai.com/codex/use-cases/collections/productivity-and-collaboration)
 - `use-cases__collections__web-development` - [Web development](https://developers.openai.com/codex/use-cases/collections/web-development)
 - `use-cases__complete-tasks-from-messages` - [Use Cases Complete Tasks From Messages](https://developers.openai.com/codex/use-cases/complete-tasks-from-messages)
 - `use-cases__datasets-and-reports` - [Use Cases Datasets And Reports](https://developers.openai.com/codex/use-cases/datasets-and-reports)
