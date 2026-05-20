@@ -154,8 +154,8 @@
       "title": "Codex CLI"
     },
     "cli__features.md": {
-      "hash": "e5fae428ceba856b42dad271f3687194ae0156beb771d0e760db930af3f78931",
-      "last_updated": "2026-05-18T15:27:05+00:00",
+      "hash": "1080b47a317aa412e0c3d55d3fa72dcdece228b1823c6b7405b3d7df214c1cfc",
+      "last_updated": "2026-05-20T22:23:21+00:00",
       "original_url": "https://developers.openai.com/codex/cli/features",
       "path": "/codex/cli/features",
       "source_url": "https://developers.openai.com/codex/cli/features.md",
@@ -242,8 +242,8 @@
       "title": "Auto-review"
     },
     "concepts__subagents.md": {
-      "hash": "9d48a512b2797e7ab91a0fcd0a8fe6f32be32376826ff7b90ce1614ad4fc7673",
-      "last_updated": "2026-05-15T20:08:33+00:00",
+      "hash": "e649a7601d35cf6422df9a191a0fc143b574f4aec33f1497a5715e564cca620a",
+      "last_updated": "2026-05-20T22:23:24+00:00",
       "original_url": "https://developers.openai.com/codex/concepts/subagents",
       "path": "/codex/concepts/subagents",
       "source_url": "https://developers.openai.com/codex/concepts/subagents.md",
@@ -274,8 +274,8 @@
       "title": "Configuration Reference"
     },
     "config-sample.md": {
-      "hash": "76e48b317920c2d232494947a21cc3e2926b9ded847768a6c7dbe97a9ba07ce5",
-      "last_updated": "2026-05-20T02:57:32+00:00",
+      "hash": "ae891ada47098e3734aca8e3b73bd074761a279edaa9d52b6a52bc4606f00874",
+      "last_updated": "2026-05-20T22:23:25+00:00",
       "original_url": "https://developers.openai.com/codex/config-sample",
       "path": "/codex/config-sample",
       "source_url": "https://developers.openai.com/codex/config-sample.md",
@@ -442,8 +442,8 @@
       "title": "Migrate to Codex"
     },
     "models.md": {
-      "hash": "d18154dcb7f3016f16e1a6a3f1209610e26a6fecbf57f38a3028a41267641186",
-      "last_updated": "2026-05-15T20:08:39+00:00",
+      "hash": "2150c3ac3548a159babc3158c666e143e5a0e1523f5c032de84f0355c26b5cb7",
+      "last_updated": "2026-05-20T22:23:30+00:00",
       "original_url": "https://developers.openai.com/codex/models",
       "path": "/codex/models",
       "source_url": "https://developers.openai.com/codex/models.md",
@@ -618,8 +618,8 @@
       "title": "Use Cases Analyze Data Export"
     },
     "use-cases__api-integration-migrations.md": {
-      "hash": "0688fc8d11513c9695f0c4914201ebcb9d99a1f56752d87870dab1d19eb6aa6b",
-      "last_updated": "2026-05-15T20:08:46+00:00",
+      "hash": "12a40ec82cef31549ac76e979058e0bd7132619088fbec15b66234972eff272f",
+      "last_updated": "2026-05-20T22:23:35+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/api-integration-migrations",
       "path": "/codex/use-cases/api-integration-migrations",
       "source_url": "https://developers.openai.com/codex/use-cases/api-integration-migrations.md",
@@ -906,8 +906,8 @@
       "title": "Use Cases Macos Telemetry Logs"
     },
     "use-cases__make-granular-ui-changes.md": {
-      "hash": "c26165b2ec2f3c5942832f4a4674b0eb57762ec48f2946c1c15f6f1f5a5d61b7",
-      "last_updated": "2026-05-15T20:09:00+00:00",
+      "hash": "e892479f0e54a2cd1ffa891dfec85a32568b805628a82636205520ed1977fd3c",
+      "last_updated": "2026-05-20T22:23:46+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/make-granular-ui-changes",
       "path": "/codex/use-cases/make-granular-ui-changes",
       "source_url": "https://developers.openai.com/codex/use-cases/make-granular-ui-changes.md",
@@ -1078,7 +1078,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-20T17:56:08+00:00",
+  "last_updated": "2026-05-20T22:23:51+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
