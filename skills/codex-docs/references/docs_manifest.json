@@ -4,14 +4,14 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 130,
+    "pages_fetched_successfully": 132,
     "pages_skipped": 8,
-    "total_pages_discovered": 138
+    "total_pages_discovered": 140
   },
   "files": {
     "agent-approvals-security.md": {
-      "hash": "efe7a504eff01d67cfb6e62c37576e1e349b2cf8b4a79edb575a6a406eee52c1",
-      "last_updated": "2026-05-18T22:00:39+00:00",
+      "hash": "667efac900c36f104cd93b6166d30bb9cdd6546814166fcc80ff4984ec4e5e34",
+      "last_updated": "2026-05-20T02:57:19+00:00",
       "original_url": "https://developers.openai.com/codex/agent-approvals-security",
       "path": "/codex/agent-approvals-security",
       "source_url": "https://developers.openai.com/codex/agent-approvals-security.md",
@@ -137,17 +137,9 @@
       "source_url": "https://developers.openai.com/codex/auth.md",
       "title": "Authentication"
     },
-    "auth__ci-cd-auth.md": {
-      "hash": "c7410f4effcb5b3b5c90b29a764fb46f2d163aa56ed53ec3eef6767386e75a64",
-      "last_updated": "2026-05-15T20:08:28+00:00",
-      "original_url": "https://developers.openai.com/codex/auth/ci-cd-auth",
-      "path": "/codex/auth/ci-cd-auth",
-      "source_url": "https://developers.openai.com/codex/auth/ci-cd-auth.md",
-      "title": "Maintain Codex account auth in CI/CD (advanced)"
-    },
     "changelog.md": {
-      "hash": "37ae144fd250b7f10797d133414208f2c4a3054260d5ac1e70472ab15a3aeb61",
-      "last_updated": "2026-05-19T12:08:16+00:00",
+      "hash": "2d692e1fc7916b013f6d111f2207dfd38d060b1f876d06b0cd300d1ce7fdfa7a",
+      "last_updated": "2026-05-20T02:57:26+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -209,22 +201,6 @@
       "source_url": "https://developers.openai.com/codex/cloud/internet-access.md",
       "title": "Agent internet access"
     },
-    "codex-for-oss-terms.md": {
-      "hash": "6323c6bd17e241e57cdfdc91e8016ad8351cc1951d6014e64ded9fcb57369f31",
-      "last_updated": "2026-05-15T20:08:30+00:00",
-      "original_url": "https://developers.openai.com/codex/codex-for-oss-terms",
-      "path": "/codex/codex-for-oss-terms",
-      "source_url": "https://developers.openai.com/codex/codex-for-oss-terms.md",
-      "title": "Codex for Open Source Program Terms"
-    },
-    "codex-manual.md": {
-      "hash": "cddfde8e514a4b14ee235ec5b408dbeb7ec37d4b24a001bd5cea718a8bcb1025",
-      "last_updated": "2026-05-19T12:08:19+00:00",
-      "original_url": "https://developers.openai.com/codex/codex-manual",
-      "path": "/codex/codex-manual",
-      "source_url": "https://developers.openai.com/codex/codex-manual.md",
-      "title": "Codex Manual"
-    },
     "codex.md": {
       "hash": "7cee080ada22752e17f91b00017744ca9cb533ed6e07ba2916d97148041d89f6",
       "last_updated": "2026-05-15T20:08:22+00:00",
@@ -250,8 +226,8 @@
       "title": "Cyber Safety"
     },
     "concepts__sandboxing.md": {
-      "hash": "ccdc1b5a0f6311e61eea19015c80b39caf12dca24a047ddba63c554a74d13d9f",
-      "last_updated": "2026-05-15T20:08:32+00:00",
+      "hash": "e06369323d6cd5fece4e1400da8f93f70205858edac725fd78c47550c129de0c",
+      "last_updated": "2026-05-20T02:57:29+00:00",
       "original_url": "https://developers.openai.com/codex/concepts/sandboxing",
       "path": "/codex/concepts/sandboxing",
       "source_url": "https://developers.openai.com/codex/concepts/sandboxing.md",
@@ -274,32 +250,32 @@
       "title": "Subagents"
     },
     "config-advanced.md": {
-      "hash": "c2a9ead9af84fac454cd0392dba13378cad384903a3382886023aa16522a761f",
-      "last_updated": "2026-05-18T15:27:09+00:00",
+      "hash": "4306116cbf6f5c60b6d85c8503b877c163b714f64df003d61f6d9d93d5fe323d",
+      "last_updated": "2026-05-20T02:57:31+00:00",
       "original_url": "https://developers.openai.com/codex/config-advanced",
       "path": "/codex/config-advanced",
       "source_url": "https://developers.openai.com/codex/config-advanced.md",
       "title": "Advanced Configuration"
     },
     "config-basic.md": {
-      "hash": "af50e9ef89ec3cceee6febc5827e46e0009f9f6f13662b0ee1e52e9caa755555",
-      "last_updated": "2026-05-15T20:08:33+00:00",
+      "hash": "8258c371d5902ed381d0c34de097494c26adf36ff1dc6feea185c79c5e9e032a",
+      "last_updated": "2026-05-20T02:57:31+00:00",
       "original_url": "https://developers.openai.com/codex/config-basic",
       "path": "/codex/config-basic",
       "source_url": "https://developers.openai.com/codex/config-basic.md",
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "856fb07e045b516c663548ae074a5a1a56bafa11e3194fdfe2e3e3a90fd3ce99",
-      "last_updated": "2026-05-18T22:00:48+00:00",
+      "hash": "1346c51fded3027f1accb1e0fa7030472e5309db11ac55ba4a6d3c1bb24f3c46",
+      "last_updated": "2026-05-20T02:57:31+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
       "title": "Configuration Reference"
     },
     "config-sample.md": {
-      "hash": "e01c26dacaa922a109a0a1becbd7124d23072efcf48b74c95377f98df29e07ab",
-      "last_updated": "2026-05-18T22:00:48+00:00",
+      "hash": "76e48b317920c2d232494947a21cc3e2926b9ded847768a6c7dbe97a9ba07ce5",
+      "last_updated": "2026-05-20T02:57:32+00:00",
       "original_url": "https://developers.openai.com/codex/config-sample",
       "path": "/codex/config-sample",
       "source_url": "https://developers.openai.com/codex/config-sample.md",
@@ -488,6 +464,14 @@
       "path": "/codex/open-source",
       "source_url": "https://developers.openai.com/codex/open-source.md",
       "title": "Open Source"
+    },
+    "permissions.md": {
+      "hash": "64ccd0f840cdc0b2ee3e6bb4ec3837e9b4e7ce96ccacbbe3aed554843cdb2799",
+      "last_updated": "2026-05-20T02:57:41+00:00",
+      "original_url": "https://developers.openai.com/codex/permissions",
+      "path": "/codex/permissions",
+      "source_url": "https://developers.openai.com/codex/permissions.md",
+      "title": "Permissions"
     },
     "plugins.md": {
       "hash": "00bc06adccbf2d6f8dff2ddb329a65b1f113e135647acd89d1b09d45dd427039",
@@ -769,6 +753,14 @@
       "source_url": "https://developers.openai.com/codex/use-cases/dcf-model.md",
       "title": "Use Cases Dcf Model"
     },
+    "use-cases__dependency-incident-audits.md": {
+      "hash": "0610ed9da7984324979fa0c676589ab2c05da7f2217ccc6fd931bfd714299bde",
+      "last_updated": "2026-05-20T02:57:54+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/dependency-incident-audits",
+      "path": "/codex/use-cases/dependency-incident-audits",
+      "source_url": "https://developers.openai.com/codex/use-cases/dependency-incident-audits.md",
+      "title": "Use Cases Dependency Incident Audits"
+    },
     "use-cases__deploy-app-or-website.md": {
       "hash": "6d95a41b1d1c9457bc4886b76214e54a289f8461cb0086a63be13ec3383d7cd2",
       "last_updated": "2026-05-15T20:08:53+00:00",
@@ -784,6 +776,14 @@
       "path": "/codex/use-cases/draft-prds-from-sources",
       "source_url": "https://developers.openai.com/codex/use-cases/draft-prds-from-sources.md",
       "title": "Use Cases Draft Prds From Sources"
+    },
+    "use-cases__event-launch-playbooks.md": {
+      "hash": "f617967edaea95d7b984f69c6cb3981cca8caf7fa84e80738370e53d84f94677",
+      "last_updated": "2026-05-20T02:57:56+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/event-launch-playbooks",
+      "path": "/codex/use-cases/event-launch-playbooks",
+      "source_url": "https://developers.openai.com/codex/use-cases/event-launch-playbooks.md",
+      "title": "Use Cases Event Launch Playbooks"
     },
     "use-cases__feedback-synthesis.md": {
       "hash": "5ef707428d15c3c52d78be8bea93bd4ce2fc5d5bd0352f725afe812268ce85ab",
@@ -802,8 +802,8 @@
       "title": "Use Cases Figma Designs To Code"
     },
     "use-cases__follow-goals.md": {
-      "hash": "f26878428f25cdb2b8b0aa8717c2a1ca509fd18dbe686428841324ffd679d866",
-      "last_updated": "2026-05-15T20:08:54+00:00",
+      "hash": "2f5d8973dda6cfbb6252031bc4869860c77b327f45e0e16989288445c74d6ed7",
+      "last_updated": "2026-05-20T02:57:57+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/follow-goals",
       "path": "/codex/use-cases/follow-goals",
       "source_url": "https://developers.openai.com/codex/use-cases/follow-goals.md",
@@ -921,6 +921,14 @@
       "source_url": "https://developers.openai.com/codex/use-cases/manage-your-inbox.md",
       "title": "Use Cases Manage Your Inbox"
     },
+    "use-cases__meeting-prep-briefs.md": {
+      "hash": "26e6babcb41fb0b3815e662a0712c882a665bea5f54dcf0901eed4a56f4fb1fc",
+      "last_updated": "2026-05-20T02:58:02+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/meeting-prep-briefs",
+      "path": "/codex/use-cases/meeting-prep-briefs",
+      "source_url": "https://developers.openai.com/codex/use-cases/meeting-prep-briefs.md",
+      "title": "Use Cases Meeting Prep Briefs"
+    },
     "use-cases__native-ios-apps.md": {
       "hash": "49573cd0351713bd7299a5147cdbe224c636bb6f7683819ac4cd81a8b14ff0fa",
       "last_updated": "2026-05-15T20:09:01+00:00",
@@ -1033,6 +1041,14 @@
       "source_url": "https://developers.openai.com/codex/use-cases/verified-operations-workflows.md",
       "title": "Use Cases Verified Operations Workflows"
     },
+    "use-cases__zoom-meeting-follow-ups.md": {
+      "hash": "7b43b2c08c093cfb595ae9f9a7771d31daa2411f8a57eade14f63110dc4561fc",
+      "last_updated": "2026-05-20T02:58:08+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/zoom-meeting-follow-ups",
+      "path": "/codex/use-cases/zoom-meeting-follow-ups",
+      "source_url": "https://developers.openai.com/codex/use-cases/zoom-meeting-follow-ups.md",
+      "title": "Use Cases Zoom Meeting Follow Ups"
+    },
     "windows.md": {
       "hash": "98ddb05d28eff4504d126b430db36ba4695a5e57d066832d9594cabb29e626ae",
       "last_updated": "2026-05-15T20:09:06+00:00",
@@ -1062,7 +1078,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-19T22:14:55+00:00",
+  "last_updated": "2026-05-20T02:58:09+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
