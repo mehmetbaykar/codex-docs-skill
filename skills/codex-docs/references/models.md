@@ -8,13 +8,16 @@ path: /codex/models
 
 ## Recommended models
 
-For most tasks in Codex, start with `gpt-5.5` when it appears in your model
-  picker. It is strongest for complex coding, computer use, knowledge work, and
-  research workflows. GPT-5.5 is currently available in Codex when you sign in
-  with ChatGPT or API-key authentication. Use `gpt-5.4-mini` when you want a
-  faster, lower-cost option for lighter coding tasks or subagents. The
-  `gpt-5.3-codex-spark` model is available in research preview for ChatGPT Pro
-  subscribers and is optimized for near-instant, real-time coding iteration.
+For most tasks in Codex, start with
+  `gpt-5.5`. It is
+  strongest for complex coding, computer use, knowledge work, and research
+  workflows. GPT-5.5 is currently available in Codex when you sign in with
+  ChatGPT or API-key authentication. Use
+  `gpt-5.4-mini`
+  when you want a faster, lower-cost option for lighter coding tasks or
+  subagents. The `gpt-5.3-codex-spark` model is available in research preview
+  for ChatGPT Pro subscribers and is optimized for near-instant, real-time
+  coding iteration.
 
 ## Alternative models
 
@@ -36,8 +39,6 @@ The Codex CLI and IDE extension use the same `config.toml` [configuration file](
 ```toml
 model = "gpt-5.5"
 ```
-
-If `gpt-5.5` isn't available in your account yet, use `gpt-5.4`.
 
 ### Choosing a different local model temporarily
 
