@@ -65,6 +65,10 @@ connected host.
 
 Let Codex use macOS apps for GUI tasks, browser flows, and native app testing.
 
+### Appshots
+
+Send the frontmost Mac app window to Codex with a screenshot and available text.
+
 ### Review and ship changes
 
 Inspect diffs, address PR feedback, stage files, commit, and push.
