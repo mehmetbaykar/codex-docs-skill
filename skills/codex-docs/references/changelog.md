@@ -3,17 +3,11 @@
 > Source: https://developers.openai.com/codex/changelog
 > RSS: https://developers.openai.com/codex/changelog/rss.xml
 
-## Codex CLI Release: 0.132.0 (2026-05-20)
+## Appshots, goal mode, and more (2026-05-21)
 
-- Source: https://developers.openai.com/codex/changelog/#github-release-325545332
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-05-21
 
-0.132.0
-
-## Codex CLI Release: 0.131.0 (2026-05-18)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-324452638
-
-0.131.0
+Appshots, goal mode, and more
 
 ## Work with Codex from anywhere (2026-05-14)
 
@@ -33,23 +27,11 @@ Expanded Auto-review documentation
 
 Codex app
 
-## Codex CLI Release: 0.130.0 (2026-05-08)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-319777370
-
-0.130.0
-
 ## Codex for Chrome (2026-05-07)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-05-07
 
 Codex for Chrome
-
-## Codex CLI Release: 0.129.0 (2026-05-07)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-319066904
-
-0.129.0
 
 ## Codex analytics governance docs update (2026-05-06)
 
@@ -69,23 +51,11 @@ Create Codex access tokens
 
 Codex app
 
-## Codex CLI Release: 0.128.0 (2026-04-30)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-315916672
-
-0.128.0
-
 ## Codex app (2026-04-24)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-04-24-app
 
 Codex app
-
-## Codex CLI Release: 0.125.0 (2026-04-24)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-313349252
-
-0.125.0
 
 ## GPT-5.5 and Codex app updates (2026-04-23)
 
@@ -93,29 +63,11 @@ Codex app
 
 GPT-5.5 and Codex app updates
 
-## Codex CLI Release: 0.124.0 (2026-04-23)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-312880358
-
-0.124.0
-
-## Codex CLI Release: 0.123.0 (2026-04-23)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-312509536
-
-0.123.0
-
 ## Codex app (2026-04-20)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-04-20-app
 
 Codex app
-
-## Codex CLI Release: 0.122.0 (2026-04-20)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-311361536
-
-0.122.0
 
 ## Codex can now help with more of your work (2026-04-16)
 
@@ -123,23 +75,11 @@ Codex app
 
 Codex can now help with more of your work
 
-## Codex CLI Release: 0.121.0 (2026-04-15)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-309557036
-
-0.121.0
-
 ## Codex app (2026-04-12)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-04-12-app
 
 Codex app
-
-## Codex CLI Release: 0.120.0 (2026-04-11)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-307789275
-
-0.120.0
 
 ## Codex app (2026-04-10)
 

@@ -21,6 +21,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `app__troubleshooting` - [Troubleshooting](https://developers.openai.com/codex/app/troubleshooting)
 - `app__windows` - [Windows](https://developers.openai.com/codex/app/windows)
 - `app__worktrees` - [Worktrees](https://developers.openai.com/codex/app/worktrees)
+- `appshots` - [Appshots](https://developers.openai.com/codex/appshots)
 - `auth` - [Authentication](https://developers.openai.com/codex/auth)
 - `changelog` - [Codex Changelog](https://developers.openai.com/codex/changelog)
 - `cli` - [Codex CLI](https://developers.openai.com/codex/cli)
