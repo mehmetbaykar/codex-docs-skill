@@ -176,6 +176,10 @@ Manage plugin marketplace sources that Codex can browse and install from.
 root directories. Use `--ref` to pin a Git ref, and repeat `--sparse PATH` to
 use a sparse checkout for Git-backed marketplace repositories.
 
+`codex plugin marketplace list` prints in-scope marketplace names and roots,
+including implicitly discovered default marketplaces and configured marketplace
+snapshots.
+
 ### `codex mcp-server`
 
 Run Codex as an MCP server over stdio so that other tools can connect. This command inherits global configuration overrides and exits when the downstream client closes the connection.
