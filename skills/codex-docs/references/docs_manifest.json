@@ -58,8 +58,8 @@
       "title": "Codex Chrome extension"
     },
     "app__commands.md": {
-      "hash": "c73e5003e15c1751a4e8dd7aa95e01c22ed70d8387cf8280a81da691deafd62b",
-      "last_updated": "2026-05-21T19:51:14+00:00",
+      "hash": "1d5a5d11c07f9338bc85c095db6417d33aed1dc9dc552deb2168d223ee18e589",
+      "last_updated": "2026-05-22T17:07:05+00:00",
       "original_url": "https://developers.openai.com/codex/app/commands",
       "path": "/codex/app/commands",
       "source_url": "https://developers.openai.com/codex/app/commands.md",
@@ -522,8 +522,8 @@
       "title": "Quickstart"
     },
     "remote-connections.md": {
-      "hash": "1503d8f10fbf537ea67552e4746746dc0c77e274fc04c4780912c9b6de0d63bd",
-      "last_updated": "2026-05-18T22:00:55+00:00",
+      "hash": "a4b71445af86642c50caeb0e523d4048a2877a8d599dda96b213a4a2ced4f8be",
+      "last_updated": "2026-05-22T17:07:22+00:00",
       "original_url": "https://developers.openai.com/codex/remote-connections",
       "path": "/codex/remote-connections",
       "source_url": "https://developers.openai.com/codex/remote-connections.md",
@@ -1086,7 +1086,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-22T03:26:56+00:00",
+  "last_updated": "2026-05-22T17:07:44+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
