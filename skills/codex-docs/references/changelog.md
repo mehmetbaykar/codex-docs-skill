@@ -147,12 +147,6 @@ Codex can now help with more of your work
 
 Codex app
 
-## Codex CLI Release: 0.120.0 (2026-04-11)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-307789275
-
-0.120.0
-
 ## Codex app (2026-04-10)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-04-10-app
