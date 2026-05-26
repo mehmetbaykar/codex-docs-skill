@@ -58,8 +58,8 @@
       "title": "Codex Chrome extension"
     },
     "app__commands.md": {
-      "hash": "1d5a5d11c07f9338bc85c095db6417d33aed1dc9dc552deb2168d223ee18e589",
-      "last_updated": "2026-05-22T17:07:05+00:00",
+      "hash": "aaf57dfd42145acb48f1e43513870d80cbfdd4e22f6d37d8201d097e7edb8780",
+      "last_updated": "2026-05-26T17:55:12+00:00",
       "original_url": "https://developers.openai.com/codex/app/commands",
       "path": "/codex/app/commands",
       "source_url": "https://developers.openai.com/codex/app/commands.md",
@@ -98,8 +98,8 @@
       "title": "Review"
     },
     "app__settings.md": {
-      "hash": "2cb36177e0c43f4da866aac45e33e4b5cbe18d1806048a5c9e79a2cd8d07c0e7",
-      "last_updated": "2026-05-15T20:10:26+00:00",
+      "hash": "5d4e03bc61779b6b2359b6d7b131bf0a16e24e7e5b5c1b031393ed08d8bd237e",
+      "last_updated": "2026-05-26T17:55:13+00:00",
       "original_url": "https://developers.openai.com/codex/app/settings",
       "path": "/codex/app/settings",
       "source_url": "https://developers.openai.com/codex/app/settings.md",
@@ -146,8 +146,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "764d6c0c1eed6bfd1c72c34731cf31abfecb6063c60f9fe15924f40702ecd2c3",
-      "last_updated": "2026-05-25T14:49:37+00:00",
+      "hash": "eefa5e68ab845e8229424bbb57cb4251d7aa4aa69c47f9f32f6f6f224943ead4",
+      "last_updated": "2026-05-26T17:55:15+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -306,8 +306,8 @@
       "title": "Feature Maturity"
     },
     "github-action.md": {
-      "hash": "320d2b451d4737661e1911010c740a9cb4237127435f4403d33c0a4508d945b9",
-      "last_updated": "2026-05-15T20:08:35+00:00",
+      "hash": "38021ce9f78e5e1297251d913f8ead510569d5caacc4698a2d180ae6df9c4648",
+      "last_updated": "2026-05-26T17:55:21+00:00",
       "original_url": "https://developers.openai.com/codex/github-action",
       "path": "/codex/github-action",
       "source_url": "https://developers.openai.com/codex/github-action.md",
@@ -458,8 +458,8 @@
       "title": "Codex Models"
     },
     "noninteractive.md": {
-      "hash": "b4430e90abf0ffb4e1b311eb8f34b81656500450adaad09d19ab0a4c764ced17",
-      "last_updated": "2026-05-15T20:08:40+00:00",
+      "hash": "c6485f65c427f4e9b9e7c5c7348dc514fad41e4640401e01f046c61cc5189cfb",
+      "last_updated": "2026-05-26T17:55:26+00:00",
       "original_url": "https://developers.openai.com/codex/noninteractive",
       "path": "/codex/noninteractive",
       "source_url": "https://developers.openai.com/codex/noninteractive.md",
@@ -1086,7 +1086,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-25T14:50:13+00:00",
+  "last_updated": "2026-05-26T17:55:52+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
