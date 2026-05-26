@@ -13,84 +13,18 @@ Use this page as a searchable reference for Codex configuration files. For conce
 User-level configuration lives in `~/.codex/config.toml`. You can also add project-scoped overrides in `.codex/config.toml` files. Codex loads project-scoped config files only when you trust the project.
 
 Project-scoped config can't override machine-local provider, auth,
-notification, profile, or telemetry routing keys. Codex ignores
-`openai_base_url`, `chatgpt_base_url`, `model_provider`, `model_providers`,
-`notify`, `profile`, `profiles`, `experimental_realtime_ws_base_url`, and
-`otel` when they appear in a project-local `.codex/config.toml`; put those in
-user-level config instead.
+host-owned app request metadata, notification, configuration profile selection,
+or telemetry routing keys. Codex ignores `openai_base_url`,
+`chatgpt_base_url`, `apps_mcp_product_sku`, `model_provider`,
+`model_providers`, `notify`, `profile`, `profiles`,
+`experimental_realtime_ws_base_url`, and `otel` when they appear in a
+project-local `.codex/config.toml`; put provider, notification, and telemetry
+keys in user-level config instead. Config [profile files](https://developers.openai.com/codex/config-advanced#profiles) live next to
+`config.toml` as `$CODEX_HOME/profile-name.config.toml`; select one with
+`--profile profile-name`.
 
 For sandbox and approval keys (`approval_policy`, `sandbox_mode`, and `sandbox_workspace_write.*`), pair this reference with [Sandbox and approvals](https://developers.openai.com/codex/agent-approvals-security#sandbox-and-approvals), [Protected paths in writable roots](https://developers.openai.com/codex/agent-approvals-security#protected-paths-in-writable-roots), and [Network access](https://developers.openai.com/codex/agent-approvals-security#network-access). For beta permission profiles, see [Permissions](https://developers.openai.com/codex/permissions).
 
-    },
-    {
-      key: "oss_provider",
-      type: "lmstudio | ollama",
-      description:
-        "Default local provider used when running with `--oss` (defaults to prompting if unset).",
-    },
-    {
-      key: "approval_policy",
-      type: "untrusted | on-request | never | { granular = { sandbox_approval = bool, rules = bool, mcp_elicitations = bool, request_permissions = bool, skill_approval = bool } }",
-      description:
-        "Controls when Codex pauses for approval before executing commands. You can also use `approval_policy = { granular = { ... } }` to allow or auto-reject specific prompt categories while keeping other prompts interactive. `on-failure` is deprecated; use `on-request` for interactive runs or `never` for non-interactive runs.",
-    },
-    {
-      key: "approval_policy.granular.sandbox_approval",
-      type: "boolean",
-      description:
-        "When `true`, sandbox escalation approval prompts are allowed to surface.",
-    },
-    {
-      key: "approval_policy.granular.rules",
-      type: "boolean",
-      description:
-        "When `true`, approvals triggered by execpolicy `prompt` rules are allowed to surface.",
-    },
-    {
-      key: "approval_policy.granular.mcp_elicitations",
-      type: "boolean",
-      description:
-        "When `true`, MCP elicitation prompts are allowed to surface instead of being auto-rejected.",
-    },
-    {
-      key: "approval_policy.granular.request_permissions",
-      type: "boolean",
-      description:
-        "When `true`, prompts from the `request_permissions` tool are allowed to surface.",
-    },
-    {
-      key: "approval_policy.granular.skill_approval",
-      type: "boolean",
-      description:
-        "When `true`, skill-script approval prompts are allowed to surface.",
-    },
-    {
-      key: "approvals_reviewer",
-      type: "user | auto_review",
-      description:
-        "Who reviews eligible approval prompts under `on-request` or granular approval policies. Defaults to `user`; `auto_review` uses the reviewer subagent. This setting doesn't change sandboxing or review actions already allowed inside the sandbox.",
-    },
-    {
-      key: "auto_review.policy",
-      type: "string",
-      description:
-        "Local Markdown policy instructions for automatic review. Managed `guardian_policy_config` takes precedence. Blank values are ignored.",
-    },
-    {
-      key: "allow_login_shell",
-      type: "boolean",
-      description:
-        "Allow shell-based tools to use login-shell semantics. Defaults to `true`; when `false`, `login = true` requests are rejected and omitted `login` defaults to non-login shells.",
-    },
-    {
-      key: "sandbox_mode",
-      type: "read-only | workspace-write | danger-full-access",
-      description:
-        "Sandbox policy for filesystem and network access during command execution.",
-    },
-    {
-      key: "sandbox_workspace_write.writable_roots",
-      type: "array<string>",
       description:
         'Additional writable roots when `sandbox_mode = "workspace-write"`.',
     },
@@ -916,78 +850,6 @@ For sandbox and approval keys (`approval_policy`, `sandbox_mode`, and `sandbox_w
       key: "project_doc_fallback_filenames",
       type: "array<string>",
       description: "Additional filenames to try when `AGENTS.md` is missing.",
-    },
-    {
-      key: "profile",
-      type: "string",
-      description:
-        "Default profile applied at startup (equivalent to `--profile`).",
-    },
-    {
-      key: "profiles.<name>.*",
-      type: "various",
-      description:
-        "Profile-scoped overrides for any of the supported configuration keys.",
-    },
-    {
-      key: "profiles.<name>.service_tier",
-      type: "string",
-      description: "Profile-scoped service tier preference for new turns.",
-    },
-    {
-      key: "profiles.<name>.plan_mode_reasoning_effort",
-      type: "none | minimal | low | medium | high | xhigh",
-      description: "Profile-scoped Plan-mode reasoning override.",
-    },
-    {
-      key: "profiles.<name>.web_search",
-      type: "disabled | cached | live",
-      description:
-        'Profile-scoped web search mode override (default: `"cached"`).',
-    },
-    {
-      key: "profiles.<name>.personality",
-      type: "none | friendly | pragmatic",
-      description:
-        "Profile-scoped communication style override for supported models.",
-    },
-    {
-      key: "profiles.<name>.model_catalog_json",
-      type: "string (path)",
-      description:
-        "Profile-scoped model catalog JSON path override (applied on startup only; overrides the top-level `model_catalog_json` for that profile).",
-    },
-    {
-      key: "profiles.<name>.model_instructions_file",
-      type: "string (path)",
-      description:
-        "Profile-scoped replacement for the built-in instruction file.",
-    },
-    {
-      key: "profiles.<name>.experimental_use_unified_exec_tool",
-      type: "boolean",
-      description:
-        "Legacy name for enabling unified exec; prefer `[features].unified_exec`.",
-    },
-    {
-      key: "profiles.<name>.oss_provider",
-      type: "lmstudio | ollama",
-      description: "Profile-scoped OSS provider for `--oss` sessions.",
-    },
-    {
-      key: "profiles.<name>.tools_view_image",
-      type: "boolean",
-      description: "Enable or disable the `view_image` tool in that profile.",
-    },
-    {
-      key: "profiles.<name>.analytics.enabled",
-      type: "boolean",
-      description: "Profile-scoped analytics enablement override.",
-    },
-    {
-      key: "profiles.<name>.windows.sandbox",
-      type: "unelevated | elevated",
-      description: "Profile-scoped Windows sandbox mode override.",
     },
     {
       key: "history.persistence",
