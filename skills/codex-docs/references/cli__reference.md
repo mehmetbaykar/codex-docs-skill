@@ -137,7 +137,7 @@ Generate shell completion scripts and redirect the output to the appropriate loc
 
 ### `codex features`
 
-Manage feature flags stored in `~/.codex/config.toml`. The `enable` and `disable` commands persist changes so they apply to future sessions. When you launch with `--profile`, Codex writes to that profile instead of the root configuration.
+Manage feature flags stored in `~/.codex/config.toml` or the selected profile file. The `enable` and `disable` commands persist changes so they apply to future sessions. When you launch with `--profile profile-name`, Codex writes to `$CODEX_HOME/profile-name.config.toml` instead of the base user config.
 
 ### `codex exec`
 
