@@ -418,8 +418,8 @@
       "title": "Best practices"
     },
     "mcp.md": {
-      "hash": "6e8dc307010153fe0ac00fe62e507fed732b17ed7966afddc7036df4c72447e1",
-      "last_updated": "2026-05-18T15:27:14+00:00",
+      "hash": "325be4f50fea4d352debda1ccb737f34e5a64bb99745beac4767aa6a019d2976",
+      "last_updated": "2026-05-27T03:33:35+00:00",
       "original_url": "https://developers.openai.com/codex/mcp",
       "path": "/codex/mcp",
       "source_url": "https://developers.openai.com/codex/mcp.md",
@@ -1086,7 +1086,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-26T20:07:20+00:00",
+  "last_updated": "2026-05-27T03:34:03+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
