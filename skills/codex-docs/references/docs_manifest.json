@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 133,
-    "pages_skipped": 8,
-    "total_pages_discovered": 141
+    "pages_fetched_successfully": 138,
+    "pages_skipped": 9,
+    "total_pages_discovered": 147
   },
   "files": {
     "agent-approvals-security.md": {
@@ -482,8 +482,8 @@
       "title": "Permissions"
     },
     "plugins.md": {
-      "hash": "2894214a19d3c27fecdf7dac52d6d38efd2ffb200cb1efd78d96fba8b645f32d",
-      "last_updated": "2026-05-21T19:51:27+00:00",
+      "hash": "8bc3a00a9570fd9138a0e38217eeb9f1cf963588ebeae098ff8fdd70ca4f2769",
+      "last_updated": "2026-05-28T22:40:34+00:00",
       "original_url": "https://developers.openai.com/codex/plugins",
       "path": "/codex/plugins",
       "source_url": "https://developers.openai.com/codex/plugins.md",
@@ -546,8 +546,8 @@
       "title": "Codex SDK"
     },
     "security.md": {
-      "hash": "1e47b1496e2ddd1cffb5b3650697b02c38a75feb74df74b8a7a8eb4f7eb8c01f",
-      "last_updated": "2026-05-28T18:10:07+00:00",
+      "hash": "069065ca2f75e4e4a0d6960ef2e2c966ab59cbdf22e54924697ecc6009b5bca0",
+      "last_updated": "2026-05-28T22:40:36+00:00",
       "original_url": "https://developers.openai.com/codex/security",
       "path": "/codex/security",
       "source_url": "https://developers.openai.com/codex/security.md",
@@ -560,6 +560,14 @@
       "path": "/codex/security/faq",
       "source_url": "https://developers.openai.com/codex/security/faq.md",
       "title": "FAQ"
+    },
+    "security__plugin.md": {
+      "hash": "da2ec23b5f92a708950a3e46262a4d1ffd0ae9803a10fd7151849665465f5bb4",
+      "last_updated": "2026-05-28T22:40:37+00:00",
+      "original_url": "https://developers.openai.com/codex/security/plugin",
+      "path": "/codex/security/plugin",
+      "source_url": "https://developers.openai.com/codex/security/plugin.md",
+      "title": "Codex Security plugin"
     },
     "security__setup.md": {
       "hash": "271f64bc242b8230b1acd0e9ecba3403b1a30b6eb6d0425f01b61cd2fd40ecd3",
@@ -729,6 +737,14 @@
       "source_url": "https://developers.openai.com/codex/use-cases/collections/productivity-and-collaboration.md",
       "title": "Productivity & Collaboration"
     },
+    "use-cases__collections__security.md": {
+      "hash": "a4f9d0d37d870cc1c39ac5d2ace27f5e059b3d8b51a46b94dd43d71afa8f2dba",
+      "last_updated": "2026-05-28T22:40:44+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/collections/security",
+      "path": "/codex/use-cases/collections/security",
+      "source_url": "https://developers.openai.com/codex/use-cases/collections/security.md",
+      "title": "Security"
+    },
     "use-cases__collections__web-development.md": {
       "hash": "a1945f0fecd3aa2ba691f7c983d059dafe8ec01a366cdafeaf1a3224b3079fb0",
       "last_updated": "2026-05-19T22:14:45+00:00",
@@ -760,6 +776,14 @@
       "path": "/codex/use-cases/dcf-model",
       "source_url": "https://developers.openai.com/codex/use-cases/dcf-model.md",
       "title": "Use Cases Dcf Model"
+    },
+    "use-cases__deep-security-scan.md": {
+      "hash": "87f90474726e04610f404a02807e68d251397284c31288ead7e18eb9a9529281",
+      "last_updated": "2026-05-28T22:40:46+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/deep-security-scan",
+      "path": "/codex/use-cases/deep-security-scan",
+      "source_url": "https://developers.openai.com/codex/use-cases/deep-security-scan.md",
+      "title": "Use Cases Deep Security Scan"
     },
     "use-cases__dependency-incident-audits.md": {
       "hash": "0610ed9da7984324979fa0c676589ab2c05da7f2217ccc6fd931bfd714299bde",
@@ -993,6 +1017,14 @@
       "source_url": "https://developers.openai.com/codex/use-cases/refactor-your-codebase.md",
       "title": "Use Cases Refactor Your Codebase"
     },
+    "use-cases__remediate-vulnerability-backlog.md": {
+      "hash": "fdc20651a24a39392644b7534e4715ebf5f3979e34720f8d77a16da6d5bb7850",
+      "last_updated": "2026-05-28T22:40:56+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/remediate-vulnerability-backlog",
+      "path": "/codex/use-cases/remediate-vulnerability-backlog",
+      "source_url": "https://developers.openai.com/codex/use-cases/remediate-vulnerability-backlog.md",
+      "title": "Use Cases Remediate Vulnerability Backlog"
+    },
     "use-cases__reusable-codex-skills.md": {
       "hash": "505e0495aade9c5223ee72699d73162d3d1fa4bc24e869cb867e72920ecf0ad0",
       "last_updated": "2026-05-15T20:09:03+00:00",
@@ -1000,6 +1032,14 @@
       "path": "/codex/use-cases/reusable-codex-skills",
       "source_url": "https://developers.openai.com/codex/use-cases/reusable-codex-skills.md",
       "title": "Use Cases Reusable Codex Skills"
+    },
+    "use-cases__scan-code-changes-for-security.md": {
+      "hash": "3bca5587988cb8a713c557097175a07f12eb9255bc98aa43e9b785decdf80d0b",
+      "last_updated": "2026-05-28T22:40:56+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/scan-code-changes-for-security",
+      "path": "/codex/use-cases/scan-code-changes-for-security",
+      "source_url": "https://developers.openai.com/codex/use-cases/scan-code-changes-for-security.md",
+      "title": "Use Cases Scan Code Changes For Security"
     },
     "use-cases__slack-action-triage.md": {
       "hash": "86f0b2127b20a988932f8316cdc970fe86acffa64e6bfd6ddb57fcb6df696ef5",
@@ -1086,7 +1126,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-28T18:10:26+00:00",
+  "last_updated": "2026-05-28T22:40:59+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
@@ -1107,6 +1147,11 @@
       "path": "/codex/tracks/productivity-and-collaboration",
       "reason": "No .md endpoint and no special fetcher",
       "url": "https://developers.openai.com/codex/tracks/productivity-and-collaboration"
+    },
+    {
+      "path": "/codex/tracks/security",
+      "reason": "No .md endpoint and no special fetcher",
+      "url": "https://developers.openai.com/codex/tracks/security"
     },
     {
       "path": "/codex/tracks/web-development",
