@@ -146,8 +146,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "7b8feb88120903bc9a797b2c9c560d686034ba60099a76ce002411ac49f149a2",
-      "last_updated": "2026-05-26T20:06:39+00:00",
+      "hash": "8c3b603c557296010d3fc53ee9f7e3da692301fece79d81b335ac2cf04add358",
+      "last_updated": "2026-05-28T18:09:53+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -546,8 +546,8 @@
       "title": "Codex SDK"
     },
     "security.md": {
-      "hash": "eb351f3f2e0fe0c583ac81d164b961b704bafa55968e8d58d5eda11f3311d121",
-      "last_updated": "2026-05-15T20:08:42+00:00",
+      "hash": "1e47b1496e2ddd1cffb5b3650697b02c38a75feb74df74b8a7a8eb4f7eb8c01f",
+      "last_updated": "2026-05-28T18:10:07+00:00",
       "original_url": "https://developers.openai.com/codex/security",
       "path": "/codex/security",
       "source_url": "https://developers.openai.com/codex/security.md",
@@ -1086,7 +1086,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-27T22:29:37+00:00",
+  "last_updated": "2026-05-28T18:10:26+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
