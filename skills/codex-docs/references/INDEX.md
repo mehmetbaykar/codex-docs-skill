@@ -75,6 +75,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `sdk` - [Codex SDK](https://developers.openai.com/codex/sdk)
 - `security` - [Codex Security](https://developers.openai.com/codex/security)
 - `security__faq` - [FAQ](https://developers.openai.com/codex/security/faq)
+- `security__plugin` - [Codex Security plugin](https://developers.openai.com/codex/security/plugin)
 - `security__setup` - [Codex Security setup](https://developers.openai.com/codex/security/setup)
 - `security__threat-model` - [Improving the threat model](https://developers.openai.com/codex/security/threat-model)
 - `skills` - [Agent Skills](https://developers.openai.com/codex/skills)
@@ -96,10 +97,12 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `use-cases__collections__native-development` - [Native development](https://developers.openai.com/codex/use-cases/collections/native-development)
 - `use-cases__collections__production-systems` - [Production systems](https://developers.openai.com/codex/use-cases/collections/production-systems)
 - `use-cases__collections__productivity-and-collaboration` - [Productivity & Collaboration](https://developers.openai.com/codex/use-cases/collections/productivity-and-collaboration)
+- `use-cases__collections__security` - [Security](https://developers.openai.com/codex/use-cases/collections/security)
 - `use-cases__collections__web-development` - [Web development](https://developers.openai.com/codex/use-cases/collections/web-development)
 - `use-cases__complete-tasks-from-messages` - [Use Cases Complete Tasks From Messages](https://developers.openai.com/codex/use-cases/complete-tasks-from-messages)
 - `use-cases__datasets-and-reports` - [Use Cases Datasets And Reports](https://developers.openai.com/codex/use-cases/datasets-and-reports)
 - `use-cases__dcf-model` - [Use Cases Dcf Model](https://developers.openai.com/codex/use-cases/dcf-model)
+- `use-cases__deep-security-scan` - [Use Cases Deep Security Scan](https://developers.openai.com/codex/use-cases/deep-security-scan)
 - `use-cases__dependency-incident-audits` - [Use Cases Dependency Incident Audits](https://developers.openai.com/codex/use-cases/dependency-incident-audits)
 - `use-cases__deploy-app-or-website` - [Use Cases Deploy App Or Website](https://developers.openai.com/codex/use-cases/deploy-app-or-website)
 - `use-cases__draft-prds-from-sources` - [Use Cases Draft Prds From Sources](https://developers.openai.com/codex/use-cases/draft-prds-from-sources)
@@ -129,7 +132,9 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `use-cases__qa-your-app-with-computer-use` - [Use Cases Qa Your App With Computer Use](https://developers.openai.com/codex/use-cases/qa-your-app-with-computer-use)
 - `use-cases__react-native-expo-apps` - [Use Cases React Native Expo Apps](https://developers.openai.com/codex/use-cases/react-native-expo-apps)
 - `use-cases__refactor-your-codebase` - [Use Cases Refactor Your Codebase](https://developers.openai.com/codex/use-cases/refactor-your-codebase)
+- `use-cases__remediate-vulnerability-backlog` - [Use Cases Remediate Vulnerability Backlog](https://developers.openai.com/codex/use-cases/remediate-vulnerability-backlog)
 - `use-cases__reusable-codex-skills` - [Use Cases Reusable Codex Skills](https://developers.openai.com/codex/use-cases/reusable-codex-skills)
+- `use-cases__scan-code-changes-for-security` - [Use Cases Scan Code Changes For Security](https://developers.openai.com/codex/use-cases/scan-code-changes-for-security)
 - `use-cases__slack-action-triage` - [Use Cases Slack Action Triage](https://developers.openai.com/codex/use-cases/slack-action-triage)
 - `use-cases__slack-coding-tasks` - [Use Cases Slack Coding Tasks](https://developers.openai.com/codex/use-cases/slack-coding-tasks)
 - `use-cases__update-documentation` - [Use Cases Update Documentation](https://developers.openai.com/codex/use-cases/update-documentation)
@@ -146,6 +151,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `/codex/tracks/native-development` - No .md endpoint and no special fetcher
 - `/codex/tracks/production-systems` - No .md endpoint and no special fetcher
 - `/codex/tracks/productivity-and-collaboration` - No .md endpoint and no special fetcher
+- `/codex/tracks/security` - No .md endpoint and no special fetcher
 - `/codex/tracks/web-development` - No .md endpoint and no special fetcher
 - `/codex/use-cases` - No .md endpoint and no special fetcher
 - `/codex/use-cases/collections` - No .md endpoint and no special fetcher
