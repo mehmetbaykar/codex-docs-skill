@@ -66,16 +66,16 @@
       "title": "Codex app commands"
     },
     "app__computer-use.md": {
-      "hash": "820cc7e40d6a9b2423de0d8099b6743a716c915756631f859203615126f57812",
-      "last_updated": "2026-05-21T19:51:14+00:00",
+      "hash": "1d62ef653d600ee19ab94ce5ac02b0d3ecabfb2352679d4571818f9bad282117",
+      "last_updated": "2026-05-29T18:11:42+00:00",
       "original_url": "https://developers.openai.com/codex/app/computer-use",
       "path": "/codex/app/computer-use",
       "source_url": "https://developers.openai.com/codex/app/computer-use.md",
       "title": "Computer Use"
     },
     "app__features.md": {
-      "hash": "686a3e364a3dd960e63ab2b1ee66c8a8d9d57346f44d2007eec2c2452e7a865c",
-      "last_updated": "2026-05-15T20:10:25+00:00",
+      "hash": "b83764eba1e10480e988fb41ee0ccd7b777206b1574312e60cbb4a615c1d1bca",
+      "last_updated": "2026-05-29T18:11:42+00:00",
       "original_url": "https://developers.openai.com/codex/app/features",
       "path": "/codex/app/features",
       "source_url": "https://developers.openai.com/codex/app/features.md",
@@ -98,8 +98,8 @@
       "title": "Review"
     },
     "app__settings.md": {
-      "hash": "5d4e03bc61779b6b2359b6d7b131bf0a16e24e7e5b5c1b031393ed08d8bd237e",
-      "last_updated": "2026-05-26T17:55:13+00:00",
+      "hash": "21cf00ecca48e7390e4251aeb53f08326e336724fff906a024a7f38c89181a5b",
+      "last_updated": "2026-05-29T18:11:43+00:00",
       "original_url": "https://developers.openai.com/codex/app/settings",
       "path": "/codex/app/settings",
       "source_url": "https://developers.openai.com/codex/app/settings.md",
@@ -146,8 +146,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "8c3b603c557296010d3fc53ee9f7e3da692301fece79d81b335ac2cf04add358",
-      "last_updated": "2026-05-28T18:09:53+00:00",
+      "hash": "ec8b64fa2e460e332c93f90fc5355f842fb865f79dd4f0580a57e59b5226e250",
+      "last_updated": "2026-05-29T18:11:45+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -522,8 +522,8 @@
       "title": "Quickstart"
     },
     "remote-connections.md": {
-      "hash": "a4b71445af86642c50caeb0e523d4048a2877a8d599dda96b213a4a2ced4f8be",
-      "last_updated": "2026-05-22T17:07:22+00:00",
+      "hash": "11d356ef33b71a84b25f4c0ba0ccec418dbaa5371f3416c1c8be21c8ccbd5a2c",
+      "last_updated": "2026-05-29T18:11:57+00:00",
       "original_url": "https://developers.openai.com/codex/remote-connections",
       "path": "/codex/remote-connections",
       "source_url": "https://developers.openai.com/codex/remote-connections.md",
@@ -1126,7 +1126,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-29T02:57:33+00:00",
+  "last_updated": "2026-05-29T18:12:24+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",

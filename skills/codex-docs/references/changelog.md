@@ -3,6 +3,12 @@
 > Source: https://developers.openai.com/codex/changelog
 > RSS: https://developers.openai.com/codex/changelog/rss.xml
 
+## Computer use and mobile access on Windows (2026-05-29)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-05-28-app
+
+Computer use and mobile access on Windows
+
 ## Codex CLI Release: 0.135.0 (2026-05-28)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-331012967
