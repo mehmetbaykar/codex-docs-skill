@@ -19,6 +19,12 @@ You can also use Codex with API credits by signing in with an OpenAI API key.
     powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
     ```
     ```bash
+    curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_NON_INTERACTIVE=1 sh
+    ```
+    ```powershell
+    $env:CODEX_NON_INTERACTIVE=1; irm https://chatgpt.com/codex/install.ps1 | iex
+    ```
+    ```bash
     npm install -g @openai/codex
     ```
     ```bash

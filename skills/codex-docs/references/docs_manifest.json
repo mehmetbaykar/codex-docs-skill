@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 138,
+    "pages_fetched_successfully": 139,
     "pages_skipped": 9,
-    "total_pages_discovered": 147
+    "total_pages_discovered": 148
   },
   "files": {
     "agent-approvals-security.md": {
@@ -146,8 +146,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "ec8b64fa2e460e332c93f90fc5355f842fb865f79dd4f0580a57e59b5226e250",
-      "last_updated": "2026-05-29T18:11:45+00:00",
+      "hash": "2459adf99d3bfdee61daec3ff11af538b6f63a228d97b5c2d829944a362b542a",
+      "last_updated": "2026-05-29T22:27:44+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -266,24 +266,24 @@
       "title": "Advanced Configuration"
     },
     "config-basic.md": {
-      "hash": "19a484ba3a7dc33d787a9f88fe7487a1c049e1a60310fa7fc2baf21d375d09fc",
-      "last_updated": "2026-05-26T20:06:43+00:00",
+      "hash": "8ed72ddd7e6edf7dcec61c6ff4b7669b6ade2388d5136c33a86ec626fc21b808",
+      "last_updated": "2026-05-29T22:27:47+00:00",
       "original_url": "https://developers.openai.com/codex/config-basic",
       "path": "/codex/config-basic",
       "source_url": "https://developers.openai.com/codex/config-basic.md",
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "6fc906a345932cc13065f4ec4595993459bb41ba844f6fbbc8fdab3dbce3ac6a",
-      "last_updated": "2026-05-29T02:57:05+00:00",
+      "hash": "5f10eca9ebf818ff34dbd1b5928381f6367a3f16fbf26515360ded912198f504",
+      "last_updated": "2026-05-29T22:27:47+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
       "title": "Configuration Reference"
     },
     "config-sample.md": {
-      "hash": "12c30ec291b29c01cc39a69c47fdb325f3e2e3e45574bb1b769583d246ac680f",
-      "last_updated": "2026-05-26T20:06:43+00:00",
+      "hash": "ce39db647bf99dbe9bcccd89bb95d7b106e9915778e22181f0105b830a137802",
+      "last_updated": "2026-05-29T22:27:48+00:00",
       "original_url": "https://developers.openai.com/codex/config-sample",
       "path": "/codex/config-sample",
       "source_url": "https://developers.openai.com/codex/config-sample.md",
@@ -296,6 +296,14 @@
       "path": "/codex/custom-prompts",
       "source_url": "https://developers.openai.com/codex/custom-prompts.md",
       "title": "Custom Prompts"
+    },
+    "environment-variables.md": {
+      "hash": "3a6966ad7e08bc71df02b1c4589367c72e23a3561daae7f80e033d39bbff93e1",
+      "last_updated": "2026-05-29T22:27:48+00:00",
+      "original_url": "https://developers.openai.com/codex/environment-variables",
+      "path": "/codex/environment-variables",
+      "source_url": "https://developers.openai.com/codex/environment-variables.md",
+      "title": "Environment variables"
     },
     "feature-maturity.md": {
       "hash": "56efb0ab26a7af5170f3cde0f22fbc6b83240ec028b940e48a71a97cbd2aa547",
@@ -314,8 +322,8 @@
       "title": "Codex GitHub Action"
     },
     "guides__agents-md.md": {
-      "hash": "c5f79dd6e07b357d9b5ff5df6f0426f3cda9ee2f344d53f41f56b12052f411e5",
-      "last_updated": "2026-05-15T20:08:35+00:00",
+      "hash": "fd81b8410abef4d8abdaf9b97564fc7753f9e9295c2bd2a3ba3589d14b2c4ddb",
+      "last_updated": "2026-05-29T22:27:49+00:00",
       "original_url": "https://developers.openai.com/codex/guides/agents-md",
       "path": "/codex/guides/agents-md",
       "source_url": "https://developers.openai.com/codex/guides/agents-md.md",
@@ -514,8 +522,8 @@
       "title": "Prompting"
     },
     "quickstart.md": {
-      "hash": "a106c7156b1fbe44c615c7b85db492179d0f4adf390b37d0eec99586dbff924c",
-      "last_updated": "2026-05-26T20:06:53+00:00",
+      "hash": "ff0b3c051497d97a8610709a813d9a17bb08e7164f95013827921c7b18c088d4",
+      "last_updated": "2026-05-29T22:27:55+00:00",
       "original_url": "https://developers.openai.com/codex/quickstart",
       "path": "/codex/quickstart",
       "source_url": "https://developers.openai.com/codex/quickstart.md",
@@ -1126,7 +1134,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-29T18:12:24+00:00",
+  "last_updated": "2026-05-29T22:28:16+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
