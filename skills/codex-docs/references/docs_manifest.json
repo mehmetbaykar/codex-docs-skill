@@ -274,8 +274,8 @@
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "517d8d1b829eaf84272e0114acd1c5f6da27c4a66bdda9416c192f2101236171",
-      "last_updated": "2026-05-27T22:29:06+00:00",
+      "hash": "6fc906a345932cc13065f4ec4595993459bb41ba844f6fbbc8fdab3dbce3ac6a",
+      "last_updated": "2026-05-29T02:57:05+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
@@ -474,8 +474,8 @@
       "title": "Open Source"
     },
     "permissions.md": {
-      "hash": "8ee9786bd55cc1ae577f12d20bd24766e43d8110f2cc241aabc25316423ff91a",
-      "last_updated": "2026-05-27T22:29:12+00:00",
+      "hash": "01b7c9d966f3d044eef1fb1439718da991bc8af2ae1e741153719ea7aeeecc86",
+      "last_updated": "2026-05-29T02:57:11+00:00",
       "original_url": "https://developers.openai.com/codex/permissions",
       "path": "/codex/permissions",
       "source_url": "https://developers.openai.com/codex/permissions.md",
@@ -1126,7 +1126,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-05-28T22:40:59+00:00",
+  "last_updated": "2026-05-29T02:57:33+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
