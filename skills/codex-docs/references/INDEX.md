@@ -42,6 +42,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `config-reference` - [Configuration Reference](https://developers.openai.com/codex/config-reference)
 - `config-sample` - [Sample Configuration](https://developers.openai.com/codex/config-sample)
 - `custom-prompts` - [Custom Prompts](https://developers.openai.com/codex/custom-prompts)
+- `environment-variables` - [Environment variables](https://developers.openai.com/codex/environment-variables)
 - `feature-maturity` - [Feature Maturity](https://developers.openai.com/codex/feature-maturity)
 - `github-action` - [Codex GitHub Action](https://developers.openai.com/codex/github-action)
 - `guides__agents-md` - [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
