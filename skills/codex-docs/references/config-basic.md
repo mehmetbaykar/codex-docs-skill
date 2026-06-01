@@ -126,7 +126,7 @@ You can override this later in an active session with `/personality` or per thre
 
 #### TUI keymap
 
-Customize terminal shortcuts under `tui.keymap`. Context-specific bindings override `tui.keymap.global`, and an empty list unbinds the action.
+Customize terminal shortcuts under `tui.keymap`. Selected composer actions fall back to matching `tui.keymap.global` bindings; context-specific bindings take precedence when supported. An empty list unbinds the action.
 
 ```toml
 [tui.keymap.global]
@@ -134,6 +134,9 @@ open_transcript = "ctrl-t"
 
 [tui.keymap.composer]
 submit = ["enter", "ctrl-m"]
+
+[tui.keymap.chat]
+interrupt_turn = "f12"
 ```
 
 #### Command environment
