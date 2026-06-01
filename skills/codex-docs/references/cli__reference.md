@@ -52,6 +52,8 @@ path: /codex/cli/reference
 
 ];
 
+];
+
 ## How to read this reference
 
 This page catalogs every documented Codex CLI command and flag. Use the interactive tables to search by key or description. Each section indicates whether the option is stable or experimental and calls out risky combinations.
@@ -63,8 +65,10 @@ The CLI inherits most defaults from <code>~/.codex/config.toml</code>. Any
 
 ## Global flags
 
-These options apply to the base `codex` command and propagate to each subcommand unless a section below specifies otherwise.
-When you run a subcommand, place global flags after it (for example, `codex exec --oss ...`) so Codex applies them as intended.
+These options apply to the base `codex` command. Most propagate to commands;
+see the notes above or the relevant command help for exceptions. For propagated
+flags, follow the relevant command help. For example, `codex exec --oss ...`
+applies `--oss` to `exec`.
 
 ## Command overview
 
@@ -78,7 +82,7 @@ The Maturity column uses feature maturity labels such as Experimental, Beta,
 
 Running `codex` with no subcommand launches the interactive terminal UI (TUI). The agent accepts the global flags above plus image attachments. Web search defaults to cached mode; use `--search` to switch to live browsing. For low-friction local work, use `--sandbox workspace-write --ask-for-approval on-request`.
 
-Use `--remote ws://host:port` or `--remote wss://host:port` to connect the TUI to an app server started with `codex app-server --listen ws://IP:PORT`. Add `--remote-auth-token-env ` when the server requires a bearer token for WebSocket authentication.
+Use `--remote ws://host:port` or `--remote wss://host:port` to connect the TUI to an app server started with `codex app-server --listen ws://IP:PORT`. For a local Unix socket, use `--remote unix://` for the default socket or `--remote unix://PATH` for an explicit path. Add `--remote-auth-token-env ` when the server requires a bearer token for WebSocket authentication.
 
 ### `codex app-server`
 
@@ -135,9 +139,18 @@ Plain-text output prints a task URL followed by status details. Use `--json` for
 
 Generate shell completion scripts and redirect the output to the appropriate location, for example `codex completion zsh > "${fpath[1]}/_codex"`.
 
+### `codex doctor`
+
+Generate a local diagnostic report before filing a support issue or
+while investigating a broken Codex installation. The report checks installation,
+configuration, authentication, runtime, Git, terminal, app-server, and thread
+inventory health.
+
 ### `codex features`
 
-Manage feature flags stored in `~/.codex/config.toml` or the selected profile file. The `enable` and `disable` commands persist changes so they apply to future sessions. When you launch with `--profile profile-name`, Codex writes to `$CODEX_HOME/profile-name.config.toml` instead of the base user config.
+Manage feature flags stored in `$CODEX_HOME/config.toml`. The `enable` and
+`disable` commands persist changes so they apply to future sessions. The
+`features` subcommand doesn't accept `--profile`.
 
 ### `codex exec`
 
