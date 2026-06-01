@@ -146,8 +146,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "ec8b64fa2e460e332c93f90fc5355f842fb865f79dd4f0580a57e59b5226e250",
-      "last_updated": "2026-06-01T11:28:36+00:00",
+      "hash": "8ad87a472fdda50a7da84c3c46aff2460c9387cb951cea9761c07b24af78eb14",
+      "last_updated": "2026-06-01T21:30:16+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -162,24 +162,24 @@
       "title": "Codex CLI"
     },
     "cli__features.md": {
-      "hash": "e8028ad37805731267694a08e37817ec90652d7037e5a57619c680d9c6edbd5e",
-      "last_updated": "2026-05-26T20:06:39+00:00",
+      "hash": "59cd162032d6bef65433ae0b16e5611f6bf6c39c9d8ff2349752b565c2cb89cc",
+      "last_updated": "2026-06-01T21:30:17+00:00",
       "original_url": "https://developers.openai.com/codex/cli/features",
       "path": "/codex/cli/features",
       "source_url": "https://developers.openai.com/codex/cli/features.md",
       "title": "Codex CLI features"
     },
     "cli__reference.md": {
-      "hash": "0fe71368b4fef83f7a9e063db7ae4987751daf2c979f5300e46b311fcb618529",
-      "last_updated": "2026-05-26T20:06:39+00:00",
+      "hash": "25e20f5cb41d83330db0470061346b8f5b6e06378595321e1a5851c600b5c9dd",
+      "last_updated": "2026-06-01T21:30:17+00:00",
       "original_url": "https://developers.openai.com/codex/cli/reference",
       "path": "/codex/cli/reference",
       "source_url": "https://developers.openai.com/codex/cli/reference.md",
       "title": "Command line options"
     },
     "cli__slash-commands.md": {
-      "hash": "996cb49a106c875623f141b47c1b875b0ce20a18c84ae2f81ad18816c074c9b4",
-      "last_updated": "2026-05-21T19:51:17+00:00",
+      "hash": "71c4dd5e0661e175a28f561dddb80abb3a8ba7b992f5680831a23fe5f4a6d8c7",
+      "last_updated": "2026-06-01T21:30:17+00:00",
       "original_url": "https://developers.openai.com/codex/cli/slash-commands",
       "path": "/codex/cli/slash-commands",
       "source_url": "https://developers.openai.com/codex/cli/slash-commands.md",
@@ -266,24 +266,24 @@
       "title": "Advanced Configuration"
     },
     "config-basic.md": {
-      "hash": "8ed72ddd7e6edf7dcec61c6ff4b7669b6ade2388d5136c33a86ec626fc21b808",
-      "last_updated": "2026-05-29T22:27:47+00:00",
+      "hash": "b82f8182d327dd2ccf77c134586df6ec91a3cb4eeb78e8c6628c81b440ff73df",
+      "last_updated": "2026-06-01T21:30:19+00:00",
       "original_url": "https://developers.openai.com/codex/config-basic",
       "path": "/codex/config-basic",
       "source_url": "https://developers.openai.com/codex/config-basic.md",
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "5f10eca9ebf818ff34dbd1b5928381f6367a3f16fbf26515360ded912198f504",
-      "last_updated": "2026-05-29T22:27:47+00:00",
+      "hash": "d9c5025b4fdcb294853a0ba521228ccbc7c835582125de0b4aba0023a20aa8e0",
+      "last_updated": "2026-06-01T21:30:20+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
       "title": "Configuration Reference"
     },
     "config-sample.md": {
-      "hash": "ce39db647bf99dbe9bcccd89bb95d7b106e9915778e22181f0105b830a137802",
-      "last_updated": "2026-05-29T22:27:48+00:00",
+      "hash": "a644f94debf9018ab5e64d7143ec0ad029605a8dd2bf350abef8c51582ce89cb",
+      "last_updated": "2026-06-01T21:30:20+00:00",
       "original_url": "https://developers.openai.com/codex/config-sample",
       "path": "/codex/config-sample",
       "source_url": "https://developers.openai.com/codex/config-sample.md",
@@ -546,8 +546,8 @@
       "title": "Rules"
     },
     "sdk.md": {
-      "hash": "d2200793349c7914a10f4f743e13277f0e7ef6abcd90cb298e9d5ba961f71005",
-      "last_updated": "2026-05-15T21:20:50+00:00",
+      "hash": "cd2ee355532614515d57f702836f83530f697b82881e2389f1fbac4b5c2246b2",
+      "last_updated": "2026-06-01T21:30:28+00:00",
       "original_url": "https://developers.openai.com/codex/sdk",
       "path": "/codex/sdk",
       "source_url": "https://developers.openai.com/codex/sdk.md",
@@ -1134,7 +1134,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-01T11:29:10+00:00",
+  "last_updated": "2026-06-01T21:30:53+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
