@@ -18,8 +18,8 @@
       "title": "Agent approvals & security"
     },
     "amazon-bedrock.md": {
-      "hash": "ec2db4a27af278e9aefeb1b0465ff419146ff6d616f83a87507784f70852f339",
-      "last_updated": "2026-06-02T03:41:35+00:00",
+      "hash": "570c86d13c87a405a0637ac00f33a58c1730842b1a0bdc221e355b3c5320f9a4",
+      "last_updated": "2026-06-02T20:45:28+00:00",
       "original_url": "https://developers.openai.com/codex/amazon-bedrock",
       "path": "/codex/amazon-bedrock",
       "source_url": "https://developers.openai.com/codex/amazon-bedrock.md",
@@ -34,8 +34,8 @@
       "title": "Codex App Server"
     },
     "app.md": {
-      "hash": "3da928272fb16a83e9a783a39abdc4f72f35b797279f2b7bdd7984a1fe77dc88",
-      "last_updated": "2026-06-02T16:19:31+00:00",
+      "hash": "48ab81b6e139b6fd8f21040e866ec9fc3497e6ca56e7fe16c82a5e43e319ee9a",
+      "last_updated": "2026-06-02T20:45:28+00:00",
       "original_url": "https://developers.openai.com/codex/app",
       "path": "/codex/app",
       "source_url": "https://developers.openai.com/codex/app.md",
@@ -146,16 +146,16 @@
       "title": "Appshots"
     },
     "auth.md": {
-      "hash": "2ce6cddb8a1102f662e17de3aa23e8ec0cf4a8a91b6944ddb7610b62095304bf",
-      "last_updated": "2026-05-18T15:27:04+00:00",
+      "hash": "a95eaea5e6f76040b65dc327d02b0affb2c9501fa087814a9b91a35e5e6b5065",
+      "last_updated": "2026-06-02T20:45:33+00:00",
       "original_url": "https://developers.openai.com/codex/auth",
       "path": "/codex/auth",
       "source_url": "https://developers.openai.com/codex/auth.md",
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "815d82871e91907f27edbdc54cdc4240bd8f20e10564d99bc7bdac772136ecdd",
-      "last_updated": "2026-06-02T16:19:36+00:00",
+      "hash": "b69c9e0b0cd5193d632a43441338d6c7efcf8feacbc051ef4cdaf6d9a6a522fe",
+      "last_updated": "2026-06-02T20:45:33+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -514,8 +514,8 @@
       "title": "Build plugins"
     },
     "pricing.md": {
-      "hash": "e7d8f3474fb1ccf6b918d3b47dee1fe5b17bf015c2ed3b8c59abd0cc73ccf799",
-      "last_updated": "2026-06-02T16:19:50+00:00",
+      "hash": "a7938c5b7f6529c9b34e89fba581e7bf7b16fb363998d479e40d0faa664f8e28",
+      "last_updated": "2026-06-02T20:45:48+00:00",
       "original_url": "https://developers.openai.com/codex/pricing",
       "path": "/codex/pricing",
       "source_url": "https://developers.openai.com/codex/pricing.md",
@@ -602,8 +602,8 @@
       "title": "Improving the threat model"
     },
     "sites.md": {
-      "hash": "50a466cb87b078cd71e706ea744521984a820fb026a3b1261fdee442cff9b86a",
-      "last_updated": "2026-06-02T16:19:54+00:00",
+      "hash": "9ce74d59361808b67afdcf94ac69d1bbead859f2004ee628f5e80c4f1f20a487",
+      "last_updated": "2026-06-02T20:45:52+00:00",
       "original_url": "https://developers.openai.com/codex/sites",
       "path": "/codex/sites",
       "source_url": "https://developers.openai.com/codex/sites.md",
@@ -1158,7 +1158,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-02T16:20:17+00:00",
+  "last_updated": "2026-06-02T20:46:19+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",

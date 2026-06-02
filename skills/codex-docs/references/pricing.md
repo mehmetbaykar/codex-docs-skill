@@ -678,3 +678,9 @@ tips to maximize your limits:
 - **Switch to a smaller model for routine tasks.** Using GPT-5.4 or
   GPT-5.4-mini can extend your local-message usage limits, depending on the
   model you switch from.
+
+## Feature availability
+
+  <sup>*</sup> Feature is currently limited to only specific regions. Check the
+  individual feature documentation to learn more about geo restrictions.
+  <sup>†</sup> Some first party plugins are not available.

@@ -9,6 +9,12 @@
 
 Build and deploy websites with Sites
 
+## ChatGPT for iOS (2026-06-02)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-06-02-mobile
+
+ChatGPT for iOS
+
 ## Use Codex with Amazon Bedrock (2026-06-01)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-01
@@ -21,11 +27,23 @@ Use Codex with Amazon Bedrock
 
 Computer use and mobile access on Windows
 
+## ChatGPT for iOS (2026-05-25)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-05-25-mobile
+
+ChatGPT for iOS
+
 ## Appshots, goal mode, and more (2026-05-21)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-05-21
 
 Appshots, goal mode, and more
+
+## ChatGPT for iOS (2026-05-18)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-05-18-mobile
+
+ChatGPT for iOS
 
 ## Work with Codex from anywhere (2026-05-14)
 
