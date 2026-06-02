@@ -3,6 +3,12 @@
 > Source: https://developers.openai.com/codex/changelog
 > RSS: https://developers.openai.com/codex/changelog/rss.xml
 
+## Use Codex with Amazon Bedrock (2026-06-01)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-06-01
+
+Use Codex with Amazon Bedrock
+
 ## Codex CLI Release: 0.136.0 (2026-06-01)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-332669350
