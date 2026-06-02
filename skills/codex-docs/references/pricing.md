@@ -58,6 +58,11 @@ path: /codex/pricing
 
 ## Frequently asked questions
 
+### How much does Sites cost?
+
+[Sites](https://developers.openai.com/codex/sites) is free while in preview. Pricing information will be
+available soon.
+
 ### What are the usage limits for my plan?
 
 The number of Codex messages you can send depends on the model used, size and
