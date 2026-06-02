@@ -7,6 +7,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 ## Topics
 
 - `agent-approvals-security` - [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
+- `amazon-bedrock` - [Use Codex with Amazon Bedrock](https://developers.openai.com/codex/amazon-bedrock)
 - `app-server` - [Codex App Server](https://developers.openai.com/codex/app-server)
 - `app` - [Codex app](https://developers.openai.com/codex/app)
 - `app__automations` - [Automations](https://developers.openai.com/codex/app/automations)

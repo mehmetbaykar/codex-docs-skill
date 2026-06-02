@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 139,
+    "pages_fetched_successfully": 140,
     "pages_skipped": 9,
-    "total_pages_discovered": 148
+    "total_pages_discovered": 149
   },
   "files": {
     "agent-approvals-security.md": {
@@ -16,6 +16,14 @@
       "path": "/codex/agent-approvals-security",
       "source_url": "https://developers.openai.com/codex/agent-approvals-security.md",
       "title": "Agent approvals & security"
+    },
+    "amazon-bedrock.md": {
+      "hash": "ec2db4a27af278e9aefeb1b0465ff419146ff6d616f83a87507784f70852f339",
+      "last_updated": "2026-06-02T03:41:35+00:00",
+      "original_url": "https://developers.openai.com/codex/amazon-bedrock",
+      "path": "/codex/amazon-bedrock",
+      "source_url": "https://developers.openai.com/codex/amazon-bedrock.md",
+      "title": "Use Codex with Amazon Bedrock"
     },
     "app-server.md": {
       "hash": "9732c408ebed6deb9d39ebd7d9bf3e1ef19e39e46ff38306b824ca41ad2ca014",
@@ -146,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "8ad87a472fdda50a7da84c3c46aff2460c9387cb951cea9761c07b24af78eb14",
-      "last_updated": "2026-06-01T21:30:16+00:00",
+      "hash": "15e3a943efe5442efa58de8ce5a0a0a49837f483250754e99f9eb7d143ce3758",
+      "last_updated": "2026-06-02T03:41:40+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -258,8 +266,8 @@
       "title": "Subagents"
     },
     "config-advanced.md": {
-      "hash": "bc8b359c7c99b7aa1557e705bbfecdf0b30c792cfbdbd46d34cb9b4da30dd877",
-      "last_updated": "2026-05-26T20:06:43+00:00",
+      "hash": "469661fc1609e1c6d967d1b6dc51b09996a87c3d65caef7e4566168f42c93eb5",
+      "last_updated": "2026-06-02T03:41:43+00:00",
       "original_url": "https://developers.openai.com/codex/config-advanced",
       "path": "/codex/config-advanced",
       "source_url": "https://developers.openai.com/codex/config-advanced.md",
@@ -1134,7 +1142,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-01T21:30:53+00:00",
+  "last_updated": "2026-06-02T03:42:08+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
