@@ -141,16 +141,9 @@ Fast Mode isn't available with Amazon Bedrock. Fast Mode uses priority
   processing, and the initial Amazon Bedrock offering supports on-demand
   inference only.
 
-| Capability                                                     | State         |
-| -------------------------------------------------------------- | ------------- |
-| Codex CLI local workflows                                      | Supported     |
-| Codex desktop app local workflows                              | Supported     |
-| Codex IDE extension local workflows                            | Supported     |
-| Bedrock-backed inference with supported OpenAI models          | Supported     |
-| Locally configured MCP servers and connectors                  | Supported     |
-| Hosted first-party plugin directory                            | Not available |
-| Codex cloud agents, including review, security, and web agents | Not available |
-| Image generation and voice transcription                       | Not available |
+    <sup>*</sup> Feature is currently limited to only specific regions. Check
+    the individual feature documentation to learn more about geo restrictions.
+    <sup>†</sup> Some first party plugins are not available.
 
 ## Troubleshooting
 
