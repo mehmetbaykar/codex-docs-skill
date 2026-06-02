@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 140,
+    "pages_fetched_successfully": 142,
     "pages_skipped": 9,
-    "total_pages_discovered": 149
+    "total_pages_discovered": 151
   },
   "files": {
     "agent-approvals-security.md": {
@@ -34,8 +34,8 @@
       "title": "Codex App Server"
     },
     "app.md": {
-      "hash": "0f80923a5e2c05cfa3d9a74166914bf8a0fee08560a43d47f07c5789c1cffea2",
-      "last_updated": "2026-05-21T19:51:12+00:00",
+      "hash": "3da928272fb16a83e9a783a39abdc4f72f35b797279f2b7bdd7984a1fe77dc88",
+      "last_updated": "2026-06-02T16:19:31+00:00",
       "original_url": "https://developers.openai.com/codex/app",
       "path": "/codex/app",
       "source_url": "https://developers.openai.com/codex/app.md",
@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "15e3a943efe5442efa58de8ce5a0a0a49837f483250754e99f9eb7d143ce3758",
-      "last_updated": "2026-06-02T03:41:40+00:00",
+      "hash": "815d82871e91907f27edbdc54cdc4240bd8f20e10564d99bc7bdac772136ecdd",
+      "last_updated": "2026-06-02T16:19:36+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -498,8 +498,8 @@
       "title": "Permissions"
     },
     "plugins.md": {
-      "hash": "8bc3a00a9570fd9138a0e38217eeb9f1cf963588ebeae098ff8fdd70ca4f2769",
-      "last_updated": "2026-05-28T22:40:34+00:00",
+      "hash": "25b78949e2c5a5f0dee7043a2417a02d2845031c62fdcf3568f287e1ac6b81d3",
+      "last_updated": "2026-06-02T16:19:50+00:00",
       "original_url": "https://developers.openai.com/codex/plugins",
       "path": "/codex/plugins",
       "source_url": "https://developers.openai.com/codex/plugins.md",
@@ -514,8 +514,8 @@
       "title": "Build plugins"
     },
     "pricing.md": {
-      "hash": "8db4a31533736b5c0071dc35e28fb9af4570cfdca2045a32c5879551f31b6a74",
-      "last_updated": "2026-06-01T11:28:47+00:00",
+      "hash": "e7d8f3474fb1ccf6b918d3b47dee1fe5b17bf015c2ed3b8c59abd0cc73ccf799",
+      "last_updated": "2026-06-02T16:19:50+00:00",
       "original_url": "https://developers.openai.com/codex/pricing",
       "path": "/codex/pricing",
       "source_url": "https://developers.openai.com/codex/pricing.md",
@@ -601,6 +601,14 @@
       "source_url": "https://developers.openai.com/codex/security/threat-model.md",
       "title": "Improving the threat model"
     },
+    "sites.md": {
+      "hash": "50a466cb87b078cd71e706ea744521984a820fb026a3b1261fdee442cff9b86a",
+      "last_updated": "2026-06-02T16:19:54+00:00",
+      "original_url": "https://developers.openai.com/codex/sites",
+      "path": "/codex/sites",
+      "source_url": "https://developers.openai.com/codex/sites.md",
+      "title": "Sites"
+    },
     "skills.md": {
       "hash": "3c57a444554b5f85345b6973bdda70988b2d20c2ba50fc0215561812c155ee52",
       "last_updated": "2026-05-15T20:08:43+00:00",
@@ -680,6 +688,14 @@
       "path": "/codex/use-cases/budget-vs-actuals-review",
       "source_url": "https://developers.openai.com/codex/use-cases/budget-vs-actuals-review.md",
       "title": "Use Cases Budget Vs Actuals Review"
+    },
+    "use-cases__build-and-deploy-internal-apps.md": {
+      "hash": "20aea0f018cc06b04a7f93c7132c6d29a956528499c050e0a2f2ad6ef9186fa5",
+      "last_updated": "2026-06-02T16:19:58+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/build-and-deploy-internal-apps",
+      "path": "/codex/use-cases/build-and-deploy-internal-apps",
+      "source_url": "https://developers.openai.com/codex/use-cases/build-and-deploy-internal-apps.md",
+      "title": "Use Cases Build And Deploy Internal Apps"
     },
     "use-cases__cash-flow-forecast.md": {
       "hash": "91cbaa78fcdc8337281eabe18714426178b36dabfdf62ec7ba998b3bc91fb7d1",
@@ -1142,7 +1158,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-02T03:42:08+00:00",
+  "last_updated": "2026-06-02T16:20:17+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
