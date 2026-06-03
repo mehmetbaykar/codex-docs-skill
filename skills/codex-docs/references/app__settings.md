@@ -12,9 +12,9 @@ press `Cmd`+`,`.
 
 ## General
 
-Choose where files open and how much command output appears in threads. You can also
-require `Cmd`+`Enter` for multiline prompts or prevent sleep while a
-thread runs.
+Choose where files open, how much command output appears in threads, and where
+terminal tabs open by default. You can also require `Cmd`+`Enter`
+for multiline prompts or prevent sleep while a thread runs.
 
 ## Profile
 
