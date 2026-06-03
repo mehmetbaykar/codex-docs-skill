@@ -21,6 +21,12 @@ ChatGPT for iOS
 
 Use Codex with Amazon Bedrock
 
+## Terminal placement controls (2026-06-01)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-06-01-app
+
+Terminal placement controls
+
 ## Codex CLI Release: 0.136.0 (2026-06-01)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-332669350

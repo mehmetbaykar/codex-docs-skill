@@ -106,8 +106,8 @@
       "title": "Review"
     },
     "app__settings.md": {
-      "hash": "21cf00ecca48e7390e4251aeb53f08326e336724fff906a024a7f38c89181a5b",
-      "last_updated": "2026-05-29T18:11:43+00:00",
+      "hash": "5202d609767eb3873b11806bf18ce1960ab0756313570e564a4647e767a5cad0",
+      "last_updated": "2026-06-03T23:04:56+00:00",
       "original_url": "https://developers.openai.com/codex/app/settings",
       "path": "/codex/app/settings",
       "source_url": "https://developers.openai.com/codex/app/settings.md",
@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "2c542eb46e7a3e9168f08bf8d6639f321a247df6da56a59e519ca7ce20ebfea6",
-      "last_updated": "2026-06-03T20:53:18+00:00",
+      "hash": "f37efdfea0452dd42c0e172a4e46e0d37a97a59e00957750c143a6d2e6d10e56",
+      "last_updated": "2026-06-03T23:04:58+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -506,8 +506,8 @@
       "title": "Plugins"
     },
     "plugins__build.md": {
-      "hash": "93842781af6cdfda269afd2bb7fa89e88ce96ea487b68ce8761614a1f2d60e8b",
-      "last_updated": "2026-05-22T19:41:44+00:00",
+      "hash": "635b40f5af00e8038957737d334e75749c77e17053cca427a6cf28889e7c3fcf",
+      "last_updated": "2026-06-03T23:05:13+00:00",
       "original_url": "https://developers.openai.com/codex/plugins/build",
       "path": "/codex/plugins/build",
       "source_url": "https://developers.openai.com/codex/plugins/build.md",
@@ -1198,7 +1198,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-03T20:53:53+00:00",
+  "last_updated": "2026-06-03T23:05:44+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
