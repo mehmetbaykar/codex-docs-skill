@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 142,
-    "pages_skipped": 9,
-    "total_pages_discovered": 151
+    "pages_fetched_successfully": 147,
+    "pages_skipped": 10,
+    "total_pages_discovered": 157
   },
   "files": {
     "agent-approvals-security.md": {
@@ -42,8 +42,8 @@
       "title": "Codex app"
     },
     "app__automations.md": {
-      "hash": "f9b2220e64a77e37046e82bf49b4c27837c66c4d17c331029b056c619871dd28",
-      "last_updated": "2026-05-15T20:08:23+00:00",
+      "hash": "b9d56e49b425921d1c64a1c7ac9bac779d1f8d9797cd3d1b7d0b6af748e8d6c3",
+      "last_updated": "2026-06-03T20:53:14+00:00",
       "original_url": "https://developers.openai.com/codex/app/automations",
       "path": "/codex/app/automations",
       "source_url": "https://developers.openai.com/codex/app/automations.md",
@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "b69c9e0b0cd5193d632a43441338d6c7efcf8feacbc051ef4cdaf6d9a6a522fe",
-      "last_updated": "2026-06-03T16:43:45+00:00",
+      "hash": "2c542eb46e7a3e9168f08bf8d6639f321a247df6da56a59e519ca7ce20ebfea6",
+      "last_updated": "2026-06-03T20:53:18+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -514,8 +514,8 @@
       "title": "Build plugins"
     },
     "pricing.md": {
-      "hash": "a7938c5b7f6529c9b34e89fba581e7bf7b16fb363998d479e40d0faa664f8e28",
-      "last_updated": "2026-06-02T20:45:48+00:00",
+      "hash": "0c7cac662b736fc79067738db605c7104e562f813ccaa954df771b91c2f41795",
+      "last_updated": "2026-06-03T20:53:29+00:00",
       "original_url": "https://developers.openai.com/codex/pricing",
       "path": "/codex/pricing",
       "source_url": "https://developers.openai.com/codex/pricing.md",
@@ -697,6 +697,14 @@
       "source_url": "https://developers.openai.com/codex/use-cases/build-and-deploy-internal-apps.md",
       "title": "Use Cases Build And Deploy Internal Apps"
     },
+    "use-cases__bulk-rna-seq-fastq-qc.md": {
+      "hash": "772da54b145389d27c3ab718ea1bae159723d0cf9e3555e8f3ebd5c3cabad81b",
+      "last_updated": "2026-06-03T20:53:36+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/bulk-rna-seq-fastq-qc",
+      "path": "/codex/use-cases/bulk-rna-seq-fastq-qc",
+      "source_url": "https://developers.openai.com/codex/use-cases/bulk-rna-seq-fastq-qc.md",
+      "title": "Use Cases Bulk Rna Seq Fastq Qc"
+    },
     "use-cases__cash-flow-forecast.md": {
       "hash": "91cbaa78fcdc8337281eabe18714426178b36dabfdf62ec7ba998b3bc91fb7d1",
       "last_updated": "2026-05-15T20:08:48+00:00",
@@ -744,6 +752,14 @@
       "path": "/codex/use-cases/collections/game-development",
       "source_url": "https://developers.openai.com/codex/use-cases/collections/game-development.md",
       "title": "Game development"
+    },
+    "use-cases__collections__life-sciences.md": {
+      "hash": "e2d6d4b93dbc9ff62e1373403add286d0d495f9e28ed9d35792481311df0467e",
+      "last_updated": "2026-06-03T20:53:38+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/collections/life-sciences",
+      "path": "/codex/use-cases/collections/life-sciences",
+      "source_url": "https://developers.openai.com/codex/use-cases/collections/life-sciences.md",
+      "title": "Life Sciences"
     },
     "use-cases__collections__native-development.md": {
       "hash": "b2b440f1974d76ae0b37412facc081808189ea4d8021c1b2e1b0542fac5a7360",
@@ -832,6 +848,14 @@
       "path": "/codex/use-cases/deploy-app-or-website",
       "source_url": "https://developers.openai.com/codex/use-cases/deploy-app-or-website.md",
       "title": "Use Cases Deploy App Or Website"
+    },
+    "use-cases__discover-protein-folding-architectures.md": {
+      "hash": "1276bcb0c5879f01c0fe0f2c1fff2d4f231112d45e08f8634ac042fc6fbd8055",
+      "last_updated": "2026-06-03T20:53:41+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/discover-protein-folding-architectures",
+      "path": "/codex/use-cases/discover-protein-folding-architectures",
+      "source_url": "https://developers.openai.com/codex/use-cases/discover-protein-folding-architectures.md",
+      "title": "Use Cases Discover Protein Folding Architectures"
     },
     "use-cases__draft-prds-from-sources.md": {
       "hash": "7e71d0b69bb039e99abf0f110afc03c4b9a30806b89b871827b0e2f872be0cc0",
@@ -1073,6 +1097,14 @@
       "source_url": "https://developers.openai.com/codex/use-cases/scan-code-changes-for-security.md",
       "title": "Use Cases Scan Code Changes For Security"
     },
+    "use-cases__scrna-seq-post-count-qc.md": {
+      "hash": "addd0dd0bab8c76ce63c9d9947dba5c30e19f2676450f1984803d98936c1ab5d",
+      "last_updated": "2026-06-03T20:53:51+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/scrna-seq-post-count-qc",
+      "path": "/codex/use-cases/scrna-seq-post-count-qc",
+      "source_url": "https://developers.openai.com/codex/use-cases/scrna-seq-post-count-qc.md",
+      "title": "Use Cases Scrna Seq Post Count Qc"
+    },
     "use-cases__slack-action-triage.md": {
       "hash": "86f0b2127b20a988932f8316cdc970fe86acffa64e6bfd6ddb57fcb6df696ef5",
       "last_updated": "2026-05-15T20:09:04+00:00",
@@ -1088,6 +1120,14 @@
       "path": "/codex/use-cases/slack-coding-tasks",
       "source_url": "https://developers.openai.com/codex/use-cases/slack-coding-tasks.md",
       "title": "Use Cases Slack Coding Tasks"
+    },
+    "use-cases__target-prioritization.md": {
+      "hash": "7402087825c84b0bfa939acf8b9cebc1c4f413ea3e502fdb188e30fc3621f251",
+      "last_updated": "2026-06-03T20:53:51+00:00",
+      "original_url": "https://developers.openai.com/codex/use-cases/target-prioritization",
+      "path": "/codex/use-cases/target-prioritization",
+      "source_url": "https://developers.openai.com/codex/use-cases/target-prioritization.md",
+      "title": "Use Cases Target Prioritization"
     },
     "use-cases__update-documentation.md": {
       "hash": "35d0d66542c5d9e2df0ec177b095ea10fa3c3917bf4bccdc730d0614eabe5ef8",
@@ -1158,12 +1198,17 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-03T16:44:28+00:00",
+  "last_updated": "2026-06-03T20:53:53+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
       "reason": "No .md endpoint and no special fetcher",
       "url": "https://developers.openai.com/codex/tracks/game-development"
+    },
+    {
+      "path": "/codex/tracks/life-sciences",
+      "reason": "No .md endpoint and no special fetcher",
+      "url": "https://developers.openai.com/codex/tracks/life-sciences"
     },
     {
       "path": "/codex/tracks/native-development",
