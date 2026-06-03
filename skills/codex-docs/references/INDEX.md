@@ -92,12 +92,14 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `use-cases__browser-games` - [Game name](https://developers.openai.com/codex/use-cases/browser-games)
 - `use-cases__budget-vs-actuals-review` - [Use Cases Budget Vs Actuals Review](https://developers.openai.com/codex/use-cases/budget-vs-actuals-review)
 - `use-cases__build-and-deploy-internal-apps` - [Use Cases Build And Deploy Internal Apps](https://developers.openai.com/codex/use-cases/build-and-deploy-internal-apps)
+- `use-cases__bulk-rna-seq-fastq-qc` - [Use Cases Bulk Rna Seq Fastq Qc](https://developers.openai.com/codex/use-cases/bulk-rna-seq-fastq-qc)
 - `use-cases__cash-flow-forecast` - [Use Cases Cash Flow Forecast](https://developers.openai.com/codex/use-cases/cash-flow-forecast)
 - `use-cases__chatgpt-apps` - [Use Cases Chatgpt Apps](https://developers.openai.com/codex/use-cases/chatgpt-apps)
 - `use-cases__clean-messy-data` - [Use Cases Clean Messy Data](https://developers.openai.com/codex/use-cases/clean-messy-data)
 - `use-cases__code-migrations` - [Use Cases Code Migrations](https://developers.openai.com/codex/use-cases/code-migrations)
 - `use-cases__codebase-onboarding` - [Use Cases Codebase Onboarding](https://developers.openai.com/codex/use-cases/codebase-onboarding)
 - `use-cases__collections__game-development` - [Game development](https://developers.openai.com/codex/use-cases/collections/game-development)
+- `use-cases__collections__life-sciences` - [Life Sciences](https://developers.openai.com/codex/use-cases/collections/life-sciences)
 - `use-cases__collections__native-development` - [Native development](https://developers.openai.com/codex/use-cases/collections/native-development)
 - `use-cases__collections__production-systems` - [Production systems](https://developers.openai.com/codex/use-cases/collections/production-systems)
 - `use-cases__collections__productivity-and-collaboration` - [Productivity & Collaboration](https://developers.openai.com/codex/use-cases/collections/productivity-and-collaboration)
@@ -109,6 +111,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `use-cases__deep-security-scan` - [Use Cases Deep Security Scan](https://developers.openai.com/codex/use-cases/deep-security-scan)
 - `use-cases__dependency-incident-audits` - [Use Cases Dependency Incident Audits](https://developers.openai.com/codex/use-cases/dependency-incident-audits)
 - `use-cases__deploy-app-or-website` - [Use Cases Deploy App Or Website](https://developers.openai.com/codex/use-cases/deploy-app-or-website)
+- `use-cases__discover-protein-folding-architectures` - [Use Cases Discover Protein Folding Architectures](https://developers.openai.com/codex/use-cases/discover-protein-folding-architectures)
 - `use-cases__draft-prds-from-sources` - [Use Cases Draft Prds From Sources](https://developers.openai.com/codex/use-cases/draft-prds-from-sources)
 - `use-cases__event-launch-playbooks` - [Use Cases Event Launch Playbooks](https://developers.openai.com/codex/use-cases/event-launch-playbooks)
 - `use-cases__feedback-synthesis` - [Use Cases Feedback Synthesis](https://developers.openai.com/codex/use-cases/feedback-synthesis)
@@ -139,8 +142,10 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `use-cases__remediate-vulnerability-backlog` - [Use Cases Remediate Vulnerability Backlog](https://developers.openai.com/codex/use-cases/remediate-vulnerability-backlog)
 - `use-cases__reusable-codex-skills` - [Use Cases Reusable Codex Skills](https://developers.openai.com/codex/use-cases/reusable-codex-skills)
 - `use-cases__scan-code-changes-for-security` - [Use Cases Scan Code Changes For Security](https://developers.openai.com/codex/use-cases/scan-code-changes-for-security)
+- `use-cases__scrna-seq-post-count-qc` - [Use Cases Scrna Seq Post Count Qc](https://developers.openai.com/codex/use-cases/scrna-seq-post-count-qc)
 - `use-cases__slack-action-triage` - [Use Cases Slack Action Triage](https://developers.openai.com/codex/use-cases/slack-action-triage)
 - `use-cases__slack-coding-tasks` - [Use Cases Slack Coding Tasks](https://developers.openai.com/codex/use-cases/slack-coding-tasks)
+- `use-cases__target-prioritization` - [Use Cases Target Prioritization](https://developers.openai.com/codex/use-cases/target-prioritization)
 - `use-cases__update-documentation` - [Use Cases Update Documentation](https://developers.openai.com/codex/use-cases/update-documentation)
 - `use-cases__use-your-computer-with-codex` - [Use Cases Use Your Computer With Codex](https://developers.openai.com/codex/use-cases/use-your-computer-with-codex)
 - `use-cases__user-stories-to-ui-mocks` - [Use Cases User Stories To Ui Mocks](https://developers.openai.com/codex/use-cases/user-stories-to-ui-mocks)
@@ -152,6 +157,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 ## Skipped Sitemap Pages
 
 - `/codex/tracks/game-development` - No .md endpoint and no special fetcher
+- `/codex/tracks/life-sciences` - No .md endpoint and no special fetcher
 - `/codex/tracks/native-development` - No .md endpoint and no special fetcher
 - `/codex/tracks/production-systems` - No .md endpoint and no special fetcher
 - `/codex/tracks/productivity-and-collaboration` - No .md endpoint and no special fetcher
