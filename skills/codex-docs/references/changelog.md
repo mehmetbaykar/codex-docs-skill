@@ -3,6 +3,12 @@
 > Source: https://developers.openai.com/codex/changelog
 > RSS: https://developers.openai.com/codex/changelog/rss.xml
 
+## Codex CLI Release: 0.137.0 (2026-06-04)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-334076532
+
+0.137.0
+
 ## Build and deploy websites with Sites (2026-06-02)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-02
@@ -194,12 +200,6 @@ Codex app
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-04-16-app
 
 Codex can now help with more of your work
-
-## Codex CLI Release: 0.121.0 (2026-04-15)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-309557036
-
-0.121.0
 
 ## Codex app (2026-04-12)
 
