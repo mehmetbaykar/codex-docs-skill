@@ -490,8 +490,8 @@
       "title": "Open Source"
     },
     "permissions.md": {
-      "hash": "01b7c9d966f3d044eef1fb1439718da991bc8af2ae1e741153719ea7aeeecc86",
-      "last_updated": "2026-05-29T02:57:11+00:00",
+      "hash": "9ad6dbca3ee254ea4c5ce98bb6d1b1206d5b46f21f73ee101cfb738b51cb7567",
+      "last_updated": "2026-06-05T09:42:24+00:00",
       "original_url": "https://developers.openai.com/codex/permissions",
       "path": "/codex/permissions",
       "source_url": "https://developers.openai.com/codex/permissions.md",
@@ -1198,7 +1198,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-05T03:32:31+00:00",
+  "last_updated": "2026-06-05T09:42:44+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
