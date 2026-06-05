@@ -46,6 +46,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `environment-variables` - [Environment variables](https://developers.openai.com/codex/environment-variables)
 - `feature-maturity` - [Feature Maturity](https://developers.openai.com/codex/feature-maturity)
 - `github-action` - [Codex GitHub Action](https://developers.openai.com/codex/github-action)
+- `glossary` - [Glossary](https://developers.openai.com/codex/glossary)
 - `guides__agents-md` - [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)
 - `guides__agents-sdk` - [Use Codex with the Agents SDK](https://developers.openai.com/codex/guides/agents-sdk)
 - `guides__build-ai-native-engineering-team` - [Building an AI-Native Engineering Team](https://developers.openai.com/codex/guides/build-ai-native-engineering-team)

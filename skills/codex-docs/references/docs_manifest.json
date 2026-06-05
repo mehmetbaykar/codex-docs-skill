@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 147,
+    "pages_fetched_successfully": 148,
     "pages_skipped": 10,
-    "total_pages_discovered": 157
+    "total_pages_discovered": 158
   },
   "files": {
     "agent-approvals-security.md": {
@@ -328,6 +328,14 @@
       "path": "/codex/github-action",
       "source_url": "https://developers.openai.com/codex/github-action.md",
       "title": "Codex GitHub Action"
+    },
+    "glossary.md": {
+      "hash": "586ad9d2441f6afff25a366feb2749b46f8e9c2033faa55ec5d2a2cccde17c9c",
+      "last_updated": "2026-06-05T17:13:47+00:00",
+      "original_url": "https://developers.openai.com/codex/glossary",
+      "path": "/codex/glossary",
+      "source_url": "https://developers.openai.com/codex/glossary.md",
+      "title": "Glossary"
     },
     "guides__agents-md.md": {
       "hash": "fd81b8410abef4d8abdaf9b97564fc7753f9e9295c2bd2a3ba3589d14b2c4ddb",
@@ -1198,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-05T14:46:04+00:00",
+  "last_updated": "2026-06-05T17:14:25+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
