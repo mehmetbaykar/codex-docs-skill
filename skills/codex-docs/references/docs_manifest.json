@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "5069faa6086feba2f1828e5737004c1e52551b827d0187458c2fe6fab2e77169",
-      "last_updated": "2026-06-05T03:31:57+00:00",
+      "hash": "87b2d7041c22d9d24c2fae38f7ebda0878552f3453a2119baf76978caa6c07e4",
+      "last_updated": "2026-06-05T14:45:24+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -786,8 +786,8 @@
       "title": "Productivity & Collaboration"
     },
     "use-cases__collections__security.md": {
-      "hash": "a4f9d0d37d870cc1c39ac5d2ace27f5e059b3d8b51a46b94dd43d71afa8f2dba",
-      "last_updated": "2026-05-28T22:40:44+00:00",
+      "hash": "b40e2b3f5a58ca49869c1e75483883289aca44c9fe984c474d6eddffda4403a9",
+      "last_updated": "2026-06-05T14:45:47+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/collections/security",
       "path": "/codex/use-cases/collections/security",
       "source_url": "https://developers.openai.com/codex/use-cases/collections/security.md",
@@ -1198,7 +1198,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-05T09:42:44+00:00",
+  "last_updated": "2026-06-05T14:46:04+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
