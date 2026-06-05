@@ -282,8 +282,8 @@
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "d9c5025b4fdcb294853a0ba521228ccbc7c835582125de0b4aba0023a20aa8e0",
-      "last_updated": "2026-06-01T21:30:20+00:00",
+      "hash": "30991f2d64a83c9a2e36b3d26cf2ea07d17e4ea3f3d7303b2cce9d4579f80e74",
+      "last_updated": "2026-06-05T22:13:34+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
@@ -1178,8 +1178,8 @@
       "title": "Use Cases Zoom Meeting Follow Ups"
     },
     "windows.md": {
-      "hash": "ccc0a220b11c7d031a12163ea975e2aded36389d935083b63c2dad8973935dcb",
-      "last_updated": "2026-05-26T20:07:19+00:00",
+      "hash": "cb76ff51625d5f8c38a3c1ace90fd561c22f692d3d1709b08ab90b1be9a326c2",
+      "last_updated": "2026-06-05T22:14:04+00:00",
       "original_url": "https://developers.openai.com/codex/windows",
       "path": "/codex/windows",
       "source_url": "https://developers.openai.com/codex/windows.md",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-05T17:14:25+00:00",
+  "last_updated": "2026-06-05T22:14:04+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
