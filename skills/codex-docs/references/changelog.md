@@ -3,6 +3,12 @@
 > Source: https://developers.openai.com/codex/changelog
 > RSS: https://developers.openai.com/codex/changelog/rss.xml
 
+## Codex CLI Release: 0.139.0 (2026-06-09)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-336847772
+
+0.139.0
+
 ## Codex CLI Release: 0.138.0 (2026-06-08)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-336275797
