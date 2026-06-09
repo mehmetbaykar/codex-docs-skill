@@ -54,6 +54,10 @@ path: /codex/cli/reference
 
 ];
 
+];
+
+];
+
 ## How to read this reference
 
 This page catalogs every documented Codex CLI command and flag. Use the interactive tables to search by key or description. Each section indicates whether the option is stable or experimental and calls out risky combinations.
@@ -88,7 +92,7 @@ Use `--remote ws://host:port` or `--remote wss://host:port` to connect the TUI t
 
 Launch the Codex app server locally. This is primarily for development and debugging and may change without notice.
 
-`codex app-server --listen stdio://` keeps the default JSONL-over-stdio behavior. `--listen ws://IP:PORT` enables WebSocket transport for app-server clients. The server accepts `ws://` listen URLs; use TLS termination or a secure proxy when clients connect with `wss://`. Use `--listen unix://` to accept WebSocket handshakes on Codex's default Unix socket, or `--listen unix:///absolute/path.sock` to choose a socket path. If you generate schemas for client bindings, add `--experimental` to include gated fields and methods.
+`codex app-server --listen stdio://` keeps the default JSONL-over-stdio behavior, and `codex app-server --stdio` is an alias for that transport. `--listen ws://IP:PORT` enables WebSocket transport for app-server clients. The server accepts `ws://` listen URLs; use TLS termination or a secure proxy when clients connect with `wss://`. Use `--listen unix://` to accept WebSocket handshakes on Codex's default Unix socket, or `--listen unix:///absolute/path.sock` to choose a socket path. If you generate schemas for client bindings, add `--experimental` to include gated fields and methods.
 
 ### `codex remote-control`
 
@@ -122,6 +126,17 @@ Use `--bundled` when you want to inspect only the catalog bundled with the curre
 Apply the most recent diff from a Codex cloud task to your local repository. You must authenticate and have access to the task.
 
 Codex prints the patched files and exits non-zero if `git apply` fails (for example, due to conflicts).
+
+### `codex archive` and `codex unarchive`
+
+Archive or restore a saved interactive session by session ID or session name.
+Use these commands when you want to clean up the session picker without deleting
+the transcript. Session IDs take precedence over session names.
+
+```bash
+codex archive <SESSION>
+codex unarchive <SESSION>
+```
 
 ### `codex cloud`
 
@@ -180,6 +195,18 @@ The `add` subcommand supports both stdio and streamable HTTP transports:
 
 OAuth actions (`login`, `logout`) only work with streamable HTTP servers (and only when the server supports OAuth).
 
+### `codex plugin`
+
+Install, list, and remove plugins from configured marketplaces.
+
+`codex plugin add --json` prints `pluginId`, `name`, `marketplaceName`,
+`version`, `installedPath`, and `authPolicy`. `codex plugin list --json` prints
+`installed` and `available` arrays. Entries include `pluginId`, `name`,
+`marketplaceName`, `version`, `installed`, `enabled`, `source`, `installPolicy`,
+`authPolicy`, and, when available, `marketplaceSource` with the configured
+marketplace source type and value. `codex plugin remove --json` prints
+`pluginId`, `name`, and `marketplaceName`.
+
 ### `codex plugin marketplace`
 
 Manage plugin marketplace sources that Codex can browse and install from.
@@ -192,6 +219,13 @@ use a sparse checkout for Git-backed marketplace repositories.
 `codex plugin marketplace list` prints in-scope marketplace names and roots,
 including implicitly discovered default marketplaces and configured marketplace
 snapshots.
+
+Add `--json` to marketplace add, list, upgrade, or remove commands for
+automation-friendly output. Marketplace add JSON includes `marketplaceName`,
+`installedRoot`, and `alreadyAdded`; list JSON includes a `marketplaces` array
+with `name`, `root`, and optional `marketplaceSource`; upgrade JSON includes
+`selectedMarketplaces`, `upgradedRoots`, and `errors`; remove JSON includes
+`marketplaceName` and `installedRoot`.
 
 ### `codex mcp-server`
 
