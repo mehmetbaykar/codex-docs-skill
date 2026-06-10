@@ -122,8 +122,8 @@
       "title": "Troubleshooting"
     },
     "app__windows.md": {
-      "hash": "1e2ff7724cd5f34cdf3de2f18de202e291077f1d5b3abf854c0f8fa51236fbf6",
-      "last_updated": "2026-05-15T21:20:36+00:00",
+      "hash": "9817ce4f4e8685474d115f4a842fad5fcf65fb5a51dc825fe7c23760b03a94f3",
+      "last_updated": "2026-06-10T20:26:58+00:00",
       "original_url": "https://developers.openai.com/codex/app/windows",
       "path": "/codex/app/windows",
       "source_url": "https://developers.openai.com/codex/app/windows.md",
@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "94e66d004998161ec5fe9020d12f61dfb8a94c3f21d0b5c2ef681ffbef334f10",
-      "last_updated": "2026-06-10T15:28:59+00:00",
+      "hash": "b3f5c874f94d96f5fa92e8df678975fde64caeefa42bd471025a1543d8990111",
+      "last_updated": "2026-06-10T20:26:59+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-10T15:29:31+00:00",
+  "last_updated": "2026-06-10T20:27:37+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
