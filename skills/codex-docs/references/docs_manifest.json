@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "9631e49ffd535d14c1b7874df54327923d8671eed1cb30a6ae193533ac0ea517",
-      "last_updated": "2026-06-10T09:54:55+00:00",
+      "hash": "94e66d004998161ec5fe9020d12f61dfb8a94c3f21d0b5c2ef681ffbef334f10",
+      "last_updated": "2026-06-10T15:28:59+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -522,8 +522,8 @@
       "title": "Build plugins"
     },
     "pricing.md": {
-      "hash": "0c7cac662b736fc79067738db605c7104e562f813ccaa954df771b91c2f41795",
-      "last_updated": "2026-06-03T20:53:29+00:00",
+      "hash": "976793e9b9c18dec6aa2383667856adcb37eaa25d2c19a8c0c6745386872cbc3",
+      "last_updated": "2026-06-10T15:29:10+00:00",
       "original_url": "https://developers.openai.com/codex/pricing",
       "path": "/codex/pricing",
       "source_url": "https://developers.openai.com/codex/pricing.md",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-10T09:55:42+00:00",
+  "last_updated": "2026-06-10T15:29:31+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
