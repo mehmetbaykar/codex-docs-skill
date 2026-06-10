@@ -3,6 +3,12 @@
 > Source: https://developers.openai.com/codex/changelog
 > RSS: https://developers.openai.com/codex/changelog/rss.xml
 
+## Codex app (2026-06-09)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-06-09-app
+
+Codex app
+
 ## ChatGPT for iOS (2026-06-09)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-09-mobile
