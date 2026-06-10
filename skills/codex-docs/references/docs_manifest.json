@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "4590fdd2ebbaf1d478cc117d69d5c74f7133b9a9480d86cef4417f5ae32427f1",
-      "last_updated": "2026-06-09T22:22:31+00:00",
+      "hash": "9631e49ffd535d14c1b7874df54327923d8671eed1cb30a6ae193533ac0ea517",
+      "last_updated": "2026-06-10T09:54:55+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -362,8 +362,8 @@
       "title": "Building an AI-Native Engineering Team"
     },
     "hooks.md": {
-      "hash": "e377ab8aeebb656994b70df7a78a2773a67b272065e7d76d146883579deb206e",
-      "last_updated": "2026-05-22T19:41:38+00:00",
+      "hash": "b3292acb09ff1ec8074e508266b333a9541f9457c085b0f9579d45f709e3d005",
+      "last_updated": "2026-06-10T09:55:04+00:00",
       "original_url": "https://developers.openai.com/codex/hooks",
       "path": "/codex/hooks",
       "source_url": "https://developers.openai.com/codex/hooks.md",
@@ -498,8 +498,8 @@
       "title": "Open Source"
     },
     "permissions.md": {
-      "hash": "5255b659035b7f5d7a69d4b7fedc9b44abda32dbf5a3a6a182e0665729442051",
-      "last_updated": "2026-06-09T06:48:46+00:00",
+      "hash": "e1b328037558c2bc77731d0afff3ecfe17e490ccc46f31f0cc64cc2b194c562b",
+      "last_updated": "2026-06-10T09:55:10+00:00",
       "original_url": "https://developers.openai.com/codex/permissions",
       "path": "/codex/permissions",
       "source_url": "https://developers.openai.com/codex/permissions.md",
@@ -898,8 +898,8 @@
       "title": "Use Cases Figma Designs To Code"
     },
     "use-cases__follow-goals.md": {
-      "hash": "8bfda15e53e94c96e4abd23c4c41f47cd75645c64983c2cdba1537cd3d60cdb9",
-      "last_updated": "2026-05-21T19:51:39+00:00",
+      "hash": "4a0333c7beb121c7f45dafdd6ac873dcb322e8c5a94d18f4bdd42f1f87f9f153",
+      "last_updated": "2026-06-10T09:55:29+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/follow-goals",
       "path": "/codex/use-cases/follow-goals",
       "source_url": "https://developers.openai.com/codex/use-cases/follow-goals.md",
@@ -1002,8 +1002,8 @@
       "title": "Use Cases Macos Telemetry Logs"
     },
     "use-cases__make-granular-ui-changes.md": {
-      "hash": "e892479f0e54a2cd1ffa891dfec85a32568b805628a82636205520ed1977fd3c",
-      "last_updated": "2026-05-20T22:23:46+00:00",
+      "hash": "c8ff632d228482defef4b53a8a18b9e20def01c6cf87f62d7c0e43501e2c5ac7",
+      "last_updated": "2026-06-10T09:55:34+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/make-granular-ui-changes",
       "path": "/codex/use-cases/make-granular-ui-changes",
       "source_url": "https://developers.openai.com/codex/use-cases/make-granular-ui-changes.md",
@@ -1154,16 +1154,16 @@
       "title": "Use Cases Use Your Computer With Codex"
     },
     "use-cases__user-stories-to-ui-mocks.md": {
-      "hash": "f5bc0bcaf829d327458317d37c309aab514c3f02b7856617d9a109301361089f",
-      "last_updated": "2026-05-15T20:09:06+00:00",
+      "hash": "b0a26e2c513b24538e90b34d2635d1484bad7fe7dc9216da344405e89311b95e",
+      "last_updated": "2026-06-10T09:55:41+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/user-stories-to-ui-mocks",
       "path": "/codex/use-cases/user-stories-to-ui-mocks",
       "source_url": "https://developers.openai.com/codex/use-cases/user-stories-to-ui-mocks.md",
       "title": "Use Cases User Stories To Ui Mocks"
     },
     "use-cases__verified-operations-workflows.md": {
-      "hash": "4a2f631cea6b6480b0e08f0eefa8ae19cd6f39ede3a9b7aa0a8d4d261a26f4e4",
-      "last_updated": "2026-05-15T20:09:06+00:00",
+      "hash": "d7651250aafa11eb8aa24ec529777bb3a9484dd611286b4c0e152beb5b7f0d8c",
+      "last_updated": "2026-06-10T09:55:41+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/verified-operations-workflows",
       "path": "/codex/use-cases/verified-operations-workflows",
       "source_url": "https://developers.openai.com/codex/use-cases/verified-operations-workflows.md",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-10T03:30:10+00:00",
+  "last_updated": "2026-06-10T09:55:42+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
