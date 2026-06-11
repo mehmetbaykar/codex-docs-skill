@@ -146,8 +146,8 @@
       "title": "Appshots"
     },
     "auth.md": {
-      "hash": "a95eaea5e6f76040b65dc327d02b0affb2c9501fa087814a9b91a35e5e6b5065",
-      "last_updated": "2026-06-02T20:45:33+00:00",
+      "hash": "eecc27a387f0d5af8b39fe898c03f41d96cad34233fc5a214a3232053ed6003b",
+      "last_updated": "2026-06-11T20:18:34+00:00",
       "original_url": "https://developers.openai.com/codex/auth",
       "path": "/codex/auth",
       "source_url": "https://developers.openai.com/codex/auth.md",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-11T10:20:02+00:00",
+  "last_updated": "2026-06-11T20:19:11+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
