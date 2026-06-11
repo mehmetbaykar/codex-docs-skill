@@ -282,8 +282,8 @@
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "3e66a7d0f6bd4439e5beb87c74cc9959a98dcf41039e682ea5b69c773ba85ffb",
-      "last_updated": "2026-06-09T06:48:39+00:00",
+      "hash": "14dc9fecb3eeed5cad4d3c77810702609ab4fd87dd4cd9a1b5b7d41762af00e0",
+      "last_updated": "2026-06-11T10:19:29+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
@@ -514,8 +514,8 @@
       "title": "Plugins"
     },
     "plugins__build.md": {
-      "hash": "635b40f5af00e8038957737d334e75749c77e17053cca427a6cf28889e7c3fcf",
-      "last_updated": "2026-06-03T23:05:13+00:00",
+      "hash": "1502ea43b0beb2f9475ec4636cae1c5ee78ec3724e5630250e3291c8a79d15ff",
+      "last_updated": "2026-06-11T10:19:37+00:00",
       "original_url": "https://developers.openai.com/codex/plugins/build",
       "path": "/codex/plugins/build",
       "source_url": "https://developers.openai.com/codex/plugins/build.md",
@@ -546,8 +546,8 @@
       "title": "Quickstart"
     },
     "remote-connections.md": {
-      "hash": "11d356ef33b71a84b25f4c0ba0ccec418dbaa5371f3416c1c8be21c8ccbd5a2c",
-      "last_updated": "2026-05-29T18:11:57+00:00",
+      "hash": "1af82c96541aa926ca08c4c6a692162149965e9370d9a67189ccd84e77b260ac",
+      "last_updated": "2026-06-11T10:19:38+00:00",
       "original_url": "https://developers.openai.com/codex/remote-connections",
       "path": "/codex/remote-connections",
       "source_url": "https://developers.openai.com/codex/remote-connections.md",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-11T03:41:57+00:00",
+  "last_updated": "2026-06-11T10:20:02+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
