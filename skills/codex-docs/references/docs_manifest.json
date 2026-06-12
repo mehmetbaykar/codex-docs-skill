@@ -18,8 +18,8 @@
       "title": "Agent approvals & security"
     },
     "amazon-bedrock.md": {
-      "hash": "570c86d13c87a405a0637ac00f33a58c1730842b1a0bdc221e355b3c5320f9a4",
-      "last_updated": "2026-06-02T20:45:28+00:00",
+      "hash": "305db25f2df6515702430bb371bbcf6360fb65f23350521fdbd8dd23d27746c0",
+      "last_updated": "2026-06-12T17:36:08+00:00",
       "original_url": "https://developers.openai.com/codex/amazon-bedrock",
       "path": "/codex/amazon-bedrock",
       "source_url": "https://developers.openai.com/codex/amazon-bedrock.md",
@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "4a58fa78d012c655bd50cfd8753e67a07a463740fd377a86b2cc94b1e06818db",
-      "last_updated": "2026-06-12T14:53:30+00:00",
+      "hash": "daa407ad0ae137fb20d81afab1b8c07f100ef60332af0ab296653f214406ff1a",
+      "last_updated": "2026-06-12T17:36:14+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-12T14:54:09+00:00",
+  "last_updated": "2026-06-12T17:36:56+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",

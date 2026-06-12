@@ -143,7 +143,10 @@ Fast Mode isn't available with Amazon Bedrock. Fast Mode uses priority
 
     <sup>*</sup> Feature is currently limited to only specific regions. Check
     the individual feature documentation to learn more about geo restrictions.
-    <sup>†</sup> Some first party plugins are not available.
+    <sup>†</sup> Local plugin bundles are supported when their capabilities do
+    not require ChatGPT authentication. OpenAI-curated plugin discovery and
+    features that depend on app connectors or cloud-hosted sharing aren't
+    available.
 
 ## Troubleshooting
 
