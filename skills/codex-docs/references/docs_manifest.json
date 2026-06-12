@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "daa407ad0ae137fb20d81afab1b8c07f100ef60332af0ab296653f214406ff1a",
-      "last_updated": "2026-06-12T03:41:01+00:00",
+      "hash": "4a58fa78d012c655bd50cfd8753e67a07a463740fd377a86b2cc94b1e06818db",
+      "last_updated": "2026-06-12T14:53:30+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-12T03:41:36+00:00",
+  "last_updated": "2026-06-12T14:54:09+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
