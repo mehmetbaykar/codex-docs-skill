@@ -50,8 +50,8 @@
       "title": "Automations"
     },
     "app__browser.md": {
-      "hash": "be964487779e83e66f6d74374576f406cbed6570e72966c41ae2d3791afcbc10",
-      "last_updated": "2026-05-21T19:51:13+00:00",
+      "hash": "cfe7a89396a0047766445cb711faead6460e328b1647d8e5df2ea37f0f4c2d48",
+      "last_updated": "2026-06-12T03:40:58+00:00",
       "original_url": "https://developers.openai.com/codex/app/browser",
       "path": "/codex/app/browser",
       "source_url": "https://developers.openai.com/codex/app/browser.md",
@@ -66,16 +66,16 @@
       "title": "Codex Chrome extension"
     },
     "app__commands.md": {
-      "hash": "48eea1eb6d68eaec3a8b47b29bb3b08f617856c48347faea1415be410bdfbd28",
-      "last_updated": "2026-06-10T03:29:34+00:00",
+      "hash": "7e28035c2b31e7cf7f788bfbc3a0da5d6b0d2dc4b2209c50f3ee8002e7eb5476",
+      "last_updated": "2026-06-12T03:40:58+00:00",
       "original_url": "https://developers.openai.com/codex/app/commands",
       "path": "/codex/app/commands",
       "source_url": "https://developers.openai.com/codex/app/commands.md",
       "title": "Codex app commands"
     },
     "app__computer-use.md": {
-      "hash": "1d62ef653d600ee19ab94ce5ac02b0d3ecabfb2352679d4571818f9bad282117",
-      "last_updated": "2026-05-29T18:11:42+00:00",
+      "hash": "78e2047e44badfff5cb41519da50e81e2feae6abeb485baa1845a089ebb554c4",
+      "last_updated": "2026-06-12T03:40:58+00:00",
       "original_url": "https://developers.openai.com/codex/app/computer-use",
       "path": "/codex/app/computer-use",
       "source_url": "https://developers.openai.com/codex/app/computer-use.md",
@@ -106,8 +106,8 @@
       "title": "Review"
     },
     "app__settings.md": {
-      "hash": "25bfe8ea24aca11bb6337d232413e09f45c8abb28a6cd996f9398989b7afe0a0",
-      "last_updated": "2026-06-05T03:31:56+00:00",
+      "hash": "756669edd778448e62f818d248c3c98a444a96effeaff0d89db7d6c8336f7632",
+      "last_updated": "2026-06-12T03:40:59+00:00",
       "original_url": "https://developers.openai.com/codex/app/settings",
       "path": "/codex/app/settings",
       "source_url": "https://developers.openai.com/codex/app/settings.md",
@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "2fe12efc94edb486d4c6eb55d17c726a059764f6287f98f8fcf9ce5996ca5a76",
-      "last_updated": "2026-06-11T03:41:20+00:00",
+      "hash": "daa407ad0ae137fb20d81afab1b8c07f100ef60332af0ab296653f214406ff1a",
+      "last_updated": "2026-06-12T03:41:01+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -282,8 +282,8 @@
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "14dc9fecb3eeed5cad4d3c77810702609ab4fd87dd4cd9a1b5b7d41762af00e0",
-      "last_updated": "2026-06-11T10:19:29+00:00",
+      "hash": "0d9e51ed900638011ed273f9c28e2010ee39f8f999fac78907a3a48593bfc3fd",
+      "last_updated": "2026-06-12T03:41:04+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
@@ -522,8 +522,8 @@
       "title": "Build plugins"
     },
     "pricing.md": {
-      "hash": "976793e9b9c18dec6aa2383667856adcb37eaa25d2c19a8c0c6745386872cbc3",
-      "last_updated": "2026-06-10T15:29:10+00:00",
+      "hash": "bd5e8a52fd361765b02836fb5b0cf3a7306b1162e2f7a28c703408b24efc5889",
+      "last_updated": "2026-06-12T03:41:12+00:00",
       "original_url": "https://developers.openai.com/codex/pricing",
       "path": "/codex/pricing",
       "source_url": "https://developers.openai.com/codex/pricing.md",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-11T20:19:11+00:00",
+  "last_updated": "2026-06-12T03:41:36+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
