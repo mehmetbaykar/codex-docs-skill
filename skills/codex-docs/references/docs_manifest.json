@@ -50,8 +50,8 @@
       "title": "Automations"
     },
     "app__browser.md": {
-      "hash": "cfe7a89396a0047766445cb711faead6460e328b1647d8e5df2ea37f0f4c2d48",
-      "last_updated": "2026-06-12T03:40:58+00:00",
+      "hash": "320f875b8f0d34448195e8811ae093c5b77ae975140138c3a528a11501d12d4e",
+      "last_updated": "2026-06-13T03:29:19+00:00",
       "original_url": "https://developers.openai.com/codex/app/browser",
       "path": "/codex/app/browser",
       "source_url": "https://developers.openai.com/codex/app/browser.md",
@@ -106,8 +106,8 @@
       "title": "Review"
     },
     "app__settings.md": {
-      "hash": "756669edd778448e62f818d248c3c98a444a96effeaff0d89db7d6c8336f7632",
-      "last_updated": "2026-06-12T03:40:59+00:00",
+      "hash": "8620974af3d89ce2eb97de620f772644ddc48d5d2f7ff07e6d8cddceb1aeba00",
+      "last_updated": "2026-06-13T03:29:20+00:00",
       "original_url": "https://developers.openai.com/codex/app/settings",
       "path": "/codex/app/settings",
       "source_url": "https://developers.openai.com/codex/app/settings.md",
@@ -154,16 +154,16 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "daa407ad0ae137fb20d81afab1b8c07f100ef60332af0ab296653f214406ff1a",
-      "last_updated": "2026-06-12T17:36:14+00:00",
+      "hash": "d5717140f523334092df81cb076eda3314f6c7fba6b69ebbfd7d7f38715091c0",
+      "last_updated": "2026-06-13T03:29:22+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
       "title": "Codex Changelog"
     },
     "cli.md": {
-      "hash": "f1088969444df91384cedfabbc735a5e9f3dfcded014fd306a32065c92258fee",
-      "last_updated": "2026-05-15T20:08:28+00:00",
+      "hash": "282da7315d132d615a47c115cbf94b6d53f1cd7b8573bc1de3022654611ce281",
+      "last_updated": "2026-06-13T03:29:22+00:00",
       "original_url": "https://developers.openai.com/codex/cli",
       "path": "/codex/cli",
       "source_url": "https://developers.openai.com/codex/cli.md",
@@ -282,8 +282,8 @@
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "0d9e51ed900638011ed273f9c28e2010ee39f8f999fac78907a3a48593bfc3fd",
-      "last_updated": "2026-06-12T03:41:04+00:00",
+      "hash": "2a5a4182ec19a84f0054e32f3d74d7c4a97c6bab81496c93ddfa767c5e74b093",
+      "last_updated": "2026-06-13T03:29:25+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
@@ -522,8 +522,8 @@
       "title": "Build plugins"
     },
     "pricing.md": {
-      "hash": "bd5e8a52fd361765b02836fb5b0cf3a7306b1162e2f7a28c703408b24efc5889",
-      "last_updated": "2026-06-12T03:41:12+00:00",
+      "hash": "488d8fcabb0f011fa55f8c729b2696c14e2bd50577a3b093aece8c3218be4ba1",
+      "last_updated": "2026-06-13T03:29:33+00:00",
       "original_url": "https://developers.openai.com/codex/pricing",
       "path": "/codex/pricing",
       "source_url": "https://developers.openai.com/codex/pricing.md",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-12T17:36:56+00:00",
+  "last_updated": "2026-06-13T03:29:53+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
