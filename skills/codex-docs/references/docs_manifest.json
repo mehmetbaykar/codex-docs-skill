@@ -409,6 +409,14 @@
       "source_url": "https://developers.openai.com/codex/ide/slash-commands.md",
       "title": "Codex IDE extension slash commands"
     },
+    "import.md": {
+      "hash": "a6aabb31983d66df8b51bdd6c30a72aa3ebbebff35fe0e527ebd08491a92852b",
+      "last_updated": "2026-06-14T16:20:07+00:00",
+      "original_url": "https://developers.openai.com/codex/import",
+      "path": "/codex/import",
+      "source_url": "https://developers.openai.com/codex/import.md",
+      "title": "Import to Codex"
+    },
     "integrations__github.md": {
       "hash": "93d16b9f69e23d21e177b02c0076a867ce92145e3fc8a62b123377609de93a67",
       "last_updated": "2026-05-15T20:08:37+00:00",
@@ -464,14 +472,6 @@
       "path": "/codex/memories/chronicle",
       "source_url": "https://developers.openai.com/codex/memories/chronicle.md",
       "title": "Chronicle"
-    },
-    "migrate.md": {
-      "hash": "b85096170181fc3a6258a1fca9dc4aa2e88268d15a00bdd1518b3ce5f4475699",
-      "last_updated": "2026-05-15T20:08:39+00:00",
-      "original_url": "https://developers.openai.com/codex/migrate",
-      "path": "/codex/migrate",
-      "source_url": "https://developers.openai.com/codex/migrate.md",
-      "title": "Migrate to Codex"
     },
     "models.md": {
       "hash": "4a21e0c4681ee2d1072ad1bf301b39d03d9241bc46bd96faf988ac481b9a6869",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-13T03:29:53+00:00",
+  "last_updated": "2026-06-14T16:20:43+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
