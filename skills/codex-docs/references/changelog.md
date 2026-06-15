@@ -201,12 +201,6 @@ Codex app
 
 Codex app
 
-## Codex CLI Release: 0.125.0 (2026-04-24)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-313349252
-
-0.125.0
-
 ## GPT-5.5 and Codex app updates (2026-04-23)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-04-23
