@@ -114,8 +114,8 @@
       "title": "Codex app settings"
     },
     "app__troubleshooting.md": {
-      "hash": "9e53e3c0e379c7f1d4cb2ed2b36ddee49bd514a44824c6ed9bd8be2762c64d15",
-      "last_updated": "2026-05-15T20:10:26+00:00",
+      "hash": "76ff084898b4c0ebc99887ea1b9f9b828bcfba2253d6b34d63d2ddb0d59632d0",
+      "last_updated": "2026-06-16T20:47:29+00:00",
       "original_url": "https://developers.openai.com/codex/app/troubleshooting",
       "path": "/codex/app/troubleshooting",
       "source_url": "https://developers.openai.com/codex/app/troubleshooting.md",
@@ -130,8 +130,8 @@
       "title": "Windows"
     },
     "app__worktrees.md": {
-      "hash": "8d3019cba77731dbe0b8169d5db00a8c74c9a23768dc68b05bb258f142e52cc8",
-      "last_updated": "2026-05-15T20:08:27+00:00",
+      "hash": "ef64039bf0a9c0c95ab935a601642b02d64480fb9fd9231b6794ab83d317d6f6",
+      "last_updated": "2026-06-16T20:47:30+00:00",
       "original_url": "https://developers.openai.com/codex/app/worktrees",
       "path": "/codex/app/worktrees",
       "source_url": "https://developers.openai.com/codex/app/worktrees.md",
@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "39c2679a27bcbbf3ead8fd1f0044d3863f2b1d11ea31fd8cdf2fb7390b4e4d1b",
-      "last_updated": "2026-06-16T16:46:30+00:00",
+      "hash": "b2e61aa5d0d010dd9fecff74476d66834b55711d40fd770f7984afaf8aa24c76",
+      "last_updated": "2026-06-16T20:47:31+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-16T16:47:05+00:00",
+  "last_updated": "2026-06-16T20:48:06+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
