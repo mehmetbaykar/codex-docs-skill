@@ -7,9 +7,9 @@ path: /codex/memories/chronicle
 # Chronicle
 
 Chronicle is in an **opt-in research preview**. It is only available for
-  ChatGPT Pro subscribers on macOS, and is not yet available in the EU, UK and
-  Switzerland. Please review the [Privacy and Security](#privacy-and-security)
-  section for details and to understand the current risks before enabling.
+  ChatGPT Pro subscribers on macOS. Please review the [Privacy and
+  Security](#privacy-and-security) section for details and to understand the
+  current risks before enabling.
 
 Chronicle augments Codex memories with context from your screen. When you prompt
 Codex, those memories can help it understand what you’ve been working on with
@@ -138,7 +138,6 @@ build that includes Chronicle and that you have Memories enabled inside Settings
 > Personalization.
 
 Chronicle is currently only available for ChatGPT Pro subscribers on macOS.
-Chronicle is not available in the EU, UK and Switzerland.
 
 If setup does not complete:
 

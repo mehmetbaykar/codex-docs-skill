@@ -153,9 +153,6 @@ available as plugins, changing app settings, and reproducing GUI-only bugs.
 Because computer use can affect app and system state outside your project
 workspace, keep tasks narrow and review permission prompts before continuing.
 
-The feature isn't available in the European Economic Area, the United Kingdom, or
-Switzerland at launch.
-
 <a id="richer-outputs-and-artifacts"></a>
 <a id="task-sidebar"></a>
 <a id="artifact-viewer"></a>
