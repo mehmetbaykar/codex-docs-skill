@@ -522,8 +522,8 @@
       "title": "Build plugins"
     },
     "pricing.md": {
-      "hash": "488d8fcabb0f011fa55f8c729b2696c14e2bd50577a3b093aece8c3218be4ba1",
-      "last_updated": "2026-06-13T03:29:33+00:00",
+      "hash": "5ce0d6a8d519058ee843487cb2077749deb0e67e18b00823c5c328b608da7828",
+      "last_updated": "2026-06-16T03:51:18+00:00",
       "original_url": "https://developers.openai.com/codex/pricing",
       "path": "/codex/pricing",
       "source_url": "https://developers.openai.com/codex/pricing.md",
@@ -1206,7 +1206,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-15T23:01:53+00:00",
+  "last_updated": "2026-06-16T03:51:46+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
