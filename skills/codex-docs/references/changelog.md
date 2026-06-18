@@ -3,6 +3,12 @@
 > Source: https://developers.openai.com/codex/changelog
 > RSS: https://developers.openai.com/codex/changelog/rss.xml
 
+## Codex CLI Release: 0.141.0 (2026-06-18)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-341160952
+
+0.141.0
+
 ## Codex app features are available in the EEA, UK, and Switzerland (2026-06-16)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-16-app
