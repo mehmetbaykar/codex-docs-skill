@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 148,
+    "pages_fetched_successfully": 149,
     "pages_skipped": 10,
-    "total_pages_discovered": 158
+    "total_pages_discovered": 159
   },
   "files": {
     "agent-approvals-security.md": {
@@ -26,8 +26,8 @@
       "title": "Use Codex with Amazon Bedrock"
     },
     "app-server.md": {
-      "hash": "9732c408ebed6deb9d39ebd7d9bf3e1ef19e39e46ff38306b824ca41ad2ca014",
-      "last_updated": "2026-05-21T19:51:12+00:00",
+      "hash": "e989a66dc428760856f5d13897fd08c2d50b92aeb2a890c1a1a78213d284a4df",
+      "last_updated": "2026-06-18T20:22:31+00:00",
       "original_url": "https://developers.openai.com/codex/app-server",
       "path": "/codex/app-server",
       "source_url": "https://developers.openai.com/codex/app-server.md",
@@ -66,8 +66,8 @@
       "title": "Codex Chrome extension"
     },
     "app__commands.md": {
-      "hash": "7e28035c2b31e7cf7f788bfbc3a0da5d6b0d2dc4b2209c50f3ee8002e7eb5476",
-      "last_updated": "2026-06-12T03:40:58+00:00",
+      "hash": "50f47227124913f1e7d4afe7643945ef5db623d1eedd9883d6a382017e5cbe33",
+      "last_updated": "2026-06-18T20:22:32+00:00",
       "original_url": "https://developers.openai.com/codex/app/commands",
       "path": "/codex/app/commands",
       "source_url": "https://developers.openai.com/codex/app/commands.md",
@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "63abbd121354fd50d6e625b8b22c1cbf3d0f3c1cfdcb5905b969c65064bf502b",
-      "last_updated": "2026-06-18T10:17:08+00:00",
+      "hash": "9296f76b03416dbd69e359a9cb6a670f36211b0ed878cb18dacac8de951a91be",
+      "last_updated": "2026-06-18T20:22:35+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -178,16 +178,16 @@
       "title": "Codex CLI features"
     },
     "cli__reference.md": {
-      "hash": "1c19804e4248cedf58862d74f348dfc7d03331b50011b6f9ed62f760b82e616d",
-      "last_updated": "2026-06-09T20:04:39+00:00",
+      "hash": "0097cb528de1f102547713252157eb1737261571925cc30b2fd6c1d648da40bb",
+      "last_updated": "2026-06-18T20:22:36+00:00",
       "original_url": "https://developers.openai.com/codex/cli/reference",
       "path": "/codex/cli/reference",
       "source_url": "https://developers.openai.com/codex/cli/reference.md",
       "title": "Command line options"
     },
     "cli__slash-commands.md": {
-      "hash": "3bd4afcdf70699bf651fc707df9df1138e7f1d3b194baacb227104e613f9089c",
-      "last_updated": "2026-06-09T20:04:40+00:00",
+      "hash": "ff7196e77bd898c5dfcffebbecad96e8fee7945f66813c9f19cef5f5280dfe13",
+      "last_updated": "2026-06-18T20:22:36+00:00",
       "original_url": "https://developers.openai.com/codex/cli/slash-commands",
       "path": "/codex/cli/slash-commands",
       "source_url": "https://developers.openai.com/codex/cli/slash-commands.md",
@@ -282,16 +282,16 @@
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "80f3e453578d8b7ee3badf4e1099446b214969cd3f591c3ff3525117468cb941",
-      "last_updated": "2026-06-16T16:46:34+00:00",
+      "hash": "c3bf5636fec799c0da5fae1b324fd19f8cf3ecc19f2195cd664792e04cdac887",
+      "last_updated": "2026-06-18T20:22:38+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
       "title": "Configuration Reference"
     },
     "config-sample.md": {
-      "hash": "a644f94debf9018ab5e64d7143ec0ad029605a8dd2bf350abef8c51582ce89cb",
-      "last_updated": "2026-06-01T21:30:20+00:00",
+      "hash": "3553cf8ea0e3e67c28a083ce7df36a54e50def927cf51c3b348864c29976467a",
+      "last_updated": "2026-06-18T20:22:39+00:00",
       "original_url": "https://developers.openai.com/codex/config-sample",
       "path": "/codex/config-sample",
       "source_url": "https://developers.openai.com/codex/config-sample.md",
@@ -506,8 +506,8 @@
       "title": "Permissions"
     },
     "plugins.md": {
-      "hash": "25b78949e2c5a5f0dee7043a2417a02d2845031c62fdcf3568f287e1ac6b81d3",
-      "last_updated": "2026-06-02T16:19:50+00:00",
+      "hash": "5cbae809a4f75fd5990102055e36857d2080888f5f5cfef32c2c48378152d333",
+      "last_updated": "2026-06-18T20:22:45+00:00",
       "original_url": "https://developers.openai.com/codex/plugins",
       "path": "/codex/plugins",
       "source_url": "https://developers.openai.com/codex/plugins.md",
@@ -544,6 +544,14 @@
       "path": "/codex/quickstart",
       "source_url": "https://developers.openai.com/codex/quickstart.md",
       "title": "Quickstart"
+    },
+    "record-and-replay.md": {
+      "hash": "fc39ca9efbbdac9716d4ebfde928544f0d44268aca711c5fd2770ddc822d4162",
+      "last_updated": "2026-06-18T20:22:47+00:00",
+      "original_url": "https://developers.openai.com/codex/record-and-replay",
+      "path": "/codex/record-and-replay",
+      "source_url": "https://developers.openai.com/codex/record-and-replay.md",
+      "title": "Record & Replay"
     },
     "remote-connections.md": {
       "hash": "1af82c96541aa926ca08c4c6a692162149965e9370d9a67189ccd84e77b260ac",
@@ -618,8 +626,8 @@
       "title": "Sites"
     },
     "skills.md": {
-      "hash": "3c57a444554b5f85345b6973bdda70988b2d20c2ba50fc0215561812c155ee52",
-      "last_updated": "2026-05-15T20:08:43+00:00",
+      "hash": "6cc69be9e2250f0408d95d0060f291dd2fd1b7a47f22a0c0672aed2d3675dcd4",
+      "last_updated": "2026-06-18T20:22:49+00:00",
       "original_url": "https://developers.openai.com/codex/skills",
       "path": "/codex/skills",
       "source_url": "https://developers.openai.com/codex/skills.md",
@@ -1206,7 +1214,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-18T10:17:38+00:00",
+  "last_updated": "2026-06-18T20:23:12+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",

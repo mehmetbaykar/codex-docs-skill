@@ -73,6 +73,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `pricing` - [Codex Pricing](https://developers.openai.com/codex/pricing)
 - `prompting` - [Prompting](https://developers.openai.com/codex/prompting)
 - `quickstart` - [Quickstart](https://developers.openai.com/codex/quickstart)
+- `record-and-replay` - [Record & Replay](https://developers.openai.com/codex/record-and-replay)
 - `remote-connections` - [Remote connections](https://developers.openai.com/codex/remote-connections)
 - `rules` - [Rules](https://developers.openai.com/codex/rules)
 - `sdk` - [Codex SDK](https://developers.openai.com/codex/sdk)
