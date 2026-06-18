@@ -58,6 +58,8 @@ path: /codex/cli/reference
 
 ];
 
+];
+
 ## How to read this reference
 
 This page catalogs every documented Codex CLI command and flag. Use the interactive tables to search by key or description. Each section indicates whether the option is stable or experimental and calls out risky combinations.
@@ -137,6 +139,20 @@ the transcript. Session IDs take precedence over session names.
 codex archive <SESSION>
 codex unarchive <SESSION>
 ```
+
+### `codex delete`
+
+Permanently delete a saved interactive session by session ID or session name.
+Use this only when you want to remove the transcript instead of hiding it from
+active session lists.
+
+```bash
+codex delete <SESSION>
+codex delete <SESSION_UUID> --force
+```
+
+Use `--force` only with a session UUID. Named sessions still require
+confirmation so Codex doesn't delete a repeated or ambiguous name without a prompt.
 
 ### `codex cloud`
 

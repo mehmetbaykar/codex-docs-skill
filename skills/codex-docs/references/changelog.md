@@ -3,11 +3,11 @@
 > Source: https://developers.openai.com/codex/changelog
 > RSS: https://developers.openai.com/codex/changelog/rss.xml
 
-## Codex CLI Release: 0.141.0 (2026-06-18)
+## Codex app (2026-06-18)
 
-- Source: https://developers.openai.com/codex/changelog/#github-release-341160952
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-06-18-app
 
-0.141.0
+Codex app
 
 ## Codex app features are available in the EEA, UK, and Switzerland (2026-06-16)
 
@@ -20,12 +20,6 @@ Codex app features are available in the EEA, UK, and Switzerland
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-15-mobile
 
 ChatGPT for iOS
-
-## Codex CLI Release: 0.140.0 (2026-06-15)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-339797498
-
-0.140.0
 
 ## Codex app (2026-06-11)
 
@@ -45,29 +39,11 @@ Codex app
 
 ChatGPT for iOS
 
-## Codex CLI Release: 0.139.0 (2026-06-09)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-336847772
-
-0.139.0
-
-## Codex CLI Release: 0.138.0 (2026-06-08)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-336275797
-
-0.138.0
-
 ## Codex app updates (2026-06-04)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-04-app
 
 Codex app updates
-
-## Codex CLI Release: 0.137.0 (2026-06-04)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-334076532
-
-0.137.0
 
 ## Build and deploy websites with Sites (2026-06-02)
 
@@ -93,35 +69,17 @@ Use Codex with Amazon Bedrock
 
 Terminal placement controls
 
-## Codex CLI Release: 0.136.0 (2026-06-01)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-332669350
-
-0.136.0
-
 ## Computer use and mobile access on Windows (2026-05-29)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-05-28-app
 
 Computer use and mobile access on Windows
 
-## Codex CLI Release: 0.135.0 (2026-05-28)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-331012967
-
-0.135.0
-
 ## GPT-5.3-Codex and GPT-5.2 deprecated (2026-05-26)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-05-26
 
 GPT-5.3-Codex and GPT-5.2 deprecated
-
-## Codex CLI Release: 0.134.0 (2026-05-26)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-329640454
-
-0.134.0
 
 ## ChatGPT for iOS (2026-05-25)
 
@@ -135,29 +93,11 @@ ChatGPT for iOS
 
 Appshots, goal mode, and more
 
-## Codex CLI Release: 0.133.0 (2026-05-21)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-327109656
-
-0.133.0
-
-## Codex CLI Release: 0.132.0 (2026-05-20)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-325545332
-
-0.132.0
-
 ## ChatGPT for iOS (2026-05-18)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-05-18-mobile
 
 ChatGPT for iOS
-
-## Codex CLI Release: 0.131.0 (2026-05-18)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-324452638
-
-0.131.0
 
 ## Work with Codex from anywhere (2026-05-14)
 
@@ -177,23 +117,11 @@ Expanded Auto-review documentation
 
 Codex app
 
-## Codex CLI Release: 0.130.0 (2026-05-08)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-319777370
-
-0.130.0
-
 ## Codex for Chrome (2026-05-07)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-05-07
 
 Codex for Chrome
-
-## Codex CLI Release: 0.129.0 (2026-05-07)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-319066904
-
-0.129.0
 
 ## Codex analytics governance docs update (2026-05-06)
 
@@ -212,12 +140,6 @@ Create Codex access tokens
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-05-05-app
 
 Codex app
-
-## Codex CLI Release: 0.128.0 (2026-04-30)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-315916672
-
-0.128.0
 
 ## Codex app (2026-04-24)
 
