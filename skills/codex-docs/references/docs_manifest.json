@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 149,
+    "pages_fetched_successfully": 156,
     "pages_skipped": 10,
-    "total_pages_discovered": 159
+    "total_pages_discovered": 166
   },
   "files": {
     "agent-approvals-security.md": {
@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "9296f76b03416dbd69e359a9cb6a670f36211b0ed878cb18dacac8de951a91be",
-      "last_updated": "2026-06-18T20:22:35+00:00",
+      "hash": "d50dbae3621aeec3fa40a8d532b3b3fde8a1619c17a93458c9f854bbeacddb12",
+      "last_updated": "2026-06-18T22:54:56+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -506,8 +506,8 @@
       "title": "Permissions"
     },
     "plugins.md": {
-      "hash": "5cbae809a4f75fd5990102055e36857d2080888f5f5cfef32c2c48378152d333",
-      "last_updated": "2026-06-18T20:22:45+00:00",
+      "hash": "e34e47ded8d5a00764629d833313be49d356fb60424f10822e61d8d82e635bee",
+      "last_updated": "2026-06-18T22:55:10+00:00",
       "original_url": "https://developers.openai.com/codex/plugins",
       "path": "/codex/plugins",
       "source_url": "https://developers.openai.com/codex/plugins.md",
@@ -546,8 +546,8 @@
       "title": "Quickstart"
     },
     "record-and-replay.md": {
-      "hash": "fc39ca9efbbdac9716d4ebfde928544f0d44268aca711c5fd2770ddc822d4162",
-      "last_updated": "2026-06-18T20:22:47+00:00",
+      "hash": "a5a02955c7a8c8883875fcbd20743d85014084d93461604ee7282cbc6198f50a",
+      "last_updated": "2026-06-18T22:55:11+00:00",
       "original_url": "https://developers.openai.com/codex/record-and-replay",
       "path": "/codex/record-and-replay",
       "source_url": "https://developers.openai.com/codex/record-and-replay.md",
@@ -578,8 +578,8 @@
       "title": "Codex SDK"
     },
     "security.md": {
-      "hash": "069065ca2f75e4e4a0d6960ef2e2c966ab59cbdf22e54924697ecc6009b5bca0",
-      "last_updated": "2026-05-28T22:40:36+00:00",
+      "hash": "36419e77df1ef46e04cda2908c7705b6ae24201bd8817dec934cf5bc84b5a30a",
+      "last_updated": "2026-06-18T22:55:12+00:00",
       "original_url": "https://developers.openai.com/codex/security",
       "path": "/codex/security",
       "source_url": "https://developers.openai.com/codex/security.md",
@@ -594,12 +594,68 @@
       "title": "FAQ"
     },
     "security__plugin.md": {
-      "hash": "da2ec23b5f92a708950a3e46262a4d1ffd0ae9803a10fd7151849665465f5bb4",
-      "last_updated": "2026-05-28T22:40:37+00:00",
+      "hash": "2db589537733390687271368a6cea26690c62a56a719540920985e6cdc099a00",
+      "last_updated": "2026-06-18T22:55:13+00:00",
       "original_url": "https://developers.openai.com/codex/security/plugin",
       "path": "/codex/security/plugin",
       "source_url": "https://developers.openai.com/codex/security/plugin.md",
-      "title": "Codex Security plugin"
+      "title": "Codex Security plugin quickstart"
+    },
+    "security__plugin__changelog.md": {
+      "hash": "840c7287c18b7affd4c744ba12a0ff18296047d38e1f0f404c4e6afb563c6a27",
+      "last_updated": "2026-06-18T22:55:13+00:00",
+      "original_url": "https://developers.openai.com/codex/security/plugin/changelog",
+      "path": "/codex/security/plugin/changelog",
+      "source_url": "https://developers.openai.com/codex/security/plugin/changelog.md",
+      "title": "Codex Security plugin changelog"
+    },
+    "security__plugin__code-changes.md": {
+      "hash": "13668abd6ce1725c9648492e3e3759f73ebdf9aa9abec0d68ddeeffd2ce1ee00",
+      "last_updated": "2026-06-18T22:55:14+00:00",
+      "original_url": "https://developers.openai.com/codex/security/plugin/code-changes",
+      "path": "/codex/security/plugin/code-changes",
+      "source_url": "https://developers.openai.com/codex/security/plugin/code-changes.md",
+      "title": "Review code changes for security"
+    },
+    "security__plugin__deep-scans.md": {
+      "hash": "2c49cd7844a5b6eb4b62fd72e24cf5d0271683b5ab237f14330a47b4d73b7ba6",
+      "last_updated": "2026-06-18T22:55:14+00:00",
+      "original_url": "https://developers.openai.com/codex/security/plugin/deep-scans",
+      "path": "/codex/security/plugin/deep-scans",
+      "source_url": "https://developers.openai.com/codex/security/plugin/deep-scans.md",
+      "title": "Run a deep security scan"
+    },
+    "security__plugin__export-findings.md": {
+      "hash": "bd4ae3d6908643750dda8cddd6a732f9fa8a582f6a55f991f311190c9d029627",
+      "last_updated": "2026-06-18T22:55:15+00:00",
+      "original_url": "https://developers.openai.com/codex/security/plugin/export-findings",
+      "path": "/codex/security/plugin/export-findings",
+      "source_url": "https://developers.openai.com/codex/security/plugin/export-findings.md",
+      "title": "Export and track security findings"
+    },
+    "security__plugin__fix-findings.md": {
+      "hash": "212448c7ee4e8692c146208b0a71df8a123a88df0dab99f016076316455f8af7",
+      "last_updated": "2026-06-18T22:55:15+00:00",
+      "original_url": "https://developers.openai.com/codex/security/plugin/fix-findings",
+      "path": "/codex/security/plugin/fix-findings",
+      "source_url": "https://developers.openai.com/codex/security/plugin/fix-findings.md",
+      "title": "Fix and verify security findings"
+    },
+    "security__plugin__scans.md": {
+      "hash": "c5321bdb1175cf53194f997fd01edc1a081ad637b333acf954d74e381b77e3b2",
+      "last_updated": "2026-06-18T22:55:15+00:00",
+      "original_url": "https://developers.openai.com/codex/security/plugin/scans",
+      "path": "/codex/security/plugin/scans",
+      "source_url": "https://developers.openai.com/codex/security/plugin/scans.md",
+      "title": "Run a Codex Security scan"
+    },
+    "security__plugin__triage-backlog.md": {
+      "hash": "6568a1b7bc8adf30f3bd09660f43a7b6261d62ee4bb451eb282ca76a4a9432df",
+      "last_updated": "2026-06-18T22:55:16+00:00",
+      "original_url": "https://developers.openai.com/codex/security/plugin/triage-backlog",
+      "path": "/codex/security/plugin/triage-backlog",
+      "source_url": "https://developers.openai.com/codex/security/plugin/triage-backlog.md",
+      "title": "Triage a backlog"
     },
     "security__setup.md": {
       "hash": "271f64bc242b8230b1acd0e9ecba3403b1a30b6eb6d0425f01b61cd2fd40ecd3",
@@ -802,8 +858,8 @@
       "title": "Productivity & Collaboration"
     },
     "use-cases__collections__security.md": {
-      "hash": "b40e2b3f5a58ca49869c1e75483883289aca44c9fe984c474d6eddffda4403a9",
-      "last_updated": "2026-06-05T14:45:47+00:00",
+      "hash": "0c0ebe5ee4f9053a5d528eb5db49822b5f3403d7c0c0eabf3fb28900b59cf649",
+      "last_updated": "2026-06-18T22:55:26+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/collections/security",
       "path": "/codex/use-cases/collections/security",
       "source_url": "https://developers.openai.com/codex/use-cases/collections/security.md",
@@ -842,8 +898,8 @@
       "title": "Use Cases Dcf Model"
     },
     "use-cases__deep-security-scan.md": {
-      "hash": "87f90474726e04610f404a02807e68d251397284c31288ead7e18eb9a9529281",
-      "last_updated": "2026-05-28T22:40:46+00:00",
+      "hash": "f092703bcf01ab0b3a4d564c7bf666b4247d8f9430145faec80dfda20beb48a7",
+      "last_updated": "2026-06-18T22:55:27+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/deep-security-scan",
       "path": "/codex/use-cases/deep-security-scan",
       "source_url": "https://developers.openai.com/codex/use-cases/deep-security-scan.md",
@@ -1090,8 +1146,8 @@
       "title": "Use Cases Refactor Your Codebase"
     },
     "use-cases__remediate-vulnerability-backlog.md": {
-      "hash": "fdc20651a24a39392644b7534e4715ebf5f3979e34720f8d77a16da6d5bb7850",
-      "last_updated": "2026-05-28T22:40:56+00:00",
+      "hash": "36854a51bc724424d0545b8d355770e839100a9c133432e6d48d9a853ba940a6",
+      "last_updated": "2026-06-18T22:55:39+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/remediate-vulnerability-backlog",
       "path": "/codex/use-cases/remediate-vulnerability-backlog",
       "source_url": "https://developers.openai.com/codex/use-cases/remediate-vulnerability-backlog.md",
@@ -1106,8 +1162,8 @@
       "title": "Use Cases Reusable Codex Skills"
     },
     "use-cases__scan-code-changes-for-security.md": {
-      "hash": "3bca5587988cb8a713c557097175a07f12eb9255bc98aa43e9b785decdf80d0b",
-      "last_updated": "2026-05-28T22:40:56+00:00",
+      "hash": "3c6091ad44ae1a007d9f96df05a18e11e6c4243fd8b15a20de73560eb1bf9580",
+      "last_updated": "2026-06-18T22:55:39+00:00",
       "original_url": "https://developers.openai.com/codex/use-cases/scan-code-changes-for-security",
       "path": "/codex/use-cases/scan-code-changes-for-security",
       "source_url": "https://developers.openai.com/codex/use-cases/scan-code-changes-for-security.md",
@@ -1214,7 +1270,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-18T20:23:12+00:00",
+  "last_updated": "2026-06-18T22:55:43+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
