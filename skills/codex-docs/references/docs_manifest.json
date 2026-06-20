@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "d50dbae3621aeec3fa40a8d532b3b3fde8a1619c17a93458c9f854bbeacddb12",
-      "last_updated": "2026-06-19T17:24:04+00:00",
+      "hash": "704b1aff2965c482883b36665cf5f47e32300438ff7de187049e2c310ed1ec26",
+      "last_updated": "2026-06-20T03:26:41+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -282,16 +282,16 @@
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "c3bf5636fec799c0da5fae1b324fd19f8cf3ecc19f2195cd664792e04cdac887",
-      "last_updated": "2026-06-18T20:22:38+00:00",
+      "hash": "cd5cfa22ac41a603ba70498935873269ba8b20298d9c7c9cd40635b4282e90fc",
+      "last_updated": "2026-06-20T03:26:46+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
       "title": "Configuration Reference"
     },
     "config-sample.md": {
-      "hash": "3553cf8ea0e3e67c28a083ce7df36a54e50def927cf51c3b348864c29976467a",
-      "last_updated": "2026-06-18T20:22:39+00:00",
+      "hash": "f99f4188ff3f6d61e01f91c4664e3825eeb09fcb4a3932fe702954b5f919c429",
+      "last_updated": "2026-06-20T03:26:47+00:00",
       "original_url": "https://developers.openai.com/codex/config-sample",
       "path": "/codex/config-sample",
       "source_url": "https://developers.openai.com/codex/config-sample.md",
@@ -450,8 +450,8 @@
       "title": "Best practices"
     },
     "mcp.md": {
-      "hash": "325be4f50fea4d352debda1ccb737f34e5a64bb99745beac4767aa6a019d2976",
-      "last_updated": "2026-05-27T03:33:35+00:00",
+      "hash": "d8c5a1b5b6a395ecafae6981d16703e30c693c0f7af76971b70b29e0c5a759cf",
+      "last_updated": "2026-06-20T03:26:53+00:00",
       "original_url": "https://developers.openai.com/codex/mcp",
       "path": "/codex/mcp",
       "source_url": "https://developers.openai.com/codex/mcp.md",
@@ -554,8 +554,8 @@
       "title": "Record & Replay"
     },
     "remote-connections.md": {
-      "hash": "1af82c96541aa926ca08c4c6a692162149965e9370d9a67189ccd84e77b260ac",
-      "last_updated": "2026-06-11T10:19:38+00:00",
+      "hash": "82fb0560a6d782a6c5c050ba0c96a1dd53a0598aff46529f833bf21af2caf0de",
+      "last_updated": "2026-06-20T03:26:58+00:00",
       "original_url": "https://developers.openai.com/codex/remote-connections",
       "path": "/codex/remote-connections",
       "source_url": "https://developers.openai.com/codex/remote-connections.md",
@@ -1270,7 +1270,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-19T17:24:54+00:00",
+  "last_updated": "2026-06-20T03:27:32+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
