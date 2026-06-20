@@ -219,12 +219,6 @@ Create Codex access tokens
 
 Codex app
 
-## Codex CLI Release: 0.128.0 (2026-04-30)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-315916672
-
-0.128.0
-
 ## Codex app (2026-04-24)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-04-24-app
