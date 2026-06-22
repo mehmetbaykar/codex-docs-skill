@@ -290,8 +290,8 @@
       "title": "Configuration Reference"
     },
     "config-sample.md": {
-      "hash": "f99f4188ff3f6d61e01f91c4664e3825eeb09fcb4a3932fe702954b5f919c429",
-      "last_updated": "2026-06-20T03:26:47+00:00",
+      "hash": "6cb8f6a4a64d7822266cc9d0f115e92643187d5bdce246ee51a26e041e966418",
+      "last_updated": "2026-06-22T20:43:24+00:00",
       "original_url": "https://developers.openai.com/codex/config-sample",
       "path": "/codex/config-sample",
       "source_url": "https://developers.openai.com/codex/config-sample.md",
@@ -1270,7 +1270,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-21T03:56:37+00:00",
+  "last_updated": "2026-06-22T20:43:57+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
