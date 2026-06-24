@@ -27,9 +27,7 @@ path: /codex/pricing
         - Pay only for the tokens Codex uses, based on [API
           pricing](https://platform.openai.com/docs/pricing)
 
-        - Assign standard or usage-based Codex seats based on your team's needs.
-          [Learn
-          more](https://help.openai.com/en/articles/8792828-what-is-chatgpt-business)
+        - Access ChatGPT and Codex across desktop and mobile apps
         - Larger virtual machines to run cloud tasks faster
         - Flexibly extend usage with [ChatGPT credits](#credits-overview)
         - A secure, dedicated workspace with essential admin controls, SAML SSO,
