@@ -322,8 +322,8 @@
       "title": "Feature Maturity"
     },
     "github-action.md": {
-      "hash": "38021ce9f78e5e1297251d913f8ead510569d5caacc4698a2d180ae6df9c4648",
-      "last_updated": "2026-05-26T17:55:21+00:00",
+      "hash": "97b17c27466551adabff43e0a693791b649de52c7c4591ba8fdd12a531f90740",
+      "last_updated": "2026-06-25T02:56:52+00:00",
       "original_url": "https://developers.openai.com/codex/github-action",
       "path": "/codex/github-action",
       "source_url": "https://developers.openai.com/codex/github-action.md",
@@ -610,8 +610,8 @@
       "title": "Codex Security plugin changelog"
     },
     "security__plugin__code-changes.md": {
-      "hash": "13668abd6ce1725c9648492e3e3759f73ebdf9aa9abec0d68ddeeffd2ce1ee00",
-      "last_updated": "2026-06-18T22:55:14+00:00",
+      "hash": "e91928a804453f3dc27e1e8b62225606b2960d4c2660929216f253fe4324f146",
+      "last_updated": "2026-06-25T02:57:00+00:00",
       "original_url": "https://developers.openai.com/codex/security/plugin/code-changes",
       "path": "/codex/security/plugin/code-changes",
       "source_url": "https://developers.openai.com/codex/security/plugin/code-changes.md",
@@ -634,8 +634,8 @@
       "title": "Export and track security findings"
     },
     "security__plugin__fix-findings.md": {
-      "hash": "212448c7ee4e8692c146208b0a71df8a123a88df0dab99f016076316455f8af7",
-      "last_updated": "2026-06-18T22:55:15+00:00",
+      "hash": "9e12ca2e6c84e2be41ba520084ba15329aff4dc317a334717b03b8044cc01842",
+      "last_updated": "2026-06-25T02:57:01+00:00",
       "original_url": "https://developers.openai.com/codex/security/plugin/fix-findings",
       "path": "/codex/security/plugin/fix-findings",
       "source_url": "https://developers.openai.com/codex/security/plugin/fix-findings.md",
@@ -650,8 +650,8 @@
       "title": "Run a Codex Security scan"
     },
     "security__plugin__triage-backlog.md": {
-      "hash": "6568a1b7bc8adf30f3bd09660f43a7b6261d62ee4bb451eb282ca76a4a9432df",
-      "last_updated": "2026-06-18T22:55:16+00:00",
+      "hash": "f57abe3880be29634b39ca04fabfa2b34e8e45669c5ef9455a4593c03b810eb7",
+      "last_updated": "2026-06-25T02:57:02+00:00",
       "original_url": "https://developers.openai.com/codex/security/plugin/triage-backlog",
       "path": "/codex/security/plugin/triage-backlog",
       "source_url": "https://developers.openai.com/codex/security/plugin/triage-backlog.md",
@@ -1270,7 +1270,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-24T19:43:43+00:00",
+  "last_updated": "2026-06-25T02:57:29+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
