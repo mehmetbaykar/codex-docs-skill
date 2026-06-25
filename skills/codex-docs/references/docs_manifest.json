@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "d2768c23430b0f2db8e11f292c54c5211c4bfbebdf9caef7605df403265be3be",
-      "last_updated": "2026-06-25T17:10:25+00:00",
+      "hash": "85ff16ffcb7d87524cab9361cef59b7fc5f68db9cb210d413e05f2a3b2cc746c",
+      "last_updated": "2026-06-25T22:19:10+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -554,8 +554,8 @@
       "title": "Record & Replay"
     },
     "remote-connections.md": {
-      "hash": "82fb0560a6d782a6c5c050ba0c96a1dd53a0598aff46529f833bf21af2caf0de",
-      "last_updated": "2026-06-20T03:26:58+00:00",
+      "hash": "97062edc44da37963125d13385a6c53d083720f9872dffc3ff2060d19b941f3a",
+      "last_updated": "2026-06-25T22:19:21+00:00",
       "original_url": "https://developers.openai.com/codex/remote-connections",
       "path": "/codex/remote-connections",
       "source_url": "https://developers.openai.com/codex/remote-connections.md",
@@ -1270,7 +1270,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-25T17:11:05+00:00",
+  "last_updated": "2026-06-25T22:19:43+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
