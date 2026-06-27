@@ -154,8 +154,8 @@
       "title": "Authentication"
     },
     "changelog.md": {
-      "hash": "2e3a230c1817c6634e598d43958dc54725a96c197befc09d3f40fdfa549ec98c",
-      "last_updated": "2026-06-26T22:11:01+00:00",
+      "hash": "c3f0db62439562f43ca4aadaafa997be4a472e22159f796b4450df4bbe454550",
+      "last_updated": "2026-06-27T02:51:36+00:00",
       "original_url": "https://developers.openai.com/codex/changelog",
       "path": "/codex/changelog",
       "source_url": "https://developers.openai.com/codex/changelog/rss.xml",
@@ -282,8 +282,8 @@
       "title": "Config basics"
     },
     "config-reference.md": {
-      "hash": "cd5cfa22ac41a603ba70498935873269ba8b20298d9c7c9cd40635b4282e90fc",
-      "last_updated": "2026-06-20T03:26:46+00:00",
+      "hash": "eeb7460df3f709f114327df7536bcec95c496084434d5c2bcda4f0cf587e4e1a",
+      "last_updated": "2026-06-27T02:51:40+00:00",
       "original_url": "https://developers.openai.com/codex/config-reference",
       "path": "/codex/config-reference",
       "source_url": "https://developers.openai.com/codex/config-reference.md",
@@ -1270,7 +1270,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-06-26T22:11:49+00:00",
+  "last_updated": "2026-06-27T02:52:09+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
