@@ -195,23 +195,11 @@ Appshots, goal mode, and more
 
 0.133.0
 
-## Codex CLI Release: 0.132.0 (2026-05-20)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-325545332
-
-0.132.0
-
 ## ChatGPT for iOS (2026-05-18)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-05-18-mobile
 
 ChatGPT for iOS
-
-## Codex CLI Release: 0.131.0 (2026-05-18)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-324452638
-
-0.131.0
 
 ## Work with Codex from anywhere (2026-05-14)
 
