@@ -570,8 +570,8 @@
       "title": "Rules"
     },
     "sdk.md": {
-      "hash": "0c11027e7b29b0e7db935d61c85dd71893b1de36c6850976feabaca0dc5c712c",
-      "last_updated": "2026-06-09T20:04:51+00:00",
+      "hash": "cf97bc249cbd6a4e74906a11ca6ee20bf8cced109a6017e5deb388d9bd4f4b44",
+      "last_updated": "2026-07-07T02:50:29+00:00",
       "original_url": "https://developers.openai.com/codex/sdk",
       "path": "/codex/sdk",
       "source_url": "https://developers.openai.com/codex/sdk.md",
@@ -1270,7 +1270,7 @@
       "/codex/*"
     ]
   },
-  "last_updated": "2026-07-06T22:12:12+00:00",
+  "last_updated": "2026-07-07T02:50:52+00:00",
   "skipped": [
     {
       "path": "/codex/tracks/game-development",
