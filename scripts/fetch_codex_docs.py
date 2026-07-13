@@ -27,12 +27,21 @@ REFERENCES_DIR = SKILL_DIR / "references"
 RAW_DIR = REFERENCES_DIR / "_raw"
 MANIFEST_FILE = "docs_manifest.json"
 
-DEVELOPERS_BASE_URL = "https://developers.openai.com"
-SITEMAP_INDEX_URL = f"{DEVELOPERS_BASE_URL}/sitemap-index.xml"
-CODEX_CHANGELOG_RSS_URL = f"{DEVELOPERS_BASE_URL}/codex/changelog/rss.xml"
+# Codex docs moved from developers.openai.com/codex to learn.chatgpt.com/docs
+# around 2026-07-09; HTML pages redirect, but the developers.openai.com sitemap
+# no longer lists /codex/* URLs.
+DOCS_BASE_URL = "https://learn.chatgpt.com"
+DOCS_PATH_PREFIX = "/docs"
+SITEMAP_INDEX_URL = f"{DOCS_BASE_URL}/sitemap-index.xml"
+LLMS_TXT_URL = f"{DOCS_BASE_URL}{DOCS_PATH_PREFIX}/llms.txt"
+# Legacy host still serves .md twins and llms.txt via redirect; keep as fallback.
+LEGACY_DOCS_BASE_URL = "https://developers.openai.com"
+LEGACY_DOCS_PATH_PREFIX = "/codex"
+LEGACY_LLMS_TXT_URL = f"{LEGACY_DOCS_BASE_URL}{LEGACY_DOCS_PATH_PREFIX}/llms.txt"
+CODEX_CHANGELOG_RSS_URL = f"{DOCS_BASE_URL}{DOCS_PATH_PREFIX}/changelog/rss.xml"
 
 HEADERS = {
-    "User-Agent": "codex-docs-skill-fetcher/1.0 (+https://developers.openai.com/codex)",
+    "User-Agent": "codex-docs-skill-fetcher/1.0 (+https://learn.chatgpt.com/docs)",
     "Accept": "text/plain, text/markdown, application/xml, text/xml, */*",
     "Cache-Control": "no-cache",
 }
@@ -44,12 +53,12 @@ RETRY_BASE_DELAY_SECONDS = 1
 RETRY_MAX_DELAY_SECONDS = 10
 MAX_THROTTLE_RETRIES = 5
 
-EXCLUDED_PREFIXES = ("/codex/enterprise/",)
+EXCLUDED_PREFIXES = (f"{DOCS_PATH_PREFIX}/enterprise/",)
 EXCLUDED_EXACT_PATHS = {
-    "/codex/videos",
+    f"{DOCS_PATH_PREFIX}/videos",
 }
 SPECIAL_RSS_PATHS = {
-    "/codex/changelog": CODEX_CHANGELOG_RSS_URL,
+    f"{DOCS_PATH_PREFIX}/changelog": CODEX_CHANGELOG_RSS_URL,
 }
 PAGE_PROCESSING_ERRORS = (
     RuntimeError,
@@ -82,7 +91,7 @@ class CodexPage:
     @property
     def markdown_url(self) -> str:
         path = self.path.rstrip("/")
-        return f"{DEVELOPERS_BASE_URL}{path}.md"
+        return f"{DOCS_BASE_URL}{path}.md"
 
 
 def now_iso() -> str:
@@ -229,16 +238,18 @@ def normalize_path(path: str) -> str:
 
 
 def is_codex_doc_url(url: str) -> bool:
+    """Return True for mirrored Codex doc pages on the current docs host."""
+
     parsed = urlparse(url)
     path = normalize_path(parsed.path)
 
     if parsed.scheme not in {"http", "https"}:
         return False
-    if parsed.netloc != "developers.openai.com":
+    if parsed.netloc != urlparse(DOCS_BASE_URL).netloc:
         return False
     if parsed.query:
         return False
-    if not (path == "/codex" or path.startswith("/codex/")):
+    if not (path == DOCS_PATH_PREFIX or path.startswith(f"{DOCS_PATH_PREFIX}/")):
         return False
     if path in EXCLUDED_EXACT_PATHS:
         return False
@@ -248,8 +259,9 @@ def is_codex_doc_url(url: str) -> bool:
 
 
 def path_to_filename(path: str) -> str:
-    slug = path.removeprefix("/codex").strip("/")
+    slug = path.removeprefix(DOCS_PATH_PREFIX).strip("/")
     if not slug:
+        # Keep the overview filename stable for installed skill consumers.
         slug = "codex"
 
     slug = slug.replace("/", "__")
@@ -259,33 +271,14 @@ def path_to_filename(path: str) -> str:
 
 
 def title_from_path(path: str) -> str:
-    slug = path.removeprefix("/codex").strip("/") or "codex"
+    slug = path.removeprefix(DOCS_PATH_PREFIX).strip("/") or "codex"
     return " ".join(part.capitalize() for part in re.split(r"[/_-]+", slug) if part)
 
 
-def discover_codex_pages(session: requests.Session) -> list[CodexPage]:
-    logger.info("Fetching sitemap index: %s", SITEMAP_INDEX_URL)
-    sitemap_index = fetch_text(session, SITEMAP_INDEX_URL)
-    if sitemap_index is None:
-        raise RuntimeError("Sitemap index returned no content")
-
-    sitemap_urls = xml_locs(sitemap_index)
-    if not sitemap_urls:
-        raise RuntimeError("No sitemap URLs found in sitemap index")
-
-    codex_urls: set[str] = set()
-    for sitemap_url in sitemap_urls:
-        logger.info("Fetching sitemap: %s", sitemap_url)
-        sitemap_text = fetch_text(session, sitemap_url)
-        if sitemap_text is None:
-            continue
-        codex_urls.update(
-            url for url in xml_locs(sitemap_text) if is_codex_doc_url(url)
-        )
-
+def _pages_from_urls(urls: set[str]) -> list[CodexPage]:
     pages: list[CodexPage] = []
     filename_to_path: dict[str, str] = {}
-    for url in sorted(codex_urls):
+    for url in sorted(urls):
         parsed = urlparse(url)
         path = normalize_path(parsed.path)
         filename = path_to_filename(path)
@@ -298,14 +291,116 @@ def discover_codex_pages(session: requests.Session) -> list[CodexPage]:
         filename_to_path[filename] = path
         pages.append(
             CodexPage(
-                url=f"{DEVELOPERS_BASE_URL}{path}",
+                url=f"{DOCS_BASE_URL}{path}",
                 path=path,
                 filename=filename,
                 title=title_from_path(path),
             )
         )
+    return pages
 
-    logger.info("Discovered %s Codex documentation URLs after filtering", len(pages))
+
+def _legacy_markdown_url_to_docs_url(url: str) -> str | None:
+    """Map a legacy developers.openai.com/codex/*.md link to a docs page URL."""
+
+    parsed = urlparse(url)
+    if parsed.netloc != urlparse(LEGACY_DOCS_BASE_URL).netloc:
+        return None
+    path = normalize_path(parsed.path)
+    if not path.endswith(".md"):
+        return None
+    path = path[:-3]
+    if not (path == LEGACY_DOCS_PATH_PREFIX or path.startswith(f"{LEGACY_DOCS_PATH_PREFIX}/")):
+        return None
+    slug = path.removeprefix(LEGACY_DOCS_PATH_PREFIX).strip("/")
+    # Skip aggregate / non-page exports that are not individual doc pages.
+    if slug in {"codex-manual", "llms-full"}:
+        return None
+    docs_path = DOCS_PATH_PREFIX if not slug else f"{DOCS_PATH_PREFIX}/{slug}"
+    return f"{DOCS_BASE_URL}{docs_path}"
+
+
+def discover_from_llms_txt(session: requests.Session) -> list[CodexPage]:
+    """Discover pages from llms.txt when the HTML sitemap has no Codex entries."""
+
+    for llms_url in (LLMS_TXT_URL, LEGACY_LLMS_TXT_URL):
+        logger.info("Fetching llms.txt fallback: %s", llms_url)
+        try:
+            llms_text = fetch_text(session, llms_url)
+        except PAGE_PROCESSING_ERRORS as error:
+            logger.warning("Failed to fetch %s: %s", llms_url, error)
+            continue
+        if not llms_text:
+            continue
+
+        urls: set[str] = set()
+        for match in re.finditer(r"\((https?://[^)\s]+\.md)\)", llms_text):
+            linked = match.group(1)
+            docs_url = _legacy_markdown_url_to_docs_url(linked)
+            if docs_url is None:
+                parsed = urlparse(linked)
+                if parsed.netloc != urlparse(DOCS_BASE_URL).netloc:
+                    continue
+                path = normalize_path(parsed.path)
+                if not path.endswith(".md"):
+                    continue
+                path = path[:-3]
+                if path.rstrip("/").endswith("/codex-manual"):
+                    continue
+                docs_url = f"{DOCS_BASE_URL}{path}"
+            if is_codex_doc_url(docs_url):
+                urls.add(docs_url)
+
+        # Always include the docs root overview page.
+        urls.add(f"{DOCS_BASE_URL}{DOCS_PATH_PREFIX}")
+        pages = _pages_from_urls(urls)
+        if pages:
+            logger.info(
+                "Discovered %s Codex documentation URLs from llms.txt", len(pages)
+            )
+            return pages
+
+    return []
+
+
+def discover_codex_pages(session: requests.Session) -> list[CodexPage]:
+    logger.info("Fetching sitemap index: %s", SITEMAP_INDEX_URL)
+    try:
+        sitemap_index = fetch_text(session, SITEMAP_INDEX_URL)
+    except PAGE_PROCESSING_ERRORS as error:
+        logger.warning("Sitemap index fetch failed: %s", error)
+        sitemap_index = None
+
+    pages: list[CodexPage] = []
+    if sitemap_index:
+        sitemap_urls = xml_locs(sitemap_index)
+        if not sitemap_urls:
+            logger.warning("No sitemap URLs found in sitemap index")
+        else:
+            codex_urls: set[str] = set()
+            for sitemap_url in sitemap_urls:
+                logger.info("Fetching sitemap: %s", sitemap_url)
+                try:
+                    sitemap_text = fetch_text(session, sitemap_url)
+                except PAGE_PROCESSING_ERRORS as error:
+                    logger.warning("Failed to fetch sitemap %s: %s", sitemap_url, error)
+                    continue
+                if sitemap_text is None:
+                    continue
+                codex_urls.update(
+                    url for url in xml_locs(sitemap_text) if is_codex_doc_url(url)
+                )
+            pages = _pages_from_urls(codex_urls)
+            logger.info(
+                "Discovered %s Codex documentation URLs after filtering", len(pages)
+            )
+
+    if not pages:
+        logger.warning(
+            "Sitemap discovery found no Codex pages; falling back to llms.txt"
+        )
+        pages = discover_from_llms_txt(session)
+
     return pages
 
 
@@ -322,7 +417,7 @@ def convert_html_links(content: str) -> str:
         label = re.sub(r"<[^>]+>", "", match.group("label")).strip()
         label = html.unescape(label)
         if href.startswith("/"):
-            href = urljoin(DEVELOPERS_BASE_URL, href)
+            href = urljoin(DOCS_BASE_URL, href)
         return f"[{label}]({href})"
 
     return re.sub(
@@ -551,7 +646,7 @@ def build_index(entries: dict[str, dict], skipped: list[dict]) -> str:
     lines = [
         "# Codex Docs Index",
         "",
-        "Local mirror of OpenAI Codex documentation from https://developers.openai.com/codex.",
+        "Local mirror of OpenAI Codex documentation from https://learn.chatgpt.com/docs.",
         "",
         "Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/codex-docs hooks` in Claude Code.",
         "",
@@ -712,10 +807,10 @@ def fetch_and_save_pages(
         "description": "Codex documentation mirror manifest. Files live beside this manifest in references/.",
         "source": {
             "sitemap_index_url": SITEMAP_INDEX_URL,
-            "base_url": DEVELOPERS_BASE_URL,
+            "base_url": DOCS_BASE_URL,
         },
         "filters": {
-            "include": ["/codex/*"],
+            "include": [f"{DOCS_PATH_PREFIX}/*"],
             "exclude_prefixes": list(EXCLUDED_PREFIXES),
             "exclude_exact_paths": sorted(EXCLUDED_EXACT_PATHS),
             "exclude_cross_domain": True,

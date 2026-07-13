@@ -2,7 +2,7 @@
 name: codex-docs
 description: >-
   Local mirror of OpenAI Codex product documentation
-  (developers.openai.com/codex): CLI, Cloud, web app, IDE extension, hooks,
+  (learn.chatgpt.com/docs): CLI, Cloud, web app, IDE extension, hooks,
   skills, plugins, MCP, subagents, AGENTS.md, prompts, rules, sandboxing,
   models, pricing, security, and configuration. Use whenever the user asks
   how Codex behaves, how to install or configure Codex, or what a Codex
@@ -33,9 +33,9 @@ this skill does not apply.
 ## Workflow
 
 1. If the user supplied a topic, normalize it to a slug:
-   - lowercase, strip leading `/codex/`, strip surrounding slashes
+   - lowercase, strip leading `/docs/` or `/codex/`, strip surrounding slashes
    - join nested segments with `__` (e.g. `cli features` -> `cli__features`,
-     `guides agents-md` -> `guides__agents-md`)
+     `agent-configuration agents-md` -> `agent-configuration__agents-md`)
 2. If `references/<slug>.md` exists, read that file directly. Do NOT grep the
    whole `references/` tree first - the index plus targeted reads is faster and
    uses less context.
@@ -66,7 +66,7 @@ stale, contradicted by the user, or empty:
 | User asks | Read |
 | --- | --- |
 | "How do Codex hooks work?" | `references/hooks.md` |
-| "What CLI features are available?" | `references/cli__features.md` |
-| "How do cloud environments work?" | `references/cloud__environments.md` |
-| "How should I write AGENTS.md?" | `references/guides__agents-md.md` |
+| "What features are available?" | `references/features.md` |
+| "How do cloud environments work?" | `references/environments__cloud-environment.md` |
+| "How should I write AGENTS.md?" | `references/agent-configuration__agents-md.md` |
 | No topic or unclear topic | `references/INDEX.md` |

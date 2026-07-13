@@ -1,7 +1,7 @@
 # Codex Docs Skill
 
 Local Agent Skill mirror of the OpenAI Codex documentation from
-[https://developers.openai.com/codex](https://developers.openai.com/codex).
+[https://learn.chatgpt.com/docs](https://learn.chatgpt.com/docs).
 
 The installable skill lives in `skills/codex-docs/`: `SKILL.md` is the entry
 point, cleaned Markdown copies live under `skills/codex-docs/references/`, and
@@ -29,19 +29,20 @@ argument to list topics. The full agent-facing usage contract lives in
 
 ## What's mirrored
 
-The fetcher reads `https://developers.openai.com/sitemap-index.xml` and mirrors
-Codex pages under `/codex` and `/codex/*` when they expose a `.md` source or
-have a special fetcher. It excludes:
+The fetcher reads `https://learn.chatgpt.com/sitemap-index.xml` and mirrors
+Codex pages under `/docs` and `/docs/*` when they expose a `.md` source or
+have a special fetcher. If the sitemap yields no docs pages, it falls back to
+`https://learn.chatgpt.com/docs/llms.txt`. It excludes:
 
-- `/codex/enterprise/*`
-- `/codex/videos`
-- non-doc cross-domain URLs (blog, cookbook, community, resources, showcase)
+- `/docs/enterprise/*`
+- `/docs/videos`
+- non-doc site sections (use-cases, guides, videos, resources, community)
 - query-string variants of the same page
 
 Current counts, fetched files, skipped entries, and failed pages are recorded in
 `skills/codex-docs/references/docs_manifest.json`; the generated topic list
 lives in `skills/codex-docs/references/INDEX.md`. The Codex changelog is
-rendered from `https://developers.openai.com/codex/changelog/rss.xml` because
+rendered from `https://learn.chatgpt.com/docs/changelog/rss.xml` because
 the changelog page does not expose an `.md` endpoint.
 
 ## Update
