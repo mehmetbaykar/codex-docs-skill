@@ -1,0 +1,34 @@
+---
+title: Integrated terminal
+source: https://learn.chatgpt.com/docs/integrated-terminal
+path: /docs/integrated-terminal
+---
+
+# Integrated terminal
+
+Each task in the ChatGPT desktop app includes a terminal scoped to its current project or
+worktree. Open it from the terminal icon in the top-right corner of the app, or
+press `Ctrl`+```.
+
+## Run and validate your project
+
+Use the terminal to validate changes, run scripts, and perform Git operations
+without switching apps. ChatGPT can read the current terminal output, so it can
+check a running development server or refer to a failed build while it works
+with you.
+
+Common commands include:
+
+- `git status`
+- `git pull --rebase`
+- `pnpm test` or `npm test`
+- `pnpm run lint` or another project-specific check
+
+## Create reusable actions
+
+If you run a command regularly, define an action in your [local environment](https://learn.chatgpt.com/docs/environments/local-environment#actions).
+Actions appear as shortcuts in the ChatGPT desktop app and run in the integrated
+terminal.
+
+`Cmd`+`K` opens the app command palette; it doesn't clear the
+terminal. To clear the terminal, press `Ctrl`+`L`.

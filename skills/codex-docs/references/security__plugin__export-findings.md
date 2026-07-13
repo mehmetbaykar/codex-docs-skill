@@ -1,7 +1,7 @@
 ---
 title: Export and track security findings
-source: https://developers.openai.com/codex/security/plugin/export-findings
-path: /codex/security/plugin/export-findings
+source: https://learn.chatgpt.com/docs/security/plugin/export-findings
+path: /docs/security/plugin/export-findings
 ---
 
 # Export and track security findings
@@ -123,5 +123,5 @@ result. A create, update, or reuse is complete only after Codex reads the exact
 issue back and verifies its binding identifiers and content.
 
 Keep the returned canonical issue or advisory URL with your triage record.
-Continue with [Fix and verify a finding](https://developers.openai.com/codex/security/plugin/fix-findings)
+Continue with [Fix and verify a finding](https://learn.chatgpt.com/docs/security/plugin/fix-findings)
 when the owner accepts the item for remediation.
