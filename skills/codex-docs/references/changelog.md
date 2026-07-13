@@ -1,7 +1,13 @@
 # Codex Changelog
 
-> Source: https://developers.openai.com/codex/changelog
-> RSS: https://developers.openai.com/codex/changelog/rss.xml
+> Source: https://learn.chatgpt.com/docs/changelog
+> RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
+
+## Codex joins the ChatGPT desktop app (2026-07-09)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-07-09-app
+
+Codex joins the ChatGPT desktop app
 
 ## ChatGPT for iOS (2026-07-06)
 

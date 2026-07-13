@@ -1,23 +1,83 @@
 ---
-title: Codex Models
-source: https://developers.openai.com/codex/models
-path: /codex/models
+title: Models
+source: https://learn.chatgpt.com/docs/models
+path: /docs/models
 ---
 
-# Codex Models
+# Models
+
+## Choose a model
+
+In the ChatGPT desktop app, use the model and reasoning control beneath the
+composer to choose an available model and adjust its reasoning effort.
+
+Higher reasoning effort can improve results for complex tasks, but it takes
+longer and uses more tokens. Start with the default effort and increase it when
+the task needs deeper planning or analysis.
+
+<strong className="text-[#8756e8] dark:text-[#bda4ff]">Ultra</strong> mode goes
+beyond a single-agent run. It uses
+[subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) to accelerate complex work,
+making it useful for larger tasks that can be split across subagents.
+
+<a id="recommended-models"></a>
+<a id="other-models"></a>
+<a id="deprecated-codex-models"></a>
+<a id="configure-your-default-local-model"></a>
+<a id="choose-a-model-for-cloud-tasks"></a>
 
 ## Recommended models
 
-For most tasks in Codex, start with
-  `gpt-5.5`. It is
-  strongest for complex coding, computer use, knowledge work, and research
-  workflows. GPT-5.5 is currently available in Codex when you sign in with
-  ChatGPT or API-key authentication. Use
-  `gpt-5.4-mini`
-  when you want a faster, lower-cost option for lighter coding tasks or
-  subagents. The `gpt-5.3-codex-spark` model is available in research preview
-  for ChatGPT Pro subscribers and is optimized for near-instant, real-time
-  coding iteration.
+Start with the default Power setting, which uses `gpt-5.6-sol` with medium
+  reasoning. Move toward **Smarter** for deeper reasoning or **Faster** for
+  faster, lower-cost work. Open **Advanced** when you want `gpt-5.6-luna` or a
+  specific model, reasoning effort, or speed.
+
+## Choosing Sol, Terra, and Luna
+
+Codex offers three GPT-5.6 models: **Sol** for detail and polish, **Terra** as the
+everyday workhorse, and **Luna** for clear, repeatable work. If you are unsure,
+start with Sol.
+
+### Where each model shines
+
+- **Sol, for complex, open-ended work.** Choose Sol for ambiguous, difficult, or
+  high-value tasks that need extra analysis, judgment, or polish, such as
+  complex code changes, deep research, or polished documents. For narrower
+  tasks, define what done looks like to keep the work focused.
+- **Terra, the pragmatic all-rounder.** Choose Terra for everyday work that
+  needs strong reasoning and tool use when you do not need Sol's full depth. It
+  is a natural starting point for work you previously gave GPT-5.5.
+- **Luna, for clear, repeatable tasks.** Choose Luna for specific, high-volume
+  tasks when you know what a good result looks like, such as extraction,
+  classification, transformation, and structured summaries.
+
+### Pick a reasoning effort
+
+Use the lowest reasoning effort that produces the result you need. Increase it
+for tasks that need more planning, analysis, or checking.
+
+- **Light** in the Codex app, ChatGPT Work, and IDE extension, or **Low** in the
+  CLI, suits quick, well-scoped tasks.
+- **Medium** balances speed and depth for tasks that need more planning.
+- **High** and **Extra High** suit difficult work with multiple steps, sources,
+  or tradeoffs.
+
+There is no exact mapping from GPT-5.5 reasoning efforts to GPT-5.6. Try a
+familiar task at a lower setting and adjust based on the result.
+
+### Know when to use Max or Ultra
+
+**Max** gives the selected model more time to reason about a single task. Use it
+for the hardest problems, when depth matters more than speed or usage. If you
+don't see Max in your options, you'll have to enable it in your app settings.
+
+**Ultra** uses [subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) to handle
+separate parts of a complex task in parallel. Choose it when you can divide the
+work into meaningful parts. Most tasks do not need Max or Ultra.
+
+If Ultra doesn't appear in the desktop app's model slider, go to
+**Settings** > **Configuration**, then turn on **Ultra in model picker slider**.
 
 ## Other models
 
@@ -34,26 +94,17 @@ The `gpt-5.2` and `gpt-5.3-codex` models are deprecated in Codex when you sign i
 
 Some models that are deprecated for ChatGPT sign-in may still be available in the API. If your workflow depends on one of those models, use API-key authentication and check the [API models page](https://developers.openai.com/api/docs/models) for current availability.
 
-## Configuring models
+## Configure your default local model
 
-### Configure your default local model
-
-The Codex CLI and IDE extension use the same `config.toml` [configuration file](https://developers.openai.com/codex/config-basic). To specify a model, add a `model` entry to your configuration file. If you don't specify a model, the Codex app, CLI, or IDE Extension defaults to a recommended model.
+The ChatGPT desktop app, Codex CLI, and IDE extension use the same `config.toml`
+[configuration file](https://learn.chatgpt.com/docs/config-file/config-basic). To specify a model, add a
+`model` entry to your configuration file. If you don't specify a model, the
+ChatGPT desktop app, Codex CLI, or IDE extension uses a recommended model.
 
 ```toml
-model = "gpt-5.5"
+model = "gpt-5.6"
 ```
 
-### Choosing a different local model temporarily
-
-In the Codex CLI, you can use the `/model` command during an active thread to change the model. In the IDE extension, you can use the model selector below the input box to choose your model.
-
-To start a new Codex CLI thread with a specific model or to specify the model for `codex exec` you can use the `--model`/`-m` flag:
-
-```bash
-codex -m gpt-5.5
-```
-
-### Choosing your model for cloud tasks
+## Choose a model for cloud tasks
 
 Currently, you can't change the default model for Codex cloud tasks.
