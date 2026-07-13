@@ -1,7 +1,7 @@
 ---
 title: Agent internet access
-source: https://developers.openai.com/codex/cloud/internet-access
-path: /codex/cloud/internet-access
+source: https://learn.chatgpt.com/docs/cloud/internet-access
+path: /docs/cloud/internet-access
 ---
 
 # Agent internet access

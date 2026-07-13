@@ -1,7 +1,7 @@
 ---
 title: Feature Maturity
-source: https://developers.openai.com/codex/feature-maturity
-path: /codex/feature-maturity
+source: https://learn.chatgpt.com/docs/feature-maturity
+path: /docs/feature-maturity
 ---
 
 # Feature Maturity

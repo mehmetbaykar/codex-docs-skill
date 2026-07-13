@@ -1,7 +1,7 @@
 ---
 title: Use Codex with Amazon Bedrock
-source: https://developers.openai.com/codex/amazon-bedrock
-path: /codex/amazon-bedrock
+source: https://learn.chatgpt.com/docs/amazon-bedrock
+path: /docs/amazon-bedrock
 ---
 
 # Use Codex with Amazon Bedrock
@@ -145,7 +145,7 @@ Fast Mode isn't available with Amazon Bedrock. Fast Mode uses priority
     the individual feature documentation to learn more about geo restrictions.
     <sup>†</sup> Local plugin bundles are supported when their capabilities do
     not require ChatGPT authentication. OpenAI-curated plugin discovery and
-    features that depend on app connectors or cloud-hosted sharing aren't
+    features that depend on connectors or cloud-hosted sharing aren't
     available.
 
 ## Troubleshooting

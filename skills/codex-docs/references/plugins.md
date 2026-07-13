@@ -1,79 +1,87 @@
 ---
 title: Plugins
-source: https://developers.openai.com/codex/plugins
-path: /codex/plugins
+source: https://learn.chatgpt.com/docs/plugins
+path: /docs/plugins
 ---
 
 # Plugins
 
 ## Overview
 
-Plugins bundle skills, app integrations, and MCP servers into reusable
-workflows for Codex.
+Plugins bundle capabilities into reusable workflows in ChatGPT. They
+can include skills, an MCP-backed app, or both. Plugins are
+available in ChatGPT Work on the web and in Work or Codex in the ChatGPT
+desktop app. Codex CLI and the IDE extension can also browse and install
+plugins for a Codex environment.
 
-Extend what Codex can do, for example:
+In the ChatGPT desktop app, open **Plugins** from Work or Codex to browse,
+install, and use plugins. Installed plugins can add skills, connectors, and MCP
+tools to new chats.
+
+Extend what ChatGPT can do, for example:
 
 - Install the Codex Security plugin to scan authorized code and confirm
   plausible vulnerability findings.
-- Install the Gmail plugin to let Codex read and manage Gmail.
+- Install the Gmail plugin to let ChatGPT read and manage Gmail.
 - Install the Google Drive plugin to work across Drive, Docs, Sheets, and
   Slides.
 - Install the Slack plugin to summarize channels or draft replies.
-- Install [Sites](https://developers.openai.com/codex/sites) to create and deploy hosted websites,
-  web apps, and games.
 
-A plugin can contain:
+A plugin can contain one or more of these parts:
 
-- **Skills:** reusable instructions for specific kinds of work. Codex can load
+- **Skills:** reusable instructions for specific kinds of work. ChatGPT can load
   them when needed so it follows the right steps and uses the right references
   or helper scripts for a task.
-- **Apps:** connections to tools like GitHub, Slack, or Google Drive, so
-  Codex can read information from those tools and take actions in them.
-- **MCP servers:** services that give Codex access to more tools or shared
-  information, often from systems outside your local project.
+- **Apps:** connections to tools like GitHub, Slack, or Google
+  Drive, so ChatGPT can read information from those tools and take actions in
+  them. Apps expose tools and can optionally include custom ChatGPT UI.
+- **MCP servers:** services that give ChatGPT access to more tools or shared
+  information, often from systems outside your local project. They're also the services behind apps. They define tools, enforce auth, return structured data, and perform actions against external systems.
+- **Browser extensions:** browser capabilities that a plugin needs for its
+  workflow.
+- **Hooks:** commands that run at configured lifecycle points. Review and trust
+  plugin hooks before you enable them.
+- **Scheduled task templates:** reusable starting points for recurring tasks
+  where scheduled tasks are available.
 
 You can share plugins by publishing them through a marketplace source, such as a
-repo marketplace for a project or team. See [Build plugins](https://developers.openai.com/codex/plugins/build)
+repo marketplace for a project or team. See [Build plugins](https://learn.chatgpt.com/docs/build-plugins)
 for marketplace setup, packaging, and distribution guidance.
+
+If you are building an integration, start with [Build an app](https://learn.chatgpt.com/docs/build-app).
+If the app needs custom ChatGPT UI, use the [Apps SDK](https://developers.openai.com/apps-sdk) for that
+optional UI layer.
 
 ## Use and install plugins
 
-### Plugin Directory in the Codex app
+<a id="plugin-directory-in-the-codex-app"></a>
 
-Open **Plugins** in the Codex app to browse and install curated plugins.
+### Plugins in ChatGPT
 
-The plugin directory groups plugins into categories:
+To browse and install curated plugins:
 
-- **Curated by OpenAI:** highlighted plugins available to all Codex users.
-- **Shared with you:** plugins shared by other members of your ChatGPT
-  workspace.
-- **Created by you:** plugins you created or added to your own workspace.
+- On the web, select Work and open **Plugins**.
+- In the ChatGPT desktop app, select Work or Codex and open **Plugins**.
 
-### Plugin directory in the CLI
+The plugin directory organizes plugins into tabs:
 
-In Codex CLI, run the following command to open the plugins list:
+- **OpenAI:** plugins built by OpenAI.
+- **Your workspace name:** plugins provided by your workspace.
+- **Personal:** personal marketplace plugins, including **Created by me** and
+  **Shared with me** sections when those plugins are available.
 
-```text
-codex
-/plugins
-```
+Use the separate **Installed** row to review plugins you already installed.
 
-The CLI plugin browser groups plugins by marketplace. Use the marketplace tabs
-to switch sources, open a plugin to inspect details, install or uninstall
-marketplace entries, and press `Space` on an installed plugin to toggle
-its enabled state.
-
-### Install and use a plugin
+### Install and use a plugin in ChatGPT
 
 Once you open the plugin directory:
 
 1. Search or browse for a plugin, then open its details.
-2. Select the install button. In the app, select the plus button or
-   **Add to Codex**. In the CLI, select `Install plugin`.
-3. If the plugin needs an external app, connect it when prompted. Some plugins
+2. Select the plus button to install the plugin.
+3. If the plugin needs a connector, connect it when prompted. Some plugins
    ask you to authenticate during install. Others wait until the first time you
    use them.
-4. After installation, start a new thread and ask Codex to use the plugin.
+4. After installation, start a new task and ask ChatGPT to use the plugin.
 
 After you install a plugin, you can use it directly in the prompt window:
 
@@ -83,7 +91,7 @@ After you install a plugin, you can use it directly in the prompt window:
       from today" or "Pull the latest launch notes from Google Drive."
     </p>
     <p class="mt-3 text-sm text-secondary">
-      Use this when you want Codex to choose the right installed tools for the
+      Use this when you want ChatGPT to choose the right installed tools for the
       task.
     </p>
 
@@ -93,52 +101,56 @@ After you install a plugin, you can use it directly in the prompt window:
       explicitly.
     </p>
     <p class="mt-3 text-sm text-secondary">
-      Use this when you want to be specific about which plugin or skill Codex
-      should use. See [Codex app commands](https://developers.openai.com/codex/app/commands) and
-      [Skills](https://developers.openai.com/codex/skills).
+      Use this when you want to be specific about which plugin or skill ChatGPT
+      should use. See [Skills & Plugins](https://learn.chatgpt.com/codex/skills-and-plugins).
     </p>
 
 ### How permissions and data sharing work
 
-Installing a plugin makes its workflows available in Codex, but your existing
-[approval settings](https://developers.openai.com/codex/agent-approvals-security) still apply. Any
-connected external services remain subject to their own authentication,
-privacy, and data-sharing policies.
+When a plugin capability runs through a Codex host, the host's [sandbox and
+approval policy](https://learn.chatgpt.com/docs/agent-approvals-security) applies.
+Connections to external services use that service's own authentication and
+access controls.
 
-- Bundled skills are available as soon as you install the plugin.
-- If a plugin includes apps, Codex may prompt you to install or sign in to
-  those apps in ChatGPT during setup or the first time you use them.
+- Bundled skills become available when you start a new chat or CLI session
+  after installation.
+- If a plugin includes connectors, ChatGPT may prompt you to install or sign in to
+  those connectors in ChatGPT during setup or the first time you use them.
 - If a plugin includes MCP servers, they may require extra setup or
   authentication before you can use them.
-- When Codex sends data through a bundled app, that app's terms and privacy
+- When ChatGPT sends data through a bundled connector, that service's terms and privacy
   policy apply.
 
-### Remove or turn off a plugin
+### Remove a plugin
 
 To remove a plugin, reopen it from the plugin browser and select
-**Uninstall plugin**.
+**Uninstall plugin** when that action is available. Workspace-installed or
+default plugins may not offer that action; your workspace administrator controls
+them instead.
 
-Uninstalling a plugin removes the plugin bundle from Codex, but bundled apps
-stay installed until you manage them in ChatGPT.
-
-If you want to keep a plugin installed but turn it off, set its entry in
-`~/.codex/config.toml` to `enabled = false`, then restart Codex:
-
-```toml
-[plugins."gmail@openai-curated"]
-enabled = false
-```
+Uninstalling a plugin removes the plugin bundle from that ChatGPT or Codex
+environment, but bundled connectors stay connected until you manage them in
+ChatGPT.
 
 ## Build your own plugin
 
 If you want to create, test, or distribute your own plugin, see
-[Build plugins](https://developers.openai.com/codex/plugins/build). That page covers local scaffolding,
+[Build plugins](https://learn.chatgpt.com/docs/build-plugins). That page covers local scaffolding,
 manual marketplace setup, workspace sharing, plugin manifests, and packaging
 guidance.
 
+If your plugin includes an app, see [Build an app](https://learn.chatgpt.com/docs/build-app). Apps are
+MCP-backed integrations. They can work with tools alone, or add custom ChatGPT UI
+through the [Apps SDK](https://developers.openai.com/apps-sdk) when a visual surface helps the workflow.
+
+When your plugin is ready for review, see
+[Submit plugins](https://learn.chatgpt.com/docs/submit-plugins) for the OpenAI Platform submission
+flow, required permissions, review materials, MCP checks, and test case
+requirements.
+
 ## Plugin guides
 
-- [Record & Replay](https://developers.openai.com/codex/record-and-replay): Show Codex a workflow
+- [Record & Replay](https://learn.chatgpt.com/docs/extend/record-and-replay): Show ChatGPT a workflow
   once and turn it into a reusable skill.
-- [Codex Security plugin quickstart](https://developers.openai.com/codex/security/plugin): Install the
+- [Codex Security plugin quickstart](https://learn.chatgpt.com/docs/security/plugin): Install the
   plugin, scan authorized code, and review the result.

@@ -1,7 +1,7 @@
 ---
 title: Triage a backlog
-source: https://developers.openai.com/codex/security/plugin/triage-backlog
-path: /codex/security/plugin/triage-backlog
+source: https://learn.chatgpt.com/docs/security/plugin/triage-backlog
+path: /docs/security/plugin/triage-backlog
 ---
 
 # Triage a backlog
@@ -30,7 +30,7 @@ existing backlog. Use validation when runtime evidence could resolve a finding
 that static evidence leaves uncertain.
 
 Backlog triage starts from existing findings. To search the repository for new
-  vulnerabilities, [run a security scan](https://developers.openai.com/codex/security/plugin/scans). Triage
+  vulnerabilities, [run a security scan](https://learn.chatgpt.com/docs/security/plugin/scans). Triage
   doesn't modify the repository or implement fixes.
 
 ## Choose the findings to triage
@@ -126,7 +126,7 @@ For each finding, review:
 - the affected location and component
 - the product surface and source trust level
 - the recommended next step
-- the [`$codex-security:fix-finding`](https://developers.openai.com/codex/security/plugin/fix-findings)
+- the [`$codex-security:fix-finding`](https://learn.chatgpt.com/docs/security/plugin/fix-findings)
   handoff, when the finding is `confirmed`
 
 Triage is complete when every supplied finding has one result, Codex preserves
@@ -137,7 +137,7 @@ reviewing the triage results.
 ## Next steps
 
 - `confirmed`: After a person accepts the finding for remediation, use
-  [`$codex-security:fix-finding`](https://developers.openai.com/codex/security/plugin/fix-findings) to fix and
+  [`$codex-security:fix-finding`](https://learn.chatgpt.com/docs/security/plugin/fix-findings) to fix and
   verify it. Triage prepares a prompt-ready handoff but doesn't invoke the skill
   automatically.
 - `needs_review`: If running code can resolve the proof gap, use
@@ -152,11 +152,11 @@ reviewing the triage results.
   Unlike triage, validation may build or run code, create a focused test or
   proof of concept, or exercise a real interface. Review the proposed commands
   before approving them and keep [Codex approval and security
-  policies](https://developers.openai.com/codex/agent-approvals-security) in place.
+  policies](https://learn.chatgpt.com/docs/agent-approvals-security) in place.
 
 - `needs_review`: If the finding depends on product policy or deployment
   context, answer the listed open questions before changing code.
 - `not_actionable`: Keep the evidence with your triage record. Codex doesn't
   automatically close or update the source ticket.
 - To look for vulnerabilities beyond the supplied backlog, [run a security
-  scan](https://developers.openai.com/codex/security/plugin/scans).
+  scan](https://learn.chatgpt.com/docs/security/plugin/scans).
