@@ -146,8 +146,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "c1ecc90142a6e72a9cd6c19641bc42f4bfa9b0fd4a7b99ab78bda30d28322bdc",
-      "last_updated": "2026-07-13T10:33:46+00:00",
+      "hash": "847e8bab4e025da14a0e9066eb36e0cb44ec49eb17eb75246360f1906fbbcca6",
+      "last_updated": "2026-07-13T14:49:21+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -370,8 +370,8 @@
       "title": "Record & Replay"
     },
     "feature-maturity.md": {
-      "hash": "b91ebe0bc360a1a096fcc1a296f4d95c377954dd8b78ce3af166efbef957f126",
-      "last_updated": "2026-07-13T10:33:54+00:00",
+      "hash": "7c72cdca1c882859c1b8e7ad5893d7f537f1dfe9f679902935974a4627afdddb",
+      "last_updated": "2026-07-13T14:49:27+00:00",
       "original_url": "https://learn.chatgpt.com/docs/feature-maturity",
       "path": "/docs/feature-maturity",
       "source_url": "https://learn.chatgpt.com/docs/feature-maturity.md",
@@ -830,7 +830,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-13T10:34:12+00:00",
+  "last_updated": "2026-07-13T14:49:41+00:00",
   "skipped": [
     {
       "path": "/docs",
