@@ -146,8 +146,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "1f3d51acca969c9a2f4ef7a7ee20c7b6ccf64fd779b506a4f4530b03f9db26cc",
-      "last_updated": "2026-07-14T05:26:55+00:00",
+      "hash": "c1ecc90142a6e72a9cd6c19641bc42f4bfa9b0fd4a7b99ab78bda30d28322bdc",
+      "last_updated": "2026-07-14T07:58:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -378,8 +378,8 @@
       "title": "Feature Maturity"
     },
     "features.md": {
-      "hash": "db69ba95e13a435e94b7de9fed094f4967903dbae29bb2379324378782af0f88",
-      "last_updated": "2026-07-13T10:33:55+00:00",
+      "hash": "3f0b0d9e5542746940ba6680c2a13f6deb0fe285777a91d5928fc10c9d922e8f",
+      "last_updated": "2026-07-14T07:58:51+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features",
       "path": "/docs/features",
       "source_url": "https://learn.chatgpt.com/docs/features.md",
@@ -830,7 +830,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-14T05:27:20+00:00",
+  "last_updated": "2026-07-14T07:59:07+00:00",
   "skipped": [
     {
       "path": "/docs",
