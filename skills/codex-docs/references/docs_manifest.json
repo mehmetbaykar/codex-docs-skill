@@ -146,8 +146,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "627ccc85d767a22ef86fbbb0ecb6e988024b2b2bf580499df7d43dc6e0b07c72",
-      "last_updated": "2026-07-14T10:42:48+00:00",
+      "hash": "daee783523fa1bb804a26dadfed1d330486f6a5c9c5bf847590d7153d23d80f7",
+      "last_updated": "2026-07-14T16:11:52+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -722,8 +722,8 @@
       "title": "Skills & Plugins"
     },
     "submit-plugins.md": {
-      "hash": "a38d25483450375f6949d54b34da638d799a865335a705ee3380e8cd021e7d00",
-      "last_updated": "2026-07-13T10:34:08+00:00",
+      "hash": "336c4ceecf4d454c43f173ee88ff04c580e12cccec917728913603987503993c",
+      "last_updated": "2026-07-14T16:12:15+00:00",
       "original_url": "https://learn.chatgpt.com/docs/submit-plugins",
       "path": "/docs/submit-plugins",
       "source_url": "https://learn.chatgpt.com/docs/submit-plugins.md",
@@ -830,7 +830,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-14T10:43:10+00:00",
+  "last_updated": "2026-07-14T16:12:18+00:00",
   "skipped": [
     {
       "path": "/docs",
