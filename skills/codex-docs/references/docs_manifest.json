@@ -130,16 +130,16 @@
       "title": "Build an app"
     },
     "build-plugins.md": {
-      "hash": "f9f59a034eaf3b7c2a5cfd7e44e5e6c52aaa37d6cb5fcfffded3b1771397f1eb",
-      "last_updated": "2026-07-13T10:33:45+00:00",
+      "hash": "2d055164772922fbc3c6dc6095d2ee2770574fc68cc2ef8291feaefeff490b31",
+      "last_updated": "2026-07-14T19:15:21+00:00",
       "original_url": "https://learn.chatgpt.com/docs/build-plugins",
       "path": "/docs/build-plugins",
       "source_url": "https://learn.chatgpt.com/docs/build-plugins.md",
       "title": "Build plugins"
     },
     "build-skills.md": {
-      "hash": "f067dcaa937cbeb4492d9c7995546caa0d59e7a1d1ee46fec5276a7264d172e4",
-      "last_updated": "2026-07-13T10:33:45+00:00",
+      "hash": "b290dc70dd285b9e4b074293c24d0d35a4b70201bea049d77991023e10870db4",
+      "last_updated": "2026-07-14T19:15:21+00:00",
       "original_url": "https://learn.chatgpt.com/docs/build-skills",
       "path": "/docs/build-skills",
       "source_url": "https://learn.chatgpt.com/docs/build-skills.md",
@@ -530,8 +530,8 @@
       "title": "Pets"
     },
     "plugins.md": {
-      "hash": "5dfbaf6f3a2884b65e34d1fea5f6a6f12efd2db965fe2e9ac7bae0f500170ab4",
-      "last_updated": "2026-07-13T10:34:01+00:00",
+      "hash": "de8a9f6070f8164bf22588a97cfc6292c47447d5e056ee9983eebd6d272f90c1",
+      "last_updated": "2026-07-14T19:15:37+00:00",
       "original_url": "https://learn.chatgpt.com/docs/plugins",
       "path": "/docs/plugins",
       "source_url": "https://learn.chatgpt.com/docs/plugins.md",
@@ -830,7 +830,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-14T16:12:18+00:00",
+  "last_updated": "2026-07-14T19:15:48+00:00",
   "skipped": [
     {
       "path": "/docs",
