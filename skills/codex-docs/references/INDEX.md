@@ -53,6 +53,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `extend__record-and-replay` - [Record & Replay](https://learn.chatgpt.com/docs/extend/record-and-replay)
 - `feature-maturity` - [Feature Maturity](https://learn.chatgpt.com/docs/feature-maturity)
 - `features` - [Features](https://learn.chatgpt.com/docs/features)
+- `features__codex-micro` - [Codex Micro](https://learn.chatgpt.com/docs/features/codex-micro)
 - `get-started-with-work` - [Get started with Work](https://learn.chatgpt.com/docs/get-started-with-work)
 - `github-action` - [Codex GitHub Action](https://learn.chatgpt.com/docs/github-action)
 - `glossary` - [Glossary](https://learn.chatgpt.com/docs/glossary)

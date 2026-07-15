@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 101,
+    "pages_fetched_successfully": 102,
     "pages_skipped": 1,
-    "total_pages_discovered": 102
+    "total_pages_discovered": 103
   },
   "files": {
     "administration.md": {
@@ -378,12 +378,20 @@
       "title": "Feature Maturity"
     },
     "features.md": {
-      "hash": "3f0b0d9e5542746940ba6680c2a13f6deb0fe285777a91d5928fc10c9d922e8f",
-      "last_updated": "2026-07-14T07:58:51+00:00",
+      "hash": "0b9215ea8e47beb76092c972d61cc5fe7f36c46ad89bbdab36b0ef5cf56e8809",
+      "last_updated": "2026-07-15T19:06:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features",
       "path": "/docs/features",
       "source_url": "https://learn.chatgpt.com/docs/features.md",
       "title": "Features"
+    },
+    "features__codex-micro.md": {
+      "hash": "f8ccb3cc65c3b3f5fac2f907d5f4ec48c555ea357afdd44e2400505b97c68ca5",
+      "last_updated": "2026-07-15T19:06:23+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/features/codex-micro",
+      "path": "/docs/features/codex-micro",
+      "source_url": "https://learn.chatgpt.com/docs/features/codex-micro.md",
+      "title": "Codex Micro"
     },
     "get-started-with-work.md": {
       "hash": "02f594170e953f54f33d1c431f71cbe7fbbf2f1c78ec8cb629586f58e10f8186",
@@ -626,8 +634,8 @@
       "title": "FAQ"
     },
     "security__plugin.md": {
-      "hash": "3a7f77c4bbed59b00a50cb5c6cdb0f5414faefb3564e70111d067da5680b79ff",
-      "last_updated": "2026-07-13T10:34:04+00:00",
+      "hash": "808b117fece4f06843a19f83ac0edf32f17a086a31fc77a5cdf04ac284ccb3c1",
+      "last_updated": "2026-07-15T19:06:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin",
       "path": "/docs/security/plugin",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin.md",
@@ -642,8 +650,8 @@
       "title": "Codex Security plugin changelog"
     },
     "security__plugin__code-changes.md": {
-      "hash": "4196752ec948747fb4b860a0e4b543a24b362bc3e581a7b165f28692aabd2d89",
-      "last_updated": "2026-07-13T10:34:05+00:00",
+      "hash": "716ce8f207e5978cf4688b5dc5a3aafe42a2b180f25f63e964e49318d4a6d704",
+      "last_updated": "2026-07-15T19:06:34+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/code-changes",
       "path": "/docs/security/plugin/code-changes",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/code-changes.md",
@@ -830,7 +838,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-15T05:28:16+00:00",
+  "last_updated": "2026-07-15T19:06:41+00:00",
   "skipped": [
     {
       "path": "/docs",
