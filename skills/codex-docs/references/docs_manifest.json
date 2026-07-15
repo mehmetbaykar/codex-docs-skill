@@ -10,8 +10,8 @@
   },
   "files": {
     "administration.md": {
-      "hash": "fadba75e86e8f437b966d644861252b531d8cb3a6a7e52febe94c320f2fe5903",
-      "last_updated": "2026-07-13T10:33:40+00:00",
+      "hash": "3214b72770483000e0a9fa82ab0c265f113535b85ca7b88c189eebfcfc431d1a",
+      "last_updated": "2026-07-15T05:27:48+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -794,8 +794,8 @@
       "title": "What's new"
     },
     "windows__windows-app.md": {
-      "hash": "7ed1bb870f6018556cb1f3e0f5471a40a2275eb36058c97a4690dcc707006df5",
-      "last_updated": "2026-07-13T10:34:11+00:00",
+      "hash": "c5b246b12f7a221fcec87a9eab7e9156ece07c5c75002f380aaabfc30c262a77",
+      "last_updated": "2026-07-15T05:28:15+00:00",
       "original_url": "https://learn.chatgpt.com/docs/windows/windows-app",
       "path": "/docs/windows/windows-app",
       "source_url": "https://learn.chatgpt.com/docs/windows/windows-app.md",
@@ -830,7 +830,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-14T19:15:48+00:00",
+  "last_updated": "2026-07-15T05:28:16+00:00",
   "skipped": [
     {
       "path": "/docs",
