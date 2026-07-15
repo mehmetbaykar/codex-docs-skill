@@ -42,8 +42,8 @@
       "title": "Rules"
     },
     "agent-configuration__speed.md": {
-      "hash": "50ee2299ef26afada415497e88e342488bfd1322fffd83fe974bded48a295756",
-      "last_updated": "2026-07-13T10:33:42+00:00",
+      "hash": "569a83db7a76c13c1a56e766dbb1d7377010a59bddd53d94dfe6073c0fa873d4",
+      "last_updated": "2026-07-15T21:57:21+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/speed",
       "path": "/docs/agent-configuration/speed",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/speed.md",
@@ -838,7 +838,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-15T19:06:41+00:00",
+  "last_updated": "2026-07-15T21:57:45+00:00",
   "skipped": [
     {
       "path": "/docs",
