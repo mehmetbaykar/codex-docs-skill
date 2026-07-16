@@ -154,8 +154,8 @@
       "title": "Codex Changelog"
     },
     "chrome-extension.md": {
-      "hash": "13c2a12cb957efbaa3b4c7a07d8945a5d2e04dfe163fd35e19390311d6f1ff57",
-      "last_updated": "2026-07-13T10:33:46+00:00",
+      "hash": "bf76c91eb1e3fbbd7e06c7e780002dfd5cb5b0cb957a524a2c09d4dbd51a76c8",
+      "last_updated": "2026-07-16T22:00:55+00:00",
       "original_url": "https://learn.chatgpt.com/docs/chrome-extension",
       "path": "/docs/chrome-extension",
       "source_url": "https://learn.chatgpt.com/docs/chrome-extension.md",
@@ -838,7 +838,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-16T05:37:48+00:00",
+  "last_updated": "2026-07-16T22:01:17+00:00",
   "skipped": [
     {
       "path": "/docs",
