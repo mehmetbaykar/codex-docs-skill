@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.144.5 (2026-07-16)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-354839089
+
+0.144.5
+
 ## Codex CLI Release: 0.144.4 (2026-07-14)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-353578290
@@ -158,12 +164,6 @@ ChatGPT for iOS
 - Source: https://developers.openai.com/codex/changelog/#github-release-336847772
 
 0.139.0
-
-## Codex CLI Release: 0.138.0 (2026-06-08)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-336275797
-
-0.138.0
 
 ## Codex app updates (2026-06-04)
 
