@@ -58,12 +58,12 @@
       "title": "Subagents"
     },
     "amazon-bedrock.md": {
-      "hash": "cbc9cd2ee549716f119756f9cd25ec8ea80427dea1760856fb473f3109fb7ac1",
-      "last_updated": "2026-07-13T10:33:42+00:00",
+      "hash": "d9fd952d3c992b7d0da181f11a8693fe3614cf2968ccac81f7b4cda2b7643048",
+      "last_updated": "2026-07-17T21:50:34+00:00",
       "original_url": "https://learn.chatgpt.com/docs/amazon-bedrock",
       "path": "/docs/amazon-bedrock",
       "source_url": "https://learn.chatgpt.com/docs/amazon-bedrock.md",
-      "title": "Use Codex with Amazon Bedrock"
+      "title": "Use ChatGPT Work and Codex with Amazon Bedrock"
     },
     "app-server.md": {
       "hash": "6b5ac8d72edb4f3c90a570dd001afe33f54b9fb9ba7335efa35d8336d2e338fb",
@@ -226,8 +226,8 @@
       "title": "Computer Use"
     },
     "config-file__config-advanced.md": {
-      "hash": "c1794076b56774d0a324c55a2c21ae9a69a8cde94828adb86ffca138422bc5d6",
-      "last_updated": "2026-07-13T10:33:49+00:00",
+      "hash": "1098a85f896159e3381cf6ecc8f3604ff5acba3f675c4ab5c9c5ffa3a4aef420",
+      "last_updated": "2026-07-17T21:50:40+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
       "path": "/docs/config-file/config-advanced",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-advanced.md",
@@ -854,7 +854,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-17T19:03:33+00:00",
+  "last_updated": "2026-07-17T21:50:59+00:00",
   "skipped": [
     {
       "path": "/docs",
