@@ -53,7 +53,7 @@
         },
         {
           title: "Internet access",
-          description: "Control which domains cloud tasks can reach.",
+          description: "Control which domains cloud chats can reach.",
           href: "/codex/cloud/internet-access",
           icon: "webSearch",
         },
@@ -71,9 +71,9 @@
           icon: "shieldCheck",
         },
         {
-          title: "FAQ",
+          title: "Codex Security cloud FAQ",
           description:
-            "Get answers about scans, findings, privacy, and access.",
+            "Get answers about cloud scans, findings, privacy, and access.",
           href: "/codex/security/faq",
           icon: "chat",
         },

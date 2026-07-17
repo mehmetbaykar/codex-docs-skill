@@ -6,7 +6,7 @@ path: /docs/agent-configuration/subagents
 
 # Subagents
 
-ChatGPT Work and Codex can run subagent workflows by spawning specialized
+Work mode and Codex can run subagent workflows by spawning specialized
 agents in parallel and then collecting their results in one response. This can
 be particularly helpful for complex tasks that are highly parallel, such as
 codebase exploration or implementing a multi-step feature plan.
@@ -24,20 +24,20 @@ appears in the ChatGPT desktop app, Codex CLI, and the IDE extension.
 Because each subagent does its own model and tool work, subagent workflows
 consume more tokens than comparable single-agent runs.
 
-Ask Codex in an app task to delegate independent parts of the work to
+Ask Codex in an app chat to delegate independent parts of the work to
 subagents. Current local Codex releases delegate when you ask directly or when
 applicable `AGENTS.md` or skill instructions request it. The app surfaces each
 subagent thread so you can inspect its work and the summary returned to the main
-task.
+chat.
 
 ## Why subagent workflows help
 
-Even with large context windows, models have limits. If you flood the main conversation (where you're defining requirements, constraints, and decisions) with noisy intermediate output such as exploration notes, test logs, stack traces, and command output, the session can become less reliable over time.
+Even with large context windows, models have limits. If you flood the main chat (where you're defining requirements, constraints, and decisions) with noisy intermediate output such as exploration notes, test logs, stack traces, and command output, the session can become less reliable over time.
 
 This is often described as:
 
 - **Context pollution**: useful information gets buried under noisy intermediate output.
-- **Context rot**: performance degrades as the conversation fills up with less relevant details.
+- **Context rot**: performance degrades as the chat fills up with less relevant details.
 
 For background, see the Chroma writeup on [context rot](https://research.trychroma.com/context-rot).
 
