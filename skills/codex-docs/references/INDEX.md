@@ -12,7 +12,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `agent-configuration__rules` - [Rules](https://learn.chatgpt.com/docs/agent-configuration/rules)
 - `agent-configuration__speed` - [Speed](https://learn.chatgpt.com/docs/agent-configuration/speed)
 - `agent-configuration__subagents` - [Subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents)
-- `amazon-bedrock` - [Use Codex with Amazon Bedrock](https://learn.chatgpt.com/docs/amazon-bedrock)
+- `amazon-bedrock` - [Use ChatGPT Work and Codex with Amazon Bedrock](https://learn.chatgpt.com/docs/amazon-bedrock)
 - `app-server` - [Codex App Server](https://learn.chatgpt.com/docs/app-server)
 - `app` - [ChatGPT desktop app](https://learn.chatgpt.com/docs/app)
 - `appshots` - [Appshots](https://learn.chatgpt.com/docs/appshots)
