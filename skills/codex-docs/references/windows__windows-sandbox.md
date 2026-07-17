@@ -9,7 +9,7 @@ path: /docs/windows/windows-sandbox
 Use Codex on Windows with the native [ChatGPT desktop app](https://learn.chatgpt.com/docs/windows/windows-app), the
 [CLI](https://learn.chatgpt.com/docs/codex/cli), or the [IDE extension](https://learn.chatgpt.com/docs/codex/ide).
 
-The ChatGPT desktop app on Windows supports core workflows such as parallel tasks,
+The ChatGPT desktop app on Windows supports core workflows such as parallel chats,
 worktrees, scheduled tasks, Git functionality, the built-in browser, file previews,
 plugins, and skills.
 
@@ -192,7 +192,7 @@ If you are not sure how to change those permissions, ask your IT team for help.
 
 Sandboxed commands cannot reach the network
 
-Some Codex tasks are intentionally run without outbound network access,
+Some Codex chats are intentionally run without outbound network access,
 depending on the permissions mode in use.
 
 If a task fails because it cannot reach the network:

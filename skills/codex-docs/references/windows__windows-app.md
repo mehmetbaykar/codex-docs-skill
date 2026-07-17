@@ -7,7 +7,7 @@ path: /docs/windows/windows-app
 # ChatGPT desktop app for Windows
 
 The [ChatGPT desktop app for Windows](https://get.microsoft.com/installer/download/9PLM9XGG6VKS?cid=website_cta_psi) gives you one interface for
-working across projects, running parallel tasks, and reviewing results.
+working across projects, running parallel chats, and reviewing results.
 The Windows app supports core workflows such as worktrees, scheduled tasks, Git
 functionality, the built-in browser, file previews, plugins, and skills.
 It runs natively on Windows using PowerShell and the
@@ -62,7 +62,7 @@ installed, options include:
 - WSL
 
 This change applies only to new terminal sessions. If you already have an
-integrated terminal open, restart the app or start a new task before
+integrated terminal open, restart the app or start a new chat before
 expecting the new default terminal to appear.
 
 ## Windows Subsystem for Linux (WSL)
