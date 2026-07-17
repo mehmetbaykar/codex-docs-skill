@@ -8,15 +8,15 @@ path: /docs/plugins
 
 ## Overview
 
-Plugins bundle capabilities into reusable workflows in ChatGPT. They
-can include skills, an MCP-backed app, or both. Plugins are
-available in ChatGPT Work on the web and in Work or Codex in the ChatGPT
-desktop app. Codex CLI and the IDE extension can also browse and install
-plugins for a Codex environment.
+Plugins bundle capabilities into reusable workflows in ChatGPT. They can
+include skills, connectors, or both. Plugins are available in Work mode in
+ChatGPT on the web and in Work mode or Codex in the ChatGPT desktop app. Codex
+CLI also has a plugin browser for Codex environments. Plugins aren't available
+in Chat mode, the IDE extension, or mobile.
 
-In the ChatGPT desktop app, open **Plugins** from Work or Codex to browse,
-install, and use plugins. Installed plugins can add skills, connectors, and MCP
-tools to new chats.
+In the ChatGPT desktop app, select ChatGPT and switch to Work mode, or select
+Codex. Then open **Plugins** to browse, install, and use plugins. Installed
+plugins can add skills, connectors, and MCP tools to new chats.
 
 Extend what ChatGPT can do, for example:
 
@@ -32,11 +32,13 @@ A plugin can contain one or more of these parts:
 - **Skills:** reusable instructions for specific kinds of work. ChatGPT can load
   them when needed so it follows the right steps and uses the right references
   or helper scripts for a task.
-- **Apps:** connections to tools like GitHub, Slack, or Google
-  Drive, so ChatGPT can read information from those tools and take actions in
-  them. Apps expose tools and can optionally include custom ChatGPT UI.
+- **Connectors:** connections to tools like GitHub, Slack, or Google Drive, so
+  ChatGPT can read information from those tools and take actions in them.
+  Connectors expose tools and can optionally include custom ChatGPT UI.
 - **MCP servers:** services that give ChatGPT access to more tools or shared
-  information, often from systems outside your local project. They're also the services behind apps. They define tools, enforce auth, return structured data, and perform actions against external systems.
+  information, often from systems outside your local project. They're also the
+  services behind connectors. They define tools, enforce auth, return structured
+  data, and perform actions against external systems.
 - **Browser extensions:** browser capabilities that a plugin needs for its
   workflow.
 - **Hooks:** commands that run at configured lifecycle points. Review and trust
@@ -49,8 +51,8 @@ repo marketplace for a project or team. See [Build plugins](https://learn.chatgp
 for marketplace setup, packaging, and distribution guidance.
 
 If you are building an integration, start with [Build an app](https://learn.chatgpt.com/docs/build-app).
-If the app needs custom ChatGPT UI, use the [Apps SDK](https://developers.openai.com/apps-sdk) for that
-optional UI layer.
+If the app needs custom ChatGPT UI, use the
+[Apps SDK](https://developers.openai.com/apps-sdk) for that optional UI layer.
 
 ## Use and install plugins
 
@@ -60,10 +62,11 @@ optional UI layer.
 
 To browse and install curated plugins:
 
-- On the web, select Work and open **Plugins**.
-- In the ChatGPT desktop app, select Work or Codex and open **Plugins**.
+- On the web, switch to Work mode and open **Plugins**.
+- In the ChatGPT desktop app, select ChatGPT and switch to Work mode, or select
+  Codex. Then open **Plugins**.
 
-The plugin directory organizes plugins into tabs:
+The Plugins Directory organizes plugins into tabs:
 
 - **OpenAI:** plugins built by OpenAI.
 - **Your workspace name:** plugins provided by your workspace.
@@ -74,14 +77,14 @@ Use the separate **Installed** row to review plugins you already installed.
 
 ### Install and use a plugin in ChatGPT
 
-Once you open the plugin directory:
+Once you open the Plugins Directory:
 
 1. Search or browse for a plugin, then open its details.
 2. Select the plus button to install the plugin.
 3. If the plugin needs a connector, connect it when prompted. Some plugins
    ask you to authenticate during install. Others wait until the first time you
    use them.
-4. After installation, start a new task and ask ChatGPT to use the plugin.
+4. After installation, start a new chat and ask ChatGPT to use the plugin.
 
 After you install a plugin, you can use it directly in the prompt window:
 
@@ -123,7 +126,7 @@ access controls.
 
 ### Remove a plugin
 
-To remove a plugin, reopen it from the plugin browser and select
+To remove a plugin, open it from a supported plugin browser and select
 **Uninstall plugin** when that action is available. Workspace-installed or
 default plugins may not offer that action; your workspace administrator controls
 them instead.

@@ -8,7 +8,7 @@ path: /docs/image-generation
 
 Ask ChatGPT to generate or edit images. Use image generation for UI assets,
 banners, backgrounds, illustrations, sprite sheets, and placeholders you want
-to create alongside code or in a ChatGPT conversation.
+to create alongside code or in a ChatGPT chat.
 
 Ask for an image from the app composer. Add a reference image when you want
 ChatGPT to transform an existing asset or use it as visual guidance.

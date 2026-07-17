@@ -54,7 +54,7 @@ source and then use that source directly.
 3. Turn on **Chronicle** below the Memories setting.
 4. Review the consent dialog and choose **Continue**.
 5. Grant macOS Screen Recording and Accessibility permissions when prompted.
-6. When setup completes, choose **Try it out** or start a new task.
+6. When setup completes, choose **Try it out** or start a new chat.
 
 If macOS reports that Screen Recording or Accessibility permission is denied,
 open System Settings > Privacy & Security > Screen Recording or
@@ -70,8 +70,8 @@ Chronicle before meetings or when viewing sensitive content that you do not want
 Codex to use as context. To disable Chronicle, return to **Settings >
 Personalization > Memories** and turn off **Chronicle**.
 
-You can also control whether memories are used in a given task. [Learn
-more](https://learn.chatgpt.com/docs/customization/memories#control-memories-per-task).
+You can also control whether memories are used in a given chat. [Learn
+more](https://learn.chatgpt.com/docs/customization/memories#control-memories-per-chat).
 
 ## Rate limits
 

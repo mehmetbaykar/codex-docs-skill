@@ -9,10 +9,10 @@ path: /docs/hooks
 Hooks are an extensibility framework for Codex. They allow
 you to inject your own scripts into the agentic loop, enabling features such as:
 
-- Send the conversation to a custom logging/analytics engine
+- Send the chat to a custom logging/analytics engine
 - Scan your team's prompts to block accidentally pasting API keys
-- Summarize conversations to create persistent memories automatically
-- Run a custom validation check when a conversation turn stops, enforcing standards
+- Summarize chats to create persistent memories automatically
+- Run a custom validation check when a chat turn stops, enforcing standards
 - Customize prompting when in a certain directory
 
 Runtime behavior to keep in mind:
@@ -345,7 +345,7 @@ event-specific tables.
 `permission_mode`, which describes the current permission mode as `default`,
 `acceptEdits`, `plan`, `dontAsk`, or `bypassPermissions`.
 
-`transcript_path` points to a conversation transcript for convenience, but the
+`transcript_path` points to a chat transcript for convenience, but the
 transcript format isn't a stable interface for hooks and may change over time.
 
 If you need the full wire format, see [Schemas](#schemas).
@@ -647,7 +647,7 @@ processing of the tool result.
 
 ### PreCompact
 
-`PreCompact` runs before Codex compacts the conversation. `matcher` is applied
+`PreCompact` runs before Codex compacts the chat. `matcher` is applied
 to `trigger`, whose values are `manual` and `auto`.
 
 Fields in addition to [Common input fields](#common-input-fields):
@@ -665,7 +665,7 @@ compacting.
 
 ### PostCompact
 
-`PostCompact` runs after Codex compacts the conversation. `matcher` is applied
+`PostCompact` runs after Codex compacts the chat. `matcher` is applied
 to `trigger`, whose values are `manual` and `auto`.
 
 Fields in addition to [Common input fields](#common-input-fields):

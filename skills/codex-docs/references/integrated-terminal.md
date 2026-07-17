@@ -6,7 +6,7 @@ path: /docs/integrated-terminal
 
 # Integrated terminal
 
-Each task in the ChatGPT desktop app includes a terminal scoped to its current project or
+Each chat in the ChatGPT desktop app includes a terminal scoped to its current project or
 worktree. Open it from the terminal icon in the top-right corner of the app, or
 press `Ctrl`+```.
 

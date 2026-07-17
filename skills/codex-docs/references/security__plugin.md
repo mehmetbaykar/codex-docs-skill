@@ -14,7 +14,7 @@ in code you own or have authorization to assess before they reach production.
 This quickstart takes you through one recommended first run: an ordinary,
 read-only scan of a local repository in Codex.
 
-This page covers the plugin that runs in a local Codex task. To scan a
+This page covers the plugin that runs in a local Codex chat. To scan a
   connected GitHub repository in Codex cloud, see [Codex Security cloud
   setup](https://learn.chatgpt.com/docs/security/setup).
 
@@ -27,7 +27,7 @@ This page covers the plugin that runs in a local Codex task. To scan a
 
        Install the Codex Security plugin
 
-3. Start a new task in Codex for that repository (don't continue in a task that
+3. Start a new chat in Codex for that repository (don't continue in a chat that
    was already open).
 
 ## Run your first scan
@@ -37,7 +37,7 @@ with `high` or `xhigh` reasoning effort.
 
 1. Ask for an ordinary scan
 
-   Send this prompt in the new task:
+   Send this prompt in the new chat:
 
    ```text
    Run a Codex Security scan on this repository.
@@ -70,15 +70,15 @@ with `high` or `xhigh` reasoning effort.
 
 3. Let the scan finish
 
-   The scan can take time. Keep the task running until the workspace reports
+   The scan can take time. Keep the scan running until the workspace reports
    completion. If Codex identifies a configuration limitation, review the exact
    limitation and proposed change before allowing it to update your
    configuration.
 
 4. Review the result
 
-   Use the UI to browse findings or open the generated report for a complete,
-   portable review.
+   Use the UI to browse findings, or open `report.md` as the entry point to the
+   complete scan directory.
 
    <figure className="not-prose my-6">
        <img
@@ -98,10 +98,17 @@ Every completed scan opens a findings workspace. Use it to review findings and
 coverage without inspecting raw artifacts. The scan also creates the files
 below.
 
-- `report.md`, a complete portable report for sharing or archiving.
+- `report.md`, the primary readable entry point to the scan results.
+- `findings/<slug>/`, with one detailed vulnerability report per reportable
+  finding and supporting proof-of-concept files when available.
+- `hardening/`, with a structural hardening portfolio and supporting proposals
+  or diagrams when the scan has reportable findings.
 - Structured scan data in `scan-manifest.json`, `findings.json`, and
   `coverage.json` for automation and integrations. You normally don't need to
   open these files yourself.
+
+Keep the full scan directory together when sharing or archiving results so the
+links from `report.md` continue to work.
 
 ## Choose your next workflow
 
@@ -118,3 +125,9 @@ below.
 - [Export or track findings](https://learn.chatgpt.com/docs/security/plugin/export-findings) when you
   need JSON, CSV, SARIF, an approval-gated Linear, GitHub, or Jira issue, or a
   private draft GitHub Security Advisory.
+- [Write vulnerability reports](https://learn.chatgpt.com/docs/security/plugin/vulnerability-reports)
+  when you want to turn supplied findings, disclosure notes, source, and PoCs
+  into polished, self-contained reports.
+- [Propose security hardening](https://learn.chatgpt.com/docs/security/plugin/security-hardening) when
+  you want structural or architectural options based on scan results or other
+  security evidence.

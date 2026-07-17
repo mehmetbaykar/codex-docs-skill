@@ -26,17 +26,18 @@ ChatGPT is an AI agent that you communicate with in natural language:
 
 ## Choose how you want to work
 
-Open Quick Chat to start an ordinary ChatGPT chat for a question or
-conversation. Use ChatGPT Work when you want to carry a larger task through to
-a reviewable result. For software development and technical tasks, use Codex.
+Use Chat mode for a question or back-and-forth. Switch to Work mode when you want
+ChatGPT to carry a larger task through to a reviewable result. For software
+development and technical tasks, use Codex.
 
-| Choose       | When you want to                              | Examples                                                                     |
-| ------------ | --------------------------------------------- | ---------------------------------------------------------------------------- |
-| Chat         | Work through something with ChatGPT           | Ask a question, search the web, brainstorm, draft a message, compare options |
-| ChatGPT Work | Define an outcome and get a reviewable result | Create a deck, analyze files, draft a report, build a project plan           |
-| Codex        | Work on software or technical tasks           | Debug code, run tests, review a PR, implement a feature                      |
+| Choose    | When you want to                              | Examples                                                                     |
+| --------- | --------------------------------------------- | ---------------------------------------------------------------------------- |
+| Chat mode | Work through something with ChatGPT           | Ask a question, search the web, brainstorm, draft a message, compare options |
+| Work mode | Define an outcome and get a reviewable result | Create a deck, analyze files, draft a report, build a project plan           |
+| Codex     | Work on software or technical tasks           | Debug code, run tests, review a PR, implement a feature                      |
 
-Quick Chat is a good place to begin when you want to:
+In Codex, point to **New chat**, then select the **Quick chat** icon on its right
+when you want to:
 
 - Ask a question, search the web, or learn about a topic.
 - Get an unfamiliar idea explained in simpler language.
@@ -47,9 +48,9 @@ Quick Chat is a good place to begin when you want to:
 - Compare options or think through a decision.
 - Clarify what you need before starting a larger task.
 
-When you need a substantial, reviewable result, switch to Work and describe the
-outcome you need. See [Get started with Work](https://learn.chatgpt.com/docs/get-started-with-work) for
-example tasks, prompts, and best practices.
+When you need a substantial, reviewable result, switch to Work mode and describe
+the outcome you need. See [Get started with Work mode](https://learn.chatgpt.com/docs/get-started-with-work)
+for example tasks, prompts, and best practices.
 
 ### Talk to ChatGPT naturally
 
@@ -78,7 +79,7 @@ good result looks like.
 ### Keep related work in a project
 
 Projects help you organize ChatGPT around a topic, goal, or ongoing body of
-work. Keep related conversations, tasks, files, and instructions in one project
+work. Keep related chats, files, and instructions in one project
 when the work will continue over time or depend on the same context. [Learn more
 about projects.](https://learn.chatgpt.com/docs/projects)
 
@@ -100,7 +101,7 @@ then ask for changes without starting over. Learn more about
 
 Plugins can connect ChatGPT to the tools and information you use for work, such
 as Google Drive, SharePoint, Salesforce, or Gong. Use them when a task depends
-on information outside the conversation, actions in another system, or a
+on information outside the chat, actions in another system, or a
 repeatable workflow.
 
 Plugin availability depends on your plan, workspace settings, and the plugin
@@ -146,4 +147,4 @@ a]:min-w-0 [&>a]:no-underline">
     Write useful prompts for questions, finished work, and coding tasks.
 
   [
-      Set preferences and carry useful context across chats and tasks.
+      Set preferences and carry useful context across chats.

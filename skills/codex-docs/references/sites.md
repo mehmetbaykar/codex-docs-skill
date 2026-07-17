@@ -221,6 +221,6 @@ database migrations in the Codex [review pane](https://learn.chatgpt.com/docs/co
 
 ## Related documentation
 
-- [ChatGPT desktop app](https://learn.chatgpt.com/docs/app) introduces app navigation, projects, and tasks.
+- [ChatGPT desktop app](https://learn.chatgpt.com/docs/app) introduces app navigation, projects, and chats.
 - [Review and ship changes](https://learn.chatgpt.com/docs/code-review?surface=app) explains how to inspect source
   changes before publishing them.
