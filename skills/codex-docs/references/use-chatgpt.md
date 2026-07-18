@@ -27,14 +27,15 @@ ChatGPT is an AI agent that you communicate with in natural language:
 ## Choose how you want to work
 
 Use Chat mode for a question or back-and-forth. Switch to Work mode when you want
-ChatGPT to carry a larger task through to a reviewable result. For software
-development and technical tasks, use Codex.
+ChatGPT to carry a larger task through to a reviewable result. Select Codex when
+you want developer views or more technical detail, especially for software
+development.
 
 | Choose    | When you want to                              | Examples                                                                     |
 | --------- | --------------------------------------------- | ---------------------------------------------------------------------------- |
 | Chat mode | Work through something with ChatGPT           | Ask a question, search the web, brainstorm, draft a message, compare options |
 | Work mode | Define an outcome and get a reviewable result | Create a deck, analyze files, draft a report, build a project plan           |
-| Codex     | Work on software or technical tasks           | Debug code, run tests, review a PR, implement a feature                      |
+| Codex     | Use developer tools and see technical details | Debug code, run tests, review a PR, implement a feature                      |
 
 In Codex, point to **New chat**, then select the **Quick chat** icon on its right
 when you want to:
@@ -51,6 +52,22 @@ when you want to:
 When you need a substantial, reviewable result, switch to Work mode and describe
 the outcome you need. See [Get started with Work mode](https://learn.chatgpt.com/docs/get-started-with-work)
 for example tasks, prompts, and best practices.
+
+### Compare Work mode and Codex on desktop
+
+Work mode and Codex use the same agent, and their capabilities overlap. If you
+prefer Codex, you can keep using it for research, documents, presentations, and
+other knowledge work. When both are available to you, the desktop app changes
+the interface and how the agent presents its work.
+
+| Difference          | ChatGPT in Desktop app                                                         | Codex in Desktop app                                              |
+| ------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| Where to start      | Select **ChatGPT**, then switch the composer to **Work**                       | Select **Codex** in the product selector                          |
+| Chats you see       | See Chat-mode chats started in ChatGPT on web and mobile, plus Work-mode chats | Focus on Codex chats and development projects                     |
+| Quick chat          | Not available                                                                  | When available, access ChatGPT chats from web and mobile in Codex |
+| Technical detail    | Hide technical details like Git or shell commands                              | See developer details, including diff and review views            |
+| Agent communication | Prefers nontechnical language and finished outputs                             | Can include technical and implementation details                  |
+| Pull requests pane  | Not available in Work mode                                                     | Available when enabled                                            |
 
 ### Talk to ChatGPT naturally
 
