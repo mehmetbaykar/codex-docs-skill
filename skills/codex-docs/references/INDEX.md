@@ -72,6 +72,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `permissions` - [Permissions](https://learn.chatgpt.com/docs/permissions)
 - `personalize` - [Personalize ChatGPT](https://learn.chatgpt.com/docs/personalize)
 - `pets` - [Pets](https://learn.chatgpt.com/docs/pets)
+- `plugin-submission-errors` - [Plugin submission errors](https://learn.chatgpt.com/docs/plugin-submission-errors)
 - `plugins` - [Plugins](https://learn.chatgpt.com/docs/plugins)
 - `pricing` - [Pricing](https://learn.chatgpt.com/docs/pricing)
 - `projects` - [Projects and chats](https://learn.chatgpt.com/docs/projects)

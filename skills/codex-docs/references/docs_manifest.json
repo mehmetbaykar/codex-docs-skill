@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 104,
+    "pages_fetched_successfully": 105,
     "pages_skipped": 1,
-    "total_pages_discovered": 105
+    "total_pages_discovered": 106
   },
   "files": {
     "administration.md": {
@@ -26,8 +26,8 @@
       "title": "Agent approvals & security"
     },
     "agent-configuration__agents-md.md": {
-      "hash": "743d238b610289e73c7c328d1ed571d5060aa1c8f73fc0696a065922fa2611ce",
-      "last_updated": "2026-07-13T10:33:41+00:00",
+      "hash": "1ad9e48ad09f40e8dabe95e38d657d1786f3a49a371dd04650f19201059bc605",
+      "last_updated": "2026-07-21T19:16:50+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
       "path": "/docs/agent-configuration/agents-md",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md.md",
@@ -146,8 +146,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "627ccc85d767a22ef86fbbb0ecb6e988024b2b2bf580499df7d43dc6e0b07c72",
-      "last_updated": "2026-07-21T16:21:23+00:00",
+      "hash": "43665ee695f20c06d7c2590112b1e93ab69c3e3356e44114c7a62b471c8aa76d",
+      "last_updated": "2026-07-21T19:16:55+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -314,8 +314,8 @@
       "title": "Cyber Safety"
     },
     "developers.md": {
-      "hash": "7283994cdd0eda1f2ac75b1df4f0a32a1cbd50f53030ba43ffa6bb20bf48cfb5",
-      "last_updated": "2026-07-17T05:40:01+00:00",
+      "hash": "f2663f1f2e2ad3a0b455e5133b438ace7f61ddcc93641a9854da7270d35fd226",
+      "last_updated": "2026-07-21T19:17:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/developers",
       "path": "/docs/developers",
       "source_url": "https://learn.chatgpt.com/docs/developers.md",
@@ -537,6 +537,14 @@
       "source_url": "https://learn.chatgpt.com/docs/pets.md",
       "title": "Pets"
     },
+    "plugin-submission-errors.md": {
+      "hash": "3f84be31678e77d2b8243b4c3045521ba6c830921ebc383c2f175e9a09b07888",
+      "last_updated": "2026-07-21T19:17:08+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/plugin-submission-errors",
+      "path": "/docs/plugin-submission-errors",
+      "source_url": "https://learn.chatgpt.com/docs/plugin-submission-errors.md",
+      "title": "Plugin submission errors"
+    },
     "plugins.md": {
       "hash": "024518d4318a9e0a8f1fd62072b5dfd82bb775bd5460d7036fd337c39f3e5243",
       "last_updated": "2026-07-17T05:40:09+00:00",
@@ -746,16 +754,16 @@
       "title": "Skills & Plugins"
     },
     "submit-plugins.md": {
-      "hash": "488311acdc5ef9d3dbc3cfeb2e2987ad9c068bfd4329130bba1f528ef98db3e7",
-      "last_updated": "2026-07-17T05:40:16+00:00",
+      "hash": "8b4d10189f15534eb2131e0e1b3dcc1ab32bf3c96b1e660dcb4858ab4bf506a5",
+      "last_updated": "2026-07-21T19:17:15+00:00",
       "original_url": "https://learn.chatgpt.com/docs/submit-plugins",
       "path": "/docs/submit-plugins",
       "source_url": "https://learn.chatgpt.com/docs/submit-plugins.md",
       "title": "Submit plugins"
     },
     "third-party__github.md": {
-      "hash": "54c5b1902b410436a3aa1c3ae38f5c044e0cea5baabf8fd65f718013b8589bd4",
-      "last_updated": "2026-07-17T05:40:16+00:00",
+      "hash": "a1ec12b692bf0174759294d3fd6e860e47668a8358b521f6039ae1ced3e0b5d6",
+      "last_updated": "2026-07-21T19:17:16+00:00",
       "original_url": "https://learn.chatgpt.com/docs/third-party/github",
       "path": "/docs/third-party/github",
       "source_url": "https://learn.chatgpt.com/docs/third-party/github.md",
@@ -854,7 +862,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-21T16:21:49+00:00",
+  "last_updated": "2026-07-21T19:17:19+00:00",
   "skipped": [
     {
       "path": "/docs",
