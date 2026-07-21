@@ -634,8 +634,8 @@
       "title": "Codex Security cloud FAQ"
     },
     "security__plugin.md": {
-      "hash": "a2b0f6a0742c2377b409f4698e6295556f99e0b552d4e3e84c969365796cb4d9",
-      "last_updated": "2026-07-17T05:40:12+00:00",
+      "hash": "cc596782ed5df2cf8d5f74118861266f4e4875c24eff2e50ce5583f91ce2d06e",
+      "last_updated": "2026-07-21T02:25:56+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin",
       "path": "/docs/security/plugin",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin.md",
@@ -854,7 +854,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-20T06:15:39+00:00",
+  "last_updated": "2026-07-21T02:26:03+00:00",
   "skipped": [
     {
       "path": "/docs",
