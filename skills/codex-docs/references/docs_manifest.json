@@ -242,16 +242,16 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "89fd1186f654356b25b663c51ec54d14633e21717a1427c67857a017ea632179",
-      "last_updated": "2026-07-22T13:45:26+00:00",
+      "hash": "2ffbd8d8a1b35078e0bee05b5bb97a694a0c7fdbe65b88f44c16c6530c020807",
+      "last_updated": "2026-07-22T19:12:22+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
       "title": "Configuration Reference"
     },
     "config-file__config-sample.md": {
-      "hash": "10f70443d160f311ff28f6801097480cd112aaadd42dcba2d7c803a49b0a0bec",
-      "last_updated": "2026-07-22T13:45:27+00:00",
+      "hash": "f60ca94225276bedfd60c6b104bc5e0a7b5c6653cb568f5dc94293d786af4eb8",
+      "last_updated": "2026-07-22T19:12:22+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-sample",
       "path": "/docs/config-file/config-sample",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-sample.md",
@@ -862,7 +862,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-22T16:18:22+00:00",
+  "last_updated": "2026-07-22T19:12:45+00:00",
   "skipped": [
     {
       "path": "/docs",
