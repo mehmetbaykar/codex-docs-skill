@@ -146,8 +146,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "f33145374ea41dee9e664b2b3d253175523bbbfd54061de8c655405b9ab2a6c5",
-      "last_updated": "2026-07-22T16:17:58+00:00",
+      "hash": "60028579b72998c3b4ab3c4b7af13aaeb79327cf57f1dedc55dfec622d7f4b7a",
+      "last_updated": "2026-07-22T22:01:45+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -298,8 +298,8 @@
       "title": "Memories"
     },
     "customization__overview.md": {
-      "hash": "fe867648c657042d315438b6d44cff6768abe8d3539ac475160b08e559722bf3",
-      "last_updated": "2026-07-17T05:40:01+00:00",
+      "hash": "71fd6774f51f171b5977485ce64318750eea72f8b7f2c99fc5939313fd8b626d",
+      "last_updated": "2026-07-22T22:01:51+00:00",
       "original_url": "https://learn.chatgpt.com/docs/customization/overview",
       "path": "/docs/customization/overview",
       "source_url": "https://learn.chatgpt.com/docs/customization/overview.md",
@@ -862,7 +862,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-22T19:12:45+00:00",
+  "last_updated": "2026-07-22T22:02:13+00:00",
   "skipped": [
     {
       "path": "/docs",
