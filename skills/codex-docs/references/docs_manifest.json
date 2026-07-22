@@ -50,8 +50,8 @@
       "title": "Speed"
     },
     "agent-configuration__subagents.md": {
-      "hash": "4c52fb0e5db9b9f64f26fff72edab9e404cc2d95969981d84039406a95084696",
-      "last_updated": "2026-07-17T05:39:52+00:00",
+      "hash": "a451b8ad9f22310038a4ff6b7f75687fa5db78584246d96fe202f8d43b7757d2",
+      "last_updated": "2026-07-22T13:45:18+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/subagents",
       "path": "/docs/agent-configuration/subagents",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/subagents.md",
@@ -242,16 +242,16 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "7e4810ae7e8e762db2a765b204dc7fe20e4084f679e806489e98ae823b47b178",
-      "last_updated": "2026-07-22T02:24:42+00:00",
+      "hash": "89fd1186f654356b25b663c51ec54d14633e21717a1427c67857a017ea632179",
+      "last_updated": "2026-07-22T13:45:26+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
       "title": "Configuration Reference"
     },
     "config-file__config-sample.md": {
-      "hash": "f26e1c2712eca88833c456eadc6dbe4a085b3b0f3f2ac0e933ac6b733c36e448",
-      "last_updated": "2026-07-13T10:33:50+00:00",
+      "hash": "10f70443d160f311ff28f6801097480cd112aaadd42dcba2d7c803a49b0a0bec",
+      "last_updated": "2026-07-22T13:45:27+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-sample",
       "path": "/docs/config-file/config-sample",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-sample.md",
@@ -862,7 +862,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-22T11:07:19+00:00",
+  "last_updated": "2026-07-22T13:45:50+00:00",
   "skipped": [
     {
       "path": "/docs",
