@@ -55,9 +55,9 @@ model_provider = "openai"
 
 # oss_provider = "ollama"
 
-# Preferred service tier. Built-in examples: fast | flex; model catalogs can add more.
+# Preferred service tier. Use fast or another tier supported by the active model.
 
-# service_tier = "flex"
+# service_tier = "fast"
 
 # Optional manual model metadata. When unset, Codex uses model or preset defaults.
 
@@ -1021,7 +1021,7 @@ enabled = true
 
 # sandbox_mode = "read-only"
 
-# service_tier = "flex" # or another supported service tier id
+# service_tier = "fast" # or another supported service tier id
 
 # oss_provider = "ollama"
 
