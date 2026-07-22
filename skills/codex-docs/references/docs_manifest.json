@@ -226,8 +226,8 @@
       "title": "Computer Use"
     },
     "config-file__config-advanced.md": {
-      "hash": "1098a85f896159e3381cf6ecc8f3604ff5acba3f675c4ab5c9c5ffa3a4aef420",
-      "last_updated": "2026-07-17T21:50:40+00:00",
+      "hash": "ea79c963cd3b42edcbfdc4bcd5ccb816e477d8c410edc995b3ea6633b78c3375",
+      "last_updated": "2026-07-22T02:24:41+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
       "path": "/docs/config-file/config-advanced",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-advanced.md",
@@ -242,8 +242,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "989a1fb78c557a68e9658dcc2d7076a56ad7ad9c7928736b51c6931851dfb384",
-      "last_updated": "2026-07-13T10:33:49+00:00",
+      "hash": "7e4810ae7e8e762db2a765b204dc7fe20e4084f679e806489e98ae823b47b178",
+      "last_updated": "2026-07-22T02:24:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
@@ -862,7 +862,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-21T22:02:01+00:00",
+  "last_updated": "2026-07-22T02:25:03+00:00",
   "skipped": [
     {
       "path": "/docs",
