@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 105,
+    "pages_fetched_successfully": 106,
     "pages_skipped": 1,
-    "total_pages_discovered": 106
+    "total_pages_discovered": 107
   },
   "files": {
     "administration.md": {
@@ -146,8 +146,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "f33145374ea41dee9e664b2b3d253175523bbbfd54061de8c655405b9ab2a6c5",
-      "last_updated": "2026-07-23T02:29:12+00:00",
+      "hash": "9c954a154e5700f7aa8450efaf0032927ff0efcc2cafd5afcc9351d337046e89",
+      "last_updated": "2026-07-23T22:01:45+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -378,8 +378,8 @@
       "title": "Feature Maturity"
     },
     "features.md": {
-      "hash": "6485e6ec5ea6cd19b5aca09ec1e206a250e8e0c21b813d58c65b90cbab24882d",
-      "last_updated": "2026-07-17T05:40:03+00:00",
+      "hash": "e0b36d5c3b6611df47a87563addd9cf5504a953148698511556619dae2256f65",
+      "last_updated": "2026-07-23T22:01:54+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features",
       "path": "/docs/features",
       "source_url": "https://learn.chatgpt.com/docs/features.md",
@@ -392,6 +392,14 @@
       "path": "/docs/features/codex-micro",
       "source_url": "https://learn.chatgpt.com/docs/features/codex-micro.md",
       "title": "Codex Micro"
+    },
+    "features__voice.md": {
+      "hash": "36c933b0809613441318eaf2dc82baf27514253ca16474fd908bbce55faa3505",
+      "last_updated": "2026-07-23T22:01:54+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/features/voice",
+      "path": "/docs/features/voice",
+      "source_url": "https://learn.chatgpt.com/docs/features/voice.md",
+      "title": "ChatGPT Voice"
     },
     "get-started-with-work.md": {
       "hash": "33d31c92890fabd6c5eab255ffa905c13c76726daddc1386cf4684e2b1c3f1bc",
@@ -418,8 +426,8 @@
       "title": "Glossary"
     },
     "hooks.md": {
-      "hash": "5b3710fbdbf0f64cd20478ab42f9ccb0819bea8702b2c6b4e46670c3b7526139",
-      "last_updated": "2026-07-18T02:09:54+00:00",
+      "hash": "c75d84c478a738b3c0053863d93336411b1c1dca051f9e7a2e4846756a1c8f46",
+      "last_updated": "2026-07-23T22:01:55+00:00",
       "original_url": "https://learn.chatgpt.com/docs/hooks",
       "path": "/docs/hooks",
       "source_url": "https://learn.chatgpt.com/docs/hooks.md",
@@ -554,16 +562,16 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "109d51a2b7637ab8e00560bf55747df2c3ebff6d82b9c6dd4017b4e93743a4ad",
-      "last_updated": "2026-07-23T11:07:08+00:00",
+      "hash": "daa46d7b4b5df2cc7686bf52619ceb7fe5746dc1bcc59c3cd5f13cdb663d1114",
+      "last_updated": "2026-07-23T22:02:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
       "title": "Pricing"
     },
     "projects.md": {
-      "hash": "4edc764081929835fe4314c832a2dc3271c2cd443ab881d224a73f5128a0407b",
-      "last_updated": "2026-07-17T05:40:10+00:00",
+      "hash": "b1bfc5e9765856ab4afc97cef1407eff2172f32edc10ca975dc5dc73d07dac9e",
+      "last_updated": "2026-07-23T22:02:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/projects",
       "path": "/docs/projects",
       "source_url": "https://learn.chatgpt.com/docs/projects.md",
@@ -818,8 +826,8 @@
       "title": "ChatGPT on the web"
     },
     "whats-new.md": {
-      "hash": "5b3733a16fb6ccffd6c2a64fc4abc578607f9eca9d7f6a950e430caefeb0b958",
-      "last_updated": "2026-07-23T11:07:18+00:00",
+      "hash": "5b72745ccd85a3ec02843d6559c501b49de2e0333aa3611b340032bd898ae8c2",
+      "last_updated": "2026-07-23T22:02:11+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -862,7 +870,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-23T11:07:19+00:00",
+  "last_updated": "2026-07-23T22:02:12+00:00",
   "skipped": [
     {
       "path": "/docs",

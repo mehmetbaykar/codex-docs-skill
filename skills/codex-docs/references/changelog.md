@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## ChatGPT Voice and multi-folder projects (2026-07-23)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-07-23-app
+
+ChatGPT Voice and multi-folder projects
+
 ## Codex CLI Release: 0.145.0 (2026-07-21)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-357545274
