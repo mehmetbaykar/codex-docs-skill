@@ -39,12 +39,12 @@ local files, longer tasks, and quick chats.
 4.  <h3 id="setup-app-start-task">Start a chat</h3>
 
                 - For research, analysis, or deliverables such as documents, presentations,
-                  spreadsheets, and Sites, select **ChatGPT**, then select **Work** from the mode
-                  toggle at the top of the new chat page, above the composer.
+                  spreadsheets, and Sites, select **ChatGPT**, then switch to **Work** at the
+                  top of the new chat page, above the composer.
                 - For software development with codebase context and developer tools, select
                   **Codex** from the ChatGPT dropdown.
                 - For a quick question or chat, select **ChatGPT**, then select **Chat**
-                  from the mode toggle at the top of the new chat page, above the composer. In
+                  in the switcher at the top of the new chat page, above the composer. In
                   Codex, point to **New chat**, then select the **Quick chat** icon on its right.
 
                 Learn more about [using ChatGPT](https://learn.chatgpt.com/docs/use-chatgpt).
@@ -55,7 +55,7 @@ local files, longer tasks, and quick chats.
 
     Explore more [use cases](https://learn.chatgpt.com/use-cases).
 
-ChatGPT is available on the web and includes Chat mode and Work mode.
+ChatGPT is available on the web and includes Chat and ChatGPT Work.
 
 1. <h3 id="setup-web-sign-in">Open ChatGPT and sign in</h3>
 
