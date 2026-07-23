@@ -6,7 +6,7 @@ path: /docs/pricing
 
 # Pricing
 
-<strong>Work mode and Codex share usage.</strong> Work mode usage inside
+<strong>ChatGPT Work and Codex share usage.</strong> ChatGPT Work usage inside
   ChatGPT uses the same pricing, credits, and usage limits as Codex.
 
 <h2 class="sr-only">Pricing options</h2>
