@@ -526,11 +526,11 @@ Use this glossary as a quick reference for Codex terms across the app, CLI, IDE 
       href: "/codex/plugins",
       appliesTo: "Desktop app (ChatGPT Work, Codex), Web (ChatGPT Work), CLI",
       description:
-        "An installable bundle of capabilities such as skills, connectors, and tools.",
+        "An installable bundle of capabilities, such as skills, connectors, and tools, distributed through the universal directory shared by ChatGPT and Codex.",
     },
     {
       key: "Plugin manifest",
-      href: "/codex/build-plugins#plugin-structure",
+      href: "https://developers.openai.com/plugins/build/plugins#plugin-structure",
       appliesTo: "Plugin authoring",
       description:
         "Plugin metadata file that identifies a plugin and points to bundled skills, connector mappings, MCP servers, hooks, and metadata.",
@@ -551,7 +551,7 @@ Use this glossary as a quick reference for Codex terms across the app, CLI, IDE 
     {
       key: "Progressive disclosure",
       href: "/codex/build-skills",
-      appliesTo: "Desktop app, CLI, IDE extension",
+      appliesTo: "Desktop app, Web (ChatGPT Work), CLI, IDE extension",
       description:
         "Loading skill details only when needed to preserve context.",
     },
@@ -665,14 +665,14 @@ Use this glossary as a quick reference for Codex terms across the app, CLI, IDE 
     {
       key: "Skill",
       href: "/codex/build-skills",
-      appliesTo: "Desktop app, CLI, IDE extension",
+      appliesTo: "Desktop app, Web (ChatGPT Work), CLI, IDE extension",
       description:
         "Reusable workflow package with instructions and optional scripts or references.",
     },
     {
       key: "Skill invocation",
       href: "/codex/build-skills#how-codex-uses-skills",
-      appliesTo: "Desktop app, CLI, IDE extension",
+      appliesTo: "Desktop app, Web (ChatGPT Work), CLI, IDE extension",
       description: "Explicit or implicit activation of a skill.",
     },
     {

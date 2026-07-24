@@ -73,13 +73,14 @@ your plan and workspace settings.
 
 ### Use plugins
 
-Plugins give ChatGPT reusable instructions and connections to tools such as
-Google Drive, Gmail, Slack, and GitHub. Ask for the result you need and let
-ChatGPT choose from the tools available to it. To choose a specific plugin, type
-`@` in the composer.
+Plugins give ChatGPT and Codex reusable instructions and connections to tools
+such as Google Drive, Gmail, Slack, and GitHub. Both products draw public
+plugins from the same universal directory. Ask for the result you need and let
+the active surface choose from the tools available to it. In ChatGPT, type `@`
+in the composer to choose a specific plugin.
 
 [
-    Find, install, and use plugins in ChatGPT.
+    Find, install, and use plugins in ChatGPT and Codex.
 
 ### Personalize ChatGPT
 
