@@ -159,12 +159,6 @@ Codex app features are available in the EEA, UK, and Switzerland
 
 ChatGPT for iOS
 
-## Codex CLI Release: 0.140.0 (2026-06-15)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-339797498
-
-0.140.0
-
 ## Codex app (2026-06-11)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-11-app
