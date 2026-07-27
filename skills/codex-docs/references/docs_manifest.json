@@ -634,56 +634,56 @@
       "title": "Codex Security cloud FAQ"
     },
     "security__plugin.md": {
-      "hash": "cc596782ed5df2cf8d5f74118861266f4e4875c24eff2e50ce5583f91ce2d06e",
-      "last_updated": "2026-07-21T02:25:56+00:00",
+      "hash": "3c0d05ef2e19d3304a65febafd49635690caa8261810bf1f86863a4341c3a4f8",
+      "last_updated": "2026-07-27T19:23:31+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin",
       "path": "/docs/security/plugin",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin.md",
       "title": "Codex Security plugin quickstart"
     },
     "security__plugin__changelog.md": {
-      "hash": "30edd0687ca24422f806e755093a61a73fbd84ceace3d854c9714778dbc30740",
-      "last_updated": "2026-07-17T05:40:13+00:00",
+      "hash": "76cb373fd5bae0fc1880e56bd763ae986835b85b97055e51b9cc27c4abf43ce6",
+      "last_updated": "2026-07-27T19:23:31+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/changelog",
       "path": "/docs/security/plugin/changelog",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/changelog.md",
       "title": "Codex Security plugin changelog"
     },
     "security__plugin__code-changes.md": {
-      "hash": "7a8f2be895193cd08092ad0278b31c1836b9d012bdaf6dc5d86d5f5fac195404",
-      "last_updated": "2026-07-17T05:40:13+00:00",
+      "hash": "83fd369728869184a509f9b7ea46c4e145ad29ccaeec341d4f9ad55bedfffdfb",
+      "last_updated": "2026-07-27T19:23:31+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/code-changes",
       "path": "/docs/security/plugin/code-changes",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/code-changes.md",
       "title": "Review code changes for security"
     },
     "security__plugin__deep-scans.md": {
-      "hash": "4ea46346c7df5d25fd59b1b18449ef2ab08f47a802a2afced8f1e441ba570eb3",
-      "last_updated": "2026-07-17T05:40:13+00:00",
+      "hash": "5a2b2562cfc6097a169715c2a12e6a2d9e619d3a0215975d09de0ed63880c92f",
+      "last_updated": "2026-07-27T19:23:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/deep-scans",
       "path": "/docs/security/plugin/deep-scans",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/deep-scans.md",
       "title": "Run a deep security scan"
     },
     "security__plugin__export-findings.md": {
-      "hash": "461c64747d4c06f89d61e69f885f9a1e04eb2c3b14e2f76c583430798549f4d5",
-      "last_updated": "2026-07-17T05:40:13+00:00",
+      "hash": "1c5aac16de94743582ad290e9607b549760b5116b2a24202927f38c2847a125d",
+      "last_updated": "2026-07-27T19:23:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/export-findings",
       "path": "/docs/security/plugin/export-findings",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/export-findings.md",
       "title": "Export and track security findings"
     },
     "security__plugin__fix-findings.md": {
-      "hash": "84fae204d6f98dab2f31c1e61eb072aba79d98ce4f1edecd92ba7e0b341e73ba",
-      "last_updated": "2026-07-13T10:34:06+00:00",
+      "hash": "1d9919177a8c04269806b57162fada1aefcef5c03fd8191d27a9a399f5a8084e",
+      "last_updated": "2026-07-27T19:23:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/fix-findings",
       "path": "/docs/security/plugin/fix-findings",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/fix-findings.md",
       "title": "Fix and verify security findings"
     },
     "security__plugin__scans.md": {
-      "hash": "3b6a4b555c552d3e4422c00b047207d41be38da9de3b15423e5cc080c92c3c0b",
-      "last_updated": "2026-07-17T05:40:14+00:00",
+      "hash": "c9e15074a9397e187a98ec86946d338c953604cd3dca2bccc1a946896601466f",
+      "last_updated": "2026-07-27T19:23:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/scans",
       "path": "/docs/security/plugin/scans",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/scans.md",
@@ -846,7 +846,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-27T16:55:37+00:00",
+  "last_updated": "2026-07-27T19:23:40+00:00",
   "skipped": [
     {
       "path": "/docs",
