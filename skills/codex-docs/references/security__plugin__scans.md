@@ -6,12 +6,12 @@ path: /docs/security/plugin/scans
 
 # Run a Codex Security scan
 
-Use a Codex Security scan for your first review and for most routine repository
-or component assessments. It runs the complete scan workflow once.
+Start with a standard Codex Security scan for an initial review or a routine
+repository or component assessment. It runs the full scan workflow once.
 
-Once you're satisfied with the results, run a [deep scan](https://learn.chatgpt.com/docs/security/plugin/deep-scans)
-for a more comprehensive assessment. Deep scans take longer, but they're more
-thorough.
+For a more thorough assessment, review the results and then run a [deep
+scan](https://learn.chatgpt.com/docs/security/plugin/deep-scans). Deep scans take longer and search
+more extensively.
 
 ## Choose the scan area
 
@@ -42,12 +42,12 @@ For a large monorepo, start with one meaningful product or service boundary.
    specific area to prioritize.
 5. Select **Start scan**.
 
-For persistent repository security guidance, add a `SECURITY.md` at the
-repository root. Use it to describe the threat model, security invariants,
-reportable finding criteria, exclusions, and severity context. For
-directory-specific guidance, add nested `SECURITY.md` files. When policies
-conflict, the file closest to the code takes precedence. Codex Security treats
-this content as policy context, not executable instructions.
+Add `SECURITY.md` to the repository root for persistent security guidance.
+Describe the threat model, security invariants, reportable finding criteria,
+exclusions, and severity context. Add nested `SECURITY.md` files for
+directory-specific guidance. When policies conflict, the file closest to the
+code takes precedence. Codex Security treats these files as policy context,
+not executable instructions.
 
 Use `AGENTS.md` for supported build and validation commands and other
 repository-specific instructions.
@@ -62,8 +62,8 @@ A scan runs these phases in order:
    controls and source-to-sink paths.
 3. **Validation** tests or otherwise checks each candidate and records evidence
    or proof gaps.
-4. **Attack-path analysis** evaluates realistic reachability, impact, and
-   severity.
+4. **Impact and path analysis** evaluates each candidate's realistic paths,
+   impact, and severity.
 5. **Detailed reporting** creates one source-backed vulnerability report per
    reportable finding, with supporting proof-of-concept files when available.
 6. **Structural hardening** analyzes the complete finding set and creates a
@@ -71,9 +71,9 @@ A scan runs these phases in order:
 7. **Finalization** validates the structured scan contract and generates
    `report.md`, which links the detailed reports and hardening portfolio.
 
-Codex reports phase and coverage progress as the scan runs. Don't judge the
-result from early candidates or stop the scan because one phase takes longer
-than another.
+Codex reports phase and coverage progress as the scan runs. Wait for the
+complete result instead of judging early candidates or stopping because one
+phase takes longer than another.
 
 ## Review the completed scan
 
@@ -111,14 +111,26 @@ Review the result in this order:
     </figcaption>
   </figure>
 
+## Reopen or rerun a previous scan
+
+In the ChatGPT desktop app, open a completed scan from the security scan list
+to review its saved findings workspace. To update the results, rerun the saved
+configuration against the current code. The rerun creates a new scan and leaves
+the earlier scan and its artifacts unchanged.
+
+Scan history, rerun controls, and other workspace features depend on your Codex
+surface and installed plugin version. A rerun doesn't pin that version or
+guarantee that interrupted work will resume after a plugin update. Check the
+[plugin changelog](https://learn.chatgpt.com/docs/security/plugin/changelog) before you start or rerun
+a long-running scan.
+
 ## Use the results
 
-Use the findings workspace for normal review. It presents findings, coverage,
-and follow-up areas without requiring you to inspect raw JSON. Open `report.md`
-as the primary readable entry point to the complete scan directory. Keep the
-directory together when sharing or archiving it because the report links to
-detailed reports under `findings/` and, when reportable findings exist,
-structural hardening guidance under `hardening/`.
+Use the findings workspace to review findings, coverage, and follow-up areas
+without inspecting raw JSON. Open `report.md` for the readable entry point to
+the complete scan directory. Keep the directory together when you share or
+archive it: the report links to detailed reports in `findings/` and, when
+reportable findings exist, structural hardening guidance in `hardening/`.
 
 Behind the workspace, each scan preserves `scan-manifest.json`, `findings.json`,
 and `coverage.json` for automation and integrations. You normally don't need to
@@ -129,6 +141,6 @@ The findings workspace can also create portable JSON, CSV, and SARIF files. See
 
 ## Next step
 
-After a person accepts a finding, use [Fix and verify a finding](https://learn.chatgpt.com/docs/security/plugin/fix-findings)
-to generate and review one bounded patch. Don't ask Codex to fix every finding
-from a scan in one chat.
+After you accept a finding, use [Fix and verify a
+finding](https://learn.chatgpt.com/docs/security/plugin/fix-findings) to generate and review one
+bounded patch. Don't ask Codex to fix every finding from a scan in one chat.

@@ -6,13 +6,13 @@ path: /docs/security/plugin
 
 # Codex Security plugin quickstart
 
-Codex Security is a security-review plugin for Codex that scans your code for
-vulnerabilities, validates plausible findings, and presents evidence and
-remediation guidance in a reviewable workspace. Use it to find security issues
-in code you own or have authorization to assess before they reach production.
+Codex Security scans your code for vulnerabilities and validates plausible
+findings. For each reportable issue, it gives you the evidence and remediation
+guidance you need to review the result. Scan only code you own or have
+permission to assess.
 
-This quickstart takes you through one recommended first run: an ordinary,
-read-only scan of a local repository in Codex.
+Follow this quickstart to install the plugin and run a read-only scan of a local
+repository in Codex.
 
 This page covers the plugin that runs in a local Codex chat. To scan a
   connected GitHub repository in Codex cloud, see [Codex Security cloud
@@ -22,13 +22,16 @@ This page covers the plugin that runs in a local Codex chat. To scan a
 
 1. Open the repository you want to assess in Codex in the [ChatGPT desktop
    app](https://chatgpt.com/download/).
-2. Go to **Plugins** and search for **Codex Security**, or select the button
-   below:
+2. Open **Plugins**, search for **Codex Security**, or use the button below:
 
        Install the Codex Security plugin
 
-3. Start a new chat in Codex for that repository (don't continue in a chat that
-   was already open).
+3. Start a new Codex chat for that repository. Don't continue an existing chat.
+
+The hosted desktop-app catalog and public Codex CLI marketplace can offer
+  different plugin versions. Check the [plugin
+  changelog](https://learn.chatgpt.com/docs/security/plugin/changelog) before you rely on a feature or
+  start a long-running scan.
 
 ## Run your first scan
 
@@ -70,10 +73,9 @@ with `xhigh` reasoning effort.
 
 3. Let the scan finish
 
-   The scan can take time. Keep the scan running until the workspace reports
-   completion. If Codex identifies a configuration limitation, review the exact
-   limitation and proposed change before allowing it to update your
-   configuration.
+   Keep the scan running until the workspace reports that it is complete. If
+   Codex identifies a configuration limitation, review the limitation and the
+   exact proposed change before you approve a configuration update.
 
 4. Review the result
 
@@ -112,22 +114,22 @@ links from `report.md` continue to work.
 
 ## Choose your next workflow
 
-- [Run a standard or scoped scan](https://learn.chatgpt.com/docs/security/plugin/scans) when you want
-  to scan a repository or one folder with the default workflow.
-- [Run a deep scan](https://learn.chatgpt.com/docs/security/plugin/deep-scans) when you need a more
-  comprehensive scan and can wait longer for it to finish.
-- [Review code changes](https://learn.chatgpt.com/docs/security/plugin/code-changes) when the target is
-  a pull request, commit, branch range, or working-tree patch.
-- [Triage a backlog](https://learn.chatgpt.com/docs/security/plugin/triage-backlog) when you have
-  existing security findings to review.
+- [Run a standard or scoped scan](https://learn.chatgpt.com/docs/security/plugin/scans) to review a
+  repository or one folder with the default workflow.
+- [Run a deep scan](https://learn.chatgpt.com/docs/security/plugin/deep-scans) for a more thorough scan
+  when you can allow for a longer runtime.
+- [Review code changes](https://learn.chatgpt.com/docs/security/plugin/code-changes) to assess a pull
+  request, commit, branch range, or working-tree patch.
+- [Triage a backlog](https://learn.chatgpt.com/docs/security/plugin/triage-backlog) to review existing
+  security findings.
 - [Fix and verify a finding](https://learn.chatgpt.com/docs/security/plugin/fix-findings) after you
   accept one finding for remediation.
-- [Export or track findings](https://learn.chatgpt.com/docs/security/plugin/export-findings) when you
-  need JSON, CSV, SARIF, an approval-gated Linear, GitHub, or Jira issue, or a
-  private draft GitHub Security Advisory.
+- [Export or track findings](https://learn.chatgpt.com/docs/security/plugin/export-findings) to create
+  JSON, CSV, SARIF, an approval-gated Linear, GitHub, or Jira issue, or a private
+  draft GitHub Security Advisory.
 - [Write vulnerability reports](https://learn.chatgpt.com/docs/security/plugin/vulnerability-reports)
-  when you want to turn supplied findings, disclosure notes, source, and PoCs
-  into polished, self-contained reports.
-- [Propose security hardening](https://learn.chatgpt.com/docs/security/plugin/security-hardening) when
-  you want structural or architectural options based on scan results or other
+  to turn supplied findings, disclosure notes, source, and PoCs into
+  self-contained reports.
+- [Propose security hardening](https://learn.chatgpt.com/docs/security/plugin/security-hardening) to
+  consider structural or architectural options based on scan results or other
   security evidence.

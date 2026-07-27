@@ -6,23 +6,22 @@ path: /docs/security/plugin/code-changes
 
 # Review code changes for security
 
-Use a security change review when you need evidence about regressions introduced
-by one Git-backed change set. The workflow reviews every changed source-like
-file and directly supporting code without turning the task into a general
-repository audit.
+Run a security change review to find regressions in one Git-backed change set.
+Codex reviews each changed source-like file and its directly supporting code.
+It doesn't expand the review into a full repository audit.
 
-If you want to scan a full repository instead of a specific change, see [Run a
-security scan](https://learn.chatgpt.com/docs/security/plugin/scans).
+To scan an entire repository instead of a specific change, see [Run a security
+scan](https://learn.chatgpt.com/docs/security/plugin/scans).
 
 ## Run a manual review
 
-For uncommitted changes, send:
+For uncommitted changes, ask Codex:
 
 ```text
 Use $codex-security:security-diff-scan to review my current uncommitted changes for security regressions.
 ```
 
-For a commit or branch range, identify both ends when needed:
+For a commit or branch range, specify both revisions when needed:
 
 ```text
 Use $codex-security:security-diff-scan to review the changes from origin/main to HEAD for security regressions. Focus on authentication, authorization, input handling, filesystem access, network requests, and secrets.
@@ -42,9 +41,9 @@ in the local checkout.
 4. Confirm that the summary describes the change you intended to review.
 5. Select **Start scan**.
 
-The workflow doesn't check out another branch or change the selected working
-tree. If a requested revision isn't available locally, fetch it before the
-review or provide a locally available base and head.
+Codex doesn't check out another branch or switch the selected working tree. If
+a requested revision isn't available locally, fetch it before the review or
+provide a locally available base and head.
 
 ## Act on findings
 
@@ -54,23 +53,31 @@ findings](https://learn.chatgpt.com/docs/security/plugin/export-findings).
 
 ## Automate reviews in CI/CD
 
-Run the same `$codex-security:security-diff-scan` skill from CI when the runner
-can invoke the Codex CLI without interaction. First install the CLI and plugin
-without exposing the scan credential:
+Run `$codex-security:security-diff-scan` in CI when the runner can invoke the
+Codex CLI without interaction. First, install the CLI and plugin without
+exposing the scan credential:
 
 ```bash
 npm install --global @openai/codex
 codex plugin add codex-security@openai-curated
 ```
 
-Then expose an OpenAI API key from your CI secret store as
-`CODEX_SECURITY_API_KEY` only for the scan:
+The install command uses the public Codex CLI plugin marketplace, which can
+offer a different version from the hosted desktop-app catalog. Check the
+[plugin changelog](https://learn.chatgpt.com/docs/security/plugin/changelog) before you depend on a
+specific plugin version or feature in CI.
+
+Next, provide an OpenAI API key from your CI secret store as
+`CODEX_SECURITY_API_KEY`. Expose the credential only for the scan:
 
 ```bash
 CODEX_API_KEY="$CODEX_SECURITY_API_KEY" codex exec \
   --sandbox workspace-write \
   "Use \$codex-security:security-diff-scan to review changes from $BASE_REVISION to $HEAD_REVISION for security regressions. Do not modify the checkout."
 ```
+
+The writable sandbox lets the scan create temporary artifacts. The prompt
+still requires Codex to leave the source checkout unchanged.
 
 The scan writes its output to
 `$TMPDIR/codex-security-scans/<repository>/<scan-id>/`:
@@ -85,7 +92,7 @@ The scan writes its output to
 | `coverage.json`      | Reviewed and deferred surfaces, exclusions, and coverage completeness.                                                                                      |
 
 The [`findings.json` schema](https://github.com/openai/plugins/blob/main/plugins/codex-security/schemas/findings.schema.json)
-defines the complete structure. Some key fields are:
+defines the complete structure. The schema includes these fields:
 
 | Field                     | Type   | Description                                                            |
 | ------------------------- | ------ | ---------------------------------------------------------------------- |
@@ -121,7 +128,7 @@ These examples assume a trusted Linux runner with Node.js and `npm`, Git, Python
 3, `jq`, and the provider's command-line tools. The `npm` global package prefix
 must be writable.
 
-Here are examples of how to use Codex Security in common pipelines:
+Choose the example for your CI provider:
 
 ```yaml
 name: Codex Security review
