@@ -55,6 +55,11 @@ findings](https://learn.chatgpt.com/docs/security/plugin/export-findings).
 
 ## Automate reviews in CI/CD
 
+If you have access to the beta standalone CLI, see [Run Codex Security in
+CI](https://learn.chatgpt.com/docs/security/cli/ci) for structured JSON, a severity policy, and SARIF
+upload. Continue with this section to invoke the installed plugin skill
+through `codex exec`.
+
 Run `$codex-security:security-diff-scan` in CI when the runner can invoke the
 Codex CLI without interaction. First, install the CLI and plugin without
 exposing the scan credential:
