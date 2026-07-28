@@ -41,9 +41,24 @@ to plan those controls.
 
 When you sign in with ChatGPT from the ChatGPT desktop app, Codex CLI, or IDE extension, the sign-in flow opens a browser window. After you sign in, the browser returns your credentials to Codex.
 
+### ChatGPT web
+
+Open [ChatGPT](https://chatgpt.com), sign in, and choose the workspace where you
+want to work. ChatGPT web keeps the authenticated session in your browser.
+
 #### ChatGPT desktop app
 
 On the signed-out screen, select **Continue to sign in**, then complete the
+browser flow.
+
+#### Codex CLI
+
+Run `codex login`, then complete the browser flow. This is the default
+authentication path when no valid session is available.
+
+#### IDE extension
+
+On the signed-out screen, select **Sign in with ChatGPT**, then complete the
 browser flow.
 
 <a id="sign-in-with-an-api-key"></a>
@@ -56,6 +71,19 @@ You can also sign in to the ChatGPT desktop app, Codex CLI, or IDE extension wit
 
 On the signed-out screen, select **Sign in another way**, enter your key, then
 select **Continue**.
+
+#### Codex CLI
+
+Pipe the key to `codex login` through stdin:
+
+```shell
+printenv OPENAI_API_KEY | codex login --with-api-key
+```
+
+#### IDE extension
+
+On the signed-out screen, select **Use API Key**, enter your key, then select
+**OK**.
 
 OpenAI bills API key usage through your OpenAI Platform account at standard API rates. See the [API pricing page](https://openai.com/api/pricing/).
 
@@ -77,6 +105,15 @@ jobs. Don't expose Codex execution in untrusted or public environments.
 
 ### Check authentication or sign out
 
+Open the profile menu to confirm the active account and workspace. To end the
+ChatGPT web session in that browser, select **Log out**.
+
+Open the profile menu to see the active account or API key status. Select
+**Log out** to clear the current credentials.
+
+Run `codex login status` to see the active authentication method. Run
+`codex logout` to clear the current credentials.
+
 Open the profile menu to see the active account or API key status. Select
 **Log out** to clear the current credentials.
 
@@ -93,6 +130,12 @@ runners. For general OpenAI API calls, continue to use Platform API keys.
 
 For setup steps, permissions, rotation, and revocation guidance, see
 [Access tokens](https://learn.chatgpt.com/docs/enterprise/access-tokens).
+
+If your environment already provides a Codex access token, pipe it to the CLI:
+
+```shell
+printenv CODEX_ACCESS_TOKEN | codex login --with-access-token
+```
 
 ## Secure your Codex cloud account
 
@@ -160,6 +203,98 @@ forced_chatgpt_workspace_id = "00000000-0000-0000-0000-000000000000"
 If the active credentials don't match the configured restrictions, Codex logs the user out and exits.
 
 These settings are commonly applied via managed configuration rather than per-user setup. See [Managed configuration](https://learn.chatgpt.com/docs/enterprise/managed-configuration).
+
+## Login diagnostics
+
+Direct `codex login` runs write a dedicated `codex-login.log` file under
+your configured log directory. Use it when you need to debug browser-login or
+device-code failures, or when support asks for login-specific logs.
+
+## Custom CA bundles
+
+If your network uses a corporate TLS proxy or private root CA, set
+`CODEX_CA_CERTIFICATE` to a PEM bundle before logging in. When
+`CODEX_CA_CERTIFICATE` is unset, Codex falls back to `SSL_CERT_FILE`. The same
+custom CA settings apply to login, normal HTTPS requests, and secure WebSocket
+connections.
+
+```shell
+export CODEX_CA_CERTIFICATE=/path/to/corporate-root-ca.pem
+codex login
+```
+
+## Login on headless devices
+
+If you are signing in to ChatGPT with the Codex CLI, there are some situations where the browser-based login UI may not work:
+
+- You're running the CLI in a remote or headless environment.
+- Your local networking configuration blocks the localhost callback Codex uses to return the OAuth token to the CLI after you sign in.
+
+In these situations, prefer device code authentication (beta). In the interactive login UI, choose **Sign in with Device Code**, or run `codex login --device-auth` directly. If device code authentication doesn't work in your environment, use one of the fallback methods.
+
+### Preferred: Device code authentication (beta)
+
+1. Enable device code login in your ChatGPT security settings (personal account) or ChatGPT workspace permissions (workspace admin).
+2. In the terminal where you're running Codex, choose one of these options:
+   - In the interactive login UI, select **Sign in with Device Code**.
+   - Run `codex login --device-auth`.
+3. Open the link in your browser, sign in, then enter the one-time code.
+
+If device code login isn't available in your environment, use one of the
+fallback methods below.
+
+### Fallback: Authenticate locally and copy your auth cache
+
+If you can complete the login flow on a machine with a browser, you can copy your cached credentials to the headless machine.
+
+1. On a machine where you can use the browser-based login flow, run `codex login`.
+2. Confirm the login cache exists at `~/.codex/auth.json`.
+3. Copy `~/.codex/auth.json` to `~/.codex/auth.json` on the headless machine.
+
+Treat `~/.codex/auth.json` like a password: it contains access tokens. Don't commit it, paste it into tickets, or share it in chat.
+
+If your OS stores credentials in a credential store instead of `~/.codex/auth.json`, this method may not apply. See
+[Credential storage](https://learn.chatgpt.com/docs/auth#credential-storage) for how to configure file-based storage.
+
+Copy to a remote machine over SSH:
+
+```shell
+ssh user@remote 'mkdir -p ~/.codex'
+scp ~/.codex/auth.json user@remote:~/.codex/auth.json
+```
+
+Or use a one-liner that avoids `scp`:
+
+```shell
+ssh user@remote 'mkdir -p ~/.codex && cat > ~/.codex/auth.json' < ~/.codex/auth.json
+```
+
+Copy into a Docker container:
+
+```shell
+# Replace MY_CONTAINER with the name or ID of your container.
+CONTAINER_HOME=$(docker exec MY_CONTAINER printenv HOME)
+docker exec MY_CONTAINER mkdir -p "$CONTAINER_HOME/.codex"
+docker cp ~/.codex/auth.json MY_CONTAINER:"$CONTAINER_HOME/.codex/auth.json"
+```
+
+For a more advanced version of this same pattern on trusted CI/CD runners, see
+[Maintain Codex account auth in CI/CD (advanced)](https://learn.chatgpt.com/docs/auth/ci-cd-auth).
+That guide explains how to let Codex refresh `auth.json` during normal runs and
+then keep the updated file for the next job. API keys are still the recommended
+default for automation.
+
+### Fallback: Forward the localhost callback over SSH
+
+If you can forward ports between your local machine and the remote host, you can use the standard browser-based flow by tunneling Codex's local callback server (default `localhost:1455`).
+
+1. From your local machine, start port forwarding:
+
+```shell
+ssh -L 1455:localhost:1455 user@remote
+```
+
+2. In that SSH session, run `codex login` and follow the printed address on your local machine.
 
 ## Alternative model providers
 

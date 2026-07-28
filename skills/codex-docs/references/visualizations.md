@@ -25,6 +25,13 @@ The Visualizations preview is rolling out in the ChatGPT desktop app. When
 If **Visualize** doesn't appear, use ChatGPT on the web or try again after the
 preview reaches your account.
 
+In a supported Chat or ChatGPT Work chat, type `@` in the composer,
+start entering `Visualize`, and select **Visualize** under **Plugins**. Its
+description is **Create visualizations and interactive tools**. The composer
+adds a **Visualize** tag before your request.
+
+You can also type `@Visualize` and select the matching suggestion.
+
 ## Check availability
 
 | Surface                     | Current availability                                                          |
@@ -57,6 +64,12 @@ Ask for the smallest format that fits the job:
 
 A strong request names the outcome, source material, question, and useful
 interactions. Try this example:
+
+**Prompt:**
+
+```text
+@Visualize how supply and demand determine a market price. Let me shift each curve, mark the equilibrium, and explain how price and quantity change.
+```
 
 Tell ChatGPT which information to use, such as content already in the
 chat, pasted data, an attached file, or an available connected source.

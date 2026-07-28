@@ -17,6 +17,23 @@ Drag an image into the prompt composer while holding `Shift` to include
 it as context. You can also ask ChatGPT to inspect an image on your system or use
 a screenshot tool to verify work in another app.
 
+Attach, paste, or drag an image into the ChatGPT web composer. In the prompt,
+tell ChatGPT what to inspect and what result you want from the image.
+
+Paste an image into the interactive composer, or pass one or more files on the
+command line:
+
+```bash
+codex -i screenshot.png "Explain this error and suggest the smallest fix"
+codex --image before.png,after.png "Compare these states and list the regressions"
+```
+
+For multiple images, separate paths with commas or repeat `--image`. Codex
+accepts common image formats, including PNG and JPEG.
+
+Drag an image into the prompt composer while holding `Shift` so the
+extension accepts the drop instead of passing it to the editor.
+
 ## Write the prompt around the image
 
 Name what the image shows, point to the area that matters, and state the output

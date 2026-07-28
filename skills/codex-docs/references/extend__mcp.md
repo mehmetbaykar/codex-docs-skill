@@ -55,6 +55,51 @@ The server list shows which servers are enabled and which require OAuth. Select
 **Authenticate** when an OAuth server requires sign-in. In the composer, type `/mcp`
 to view connected servers.
 
+## Use MCP-backed tools in ChatGPT web
+
+In a hosted ChatGPT Work chat, install a [plugin](https://learn.chatgpt.com/docs/plugins) to use
+its bundled connectors and remote MCP tools. Workspace administrators can
+control which plugins and tools are available.
+
+ChatGPT web doesn't read local Codex configuration files or expose the local
+Codex command menu. Browse and manage available tools through **Plugins** in
+ChatGPT Work.
+
+### Configure with the CLI
+
+#### Add an MCP server
+
+```bash
+codex mcp add <server-name> --env VAR1=VALUE1 --env VAR2=VALUE2 -- <stdio server-command>
+```
+
+For example, to add Context7 (a free MCP server for developer documentation), you can run the following command:
+
+```bash
+codex mcp add context7 -- npx -y @upstash/context7-mcp
+```
+
+#### Other CLI commands
+
+Run `codex mcp list` to see configured servers. To see all available MCP
+commands, run `codex mcp --help`. For a server that supports OAuth, run
+`codex mcp login <server-name>`.
+
+#### Terminal UI (TUI)
+
+In the `codex` TUI, use `/mcp` to see your active MCP servers.
+
+### Configure in the IDE extension
+
+1. Open the gear menu, then select **MCP servers**.
+2. Select **Add server**.
+3. Enter a name, choose **STDIO** or **Streamable HTTP**, and provide the
+   server's command or URL.
+4. Save the server, then select **Restart extension**.
+
+The MCP server list shows which servers are enabled and which require OAuth.
+Select **Authenticate** when an OAuth server requires sign-in.
+
 ### Configure with config.toml
 
 For more fine-grained control, edit `~/.codex/config.toml` or a project-scoped

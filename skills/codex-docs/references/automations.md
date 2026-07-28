@@ -16,6 +16,20 @@ In the ChatGPT desktop app, scheduled tasks can work with local projects and
 run in the project directory or an isolated worktree. Keep the computer on and
 the app running when a scheduled task needs local files.
 
+When scheduled tasks are enabled for your workspace, create them from Chat or
+ChatGPT Work on the web and manage their runs from **Scheduled**. Web tasks
+can use uploaded context and connected tools, but they can't work directly in
+a folder on your computer.
+
+Codex CLI doesn't provide the Scheduled management interface. Use ChatGPT web
+or the desktop app to create and manage scheduled tasks. The CLI can help you
+prepare and test a prompt, skill, or script first.
+
+The IDE extension doesn't provide the Scheduled management interface. Use
+ChatGPT web or the desktop app to create and manage scheduled tasks. The IDE
+extension can help you prepare and test a prompt, skill, or workspace change
+first.
+
 <a id="managing-tasks"></a>
 <a id="ask-codex-to-create-or-update-automations"></a>
 <a id="ask-chatgpt-to-create-or-update-scheduled-tasks"></a>
@@ -34,6 +48,23 @@ the app running when a scheduled task needs local files.
 <a id="stay-up-to-date-with-your-project"></a>
 <a id="combining-automations-with-skills-to-fix-your-own-bugs"></a>
 <a id="combining-scheduled-tasks-with-skills-to-fix-your-own-bugs"></a>
+
+## Manage scheduled tasks on the web
+
+Open **Scheduled** to review task status and recent runs. Use a standalone scheduled task
+when each run should start from the saved prompt. Use a scheduled task in a
+chat when you want ChatGPT to return to the same chat with its existing
+context.
+
+Scheduled tasks on the web can use uploaded files, connected tools, skills, and
+plugins available to that chat. They don't keep a local folder or
+worktree available between runs. Put durable instructions in the task prompt
+or an attached skill, and keep required source material in an accessible
+project, upload, or connected service.
+
+Before you schedule a task, test its prompt in a regular web chat.
+Review the first few runs, then adjust the prompt, tools, or cadence if the
+results are too broad or need additional context.
 
 For example, schedule a task to evaluate telemetry errors and submit fixes,
 or to create reports about recent codebase changes. For ongoing work that

@@ -30,6 +30,30 @@ activity while you work in other apps. It can show when a chat is **Running**,
 See [Pets](https://learn.chatgpt.com/docs/pets?surface=app) to choose a pet, understand its status, or
 create your own.
 
+## Configure web notifications
+
+Open **Settings > Notifications** to manage the notification categories and
+channels available to your account. Depending on the category and account,
+channels can include push, email, or SMS. Use **Manage tasks** from the task
+notification settings to open **Scheduled**.
+
+## Configure CLI notifications
+
+For terminal and external notifications, see
+[Notifications](https://learn.chatgpt.com/docs/config-file/config-advanced#notifications) in the
+advanced configuration guide. You can choose when the TUI emits a notification
+and whether Codex runs an external program when a turn completes.
+
+<a id="follow-task-activity-in-the-ide"></a>
+
+## Follow chat activity in the IDE
+
+The IDE extension doesn't provide separate notification controls. Keep the
+chat open to follow its activity. To run an external program when a turn
+completes, configure `notify` on the connected Codex host. See
+[Notifications](https://learn.chatgpt.com/docs/config-file/config-advanced#notifications) in the
+advanced configuration guide.
+
 ## Related docs
 
 - [Long-running work](https://learn.chatgpt.com/docs/long-running-work)

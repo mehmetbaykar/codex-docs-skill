@@ -73,6 +73,42 @@ They don't automatically sync to ChatGPT web.
 Pets respect your operating system's reduced motion setting. When reduced
 motion is enabled, the pet uses a still frame instead of sprite animation.
 
+## Choose a pet on the web
+
+If Pets are available for your account and workspace, open **Settings >
+Personalization > Pet > Select pet**. Choose a built-in pet, or choose
+**Default** to use ChatGPT without a pet.
+
+A web pet appears inside supported ChatGPT Work chats. It doesn't provide the
+desktop app's floating overlay, activity tray, or `/pet` command.
+
+### Upload a custom pet
+
+Select **Upload pet** to add a custom sprite sheet. The file must be a
+transparent PNG or WebP, exactly 1536 × 1872 pixels, and no larger than 20 MiB.
+You can edit, download, refresh, or delete uploaded pets from the same setting.
+
+## Choose a terminal pet
+
+In an interactive Codex CLI session:
+
+- Enter `/pets` or `/pet` to open the pet picker.
+- Enter `/pets <name>` to choose a pet directly.
+- Enter `/pets off` to disable terminal pets.
+
+The picker includes built-in pets and compatible custom pets installed on your
+computer. A terminal pet reports activity for the current CLI session. It uses
+**Running**, **Needs input**, **Ready**, and **Blocked** states, but it doesn't
+provide the desktop app's multiple-chat activity tray.
+
+Terminal pets require iTerm2 3.6 or later, or a terminal with Kitty graphics or
+Sixel support. They are unavailable inside tmux and Zellij.
+
+## Pets in the IDE extension
+
+The Codex IDE extension doesn't provide a pet picker or floating pet overlay.
+Use the ChatGPT desktop app or Codex CLI when you want to use your own pet.
+
 ## Related docs
 
 - [Notifications](https://learn.chatgpt.com/docs/notifications)

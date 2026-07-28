@@ -12,6 +12,10 @@ Use ChatGPT or Codex to inspect code changes before you commit or push them.
 
 ## Start a review
 
+In ChatGPT Work, upload the code you want reviewed or make it available through
+an installed source [plugin](https://learn.chatgpt.com/docs/plugins). In your prompt, identify the pull
+request, branch, commit, files, and review criteria.
+
 ### Review in the app
 
 Open the review pane to understand what changed, give line-specific feedback,
@@ -24,7 +28,22 @@ prioritized findings without changing your working tree.
 The review pane requires a project inside a Git repository. If your project
 isn't a Git repository yet, the app prompts you to create one.
 
+Type `/review` to open the CLI review presets. Codex starts a dedicated reviewer
+that reads the selected diff and reports prioritized, actionable findings
+without changing your working tree.
+
+Type `/review` in the IDE extension composer. Choose **Review against a base
+branch** or **Review uncommitted changes**. Codex reports prioritized findings
+without changing your working tree.
+
+The `/review` command appears only when the open project is inside a Git
+repository.
+
 ## Choose a review scope
+
+Name the pull request, branch, commit, or files to inspect in your prompt. To
+review local files that aren't available through an installed source plugin,
+upload them to the chat.
 
 ### What changes it shows
 
@@ -36,7 +55,22 @@ By default, the review pane shows **Unstaged** changes. Use **Staged** for the
 Git index, **Commit** for a selected commit, **Branch** for the diff against your
 base branch, or **Last turn** for the most recent assistant turn.
 
+Choose one of these `/review` scopes:
+
+- **Review against a base branch** finds the merge base and reviews your branch diff.
+- **Review uncommitted changes** includes staged, unstaged, and untracked files.
+- **Review a commit** reviews the exact change set for a selected commit.
+- **Custom review instructions** focuses the review on criteria you provide.
+
+Choose one of these `/review` scopes:
+
+- **Review against a base branch** compares your current branch with a branch you select.
+- **Review uncommitted changes** reviews the changes in your working tree.
+
 ## Work with review results
+
+Review findings appear in the web chat. Ask for evidence, request a
+narrower follow-up review, or ask ChatGPT to prepare revised files.
 
 ### Code review results
 
@@ -45,6 +79,17 @@ Review findings appear as inline comments in the review pane.
 Reviews run in the current chat by default. Under **Settings** > **General** >
 **Code review**, choose **Detached** to start a separate review chat. See
 [developer settings](https://learn.chatgpt.com/docs/developer-settings?surface=app#app-code-review).
+
+The review appears as a turn in the transcript. Set `review_model` in
+`config.toml` when you want reviews to use a different model from the current
+session.
+
+By default, the review runs in the current chat. Set `chatgpt.reviewDelivery` to
+`detached` when you want `/review` to start a separate review chat. See the
+[IDE extension settings reference](https://learn.chatgpt.com/docs/developer-settings?surface=ide#ide-editor-settings-reference).
+
+If you ask ChatGPT to prepare revised files, the tools and workspace
+permissions available to the chat still apply.
 
 If you ask Codex to apply the fixes it finds, your normal [sandbox and approval
 settings](https://learn.chatgpt.com/docs/sandboxing) apply.

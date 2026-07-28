@@ -128,10 +128,37 @@ choose the narrowest scope that lets the task continue. Keep the project
 boundary as the default; use separate projects or worktrees instead of
 broadening access across unrelated repositories.
 
+ChatGPT Work runs code and shell commands in a managed, isolated environment.
+Workspace policy and tool-specific controls determine which capabilities are
+available. When the setting is available, use **Settings > Data controls > Work
+network access** to manage network access for code and shell commands. Turn on
+**Allow public internet access** to let those commands reach the public
+internet. When it's off, commands can reach only required hostnames from a
+managed allowlist.
+
+Web search, plugins, and the remote browser have separate controls.
+Changes take effect after the current code or shell run finishes and Work
+refreshes its execution environment. ChatGPT web doesn't expose the local
+Codex sandbox or approval-mode selector.
+
 In the ChatGPT desktop app, use the permissions control beneath the composer.
 Depending on your configuration, the menu can include **Ask for approval**,
 **Approve for me** for eligible approval requests, **Full access**, and named or
 custom permissions profiles.
+
+In the CLI, enter
+[`/permissions`](https://learn.chatgpt.com/docs/developer-commands?surface=cli#cli-update-permissions-with-permissions)
+to open the permissions picker and change the active permissions profile.
+
+In the IDE extension, use the permissions control beneath the composer.
+Depending on your configuration, the menu can include **Ask for approval**,
+**Approve for me** for eligible approval requests, **Full access**, and named or
+custom permissions profiles.
+
+  <img src="https://developers.openai.com/images/codex/ide/approval_mode.png"
+    alt="Codex approval mode selector in the IDE extension"
+    class="block h-auto w-full mx-0!"
+  />
 
 <a id="configure-defaults"></a>
 

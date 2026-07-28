@@ -16,6 +16,21 @@ work is complete.
 In the ChatGPT desktop app, enter `/goal` to start Goal mode. The progress row
 lets you pause, resume, edit, or clear the goal while ChatGPT works.
 
+For hosted long-running work in ChatGPT web, use ChatGPT Work and put the
+outcome, constraints, and review criteria directly in your prompt.
+
+Continue in the same web chat to add context, change constraints, or
+ask for a status update. Use separate chats when independent tasks can run in
+parallel, and avoid giving two tasks write access to the same connected source.
+For related work, keep the chats and source files together in a
+[project](https://learn.chatgpt.com/docs/projects).
+
+In an interactive Codex CLI session, enter `/goal` to start Goal mode. Continue
+the same session to steer the work or ask for a status update.
+
+In the IDE extension chat, enter `/goal` to start Goal mode for the open
+workspace. Continue the same chat to steer the task while it runs.
+
 <a id="start-a-goal"></a>
 <a id="define-what-done-means"></a>
 <a id="steer-a-running-goal"></a>
@@ -60,6 +75,25 @@ Use a side chat when you want a status recap or an explanation without
 interrupting the main chat. Pause the goal before you expect to lose
 connectivity, then resume it when you're ready for ChatGPT to continue.
 
+<a id="steer-a-running-task"></a>
+
+## Steer running work
+
+Continue in the same chat to add context, adjust constraints, or ask
+for a status recap. Start a separate chat when another task can run
+independently.
+
+## Steer a running goal
+
+Send a follow-up message in the same interactive session to add context or
+adjust constraints. Ask for a status recap when you want Codex to summarize
+progress before it continues.
+
+## Steer a running goal
+
+Continue in the same IDE chat to add context, adjust constraints, or ask for a
+status recap. Keep the workspace available while the goal is running.
+
 Starting a goal doesn't grant ChatGPT broader access. It keeps the same
 [sandbox and approval policy](https://learn.chatgpt.com/docs/sandboxing) and pauses when it
 needs a decision. With [automatic approval
@@ -83,3 +117,9 @@ or is ready for review.
 - [Projects and chats](https://learn.chatgpt.com/docs/projects)
 - [Goal mode and prompting](https://learn.chatgpt.com/docs/prompting#goal-mode)
 - [Git worktrees](https://learn.chatgpt.com/docs/environments/git-worktrees)
+
+## Related docs
+
+- [Projects and chats](https://learn.chatgpt.com/docs/projects)
+- [Scheduled tasks](https://learn.chatgpt.com/docs/automations)
+- [Sandbox and permissions](https://learn.chatgpt.com/docs/sandboxing)

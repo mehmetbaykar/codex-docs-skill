@@ -33,6 +33,16 @@ This page covers the plugin that runs in a local Codex chat. To scan a
 
 3. Start a new Codex chat for that repository. Don't continue an existing chat.
 
+1. In your terminal, go to the repository you want to assess and start Codex:
+
+```bash
+   codex
+```
+
+2. Enter `/plugins`, search for **Codex Security**, and select **Install
+   plugin**.
+3. Enter `/new` to start a new chat for the repository.
+
 The hosted desktop-app catalog and public Codex CLI marketplace can offer
   different plugin versions. Check the [plugin
   changelog](https://learn.chatgpt.com/docs/security/plugin/changelog) before you rely on a feature or
@@ -107,10 +117,33 @@ with `xhigh` reasoning effort.
      </figcaption>
    </figure>
 
+1. Ask for an ordinary scan
+
+   Send this prompt in the new chat:
+
+```text
+   Run a Codex Security scan on this repository.
+```
+
+2. Let the scan finish
+
+   Codex runs the scan in the terminal without opening a setup workspace. Keep
+   the task running until Codex reports that it is complete. If Codex identifies
+   a configuration limitation, review the limitation and the exact proposed
+   change before you approve a configuration update.
+
+3. Review the result
+
+   Review the summary in the terminal, then open the generated `report.md` for
+   the complete result.
+
 ## What the scan creates
 
 Every completed scan opens a findings workspace. Use it to review findings and
 coverage without inspecting raw artifacts. The scan also creates the files
+below.
+
+Every completed scan reports a summary in the terminal and creates the files
 below.
 
 - `report.md`, the primary readable entry point to the scan results.

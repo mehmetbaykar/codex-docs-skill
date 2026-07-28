@@ -53,6 +53,12 @@ developer workflows.
 desktop](https://learn.chatgpt.com/docs/use-chatgpt#compare-chatgpt-work-and-codex-on-desktop) to choose the
 view that fits your task.
 
+**Prompt:**
+
+```text
+Open the Launch project, review its files and recent conversations, and continue the launch plan from the latest Work conversation.
+```
+
 ### Control parallel Codex work with Codex Micro
 
 On July 15, OpenAI and Work Louder launched
@@ -94,6 +100,12 @@ important actions.
 [Scheduled tasks](https://learn.chatgpt.com/docs/automations) can keep that work moving when you're away
 by running once, on a schedule, when an event occurs, or while monitoring for
 changes.
+
+**Prompt:**
+
+```text
+Create a launch brief from the attached research and campaign template. Show me the plan and flag missing information before you build the final document, then adapt the approved brief into assets for three markets.
+```
 
 ### Choose the right GPT-5.6 model
 
@@ -169,6 +181,12 @@ explicit approval before it uses that access on a website.
 Browser use is also up to twice as fast because CDP and DOM snapshot
 optimizations reduce browser round trips.
 
+**Prompt:**
+
+```text
+Use @Browser to reproduce the slow checkout. Inspect the network timing and console errors, fix the cause, and verify the result.
+```
+
 ### Bring your setup to Codex
 
 New migration flows can import supported setup from other coding agents during
@@ -197,6 +215,12 @@ dedicated entry point in ChatGPT on the web and desktop, where you can return to
 projects and manage hosted environment values and secrets without assembling a
 separate deployment stack.
 
+**Prompt:**
+
+```text
+Build a responsive launch dashboard from this project with Sites. Validate it at mobile and desktop sizes, then save a version for review. Do not deploy it until I approve the saved version.
+```
+
 ### Use Codex with Amazon Bedrock
 
 You can [use Codex with Amazon Bedrock](https://learn.chatgpt.com/docs/amazon-bedrock) for local
@@ -220,6 +244,12 @@ Windows. In the ChatGPT mobile app, open **Remote** to start work on a Windows
 device, or use a Mac running the ChatGPT desktop app and check progress from
 elsewhere.
 
+**Prompt:**
+
+```text
+Use @Computer to open the Windows app, reproduce the export failure, save a diagnostic file, and summarize the exact steps that trigger the problem.
+```
+
 Remote on iOS also added Spotlight and Shortcuts entry points, archived-chat
 browsing, `/side`, and options to save or copy rendered images. The desktop app
 added chat coordination for local projects and worktrees, content and
@@ -237,6 +267,12 @@ Read the [May 25 iOS](https://learn.chatgpt.com/docs/changelog#codex-2026-05-25-
 screenshot and available text when you press both Command keys. Codex gets
 working context from design tools, dashboards, documents, and other apps
 without requiring you to copy, paste, or describe what's on screen.
+
+**Prompt:**
+
+```text
+Use this appshot as the visual reference. Match the selected screen in the app, then open a preview and compare spacing, typography, and color.
+```
 
 ### Follow long-running goals
 
@@ -278,6 +314,12 @@ parallel across tabs in the background without taking over your browser. You
 control which websites Codex can use, making it practical to combine research,
 data entry, and verification across web apps in one task.
 
+**Prompt:**
+
+```text
+Compare the open product pages, collect the plan limits in a table, cite each source tab, and flag any differences that need a manual check.
+```
+
 The Codex app also added dictation cleanup and a custom dictionary for names,
 file paths, and code symbols. ChatGPT Enterprise workspace owners can allow
 members to create [Codex access tokens](https://learn.chatgpt.com/docs/enterprise/access-tokens) for
@@ -302,6 +344,12 @@ lets Codex click through local development servers and file-backed pages to
 reproduce issues and verify fixes. Eligible approval requests can also go
 through [automatic approval review](https://learn.chatgpt.com/docs/sandboxing/auto-review),
 which shows the review status and risk before the action runs.
+
+**Prompt:**
+
+```text
+Use @Browser to open the local app, reproduce the checkout failure, fix it, and verify the flow end to end.
+```
 
 [Read the April 23 launch notes](https://learn.chatgpt.com/docs/changelog#codex-2026-04-23).
 
@@ -379,6 +427,12 @@ personalize.
 Codex also learned to read the [integrated terminal](https://learn.chatgpt.com/docs/integrated-terminal#run-and-validate-your-project)
 for the current chat. It could inspect a running development server or build
 output directly instead of asking you to paste it.
+
+**Prompt:**
+
+```text
+Every weekday, inspect changes from the last 24 hours, find one likely regression, fix it in a worktree, run the smallest relevant tests, and report the evidence.
+```
 
 Read the [March 11](https://learn.chatgpt.com/docs/changelog#codex-2026-03-11-app) and
 [March 12](https://learn.chatgpt.com/docs/changelog#codex-2026-03-12-app) Codex app release notes.
