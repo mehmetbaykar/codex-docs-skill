@@ -6,6 +6,8 @@ path: /docs/chrome-extension
 
 # Chrome extension
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Use the Chrome extension to let ChatGPT control your Chrome browser. ChatGPT can
 read or act on sites where you're already signed in, such as LinkedIn,
 Salesforce, Gmail, or internal tools.

@@ -6,6 +6,8 @@ path: /docs/security/plugin/code-changes
 
 # Review code changes for security
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Run a security change review to find regressions in one Git-backed change set.
 Codex reviews each changed source-like file and its directly supporting code.
 It doesn't expand the review into a full repository audit.
@@ -130,6 +132,8 @@ must be writable.
 
 Choose the example for your CI provider:
 
+
+
 ```yaml
 name: Codex Security review
 
@@ -193,6 +197,10 @@ jobs:
           path: ${{ runner.temp }}/codex-security/codex-security-scans
 ```
 
+
+
+
+
 Create masked `CODEX_SECURITY_API_KEY` and `GITLAB_TOKEN` CI/CD variables. The
 GitLab token needs API access to create a merge-request note.
 
@@ -243,6 +251,10 @@ codex-security-review:
       - codex-security-artifacts.tar.gz
 ```
 
+
+
+
+
 ```yaml
 trigger: none
 
@@ -281,6 +293,10 @@ steps:
 
 For Azure Repos, configure a **Build validation** branch policy to run the
 pipeline on pull requests.
+
+
+
+
 
 ```groovy
 pipeline {
@@ -337,6 +353,8 @@ pipeline {
   }
 }
 ```
+
+
 
 The examples skip forked pull requests. Run credentialed jobs only from a
 protected pipeline definition and only for contributors trusted with the scan

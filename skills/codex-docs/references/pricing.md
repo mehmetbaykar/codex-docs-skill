@@ -6,10 +6,16 @@ path: /docs/pricing
 
 # Pricing
 
-<strong>ChatGPT Work and Codex share usage.</strong> ChatGPT Work usage inside
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
+**ChatGPT Work and Codex share usage.** ChatGPT Work usage inside
   ChatGPT uses the same pricing, credits, and usage limits as Codex.
 
 <h2 class="sr-only">Pricing options</h2>
+
+
+
+
 
         - Codex on the web, in the CLI, in the IDE extension, and on iOS
         - Cloud-based integrations like automatic code review and Slack
@@ -33,6 +39,13 @@ path: /docs/pricing
         - Pay only for the tokens Codex uses, based on [API
           pricing](https://platform.openai.com/docs/pricing)
 
+
+
+
+
+
+
+
         - Access ChatGPT and Codex across desktop and mobile apps
         - Larger virtual machines to run cloud chats faster
         - Flexibly extend usage with [ChatGPT credits](#credits-overview)
@@ -52,11 +65,17 @@ path: /docs/pricing
         - Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
           Enterprise plan
 
+
+
+
         - Codex in the CLI, SDK, or IDE extension
         - No cloud-based features (GitHub code review, Slack, etc.)
         - Model availability follows the API models available to your key
         - Pay only for the tokens Codex uses, based on [API
           pricing](https://platform.openai.com/docs/pricing)
+
+
+
 
 ## Invite friends and coworkers
 
@@ -106,7 +125,10 @@ Choose the GPT-5.6 model that best fits your work:
 - **Luna** is optimized for speed and affordability, making it a good fit for
   lighter-weight or high-volume workloads.
 
-      Plus
+
+
+
+Plus
 
       <table>
         <thead>
@@ -185,7 +207,12 @@ Choose the GPT-5.6 model that best fits your work:
           </tr>
         </tfoot>
       </table>
-      Pro 5x
+
+
+
+
+
+Pro 5x
 
       <table>
         <thead>
@@ -264,7 +291,12 @@ Choose the GPT-5.6 model that best fits your work:
           </tr>
         </tfoot>
       </table>
-      Pro 20x
+
+
+
+
+
+Pro 20x
 
       <table>
         <thead>
@@ -343,7 +375,12 @@ Choose the GPT-5.6 model that best fits your work:
           </tr>
         </tfoot>
       </table>
-      Business
+
+
+
+
+
+Business
 
       <table>
         <thead>
@@ -422,7 +459,12 @@ Choose the GPT-5.6 model that best fits your work:
           </tr>
         </tfoot>
       </table>
-      API Key
+
+
+
+
+
+API Key
 
       <table>
         <thead>
@@ -513,6 +555,7 @@ Choose the GPT-5.6 model that best fits your work:
           </tr>
         </tfoot>
       </table>
+
 
 Usage limits are shared with other agentic features once pricing for those
 features is effective. This currently includes [ChatGPT for
@@ -695,7 +738,7 @@ sales](https://chatgpt.com/contact-sales?utm_internal_source=openai_developers_c
       <tr>
         <td colspan="4" style="text-align:center">
           Fast mode consumes credits at a higher rate for supported models. See
-          [Speed](https://learn.chatgpt.com/codex/agent-configuration/speed) for rates.
+          [Speed](https://learn.chatgpt.com/docs/agent-configuration/speed) for rates.
         </td>
       </tr>
     </tfoot>
@@ -746,4 +789,5 @@ efficiently](https://learn.chatgpt.com/docs/prompting#use-work-efficiently).
 
   <sup>*</sup> Feature is currently limited to only specific regions. Check the
   individual feature documentation to learn more about geo restrictions.
+
   <sup>†</sup> Some first party plugins are not available.

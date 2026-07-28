@@ -6,6 +6,8 @@ path: /docs/sandboxing
 
 # Sandbox
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 The sandbox is the boundary that lets the agent act autonomously without giving it
 unrestricted access to your machine. When a local chat runs commands in the
 **ChatGPT desktop app**, **Codex CLI**, or **IDE extension**, those commands run inside a
@@ -57,13 +59,21 @@ Linux sandbox implementation when you run in WSL2.
 
 On **Linux and WSL2**, install `bubblewrap` with your package manager first:
 
+
+
 ```bash
 sudo apt install bubblewrap
 ```
 
+
+
+
+
 ```bash
 sudo dnf install bubblewrap
 ```
+
+
 
 Codex uses the first `bwrap` executable it finds on `PATH`. If no `bwrap`
 executable is available, Codex falls back to a bundled helper, but that helper

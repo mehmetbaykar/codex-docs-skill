@@ -6,6 +6,8 @@ path: /docs/amazon-bedrock
 
 # Use ChatGPT Work and Codex with Amazon Bedrock
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Configure local ChatGPT Work and Codex surfaces to use OpenAI models available
 through Amazon Bedrock. In this setup, the local client sends model requests to
 Bedrock using AWS-managed authentication and access controls.
@@ -71,30 +73,30 @@ sources:
 
 1. Shared AWS `config` and `credentials` files.
 
-   ```shell
+```shell
    aws configure
-   ```
+```
 
 2. Environment variables.
 
-   ```shell
+```shell
    export AWS_ACCESS_KEY_ID=<your-access-key-id>
    export AWS_SECRET_ACCESS_KEY=<your-secret-access-key>
    export AWS_SESSION_TOKEN=<your-session-token>
-   ```
+```
 
 3. AWS Management Console credentials.
 
-   ```shell
+```shell
    aws login
-   ```
+```
 
 4. AWS SSO or a named profile.
 
-   ```shell
+```shell
    aws sso login --profile codex-bedrock
    export AWS_PROFILE=codex-bedrock
-   ```
+```
 
 5. Federated identity configured with `credential_process`. For corporate SSO or
    OIDC federation, configure the AWS profile outside the local client and let
@@ -151,10 +153,13 @@ Fast Mode isn't available with Amazon Bedrock. Fast Mode uses priority
 
     <sup>*</sup> Feature is currently limited to only specific regions. Check
     the individual feature documentation to learn more about geo restrictions.
+
+
     <sup>†</sup> Local plugin bundles are supported when their capabilities do
     not require ChatGPT authentication. OpenAI-curated plugin discovery and
     features that depend on connectors or cloud-hosted sharing aren't
     available.
+
 
 ## Troubleshooting
 

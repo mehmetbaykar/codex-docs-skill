@@ -6,10 +6,18 @@ path: /docs/features/codex-micro
 
 # Codex Micro
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Codex Micro is a limited-run collaboration between Codex and Work Louder. It
 works with the ChatGPT desktop app, giving you a quick way to check on chats,
 jump between them, use push-to-talk, and trigger common actions or skills
 without leaving the keyboard.
+
+
+
+
+
+
 
 ## Set up Codex Micro
 
@@ -69,6 +77,8 @@ follow, but you can't turn them into extra Command Keys.
 
 Codex Micro comes with six actions in its default layout:
 
+
+
 |                            Key                            | Default action                           |
 | :-------------------------------------------------------: | ---------------------------------------- |
 |     | Turn Fast mode on or off.                |
@@ -77,6 +87,10 @@ Codex Micro comes with six actions in its default layout:
 |    | Continue the current chat in a new chat. |
 |       | Start push-to-talk.                      |
 |   | Send the message in the composer.        |
+
+
+
+
 
 The Mic key uses your computer's microphone. Codex Micro doesn't have a
 microphone of its own. Hold the key while you speak, then release it to stop.
@@ -95,7 +109,11 @@ somewhere else, ChatGPT swaps the two instead of using one keycap twice.
 
 After you remap a key, swap the physical keycap to match its new action.
 
+
+
 ## Use the analog stick and dial
+
+
 
 The analog stick moves freely in any direction. When you push it far enough
 from the center, ChatGPT turns the movement into one of four directional
@@ -104,12 +122,18 @@ actions. Codex Micro starts with the mappings shown here.
 Choose any available ChatGPT desktop command or enabled skill for each
 direction in **Settings > Codex Micro**.
 
+
+
+
+
 | Direction | Default action             |
 | --------- | -------------------------- |
 | Up        | Turn Plan mode on or off.  |
 | Right     | Go forward in app history. |
 | Down      | Show or hide the sidebar.  |
 | Left      | Go back in app history.    |
+
+
 
 The dial moves through the composer controls and options, with **Reasoning**
 selected by default. Turn the dial to change the selection, then press it to

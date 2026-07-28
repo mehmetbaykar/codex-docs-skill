@@ -6,6 +6,8 @@ path: /docs/windows/windows-sandbox
 
 # Windows sandbox
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Use Codex on Windows with the native [ChatGPT desktop app](https://learn.chatgpt.com/docs/windows/windows-app), the
 [CLI](https://learn.chatgpt.com/docs/codex/cli), or the [IDE extension](https://learn.chatgpt.com/docs/codex/ide).
 

@@ -6,6 +6,8 @@ path: /docs/security/plugin/changelog
 
 # Codex Security plugin changelog
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Use this changelog to see what changed in Codex Security and which plugin
 versions are available from each installation source.
 

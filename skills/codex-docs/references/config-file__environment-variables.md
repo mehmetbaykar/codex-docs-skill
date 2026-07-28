@@ -6,6 +6,8 @@ path: /docs/config-file/environment-variables
 
 # Environment variables
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Codex uses `config.toml` for durable settings. Use environment variables for
 shell-scoped overrides, automation secrets, installer behavior, or diagnostics.
 
