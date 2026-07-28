@@ -68,18 +68,25 @@
           icon: "shieldCheck",
         },
         {
-          title: "Codex Security cloud FAQ",
-          description:
-            "Get answers about cloud scans, findings, privacy, and access.",
-          href: "/codex/security/faq",
-          icon: "chat",
-        },
-        {
           title: "Codex Security plugin",
           description:
             "Run security workflows from the ChatGPT desktop app and Codex CLI.",
           href: "/codex/security/plugin",
           icon: "plugin",
+        },
+        {
+          title: "Codex Security CLI",
+          description:
+            "Run local security scans and automate repository reviews.",
+          href: "/codex/security/cli",
+          icon: "terminal",
+        },
+        {
+          title: "Codex Security TypeScript SDK",
+          description:
+            "Integrate security scanning and progress reporting into developer tools.",
+          href: "/codex/security/sdk",
+          icon: "code",
         },
         {
           title: "Codex Security cloud setup",
@@ -93,6 +100,13 @@
           description: "Review and improve the threat model for your codebase.",
           href: "/codex/security/threat-model",
           icon: "webSearch",
+        },
+        {
+          title: "Codex Security cloud FAQ",
+          description:
+            "Get answers about cloud scans, findings, privacy, and access.",
+          href: "/codex/security/faq",
+          icon: "chat",
         },
       ],
     },

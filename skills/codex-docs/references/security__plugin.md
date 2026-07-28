@@ -160,6 +160,8 @@ links from `report.md` continue to work.
 
 ## Choose your next workflow
 
+- [Run a scan from the CLI](https://learn.chatgpt.com/docs/security/cli) if you have beta access and
+  need a repeatable terminal workflow with structured results.
 - [Run a standard or scoped scan](https://learn.chatgpt.com/docs/security/plugin/scans) to review a
   repository or one folder with the default workflow.
 - [Run a deep scan](https://learn.chatgpt.com/docs/security/plugin/deep-scans) for a more thorough scan
