@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## ChatGPT for iOS (2026-07-27)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-07-27-mobile
+
+ChatGPT for iOS
+
 ## ChatGPT Voice and multi-folder projects (2026-07-23)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-23-app
