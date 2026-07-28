@@ -24,6 +24,21 @@ In the ChatGPT desktop app, select ChatGPT and turn on Work in the switcher, or 
 Codex. Then open **Plugins** to browse, install, and use plugins. Installed
 plugins can add skills, connectors, and MCP tools to new chats.
 
+In ChatGPT web, turn on Work in the switcher and open **Plugins** to browse, install, and
+use plugins. A plugin can prompt you to connect an external service before its
+tools become available.
+
+In Codex CLI, enter `/plugins` to open the plugin browser. Install a plugin from
+a configured marketplace, then start a new session before using its bundled
+skills or tools.
+
+<a id="plugin-directory-in-the-ide-extension"></a>
+
+### Use plugins from a supported surface
+
+Plugins aren't available in the IDE extension. To browse and install plugins
+for Codex, use the ChatGPT desktop app or Codex CLI.
+
 Extend what ChatGPT and Codex can do, for example:
 
 - Install the Codex Security plugin to scan authorized code and confirm
@@ -135,6 +150,22 @@ Choose a specific plugin
 
 
 
+<a id="plugin-directory-in-codex-cli"></a>
+
+### Plugin browser in Codex CLI
+
+In Codex CLI, run the following command to open the plugin browser:
+
+```text
+codex
+/plugins
+```
+
+The CLI plugin browser groups plugins by marketplace. Use the marketplace tabs
+to switch sources, open a plugin to inspect details, install or uninstall
+marketplace entries, and press `Space` on an installed plugin to turn it
+on or off.
+
 <a id="api-key-availability"></a>
 
 ### API key availability
@@ -147,6 +178,10 @@ connection flows require unsupported OAuth capabilities. Review plugin usage
 on the [Platform Usage page](https://platform.openai.com/usage).
 
 ### How permissions and data sharing work
+
+On ChatGPT web, ChatGPT Work chats use the workspace permissions and
+tools available to that chat. Connectors still require their own sign-in
+and access.
 
 When a plugin capability runs through a Codex host, the host's [sandbox and
 approval policy](https://learn.chatgpt.com/docs/agent-approvals-security) applies.
