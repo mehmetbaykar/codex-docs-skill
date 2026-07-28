@@ -6,6 +6,8 @@ path: /docs/customization/chronicle
 
 # Chronicle
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Chronicle is in an **opt-in research preview**. It is only available for
   ChatGPT Pro subscribers on macOS. Please review the [Privacy and
   Security](#privacy-and-security) section for details and to understand the

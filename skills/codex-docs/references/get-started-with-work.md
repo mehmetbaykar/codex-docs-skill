@@ -6,6 +6,8 @@ path: /docs/get-started-with-work
 
 # Get started with ChatGPT Work
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 <a id="introducing-work-mode"></a>
 
 ## Introducing ChatGPT Work

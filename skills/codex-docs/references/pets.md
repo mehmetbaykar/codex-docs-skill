@@ -6,9 +6,15 @@ path: /docs/pets
 
 # Pets
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Pets are optional animated companions for following work. Where a pet appears
 and what it shows depend on the interface you use. Choosing a pet changes its
 appearance, not how ChatGPT completes tasks.
+
+
+
+
 
 ## Use a floating pet
 

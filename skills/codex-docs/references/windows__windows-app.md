@@ -6,6 +6,8 @@ path: /docs/windows/windows-app
 
 # ChatGPT desktop app for Windows
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 The [ChatGPT desktop app for Windows](https://get.microsoft.com/installer/download/9PLM9XGG6VKS?cid=website_cta_psi) gives you one interface for
 working across projects, running parallel chats, and reviewing results.
 The Windows app supports core workflows such as worktrees, scheduled tasks, Git

@@ -6,6 +6,8 @@ path: /docs/third-party/slack
 
 # Use Codex in Slack
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Use Codex in Slack to kick off coding work from channels and threads. Mention `@Codex` with a prompt, and Codex creates a cloud chat and replies with the results.
 
   <img src="https://developers.openai.com/images/codex/integrations/slack-example.png"

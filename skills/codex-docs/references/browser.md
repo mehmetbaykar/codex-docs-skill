@@ -6,6 +6,8 @@ path: /docs/browser
 
 # Browser
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Browser lets ChatGPT open websites, gather current information, and take action
 while you stay in control. Use it to compare options, complete a multi-step task
 on a website, or review a page you're building.
