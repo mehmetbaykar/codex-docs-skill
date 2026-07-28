@@ -6,6 +6,8 @@ path: /docs/environments/git-worktrees
 
 # Worktrees
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 In the ChatGPT desktop app, worktrees let Codex run multiple independent chats in the same project without interfering with each other. For Git repositories, [scheduled tasks](https://learn.chatgpt.com/docs/automations) can run on dedicated background worktrees so they don't conflict with your ongoing work. In non-version-controlled projects, scheduled tasks run directly in the project directory. You can also start chats in a worktree manually and use Handoff to move a chat between Local and Worktree.
 
 Worktrees are available only in Codex in the ChatGPT desktop app. Select

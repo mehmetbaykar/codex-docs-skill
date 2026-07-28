@@ -6,6 +6,8 @@ path: /docs/security/plugin/export-findings
 
 # Export and track security findings
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Use a completed Codex Security scan for either of these handoffs:
 
 - **Export** creates a portable JSON, CSV, or SARIF file.
@@ -36,11 +38,15 @@ tool needs the complete scan context, keep the original `scan-manifest.json`,
 locally. Exporting doesn't upload findings to a code-scanning service.
 
 <figure className="not-prose my-8">
+
+
     <img
       src={exportFindingsFormats.src}
       alt="Export findings dialog with JSON, CSV, and SARIF format options"
       className="block h-auto w-full"
     />
+
+
   <figcaption className="mt-3 text-sm text-secondary">
     Export completed findings as JSON, CSV, or SARIF for downstream review and
     tooling.

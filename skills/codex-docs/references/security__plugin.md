@@ -6,6 +6,8 @@ path: /docs/security/plugin
 
 # Codex Security plugin quickstart
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Codex Security scans your code for vulnerabilities and validates plausible
 findings. For each reportable issue, it gives you the evidence and remediation
 guidance you need to review the result. Scan only code you own or have
@@ -24,7 +26,10 @@ This page covers the plugin that runs in a local Codex chat. To scan a
    app](https://chatgpt.com/download/).
 2. Open **Plugins**, search for **Codex Security**, or use the button below:
 
+
+
        Install the Codex Security plugin
+
 
 3. Start a new Codex chat for that repository. Don't continue an existing chat.
 
@@ -42,9 +47,9 @@ with `xhigh` reasoning effort.
 
    Send this prompt in the new chat:
 
-   ```text
+```text
    Run a Codex Security scan on this repository.
-   ```
+```
 
 2. Confirm the setup
 
@@ -60,11 +65,15 @@ with `xhigh` reasoning effort.
    the repository you intended to scan. Then select **Start scan**.
 
    <figure className="not-prose my-6">
+
+
        <img
          src={scanSetup.src}
          alt="Codex Security setup workspace configured to scan an entire codebase"
          className="block h-auto w-full"
        />
+
+
      <figcaption className="mt-3 text-sm text-secondary">
        Configure the scan target, scan area, branch, and optional threat model
        guidance before starting the scan.
@@ -83,11 +92,15 @@ with `xhigh` reasoning effort.
    complete scan directory.
 
    <figure className="not-prose my-6">
+
+
        <img
          src={findingsWorkspace.src}
          alt="Completed Codex Security findings workspace for OWASP Juice Shop"
          className="block h-auto w-full"
        />
+
+
      <figcaption className="mt-3 text-sm text-secondary">
        Browse findings by severity, category, directory, patch status, and
        review status.

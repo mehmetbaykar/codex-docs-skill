@@ -6,6 +6,8 @@ path: /docs/security/plugin/triage-backlog
 
 # Triage a backlog
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Use `$codex-security:triage-finding` to review existing security findings
 against the current repository. This workflow performs a read-only static
 analysis: Codex treats each finding as an unproven claim and inspects repository
@@ -145,9 +147,9 @@ reviewing the triage results.
   the finding claim, affected locations, preconditions, static evidence, and
   proof gaps from the triage result:
 
-  ```text
+```text
   Use $codex-security:validation to dynamically validate finding [triage item ID or source ID] from the backlog triage result. Use the strongest realistic, bounded method, record exactly what was tested, and preserve any remaining proof gaps.
-  ```
+```
 
   Unlike triage, validation may build or run code, create a focused test or
   proof of concept, or exercise a real interface. Review the proposed commands

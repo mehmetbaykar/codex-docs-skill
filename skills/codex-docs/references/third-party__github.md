@@ -6,6 +6,8 @@ path: /docs/third-party/github
 
 # Codex code review in GitHub
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Use Codex code review to get another high-signal review pass on GitHub pull
 requests. Codex reviews the pull request diff, follows your repository guidance,
 and posts a standard GitHub code review focused on serious issues.

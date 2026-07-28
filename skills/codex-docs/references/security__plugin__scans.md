@@ -6,6 +6,8 @@ path: /docs/security/plugin/scans
 
 # Run a Codex Security scan
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Start with a standard Codex Security scan for an initial review or a routine
 repository or component assessment. It runs the full scan workflow once.
 
@@ -88,11 +90,15 @@ Review the result in this order:
 5. Select one accepted finding before starting a fix.
 
   <figure>
+
+
       <img
         src={findingsWorkspace.src}
         alt="Completed Codex Security findings workspace for OWASP Juice Shop"
         className="block h-auto w-full"
       />
+
+
     <figcaption className="mt-3 text-sm text-secondary">
       The completed workspace summarizes scan status, coverage, severity, and
       artifacts before listing the findings.
@@ -100,11 +106,15 @@ Review the result in this order:
   </figure>
 
   <figure>
+
+
       <img
         src={findingAttackPath.src}
         alt="Codex Security finding evidence and attack-path analysis for OWASP Juice Shop"
         className="block h-auto w-full"
       />
+
+
     <figcaption className="mt-3 text-sm text-secondary">
       A finding connects the relevant source to its entry point, reachability,
       likelihood, impact, and any limits or counterevidence.

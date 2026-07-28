@@ -6,6 +6,8 @@ path: /docs/build-plugins
 
 # Build plugins
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 To build or submit a plugin, use the complete
 [builder documentation on developers.openai.com](https://developers.openai.com/plugins).
 

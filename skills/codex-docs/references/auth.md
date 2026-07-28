@@ -6,6 +6,8 @@ path: /docs/auth
 
 # Authentication
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 ## OpenAI authentication
 
 <a id="sign-in-with-chatgpt"></a>

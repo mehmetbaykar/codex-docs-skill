@@ -6,6 +6,8 @@ path: /docs/quickstart
 
 # Quickstart
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 ## Where to use ChatGPT
 
 Use ChatGPT across different surfaces, including the
@@ -18,6 +20,8 @@ If you're a developer and want to use Codex in your terminal or code editor,
 ## Setup
 
 {/* prettier-ignore */}
+
+
 The ChatGPT desktop app is available for Windows and macOS. Use it for projects,
 local files, longer tasks, and quick chats.
 
@@ -38,6 +42,10 @@ local files, longer tasks, and quick chats.
 
 4.  <h3 id="setup-app-start-task">Start a chat</h3>
 
+
+
+
+
                 - For research, analysis, or deliverables such as documents, presentations,
                   spreadsheets, and Sites, select **ChatGPT**, then switch to **Work** at the
                   top of the new chat page, above the composer.
@@ -49,11 +57,19 @@ local files, longer tasks, and quick chats.
 
                 Learn more about [using ChatGPT](https://learn.chatgpt.com/docs/use-chatgpt).
 
+
+
+
+
 5.  <h3 id="setup-app-send-message">Send your first message</h3>
 
     Describe your goal and add any files or context ChatGPT needs. Try an example:
 
     Explore more [use cases](https://learn.chatgpt.com/use-cases).
+
+
+
+
 
 ChatGPT is available on the web and includes Chat and ChatGPT Work.
 
@@ -63,12 +79,20 @@ Go to [chatgpt.com](https://chatgpt.com) and sign in with your ChatGPT account.
 
 2.  <h3 id="setup-web-start-task">Start a chat</h3>
 
+
+
+
+
                 - Select **Chat** to ask questions, explore ideas, and work through a topic
                   conversationally.
                 - Select **Work** to research, analyze information, and create documents,
                   presentations, spreadsheets, Sites, or other finished work.
 
                 Learn more about [using ChatGPT](https://learn.chatgpt.com/docs/use-chatgpt).
+
+
+
+
 
 3.  <h3 id="setup-web-select-workspace">Select where ChatGPT should work</h3>
 
@@ -78,8 +102,16 @@ Go to [chatgpt.com](https://chatgpt.com) and sign in with your ChatGPT account.
 
     Describe your goal and add any files or context ChatGPT needs. Try an example:
 
+
+
 ## Next steps
-[
-    Use the ChatGPT desktop app to work with your local projects.
-[
-    Bring supported setup, projects, and recent work into ChatGPT.
+[Learn more about the ChatGPT desktop app
+
+
+
+    Use the ChatGPT desktop app to work with your local projects.](https://learn.chatgpt.com/docs/app)
+[Import your setup
+
+
+
+    Bring supported setup, projects, and recent work into ChatGPT.](https://learn.chatgpt.com/docs/import)

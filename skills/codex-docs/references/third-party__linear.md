@@ -6,6 +6,8 @@ path: /docs/third-party/linear
 
 # Use Codex in Linear
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Use Codex in Linear to delegate work from issues. Assign an issue to Codex or mention `@Codex` in a comment, and Codex creates a cloud chat and replies with progress and results.
 
 Codex in Linear is available on paid plans (see [Pricing](https://learn.chatgpt.com/docs/pricing)).

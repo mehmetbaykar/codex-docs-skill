@@ -6,6 +6,8 @@ path: /docs/environments/modes
 
 # Codex environments
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 In the ChatGPT desktop app, open the ChatGPT dropdown and select **Codex**.
 When starting a Codex chat, choose where it runs:
 

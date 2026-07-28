@@ -6,6 +6,8 @@ path: /docs/environments/local-environment
 
 # Local environments
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Local environments let you configure setup steps for worktrees as well as common actions for a project.
 
 Local environments are available only in Codex in the ChatGPT desktop app.

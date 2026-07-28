@@ -6,6 +6,8 @@ path: /docs/use-chatgpt
 
 # Use ChatGPT
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 {/* vale alex.Condescending = NO */}
 
 ## Go from idea to useful result
@@ -159,11 +161,20 @@ Legal, financial, medical, security, and other high-stakes decisions require
 ## Next steps
 
 a]:min-w-0 [&>a]:no-underline">
-  [
-      Start using ChatGPT with a guided first task.
+  [Open the quickstart
 
-[
-    Write useful prompts for questions, finished work, and coding tasks.
 
-  [
-      Set preferences and carry useful context across chats.
+
+      Start using ChatGPT with a guided first task.](https://learn.chatgpt.com/docs/quickstart)
+
+[Learn about prompting
+
+
+
+    Write useful prompts for questions, finished work, and coding tasks.](https://learn.chatgpt.com/docs/prompting)
+
+  [Personalize ChatGPT
+
+
+
+      Set preferences and carry useful context across chats.](https://learn.chatgpt.com/docs/personalize)

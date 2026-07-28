@@ -6,6 +6,8 @@ path: /docs/models
 
 # Models
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 ## Choose a model
 
 In the ChatGPT desktop app, use the model and reasoning control beneath the
@@ -15,10 +17,12 @@ Higher reasoning effort can improve results for complex tasks, but it takes
 longer and uses more tokens. Start with the default effort and increase it when
 the task needs deeper planning or analysis.
 
-<strong className="text-[#8756e8] dark:text-[#bda4ff]">Ultra</strong> mode goes
+**Ultra** mode goes
 beyond a single-agent run. It uses
 [subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) to accelerate complex work,
 making it useful for larger tasks that can be split across subagents.
+
+
 
 <a id="recommended-models"></a>
 <a id="other-models"></a>
@@ -82,6 +86,10 @@ If Ultra doesn't appear in the desktop app's model slider, go to
 ## Other models
 
 When you sign in with ChatGPT, Codex works best with the recommended models listed above.
+
+
+
+
 
 You can also point Codex at any model and provider that supports either the [Chat Completions](https://platform.openai.com/docs/api-reference/chat) or [Responses APIs](https://platform.openai.com/docs/api-reference/responses) to fit your specific use case.
 

@@ -6,6 +6,8 @@ path: /docs/agent-configuration/rules
 
 # Rules
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Use rules to control which commands Codex can run outside the sandbox.
 
 Rules are experimental and may change.
@@ -15,7 +17,7 @@ Rules are experimental and may change.
 1. Create a `.rules` file under a `rules/` folder next to an active config layer (for example, `~/.codex/rules/default.rules`).
 2. Add a rule. This example prompts before allowing `gh pr view` to run outside the sandbox.
 
-   ```python
+```python
    # Prompt before running commands with the prefix `gh pr view` outside the sandbox.
    prefix_rule(
        # The prefix to match.
@@ -39,7 +41,7 @@ Rules are experimental and may change.
            "gh pr --repo openai/codex view 7888",
        ],
    )
-   ```
+```
 
 3. Restart Codex.
 
