@@ -80,6 +80,24 @@ you want to accomplish, add the details that change the answer, and describe the
 format you need. Your first prompt is only a starting point—you can add context
 or refine the result with follow-up messages.
 
+**Start simple:**
+
+```text
+Help me plan a 30-minute team meeting about our new customer feedback process.
+```
+
+**Add context:**
+
+```text
+Help me plan a 30-minute team meeting about our new customer feedback process. The audience is a customer support team that hasn't seen the process before. Include five minutes for questions and end with clear next steps.
+```
+
+**Choose a format:**
+
+```text
+Create a 30-minute agenda for a customer support team that hasn't seen our new customer feedback process before. Include five minutes for questions, end with clear next steps, and format it so I can paste it into a calendar invitation.
+```
+
 You can continue with simple directions such as:
 
 - “Make this shorter.”

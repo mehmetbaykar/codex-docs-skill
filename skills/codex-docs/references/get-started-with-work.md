@@ -55,15 +55,33 @@ Here are three common use cases you can get started with:
 Use ChatGPT Work to turn notes, docs, research, or meeting materials into a structured
 deck.
 
+**Example prompt:**
+
+```text
+Review the attached source materials and create an eight-slide presentation for [audience]. Focus on the main themes, include supporting evidence, and flag anything that needs human review. Return a draft for my review.
+```
+
 ### Create a comparison spreadsheet
 
 Use ChatGPT Work to turn notes, files, or research into a spreadsheet that compares
 options and helps you make a decision.
 
+**Example prompt:**
+
+```text
+Create a spreadsheet comparing the options for [decision]. Use the attached notes and source materials. Include the most important criteria, score each option, flag risks or missing information, and add a summary tab with a recommendation and next steps.
+```
+
 ### Set up a recurring update
 
 Use scheduled tasks when you want ChatGPT Work to repeat, monitor, or refresh something
 over time.
+
+**Example prompt:**
+
+```text
+Every Monday morning, review new updates from @Slack and @Google Drive for [project]. Refresh the meeting agenda with decisions, blockers, owners, and open questions. Send me a draft before sharing it.
+```
 
 Learn more about [scheduled tasks](https://learn.chatgpt.com/docs/automations?surface=app).
 
@@ -85,6 +103,12 @@ to use, any constraints to follow, what good looks like, and when to stop for
 review or approval.
 
 **Instead of:** Make me a presentation about our customer research.
+
+**Example prompt:**
+
+```text
+Review the attached interview notes and survey results. Create an eight-slide presentation for the product leadership meeting. Focus on the three most common customer problems, include supporting evidence, separate findings from recommendations, and flag any claims that are not well supported. Use @Google Drive for the source docs. Return a draft for my review before treating it as final.
+```
 
 Learn more about [prompting for ChatGPT Work](https://learn.chatgpt.com/docs/prompting#prompting-for-work).
 

@@ -14,6 +14,23 @@ untrusted input.
 In the ChatGPT desktop app, ask for current information in a chat. ChatGPT records
 search activity with the other tool calls in the transcript.
 
+In ChatGPT web, ask for current information or sources. Search results and
+citations appear in the chat when ChatGPT uses web search. Workspace
+settings can limit whether search is available.
+
+In the CLI, pass `--search` to fetch live results for one run:
+
+```bash
+codex --search "Summarize the latest release notes for this dependency"
+```
+
+Searches appear as `web_search` items in the interactive transcript and in
+`codex exec --json` output.
+
+In the IDE extension, ask Codex to search while you work in the editor. The
+extension uses the connected Codex host's search mode. Search activity appears
+in the chat transcript.
+
 ## Configure local web search
 
 For local Codex chats, Codex enables cached search by default. Cached mode uses

@@ -18,6 +18,32 @@ Create a project when work will continue over time, produce more than one
 output, or depend on the same files and sources. Start a chat without a project
 when the work is self-contained and doesn't need shared project context.
 
+Use a project to keep related chats, files, instructions, and sources together.
+The same project can contain chats started with Chat or ChatGPT Work.
+
+## Choose a project or chat without one
+
+Create a project when work will continue over time, produce more than one
+output, or depend on the same files and sources. Start a chat without a project
+when the work is self-contained and doesn't need shared project context.
+
+Each project has a **Chats** section that lists project chats and a **Sources**
+section for uploaded files and connected context. Project instructions apply
+across its chats. A ChatGPT project doesn't provide direct access to a folder on
+your computer, so upload or connect the sources you want ChatGPT to use.
+
+With either option, start a new chat from the project to use its shared files and
+instructions, then return to it under **Chats**.
+
+Codex CLI treats the directory where you start it as the project for the chat.
+Run `codex` from the directory you want Codex to work in, or pass
+`--cd <directory>` (`-C`) to set it explicitly. The CLI doesn't expose the
+ChatGPT Projects view.
+
+The IDE extension treats the folder or workspace open in your IDE as the local
+project. In a multi-root workspace, select the workspace root for the chat. The
+extension doesn't expose the ChatGPT Projects view from the web or desktop app.
+
 <a id="work-in-a-project"></a>
 
 ## Work in a project
@@ -29,6 +55,35 @@ collection of source files or a codebase.
 
 Start a separate chat for each distinct outcome so its messages and results stay
 focused while the project keeps related work organized.
+
+## Work in a project
+
+A ChatGPT project gives its chats access to the same uploaded files, project
+instructions, and connected sources. Use Chat for a quick chat or
+ChatGPT Work for a larger deliverable; both appear as chats in the project's
+**Chats** section. Start a separate chat for each distinct outcome so its
+messages and results stay focused while the project preserves shared context.
+
+## Work in a project directory
+
+Start Codex from the directory that should provide the chat's file context. Use
+`/new` to start a separate chat for each distinct outcome. Use `/resume` while
+Codex is open, or run `codex resume`, to continue a saved chat.
+
+The chat keeps its transcript and recorded working directory, while Codex reads
+files from the current working tree. Keep durable project guidance in
+`AGENTS.md` or checked-in documentation so it is available to future chats.
+
+## Work in a workspace
+
+Open the folder or workspace that should provide the chat's file context. Start
+a new chat for each distinct outcome, then select it from **Recent chats** to
+continue it. Chats in the same project can work with the same files, while each
+chat keeps its own transcript.
+
+The current selection and open files provide context for the current turn. Keep
+durable project guidance in `AGENTS.md` or checked-in documentation so it is
+available to future chats.
 
 <a id="manage-project-threads"></a>
 <a id="organize-projects-and-chats"></a>
@@ -55,6 +110,28 @@ Pinning doesn't add context or change what ChatGPT can access. It only changes
 where the project or chat appears in the sidebar.
 
 Restore archived chats from **Settings > Archived chats**.
+
+<a id="organize-projects-and-tasks-1"></a>
+
+## Organize projects and chats
+
+Keep active work visible and move finished work out of the way:
+
+- **Pin a project** to keep it near the top of the sidebar. You can also pin it
+  from the Projects view.
+- **Pin a chat** when you return to it often, even if newer chats appear in the
+  project.
+- **Rename a chat** with a short title that describes its outcome, such as “Q3
+  launch brief” or “Checkout accessibility review.”
+- **Search projects** from the Projects view. Search past chats with
+  `Cmd`/`Ctrl`+`K` when you remember a phrase or
+  branch name but not the title.
+- **Archive a chat** when you finish the work.
+
+Pinning doesn't add context or change what ChatGPT can access. It only changes
+where the project or chat appears in the sidebar.
+
+Restore archived chats from **Settings > Data Controls > Archived chats**.
 
 <a id="use-local-projects-for-folders-and-codebases"></a>
 
@@ -99,6 +176,18 @@ Select **New chat** when the work is self-contained and doesn't need shared
 project files, instructions, or folder access. Create a project first when
 several chats will depend on the same context.
 
+<a id="start-a-task-without-a-project-1"></a>
+
+## Start a chat without a project
+
+Start a chat from ChatGPT Home when the chat doesn't need shared project
+files, instructions, or sources. You can use Chat or ChatGPT Work; on the web,
+both create chats.
+
+If the work grows, move it into a project and use clear chat names for each
+outcome. A project can hold parallel chats for research, drafting, review, and
+follow-up without mixing every message into one context.
+
 <a id="start-a-chat"></a>
 <a id="start-a-standalone-chat"></a>
 
@@ -123,6 +212,31 @@ chat**, you can open an existing ChatGPT chat and add it to a Codex chat.
   services.
 - Configure [MCP](https://learn.chatgpt.com/docs/extend/mcp) servers when your organization or developer setup
   exposes tools through Model Context Protocol.
+- Use [memories](https://learn.chatgpt.com/docs/customization/memories), where available, to carry useful context from
+  past work into future chats.
+
+- Pass [image inputs](https://learn.chatgpt.com/docs/image-inputs) to a chat when visual context applies
+  only to that request.
+- Install [plugins](https://learn.chatgpt.com/docs/plugins) to bring in context and actions from other
+  services.
+- Configure [MCP](https://learn.chatgpt.com/docs/extend/mcp) servers when your organization or developer setup
+  exposes tools through Model Context Protocol.
+- Use [memories](https://learn.chatgpt.com/docs/customization/memories), where available, to carry useful context from
+  past work into future chats.
+
+- Reference open files or select code in the editor to add context for the
+  current turn.
+- Configure [MCP](https://learn.chatgpt.com/docs/extend/mcp) servers when your organization or developer setup
+  exposes tools through Model Context Protocol.
+- Use [memories](https://learn.chatgpt.com/docs/customization/memories) from the connected Codex host, where
+  available, to carry useful context into future chats.
+
+- Add files and connected sources to the project's **Sources** section when they
+  should be available across its chats.
+- Attach files or [image inputs](https://learn.chatgpt.com/docs/image-inputs) directly to a chat when
+  they apply only to that chat.
+- In ChatGPT Work, install [plugins](https://learn.chatgpt.com/docs/plugins) to bring in context and
+  actions from other services.
 - Use [memories](https://learn.chatgpt.com/docs/customization/memories), where available, to carry useful context from
   past work into future chats.
 

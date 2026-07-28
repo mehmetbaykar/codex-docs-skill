@@ -8,10 +8,78 @@ path: /docs/models
 
 > For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
+
+
 ## Choose a model
 
 In the ChatGPT desktop app, use the model and reasoning control beneath the
 composer to choose an available model and adjust its reasoning effort.
+
+Higher reasoning effort can improve results for complex tasks, but it takes
+longer and uses more tokens. Start with the default effort and increase it when
+the task needs deeper planning or analysis.
+
+**Ultra** mode goes
+beyond a single-agent run. It uses
+[subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) to accelerate complex work,
+making it useful for larger tasks that can be split across subagents.
+
+
+
+
+
+## Choose a model
+
+These recommendations apply to **ChatGPT Work** on the web. Use the
+model and reasoning control beneath the composer to choose an available model
+and adjust its reasoning effort.
+
+Higher reasoning effort can improve results for complex tasks, but it takes
+longer and uses more tokens. Start with the default effort and increase it when
+the task needs deeper planning or analysis.
+
+**Ultra** mode goes
+beyond a single-agent run. It uses
+[subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) to accelerate complex work,
+making it useful for larger tasks that can be split across subagents.
+
+
+
+
+
+## Choose a model
+
+In an interactive CLI session, use `/model` to switch models or adjust
+reasoning effort. You can also choose a model when you launch Codex with
+`--model` or its `-m` alias:
+
+```bash
+codex --model gpt-5.6
+```
+
+The same option works with non-interactive runs. For example:
+
+```bash
+codex exec -m gpt-5.6 "Review the current changes"
+```
+
+Higher reasoning effort can improve results for complex tasks, but it takes
+longer and uses more tokens. Start with the default effort and increase it when
+the task needs deeper planning or analysis.
+
+**Ultra** mode goes
+beyond a single-agent run. It uses
+[subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) to accelerate complex work,
+making it useful for larger tasks that can be split across subagents.
+
+
+
+
+
+## Choose a model
+
+Use the model switcher below the composer to choose an available model and
+reasoning effort.
 
 Higher reasoning effort can improve results for complex tasks, but it takes
 longer and uses more tokens. Start with the default effort and increase it when

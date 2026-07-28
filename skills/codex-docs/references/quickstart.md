@@ -65,7 +65,27 @@ local files, longer tasks, and quick chats.
 
     Describe your goal and add any files or context ChatGPT needs. Try an example:
 
-    Explore more [use cases](https://learn.chatgpt.com/use-cases).
+
+
+**Prepare a decision:**
+
+```text
+Review the reports and notes in this project, compare the options, and create a one-page decision memo with a recommendation, risks, open questions, and source links.
+```
+
+**Analyze spreadsheets:**
+
+```text
+Combine the spreadsheets in this folder, clean inconsistent records, identify the most important trends, and create a concise report with charts and plain-English takeaways.
+```
+
+**Improve this app:**
+
+```text
+Inspect this app, identify one high-impact usability improvement, implement it, update the relevant tests, and verify the result on mobile and desktop.
+```
+
+Explore more [use cases](https://learn.chatgpt.com/use-cases).
 
 
 
@@ -101,6 +121,26 @@ Go to [chatgpt.com](https://chatgpt.com) and sign in with your ChatGPT account.
 4.  <h3 id="setup-web-send-message">Send your first message</h3>
 
     Describe your goal and add any files or context ChatGPT needs. Try an example:
+
+
+
+**Make a decision:**
+
+```text
+Research whether I should [decision], compare the best options, explain the tradeoffs for my situation, and recommend one with citations.
+```
+
+**Daily briefing:**
+
+```text
+Every weekday at 8:00 a.m., review my connected calendar and recent messages, then send me a briefing with today’s priorities, meeting prep, replies I owe, and blockers.
+```
+
+**Plan an event:**
+
+```text
+Help me plan my event. Ask me about the occasion, guests, date, location, budget, and anything else you need. Then create a timeline, budget, invitation copy, and checklist, and publish a Site I can use to invite guests and collect RSVPs.
+```
 
 
 

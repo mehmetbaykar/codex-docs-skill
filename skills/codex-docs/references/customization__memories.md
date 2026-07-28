@@ -21,6 +21,19 @@ In the ChatGPT desktop app, use `/memories` to choose whether a chat can use
 local memories or contribute to future memories. Manage the feature from
 **Settings > Personalization** when you need to turn it on or off.
 
+Manage ChatGPT memory from **Settings > Personalization**. ChatGPT Work uses
+the memory settings available to your account and workspace; it doesn't use a
+local Codex memory store or local memory controls.
+
+In Codex CLI, use `/memories` in an interactive session to control whether the
+current chat can use existing local memories or become an input for future
+memories. See [Configure local memories](#configure-local-memories) if the
+command isn't available.
+
+The IDE extension uses the connected Codex host's local memory store. When
+memories are enabled for that host, use the same chat-level controls as Codex
+CLI.
+
 [Chronicle](https://learn.chatgpt.com/docs/customization/chronicle) is a desktop-only feature that helps
 Codex recover recent working context from your screen to build up memory.
 

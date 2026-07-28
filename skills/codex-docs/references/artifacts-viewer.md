@@ -16,6 +16,18 @@ The ChatGPT desktop app previews generated documents, presentations,
 spreadsheets, and PDF files alongside the chat. Use annotations to point at a
 specific part of a preview and request a focused revision.
 
+In ChatGPT Work on the web, attach source files or ask ChatGPT to create a
+document, presentation, spreadsheet, or PDF. Review the generated file in the
+chat, download it when needed, and give targeted feedback for the next version.
+
+Codex CLI can create and edit files in the working directory, but it doesn't
+include a visual file preview or annotation interface. Ask Codex to report each
+output path and the checks it ran.
+
+The IDE extension can create and edit files in the workspace. Review text and
+code files in the editor, and open documents, presentations, spreadsheets, or
+PDF files in a compatible viewer.
+
 ## Create files for review
 
 For spreadsheets and presentations, describe the sheets, columns, charts,
@@ -43,6 +55,14 @@ ChatGPT uses the selected area as context for your request, so you can refine
 the file without starting over or changing the parts you already like.
 Annotations are particularly useful after the first draft, when the work needs
 review and iteration.
+
+## Review and refine files on the web
+
+Open or download the generated file to review it in the appropriate viewer.
+When you request a revision, name the page, slide, sheet, table, or passage that
+needs attention and describe what should stay unchanged. Ask ChatGPT to report
+the new file name and the checks it performed before you download the next
+version.
 
 ## Review and refine files
 
