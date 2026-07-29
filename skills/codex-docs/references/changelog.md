@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Sign in with ChatGPT (beta) (2026-07-29)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-07-29
+
+Sign in with ChatGPT (beta)
+
 ## Codex CLI Release: 0.146.0 (2026-07-29)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-361463950
