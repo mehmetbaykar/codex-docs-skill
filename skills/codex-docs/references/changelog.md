@@ -25,7 +25,7 @@ ChatGPT for iOS
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-23-app
 
-ChatGPT Voice and multi-folder projects
+Talk through tasks with ChatGPT Voice and organize Codex projects across related local folders.
 
 ## Codex CLI Release: 0.145.0 (2026-07-21)
 
@@ -79,7 +79,7 @@ ChatGPT for iOS
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-09-app
 
-Codex joins the ChatGPT desktop app
+Use Codex in the ChatGPT desktop app without losing your projects, settings, or workflows.
 
 ## Codex CLI Release: 0.144.1 (2026-07-09)
 
@@ -127,7 +127,7 @@ ChatGPT for iOS
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-25
 
-Codex Remote reaches general availability
+Start, track, and approve Codex tasks from your phone with secure one-to-one remote pairing.
 
 ## Codex CLI Release: 0.142.2 (2026-06-25)
 
@@ -153,17 +153,17 @@ ChatGPT for iOS
 
 0.142.0
 
-## Codex app (2026-06-18)
+## Record & Replay and remote task handoff (2026-06-18)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-18-app
 
-Codex app
+Turn demonstrated workflows into reusable skills where available and hand tasks to a connected host.
 
-## Codex app features are available in the EEA, UK, and Switzerland (2026-06-16)
+## More Codex features in the EEA, UK, and Switzerland (2026-06-16)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-16-app
 
-Codex app features are available in the EEA, UK, and Switzerland
+Explore expanded regional access to Computer Use, the Chrome extension, memories, and Chronicle.
 
 ## ChatGPT for iOS (2026-06-15)
 
@@ -171,11 +171,11 @@ Codex app features are available in the EEA, UK, and Switzerland
 
 ChatGPT for iOS
 
-## Codex app (2026-06-11)
+## Usage resets and Browser Developer mode (2026-06-11)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-11-app
 
-Codex app
+Reset eligible usage limits, debug browsers with Developer mode, and start projects with /init.
 
 ## Codex app (2026-06-09)
 

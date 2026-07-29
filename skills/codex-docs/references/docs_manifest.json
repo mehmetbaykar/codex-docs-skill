@@ -138,8 +138,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "976df5a9ea3fa87944f8a761baa250ba434b032ccbb9ca646b4c83360a00f155",
-      "last_updated": "2026-07-29T19:10:54+00:00",
+      "hash": "876e8ea97b96ee0b8f7725a254fbffce8d60911cd27691b5a0e1090adfd18eef",
+      "last_updated": "2026-07-29T21:58:12+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -626,8 +626,8 @@
       "title": "Codex Security"
     },
     "security__cli.md": {
-      "hash": "52bb198cf25b45e764b5860fd6589c53202152d19e8d25b557625e44c980fe0a",
-      "last_updated": "2026-07-29T19:11:13+00:00",
+      "hash": "c309f994bd0a6cfc8be5e5fffe300c94f5cd699a701b468760f80d7032671674",
+      "last_updated": "2026-07-29T21:58:29+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli",
       "path": "/docs/security/cli",
       "source_url": "https://learn.chatgpt.com/docs/security/cli.md",
@@ -650,16 +650,16 @@
       "title": "Run Codex Security in CI"
     },
     "security__cli__faq.md": {
-      "hash": "487b28da81d1a6e63062522413c5c23024db584ce4c20e11cfd402fba85d7e73",
-      "last_updated": "2026-07-29T19:11:14+00:00",
+      "hash": "f350ea6b8fb062c921c18381059510d9813a690c151dc4b409a556bbc8f21ae1",
+      "last_updated": "2026-07-29T21:58:30+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/faq",
       "path": "/docs/security/cli/faq",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/faq.md",
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "39b66ea29182c7b97cadae76436dd8bd91d124c94dc094b74f58295053d1a432",
-      "last_updated": "2026-07-29T19:11:14+00:00",
+      "hash": "c59f9e81c4b4480296c3cdd5665f0266914aec1fc45828fd6f0e8e030c27073c",
+      "last_updated": "2026-07-29T21:58:30+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/reference.md",
@@ -894,7 +894,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-29T19:11:23+00:00",
+  "last_updated": "2026-07-29T21:58:39+00:00",
   "skipped": [
     {
       "path": "/docs",
