@@ -61,11 +61,16 @@ upload. Continue with this section to invoke the installed plugin skill
 through `codex exec`.
 
 Run `$codex-security:security-diff-scan` in CI when the runner can invoke the
-Codex CLI without interaction. First, install the CLI and plugin without
-exposing the scan credential:
+Codex CLI without interaction. First, install the CLI without exposing the scan
+credential:
 
 ```bash
 npm install --global @openai/codex
+```
+
+Install the Codex Security plugin in the CLI:
+
+```bash
 codex plugin add codex-security@openai-curated
 ```
 

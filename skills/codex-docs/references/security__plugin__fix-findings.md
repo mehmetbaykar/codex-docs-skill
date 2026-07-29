@@ -135,11 +135,15 @@ For each scan and accepted finding:
    or fallback validation artifact, verification command, and any proof gap
    independently.
 
-For example:
+First, scan the change without modifying the checkout:
 
 ```bash
 codex exec --sandbox workspace-write 'Use $codex-security:security-diff-scan to review changes from <base-revision> to <head-revision> for security regressions. Do not modify the checkout.'
+```
 
+Then fix one accepted finding from the completed scan:
+
+```bash
 codex exec --sandbox workspace-write 'Use $codex-security:fix-finding to fix finding <finding-id> from <completed-scan-directory>. Validate the finding, generate one minimal patch, and add a focused regression test that fails before the fix and passes after it. If that test is unsafe or infeasible, record the proof gap and provide the strongest repeatable validation artifact instead. Verify that the issue no longer reproduces.'
 ```
 

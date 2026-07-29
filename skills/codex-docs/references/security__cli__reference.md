@@ -33,6 +33,7 @@ The CLI provides these commands:
 | `codex-security install-hook` | Install a Git pre-commit security scan.               |
 | `codex-security bulk-scan`    | Discover repositories and run resumable bulk scans.   |
 | `codex-security scans`        | List, inspect, match, rerun, and compare saved scans. |
+| `codex-security findings`     | Review and update saved security findings.            |
 | `codex-security export`       | Export completed findings as CSV, JSON, or SARIF.     |
 | `codex-security validate`     | Check one or more candidate security findings.        |
 | `codex-security patch`        | Patch one or more security issues.                    |
@@ -48,17 +49,16 @@ The CLI also provides these integration commands:
 | `codex-security mcp`         | Register the CLI as an MCP server.    |
 | `codex-security skills`      | Sync Codex Security skills to agents. |
 
-Run `codex-security --help` for root help, or place `--help` after a command for
-its full options:
+List all available commands:
 
 ```bash
 npx codex-security --help
+```
+
+Add `--help` to a command to inspect its arguments and options:
+
+```bash
 npx codex-security scan --help
-npx codex-security install-hook --help
-npx codex-security bulk-scan --help
-npx codex-security scans --help
-npx codex-security export --help
-npx codex-security info --json
 ```
 
 `codex-security --version` prints the installed version and exits.
@@ -67,26 +67,40 @@ Neither command requires Python.
 
 ### Discover commands and connect agents
 
-Inspect the agent-readable command manifest, scan argument schema, and shell
-completion scripts:
+Print the agent-readable command manifest:
 
 ```bash
 npx codex-security --llms
-npx codex-security scan --schema --format json
-npx codex-security completions bash
-npx codex-security completions zsh
-npx codex-security completions fish
 ```
+
+Inspect the scan argument schema as JSON:
+
+```bash
+npx codex-security scan --schema --format json
+```
+
+Generate shell completions for Bash:
+
+```bash
+npx codex-security completions bash
+```
+
+Replace `bash` with `zsh` or `fish` for those shells.
 
 Scan results support `--format toon|json|yaml|jsonl` and `--full-output`. This
 framework-level `--format` is separate from `--export-format`, which selects
 the format of an artifact exported from a completed scan. Global command help
 also lists `md`, but scan results don't support Markdown output.
 
-Register the CLI as an MCP server or sync its agent skills:
+Register the CLI as an MCP server:
 
 ```bash
 npx codex-security mcp add
+```
+
+Sync Codex Security skills to your agents:
+
+```bash
 npx codex-security skills add
 ```
 
@@ -132,13 +146,33 @@ repository and path targets.
 Diff and working-tree scans require the repository argument to be the Git
 worktree root. The selected refs must exist in that checkout.
 
-Examples:
+Scan the entire repository:
 
 ```bash
 npx codex-security scan .
+```
+
+Scan selected paths:
+
+```bash
 npx codex-security scan . --path src --path tests
+```
+
+Scan committed changes:
+
+```bash
 npx codex-security scan . --diff origin/main --head HEAD
+```
+
+Scan staged and unstaged changes:
+
+```bash
 npx codex-security scan . --working-tree --base HEAD
+```
+
+Run a deeper review of the repository:
+
+```bash
 npx codex-security scan . --mode deep
 ```
 
@@ -255,6 +289,10 @@ npx codex-security install-hook . --fail-on-severity medium
 Discover and scan GitHub repositories, or run a resumable scan from a
 repository CSV:
 
+For a complete guide to GitHub discovery, CSV inventories, campaign results,
+and containerized scans, see [Run bulk security
+scans](https://learn.chatgpt.com/docs/security/cli/bulk-scans).
+
 ```text
 usage: codex-security bulk-scan [input] [--output-dir DIR]
                                 [--workers N] [--mode {standard,deep}]
@@ -283,37 +321,107 @@ service,https://github.com/example/service.git,0123456789abcdef0123456789abcdef0
 ```
 
 `--workers` limits simultaneous scans and defaults to `4`. `--mode` defaults to
-`standard`, and `--max-attempts` defaults to `1`. Run the same command again to
-resume a bulk scan from its existing output directory.
+`standard`, and `--max-attempts` defaults to `1`. Set `--max-attempts` when
+you want to retry a repository after an error. Run the same command again to
+resume a bulk scan from its existing output directory. The CLI skips completed
+repositories only when their recorded result artifacts are still present.
 
 For containerized campaigns, see [Run bulk scans in
-Docker](https://learn.chatgpt.com/docs/security/cli#run-bulk-scans-in-docker).
+Docker](https://learn.chatgpt.com/docs/security/cli/bulk-scans#run-bulk-scans-in-docker).
 
 ## `codex-security scans`
 
-List, inspect, rerun, match, and compare saved scans:
+### Find saved scans
+
+List saved scans for the current directory:
 
 ```bash
 npx codex-security scans
+```
+
+List scans for a different repository:
+
+```bash
 npx codex-security scans list /path/to/repository
+```
+
+Find scans stored under a specific output directory:
+
+```bash
 npx codex-security scans list --scan-root /path/outside/repository/results
+```
+
+### Inspect or repeat a scan
+
+Show a saved scan's results and configuration:
+
+```bash
 npx codex-security scans show SCAN_ID
+```
+
+Rerun the scan against the current checkout using its original configuration:
+
+```bash
 npx codex-security scans rerun SCAN_ID
+```
+
+### Match and compare findings
+
+Match findings that share the same root cause across two scans:
+
+```bash
 npx codex-security scans match PREVIOUS_SCAN_ID CURRENT_SCAN_ID
-npx codex-security scans match --all
+```
+
+Compare the matched scans to find new, persisting, reopened, resolved, and
+unknown findings:
+
+```bash
 npx codex-security scans compare PREVIOUS_SCAN_ID CURRENT_SCAN_ID
 ```
 
-`scans` defaults to `scans list` for the current directory. Pass a repository
-path or `--scan-root` to select a different checkout or scan-output root.
+A finding is unknown when the later scan has incomplete coverage or doesn't
+cover the finding's original location. Add `--force` to `match` when you need to
+recompute an existing match.
 
-`show` includes saved results and configuration. `rerun` applies the original
-configuration to the current checkout. `match` links findings with the same
-root cause, and `match --all` matches completed scans of the same repository
-across checkouts. `compare` uses saved matches to classify findings as new,
-persisting, reopened, resolved, or unknown. It reports a missing finding as
-unknown when the later scan has incomplete coverage or doesn't cover the
-finding's original location.
+To match all completed scans for the current repository, including scans from
+other checkouts:
+
+```bash
+npx codex-security scans match --all
+```
+
+Scan results can vary even when you rerun the same configuration. Matching and
+comparison track changes; they don't make results deterministic or prove that a
+vulnerability no longer exists. Use `validate` to recheck a security-critical
+finding against the current code.
+
+## `codex-security findings`
+
+Record a reviewed finding as a false positive:
+
+```text
+usage: codex-security findings mark-false-positive OCCURRENCE_ID
+                       --reason REASON
+```
+
+Inspect the saved scan to identify the finding occurrence:
+
+```bash
+npx codex-security scans show SCAN_ID
+```
+
+Record a specific explanation for the false positive:
+
+```bash
+npx codex-security findings mark-false-positive FINDING_OCCURRENCE_ID \
+  --reason "The framework escapes this input before it reaches the query"
+```
+
+The reason must not be empty. Codex Security saves the decision for the
+repository and provides it as context to future scans. Each scan independently
+rechecks the current source, controls, and reachability. A previous decision
+doesn't suppress a rule, path, or vulnerability class.
 
 ## `codex-security export`
 
@@ -361,12 +469,17 @@ Write SARIF to stdout:
 npx codex-security export /path/to/scan --export-format sarif --source-root . --output -
 ```
 
-Export JSON or CSV:
+Export findings as JSON:
 
 ```bash
 npx codex-security export /path/to/scan \
   --export-format json \
   --output /path/outside/repository/exports/findings.json
+```
+
+Export findings as CSV:
+
+```bash
 npx codex-security export /path/to/scan \
   --export-format csv \
   --output /path/outside/repository/exports/findings.csv
@@ -374,40 +487,70 @@ npx codex-security export /path/to/scan \
 
 ## `codex-security validate` and `codex-security patch`
 
-Use `validate` to run the bundled validation skill on candidate findings. Use
-`patch` to run the bundled remediation skill on security issues:
+Check whether a candidate finding is valid:
 
 ```bash
 npx codex-security validate findings.json "Possible SQL injection in src/query.ts:42"
+```
+
+Generate a fix with the bundled remediation skill:
+
+```bash
 npx codex-security patch findings.json "Missing authorization check in src/routes.ts:18"
 ```
 
 Each argument can contain literal text or point to a file. Both commands work
-against the current directory. External tools can use these commands without
-rebuilding the scanner.
+against the current directory. Use `validate` to directly recheck an original
+finding after a fix or when a later scan no longer reports it. A scan
+comparison alone doesn't prove that a fix worked. External tools can use these
+commands without rebuilding the scanner.
 
 ## `codex-security login`, `logout`, and `info`
 
-Sign in interactively or use device authentication on a remote or headless
-machine:
+Sign in interactively:
 
 ```bash
 npx codex-security login
+```
+
+Use device authentication on a remote or headless machine:
+
+```bash
 npx codex-security login --device-auth
+```
+
+Check the current sign-in:
+
+```bash
 npx codex-security login status
+```
+
+Remove the stored sign-in:
+
+```bash
 npx codex-security logout
 ```
 
-Store an API key or enterprise access token by passing it on stdin:
+Store an API key by passing it on stdin:
 
 ```bash
 printenv OPENAI_API_KEY | npx codex-security login --with-api-key
+```
+
+Store an enterprise access token:
+
+```bash
 printenv CODEX_ACCESS_TOKEN | npx codex-security login --with-access-token
 ```
 
-Use `codex-security info --json` for read-only SDK and bundled-plugin metadata.
-When you expose the CLI as an MCP server, `info` is the only available command;
-scans, exports, sign-in, validation, and patching remain CLI-only.
+Inspect read-only SDK and bundled-plugin metadata:
+
+```bash
+npx codex-security info --json
+```
+
+When you expose the CLI as an MCP server, `info` is the only available command.
+Scans, exports, sign-in, validation, and patching remain CLI-only.
 
 ## Read scan output
 
@@ -525,9 +668,9 @@ The CLI requires Node.js 22 or later. Running a scan or exporting findings also
 requires Python 3.10 or later. Python 3.10 also requires `tomli`. Use `--python`
 or `PYTHON` to select an interpreter when automatic discovery is unsuitable.
 
-Continue with the [CLI quickstart](https://learn.chatgpt.com/docs/security/cli), [CI
-guide](https://learn.chatgpt.com/docs/security/cli/ci), or [TypeScript SDK
-guide](https://learn.chatgpt.com/docs/security/sdk).
+Continue with the [CLI quickstart](https://learn.chatgpt.com/docs/security/cli), [bulk-scan
+guide](https://learn.chatgpt.com/docs/security/cli/bulk-scans), [CLI FAQ](https://learn.chatgpt.com/docs/security/cli/faq), [CI
+guide](https://learn.chatgpt.com/docs/security/cli/ci), or [TypeScript SDK guide](https://learn.chatgpt.com/docs/security/sdk).
 
 ### Plain-text aliases
 

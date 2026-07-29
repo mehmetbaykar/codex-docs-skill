@@ -43,11 +43,6 @@ This page covers the plugin that runs in a local Codex chat. To scan a
    plugin**.
 3. Enter `/new` to start a new chat for the repository.
 
-The hosted desktop-app catalog and public Codex CLI marketplace can offer
-  different plugin versions. Check the [plugin
-  changelog](https://learn.chatgpt.com/docs/security/plugin/changelog) before you rely on a feature or
-  start a long-running scan.
-
 ## Run your first scan
 
 For the best scan quality, use `gpt-5.6-sol`
