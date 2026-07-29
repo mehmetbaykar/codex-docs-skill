@@ -11,7 +11,7 @@ path: /docs/security/plugin/changelog
 Use this changelog to see what changed in Codex Security and which plugin
 versions are available from each installation source.
 
-**Latest release in the hosted Codex Security catalog:** `0.1.12`.
+**Latest release in the hosted Codex Security catalog:** `0.1.14`.
 
 **Latest release in the public Codex CLI plugin marketplace:** `0.1.11`.
 
@@ -21,6 +21,48 @@ the installed plugin version.
 
 These versions apply to the Codex Security plugin. The Codex app, Codex CLI,
 TypeScript SDK, and plugin app have separate version numbers.
+
+## 0.1.14 (July 28, 2026)
+
+### Review scan history and recurring findings
+
+- Filter repositories, findings, and scan history with bounded result pages and
+  clearer status details.
+- Rerun a scan with its saved settings and compare completed scans to distinguish
+  new, persisting, resolved, and not-rescanned findings.
+- Group worktrees from the same repository and use stable repository and finding
+  identities across views.
+
+### Define repository security policy
+
+- Use `$codex-security:define-security-policy` to review or update scoped
+  `SECURITY.md` guidance for trust boundaries, security invariants, reportable
+  findings, severity, exclusions, and accepted risk.
+- Apply the closest policy file while bounding its size and rejecting symbolic
+  links that leave the repository.
+
+### Review findings before tracking them
+
+- Select up to 25 findings from a completed scan for tracking in Linear or GitHub
+  Issues.
+- Return the selected findings to Codex for review and approval instead of
+  creating issues directly from the findings workspace.
+
+### Run standard scans with a simpler workflow
+
+- Use one deterministic in-scope file list and a compact candidate ledger for
+  standard repository and scoped-path scans.
+- Preserve the existing manifest, findings, coverage, report, and SARIF outputs
+  while reducing repeated scan stages.
+
+## 0.1.13 (July 25, 2026)
+
+### Review findings across more environments
+
+- Keep real security findings when affected code is local, internal, used for
+  training, or not deployed to production.
+- Use deployment and exposure context to calibrate severity and confidence
+  instead of automatically suppressing the finding.
 
 ## 0.1.12 (July 23, 2026)
 

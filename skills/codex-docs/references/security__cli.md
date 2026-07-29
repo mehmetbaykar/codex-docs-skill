@@ -22,25 +22,23 @@ The Codex Security CLI and SDK are in beta and require access. Follow the
 ## Check the prerequisites
 
 The CLI requires Node.js 22 or later. Running a scan or exporting findings also
-requires Python 3.10 or later.
-
-For interpreter-specific setup, see [Authentication and
+requires Python 3.10 or later. For more detail, see [Authentication and
 prerequisites](https://learn.chatgpt.com/docs/security/cli/reference#authentication-and-prerequisites).
 
 ## Set up and verify the CLI
 
 Follow the installation instructions provided for your Codex Security access.
-Then verify the installation and inspect the available commands:
+Check the installed version:
 
 ```bash
 npx codex-security --version
-npx codex-security --help
 ```
 
-`--version` prints the installed SDK version. Root help lists the `scan`,
-`install-hook`, `bulk-scan`, `scans`, `export`, `validate`, `patch`, `login`,
-`logout`, and `info` commands, along with the `completions`, `mcp`, and `skills`
-integration commands.
+List the available commands:
+
+```bash
+npx codex-security --help
+```
 
 Use `npx codex-security scan --help` or `npx codex-security export --help` for the
 complete command help. The [CLI reference](https://learn.chatgpt.com/docs/security/cli/reference)
@@ -156,11 +154,15 @@ Use a path scan when a repository contains separate services or packages:
 npx codex-security scan "$REPOSITORY" --path services/billing --path packages/auth
 ```
 
-Use a diff scan to review committed changes, or a working-tree scan to review
-staged and unstaged changes:
+Review committed changes between the base revision and `HEAD`:
 
 ```bash
 npx codex-security scan "$REPOSITORY" --diff origin/main --head HEAD
+```
+
+Review staged and unstaged changes against `HEAD`:
+
+```bash
 npx codex-security scan "$REPOSITORY" --working-tree --base HEAD
 ```
 
@@ -173,8 +175,11 @@ Use deep mode when a repository or path needs broader review:
 npx codex-security scan "$REPOSITORY" --mode deep
 ```
 
+## Add architecture and security context
+
 Provide architecture documents, threat models, or security policies as scan
-context:
+context. This helps Codex Security evaluate findings against how your system
+actually works:
 
 ```bash
 npx codex-security scan "$REPOSITORY" \
@@ -208,15 +213,20 @@ pre-commit script.
 
 ## Scan repositories in bulk
 
-Run `bulk-scan` without arguments to discover and select repositories from a
-GitHub account or organization. This flow uses your GitHub CLI sign-in,
-excludes archived repositories and forks, and asks you to confirm the
-repositories before scanning:
+Sign in to GitHub before discovering repositories:
 
 ```bash
 gh auth login
+```
+
+Discover and select repositories from your GitHub account or organization:
+
+```bash
 npx codex-security bulk-scan
 ```
+
+The interactive flow excludes archived repositories and forks. It asks you to
+confirm the selected repositories before scanning.
 
 To scan a prepared repository list, provide a CSV and an output directory:
 
@@ -226,7 +236,12 @@ npx codex-security bulk-scan repositories.csv \
   --workers 4
 ```
 
-Run the same command again to resume an existing bulk scan.
+Run the same command again to resume an existing bulk scan. Completed
+repositories with intact result artifacts aren't scanned again. Add
+`--max-attempts 3` when you want to retry temporary repository or scan errors.
+
+For GitHub discovery, CSV preparation, campaign results, and Docker setup, see
+[Run bulk security scans](https://learn.chatgpt.com/docs/security/cli/bulk-scans).
 
 ## Run bulk scans in Docker
 
@@ -251,26 +266,45 @@ access, also apply to containerized scans.
 
 ## Revisit a saved scan
 
-List scans for the selected repository, inspect a saved scan, rerun it, or
-compare two results:
+List the saved scans for your repository:
 
 ```bash
 npx codex-security scans list "$REPOSITORY"
-npx codex-security scans show SCAN_ID
-npx codex-security scans rerun SCAN_ID
-npx codex-security scans match PREVIOUS_SCAN_ID CURRENT_SCAN_ID
-npx codex-security scans match --all
-npx codex-security scans compare PREVIOUS_SCAN_ID CURRENT_SCAN_ID
 ```
 
-Use `match` to link the same issue across scans, then `compare` to see which
-findings are new, persisting, resolved, or unknown.
+Copy a scan ID from the results to inspect its findings and configuration:
+
+```bash
+npx codex-security scans show SCAN_ID
+```
+
+Run the same scan against the current checkout using its original configuration:
+
+```bash
+npx codex-security scans rerun SCAN_ID
+```
+
+To compare two scans, first match findings that share the same root cause:
+
+```bash
+npx codex-security scans match PREVIOUS_SCAN_ID CURRENT_SCAN_ID
+```
+
+Then check which findings are new, persisting, reopened, resolved, or unknown:
+
+```bash
+npx codex-security scans compare PREVIOUS_SCAN_ID CURRENT_SCAN_ID
+```
 
 For the bulk-scan CSV format, scan-history filters, and command options, see
 the [CLI reference](https://learn.chatgpt.com/docs/security/cli/reference).
 
 Continue with the workflow that fits your goal:
 
+- [Run bulk security scans](https://learn.chatgpt.com/docs/security/cli/bulk-scans) to discover GitHub
+  repositories or scan a pinned CSV inventory.
+- [Read the CLI FAQ](https://learn.chatgpt.com/docs/security/cli/faq) for answers about scan history,
+  false-positive feedback, coverage, and fix verification.
 - [Run scans in CI](https://learn.chatgpt.com/docs/security/cli/ci) to review pull requests, preserve
   results, and set a severity policy.
 - [Use the CLI reference](https://learn.chatgpt.com/docs/security/cli/reference) to check every flag,

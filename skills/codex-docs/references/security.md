@@ -39,15 +39,20 @@ The Codex Security CLI and SDK are in limited beta and available only to
 approved customers and partners. Contact your account team for access.
 
 Use the same scanner as the plugin across repositories and over time. The CLI
-discovers GitHub repositories, runs scans in CI or before commits, matches
-findings across scans, and supports reusable security context and estimated
-cost limits. Use the TypeScript SDK to build scanning, progress reporting, and
-cost controls into an application or developer tool.
+discovers GitHub repositories, resumes bulk scans, tracks findings across
+scans, and records false-positive feedback. Add your architecture and security
+policies, set an estimated cost limit, or run checks in CI and before commits.
+Use the TypeScript SDK to build scanning, progress reporting, and cost controls
+into an application or developer tool.
 
 - [Start with the CLI quickstart](https://learn.chatgpt.com/docs/security/cli) to set up the CLI,
   preflight a repository, and run a local scan.
+- [Run bulk security scans](https://learn.chatgpt.com/docs/security/cli/bulk-scans) to discover GitHub
+  repositories or run a resumable campaign from a CSV inventory.
 - [Run scans in CI](https://learn.chatgpt.com/docs/security/cli/ci) to review pull-request changes,
   preserve artifacts, upload SARIF, and set a severity policy.
+- [Read the CLI FAQ](https://learn.chatgpt.com/docs/security/cli/faq) for answers about scan history,
+  false-positive feedback, coverage, and fix verification.
 - [Use the CLI reference](https://learn.chatgpt.com/docs/security/cli/reference) to check supported
   commands, flags, output formats, artifacts, and exit codes.
 - [Integrate the TypeScript SDK](https://learn.chatgpt.com/docs/security/sdk) to select targets,
@@ -85,6 +90,8 @@ Codex cloud workspace or contact your OpenAI account team.
 
 - [Codex Security plugin quickstart](https://learn.chatgpt.com/docs/security/plugin) walks through installation and a first local scan.
 - [Codex Security CLI quickstart](https://learn.chatgpt.com/docs/security/cli) walks through setup, preflight, and a first terminal scan.
+- [Run bulk security scans](https://learn.chatgpt.com/docs/security/cli/bulk-scans) explains GitHub discovery, CSV inventories, campaign results, and resume behavior.
+- [Codex Security CLI FAQ](https://learn.chatgpt.com/docs/security/cli/faq) answers common questions about scans, findings, coverage, and costs.
 - [Codex Security TypeScript SDK](https://learn.chatgpt.com/docs/security/sdk) explains how to run scans from an application or developer tool.
 - [Codex Security cloud setup](https://learn.chatgpt.com/docs/security/setup) details setup, scanning, and findings review.
 - [Improving the threat model](https://learn.chatgpt.com/docs/security/threat-model) explains how to tune scope, entry points, and criticality assumptions.
