@@ -37,7 +37,7 @@ gh auth login
 Start an interactive bulk scan:
 
 ```bash
-npx codex-security bulk-scan
+npx @openai/codex-security bulk-scan
 ```
 
 The CLI guides you through these steps:
@@ -62,7 +62,7 @@ gh auth login --hostname github.example.com
 Set `GH_HOST` when you start repository discovery:
 
 ```bash
-GH_HOST=github.example.com npx codex-security bulk-scan
+GH_HOST=github.example.com npx @openai/codex-security bulk-scan
 ```
 
 Interactive discovery requires a terminal. For CI, containers, or a prepared
@@ -99,7 +99,7 @@ git -C /path/to/repository rev-parse HEAD
 Pass the CSV and a private output directory outside the repositories:
 
 ```bash
-npx codex-security bulk-scan repositories.csv \
+npx @openai/codex-security bulk-scan repositories.csv \
   --output-dir /path/outside/repositories/security-scans \
   --workers 4
 ```
@@ -149,7 +149,7 @@ security-scans/
 Export one completed repository scan when you need a portable result:
 
 ```bash
-npx codex-security export \
+npx @openai/codex-security export \
   /path/outside/repositories/security-scans/artifacts/payments/attempt-1 \
   --export-format sarif \
   --output /path/outside/repositories/payments.sarif
@@ -164,7 +164,7 @@ appropriate retention policy.
 Run the original command with the same CSV and output directory:
 
 ```bash
-npx codex-security bulk-scan repositories.csv \
+npx @openai/codex-security bulk-scan repositories.csv \
   --output-dir /path/outside/repositories/security-scans \
   --workers 4
 ```
@@ -183,7 +183,7 @@ Use `--max-attempts` to retry a repository after a temporary checkout or scan
 error:
 
 ```bash
-npx codex-security bulk-scan repositories.csv \
+npx @openai/codex-security bulk-scan repositories.csv \
   --output-dir /path/outside/repositories/security-scans \
   --workers 4 \
   --max-attempts 3
