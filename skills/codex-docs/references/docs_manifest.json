@@ -66,8 +66,8 @@
       "title": "Use ChatGPT Work and Codex with Amazon Bedrock"
     },
     "app-server.md": {
-      "hash": "85e763483cb9a742e63e7da5af5eb8d4ccd66f3540417bc2f7a5146478e1bec8",
-      "last_updated": "2026-07-28T02:13:28+00:00",
+      "hash": "56b8dc742853aab4d30ca2cf7bd8936b1aa9ae5ecb556c60f454a60c8042c20a",
+      "last_updated": "2026-07-29T16:18:50+00:00",
       "original_url": "https://learn.chatgpt.com/docs/app-server",
       "path": "/docs/app-server",
       "source_url": "https://learn.chatgpt.com/docs/app-server.md",
@@ -90,8 +90,8 @@
       "title": "Appshots"
     },
     "artifacts-viewer.md": {
-      "hash": "b06c2f398efb6ecaa02915e82ffb8de207d8500e8a2c3b1f42bc7377e3fec260",
-      "last_updated": "2026-07-28T08:28:56+00:00",
+      "hash": "95a19e40ba717de17fe8034ad38a6abf992c58377147f6b557d24cfc24874343",
+      "last_updated": "2026-07-29T16:18:50+00:00",
       "original_url": "https://learn.chatgpt.com/docs/artifacts-viewer",
       "path": "/docs/artifacts-viewer",
       "source_url": "https://learn.chatgpt.com/docs/artifacts-viewer.md",
@@ -234,16 +234,16 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "8aaa59e4c31ac35c125c6eb35c28b712cc738998990fc9b9140b09ab2417e212",
-      "last_updated": "2026-07-28T02:13:33+00:00",
+      "hash": "ae04f4c36c8a59c0f517f7e0ceb6845b669d36c4356cdd76bd36e089ecb56b5f",
+      "last_updated": "2026-07-29T16:18:56+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
       "title": "Configuration Reference"
     },
     "config-file__config-sample.md": {
-      "hash": "31d9d661d6e88f85f0462f42d29799a444f9ec7a0ba628fe36953b009b6c603c",
-      "last_updated": "2026-07-28T02:13:33+00:00",
+      "hash": "057c06dae960901b9d5b92781f2a34e62cfa5fb814d7890b0065cc20269f545d",
+      "last_updated": "2026-07-29T16:18:56+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-sample",
       "path": "/docs/config-file/config-sample",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-sample.md",
@@ -894,7 +894,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-29T02:24:13+00:00",
+  "last_updated": "2026-07-29T16:19:21+00:00",
   "skipped": [
     {
       "path": "/docs",

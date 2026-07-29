@@ -317,7 +317,7 @@ For sandbox and approval keys (`approval_policy`, `sandbox_mode`, and `sandbox_w
       key: "hooks.",
       type: "array<table>",
       description:
-        "Matcher groups for hook events such as `PreToolUse`, `PermissionRequest`, `PostToolUse`, `PreCompact`, `PostCompact`, `SessionStart`, `SubagentStart`, `SubagentStop`, `UserPromptSubmit`, or `Stop`.",
+        "Matcher groups for hook events such as `PreToolUse`, `PermissionRequest`, `PostToolUse`, `PreCompact`, `PostCompact`, `SessionStart`, `SessionEnd`, `SubagentStart`, `SubagentStop`, `UserPromptSubmit`, or `Stop`.",
     },
     {
       key: "hooks.[].hooks",
@@ -1148,6 +1148,12 @@ For sandbox and approval keys (`approval_policy`, `sandbox_mode`, and `sandbox_w
         "Control alternate screen usage for the TUI (default: auto; auto skips it in Zellij to preserve scrollback).",
     },
     {
+      key: "tui.resume_cwd",
+      type: "current | session",
+      description:
+        "Working directory to use when resuming or forking a session. When unset, Codex asks you to choose if your current directory differs from the session's saved directory.",
+    },
+    {
       key: "tui.vim_mode_default",
       type: "boolean",
       description:
@@ -1512,6 +1518,10 @@ canonical keys that `config.toml` uses. Requirements can also include documented
 app-only keys that don't belong in `config.toml`. Omitted keys remain
 unconstrained.
 
+Some managed requirements enforce an exact configuration value instead of an
+allowlist. Users can't override an enforced path, update preference, login-shell
+policy, feedback setting, or Windows private-desktop setting.
+
 Managed permission-profile allowlists require Codex 0.138.0 or later. Codex
 0.137.0 and earlier ignore `allowed_permission_profiles` and managed
 `default_permissions`.
@@ -1623,6 +1633,12 @@ model fields; `service_tier` is independent.
         "Allowed native Windows sandbox implementations for `windows.sandbox` (`elevated` and `unelevated`). The list must not be empty. When both are allowed and no mode is selected, Codex prefers `elevated`.",
     },
     {
+      key: "windows.sandbox_private_desktop",
+      type: "boolean",
+      description:
+        "Enforce whether the native Windows sandbox starts its child process on a private desktop.",
+    },
+    {
       key: "remote_sandbox_config",
       type: "array<table>",
       description:
@@ -1687,6 +1703,12 @@ model fields; `service_tier` is independent.
       type: "boolean",
       description:
         "Pin Apps integration availability on or off for managed users.",
+    },
+    {
+      key: "features.in_app_updates",
+      type: "boolean",
+      description:
+        "Set to `false` in `requirements.toml` to disable in-app updates. Updates remain enabled by default when this requirement is omitted.",
     },
     {
       key: "features.in_app_browser",
@@ -1869,7 +1891,7 @@ model fields; `service_tier` is independent.
       key: "hooks.",
       type: "array<table>",
       description:
-        "Matcher groups for a hook event such as `PreToolUse`, `PermissionRequest`, `PostToolUse`, `PreCompact`, `PostCompact`, `SessionStart`, `SubagentStart`, `SubagentStop`, `UserPromptSubmit`, or `Stop`.",
+        "Matcher groups for a hook event such as `PreToolUse`, `PermissionRequest`, `PostToolUse`, `PreCompact`, `PostCompact`, `SessionStart`, `SessionEnd`, `SubagentStart`, `SubagentStop`, `UserPromptSubmit`, or `Stop`.",
     },
     {
       key: "hooks.[].hooks",
