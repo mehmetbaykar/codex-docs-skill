@@ -118,12 +118,13 @@ so prompt length alone isn't a reliable estimate.
 
 Choose the GPT-5.6 model that best fits your work:
 
-- **Sol** is the best choice when quality and reasoning depth matter most. Use
-  it for complex analysis, coding, research, and advanced workflows.
-- **Terra** is the everyday default: strong capability with a better balance of
-  performance and price.
-- **Luna** is optimized for speed and affordability, making it a good fit for
-  lighter-weight or high-volume workloads.
+- **Sol** is built for the hardest work—complex reasoning, ambiguous problems,
+  advanced coding, and high-stakes decisions.
+- **Terra** is the everyday workhorse for production tasks, reporting, document
+  analysis, coding, and work that requires sound judgment.
+- **Luna** is optimized for fast, high-volume work such as routing,
+  classification, extraction, support, background automation, and focused coding
+  tasks.
 
 
 
@@ -148,19 +149,19 @@ Plus
         <tbody>
           <tr>
             <td>GPT-5.6 Sol</td>
-            <td style="text-align:center">15-90</td>
+            <td style="text-align:center">10-100</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
           <tr>
             <td>GPT-5.6 Terra</td>
-            <td style="text-align:center">20-110</td>
+            <td style="text-align:center">25-200</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
           <tr>
             <td>GPT-5.6 Luna</td>
-            <td style="text-align:center">50-280</td>
+            <td style="text-align:center">250-2,000</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
@@ -232,19 +233,19 @@ Pro 5x
         <tbody>
           <tr>
             <td>GPT-5.6 Sol</td>
-            <td style="text-align:center">75-450</td>
+            <td style="text-align:center">50-500</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
           <tr>
             <td>GPT-5.6 Terra</td>
-            <td style="text-align:center">100-550</td>
+            <td style="text-align:center">125-1,000</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
           <tr>
             <td>GPT-5.6 Luna</td>
-            <td style="text-align:center">250-1400</td>
+            <td style="text-align:center">1,250-10,000</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
@@ -316,19 +317,19 @@ Pro 20x
         <tbody>
           <tr>
             <td>GPT-5.6 Sol</td>
-            <td style="text-align:center">300-1800</td>
+            <td style="text-align:center">200-2,000</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
           <tr>
             <td>GPT-5.6 Terra</td>
-            <td style="text-align:center">400-2200</td>
+            <td style="text-align:center">500-4,000</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
           <tr>
             <td>GPT-5.6 Luna</td>
-            <td style="text-align:center">1000-5600</td>
+            <td style="text-align:center">5,000-40,000</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
@@ -400,19 +401,19 @@ Business
         <tbody>
           <tr>
             <td>GPT-5.6 Sol</td>
-            <td style="text-align:center">15-90</td>
+            <td style="text-align:center">10-100</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
           <tr>
             <td>GPT-5.6 Terra</td>
-            <td style="text-align:center">20-110</td>
+            <td style="text-align:center">25-200</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
           <tr>
             <td>GPT-5.6 Luna</td>
-            <td style="text-align:center">50-280</td>
+            <td style="text-align:center">250-2,000</td>
             <td style="text-align:center">Not available</td>
             <td style="text-align:center">Not available</td>
           </tr>
@@ -682,15 +683,15 @@ sales](https://chatgpt.com/contact-sales?utm_internal_source=openai_developers_c
       </tr>
       <tr>
         <td>GPT-5.6 Terra</td>
-        <td style="text-align:center">62.5 credits</td>
-        <td style="text-align:center">6.25 credits</td>
-        <td style="text-align:center">375 credits</td>
+        <td style="text-align:center">50 credits</td>
+        <td style="text-align:center">5 credits</td>
+        <td style="text-align:center">300 credits</td>
       </tr>
       <tr>
         <td>GPT-5.6 Luna</td>
-        <td style="text-align:center">25 credits</td>
-        <td style="text-align:center">2.5 credits</td>
-        <td style="text-align:center">150 credits</td>
+        <td style="text-align:center">5 credits</td>
+        <td style="text-align:center">0.5 credits</td>
+        <td style="text-align:center">30 credits</td>
       </tr>
       <tr>
         <td>GPT-5.5</td>
