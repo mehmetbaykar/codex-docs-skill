@@ -378,8 +378,8 @@
       "title": "Features"
     },
     "features__codex-micro.md": {
-      "hash": "0d8cd4d05055c750e31fd83bda3d9c92ace7bc21336bcafae384669adbb0c077",
-      "last_updated": "2026-07-28T02:13:37+00:00",
+      "hash": "5701636cbea04eacaad4c6a14063dd9dd6ac60099c254978077d9bd5860fbb6c",
+      "last_updated": "2026-07-30T11:04:50+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features/codex-micro",
       "path": "/docs/features/codex-micro",
       "source_url": "https://learn.chatgpt.com/docs/features/codex-micro.md",
@@ -894,7 +894,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-30T05:37:43+00:00",
+  "last_updated": "2026-07-30T11:05:09+00:00",
   "skipped": [
     {
       "path": "/docs",
