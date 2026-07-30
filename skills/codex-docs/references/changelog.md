@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Browser upgrades, multi-repository review, and image editing (2026-07-30)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-07-30-app
+
+Browse faster, review changes across repositories, and refine generated images in the ChatGPT desktop app.
+
 ## Sign in with ChatGPT (beta) (2026-07-29)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-29
