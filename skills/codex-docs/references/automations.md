@@ -84,6 +84,10 @@ project directory.
 You can also leave the model and reasoning effort on their default settings, or
 choose them explicitly if you want more control over how the scheduled task runs.
 
+If a scheduled task uses `gpt-5.4` or `gpt-5.4-mini` with ChatGPT sign-in,
+update it before those models retire on August 31, 2026. Replace `gpt-5.4` with
+`gpt-5.6-terra` and `gpt-5.4-mini` with `gpt-5.6-luna`.
+
 Scheduled tasks run unattended with your default sandbox settings. Start with the
 narrowest access that lets the task succeed, and grant network or broader file
 access only when required. [Understand sandboxing](https://learn.chatgpt.com/docs/sandboxing).
