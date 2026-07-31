@@ -99,6 +99,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `security__plugin__security-hardening` - [Propose security hardening](https://learn.chatgpt.com/docs/security/plugin/security-hardening)
 - `security__plugin__triage-backlog` - [Triage a backlog](https://learn.chatgpt.com/docs/security/plugin/triage-backlog)
 - `security__plugin__vulnerability-reports` - [Write vulnerability reports](https://learn.chatgpt.com/docs/security/plugin/vulnerability-reports)
+- `security__plugin__workbench` - [Use the Codex Security workbench](https://learn.chatgpt.com/docs/security/plugin/workbench)
 - `security__sdk` - [Codex Security TypeScript SDK](https://learn.chatgpt.com/docs/security/sdk)
 - `security__setup` - [Codex Security cloud setup](https://learn.chatgpt.com/docs/security/setup)
 - `security__threat-model` - [Improving the threat model](https://learn.chatgpt.com/docs/security/threat-model)
