@@ -96,7 +96,7 @@ increasing delay and jitter.
 Requests include `method`, `params`, and `id`:
 
 ```json
-{ "method": "thread/start", "id": 10, "params": { "model": "gpt-5.4" } }
+{ "method": "thread/start", "id": 10, "params": { "model": "gpt-5.6-terra" } }
 ```
 
 Responses echo the `id` with either `result` or `error`:
@@ -174,7 +174,7 @@ send({
   },
 });
 send({ method: "initialized", params: {} });
-send({ method: "thread/start", id: 1, params: { model: "gpt-5.4" } });
+send({ method: "thread/start", id: 1, params: { model: "gpt-5.6-terra" } });
 ```
 
 ## Core primitives
@@ -380,14 +380,14 @@ Call `model/list` to discover available models and their capabilities before ren
 { "method": "model/list", "id": 6, "params": { "limit": 20, "includeHidden": false } }
 { "id": 6, "result": {
   "data": [{
-    "id": "gpt-5.4",
-    "model": "gpt-5.4",
-    "displayName": "GPT-5.4",
+    "id": "gpt-5.6-sol",
+    "model": "gpt-5.6-sol",
+    "displayName": "GPT-5.6-Sol",
     "hidden": false,
-    "defaultReasoningEffort": "medium",
+    "defaultReasoningEffort": "low",
     "supportedReasoningEfforts": [{
       "reasoningEffort": "low",
-      "description": "Lower latency"
+      "description": "Fast responses with lighter reasoning"
     }],
     "inputModalities": ["text", "image"],
     "supportsPersonality": true,
@@ -475,7 +475,7 @@ Start a fresh thread when you need a new Codex conversation.
 
 ```json
 { "method": "thread/start", "id": 10, "params": {
-  "model": "gpt-5.4",
+  "model": "gpt-5.6-terra",
   "cwd": "/Users/me/project",
   "approvalPolicy": "never",
   "sandbox": "workspaceWrite",
@@ -956,7 +956,7 @@ Examples:
     "writableRoots": ["/Users/me/project"],
     "networkAccess": true
   },
-  "model": "gpt-5.4",
+  "model": "gpt-5.6-terra",
   "effort": "medium",
   "summary": "concise",
   "personality": "friendly",
