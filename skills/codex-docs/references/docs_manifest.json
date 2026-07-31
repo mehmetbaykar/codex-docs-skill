@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 109,
+    "pages_fetched_successfully": 110,
     "pages_skipped": 1,
-    "total_pages_discovered": 110
+    "total_pages_discovered": 111
   },
   "files": {
     "administration.md": {
@@ -618,8 +618,8 @@
       "title": "Security"
     },
     "security.md": {
-      "hash": "24ba3eb5b52fadcddbf6f6bad92431169ba31c7372d38f46bd5a57146e90b2e3",
-      "last_updated": "2026-07-30T05:37:35+00:00",
+      "hash": "5ab9f6aa65d78a7c50101ddda2ceeb53ee3302137536f45b8d3f9015ee6eabee",
+      "last_updated": "2026-07-31T02:33:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security",
       "path": "/docs/security",
       "source_url": "https://learn.chatgpt.com/docs/security.md",
@@ -674,8 +674,8 @@
       "title": "Codex Security cloud FAQ"
     },
     "security__plugin.md": {
-      "hash": "ca0612ea470cc4c4115f112c636d930edafb471b02f62a7e819c9702dc3b02fb",
-      "last_updated": "2026-07-29T02:24:06+00:00",
+      "hash": "98158151bd2e85c1605f2324e1d28dcd109809ce602de83d0ddd22d0fc55e135",
+      "last_updated": "2026-07-31T02:33:34+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin",
       "path": "/docs/security/plugin",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin.md",
@@ -690,40 +690,40 @@
       "title": "Codex Security plugin changelog"
     },
     "security__plugin__code-changes.md": {
-      "hash": "78230fe3d7900e722635c5b34f27713e5a2da420fd6ad51318ec999801742fbe",
-      "last_updated": "2026-07-29T02:24:06+00:00",
+      "hash": "5190311aad00d6530de69a79a3cc2545df1e23136108b32e29ad9b9e04ff6cae",
+      "last_updated": "2026-07-31T02:33:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/code-changes",
       "path": "/docs/security/plugin/code-changes",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/code-changes.md",
       "title": "Review code changes for security"
     },
     "security__plugin__deep-scans.md": {
-      "hash": "ea97b1699239dff6dd52aef63ace1ba0623ae966b4eab8e61e043e05105d69bf",
-      "last_updated": "2026-07-28T02:13:46+00:00",
+      "hash": "d2409430bc4b25328de9212cccf801237e1295635c80f1a67e597b1bb455bcea",
+      "last_updated": "2026-07-31T02:33:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/deep-scans",
       "path": "/docs/security/plugin/deep-scans",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/deep-scans.md",
       "title": "Run a deep security scan"
     },
     "security__plugin__export-findings.md": {
-      "hash": "01249e84534f130dcec5a58e4bbaf71f21c9ddac8074c868b5896b33c0654139",
-      "last_updated": "2026-07-28T02:13:46+00:00",
+      "hash": "7d22597153d55c7c3a2edbb84ac3d61bd06239ba3f99a51bd5ed60bb92c5d795",
+      "last_updated": "2026-07-31T02:33:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/export-findings",
       "path": "/docs/security/plugin/export-findings",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/export-findings.md",
       "title": "Export and track security findings"
     },
     "security__plugin__fix-findings.md": {
-      "hash": "5dc150d2dc478f8571c3c71415a1134ce2580704fae8e44c80dcc940e04ac806",
-      "last_updated": "2026-07-29T02:24:07+00:00",
+      "hash": "4bca0d066e418cbba52a6ddbc518b3251806c3e32fa4493cb829c7f24550159d",
+      "last_updated": "2026-07-31T02:33:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/fix-findings",
       "path": "/docs/security/plugin/fix-findings",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/fix-findings.md",
       "title": "Fix and verify security findings"
     },
     "security__plugin__scans.md": {
-      "hash": "5735a39c295a132d32faf3035b6a8beac7daef09cde6522ff7150ca59c2a4fb8",
-      "last_updated": "2026-07-28T02:13:47+00:00",
+      "hash": "c61617cf953dae02e4f37e6433d448b572bcfdee4864620334d70bf1aed1ec58",
+      "last_updated": "2026-07-31T02:33:36+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/scans",
       "path": "/docs/security/plugin/scans",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/scans.md",
@@ -738,20 +738,28 @@
       "title": "Propose security hardening"
     },
     "security__plugin__triage-backlog.md": {
-      "hash": "468dda65e0c7a42023f6af72bef6f2a17ced1ef76a67ac1004137d2fe65ef6db",
-      "last_updated": "2026-07-28T02:13:47+00:00",
+      "hash": "d1be7601a33708213ca652856a6ca319324ce955803bd70f70515e183565b22e",
+      "last_updated": "2026-07-31T02:33:36+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/triage-backlog",
       "path": "/docs/security/plugin/triage-backlog",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/triage-backlog.md",
       "title": "Triage a backlog"
     },
     "security__plugin__vulnerability-reports.md": {
-      "hash": "cfa5f67474b080e48ceb065cac14328ca69d684c43607c20f22a2da610a34f9a",
-      "last_updated": "2026-07-28T02:13:48+00:00",
+      "hash": "c9869bf4203e5aadfb34ebafda7b97ade20f75ab7d1f99e4bb51db86c8c98528",
+      "last_updated": "2026-07-31T02:33:36+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/vulnerability-reports",
       "path": "/docs/security/plugin/vulnerability-reports",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/vulnerability-reports.md",
       "title": "Write vulnerability reports"
+    },
+    "security__plugin__workbench.md": {
+      "hash": "16cba705adf7d01b60ad77df7375134a15c118b7ab22b8120751c23ca6192555",
+      "last_updated": "2026-07-31T02:33:37+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/security/plugin/workbench",
+      "path": "/docs/security/plugin/workbench",
+      "source_url": "https://learn.chatgpt.com/docs/security/plugin/workbench.md",
+      "title": "Use the Codex Security workbench"
     },
     "security__sdk.md": {
       "hash": "aa1f825be5967bdb235066a89d6e928a5f07b06a4927c13a91e3f424c8a3745e",
@@ -894,7 +902,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-30T22:03:51+00:00",
+  "last_updated": "2026-07-31T02:33:41+00:00",
   "skipped": [
     {
       "path": "/docs",
