@@ -106,8 +106,8 @@
       "title": "Authentication"
     },
     "automations.md": {
-      "hash": "2b0a26802381c40554f014d951b5f2bf5ebf022f2c413650d1f467a3e405368e",
-      "last_updated": "2026-07-28T08:28:56+00:00",
+      "hash": "e315a4e4348fcb82f3ef6e02656f89f567c542247b06d79c7a8e8b2611488fab",
+      "last_updated": "2026-07-31T22:02:07+00:00",
       "original_url": "https://learn.chatgpt.com/docs/automations",
       "path": "/docs/automations",
       "source_url": "https://learn.chatgpt.com/docs/automations.md",
@@ -138,8 +138,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "7c1fd104337329afb7f8cff552d41d9be42dda07ee0d8327ad3cdc5894d0e8ef",
-      "last_updated": "2026-07-31T16:42:58+00:00",
+      "hash": "e98b565a402bf3b592c10f9e131c3d0a3c760aa59f99bd6195aeca9395f55672",
+      "last_updated": "2026-07-31T22:02:08+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -474,8 +474,8 @@
       "title": "Use Codex with the Agents SDK"
     },
     "models.md": {
-      "hash": "9aac3e91da523f4d9649144273f77b83901220487e0605d81bca0ca73dc4d4c5",
-      "last_updated": "2026-07-28T08:29:08+00:00",
+      "hash": "ac6230cfd14782525d15a739a0e1c851f359ada5deaba31a8936953890897432",
+      "last_updated": "2026-07-31T22:02:19+00:00",
       "original_url": "https://learn.chatgpt.com/docs/models",
       "path": "/docs/models",
       "source_url": "https://learn.chatgpt.com/docs/models.md",
@@ -902,7 +902,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-31T19:20:23+00:00",
+  "last_updated": "2026-07-31T22:02:34+00:00",
   "skipped": [
     {
       "path": "/docs",
