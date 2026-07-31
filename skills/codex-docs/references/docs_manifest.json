@@ -50,8 +50,8 @@
       "title": "Speed"
     },
     "agent-configuration__subagents.md": {
-      "hash": "45b94da355a6d2d54509dad5322bb60ef094eeb4bc355ce470a07b64d9e20119",
-      "last_updated": "2026-07-28T08:28:54+00:00",
+      "hash": "da67ef99e55f49e251e85e5b58faa5cb57e9da55b62d78d8a8bd9701e51087ba",
+      "last_updated": "2026-07-31T19:19:51+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/subagents",
       "path": "/docs/agent-configuration/subagents",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/subagents.md",
@@ -66,8 +66,8 @@
       "title": "Use ChatGPT Work and Codex with Amazon Bedrock"
     },
     "app-server.md": {
-      "hash": "56b8dc742853aab4d30ca2cf7bd8936b1aa9ae5ecb556c60f454a60c8042c20a",
-      "last_updated": "2026-07-29T16:18:50+00:00",
+      "hash": "7bfffc9853c20e51e7adef37ff8b675af371fb8ff5e5a9e93eade0d0a8be3da9",
+      "last_updated": "2026-07-31T19:19:52+00:00",
       "original_url": "https://learn.chatgpt.com/docs/app-server",
       "path": "/docs/app-server",
       "source_url": "https://learn.chatgpt.com/docs/app-server.md",
@@ -186,8 +186,8 @@
       "title": "Code review"
     },
     "codex-sdk.md": {
-      "hash": "0708776730d982a580302f6248d479a040ef775e8c8bbd972b50d1ac79094836",
-      "last_updated": "2026-07-28T19:18:30+00:00",
+      "hash": "51732822ef1ab2bb271f2e34918294be57f59aa7029ea740dcc0d0862df523f2",
+      "last_updated": "2026-07-31T19:19:57+00:00",
       "original_url": "https://learn.chatgpt.com/docs/codex-sdk",
       "path": "/docs/codex-sdk",
       "source_url": "https://learn.chatgpt.com/docs/codex-sdk.md",
@@ -218,8 +218,8 @@
       "title": "Computer Use"
     },
     "config-file__config-advanced.md": {
-      "hash": "8c5d9a5256977931d994f54962cb5179faf3351c93dbda77664a9471a5381f16",
-      "last_updated": "2026-07-28T02:13:32+00:00",
+      "hash": "c8db2d0e5d01a3bee770c42cf434f7e85c65615d6837e5fd8743523bf6ff43a9",
+      "last_updated": "2026-07-31T19:19:58+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
       "path": "/docs/config-file/config-advanced",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-advanced.md",
@@ -242,8 +242,8 @@
       "title": "Configuration Reference"
     },
     "config-file__config-sample.md": {
-      "hash": "057c06dae960901b9d5b92781f2a34e62cfa5fb814d7890b0065cc20269f545d",
-      "last_updated": "2026-07-29T16:18:56+00:00",
+      "hash": "005332813c988dac45b5f2dd50ac881596f737245b3342d0f234073e5a70eb0d",
+      "last_updated": "2026-07-31T19:19:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-sample",
       "path": "/docs/config-file/config-sample",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-sample.md",
@@ -274,8 +274,8 @@
       "title": "Custom Prompts"
     },
     "customization__chronicle.md": {
-      "hash": "c46c92538c748ea3a6996a7d3e73e8af72d375cad22742aa01e99e4b71120697",
-      "last_updated": "2026-07-28T02:13:34+00:00",
+      "hash": "bfddd56cdb366615fb6f1353fd0c88d4935fedc2ff90ab5d9a696b15a73febc6",
+      "last_updated": "2026-07-31T19:20:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/customization/chronicle",
       "path": "/docs/customization/chronicle",
       "source_url": "https://learn.chatgpt.com/docs/customization/chronicle.md",
@@ -466,8 +466,8 @@
       "title": "Long-running work"
     },
     "mcp-server.md": {
-      "hash": "17bdbabe76a23e196225cd81f759f67a8f88000406ca0d40b2d4e40b3269a2cd",
-      "last_updated": "2026-07-28T02:13:40+00:00",
+      "hash": "9518375b54cdcdf4992fb5888428b82b24330d837de08020a17003cb54b20a50",
+      "last_updated": "2026-07-31T19:20:07+00:00",
       "original_url": "https://learn.chatgpt.com/docs/mcp-server",
       "path": "/docs/mcp-server",
       "source_url": "https://learn.chatgpt.com/docs/mcp-server.md",
@@ -546,8 +546,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "fae4fbcc3ca3052a5a1d4038b4ee96c491c8a81b7a3fe63614b9cc860ebe2870",
-      "last_updated": "2026-07-30T19:21:11+00:00",
+      "hash": "e940c276845267147b049c9d42ea2ee7dd2c2044eb7bd8203b64fad3b08485e7",
+      "last_updated": "2026-07-31T19:20:10+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -902,7 +902,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-07-31T16:43:23+00:00",
+  "last_updated": "2026-07-31T19:20:23+00:00",
   "skipped": [
     {
       "path": "/docs",
