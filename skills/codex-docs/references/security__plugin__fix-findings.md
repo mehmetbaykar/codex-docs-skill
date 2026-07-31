@@ -9,7 +9,7 @@ path: /docs/security/plugin/fix-findings
 > For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
 Use Codex Security to turn an accepted security finding into a focused,
-verified patch. You can work in the findings workspace or run the remediation
+verified patch. You can work in the Security workbench or run the remediation
 workflow from a prompt, the command line, or CI/CD. Codex validates the issue
 and, when testing is safe and practical, adds a focused regression test that
 fails before the fix and passes after it. It also checks that legitimate
@@ -24,8 +24,9 @@ scoped makes its code changes and evidence easier to review.
 
 ## Fix a finding in the UI
 
-Open an accepted finding in the findings workspace to generate, review, apply,
-and verify its patch.
+Open an accepted finding from **Findings** or a completed scan in **Scans**.
+Review its evidence, then use **Patch** to generate, review, apply, and verify
+one focused fix.
 
 1. Generate a focused patch
 
@@ -35,16 +36,15 @@ and verify its patch.
 
 2. Review the proposed diff
 
-   Read every changed source, regression test, and validation artifact. Select
-   **Open diff in editor** to review the full patch in your editor. Reject
+   Read every changed source, regression test, and validation artifact. Reject
    broad refactors, unrelated cleanup, or changes that weaken another security
    control.
 
 3. Apply the patch locally
 
-   Select **Apply patch locally** only after the diff is acceptable. Codex
-   applies the exact generated patch to the working tree and records that state.
-   Review the working-tree diff before continuing.
+   Select **Apply patch** only after the diff is acceptable. Codex applies the
+   exact generated patch to the working tree and records that state. Review the
+   working-tree diff before continuing.
 
 4. Verify the fix
 
@@ -62,18 +62,8 @@ and verify its patch.
    reason or keep it open for more work.
 
 <figure className="not-prose my-8">
-
-
-    <img
-      src={fixFindingPatch.src}
-      alt="Codex Security proposed patch for an accepted finding"
-      className="block h-auto w-full"
-    />
-
-
   <figcaption className="mt-3 text-sm text-secondary">
-    Review the proposed source and test changes before applying the patch
-    locally.
+    Review the generated security fix before applying it to your checkout.
   </figcaption>
 </figure>
 
