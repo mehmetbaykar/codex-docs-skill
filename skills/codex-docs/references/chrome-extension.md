@@ -36,6 +36,26 @@ The panel stays with the tab where you opened it. Chats you start in Chrome
 are available in the ChatGPT app, and you can open recent ChatGPT chats in
 Chrome, so you can continue work in either place.
 
+## Bring tabs and selected text into a chat
+
+Mention an open Chrome tab in the side chat when you want ChatGPT to use that
+page as context. You can also highlight text on a page and bring the selection
+into your chat to ask about a specific passage without copying the whole page.
+
+To start from the page instead, right-click it and select **Ask ChatGPT**. The
+side chat opens with the relevant page context so you can continue the request
+in Chrome.
+
+### Ask about a YouTube video
+
+Open a YouTube video, then ask a question about it in the Chrome side chat.
+When captions are available, ChatGPT can use the video's timestamped transcript
+to explain, summarize, or answer questions about the content.
+
+Treat webpage content, selected text, and video transcripts as untrusted
+context. Review the page and any requested permissions before asking ChatGPT to
+use or act on that information.
+
 ## Set up the Chrome extension
 
 In the ChatGPT desktop app, open the Plugins Directory and install **Chrome**.
