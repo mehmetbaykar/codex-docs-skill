@@ -138,8 +138,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "e98b565a402bf3b592c10f9e131c3d0a3c760aa59f99bd6195aeca9395f55672",
-      "last_updated": "2026-08-02T02:30:33+00:00",
+      "hash": "6aebf2ff8e81ca108a57f5547ce5058f229941345c2b395e8af2fcbeb3eb64e8",
+      "last_updated": "2026-08-02T19:04:38+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -858,8 +858,8 @@
       "title": "ChatGPT on the web"
     },
     "whats-new.md": {
-      "hash": "f31cb93fd63e6272aaf32975167c6b2f4472dee12b6f4b2cf0687980a18491ca",
-      "last_updated": "2026-07-28T08:29:18+00:00",
+      "hash": "7d48d4370727a8e9fd529ca3363329f9541915d832158b8b1823a440f2b720fb",
+      "last_updated": "2026-08-02T19:05:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -902,7 +902,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-02T02:31:03+00:00",
+  "last_updated": "2026-08-02T19:05:01+00:00",
   "skipped": [
     {
       "path": "/docs",
