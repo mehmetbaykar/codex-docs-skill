@@ -110,6 +110,18 @@ Once you open the Plugins Directory:
 4. After installation, start a new chat and ask ChatGPT or Codex to use the
    plugin.
 
+### Connect supported partners with Sign in with ChatGPT
+
+**Sign in with ChatGPT** is rolling out in beta for supported plugins and
+partner sites, including Airtable, GitLab, HubSpot, Notion, Supabase, and
+Vercel. When the option is available, select **Sign in with ChatGPT** while
+connecting the plugin to create or link your account with that service.
+
+Signing in shares only your name, email address, and profile picture, when
+available, with the partner. It doesn't grant the plugin access to your data or
+approve actions automatically. Review and approve the plugin's requested
+permissions as a separate step before using the connection.
+
 After you install a plugin, you can use it directly in the prompt window:
 
 

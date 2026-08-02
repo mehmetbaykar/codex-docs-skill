@@ -15,6 +15,17 @@ to create alongside code or in a ChatGPT chat.
 Ask for an image from the app composer. Add a reference image when you want
 ChatGPT to transform an existing asset or use it as visual guidance.
 
+### Review and edit generated images
+
+Select a generated image to open its expanded viewer. Switch between
+**Focused view** to inspect one image and **Canvas view** to see the images
+generated in the same chat.
+
+In **Canvas view**, use **Comment** to add precise feedback to one or more
+images. Select **Multi-select** to choose the images you want to include, then
+send your comments and any additional editing instructions in the same chat.
+Describe what should change and what should remain the same.
+
 Ask for an image in a ChatGPT web chat. Attach a reference image to the
 composer when you want ChatGPT to edit it or use it as visual guidance.
 
