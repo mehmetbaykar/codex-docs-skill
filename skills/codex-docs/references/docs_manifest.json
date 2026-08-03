@@ -138,8 +138,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "e98b565a402bf3b592c10f9e131c3d0a3c760aa59f99bd6195aeca9395f55672",
-      "last_updated": "2026-08-03T17:06:42+00:00",
+      "hash": "6aebf2ff8e81ca108a57f5547ce5058f229941345c2b395e8af2fcbeb3eb64e8",
+      "last_updated": "2026-08-03T19:26:11+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -826,8 +826,8 @@
       "title": "Use Codex in Slack"
     },
     "use-chatgpt.md": {
-      "hash": "45a734d1ca0db0fa085409a959e76a32825278df60bb87c8af92cd2f1e4ae5c4",
-      "last_updated": "2026-08-02T21:53:09+00:00",
+      "hash": "0eaa4ec5ddfe28e642db026a7de2b450023e07401d3b43955d7d2dc359fae848",
+      "last_updated": "2026-08-03T19:26:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/use-chatgpt",
       "path": "/docs/use-chatgpt",
       "source_url": "https://learn.chatgpt.com/docs/use-chatgpt.md",
@@ -902,7 +902,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-03T17:07:06+00:00",
+  "last_updated": "2026-08-03T19:26:35+00:00",
   "skipped": [
     {
       "path": "/docs",

@@ -51,7 +51,9 @@ practices.
 ### What ChatGPT Work can do
 
 ChatGPT Work can plan a task, gather context, use tools, and carry the work
-through to a result you can review. Ask it to:
+through to a result you can review.
+
+Ask it to:
 
 - **Research and analyze information.** Search the web, browse websites,
   compare sources, read files, analyze data, and summarize findings.
