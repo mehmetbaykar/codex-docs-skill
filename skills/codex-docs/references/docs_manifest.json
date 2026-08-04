@@ -698,8 +698,8 @@
       "title": "Review code changes for security"
     },
     "security__plugin__deep-scans.md": {
-      "hash": "d2409430bc4b25328de9212cccf801237e1295635c80f1a67e597b1bb455bcea",
-      "last_updated": "2026-07-31T02:33:35+00:00",
+      "hash": "c4f60369afbdf8e0fa3126af0abde653687544af14cb4d4213e5b587442d02e1",
+      "last_updated": "2026-08-04T08:32:27+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/deep-scans",
       "path": "/docs/security/plugin/deep-scans",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/deep-scans.md",
@@ -902,7 +902,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-04T02:12:26+00:00",
+  "last_updated": "2026-08-04T08:32:34+00:00",
   "skipped": [
     {
       "path": "/docs",
