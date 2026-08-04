@@ -159,12 +159,6 @@ Start, track, and approve Codex tasks from your phone with secure one-to-one rem
 
 ChatGPT for iOS
 
-## Codex CLI Release: 0.142.0 (2026-06-22)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-343189954
-
-0.142.0
-
 ## Record & Replay and remote task handoff (2026-06-18)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-18-app
