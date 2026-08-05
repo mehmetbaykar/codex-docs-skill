@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.146.1 (2026-08-05)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-365644216
+
+0.146.1
+
 ## GPT-5.4 and GPT-5.4 mini retire from Codex on August 31 (2026-07-31)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-31
