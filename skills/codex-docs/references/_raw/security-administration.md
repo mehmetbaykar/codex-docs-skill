@@ -96,6 +96,12 @@
           icon: "storage",
         },
         {
+          title: "Security Review",
+          description: "Run in-depth security reviews on GitHub pull requests.",
+          href: "/codex/security/security-review",
+          icon: "shieldCheck",
+        },
+        {
           title: "Threat model",
           description: "Review and improve the threat model for your codebase.",
           href: "/codex/security/threat-model",
