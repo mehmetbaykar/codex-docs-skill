@@ -4,9 +4,9 @@
     "failed_pages": [],
     "fetch_tool_version": "1.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 110,
+    "pages_fetched_successfully": 112,
     "pages_skipped": 1,
-    "total_pages_discovered": 111
+    "total_pages_discovered": 113
   },
   "files": {
     "administration.md": {
@@ -58,8 +58,8 @@
       "title": "Subagents"
     },
     "amazon-bedrock.md": {
-      "hash": "1347f9583b3645883af2e0ed76f02e308638fbf9869e5ec7d671a02c55b7ee1f",
-      "last_updated": "2026-07-30T05:37:18+00:00",
+      "hash": "eb628184bc4d218f0d6b134300738f98723f4a230fc8d5a2211889fce09601e2",
+      "last_updated": "2026-08-06T23:55:37+00:00",
       "original_url": "https://learn.chatgpt.com/docs/amazon-bedrock",
       "path": "/docs/amazon-bedrock",
       "source_url": "https://learn.chatgpt.com/docs/amazon-bedrock.md",
@@ -370,8 +370,8 @@
       "title": "Feature Maturity"
     },
     "features.md": {
-      "hash": "4e464519dc659048e9d4e75e072fc97e3c7d713438e530d39f8dda0e2f9fdf85",
-      "last_updated": "2026-07-28T02:13:37+00:00",
+      "hash": "5490c7fdd8664283ccb80ca34cd3ada8692bfd7dc297bccfb30086498f0b9154",
+      "last_updated": "2026-08-06T23:55:50+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features",
       "path": "/docs/features",
       "source_url": "https://learn.chatgpt.com/docs/features.md",
@@ -586,12 +586,20 @@
       "title": "Troubleshooting"
     },
     "remote-connections.md": {
-      "hash": "ae434429fa2aac22bec7ef9c0c88b66b900901c54e3558f7430bc10e9a75c9fa",
-      "last_updated": "2026-07-28T02:13:44+00:00",
+      "hash": "a92e20b3cf5dd1df1e0a8a6b21b7840667f44f831136b938cc0474a454603628",
+      "last_updated": "2026-08-06T23:56:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/remote-connections",
       "path": "/docs/remote-connections",
       "source_url": "https://learn.chatgpt.com/docs/remote-connections.md",
       "title": "Remote connections"
+    },
+    "remote.md": {
+      "hash": "828b0eab0dc6741de1388d237c1ee7588cb7255934e0e2ba512cab07314f2531",
+      "last_updated": "2026-08-06T23:55:59+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/remote",
+      "path": "/docs/remote",
+      "source_url": "https://learn.chatgpt.com/docs/remote.md",
+      "title": "Codex Remote"
     },
     "sandboxing.md": {
       "hash": "46bc282219a38143c38bc559836c4288b352694b9ffd3cc71abedffd44bc6c40",
@@ -610,24 +618,24 @@
       "title": "Auto-review"
     },
     "security-administration.md": {
-      "hash": "f1be09314316e6440ba9c6e04ea3dd748ecc9ad0a0f69c773ea481ff188b3ce1",
-      "last_updated": "2026-07-28T19:18:44+00:00",
+      "hash": "14c195058bc3f230100f781589c28309ccf09718cb0ced4c0db6be13091980d1",
+      "last_updated": "2026-08-06T23:56:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security-administration",
       "path": "/docs/security-administration",
       "source_url": "https://learn.chatgpt.com/docs/security-administration.md",
       "title": "Security"
     },
     "security.md": {
-      "hash": "5ab9f6aa65d78a7c50101ddda2ceeb53ee3302137536f45b8d3f9015ee6eabee",
-      "last_updated": "2026-07-31T02:33:32+00:00",
+      "hash": "20cd893d6d34b18528fb5115534fc32b427209073cb38ab742dd56332a42e1a5",
+      "last_updated": "2026-08-06T23:56:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security",
       "path": "/docs/security",
       "source_url": "https://learn.chatgpt.com/docs/security.md",
       "title": "Codex Security"
     },
     "security__cli.md": {
-      "hash": "62910fdc135e6d806165d0c5fb48788619e64a46e731e915fc9b15ee05f2b677",
-      "last_updated": "2026-07-30T05:37:36+00:00",
+      "hash": "5b807c75d359bd8079a42b501087cdab74c77940b398e4f5f73c858872344631",
+      "last_updated": "2026-08-06T23:56:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli",
       "path": "/docs/security/cli",
       "source_url": "https://learn.chatgpt.com/docs/security/cli.md",
@@ -658,8 +666,8 @@
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "724d1b7427380b68005a6b8d191383941fdb316ee0a641bcae5c45d80f417d18",
-      "last_updated": "2026-08-06T05:46:28+00:00",
+      "hash": "fef91e8c85e3c8122b48b76b864bf39213dc9565a4a80e39da6747ccfca4f858",
+      "last_updated": "2026-08-06T23:56:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/reference.md",
@@ -762,12 +770,20 @@
       "title": "Use the Codex Security workbench"
     },
     "security__sdk.md": {
-      "hash": "aa1f825be5967bdb235066a89d6e928a5f07b06a4927c13a91e3f424c8a3745e",
-      "last_updated": "2026-07-30T05:37:40+00:00",
+      "hash": "bf7e455da8acdbd883b5d9e089c246eaa795fecfb59eb407672153c3f3c2280f",
+      "last_updated": "2026-08-06T23:56:07+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/sdk",
       "path": "/docs/security/sdk",
       "source_url": "https://learn.chatgpt.com/docs/security/sdk.md",
       "title": "Codex Security TypeScript SDK"
+    },
+    "security__security-review.md": {
+      "hash": "6e373a8ac71bf512c391e012528ee19a54c2fb58e0a64b14a122193d7824028c",
+      "last_updated": "2026-08-06T23:56:07+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/security/security-review",
+      "path": "/docs/security/security-review",
+      "source_url": "https://learn.chatgpt.com/docs/security/security-review.md",
+      "title": "Security Review"
     },
     "security__setup.md": {
       "hash": "50fbfcd9b887d83bdd38d19307ac9582b4d3c272bdda41d950e406de960868e1",
@@ -802,12 +818,12 @@
       "title": "Skills & Plugins"
     },
     "third-party__github.md": {
-      "hash": "fe269a94e97cc313c73d8a0342063298b35c34ceb82b23c15b7b985e05522fe5",
-      "last_updated": "2026-07-28T02:13:49+00:00",
+      "hash": "1a78dc6d8c6aa70501851e6abbe49d4aaa5055eaa8f391f5877e3f7cbb889b6c",
+      "last_updated": "2026-08-06T23:56:09+00:00",
       "original_url": "https://learn.chatgpt.com/docs/third-party/github",
       "path": "/docs/third-party/github",
       "source_url": "https://learn.chatgpt.com/docs/third-party/github.md",
-      "title": "Codex code review in GitHub"
+      "title": "Review GitHub pull requests with Codex"
     },
     "third-party__linear.md": {
       "hash": "556eb2e6e18512a8b1ebdeba09b4ac9ff7dc7a6aa324cfda367c069500dd1d74",
@@ -902,7 +918,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-06T05:46:36+00:00",
+  "last_updated": "2026-08-06T23:56:13+00:00",
   "skipped": [
     {
       "path": "/docs",
