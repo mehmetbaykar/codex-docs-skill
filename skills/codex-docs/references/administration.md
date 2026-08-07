@@ -89,6 +89,13 @@
           icon: "dataControls",
         },
         {
+          title: "Prisma AIRS",
+          description:
+            "Apply workspace-wide security policies to Codex prompts.",
+          href: "/codex/enterprise/prisma-airs",
+          icon: "shieldCheck",
+        },
+        {
           title: "HIPAA configuration",
           description:
             "Configure local runtime safeguards for workflows that may handle protected health information.",
