@@ -1,5 +1,5 @@
 ---
-title: Permissions
+title: "Permissions"
 source: https://learn.chatgpt.com/docs/permission-modes
 path: /docs/permission-modes
 ---

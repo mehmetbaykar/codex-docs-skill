@@ -1,5 +1,5 @@
 ---
-title: Feature Maturity
+title: "Feature Maturity"
 source: https://learn.chatgpt.com/docs/feature-maturity
 path: /docs/feature-maturity
 ---

@@ -1,5 +1,5 @@
 ---
-title: Codex cloud
+title: "Codex cloud"
 source: https://learn.chatgpt.com/docs/cloud
 path: /docs/cloud
 ---

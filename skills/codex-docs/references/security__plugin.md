@@ -1,5 +1,5 @@
 ---
-title: Codex Security plugin quickstart
+title: "Codex Security plugin quickstart"
 source: https://learn.chatgpt.com/docs/security/plugin
 path: /docs/security/plugin
 ---

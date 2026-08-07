@@ -1,5 +1,5 @@
 ---
-title: Codex Security
+title: "Codex Security"
 source: https://learn.chatgpt.com/docs/security
 path: /docs/security
 ---

@@ -1,5 +1,5 @@
 ---
-title: Codex environments
+title: "Codex environments"
 source: https://learn.chatgpt.com/docs/environments/modes
 path: /docs/environments/modes
 ---

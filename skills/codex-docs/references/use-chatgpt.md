@@ -1,5 +1,5 @@
 ---
-title: Use ChatGPT
+title: "Use ChatGPT"
 source: https://learn.chatgpt.com/docs/use-chatgpt
 path: /docs/use-chatgpt
 ---

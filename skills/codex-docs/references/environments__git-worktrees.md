@@ -1,5 +1,5 @@
 ---
-title: Worktrees
+title: "Worktrees"
 source: https://learn.chatgpt.com/docs/environments/git-worktrees
 path: /docs/environments/git-worktrees
 ---

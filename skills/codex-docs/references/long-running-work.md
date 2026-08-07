@@ -1,5 +1,5 @@
 ---
-title: Long-running work
+title: "Long-running work"
 source: https://learn.chatgpt.com/docs/long-running-work
 path: /docs/long-running-work
 ---

@@ -1,5 +1,5 @@
 ---
-title: Import from another agent
+title: "Import from another agent"
 source: https://learn.chatgpt.com/docs/import
 path: /docs/import
 ---

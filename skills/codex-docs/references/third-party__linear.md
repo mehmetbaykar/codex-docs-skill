@@ -1,5 +1,5 @@
 ---
-title: Use Codex in Linear
+title: "Use Codex in Linear"
 source: https://learn.chatgpt.com/docs/third-party/linear
 path: /docs/third-party/linear
 ---

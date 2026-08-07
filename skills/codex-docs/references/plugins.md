@@ -1,5 +1,5 @@
 ---
-title: Plugins
+title: "Plugins"
 source: https://learn.chatgpt.com/docs/plugins
 path: /docs/plugins
 ---

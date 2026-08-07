@@ -1,5 +1,5 @@
 ---
-title: Skills & Plugins
+title: "Skills & Plugins"
 source: https://learn.chatgpt.com/docs/skills-and-plugins
 path: /docs/skills-and-plugins
 ---
