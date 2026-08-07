@@ -138,8 +138,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "c2686666fd03a8d16d2136ebf8701504bd0966eea29426ca0232ff1e2b8dfc7e",
-      "last_updated": "2026-08-05T16:39:02+00:00",
+      "hash": "322c27bcef84ac6d2b690472947fca53274dacb2d99b035ab568d94c1b2ed3ed",
+      "last_updated": "2026-08-07T02:33:36+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -650,8 +650,8 @@
       "title": "Run bulk security scans"
     },
     "security__cli__ci.md": {
-      "hash": "30d8ba95b901e02b4717376feed412edac148bef837f53ea62398bfcdf9e7c22",
-      "last_updated": "2026-07-30T05:37:36+00:00",
+      "hash": "5685409b8c740e6c978dbc499e8be61f91d1b4ace6eed2e0906627a36d1ca28a",
+      "last_updated": "2026-08-07T02:33:58+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/ci",
       "path": "/docs/security/cli/ci",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/ci.md",
@@ -918,7 +918,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-06T23:56:13+00:00",
+  "last_updated": "2026-08-07T02:34:09+00:00",
   "skipped": [
     {
       "path": "/docs",
