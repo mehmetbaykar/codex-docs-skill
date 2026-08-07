@@ -778,8 +778,8 @@
       "title": "Codex Security TypeScript SDK"
     },
     "security__security-review.md": {
-      "hash": "6e373a8ac71bf512c391e012528ee19a54c2fb58e0a64b14a122193d7824028c",
-      "last_updated": "2026-08-06T23:56:07+00:00",
+      "hash": "30a6dc8b7693630520bb2e1079037696ec1750513b957c2dbb2e5a2b1313ac4a",
+      "last_updated": "2026-08-07T07:10:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/security-review",
       "path": "/docs/security/security-review",
       "source_url": "https://learn.chatgpt.com/docs/security/security-review.md",
@@ -918,7 +918,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-07T02:34:09+00:00",
+  "last_updated": "2026-08-07T07:10:37+00:00",
   "skipped": [
     {
       "path": "/docs",
