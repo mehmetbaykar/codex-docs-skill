@@ -1,5 +1,5 @@
 ---
-title: Run a deep security scan
+title: "Run a deep security scan"
 source: https://learn.chatgpt.com/docs/security/plugin/deep-scans
 path: /docs/security/plugin/deep-scans
 ---

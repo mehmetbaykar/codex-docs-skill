@@ -1,5 +1,5 @@
 ---
-title: Codex App Server
+title: "Codex App Server"
 source: https://learn.chatgpt.com/docs/app-server
 path: /docs/app-server
 ---

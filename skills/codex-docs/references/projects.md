@@ -1,5 +1,5 @@
 ---
-title: Projects and chats
+title: "Projects and chats"
 source: https://learn.chatgpt.com/docs/projects
 path: /docs/projects
 ---

@@ -1,5 +1,5 @@
 ---
-title: ChatGPT desktop app for Windows
+title: "ChatGPT desktop app for Windows"
 source: https://learn.chatgpt.com/docs/windows/windows-app
 path: /docs/windows/windows-app
 ---

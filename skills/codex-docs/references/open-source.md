@@ -1,5 +1,5 @@
 ---
-title: Open Source
+title: "Open Source"
 source: https://learn.chatgpt.com/docs/open-source
 path: /docs/open-source
 ---

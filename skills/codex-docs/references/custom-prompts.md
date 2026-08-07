@@ -1,5 +1,5 @@
 ---
-title: Custom Prompts
+title: "Custom Prompts"
 source: https://learn.chatgpt.com/docs/custom-prompts
 path: /docs/custom-prompts
 ---

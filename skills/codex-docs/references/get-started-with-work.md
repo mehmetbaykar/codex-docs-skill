@@ -1,5 +1,5 @@
 ---
-title: Get started with ChatGPT Work
+title: "Get started with ChatGPT Work"
 source: https://learn.chatgpt.com/docs/get-started-with-work
 path: /docs/get-started-with-work
 ---

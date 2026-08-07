@@ -1,5 +1,5 @@
 ---
-title: ChatGPT desktop app
+title: "ChatGPT desktop app"
 source: https://learn.chatgpt.com/docs/app
 path: /docs/app
 ---

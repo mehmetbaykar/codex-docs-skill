@@ -1,5 +1,5 @@
 ---
-title: Codex Security cloud setup
+title: "Codex Security cloud setup"
 source: https://learn.chatgpt.com/docs/security/setup
 path: /docs/security/setup
 ---

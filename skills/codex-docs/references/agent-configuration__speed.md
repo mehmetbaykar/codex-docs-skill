@@ -1,5 +1,5 @@
 ---
-title: Speed
+title: "Speed"
 source: https://learn.chatgpt.com/docs/agent-configuration/speed
 path: /docs/agent-configuration/speed
 ---

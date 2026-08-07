@@ -1,5 +1,5 @@
 ---
-title: Codex Security CLI quickstart
+title: "Codex Security CLI quickstart"
 source: https://learn.chatgpt.com/docs/security/cli
 path: /docs/security/cli
 ---

@@ -1,5 +1,5 @@
 ---
-title: What's new
+title: "What's new"
 source: https://learn.chatgpt.com/docs/whats-new
 path: /docs/whats-new
 ---

@@ -1,5 +1,5 @@
 ---
-title: Config basics
+title: "Config basics"
 source: https://learn.chatgpt.com/docs/config-file/config-basic
 path: /docs/config-file/config-basic
 ---

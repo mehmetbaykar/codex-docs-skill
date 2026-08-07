@@ -1,5 +1,5 @@
 ---
-title: Agent internet access
+title: "Agent internet access"
 source: https://learn.chatgpt.com/docs/cloud/internet-access
 path: /docs/cloud/internet-access
 ---

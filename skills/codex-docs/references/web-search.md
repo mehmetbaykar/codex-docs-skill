@@ -1,5 +1,5 @@
 ---
-title: Web search
+title: "Web search"
 source: https://learn.chatgpt.com/docs/web-search
 path: /docs/web-search
 ---

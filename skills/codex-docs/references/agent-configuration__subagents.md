@@ -1,5 +1,5 @@
 ---
-title: Subagents
+title: "Subagents"
 source: https://learn.chatgpt.com/docs/agent-configuration/subagents
 path: /docs/agent-configuration/subagents
 ---

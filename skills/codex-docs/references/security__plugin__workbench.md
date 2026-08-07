@@ -1,5 +1,5 @@
 ---
-title: Use the Codex Security workbench
+title: "Use the Codex Security workbench"
 source: https://learn.chatgpt.com/docs/security/plugin/workbench
 path: /docs/security/plugin/workbench
 ---

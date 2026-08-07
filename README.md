@@ -29,21 +29,28 @@ argument to list topics. The full agent-facing usage contract lives in
 
 ## What's mirrored
 
-The fetcher reads `https://learn.chatgpt.com/sitemap-index.xml` and mirrors
-Codex pages under `/docs` and `/docs/*` when they expose a `.md` source or
-have a special fetcher. If the sitemap yields no docs pages, it falls back to
-`https://learn.chatgpt.com/docs/llms.txt`. It excludes:
+The fetcher discovers pages from `https://learn.chatgpt.com/sitemap-index.xml`
+and the machine-readable index at `https://learn.chatgpt.com/docs/llms.txt`,
+then merges both sets. Neither index is complete on its own: the sitemap omits
+pages that llms.txt links only as `?surface=` query variants (such as
+`developer-commands` and `developer-settings`), and llms.txt omits the
+changelog. It mirrors pages under `/docs` and `/docs/*` that expose a `.md`
+source or have a special fetcher, and excludes:
 
 - `/docs/enterprise/*`
 - `/docs/videos`
-- non-doc site sections (use-cases, guides, videos, resources, community)
-- query-string variants of the same page
+- aggregate exports (`/docs/codex-manual`, `/docs/llms-full`)
+- cross-domain URLs
 
-Current counts, fetched files, skipped entries, and failed pages are recorded in
-`skills/codex-docs/references/docs_manifest.json`; the generated topic list
-lives in `skills/codex-docs/references/INDEX.md`. The Codex changelog is
-rendered from `https://learn.chatgpt.com/docs/changelog/rss.xml` because
-the changelog page does not expose an `.md` endpoint.
+Query-string variants collapse onto the single page they represent, and legacy
+`/codex/*` links inside page bodies are rewritten to their current `/docs/*`
+location.
+
+Current counts, fetched files, skipped entries, stale pages, and failed pages
+are recorded in `skills/codex-docs/references/docs_manifest.json`; the generated
+topic list lives in `skills/codex-docs/references/INDEX.md`. The Codex changelog
+is rendered from `https://learn.chatgpt.com/docs/changelog/rss.xml` because the
+changelog page does not expose an `.md` endpoint.
 
 ## Update
 
@@ -58,30 +65,50 @@ configure on the consumer side.
 
 ```bash
 python3 -m venv .venv
-.venv/bin/python -m pip install -r scripts/requirements.txt
+.venv/bin/python -m pip install -r scripts/requirements-dev.txt
+.venv/bin/python -m pytest tests -q
 .venv/bin/python scripts/fetch_codex_docs.py
 ```
 
-The fetcher reads the sitemap, downloads each page's `.md` source, cleans MDX
+The fetcher discovers pages, downloads each page's `.md` source, cleans MDX
 and JSX wrappers into plain Markdown, renders the changelog from RSS, and
 rewrites `skills/codex-docs/references/INDEX.md` and
 `skills/codex-docs/references/docs_manifest.json`. Files whose content hash is
 unchanged are not rewritten.
 
+## Freshness guarantees
+
+The mirror fails loudly rather than serving frozen content. A run aborts
+without committing when:
+
+- discovery returns no pages
+- no page could be fetched live
+- discovery drops below 80% of the previously mirrored page count
+- more than 20% of pages served stale content or exposed no usable Markdown
+- any page failed outright
+
+Every entry in `docs_manifest.json` records a `status` of `live` or `stale`,
+and `fetch_metadata` reports live, stale, skipped, and failed counts for the
+run.
+
 ## Repository layout
 
 ```text
 .
-├── agents/openai.yaml         # Codex App UI metadata + invocation policy
 ├── skills/
 │   └── codex-docs/
-│       ├── SKILL.md           # installed skill instructions and routing
-│       └── references/        # mirrored Codex docs + INDEX + manifest
+│       ├── agents/
+│       │   └── openai.yaml       # Agent UI metadata + invocation policy
+│       ├── SKILL.md              # installed skill instructions and routing
+│       └── references/           # mirrored Codex docs + INDEX + manifest
 ├── scripts/
-│   ├── fetch_codex_docs.py    # sitemap -> fetch -> clean -> write
-│   └── requirements.txt
+│   ├── fetch_codex_docs.py       # discover -> fetch -> clean -> write
+│   ├── requirements.txt
+│   └── requirements-dev.txt
+├── tests/
+│   └── test_fetch_codex_docs.py  # offline tests for the fetcher
 └── .github/workflows/
-    └── update-docs.yml        # cron every 3 hours
+    └── update-docs.yml           # tests on PRs, cron refresh every 3 hours
 ```
 
 ## Troubleshooting
@@ -89,11 +116,13 @@ unchanged are not rewritten.
 - If docs look stale, check the latest run of
   [Update Codex Documentation](../../actions/workflows/update-docs.yml) on this
   repository and reproduce locally with the steps in "Refresh locally" above.
-- If the scheduled fetch fails, the workflow opens or updates a
-`docs-fetch-failure` issue automatically.
+- If the scheduled fetch fails, the workflow opens or updates a failure issue
+  automatically and closes it after the next successful run.
+- If a page reports `stale` in `docs_manifest.json`, the previous content is
+  still served but upstream could not be reached on the last run.
 - If a single page renders poorly and the cleaner fell back, the upstream MDX is
-preserved under `skills/codex-docs/references/_raw/`, so the source of truth is
-never lost.
+  preserved under `skills/codex-docs/references/_raw/`, so the source of truth is
+  never lost.
 
 ## Notes
 

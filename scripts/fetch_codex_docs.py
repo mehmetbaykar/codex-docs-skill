@@ -28,16 +28,12 @@ RAW_DIR = REFERENCES_DIR / "_raw"
 MANIFEST_FILE = "docs_manifest.json"
 
 # Codex docs moved from developers.openai.com/codex to learn.chatgpt.com/docs
-# around 2026-07-09; HTML pages redirect, but the developers.openai.com sitemap
-# no longer lists /codex/* URLs.
+# around 2026-07-09; the legacy host now redirects here.
 DOCS_BASE_URL = "https://learn.chatgpt.com"
 DOCS_PATH_PREFIX = "/docs"
+LEGACY_DOCS_PATH_PREFIX = "/codex"
 SITEMAP_INDEX_URL = f"{DOCS_BASE_URL}/sitemap-index.xml"
 LLMS_TXT_URL = f"{DOCS_BASE_URL}{DOCS_PATH_PREFIX}/llms.txt"
-# Legacy host still serves .md twins and llms.txt via redirect; keep as fallback.
-LEGACY_DOCS_BASE_URL = "https://developers.openai.com"
-LEGACY_DOCS_PATH_PREFIX = "/codex"
-LEGACY_LLMS_TXT_URL = f"{LEGACY_DOCS_BASE_URL}{LEGACY_DOCS_PATH_PREFIX}/llms.txt"
 CODEX_CHANGELOG_RSS_URL = f"{DOCS_BASE_URL}{DOCS_PATH_PREFIX}/changelog/rss.xml"
 
 HEADERS = {
@@ -53,9 +49,20 @@ RETRY_BASE_DELAY_SECONDS = 1
 RETRY_MAX_DELAY_SECONDS = 10
 MAX_THROTTLE_RETRIES = 5
 
+# Coverage guards. A documentation mirror that silently keeps serving old
+# content is worse than one that fails loudly, so the run fails when live
+# coverage collapses.
+MAX_STALE_RATIO = 0.2
+MAX_SKIPPED_RATIO = 0.2
+MIN_DISCOVERY_RATIO = 0.8
+FETCH_TOOL_VERSION = "2.0"
+
 EXCLUDED_PREFIXES = (f"{DOCS_PATH_PREFIX}/enterprise/",)
 EXCLUDED_EXACT_PATHS = {
     f"{DOCS_PATH_PREFIX}/videos",
+    # Aggregate exports rather than individual documentation pages.
+    f"{DOCS_PATH_PREFIX}/codex-manual",
+    f"{DOCS_PATH_PREFIX}/llms-full",
 }
 SPECIAL_RSS_PATHS = {
     f"{DOCS_PATH_PREFIX}/changelog": CODEX_CHANGELOG_RSS_URL,
@@ -234,6 +241,14 @@ def xml_locs(xml_text: str) -> list[str]:
 def normalize_path(path: str) -> str:
     if path != "/" and path.endswith("/"):
         path = path[:-1]
+    if path.endswith(".md"):
+        path = path.removesuffix(".md")
+    # llms.txt links legacy /codex/* paths that now redirect to /docs/*.
+    if path == LEGACY_DOCS_PATH_PREFIX or path.startswith(
+        f"{LEGACY_DOCS_PATH_PREFIX}/"
+    ):
+        suffix = path.removeprefix(LEGACY_DOCS_PATH_PREFIX).strip("/")
+        path = f"{DOCS_PATH_PREFIX}/{suffix}" if suffix else DOCS_PATH_PREFIX
     return path
 
 
@@ -275,12 +290,10 @@ def title_from_path(path: str) -> str:
     return " ".join(part.capitalize() for part in re.split(r"[/_-]+", slug) if part)
 
 
-def _pages_from_urls(urls: set[str]) -> list[CodexPage]:
+def pages_from_paths(paths: set[str]) -> list[CodexPage]:
     pages: list[CodexPage] = []
     filename_to_path: dict[str, str] = {}
-    for url in sorted(urls):
-        parsed = urlparse(url)
-        path = normalize_path(parsed.path)
+    for path in sorted(paths):
         filename = path_to_filename(path)
         prior_path = filename_to_path.get(filename)
         if prior_path is not None and prior_path != path:
@@ -300,107 +313,87 @@ def _pages_from_urls(urls: set[str]) -> list[CodexPage]:
     return pages
 
 
-def _legacy_markdown_url_to_docs_url(url: str) -> str | None:
-    """Map a legacy developers.openai.com/codex/*.md link to a docs page URL."""
+def paths_from_sitemaps(session: requests.Session) -> set[str]:
+    """Collect documentation paths from the sitemap index."""
 
-    parsed = urlparse(url)
-    if parsed.netloc != urlparse(LEGACY_DOCS_BASE_URL).netloc:
-        return None
-    path = normalize_path(parsed.path)
-    if not path.endswith(".md"):
-        return None
-    path = path[:-3]
-    if not (path == LEGACY_DOCS_PATH_PREFIX or path.startswith(f"{LEGACY_DOCS_PATH_PREFIX}/")):
-        return None
-    slug = path.removeprefix(LEGACY_DOCS_PATH_PREFIX).strip("/")
-    # Skip aggregate / non-page exports that are not individual doc pages.
-    if slug in {"codex-manual", "llms-full"}:
-        return None
-    docs_path = DOCS_PATH_PREFIX if not slug else f"{DOCS_PATH_PREFIX}/{slug}"
-    return f"{DOCS_BASE_URL}{docs_path}"
-
-
-def discover_from_llms_txt(session: requests.Session) -> list[CodexPage]:
-    """Discover pages from llms.txt when the HTML sitemap has no Codex entries."""
-
-    for llms_url in (LLMS_TXT_URL, LEGACY_LLMS_TXT_URL):
-        logger.info("Fetching llms.txt fallback: %s", llms_url)
-        try:
-            llms_text = fetch_text(session, llms_url)
-        except PAGE_PROCESSING_ERRORS as error:
-            logger.warning("Failed to fetch %s: %s", llms_url, error)
-            continue
-        if not llms_text:
-            continue
-
-        urls: set[str] = set()
-        for match in re.finditer(r"\((https?://[^)\s]+\.md)\)", llms_text):
-            linked = match.group(1)
-            docs_url = _legacy_markdown_url_to_docs_url(linked)
-            if docs_url is None:
-                parsed = urlparse(linked)
-                if parsed.netloc != urlparse(DOCS_BASE_URL).netloc:
-                    continue
-                path = normalize_path(parsed.path)
-                if not path.endswith(".md"):
-                    continue
-                path = path[:-3]
-                if path.rstrip("/").endswith("/codex-manual"):
-                    continue
-                docs_url = f"{DOCS_BASE_URL}{path}"
-            if is_codex_doc_url(docs_url):
-                urls.add(docs_url)
-
-        # Always include the docs root overview page.
-        urls.add(f"{DOCS_BASE_URL}{DOCS_PATH_PREFIX}")
-        pages = _pages_from_urls(urls)
-        if pages:
-            logger.info(
-                "Discovered %s Codex documentation URLs from llms.txt", len(pages)
-            )
-            return pages
-
-    return []
-
-
-def discover_codex_pages(session: requests.Session) -> list[CodexPage]:
     logger.info("Fetching sitemap index: %s", SITEMAP_INDEX_URL)
     try:
         sitemap_index = fetch_text(session, SITEMAP_INDEX_URL)
     except PAGE_PROCESSING_ERRORS as error:
         logger.warning("Sitemap index fetch failed: %s", error)
-        sitemap_index = None
+        return set()
 
-    pages: list[CodexPage] = []
-    if sitemap_index:
-        sitemap_urls = xml_locs(sitemap_index)
-        if not sitemap_urls:
-            logger.warning("No sitemap URLs found in sitemap index")
-        else:
-            codex_urls: set[str] = set()
-            for sitemap_url in sitemap_urls:
-                logger.info("Fetching sitemap: %s", sitemap_url)
-                try:
-                    sitemap_text = fetch_text(session, sitemap_url)
-                except PAGE_PROCESSING_ERRORS as error:
-                    logger.warning("Failed to fetch sitemap %s: %s", sitemap_url, error)
-                    continue
-                if sitemap_text is None:
-                    continue
-                codex_urls.update(
-                    url for url in xml_locs(sitemap_text) if is_codex_doc_url(url)
-                )
-            pages = _pages_from_urls(codex_urls)
-            logger.info(
-                "Discovered %s Codex documentation URLs after filtering", len(pages)
-            )
+    if not sitemap_index:
+        return set()
 
-    if not pages:
-        logger.warning(
-            "Sitemap discovery found no Codex pages; falling back to llms.txt"
+    sitemap_urls = xml_locs(sitemap_index)
+    if not sitemap_urls:
+        logger.warning("No sitemap URLs found in sitemap index")
+        return set()
+
+    paths: set[str] = set()
+    for sitemap_url in sitemap_urls:
+        logger.info("Fetching sitemap: %s", sitemap_url)
+        try:
+            sitemap_text = fetch_text(session, sitemap_url)
+        except PAGE_PROCESSING_ERRORS as error:
+            logger.warning("Failed to fetch sitemap %s: %s", sitemap_url, error)
+            continue
+        if sitemap_text is None:
+            continue
+        paths.update(
+            normalize_path(urlparse(url).path)
+            for url in xml_locs(sitemap_text)
+            if is_codex_doc_url(url)
         )
-        pages = discover_from_llms_txt(session)
 
+    logger.info("Discovered %s documentation paths from the sitemap", len(paths))
+    return paths
+
+
+def paths_from_llms_txt(session: requests.Session) -> set[str]:
+    """Collect documentation paths from the llms.txt index.
+
+    llms.txt links some pages only as query variants of a shared base page
+    (for example `developer-commands.md?surface=cli` and `?surface=ide`), so
+    the query is stripped and the base path is mirrored once.
+    """
+
+    logger.info("Fetching llms.txt: %s", LLMS_TXT_URL)
+    try:
+        llms_text = fetch_text(session, LLMS_TXT_URL, allow_404=True)
+    except PAGE_PROCESSING_ERRORS as error:
+        logger.warning("Failed to fetch %s: %s", LLMS_TXT_URL, error)
+        return set()
+    if not llms_text:
+        return set()
+
+    paths: set[str] = set()
+    for match in re.finditer(r"\((https?://[^)\s]+?\.md)(?:\?[^)\s]*)?\)", llms_text):
+        parsed = urlparse(match.group(1))
+        if parsed.netloc not in {
+            urlparse(DOCS_BASE_URL).netloc,
+            "developers.openai.com",
+        }:
+            continue
+        path = normalize_path(parsed.path)
+        if is_codex_doc_url(f"{DOCS_BASE_URL}{path}"):
+            paths.add(path)
+
+    logger.info("Discovered %s documentation paths from llms.txt", len(paths))
+    return paths
+
+
+def discover_codex_pages(session: requests.Session) -> list[CodexPage]:
+    """Discover pages from the sitemap and llms.txt, then merge both sets.
+
+    Neither index is complete on its own: the sitemap omits pages that
+    llms.txt links only as query variants, and llms.txt omits the changelog.
+    """
+
+    paths = paths_from_sitemaps(session) | paths_from_llms_txt(session)
+    pages = pages_from_paths(paths)
+    logger.info("Discovered %s Codex documentation URLs after filtering", len(pages))
     return pages
 
 
@@ -536,6 +529,28 @@ def _apply_outside_fences(text: str, transform) -> str:
     )
 
 
+def absolutize_links(content: str) -> str:
+    """Rewrite root-relative Markdown links to absolute documentation URLs.
+
+    Legacy `/codex/...` targets are mapped onto their current `/docs/...`
+    location so mirrored pages do not link to redirect-only paths.
+    """
+
+    def replace(match: re.Match[str]) -> str:
+        target = match.group("target")
+        path, separator, tail = target.partition("#")
+        if path == LEGACY_DOCS_PATH_PREFIX or path.startswith(
+            f"{LEGACY_DOCS_PATH_PREFIX}/"
+        ):
+            suffix = path.removeprefix(LEGACY_DOCS_PATH_PREFIX).strip("/")
+            path = f"{DOCS_PATH_PREFIX}/{suffix}" if suffix else DOCS_PATH_PREFIX
+        return f"]({DOCS_BASE_URL}{path}{separator}{tail})"
+
+    # Anchored on the link target rather than the label, because labels can
+    # themselves contain brackets (for example `` `[auto_review].policy` ``).
+    return re.sub(r"\]\((?P<target>/(?!/)[^)\s]*)\)", replace, content)
+
+
 def clean_mdx(raw_content: str) -> str:
     content = raw_content.replace("\r\n", "\n")
 
@@ -546,6 +561,7 @@ def clean_mdx(raw_content: str) -> str:
         text = convert_html_links(text)
         text = convert_keyboard_tags(text)
         text = strip_inline_markdown_noise(text)
+        text = absolutize_links(text)
         return text
 
     content = _apply_outside_fences(content, outside_fences)
@@ -584,10 +600,17 @@ def extract_title(content: str, fallback: str) -> str:
     return fallback
 
 
+def yaml_quoted(value: str) -> str:
+    """Quote a YAML scalar without escaping non-ASCII characters."""
+
+    escaped = value.replace("\\", "\\\\").replace('"', '\\"')
+    return f'"{escaped}"'
+
+
 def frontmatter_for(page: CodexPage, *, source_url: str) -> str:
     return (
         "---\n"
-        f"title: {json.dumps(page.title)[1:-1]}\n"
+        f"title: {yaml_quoted(page.title)}\n"
         f"source: {source_url}\n"
         f"path: {page.path}\n"
         "---\n\n"
@@ -687,6 +710,8 @@ def save_page(
     current_files: set[str],
     *,
     raw_content: str | None = None,
+    status: str = "live",
+    preserve_raw: bool = False,
 ) -> None:
     content_hash = sha256(content)
     old_entry = manifest.get("files", {}).get(page.filename, {})
@@ -700,8 +725,13 @@ def save_page(
     else:
         logger.info("Unchanged: %s", page.filename)
 
+    raw_path = RAW_DIR / page.filename
     if raw_content is not None:
-        write_text_if_changed(RAW_DIR / page.filename, raw_content)
+        write_text_if_changed(raw_path, raw_content)
+    elif not preserve_raw and raw_path.exists():
+        # The cleaner recovered for this page, so the raw copy is now stale.
+        logger.info("Removing stale raw copy: %s", page.filename)
+        raw_path.unlink()
 
     new_files[page.filename] = {
         "title": extract_title(content, page.title),
@@ -710,8 +740,58 @@ def save_page(
         "source_url": source_url,
         "hash": content_hash,
         "last_updated": last_updated,
+        "status": status,
     }
     current_files.add(page.filename)
+
+
+def load_previous_reference(page: CodexPage, manifest: dict) -> tuple[str, str] | None:
+    """Return ``(content, source_url)`` for a previously mirrored page."""
+
+    entry = manifest.get("files", {}).get(page.filename)
+    reference_path = REFERENCES_DIR / page.filename
+    if not isinstance(entry, dict) or not reference_path.exists():
+        return None
+    return reference_path.read_text(encoding="utf-8"), entry.get("source_url", page.url)
+
+
+def check_coverage_guards(
+    *,
+    discovered: int,
+    live: int,
+    stale: int,
+    skipped: int,
+    previous_file_count: int,
+) -> list[str]:
+    """Return the reasons this run must fail instead of committing."""
+
+    problems: list[str] = []
+    if discovered == 0:
+        problems.append("Discovery returned no documentation pages")
+        return problems
+
+    if live == 0:
+        problems.append("No page was fetched live; the mirror would be frozen")
+
+    if previous_file_count and discovered < previous_file_count * MIN_DISCOVERY_RATIO:
+        problems.append(
+            f"Discovered {discovered} pages, below {MIN_DISCOVERY_RATIO:.0%} of the "
+            f"previous {previous_file_count}; refusing to delete references"
+        )
+
+    if stale > discovered * MAX_STALE_RATIO:
+        problems.append(
+            f"{stale}/{discovered} pages served stale content, above the "
+            f"{MAX_STALE_RATIO:.0%} threshold"
+        )
+
+    if skipped > discovered * MAX_SKIPPED_RATIO:
+        problems.append(
+            f"{skipped}/{discovered} pages had no usable Markdown, above the "
+            f"{MAX_SKIPPED_RATIO:.0%} threshold"
+        )
+
+    return problems
 
 
 def fetch_and_save_pages(
@@ -721,6 +801,7 @@ def fetch_and_save_pages(
     current_files: set[str] = set()
     skipped: list[dict] = []
     failed: list[dict] = []
+    stale: list[dict] = []
     successful = 0
 
     for index, page in enumerate(pages, start=1):
@@ -795,8 +876,31 @@ def fetch_and_save_pages(
             successful += 1
             time.sleep(RATE_LIMIT_SECONDS)
         except PAGE_PROCESSING_ERRORS as error:
-            logger.error("Failed to process %s: %s", page.path, error)
-            failed.append({"path": page.path, "url": page.url, "error": str(error)})
+            previous = load_previous_reference(page, manifest)
+            if previous is None:
+                logger.error("Failed to process %s: %s", page.path, error)
+                failed.append(
+                    {"path": page.path, "url": page.url, "error": str(error)}
+                )
+                continue
+
+            previous_content, previous_source = previous
+            logger.warning(
+                "Serving stale content for %s after fetch failure: %s",
+                page.path,
+                error,
+            )
+            stale.append({"path": page.path, "url": page.url, "error": str(error)})
+            save_page(
+                page,
+                previous_content,
+                previous_source,
+                manifest,
+                new_files,
+                current_files,
+                status="stale",
+                preserve_raw=True,
+            )
 
     cleanup_old_files(manifest, current_files)
 
@@ -807,6 +911,7 @@ def fetch_and_save_pages(
         "description": "Codex documentation mirror manifest. Files live beside this manifest in references/.",
         "source": {
             "sitemap_index_url": SITEMAP_INDEX_URL,
+            "llms_txt_url": LLMS_TXT_URL,
             "base_url": DOCS_BASE_URL,
         },
         "filters": {
@@ -820,10 +925,12 @@ def fetch_and_save_pages(
         "fetch_metadata": {
             "total_pages_discovered": len(pages),
             "pages_fetched_successfully": successful,
+            "pages_stale": len(stale),
             "pages_skipped": len(skipped),
             "pages_failed": len(failed),
             "failed_pages": failed,
-            "fetch_tool_version": "1.0",
+            "stale_pages": stale,
+            "fetch_tool_version": FETCH_TOOL_VERSION,
         },
     }
     if _manifest_projection(manifest) == _manifest_projection(new_manifest):
@@ -835,8 +942,17 @@ def fetch_and_save_pages(
         json.dumps(new_manifest, indent=2, sort_keys=True) + "\n",
     )
 
+    problems = check_coverage_guards(
+        discovered=len(pages),
+        live=successful,
+        stale=len(stale),
+        skipped=len(skipped),
+        previous_file_count=len(manifest.get("files", {})),
+    )
     if failed:
-        raise RuntimeError(f"{len(failed)} page(s) failed; see {MANIFEST_FILE}")
+        problems.append(f"{len(failed)} page(s) failed; see {MANIFEST_FILE}")
+    if problems:
+        raise RuntimeError("; ".join(problems))
 
     return new_manifest
 
@@ -863,9 +979,10 @@ def main() -> int:
     elapsed = time.monotonic() - start
     metadata = new_manifest["fetch_metadata"]
     logger.info(
-        "Fetch complete in %.1fs: %s fetched, %s skipped, %s failed",
+        "Fetch complete in %.1fs: %s live, %s stale, %s skipped, %s failed",
         elapsed,
         metadata["pages_fetched_successfully"],
+        metadata["pages_stale"],
         metadata["pages_skipped"],
         metadata["pages_failed"],
     )
