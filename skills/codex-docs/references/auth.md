@@ -1,5 +1,5 @@
 ---
-title: Authentication
+title: "Authentication"
 source: https://learn.chatgpt.com/docs/auth
 path: /docs/auth
 ---

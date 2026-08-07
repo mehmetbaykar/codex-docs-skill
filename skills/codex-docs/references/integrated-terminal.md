@@ -1,5 +1,5 @@
 ---
-title: Integrated terminal
+title: "Integrated terminal"
 source: https://learn.chatgpt.com/docs/integrated-terminal
 path: /docs/integrated-terminal
 ---

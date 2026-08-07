@@ -1,5 +1,5 @@
 ---
-title: Codex CLI
+title: "Codex CLI"
 source: https://learn.chatgpt.com/docs/codex/cli
 path: /docs/codex/cli
 ---

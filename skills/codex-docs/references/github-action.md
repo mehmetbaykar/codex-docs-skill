@@ -1,5 +1,5 @@
 ---
-title: Codex GitHub Action
+title: "Codex GitHub Action"
 source: https://learn.chatgpt.com/docs/github-action
 path: /docs/github-action
 ---

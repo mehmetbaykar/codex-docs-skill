@@ -1,5 +1,5 @@
 ---
-title: Visualizations
+title: "Visualizations"
 source: https://learn.chatgpt.com/docs/visualizations
 path: /docs/visualizations
 ---

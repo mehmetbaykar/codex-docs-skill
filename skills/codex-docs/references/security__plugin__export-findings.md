@@ -1,5 +1,5 @@
 ---
-title: Export and track security findings
+title: "Export and track security findings"
 source: https://learn.chatgpt.com/docs/security/plugin/export-findings
 path: /docs/security/plugin/export-findings
 ---

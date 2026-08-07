@@ -1,5 +1,5 @@
 ---
-title: Codex Security CLI FAQ
+title: "Codex Security CLI FAQ"
 source: https://learn.chatgpt.com/docs/security/cli/faq
 path: /docs/security/cli/faq
 ---

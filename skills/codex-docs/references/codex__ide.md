@@ -1,5 +1,5 @@
 ---
-title: Codex IDE extension
+title: "Codex IDE extension"
 source: https://learn.chatgpt.com/docs/codex/ide
 path: /docs/codex/ide
 ---

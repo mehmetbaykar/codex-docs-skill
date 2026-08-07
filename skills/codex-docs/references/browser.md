@@ -1,5 +1,5 @@
 ---
-title: Browser
+title: "Browser"
 source: https://learn.chatgpt.com/docs/browser
 path: /docs/browser
 ---

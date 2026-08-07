@@ -1,5 +1,5 @@
 ---
-title: Codex Security CLI reference
+title: "Codex Security CLI reference"
 source: https://learn.chatgpt.com/docs/security/cli/reference
 path: /docs/security/cli/reference
 ---

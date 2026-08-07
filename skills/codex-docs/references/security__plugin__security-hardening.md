@@ -1,5 +1,5 @@
 ---
-title: Propose security hardening
+title: "Propose security hardening"
 source: https://learn.chatgpt.com/docs/security/plugin/security-hardening
 path: /docs/security/plugin/security-hardening
 ---

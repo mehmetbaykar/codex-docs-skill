@@ -1,5 +1,5 @@
 ---
-title: Use ChatGPT Work and Codex with Amazon Bedrock
+title: "Use ChatGPT Work and Codex with Amazon Bedrock"
 source: https://learn.chatgpt.com/docs/amazon-bedrock
 path: /docs/amazon-bedrock
 ---

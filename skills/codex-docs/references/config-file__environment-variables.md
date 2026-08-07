@@ -1,5 +1,5 @@
 ---
-title: Environment variables
+title: "Environment variables"
 source: https://learn.chatgpt.com/docs/config-file/environment-variables
 path: /docs/config-file/environment-variables
 ---

@@ -1,5 +1,5 @@
 ---
-title: Codex Remote
+title: "Codex Remote"
 source: https://learn.chatgpt.com/docs/remote
 path: /docs/remote
 ---

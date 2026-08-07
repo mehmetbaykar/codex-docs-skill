@@ -1,5 +1,5 @@
 ---
-title: Image generation
+title: "Image generation"
 source: https://learn.chatgpt.com/docs/image-generation
 path: /docs/image-generation
 ---

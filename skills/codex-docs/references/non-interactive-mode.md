@@ -1,5 +1,5 @@
 ---
-title: Non-interactive mode
+title: "Non-interactive mode"
 source: https://learn.chatgpt.com/docs/non-interactive-mode
 path: /docs/non-interactive-mode
 ---

@@ -1,5 +1,5 @@
 ---
-title: Use Codex in Slack
+title: "Use Codex in Slack"
 source: https://learn.chatgpt.com/docs/third-party/slack
 path: /docs/third-party/slack
 ---

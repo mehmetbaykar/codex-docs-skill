@@ -1,5 +1,5 @@
 ---
-title: Hooks
+title: "Hooks"
 source: https://learn.chatgpt.com/docs/hooks
 path: /docs/hooks
 ---

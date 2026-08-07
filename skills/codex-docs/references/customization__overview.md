@@ -1,5 +1,5 @@
 ---
-title: Customization
+title: "Customization"
 source: https://learn.chatgpt.com/docs/customization/overview
 path: /docs/customization/overview
 ---

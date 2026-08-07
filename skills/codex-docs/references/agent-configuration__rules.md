@@ -1,5 +1,5 @@
 ---
-title: Rules
+title: "Rules"
 source: https://learn.chatgpt.com/docs/agent-configuration/rules
 path: /docs/agent-configuration/rules
 ---

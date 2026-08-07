@@ -1,5 +1,5 @@
 ---
-title: Chrome extension
+title: "Chrome extension"
 source: https://learn.chatgpt.com/docs/chrome-extension
 path: /docs/chrome-extension
 ---

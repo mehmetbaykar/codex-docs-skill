@@ -1,5 +1,5 @@
 ---
-title: ChatGPT on the web
+title: "ChatGPT on the web"
 source: https://learn.chatgpt.com/docs/web
 path: /docs/web
 ---

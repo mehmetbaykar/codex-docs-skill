@@ -1,5 +1,5 @@
 ---
-title: Image inputs
+title: "Image inputs"
 source: https://learn.chatgpt.com/docs/image-inputs
 path: /docs/image-inputs
 ---

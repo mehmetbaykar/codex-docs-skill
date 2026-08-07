@@ -1,5 +1,5 @@
 ---
-title: Build skills
+title: "Build skills"
 source: https://learn.chatgpt.com/docs/build-skills
 path: /docs/build-skills
 ---

@@ -1,5 +1,5 @@
 ---
-title: Run bulk security scans
+title: "Run bulk security scans"
 source: https://learn.chatgpt.com/docs/security/cli/bulk-scans
 path: /docs/security/cli/bulk-scans
 ---

@@ -1,5 +1,5 @@
 ---
-title: Record & Replay
+title: "Record & Replay"
 source: https://learn.chatgpt.com/docs/extend/record-and-replay
 path: /docs/extend/record-and-replay
 ---

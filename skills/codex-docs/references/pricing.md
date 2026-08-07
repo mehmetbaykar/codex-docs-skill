@@ -1,5 +1,5 @@
 ---
-title: Pricing
+title: "Pricing"
 source: https://learn.chatgpt.com/docs/pricing
 path: /docs/pricing
 ---

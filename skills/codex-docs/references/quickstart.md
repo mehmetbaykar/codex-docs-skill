@@ -1,5 +1,5 @@
 ---
-title: Quickstart
+title: "Quickstart"
 source: https://learn.chatgpt.com/docs/quickstart
 path: /docs/quickstart
 ---

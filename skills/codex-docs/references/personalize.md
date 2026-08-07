@@ -1,5 +1,5 @@
 ---
-title: Personalize ChatGPT
+title: "Personalize ChatGPT"
 source: https://learn.chatgpt.com/docs/personalize
 path: /docs/personalize
 ---

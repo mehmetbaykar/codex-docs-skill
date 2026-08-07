@@ -1,5 +1,5 @@
 ---
-title: Codex SDK
+title: "Codex SDK"
 source: https://learn.chatgpt.com/docs/codex-sdk
 path: /docs/codex-sdk
 ---

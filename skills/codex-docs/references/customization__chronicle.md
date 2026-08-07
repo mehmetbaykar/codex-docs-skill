@@ -1,5 +1,5 @@
 ---
-title: Chronicle
+title: "Chronicle"
 source: https://learn.chatgpt.com/docs/customization/chronicle
 path: /docs/customization/chronicle
 ---

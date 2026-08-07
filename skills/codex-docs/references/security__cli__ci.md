@@ -1,5 +1,5 @@
 ---
-title: Run Codex Security in CI
+title: "Run Codex Security in CI"
 source: https://learn.chatgpt.com/docs/security/cli/ci
 path: /docs/security/cli/ci
 ---

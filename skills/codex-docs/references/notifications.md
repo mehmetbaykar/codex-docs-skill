@@ -1,5 +1,5 @@
 ---
-title: Notifications
+title: "Notifications"
 source: https://learn.chatgpt.com/docs/notifications
 path: /docs/notifications
 ---

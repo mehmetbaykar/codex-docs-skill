@@ -1,5 +1,5 @@
 ---
-title: Sample Configuration
+title: "Sample Configuration"
 source: https://learn.chatgpt.com/docs/config-file/config-sample
 path: /docs/config-file/config-sample
 ---

@@ -1,5 +1,5 @@
 ---
-title: Agent approvals & security
+title: "Agent approvals & security"
 source: https://learn.chatgpt.com/docs/agent-approvals-security
 path: /docs/agent-approvals-security
 ---

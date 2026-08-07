@@ -1,5 +1,5 @@
 ---
-title: Prompting
+title: "Prompting"
 source: https://learn.chatgpt.com/docs/prompting
 path: /docs/prompting
 ---

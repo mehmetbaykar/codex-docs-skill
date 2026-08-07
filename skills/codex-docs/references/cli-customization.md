@@ -1,5 +1,5 @@
 ---
-title: CLI customization
+title: "CLI customization"
 source: https://learn.chatgpt.com/docs/cli-customization
 path: /docs/cli-customization
 ---

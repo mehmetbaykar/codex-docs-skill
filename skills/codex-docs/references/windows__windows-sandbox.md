@@ -1,5 +1,5 @@
 ---
-title: Windows sandbox
+title: "Windows sandbox"
 source: https://learn.chatgpt.com/docs/windows/windows-sandbox
 path: /docs/windows/windows-sandbox
 ---

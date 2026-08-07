@@ -1,5 +1,5 @@
 ---
-title: Remote connections
+title: "Remote connections"
 source: https://learn.chatgpt.com/docs/remote-connections
 path: /docs/remote-connections
 ---

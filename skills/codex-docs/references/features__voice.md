@@ -1,5 +1,5 @@
 ---
-title: ChatGPT Voice
+title: "ChatGPT Voice"
 source: https://learn.chatgpt.com/docs/features/voice
 path: /docs/features/voice
 ---

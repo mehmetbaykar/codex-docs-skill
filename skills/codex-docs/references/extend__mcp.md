@@ -1,5 +1,5 @@
 ---
-title: Model Context Protocol
+title: "Model Context Protocol"
 source: https://learn.chatgpt.com/docs/extend/mcp
 path: /docs/extend/mcp
 ---

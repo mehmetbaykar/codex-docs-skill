@@ -1,5 +1,5 @@
 ---
-title: Improving the threat model
+title: "Improving the threat model"
 source: https://learn.chatgpt.com/docs/security/threat-model
 path: /docs/security/threat-model
 ---

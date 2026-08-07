@@ -1,5 +1,5 @@
 ---
-title: Configuration Reference
+title: "Configuration Reference"
 source: https://learn.chatgpt.com/docs/config-file/config-reference
 path: /docs/config-file/config-reference
 ---

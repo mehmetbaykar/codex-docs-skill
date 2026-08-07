@@ -1,5 +1,5 @@
 ---
-title: Appshots
+title: "Appshots"
 source: https://learn.chatgpt.com/docs/appshots
 path: /docs/appshots
 ---

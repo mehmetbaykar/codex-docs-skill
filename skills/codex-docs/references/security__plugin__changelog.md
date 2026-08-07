@@ -1,5 +1,5 @@
 ---
-title: Codex Security plugin changelog
+title: "Codex Security plugin changelog"
 source: https://learn.chatgpt.com/docs/security/plugin/changelog
 path: /docs/security/plugin/changelog
 ---

@@ -1,5 +1,5 @@
 ---
-title: Review GitHub pull requests with Codex
+title: "Review GitHub pull requests with Codex"
 source: https://learn.chatgpt.com/docs/third-party/github
 path: /docs/third-party/github
 ---

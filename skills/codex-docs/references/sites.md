@@ -1,5 +1,5 @@
 ---
-title: Sites
+title: "Sites"
 source: https://learn.chatgpt.com/docs/sites
 path: /docs/sites
 ---

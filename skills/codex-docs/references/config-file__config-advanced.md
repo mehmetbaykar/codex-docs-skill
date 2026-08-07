@@ -1,5 +1,5 @@
 ---
-title: Advanced Configuration
+title: "Advanced Configuration"
 source: https://learn.chatgpt.com/docs/config-file/config-advanced
 path: /docs/config-file/config-advanced
 ---

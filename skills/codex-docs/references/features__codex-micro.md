@@ -1,5 +1,5 @@
 ---
-title: Codex Micro
+title: "Codex Micro"
 source: https://learn.chatgpt.com/docs/features/codex-micro
 path: /docs/features/codex-micro
 ---
