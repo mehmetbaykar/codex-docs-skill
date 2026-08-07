@@ -1,5 +1,5 @@
 ---
-title: WSL
+title: "WSL"
 source: https://learn.chatgpt.com/docs/windows/wsl
 path: /docs/windows/wsl
 ---

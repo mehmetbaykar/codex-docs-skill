@@ -1,5 +1,5 @@
 ---
-title: Memories
+title: "Memories"
 source: https://learn.chatgpt.com/docs/customization/memories
 path: /docs/customization/memories
 ---

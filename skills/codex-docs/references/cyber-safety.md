@@ -1,5 +1,5 @@
 ---
-title: Cyber Safety
+title: "Cyber Safety"
 source: https://learn.chatgpt.com/docs/cyber-safety
 path: /docs/cyber-safety
 ---

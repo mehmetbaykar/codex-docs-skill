@@ -1,5 +1,5 @@
 ---
-title: Fix and verify security findings
+title: "Fix and verify security findings"
 source: https://learn.chatgpt.com/docs/security/plugin/fix-findings
 path: /docs/security/plugin/fix-findings
 ---

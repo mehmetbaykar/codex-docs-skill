@@ -1,5 +1,5 @@
 ---
-title: Pets
+title: "Pets"
 source: https://learn.chatgpt.com/docs/pets
 path: /docs/pets
 ---

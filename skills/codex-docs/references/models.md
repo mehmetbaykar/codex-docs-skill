@@ -1,5 +1,5 @@
 ---
-title: Models
+title: "Models"
 source: https://learn.chatgpt.com/docs/models
 path: /docs/models
 ---

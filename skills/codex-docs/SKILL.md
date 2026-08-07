@@ -52,13 +52,16 @@ this skill does not apply.
 
 ## Freshness and fallback
 
-The mirror is refreshed every 3 hours by upstream CI. If the local content looks
-stale, contradicted by the user, or empty:
+The mirror is refreshed every 3 hours by upstream CI, which fails rather than
+committing frozen content. If the local content looks stale, contradicted by the
+user, or empty:
 
 1. Suggest the user run `npx skills update codex-docs`.
-2. Cross-check the canonical URL via `original_url` in
+2. Check the file's entry in `references/docs_manifest.json`: a `status` of
+   `stale` means upstream could not be reached on the last run.
+3. Cross-check the canonical URL via `original_url` in
    `references/docs_manifest.json` and offer it as a follow-up source.
-3. If a specific page failed MDX cleaning, the unmodified source is preserved at
+4. If a specific page failed MDX cleaning, the unmodified source is preserved at
    `references/_raw/<slug>.md` -- read that as a fallback.
 
 ## Examples
@@ -66,7 +69,8 @@ stale, contradicted by the user, or empty:
 | User asks | Read |
 | --- | --- |
 | "How do Codex hooks work?" | `references/hooks.md` |
-| "What features are available?" | `references/features.md` |
+| "What CLI flags and slash commands exist?" | `references/developer-commands.md` |
+| "What can I set in config.toml?" | `references/config-file__config-reference.md` |
 | "How do cloud environments work?" | `references/environments__cloud-environment.md` |
 | "How should I write AGENTS.md?" | `references/agent-configuration__agents-md.md` |
 | No topic or unclear topic | `references/INDEX.md` |

@@ -1,5 +1,5 @@
 ---
-title: Custom instructions with AGENTS.md
+title: "Custom instructions with AGENTS.md"
 source: https://learn.chatgpt.com/docs/agent-configuration/agents-md
 path: /docs/agent-configuration/agents-md
 ---

@@ -1,5 +1,5 @@
 ---
-title: Work with files
+title: "Work with files"
 source: https://learn.chatgpt.com/docs/artifacts-viewer
 path: /docs/artifacts-viewer
 ---

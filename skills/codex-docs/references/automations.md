@@ -1,5 +1,5 @@
 ---
-title: Scheduled tasks
+title: "Scheduled tasks"
 source: https://learn.chatgpt.com/docs/automations
 path: /docs/automations
 ---

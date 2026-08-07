@@ -1,5 +1,5 @@
 ---
-title: Use Codex with the Agents SDK
+title: "Use Codex with the Agents SDK"
 source: https://learn.chatgpt.com/docs/mcp-server
 path: /docs/mcp-server
 ---

@@ -1,5 +1,5 @@
 ---
-title: Computer Use
+title: "Computer Use"
 source: https://learn.chatgpt.com/docs/computer-use
 path: /docs/computer-use
 ---

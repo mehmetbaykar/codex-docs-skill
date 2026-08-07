@@ -1,5 +1,5 @@
 ---
-title: Run a Codex Security scan
+title: "Run a Codex Security scan"
 source: https://learn.chatgpt.com/docs/security/plugin/scans
 path: /docs/security/plugin/scans
 ---

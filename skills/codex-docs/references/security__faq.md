@@ -1,5 +1,5 @@
 ---
-title: Codex Security cloud FAQ
+title: "Codex Security cloud FAQ"
 source: https://learn.chatgpt.com/docs/security/faq
 path: /docs/security/faq
 ---

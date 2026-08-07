@@ -1,5 +1,5 @@
 ---
-title: Codex Security TypeScript SDK
+title: "Codex Security TypeScript SDK"
 source: https://learn.chatgpt.com/docs/security/sdk
 path: /docs/security/sdk
 ---
