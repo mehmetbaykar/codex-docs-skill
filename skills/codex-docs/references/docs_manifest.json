@@ -750,8 +750,8 @@
       "title": "Codex Security"
     },
     "security__cli.md": {
-      "hash": "0e57651f1eacb45d2dedd0500c467c9774ed3fce3d0f4f48b9052e30a5f7b851",
-      "last_updated": "2026-08-07T17:18:16+00:00",
+      "hash": "acfc9f78281a2ad59c571b123f4aa54c1dbf79c68f3928bae82d7f305e42d45a",
+      "last_updated": "2026-08-08T02:21:31+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli",
       "path": "/docs/security/cli",
       "source_url": "https://learn.chatgpt.com/docs/security/cli.md",
@@ -759,8 +759,8 @@
       "title": "Codex Security CLI quickstart"
     },
     "security__cli__bulk-scans.md": {
-      "hash": "69a524910927bae5e5a75b7ec3b96d769e4ff77f82f0f24526c25673f2a5e463",
-      "last_updated": "2026-08-07T17:18:16+00:00",
+      "hash": "0c26212d965dda8cda6d78ae56565dc0af0ea819bb0f880b4aa8926912107fa8",
+      "last_updated": "2026-08-08T02:21:31+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/bulk-scans",
       "path": "/docs/security/cli/bulk-scans",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/bulk-scans.md",
@@ -768,8 +768,8 @@
       "title": "Run bulk security scans"
     },
     "security__cli__ci.md": {
-      "hash": "2632ca627ff7eace66e9430244cdda0790a5a79be490eb4756c67492847aedcf",
-      "last_updated": "2026-08-07T17:18:17+00:00",
+      "hash": "62ec31c30ed57de8dcf5a4554f104607c351b64f4efc9c44a71ed0d392111347",
+      "last_updated": "2026-08-08T02:21:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/ci",
       "path": "/docs/security/cli/ci",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/ci.md",
@@ -777,8 +777,8 @@
       "title": "Run Codex Security in CI"
     },
     "security__cli__faq.md": {
-      "hash": "56d5a17f1788d65774a4a6c57d6670d7ad66fc7f36e2a0fabc8e955e1cc42009",
-      "last_updated": "2026-08-07T17:18:17+00:00",
+      "hash": "9cd674b89c451274881b0c95d6743eae3bfaaa7f612b606b0f18174f441e48d4",
+      "last_updated": "2026-08-08T02:21:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/faq",
       "path": "/docs/security/cli/faq",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/faq.md",
@@ -786,8 +786,8 @@
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "5d55effafd5538dea3363c11b3b868b826ab4f2405403bc790cf5f51f89c8f03",
-      "last_updated": "2026-08-07T17:18:17+00:00",
+      "hash": "68d79e6ad5de481387ed411cbe03f215dc27057c3e480ea5a791c1a4e92de608",
+      "last_updated": "2026-08-08T02:21:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/reference.md",
@@ -903,8 +903,8 @@
       "title": "Use the Codex Security workbench"
     },
     "security__sdk.md": {
-      "hash": "777273b29c7a1862db4fa77b37886c6b3f52ced9dd2bade41cc3f871b70986b9",
-      "last_updated": "2026-08-07T17:18:22+00:00",
+      "hash": "bf0211238e1ab60462a2738d462bf2625da849469ef9ce23699b787a7d86fc90",
+      "last_updated": "2026-08-08T02:21:36+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/sdk",
       "path": "/docs/security/sdk",
       "source_url": "https://learn.chatgpt.com/docs/security/sdk.md",
@@ -1070,7 +1070,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-07T19:08:42+00:00",
+  "last_updated": "2026-08-08T02:21:41+00:00",
   "skipped": [
     {
       "path": "/docs",
