@@ -15,18 +15,19 @@ can include skills, connectors, or both. Both products use one universal plugin
 directory, so the same public plugins are discoverable from their supported
 surfaces.
 
-Plugins are available with ChatGPT Work on the web and with ChatGPT Work or
-Codex in the ChatGPT desktop app. Codex
-CLI also has a plugin browser for Codex environments. Plugins aren't available
-in Chat, the IDE extension, or mobile.
+Plugins work in Chat and Work across ChatGPT on the web, desktop, and mobile,
+and in Codex in the ChatGPT desktop app. Codex CLI also has a plugin browser
+for Codex environments. The IDE extension doesn't support plugins.
 
-In the ChatGPT desktop app, select ChatGPT and turn on Work in the switcher, or select
-Codex. Then open **Plugins** to browse, install, and use plugins. Installed
-plugins can add skills, connectors, and MCP tools to new chats.
+On mobile, you can use plugins available to your account in Chat or Work.
 
-In ChatGPT web, turn on Work in the switcher and open **Plugins** to browse, install, and
-use plugins. A plugin can prompt you to connect an external service before its
-tools become available.
+Open the **Plugins** tab to browse and install plugins. After installation, you
+can use plugins in Chat or Work in ChatGPT, or in Codex. Installed plugins can
+add skills, connectors, and MCP tools to new chats.
+
+Open the **Plugins** tab to browse and install plugins. After installation, you
+can use plugins in Chat or Work. A plugin can prompt you to connect an external
+service before its tools become available.
 
 In Codex CLI, enter `/plugins` to open the plugin browser. Install a plugin from
 a configured marketplace, then start a new session before using its bundled
@@ -82,12 +83,8 @@ If the plugin needs custom UI, use the
 
 ### Universal plugin directory
 
-ChatGPT and Codex use the same public plugin catalog. To browse and install
-plugins from a supported graphical surface:
-
-- On the web, turn on Work in the switcher and open **Plugins**.
-- In the ChatGPT desktop app, select ChatGPT and turn on Work in the switcher, or select
-  Codex. Then open **Plugins**.
+ChatGPT and Codex use the same public plugin catalog. On the web or in the
+ChatGPT desktop app, open the **Plugins** tab to browse and install plugins.
 
 The Plugins Directory organizes plugins into tabs:
 
@@ -191,9 +188,8 @@ on the [Platform Usage page](https://platform.openai.com/usage).
 
 ### How permissions and data sharing work
 
-On ChatGPT web, ChatGPT Work chats use the workspace permissions and
-tools available to that chat. Connectors still require their own sign-in
-and access.
+In ChatGPT on the web, Chat and Work use the workspace permissions and tools
+available to that chat. Connectors still require their own sign-in and access.
 
 When a plugin capability runs through a Codex host, the host's [sandbox and
 approval policy](https://learn.chatgpt.com/docs/agent-approvals-security) applies.
