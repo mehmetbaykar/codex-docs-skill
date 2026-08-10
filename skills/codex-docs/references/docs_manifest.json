@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "9b3e8767df37582e45b1412780a7c88ab7d41ddcd03c1c6a055984cc03849c61",
-      "last_updated": "2026-08-10T16:09:09+00:00",
+      "hash": "5699093779758c067e5c83bfe732a58d9334c0657f77248d8eaeb8c951d663ee",
+      "last_updated": "2026-08-10T19:16:47+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -336,8 +336,8 @@
       "title": "Customization"
     },
     "cyber-safety.md": {
-      "hash": "32a53768c5664efbf6e9ecafda4d67fc21b73f614a31837d52fb92258b98b953",
-      "last_updated": "2026-08-07T17:17:58+00:00",
+      "hash": "ce167f27c2b1ad81c3f1e6fbeaadf45c723f1f1bf832fcc8e56df094fc5d583a",
+      "last_updated": "2026-08-10T19:16:52+00:00",
       "original_url": "https://learn.chatgpt.com/docs/cyber-safety",
       "path": "/docs/cyber-safety",
       "source_url": "https://learn.chatgpt.com/docs/cyber-safety.md",
@@ -633,8 +633,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "f6413fa3902a4bfb429fab9c08e281e889ad73040bbfc747c14a1d233b50062b",
-      "last_updated": "2026-08-07T17:18:11+00:00",
+      "hash": "756160c69187401cf5d3d1b5ed63fab681c6a3cc629f807f229899ca97220a6b",
+      "last_updated": "2026-08-10T19:17:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -723,8 +723,8 @@
       "title": "Sandbox"
     },
     "sandboxing__auto-review.md": {
-      "hash": "9ab35bc08c4fb466c59801662abf9c11e128b762b5135b3fd45d402f61226767",
-      "last_updated": "2026-08-07T17:19:58+00:00",
+      "hash": "b83f6365aa65f277c7b054b9274d9c2114e95523fbda5cd2af0affdea1526c0f",
+      "last_updated": "2026-08-10T19:17:04+00:00",
       "original_url": "https://learn.chatgpt.com/docs/sandboxing/auto-review",
       "path": "/docs/sandboxing/auto-review",
       "source_url": "https://learn.chatgpt.com/docs/sandboxing/auto-review.md",
@@ -813,8 +813,8 @@
       "title": "Codex Security plugin quickstart"
     },
     "security__plugin__changelog.md": {
-      "hash": "5e0adcc7d9acb7ae2f1022bb2b26e281a9dc1269cdfe7d5f11567b763bc08323",
-      "last_updated": "2026-08-07T17:18:19+00:00",
+      "hash": "5334e4cf6033adad877cdd2afc947ef522be742518c543c617e8af0ee4344fd0",
+      "last_updated": "2026-08-10T19:17:07+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/changelog",
       "path": "/docs/security/plugin/changelog",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/changelog.md",
@@ -1070,7 +1070,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-10T16:09:45+00:00",
+  "last_updated": "2026-08-10T19:17:15+00:00",
   "skipped": [
     {
       "path": "/docs",

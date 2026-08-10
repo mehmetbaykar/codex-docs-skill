@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Introducing Daybreak Blue and Daybreak Red (2026-08-10)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-10-daybreak
+
+Introducing Daybreak Blue and Daybreak Red
+
 ## Codex CLI Release: 0.147.0 (2026-08-07)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-366471016
