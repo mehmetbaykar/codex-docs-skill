@@ -339,7 +339,7 @@ completion still works before you queue the command.
 | [`/approve`](#approve-an-auto-review-denial-with-approve)                                   | Approve one retry of a recent auto review denial.               | Retry a command or action that the auto reviewer denied.                                                   |
 | [`/memories`](#configure-memories-with-memories)                                            | Configure memory use and generation.                            | Turn memory injection or memory generation on or off without leaving the TUI.                              |
 | [`/skills`](#use-skills-with-skills)                                                        | Browse and use skills.                                          | Improve task-specific behavior by selecting a relevant local skill.                                        |
-| [`/import`](#import-claude-code-setup-with-import)                                          | Import Claude Code setup, projects, and recent chats.           | Migrate supported external-agent artifacts into Codex configuration and local files.                       |
+| [`/import`](#import-claude-code-or-cursor-setup-with-import)                                | Import Claude Code or Cursor setup, projects, and chats.        | Migrate supported external-agent artifacts into Codex configuration and local files.                       |
 | [`/feedback`](#send-feedback-with-feedback)                                                 | Send logs to the Codex maintainers.                             | Report issues or share diagnostics with support.                                                           |
 | [`/init`](#generate-agentsmd-with-init)                                                     | Generate an `AGENTS.md` scaffold in the current directory.      | Capture persistent instructions for the repository or subdirectory you're working in.                      |
 | [`/logout`](#sign-out-with-logout)                                                          | Sign out of Codex.                                              | Clear local credentials when using a shared machine.                                                       |
@@ -471,11 +471,13 @@ Expected: Codex inserts the selected skill context so the next request follows
 that skill's instructions.
 
 <a id="import-claude-code-configuration-with-import"></a>
+<a id="import-claude-code-setup-with-import"></a>
+<a id="cli-import-claude-code-setup-with-import"></a>
 
-### Import Claude Code setup with `/import`
+### Import Claude Code or Cursor setup with `/import`
 
 1. Type `/import`.
-2. Choose **Claude Code**.
+2. Choose **Claude Code** or **Cursor**.
 3. Select the setup, project files, or recent chats you want to migrate.
 
 Expected: Codex opens the external-agent import picker and imports the selected

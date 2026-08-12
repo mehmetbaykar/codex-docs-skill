@@ -10,10 +10,12 @@ path: /docs/import
 
 Use the import flow to bring instructions, settings, skills, plugins, projects,
 and recent work from another agent into the ChatGPT desktop app or Codex CLI.
-Codex CLI and the desktop app can import from **Claude Code**.
+The desktop app can import from **Claude Code**, **Claude Cowork**,
+or **Cursor**. Codex CLI can import from **Claude Code** or **Cursor**.
 
 The desktop app imports supported items directly and lets you finish setup for
-imported plugins or connections that need authorization.
+imported plugins or connections that need authorization. You can also keep
+imported work in sync with automatic updates.
 
 Importing doesn't change or delete your existing agent setup.
 
@@ -29,10 +31,16 @@ Importing doesn't change or delete your existing agent setup.
 4. On **Select items to import**, choose what to bring over, then select **Continue**.
 5. After the import finishes, open an imported project or chat to continue working.
 
+### Keep imported work in sync
+
+In the ChatGPT desktop app, open **Settings > Import** and turn on automatic
+updates to keep imported work in sync with the original agent. You can also
+review your import history from the same settings section.
+
 ### Import in Codex CLI
 
 1. Start a local Codex CLI session and type `/import`.
-2. Choose **Claude Code**.
+2. Choose **Claude Code** or **Cursor**.
 3. Select the supported setup, project files, and recent chats you want to
    import.
 4. Review the imported configuration and continue working in Codex.
@@ -40,7 +48,7 @@ Importing doesn't change or delete your existing agent setup.
 Codex CLI imports up to 50 chats from the last 30 days. The `/import` command
 isn't available during a running task, in a remote session, or while connected
 to a local app-server daemon. See [CLI slash
-commands](https://learn.chatgpt.com/docs/developer-commands?surface=cli#cli-import-claude-code-setup-with-import).
+commands](https://learn.chatgpt.com/docs/developer-commands?surface=cli#cli-import-claude-code-or-cursor-setup-with-import).
 
 ## How importing works
 
