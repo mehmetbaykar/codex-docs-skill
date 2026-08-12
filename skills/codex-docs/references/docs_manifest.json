@@ -4,11 +4,11 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 117,
+    "pages_fetched_successfully": 118,
     "pages_skipped": 1,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 118
+    "total_pages_discovered": 119
   },
   "files": {
     "administration.md": {
@@ -84,8 +84,8 @@
       "title": "Codex App Server"
     },
     "app.md": {
-      "hash": "eaf31b0859cf6d2501b500b64dbac3ff884b80a1076d9b2b94ec186f6a9a2f09",
-      "last_updated": "2026-08-07T17:17:46+00:00",
+      "hash": "173ef022cefd2408a9749202aa1fe56f72f094f1df34d1f4e730bb0ed60df755",
+      "last_updated": "2026-08-12T19:19:53+00:00",
       "original_url": "https://learn.chatgpt.com/docs/app",
       "path": "/docs/app",
       "source_url": "https://learn.chatgpt.com/docs/app.md",
@@ -291,8 +291,8 @@
       "title": "Environment variables"
     },
     "configuration.md": {
-      "hash": "6699a8e6a659f102dd115efcc542d1ae68aaa6764f5d5f49a15027ceb8c1acea",
-      "last_updated": "2026-07-28T02:13:34+00:00",
+      "hash": "ba1988b977a4265604d2233eeb99250677351c80dfcf5c8090b17b45ce7f7618",
+      "last_updated": "2026-08-12T19:20:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/configuration",
       "path": "/docs/configuration",
       "source_url": "https://learn.chatgpt.com/docs/configuration.md",
@@ -542,6 +542,15 @@
       "status": "live",
       "title": "Integrated terminal"
     },
+    "linux__linux-app.md": {
+      "hash": "ea9530a19270ca4a781caca594aeb4d6e7b5a2fa70fe3abd6305a06a41649764",
+      "last_updated": "2026-08-12T19:20:09+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/linux/linux-app",
+      "path": "/docs/linux/linux-app",
+      "source_url": "https://learn.chatgpt.com/docs/linux/linux-app.md",
+      "status": "live",
+      "title": "ChatGPT desktop app for Linux"
+    },
     "long-running-work.md": {
       "hash": "edafc08e2891e6f7468f4d59ebffa0489a222a594d84b71ea36dea9ba8924918",
       "last_updated": "2026-08-07T17:18:07+00:00",
@@ -669,8 +678,8 @@
       "title": "Prompting"
     },
     "quickstart.md": {
-      "hash": "ec1607b2dae04234d686cf777a93e8e60203eb6f9b4927b2a0a4a5d78e96a418",
-      "last_updated": "2026-08-07T17:18:12+00:00",
+      "hash": "a1e624c5cee47899f7c5cc52a9ee8b6bec0ab4a037c7aa15f603ef1bbb6c73d1",
+      "last_updated": "2026-08-12T19:20:14+00:00",
       "original_url": "https://learn.chatgpt.com/docs/quickstart",
       "path": "/docs/quickstart",
       "source_url": "https://learn.chatgpt.com/docs/quickstart.md",
@@ -1029,8 +1038,8 @@
       "title": "ChatGPT on the web"
     },
     "whats-new.md": {
-      "hash": "f3148ee2b066a388bc9fd3ae3b7e6e320c3ee95703c730d88a11057beef0560f",
-      "last_updated": "2026-08-07T17:18:28+00:00",
+      "hash": "49adff9a81b09a4e322f09cae2219780baab1167e56437b0f7344bac9e8ec33d",
+      "last_updated": "2026-08-12T19:20:26+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -1079,7 +1088,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-12T16:09:53+00:00",
+  "last_updated": "2026-08-12T19:20:27+00:00",
   "skipped": [
     {
       "path": "/docs",

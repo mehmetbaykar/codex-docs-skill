@@ -65,6 +65,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `image-inputs` - [Image inputs](https://learn.chatgpt.com/docs/image-inputs)
 - `import` - [Import from another agent](https://learn.chatgpt.com/docs/import)
 - `integrated-terminal` - [Integrated terminal](https://learn.chatgpt.com/docs/integrated-terminal)
+- `linux__linux-app` - [ChatGPT desktop app for Linux](https://learn.chatgpt.com/docs/linux/linux-app)
 - `long-running-work` - [Long-running work](https://learn.chatgpt.com/docs/long-running-work)
 - `mcp-server` - [Use Codex with the Agents SDK](https://learn.chatgpt.com/docs/mcp-server)
 - `models` - [Models](https://learn.chatgpt.com/docs/models)
