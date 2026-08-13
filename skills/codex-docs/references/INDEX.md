@@ -39,7 +39,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `config-file__environment-variables` - [Environment variables](https://learn.chatgpt.com/docs/config-file/environment-variables)
 - `configuration` - [Configuration](https://learn.chatgpt.com/docs/configuration)
 - `custom-prompts` - [Custom Prompts](https://learn.chatgpt.com/docs/custom-prompts)
-- `customization__chronicle` - [Chronicle](https://learn.chatgpt.com/docs/customization/chronicle)
+- `customization__computer-history` - [Computer History](https://learn.chatgpt.com/docs/customization/computer-history)
 - `customization__memories` - [Memories](https://learn.chatgpt.com/docs/customization/memories)
 - `customization__overview` - [Customization](https://learn.chatgpt.com/docs/customization/overview)
 - `cyber-safety` - [Models and Trusted Access](https://learn.chatgpt.com/docs/cyber-safety)
