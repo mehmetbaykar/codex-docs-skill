@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "cfa77cf3f4cdcb136eda503db1ec26645b7babd8cf6cea28c81d91f91283576e",
-      "last_updated": "2026-08-13T05:03:43+00:00",
+      "hash": "fe1236bd102bb0a28787ad68f0c0b1413af343786a5dbec6f6c5fed19fb7cb91",
+      "last_updated": "2026-08-13T19:19:51+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -291,8 +291,8 @@
       "title": "Environment variables"
     },
     "configuration.md": {
-      "hash": "ba1988b977a4265604d2233eeb99250677351c80dfcf5c8090b17b45ce7f7618",
-      "last_updated": "2026-08-12T19:20:00+00:00",
+      "hash": "57ba4b2a44a1936933319b40e511be95a1cdc6b1d30e4c4d597ac118c3befb99",
+      "last_updated": "2026-08-13T19:19:56+00:00",
       "original_url": "https://learn.chatgpt.com/docs/configuration",
       "path": "/docs/configuration",
       "source_url": "https://learn.chatgpt.com/docs/configuration.md",
@@ -308,18 +308,18 @@
       "status": "live",
       "title": "Custom Prompts"
     },
-    "customization__chronicle.md": {
-      "hash": "71ef7eb51f0795bf70cfdcd2bc342ca1a9c9e85643859902e3f6ab528ce31668",
-      "last_updated": "2026-08-07T17:17:57+00:00",
-      "original_url": "https://learn.chatgpt.com/docs/customization/chronicle",
-      "path": "/docs/customization/chronicle",
-      "source_url": "https://learn.chatgpt.com/docs/customization/chronicle.md",
+    "customization__computer-history.md": {
+      "hash": "f7e449bb7a3767d84156669b8d3f952fa88d3be9d7d6b4b430c18b892ef90909",
+      "last_updated": "2026-08-13T19:19:57+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/customization/computer-history",
+      "path": "/docs/customization/computer-history",
+      "source_url": "https://learn.chatgpt.com/docs/customization/computer-history.md",
       "status": "live",
-      "title": "Chronicle"
+      "title": "Computer History"
     },
     "customization__memories.md": {
-      "hash": "ab955a8259ce85d31ebb490214e21d98512728d367a9f401939150d4904ea3a6",
-      "last_updated": "2026-08-07T17:17:57+00:00",
+      "hash": "048fd01656ad34d85ef3553164b4ad80c68fcc78a5dd2f03118f9a7f294c12e9",
+      "last_updated": "2026-08-13T19:19:57+00:00",
       "original_url": "https://learn.chatgpt.com/docs/customization/memories",
       "path": "/docs/customization/memories",
       "source_url": "https://learn.chatgpt.com/docs/customization/memories.md",
@@ -489,8 +489,8 @@
       "title": "Codex GitHub Action"
     },
     "glossary.md": {
-      "hash": "f397ad4d04d9d2426f001586ee17ac8f74cf67fe21c125d362d9c506c9ef4fe8",
-      "last_updated": "2026-07-28T02:13:38+00:00",
+      "hash": "c1cfebfc64e9b6cfb9b6fd40f94f2978292991d2ae8a51fe25ab250eb625fdd5",
+      "last_updated": "2026-08-13T19:20:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/glossary",
       "path": "/docs/glossary",
       "source_url": "https://learn.chatgpt.com/docs/glossary.md",
@@ -624,8 +624,8 @@
       "title": "Permissions"
     },
     "personalize.md": {
-      "hash": "7133ffcd05c8a5700fd0fcc65c7164063573b11d31a4586f847c995ff59346e3",
-      "last_updated": "2026-08-07T17:18:10+00:00",
+      "hash": "e109b13a08370e4e6b861f9e9c48ed9d1c9b4b8c880ee46c25e351d92b7cd596",
+      "last_updated": "2026-08-13T19:20:07+00:00",
       "original_url": "https://learn.chatgpt.com/docs/personalize",
       "path": "/docs/personalize",
       "source_url": "https://learn.chatgpt.com/docs/personalize.md",
@@ -1038,8 +1038,8 @@
       "title": "ChatGPT on the web"
     },
     "whats-new.md": {
-      "hash": "49adff9a81b09a4e322f09cae2219780baab1167e56437b0f7344bac9e8ec33d",
-      "last_updated": "2026-08-12T19:20:26+00:00",
+      "hash": "ad7c484db64587eb406a694f0ebc9cb2778eecb2a2be2ada132fa3470126dbf7",
+      "last_updated": "2026-08-13T19:20:22+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -1088,7 +1088,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-13T05:04:08+00:00",
+  "last_updated": "2026-08-13T19:20:23+00:00",
   "skipped": [
     {
       "path": "/docs",
