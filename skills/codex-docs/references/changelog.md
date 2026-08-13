@@ -159,12 +159,6 @@ ChatGPT for iOS
 
 Start, track, and approve Codex tasks from your phone with secure one-to-one remote pairing.
 
-## Codex CLI Release: 0.142.2 (2026-06-25)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-344540546
-
-0.142.2
-
 ## ChatGPT for iOS (2026-06-22)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-22-mobile
