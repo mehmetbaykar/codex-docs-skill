@@ -50,10 +50,17 @@
           icon: "key",
         },
         {
-          title: "Access tokens",
+          title: "Personal Access Tokens",
           description: "Create and manage tokens for programmatic access.",
           href: "/codex/enterprise/access-tokens",
           icon: "lock",
+        },
+        {
+          title: "Service accounts",
+          description:
+            "Create and manage workspace identities for automated workflows.",
+          href: "/codex/enterprise/service-accounts",
+          icon: "robot",
         },
       ],
     },
