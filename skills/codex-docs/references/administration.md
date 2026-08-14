@@ -89,6 +89,13 @@
           icon: "userLock",
         },
         {
+          title: "GPTs and Sharing",
+          description:
+            "Manage GPT sharing, ownership, connected apps, and third-party actions across your workspace.",
+          href: "/codex/enterprise/gpts-and-sharing",
+          icon: "userLock",
+        },
+        {
           title: "Managed configuration",
           description:
             "Distribute managed settings where supported and enforce runtime requirements for covered capabilities in the ChatGPT desktop app, Codex CLI, and IDE extension.",
