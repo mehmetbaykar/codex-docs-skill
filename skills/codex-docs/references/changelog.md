@@ -159,12 +159,6 @@ ChatGPT for iOS
 
 0.142.4
 
-## Codex CLI Release: 0.142.3 (2026-06-26)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-345539086
-
-0.142.3
-
 ## Codex Remote reaches general availability (2026-06-25)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-25
