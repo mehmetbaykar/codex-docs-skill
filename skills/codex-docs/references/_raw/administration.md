@@ -29,6 +29,13 @@
           icon: "users",
         },
         {
+          title: "ChatGPT Work Overview",
+          description:
+            "Understand hosted execution, network controls, data boundaries, and audit visibility.",
+          href: "/codex/enterprise/chatgpt-work-overview",
+          icon: "shieldCheck",
+        },
+        {
           title: "ChatGPT Work admin FAQ",
           description:
             "Review access, data, governance, usage, and incident controls for ChatGPT Work.",

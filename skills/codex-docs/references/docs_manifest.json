@@ -12,8 +12,8 @@
   },
   "files": {
     "administration.md": {
-      "hash": "8dd6b7123ae152363b18e511b246a879a2a113afebc638d57d181ede81eff40b",
-      "last_updated": "2026-08-14T21:39:40+00:00",
+      "hash": "ded1c56b156e1b0cfde644676c2690427c57a96de6104c51775810803f3f6819",
+      "last_updated": "2026-08-15T01:49:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -21,8 +21,8 @@
       "title": "Administration"
     },
     "agent-approvals-security.md": {
-      "hash": "37f79376632bf309c33ebd17cd2ccdcb8443632bed4c390a48c59579752a672e",
-      "last_updated": "2026-08-07T17:17:44+00:00",
+      "hash": "679139f1301d29e3b0b08131dfa43b9a7abe39f54cd89947a74d86441909022f",
+      "last_updated": "2026-08-15T01:49:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
       "path": "/docs/agent-approvals-security",
       "source_url": "https://learn.chatgpt.com/docs/agent-approvals-security.md",
@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "6ab1ddacfcee81389ea7d8fca094b5769e96de562a46d18357eb72490720cede",
-      "last_updated": "2026-08-14T02:45:45+00:00",
+      "hash": "7d21a7902a2e402065b9514890ba3f7ba1cdaac8601959f1de8bde31259420bb",
+      "last_updated": "2026-08-15T01:49:08+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -264,8 +264,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "c92aa14377f022a8704339c960252a23d3f7d99cad078a421481408dae1a92e9",
-      "last_updated": "2026-08-12T02:43:42+00:00",
+      "hash": "6d0729dcd97adc13fd538cd919a89685c425235fe12482b6dae604bb1065dcac",
+      "last_updated": "2026-08-15T01:49:11+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
@@ -273,8 +273,8 @@
       "title": "Configuration Reference"
     },
     "config-file__config-sample.md": {
-      "hash": "1f0f77732e1ba584797df2e48f5bed7dae52bf766756ebfd2e16f4e7d492b392",
-      "last_updated": "2026-08-07T17:17:55+00:00",
+      "hash": "0e8b892f28e78f20c8ea6476bc13c96b18293626047676af369c16db0cb33151",
+      "last_updated": "2026-08-15T01:49:11+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-sample",
       "path": "/docs/config-file/config-sample",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-sample.md",
@@ -345,8 +345,8 @@
       "title": "Models and Trusted Access"
     },
     "cyber-safety__recommended-configuration.md": {
-      "hash": "da0ff2dddebb7c0e63911b05042146369f757ae23cf66ac34949feef583b1399",
-      "last_updated": "2026-08-11T10:10:35+00:00",
+      "hash": "e5a08ba3f16ca85fac1fbde1ed8d040eafcad5d8228f3f315011bafcf3f02bb7",
+      "last_updated": "2026-08-15T01:49:13+00:00",
       "original_url": "https://learn.chatgpt.com/docs/cyber-safety/recommended-configuration",
       "path": "/docs/cyber-safety/recommended-configuration",
       "source_url": "https://learn.chatgpt.com/docs/cyber-safety/recommended-configuration.md",
@@ -426,8 +426,8 @@
       "title": "Model Context Protocol"
     },
     "extend__record-and-replay.md": {
-      "hash": "120391662fd14560ae99e7afc6d5aa084a4f28b8fa4c983a60359effd9b96ee2",
-      "last_updated": "2026-08-07T17:18:02+00:00",
+      "hash": "0a291d6114ee2d0156cd75def49870860fd35e0803b26f9fed664be0fa238f87",
+      "last_updated": "2026-08-15T01:49:16+00:00",
       "original_url": "https://learn.chatgpt.com/docs/extend/record-and-replay",
       "path": "/docs/extend/record-and-replay",
       "source_url": "https://learn.chatgpt.com/docs/extend/record-and-replay.md",
@@ -615,8 +615,8 @@
       "title": "Permissions"
     },
     "permissions.md": {
-      "hash": "81c9eb75db44269b8fc2da1c606651cc33064b14d3bf66f5a861539c89ba4d68",
-      "last_updated": "2026-08-07T17:18:09+00:00",
+      "hash": "d03e7557619fd1217ecb2c85d71cf19c88c573a1db65b96c58e835df9f025bc4",
+      "last_updated": "2026-08-15T01:49:22+00:00",
       "original_url": "https://learn.chatgpt.com/docs/permissions",
       "path": "/docs/permissions",
       "source_url": "https://learn.chatgpt.com/docs/permissions.md",
@@ -1020,8 +1020,8 @@
       "title": "Visualizations"
     },
     "web-search.md": {
-      "hash": "1096687c702ab224e89cae33db7a8b41b914fed6f2dada5351426292ca46d601",
-      "last_updated": "2026-08-07T17:18:27+00:00",
+      "hash": "358b17ed6899837f412a81335d634b5591eefbd4756984b6218fd84aaa54b0c6",
+      "last_updated": "2026-08-15T01:49:34+00:00",
       "original_url": "https://learn.chatgpt.com/docs/web-search",
       "path": "/docs/web-search",
       "source_url": "https://learn.chatgpt.com/docs/web-search.md",
@@ -1088,7 +1088,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-14T21:40:18+00:00",
+  "last_updated": "2026-08-15T01:49:36+00:00",
   "skipped": [
     {
       "path": "/docs",

@@ -39,6 +39,12 @@ Introducing Daybreak Blue and Daybreak Red
 
 GPT-5.4 and GPT-5.4 mini retire from Codex on August 31
 
+## Record & Replay expands to the EU, UK, and Switzerland (2026-07-31)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-07-31-app
+
+Turn demonstrated workflows into reusable skills in more regions.
+
 ## Browser upgrades, multi-repository review, and image editing (2026-07-30)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-30-app
@@ -152,12 +158,6 @@ ChatGPT for iOS
 - Source: https://developers.openai.com/codex/changelog/#github-release-347177984
 
 0.142.5
-
-## Codex CLI Release: 0.142.4 (2026-06-29)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-346071760
-
-0.142.4
 
 ## Codex Remote reaches general availability (2026-06-25)
 
