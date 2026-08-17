@@ -804,8 +804,8 @@
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "8826b1dcd0acc4bebf9e5f1d36e9173efbca33d962a6580ea8b64c3578dcc328",
-      "last_updated": "2026-08-14T21:40:08+00:00",
+      "hash": "5d2c7d38984d03fd09c84111b138578b123396c1d82dfebbe393afb0167196ed",
+      "last_updated": "2026-08-17T18:57:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/reference.md",
@@ -1088,7 +1088,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-17T13:05:35+00:00",
+  "last_updated": "2026-08-17T18:57:49+00:00",
   "skipped": [
     {
       "path": "/docs",
