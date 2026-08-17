@@ -21,6 +21,12 @@ Install ChatGPT on Linux, import existing agent setup, and keep desktop imports 
 
 Introducing Daybreak Blue and Daybreak Red
 
+## ChatGPT for iOS (2026-08-07)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-03-mobile
+
+ChatGPT for iOS
+
 ## Codex CLI Release: 0.147.0 (2026-08-07)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-366471016
