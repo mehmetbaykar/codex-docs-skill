@@ -957,8 +957,8 @@
       "title": "Improving the threat model"
     },
     "sites.md": {
-      "hash": "59f6c663d031871b59a865826d81acb0360e55fd01d4f1b084f013df73b1cfb5",
-      "last_updated": "2026-08-07T17:18:24+00:00",
+      "hash": "cfe06b9c16fd3a1efb1d23ea88b680839fe6cc6c4dc1b5096a492c9003b4853c",
+      "last_updated": "2026-08-18T13:07:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/sites",
       "path": "/docs/sites",
       "source_url": "https://learn.chatgpt.com/docs/sites.md",
@@ -1088,7 +1088,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-18T07:04:00+00:00",
+  "last_updated": "2026-08-18T13:07:45+00:00",
   "skipped": [
     {
       "path": "/docs",
