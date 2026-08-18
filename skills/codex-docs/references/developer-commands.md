@@ -627,7 +627,7 @@ shows a sign-in requirement.
 
 Expected: Codex prints layer diagnostics plus policy details such as
 `allowed_approval_policies`, `allowed_sandbox_modes`, `mcp_servers`, `rules`,
-`enforce_residency`, and `experimental_network` when configured.
+and `experimental_network` when configured.
 
 Use this output to debug why an effective setting differs from `config.toml`.
 
