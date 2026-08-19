@@ -57,8 +57,8 @@
       "title": "Speed"
     },
     "agent-configuration__subagents.md": {
-      "hash": "b6eb27e89a6649c3a14820c1e31978355d29dde89c51c33c7db50a7ce8c70664",
-      "last_updated": "2026-08-07T17:17:45+00:00",
+      "hash": "fdf67b4c8922b3c1ec0d8e4b447d700b23dd2cfee0bf85fa2c07535c8addbc3b",
+      "last_updated": "2026-08-19T15:45:55+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/subagents",
       "path": "/docs/agent-configuration/subagents",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/subagents.md",
@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "95c5dd6cd2e55431970ae84d6572c9a4be18ddd0b7cedb8e332c1485660e875b",
-      "last_updated": "2026-08-19T09:49:07+00:00",
+      "hash": "66cc2d2ed2685ac3f710678b371174f88c5db6c65fda313821d6237a1a775383",
+      "last_updated": "2026-08-19T15:45:58+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -1088,7 +1088,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-19T09:49:39+00:00",
+  "last_updated": "2026-08-19T15:46:28+00:00",
   "skipped": [
     {
       "path": "/docs",
