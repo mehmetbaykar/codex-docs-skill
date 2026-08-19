@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.148.0 (2026-08-18)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-372686337
+
+0.148.0
+
 ## Computer History (2026-08-13)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-13-app
