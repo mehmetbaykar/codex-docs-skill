@@ -390,8 +390,8 @@
       "title": "Cloud environments"
     },
     "environments__git-worktrees.md": {
-      "hash": "34f4f65e5d6a7e4b9035f642ee13be1e9a640dc51c3935ad0c88de172a15063b",
-      "last_updated": "2026-08-07T17:18:00+00:00",
+      "hash": "99967dac0114931f3969b5682d545333deddf8537dfeeaf468fe6f6ff9e3c80a",
+      "last_updated": "2026-08-19T07:05:27+00:00",
       "original_url": "https://learn.chatgpt.com/docs/environments/git-worktrees",
       "path": "/docs/environments/git-worktrees",
       "source_url": "https://learn.chatgpt.com/docs/environments/git-worktrees.md",
@@ -1088,7 +1088,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-19T01:53:11+00:00",
+  "last_updated": "2026-08-19T07:05:51+00:00",
   "skipped": [
     {
       "path": "/docs",
