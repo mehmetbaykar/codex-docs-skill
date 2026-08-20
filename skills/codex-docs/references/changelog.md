@@ -3,6 +3,18 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex and ChatGPT updates (2026-08-20)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-20-app
+
+New ways to work with Codex and ChatGPT.
+
+## GitLab support in Codex cloud (Beta) (2026-08-19)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-19-gitlab
+
+Connect a GitLab project to Codex cloud, delegate tasks, and review merge requests.
+
 ## ChatGPT for iOS (2026-08-18)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-17-mobile
@@ -14,6 +26,12 @@ ChatGPT for iOS
 - Source: https://developers.openai.com/codex/changelog/#github-release-372686337
 
 0.148.0
+
+## Public plugin catalog CSV export (2026-08-17)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-17-admin-csv
+
+Download public plugin, app, and skill metadata for workspace security and governance reviews.
 
 ## Computer History (2026-08-13)
 

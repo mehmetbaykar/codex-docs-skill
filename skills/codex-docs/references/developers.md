@@ -150,6 +150,13 @@
           icon: "github",
         },
         {
+          title: "GitLab (Beta)",
+          description:
+            "Connect projects, delegate work, and review merge requests.",
+          href: "/codex/third-party/gitlab",
+          icon: "connect",
+        },
+        {
           title: "Slack",
           description:
             "Start Codex chats from external discussions and return results.",

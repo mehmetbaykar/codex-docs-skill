@@ -114,6 +114,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `sites` - [Sites](https://learn.chatgpt.com/docs/sites)
 - `skills-and-plugins` - [Skills & Plugins](https://learn.chatgpt.com/docs/skills-and-plugins)
 - `third-party__github` - [Review GitHub pull requests with Codex](https://learn.chatgpt.com/docs/third-party/github)
+- `third-party__gitlab` - [Review GitLab merge requests with Codex](https://learn.chatgpt.com/docs/third-party/gitlab)
 - `third-party__linear` - [Use Codex in Linear](https://learn.chatgpt.com/docs/third-party/linear)
 - `third-party__slack` - [Use Codex in Slack](https://learn.chatgpt.com/docs/third-party/slack)
 - `use-chatgpt` - [Use ChatGPT](https://learn.chatgpt.com/docs/use-chatgpt)
