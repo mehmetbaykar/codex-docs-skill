@@ -21,8 +21,8 @@
       "title": "Administration"
     },
     "agent-approvals-security.md": {
-      "hash": "679139f1301d29e3b0b08131dfa43b9a7abe39f54cd89947a74d86441909022f",
-      "last_updated": "2026-08-15T01:49:03+00:00",
+      "hash": "ec1753c12a88c0f49558b59b7ea9dcb508cc09e43368221f4de1349b5997928e",
+      "last_updated": "2026-08-20T15:48:49+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
       "path": "/docs/agent-approvals-security",
       "source_url": "https://learn.chatgpt.com/docs/agent-approvals-security.md",
@@ -1088,7 +1088,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-20T03:59:10+00:00",
+  "last_updated": "2026-08-20T15:49:28+00:00",
   "skipped": [
     {
       "path": "/docs",
