@@ -525,8 +525,8 @@
       "title": "Image inputs"
     },
     "import.md": {
-      "hash": "54d8a6c4ac76c454096254eea925d2a725b2c1c26e2780529b2bb737fb7ce57d",
-      "last_updated": "2026-08-12T02:43:51+00:00",
+      "hash": "c1ecf0ae5ad2ec4e0de8a78df6ff752f624405096e9b91c013d080f37a139814",
+      "last_updated": "2026-08-20T01:51:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/import",
       "path": "/docs/import",
       "source_url": "https://learn.chatgpt.com/docs/import.md",
@@ -1088,7 +1088,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-19T21:40:53+00:00",
+  "last_updated": "2026-08-20T01:51:55+00:00",
   "skipped": [
     {
       "path": "/docs",
