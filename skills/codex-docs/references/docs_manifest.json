@@ -759,8 +759,8 @@
       "title": "Security"
     },
     "security.md": {
-      "hash": "f068dd718eb1d13b9e600613f9e79ab21bd1e9c609943a19d25f6eafdc68cade",
-      "last_updated": "2026-08-10T21:58:05+00:00",
+      "hash": "191095a1e80a4d617f37dfce157351ecc503322916713a5563bfdd6544aaa59f",
+      "last_updated": "2026-08-20T03:58:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security",
       "path": "/docs/security",
       "source_url": "https://learn.chatgpt.com/docs/security.md",
@@ -912,8 +912,8 @@
       "title": "Write vulnerability reports"
     },
     "security__plugin__workbench.md": {
-      "hash": "285c046efd7706c9ccbf0023818c74069b22370fc1cd32ac70cd2f395cd71d33",
-      "last_updated": "2026-08-07T17:18:22+00:00",
+      "hash": "f40a83696da17525c3b21fdf0237773a68c70935345745cf22bb5670fa3397d6",
+      "last_updated": "2026-08-20T03:59:04+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/workbench",
       "path": "/docs/security/plugin/workbench",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/workbench.md",
@@ -1088,7 +1088,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-20T01:51:55+00:00",
+  "last_updated": "2026-08-20T03:59:10+00:00",
   "skipped": [
     {
       "path": "/docs",
