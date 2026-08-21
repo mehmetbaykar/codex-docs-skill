@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "1650261cbc9ce09a5dc9d37953cb2a06f3da47431349b97c19eefba8935c7d3f",
-      "last_updated": "2026-08-21T15:47:59+00:00",
+      "hash": "2de249c42db260516faaff938d4613929be0c05e93acdfd192f9065308a96824",
+      "last_updated": "2026-08-21T18:55:46+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -660,8 +660,8 @@
       "title": "Pricing"
     },
     "projects.md": {
-      "hash": "51441143a67ba9beebc963f386d36602ba80a024df76eee4c3e6e3b1dfe051a2",
-      "last_updated": "2026-08-07T17:18:11+00:00",
+      "hash": "72dc4a93e3130cd356f9ae833665a84785290109ec3ad2df5b9e3286dc28b92f",
+      "last_updated": "2026-08-21T18:56:04+00:00",
       "original_url": "https://learn.chatgpt.com/docs/projects",
       "path": "/docs/projects",
       "source_url": "https://learn.chatgpt.com/docs/projects.md",
@@ -669,8 +669,8 @@
       "title": "Projects and chats"
     },
     "prompting.md": {
-      "hash": "3e3b19e62fa9c43425f829183d80608f3dcba3d1e6a518d7eaa1198e06a382e6",
-      "last_updated": "2026-08-07T17:18:12+00:00",
+      "hash": "a147dc9b9d8bdc133189e7e71b674e3d5b98345fd7701692495ff7c8a57a1792",
+      "last_updated": "2026-08-21T18:56:04+00:00",
       "original_url": "https://learn.chatgpt.com/docs/prompting",
       "path": "/docs/prompting",
       "source_url": "https://learn.chatgpt.com/docs/prompting.md",
@@ -687,8 +687,8 @@
       "title": "Quickstart"
     },
     "reference__commands.md": {
-      "hash": "d6bd8a05be117a6f59105e921889cee3c7799f53f4ccde7d0f7e96b9b2becd69",
-      "last_updated": "2026-08-07T17:18:12+00:00",
+      "hash": "19483cbdda989d7536f50417672a95495a972eb9c6c9748d9eea697ad4882155",
+      "last_updated": "2026-08-21T18:56:05+00:00",
       "original_url": "https://learn.chatgpt.com/docs/reference/commands",
       "path": "/docs/reference/commands",
       "source_url": "https://learn.chatgpt.com/docs/reference/commands.md",
@@ -1097,7 +1097,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-21T15:48:27+00:00",
+  "last_updated": "2026-08-21T18:56:19+00:00",
   "skipped": [
     {
       "path": "/docs",
