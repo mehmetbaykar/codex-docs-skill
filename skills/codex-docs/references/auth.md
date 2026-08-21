@@ -12,7 +12,7 @@ path: /docs/auth
 
 <a id="sign-in-with-chatgpt"></a>
 
-Codex supports two ways to sign in when using OpenAI models:
+Codex supports two ways for a person to sign in when using OpenAI models:
 
 - Sign in with ChatGPT for subscription access
 - Sign in with an API key for usage-based access
@@ -111,8 +111,10 @@ ChatGPT web session in that browser, select **Log out**.
 Open the profile menu to see the active account or API key status. Select
 **Log out** to clear the current credentials.
 
-Run `codex login status` to see the active authentication method. Run
-`codex logout` to clear the current credentials.
+Run `codex login status` to see the active authentication method. For stored
+authentication, run `codex logout` to clear the current credentials. When
+the process selects workload identity, Codex rejects `codex login` and
+`codex logout` because the process environment controls authentication.
 
 Open the profile menu to see the active account or API key status. Select
 **Log out** to clear the current credentials.
@@ -130,6 +132,11 @@ runners. For general OpenAI API calls, continue to use Platform API keys.
 
 For setup steps, permissions, rotation, and revocation guidance, see
 [Access tokens](https://learn.chatgpt.com/docs/enterprise/access-tokens).
+
+If your cloud platform, CI system, or cluster already issues short-lived
+workload tokens, use
+[workload identity federation](https://learn.chatgpt.com/docs/enterprise/workload-identity)
+instead of storing an OpenAI credential.
 
 If your environment already provides a Codex access token, pipe it to the CLI:
 

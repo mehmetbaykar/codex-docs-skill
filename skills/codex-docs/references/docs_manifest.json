@@ -12,8 +12,8 @@
   },
   "files": {
     "administration.md": {
-      "hash": "ded1c56b156e1b0cfde644676c2690427c57a96de6104c51775810803f3f6819",
-      "last_updated": "2026-08-15T01:49:03+00:00",
+      "hash": "4a360c1c950828f682cfdc67e3e320eed265a6d3f7336471cfb29b18771ed045",
+      "last_updated": "2026-08-21T01:56:55+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -111,8 +111,8 @@
       "title": "Work with files"
     },
     "auth.md": {
-      "hash": "b47cb1f079f17442b2735c7ebb9d5c197327e412074efadfd6c20f67a8e55b11",
-      "last_updated": "2026-08-07T17:17:48+00:00",
+      "hash": "7f4dde6730ca27c0eb6fb9e744b08d949310e6a90242a658d221a049993b35fa",
+      "last_updated": "2026-08-21T01:56:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/auth",
       "path": "/docs/auth",
       "source_url": "https://learn.chatgpt.com/docs/auth.md",
@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "2de249c42db260516faaff938d4613929be0c05e93acdfd192f9065308a96824",
-      "last_updated": "2026-08-20T21:43:09+00:00",
+      "hash": "aacbf8d4e7fabde419a1220c0a942526352079c88ee09e02248134d151a8569c",
+      "last_updated": "2026-08-21T01:57:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -282,8 +282,8 @@
       "title": "Sample Configuration"
     },
     "config-file__environment-variables.md": {
-      "hash": "55eb20675fb0da9949c6aca0db22c688a3c4b69d50b34c3769b244c7d2f70079",
-      "last_updated": "2026-08-07T17:17:56+00:00",
+      "hash": "cce5a3a7fd736b78bfc29b0772239f4c3192c0c3ebfbc6519aa591b0b944670e",
+      "last_updated": "2026-08-21T01:57:05+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/environment-variables",
       "path": "/docs/config-file/environment-variables",
       "source_url": "https://learn.chatgpt.com/docs/config-file/environment-variables.md",
@@ -579,8 +579,8 @@
       "title": "Models"
     },
     "non-interactive-mode.md": {
-      "hash": "9798f8043160b336552be9435adfa23d2c77c988f72762e29cbf5b4ac9aa4cd6",
-      "last_updated": "2026-08-07T17:18:08+00:00",
+      "hash": "6919d26b342dcac01964e2765785bf2177ff5e6f3dfe25eadd3d2ac627700fa1",
+      "last_updated": "2026-08-21T01:57:15+00:00",
       "original_url": "https://learn.chatgpt.com/docs/non-interactive-mode",
       "path": "/docs/non-interactive-mode",
       "source_url": "https://learn.chatgpt.com/docs/non-interactive-mode.md",
@@ -1097,7 +1097,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-20T21:43:38+00:00",
+  "last_updated": "2026-08-21T01:57:33+00:00",
   "skipped": [
     {
       "path": "/docs",
