@@ -20,6 +20,8 @@ by default. You can also use ChatGPT Voice through
 your phone with a desktop host. Availability also depends on rollout status and
 workspace settings. See [feature availability](https://learn.chatgpt.com/docs/pricing#feature-availability).
 
+> Illustration: Interactive ChatGPT Voice conversation with microphone and speaker controls.
+
 ## Start talking
 
 1. Open a new, empty chat or task in the ChatGPT desktop app.

@@ -52,6 +52,10 @@ In **Settings**, you can change the app appearance by choosing a base theme,
 adjusting accent, background, and foreground colors, and changing the UI and
 code fonts. You can also share your custom theme with friends.
 
+
+
+> Illustration: ChatGPT desktop app Appearance settings showing theme selection, color controls, and font options
+
 ## Pets
 
 
@@ -118,3 +122,7 @@ context. Use **Unarchive** to restore a chat.
 In the ChatGPT desktop app, pop out an active chat into a separate window and place it
 next to your browser, editor, or design preview. Turn on **Always on top** when
 you want the chat to remain visible while you work in another app.
+
+
+
+> Illustration: ChatGPT desktop app chat displayed in a floating pop-out window

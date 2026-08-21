@@ -55,6 +55,10 @@ Here are three common use cases you can get started with:
 Use ChatGPT Work to turn notes, docs, research, or meeting materials into a structured
 deck.
 
+
+
+> Illustration: A presentation created in ChatGPT Work
+
 **Example prompt:**
 
 ```text
@@ -66,6 +70,10 @@ Review the attached source materials and create an eight-slide presentation for 
 Use ChatGPT Work to turn notes, files, or research into a spreadsheet that compares
 options and helps you make a decision.
 
+
+
+> Illustration: A comparison spreadsheet created in ChatGPT Work
+
 **Example prompt:**
 
 ```text
@@ -76,6 +84,10 @@ Create a spreadsheet comparing the options for [decision]. Use the attached note
 
 Use scheduled tasks when you want ChatGPT Work to repeat, monitor, or refresh something
 over time.
+
+
+
+> Illustration: A recurring update scheduled in ChatGPT Work
 
 **Example prompt:**
 
@@ -113,6 +125,10 @@ Review the attached interview notes and survey results. Create an eight-slide pr
 Learn more about [prompting for ChatGPT Work](https://learn.chatgpt.com/docs/prompting#prompting-for-work).
 
 ## Add plugins for more context and better outputs
+
+
+
+> Illustration: The plugins library in ChatGPT Work
 
 Plugins connect ChatGPT Work to tools your team uses, like Slack, Google Drive,
 SharePoint, email, calendars, customer relationship management systems, and

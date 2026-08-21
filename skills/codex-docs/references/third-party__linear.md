@@ -28,27 +28,23 @@ You can delegate in two ways:
 
 After you install the integration, you can assign issues to Codex the same way you assign them to teammates. Codex starts work and posts updates back to the issue.
 
-  <img src="https://developers.openai.com/images/codex/integrations/linear-assign-codex-light.webp"
-    alt="Assigning Codex to a Linear issue (light mode)"
-    class="block h-auto w-full rounded-lg border border-default my-0 dark:hidden"
-  />
-  <img src="https://developers.openai.com/images/codex/integrations/linear-assign-codex-dark.webp"
-    alt="Assigning Codex to a Linear issue (dark mode)"
-    class="hidden h-auto w-full rounded-lg border border-default my-0 dark:block"
-  />
+
+
+
+> Illustration: Assigning Codex to a Linear issue
+
+
 
 ### Mention `@Codex` in comments
 
 You can also mention `@Codex` in comment threads to delegate work or ask questions. After Codex replies, follow up in the thread to continue the same chat.
 
-  <img src="https://developers.openai.com/images/codex/integrations/linear-comment-light.webp"
-    alt="Mentioning Codex in a Linear issue comment (light mode)"
-    class="block h-auto w-full rounded-lg border border-default my-0 dark:hidden"
-  />
-  <img src="https://developers.openai.com/images/codex/integrations/linear-comment-dark.webp"
-    alt="Mentioning Codex in a Linear issue comment (dark mode)"
-    class="hidden h-auto w-full rounded-lg border border-default my-0 dark:block"
-  />
+
+
+
+> Illustration: Mentioning Codex in a Linear issue comment
+
+
 
 After Codex starts working on an issue, it [chooses an environment and repo](#how-codex-chooses-an-environment-and-repo) to work in.
 To pin a specific repo, include it in your comment, for example: `@Codex fix this in openai/codex`.
@@ -78,14 +74,12 @@ You can assign issues to Codex automatically using triage rules:
 Linear assigns new issues that enter triage to Codex automatically.
 When you use triage rules, Codex runs chats using the account of the issue creator.
 
-  <img src="https://developers.openai.com/images/codex/integrations/linear-triage-rule-light.webp"
-    alt='Screenshot of an example triage rule assigning everything to Codex and labeling it in the "Triage" status (light mode)'
-    class="block h-auto w-full rounded-lg border border-default my-0 dark:hidden"
-  />
-  <img src="https://developers.openai.com/images/codex/integrations/linear-triage-rule-dark.webp"
-    alt='Screenshot of an example triage rule assigning everything to Codex and labeling it in the "Triage" status (dark mode)'
-    class="hidden h-auto w-full rounded-lg border border-default my-0 dark:block"
-  />
+
+
+
+> Illustration: Linear triage rule automatically assigning issues to Codex
+
+
 
 ## Data usage, privacy, and security
 

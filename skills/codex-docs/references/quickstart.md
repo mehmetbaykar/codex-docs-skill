@@ -14,6 +14,8 @@ Use ChatGPT across different surfaces, including the
 [ChatGPT desktop app](https://learn.chatgpt.com/docs/app) and [ChatGPT on the web](https://learn.chatgpt.com/docs/web). Choose
 the option that fits your work.
 
+> Illustration: Cards compare the ChatGPT desktop app and ChatGPT on the web
+
 If you're a developer and want to use Codex in your terminal or code editor,
   try [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) or the [Codex IDE extension](https://learn.chatgpt.com/docs/codex/ide).
 

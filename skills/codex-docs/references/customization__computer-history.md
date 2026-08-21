@@ -33,6 +33,8 @@ create summaries you can review and delete. It does not include screenshots in
 your history or record audio, and private-mode web browsing activity is never
 included.
 
+> Illustration: Computer History timeline showing activity summaries, contributing apps, and suggested skills and automations
+
 ## How Computer History helps
 
 Computer History supplies recent activity as context. When a file, Slack

@@ -129,3 +129,4 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 ## Skipped Sitemap Pages
 
 - `/docs` - No .md endpoint and no special fetcher
+- `/docs/screenshot-review` - No .md endpoint and no special fetcher

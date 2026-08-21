@@ -86,6 +86,10 @@ If the plugin needs custom UI, use the
 ChatGPT and Codex use the same public plugin catalog. On the web or in the
 ChatGPT desktop app, open the **Plugins** tab to browse and install plugins.
 
+
+
+> Illustration: Plugins Directory in the ChatGPT desktop app
+
 The Plugins Directory organizes plugins into tabs:
 
 - **OpenAI:** plugins built by OpenAI.
@@ -120,6 +124,10 @@ approve actions automatically. Review and approve the plugin's requested
 permissions as a separate step before using the connection.
 
 After you install a plugin, you can use it directly in the prompt window:
+
+
+
+> Illustration: Installed plugin on the Plugins page
 
 
 
@@ -210,6 +218,10 @@ In Codex CLI, run the following command to open the plugin browser:
 codex
 /plugins
 ```
+
+
+
+> Illustration: Plugins list in Codex CLI
 
 The CLI plugin browser groups plugins by marketplace. Use the marketplace tabs
 to switch sources, open a plugin to inspect details, install or uninstall

@@ -19,6 +19,10 @@ leaving the keyboard.
 
 
 
+> Illustration: Interactive Codex Micro keyboard with illuminated Agent Keys, customizable Command Keys, a dial, and an analog stick
+
+
+
 ## Set up Codex Micro
 
 1. Open the ChatGPT desktop app.

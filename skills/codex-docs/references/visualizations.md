@@ -81,6 +81,8 @@ These examples reproduce three visualizations from the GPT-5.6 launch page.
 Use their controls to see how a focused prompt can become an interactive
 explanation, lab, or teaching tool.
 
+> Illustration: Three interactive ChatGPT visualization examples: a spirograph with adjustable geometry, a wave interference lab with a movable probe, and a tokenizer explainer with editable text and tokenization steps.
+
 ## Refine and continue
 
 Continue in the same chat and describe the change you want. Useful

@@ -24,11 +24,12 @@ Codex Security cloud scans GitHub repositories connected through
 
 Go to [Codex environments](https://chatgpt.com/codex/settings/environments) and check whether the repository already has an environment. If it doesn't, create one there before continuing.
 
-  <img
-    src={createEnvironment.src}
-    alt="Codex environments"
-    class="block h-auto w-full"
-  />
+
+
+
+> Illustration: Codex environments
+
+
 
 ## 2. New security scan
 
@@ -45,11 +46,12 @@ To configure a repository:
 5. Choose a **history window**. Longer windows provide more context, but backfill takes longer.
 6. Click **Create**.
 
-  <img
-    src={createScan.src}
-    alt="Create a security scan"
-    class="block h-auto w-full"
-  />
+
+
+
+> Illustration: Create a security scan
+
+
 
 ## 3. Initial scans can take a while
 
@@ -62,11 +64,12 @@ Initial scan setup is automatic and thorough. This can take a few hours. Don’t
 
 ## 4. Review scans and improve the threat model
 
-  <img
-    src={reviewThreatModel.src}
-    alt="Threat model editor in Codex Security"
-    class="block h-auto w-full"
-  />
+
+
+
+> Illustration: Threat model editor in Codex Security
+
+
 
 When the initial scan finishes, open the scan and review the threat model that was generated.
 After initial findings appear, update the threat model so it matches your architecture, trust boundaries, and business context.
@@ -89,7 +92,9 @@ You can use two views:
 - **Recommended Findings**: an evolving top 10 list of the most critical issues in the repo
 - **All Findings**: a sortable, filterable table of findings across the repository
 
-![Recommended findings view](https://learn.chatgpt.com/docs/security/images/aardvark_recommended_findings.png)
+
+
+> Illustration: Recommended findings view
 
 Click a finding to open its detail page, which includes:
 

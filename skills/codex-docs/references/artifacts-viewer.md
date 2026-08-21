@@ -35,6 +35,10 @@ The IDE extension can create and edit files in the workspace. Review text and
 code files in the editor, and open documents, presentations, spreadsheets, or
 PDF files in a compatible viewer.
 
+
+
+> Illustration: ChatGPT desktop app showing a generated presentation preview
+
 ## Create files for review
 
 For spreadsheets and presentations, describe the sheets, columns, charts,

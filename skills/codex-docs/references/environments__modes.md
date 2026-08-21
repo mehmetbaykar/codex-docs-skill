@@ -18,3 +18,7 @@ When starting a Codex chat, choose where it runs:
 Both **Local** and **Worktree** chats run on your computer.
 
 For the full glossary and concepts, explore the [concepts section](https://learn.chatgpt.com/docs/prompting).
+
+
+
+> Illustration: New chat composer with Local, Worktree, and Cloud environment options

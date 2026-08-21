@@ -93,6 +93,10 @@ Reviews run in the current chat by default. Under **Settings** > **General** >
 **Code review**, choose **Detached** to start a separate review chat. See
 [developer settings](https://learn.chatgpt.com/docs/developer-settings?surface=app#app-code-review).
 
+
+
+> Illustration: Inline code review comments displayed in the review pane
+
 The review appears as a turn in the transcript. Set `review_model` in
 `config.toml` when you want reviews to use a different model from the current
 session.

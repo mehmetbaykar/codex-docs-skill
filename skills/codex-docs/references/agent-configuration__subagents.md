@@ -194,6 +194,10 @@ subagent.
 - Ask Codex directly to steer a running subagent, stop it, or close completed
   subagent threads.
 
+> Illustration: Codex desktop chat showing two subagents working in parallel.
+
+> Illustration: Codex desktop Subagents panel with no active subagents and three completed audits.
+
 - Use `/agent` in the CLI to switch between active agent threads and inspect the ongoing thread.
 - Ask Codex directly to steer a running subagent, stop it, or close completed agent threads.
 

@@ -56,6 +56,10 @@ collection of source files or a codebase.
 Start a separate chat for each distinct outcome so its messages and results stay
 focused while the project keeps related work organized.
 
+
+
+> Illustration: ChatGPT desktop app showing multiple projects in the sidebar and chats in the main pane
+
 ## Work in a project
 
 A ChatGPT project gives its chats access to the same uploaded files, project

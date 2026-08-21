@@ -677,15 +677,15 @@ sales](https://chatgpt.com/contact-sales?utm_internal_source=openai_developers_c
     <tbody>
       <tr>
         <td>GPT-5.6 Sol</td>
-        <td style="text-align:center">125 credits</td>
-        <td style="text-align:center">12.5 credits</td>
-        <td style="text-align:center">750 credits</td>
+        <td style="text-align:center">100 credits</td>
+        <td style="text-align:center">10 credits</td>
+        <td style="text-align:center">500 credits</td>
       </tr>
       <tr>
         <td>Daybreak Blue</td>
-        <td style="text-align:center">125 credits</td>
-        <td style="text-align:center">12.5 credits</td>
-        <td style="text-align:center">750 credits</td>
+        <td style="text-align:center">100 credits</td>
+        <td style="text-align:center">10 credits</td>
+        <td style="text-align:center">500 credits</td>
       </tr>
       <tr>
         <td>Daybreak Red</td>
@@ -745,7 +745,7 @@ sales](https://chatgpt.com/contact-sales?utm_internal_source=openai_developers_c
     <tfoot>
       <tr>
         <td colspan="4" style="text-align:center">
-          GPT-5.6 usage averages 5-40 credits per message.
+          GPT-5.6 usage averages 5-30 credits per message.
         </td>
       </tr>
       <tr>
@@ -764,6 +764,8 @@ sales](https://chatgpt.com/contact-sales?utm_internal_source=openai_developers_c
       </tr>
     </tfoot>
   </table>
+
+_GPT-5.6 Sol’s promotional pricing is available at least through November 21, 2026._
 
 Speed configurations will increase credit consumption for all models that apply.
 Fast mode consumes credits at a higher rate for supported models. See

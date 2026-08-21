@@ -10,10 +10,12 @@ path: /docs/third-party/slack
 
 Use Codex in Slack to kick off coding work from channels and threads. Mention `@Codex` with a prompt, and Codex creates a cloud chat and replies with the results.
 
-  <img src="https://developers.openai.com/images/codex/integrations/slack-example.png"
-    alt="Codex Slack integration in action"
-    class="block h-auto w-full mx-0!"
-  />
+
+
+
+> Illustration: Codex Slack integration in action
+
+
 
 ## Set up the Slack app
 
