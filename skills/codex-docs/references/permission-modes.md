@@ -30,6 +30,8 @@ When you're using the ChatGPT desktop app for the first time, you need to enable
 **Permissions**. Enabling a mode makes it available in the menu; it doesn't
 select the mode or change an existing chat.
 
+> Illustration: Permission visibility controls showing Default permissions, automatic review, and Full access.
+
 The available modes can depend on your local configuration and your
   organization's requirements. A mode that isn't allowed appears disabled.
 

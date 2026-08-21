@@ -30,6 +30,13 @@ The next sections cover opening **Remote** in the ChatGPT mobile app to access a
 desktop host. To connect Codex to a project on an SSH host, see
 [connect to an SSH host](#connect-to-an-ssh-host).
 
+
+
+
+> Illustration: Remote setup screen in the ChatGPT mobile app
+
+
+
 <a id="before-you-set-up-mobile-access"></a>
 
 ## Before you set up Remote
@@ -90,6 +97,8 @@ Existing connections used since June 8, 2026, remain paired. If you haven't
    In the app on the host, use **Settings** > **Connections** to manage connected
    devices. You can also choose whether to keep the computer awake, enable
    Computer Use, or install the Chrome extension.
+
+> Illustration: Connections controls for allowing devices to control this Mac and keeping it awake.
 
 ## Choose what to connect
 
@@ -173,6 +182,8 @@ On a Mac or Windows device where the feature is available, use **Settings >
 Connections > Control other devices** to add the other host. A device can allow
 remote access and control another device at the same time.
 
+> Illustration: Connections setup card for controlling another device from this Mac.
+
 ## Connect to an SSH host
 
 In the ChatGPT desktop app, add remote projects from an SSH host and run chats
@@ -209,6 +220,8 @@ unauthenticated public listeners.
 
 4. In the app, open **Settings > Connections**, add or enable the SSH host, then
    choose a remote project folder.
+
+> Illustration: Connections SSH list with three remote hosts.
 
 <a id="hand-off-a-thread-between-hosts"></a>
 <a id="hand-off-a-chat-between-hosts"></a>

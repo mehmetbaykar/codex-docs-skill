@@ -31,9 +31,13 @@ Use** and select **Install plugin** if prompted. If ChatGPT shows **Enable**,
 select it. Turn on the Computer Use server and skill toggles, then select **Try
 now** to start.
 
+> Illustration: Computer Use plugin controls with the MCP server and skill enabled.
+
 Then open **Settings > Computer use** to review app access. Connected browser
 controls show a **Manage** action. Apps you approve for future tasks appear in
 the **Always-allowed apps** section.
+
+> Illustration: Computer Use settings showing app controls and Calculator as the only always-allowed app.
 
 On Windows, keep the target app visible on the active desktop while the task
 runs. On macOS, grant Screen Recording and Accessibility permissions when
@@ -109,6 +113,10 @@ During a task, ChatGPT asks for your permission before it can use an app on your
 computer. You can choose **Always allow** so ChatGPT can use that app in the future
 without asking again. You can remove apps from the **Always allow** list in the
 **Computer Use** section of the ChatGPT desktop app settings.
+
+
+
+> Illustration: Computer Use approval dialog requesting access to Calculator
 
 ChatGPT may also ask for permission before taking sensitive or disruptive actions.
 

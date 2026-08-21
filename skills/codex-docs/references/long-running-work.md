@@ -31,6 +31,10 @@ the same session to steer the work or ask for a status update.
 In the IDE extension chat, enter `/goal` to start Goal mode for the open
 workspace. Continue the same chat to steer the task while it runs.
 
+
+
+> Illustration: ChatGPT desktop app goal progress controls above the composer
+
 <a id="start-a-goal"></a>
 <a id="define-what-done-means"></a>
 <a id="steer-a-running-goal"></a>

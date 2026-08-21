@@ -41,6 +41,10 @@ Open the built-in browser from the toolbar, by clicking a URL, by navigating
 manually, or by pressing `Cmd`+`Shift`+`B`
 (`Ctrl`+`Shift`+`B` on Windows).
 
+
+
+> Illustration: ChatGPT desktop app showing a browser comment on a local web app preview
+
 ## Search from the address bar
 
 Start typing in the built-in browser's address bar to find pages from its
@@ -136,6 +140,10 @@ the text input to give ChatGPT more granular style feedback. You can change
 values such as font, text, spacing, and color, preview the result on the page,
 and then send the annotation with a clearer target.
 
+
+
+> Illustration: ChatGPT desktop app showing built-in browser annotation style controls
+
 ## Keep browser tasks scoped
 
 Keep each browser task small enough to review in one pass.
@@ -178,6 +186,10 @@ For example:
 This app is slow. Use @Browser to capture a performance trace and inspect
 network traffic, then identify the bottleneck.
 ```
+
+
+
+> Illustration: ChatGPT desktop app Browser settings showing Developer mode with full CDP access enabled
 
 With ChatGPT Work on the web, ChatGPT can use a cloud-operated browser to
 research and interact with public websites. It runs separately from the

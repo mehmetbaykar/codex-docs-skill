@@ -112,6 +112,8 @@ Go to [chatgpt.com/sites](https://chatgpt.com/sites), find the Site, then select
 Sites doesn't have a standalone analytics view in the CLI or IDE extension. Open
 the Site in ChatGPT on the web or in the desktop app to review its analytics.
 
+> Illustration: Interactive Sites analytics dashboard showing unique visitors and page views over seven days.
+
 Analytics is currently available for Sites that aren't owned by an Enterprise
   workspace.
 

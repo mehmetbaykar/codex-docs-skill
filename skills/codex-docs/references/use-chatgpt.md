@@ -53,6 +53,8 @@ practices.
 ChatGPT Work can plan a task, gather context, use tools, and carry the work
 through to a result you can review.
 
+> Illustration: ChatGPT Work comparing vendors and producing a spreadsheet you can review.
+
 Ask it to:
 
 - **Research and analyze information.** Search the web, browse websites,
@@ -194,6 +196,8 @@ Plugins can connect ChatGPT to the tools and information you use for work, such
 as Google Drive, SharePoint, Salesforce, or Gong. Use them when a task depends
 on information outside the chat, actions in another system, or a
 repeatable workflow.
+
+> Illustration: ChatGPT plugin directory showing connected tools such as Google Drive, Slack, and SharePoint.
 
 Plugin availability depends on your plan, workspace settings, and the plugin
 itself. Learn more about [skills and plugins](https://learn.chatgpt.com/docs/skills-and-plugins).

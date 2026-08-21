@@ -548,6 +548,10 @@ explicit approval before it uses that access on a website.
 Browser use is also up to twice as fast because CDP and DOM snapshot
 optimizations reduce browser round trips.
 
+
+
+> Illustration: Codex Browser settings with Developer mode enabled
+
 **Prompt:**
 
 ```text
@@ -729,6 +733,10 @@ comments, while [Computer Use](https://learn.chatgpt.com/docs/computer-use) let 
 operate macOS apps. Together, they made visual implementation and end-to-end
 verification part of the same task as the code change.
 
+
+
+> Illustration: ChatGPT desktop app with a local web page open in the built-in browser
+
 <a id="start-with-a-task-and-keep-it-moving"></a>
 
 ### Start with a chat and keep it moving
@@ -789,6 +797,10 @@ with an explicit model and reasoning level. Reusable templates made common
 tasks faster to configure, and custom themes made the workspace easier to
 personalize.
 
+
+
+> Illustration: Scheduled task settings in the ChatGPT desktop app
+
 ### Let Codex inspect terminal output
 
 Codex also learned to read the [integrated terminal](https://learn.chatgpt.com/docs/integrated-terminal#run-and-validate-your-project)
@@ -811,6 +823,10 @@ Read the [March 11](https://learn.chatgpt.com/docs/changelog#codex-2026-03-11-ap
 The Codex app launched on [Windows](https://learn.chatgpt.com/docs/windows/windows-app) with native PowerShell
 and sandbox support, plus worktrees, scheduled tasks, and skills. WSL remained
 available for developers who preferred a Linux environment.
+
+
+
+> Illustration: Codex app running natively on Windows
 
 <a id="move-tasks-between-local-and-worktree"></a>
 
@@ -845,6 +861,10 @@ current [model guide](https://learn.chatgpt.com/docs/models).
 The Codex app launched as a desktop workspace for parallel project chats,
 built-in Git review, worktrees, skills, scheduled tasks, and voice dictation.
 Those capabilities now live in Codex in the [ChatGPT desktop app](https://learn.chatgpt.com/docs/app).
+
+
+
+> Illustration: The original Codex app showing parallel project chats on macOS
 
 ### Steer active work and add files
 

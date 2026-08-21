@@ -191,6 +191,10 @@ In the ChatGPT desktop app, press `Ctrl+Shift+D` while the composer is
 visible, then start talking. ChatGPT transcribes your speech into the composer
 so you can review and edit it before sending the prompt.
 
+
+
+> Illustration: Voice dictation indicator in the composer with a transcribed prompt
+
 <a id="threads"></a>
 <a id="chats"></a>
 

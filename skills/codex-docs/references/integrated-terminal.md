@@ -12,6 +12,10 @@ Each chat in the ChatGPT desktop app includes a terminal scoped to its current p
 worktree. Open it from the terminal icon in the top-right corner of the app, or
 press `Ctrl`+```.
 
+
+
+> Illustration: Integrated terminal drawer open beneath a ChatGPT chat
+
 ## Run and validate your project
 
 Use the terminal to validate changes, run scripts, and perform Git operations

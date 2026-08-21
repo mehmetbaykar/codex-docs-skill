@@ -36,6 +36,8 @@ The panel stays with the tab where you opened it. Chats you start in Chrome
 are available in the ChatGPT app, and you can open recent ChatGPT chats in
 Chrome, so you can continue work in either place.
 
+> Illustration: ChatGPT open beside the current Chrome tab.
+
 ## Bring tabs and selected text into a chat
 
 Mention an open Chrome tab in the side chat when you want ChatGPT to use that
@@ -65,6 +67,8 @@ aren't currently supported. Follow the setup flow to:
    extension](https://chromewebstore.google.com/detail/chatgpt/hehggadaopoacecdllhhajmbjkdcmajg).
 2. Approve Chrome's permission prompts.
 3. Open Chrome and confirm the ChatGPT side chat loads.
+
+> Illustration: Computer Use settings showing Google Chrome connected through the Chrome extension.
 
 ## Start a Chrome task from ChatGPT
 

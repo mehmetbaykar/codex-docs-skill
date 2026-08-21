@@ -73,6 +73,10 @@ From here you can commit your changes, push your branch to your remote repositor
 
 You can open your IDE to the worktree using the "Open" button in the header, use the integrated terminal, or anything else that you need to do from the worktree directory.
 
+
+
+> Illustration: Worktree chat view with branch controls and worktree details
+
 Remember, if you create a branch on a worktree, you can't check it out in any other worktree, including your local checkout.
 
 <a id="option-2-handing-a-thread-off-to-local"></a>
@@ -88,6 +92,10 @@ This path works well when you want to read the changes in your usual IDE window,
 Codex handles the Git steps required to move the chat safely between the worktree and your local checkout.
 
 Each chat keeps the same associated worktree over time. If you hand the chat back to a worktree later, Codex returns it to that same background environment so you can pick up where you left off.
+
+
+
+> Illustration: Handoff dialog moving a chat from a worktree to Local
 
 You can also go the other direction. If you're already working in Local and want to free up the foreground, use **Hand off** to move the chat to a worktree. This is useful when you want Codex to keep working in the background while you switch your attention back to something else locally.
 

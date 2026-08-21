@@ -40,6 +40,10 @@ Use actions to define common tasks like starting your app's development server o
 
 Actions are helpful to keep you from typing common actions like triggering a build for your project or starting a development server. For one-off quick debugging you can use the integrated terminal directly.
 
+
+
+> Illustration: Project actions list shown in ChatGPT desktop app settings
+
 For example, for a Node.js project you might create a "Run" action that contains the following script:
 
 ```bash
@@ -61,3 +65,5 @@ a pull request without leaving the app.
 Use the [integrated terminal](https://learn.chatgpt.com/docs/integrated-terminal) for Git
 operations that aren't exposed in the app. To isolate concurrent changes from
 your local checkout, start the task in a [worktree](https://learn.chatgpt.com/docs/environments/git-worktrees).
+
+> Illustration: Codex environment summary panel

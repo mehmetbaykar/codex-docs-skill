@@ -155,10 +155,12 @@ Depending on your configuration, the menu can include **Ask for approval**,
 **Approve for me** for eligible approval requests, **Full access**, and named or
 custom permissions profiles.
 
-  <img src="https://developers.openai.com/images/codex/ide/approval_mode.png"
-    alt="Codex approval mode selector in the IDE extension"
-    class="block h-auto w-full mx-0!"
-  />
+
+
+
+> Illustration: Codex approval mode selector in the IDE extension
+
+
 
 <a id="configure-defaults"></a>
 
