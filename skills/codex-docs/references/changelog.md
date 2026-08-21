@@ -177,12 +177,6 @@ Use Codex in the ChatGPT desktop app without losing your projects, settings, or 
 
 0.144.1
 
-## Codex CLI Release: 0.144.0 (2026-07-09)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-351657410
-
-0.144.0
-
 ## ChatGPT for iOS (2026-07-06)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-06-mobile
