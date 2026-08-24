@@ -264,8 +264,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "6d0729dcd97adc13fd538cd919a89685c425235fe12482b6dae604bb1065dcac",
-      "last_updated": "2026-08-15T01:49:11+00:00",
+      "hash": "f43e6e52322d662617ced6b7485e5daa795d3793163e9f29671aefba15052aa0",
+      "last_updated": "2026-08-24T21:43:43+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
@@ -498,8 +498,8 @@
       "title": "Glossary"
     },
     "hooks.md": {
-      "hash": "7087f9d5df99d33cfe0f5c2ea60cc5de3eb4a8e24df08cbfffe1b8fb1f4aa0a9",
-      "last_updated": "2026-08-12T02:43:50+00:00",
+      "hash": "b985d87b62bba0775451536ce701505ea806f3164a6e1825c34892ec03cdf310",
+      "last_updated": "2026-08-24T21:43:50+00:00",
       "original_url": "https://learn.chatgpt.com/docs/hooks",
       "path": "/docs/hooks",
       "source_url": "https://learn.chatgpt.com/docs/hooks.md",
@@ -1097,7 +1097,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-24T18:58:52+00:00",
+  "last_updated": "2026-08-24T21:44:09+00:00",
   "skipped": [
     {
       "path": "/docs",
