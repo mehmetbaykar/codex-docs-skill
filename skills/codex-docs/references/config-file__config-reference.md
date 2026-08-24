@@ -323,7 +323,7 @@ For sandbox and approval keys (`approval_policy`, `sandbox_mode`, and `sandbox_w
       key: "hooks.[].hooks",
       type: "array<table>",
       description:
-        "Hook handlers for a matcher group. Command hooks are currently supported; prompt and agent hook handlers are parsed but skipped.",
+        "Hook handlers for a matcher group. Command and MCP tool hooks are supported while prompt and agent hook handlers are parsed but skipped.",
     },
     {
       key: "hooks.[].hooks[].async",
@@ -1916,7 +1916,7 @@ model fields; `service_tier` is independent.
       key: "hooks.[].hooks",
       type: "array<table>",
       description:
-        "Hook handlers for a matcher group. Command hooks are currently supported; prompt and agent hook handlers are parsed but skipped.",
+        "Hook handlers for a matcher group. Command and MCP tool hooks are supported while prompt and agent hook handlers are parsed but skipped.",
     },
     {
       key: "hooks.[].hooks[].async",
