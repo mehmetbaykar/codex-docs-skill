@@ -25,7 +25,7 @@ available from the app composer, including `/feedback`, `/goal`, `/init`,
 
 ## How to read this reference
 
-This page catalogs every documented Codex CLI command and flag. Use the interactive tables to search by key or description. Each section indicates whether the option is stable or experimental and calls out risky combinations.
+This page catalogs every documented Codex CLI command and flag. Use the interactive tables to search by key or description. Each section shows the option's maturity and flags deprecated options and risky combinations.
 
 The CLI inherits most defaults from `~/.codex/config.toml`. Any
   `-c key=value` overrides you pass at the command line take
@@ -43,8 +43,8 @@ applies `--oss` to `exec`.
 ## Command overview
 
 The Maturity column uses feature maturity labels such as Experimental, Beta,
-  and Stable. See [Feature Maturity](https://learn.chatgpt.com/docs/feature-maturity) for how to
-  interpret these labels.
+  Stable, and Deprecated. See [Feature Maturity](https://learn.chatgpt.com/docs/feature-maturity) for
+  how to interpret these labels.
 
 ## Command details
 
@@ -236,7 +236,12 @@ with `name`, `root`, and optional `marketplaceSource`; upgrade JSON includes
 
 ### `codex mcp-server`
 
-Run Codex as an MCP server over stdio so that other tools can connect. This command inherits global configuration overrides and exits when the downstream client closes the connection.
+`codex mcp-server` is deprecated. Use the [Codex app
+  server](https://learn.chatgpt.com/docs/app-server) instead. To call Codex from Claude Code, use the
+  [Codex plugin for Claude Code](https://github.com/openai/codex-plugin-cc),
+  which uses the app server.
+
+For existing integrations, the command runs Codex as an MCP server over stdio so that other tools can connect. It inherits global configuration overrides and exits when the downstream client closes the connection.
 
 ### `codex resume`
 

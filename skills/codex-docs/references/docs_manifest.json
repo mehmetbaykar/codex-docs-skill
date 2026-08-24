@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "dfbeeaa84669fa1cecc66dfe70f9d4129ebc24561287fcd1a2112ea9ae957aad",
-      "last_updated": "2026-08-24T01:57:02+00:00",
+      "hash": "41c9a74285beb435ecd359cdd4869b7f7586b182a1d1bced8d0431cf13197bea",
+      "last_updated": "2026-08-24T18:58:25+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -354,8 +354,8 @@
       "title": "Recommended configuration"
     },
     "developer-commands.md": {
-      "hash": "796c8e5c617ee9ca3a7e2cf7b150c1b738d632994243d6fe5d9e502edd710301",
-      "last_updated": "2026-08-18T01:50:15+00:00",
+      "hash": "ad9db6bd3faabafb945578ece5db405878dc42458cb9666a50f5bfc11f3bc4fd",
+      "last_updated": "2026-08-24T18:58:31+00:00",
       "original_url": "https://learn.chatgpt.com/docs/developer-commands",
       "path": "/docs/developer-commands",
       "source_url": "https://learn.chatgpt.com/docs/developer-commands.md",
@@ -435,8 +435,8 @@
       "title": "Record & Replay"
     },
     "feature-maturity.md": {
-      "hash": "009052682f2e74ab61b6826ae5ca809844dc810c2e2049a7b3a097a3e4211063",
-      "last_updated": "2026-08-07T17:18:02+00:00",
+      "hash": "609e830e4883d9abcc27baed1eea3d927795293a9a66879d5be1ebb4e35b6bde",
+      "last_updated": "2026-08-24T18:58:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/feature-maturity",
       "path": "/docs/feature-maturity",
       "source_url": "https://learn.chatgpt.com/docs/feature-maturity.md",
@@ -561,8 +561,8 @@
       "title": "Long-running work"
     },
     "mcp-server.md": {
-      "hash": "426ef0089fb818f8b5e90afb0a0486cfa24cf84a7c85b0232ddbe86b0c7fe882",
-      "last_updated": "2026-08-07T17:18:07+00:00",
+      "hash": "ae814d6a85df5b3c50fa91640ccc06f4e4d2bdae73595eb61933fa3ed019a97f",
+      "last_updated": "2026-08-24T18:58:37+00:00",
       "original_url": "https://learn.chatgpt.com/docs/mcp-server",
       "path": "/docs/mcp-server",
       "source_url": "https://learn.chatgpt.com/docs/mcp-server.md",
@@ -1097,7 +1097,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-24T01:57:30+00:00",
+  "last_updated": "2026-08-24T18:58:52+00:00",
   "skipped": [
     {
       "path": "/docs",
