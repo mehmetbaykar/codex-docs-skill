@@ -102,8 +102,8 @@
       "title": "Appshots"
     },
     "artifacts-viewer.md": {
-      "hash": "ef596ed10815ab46a04e19b76885d25c116b8c9794faf2e3ac99b4c05c13d20c",
-      "last_updated": "2026-08-21T21:37:27+00:00",
+      "hash": "c525747326acb201c452750c7e9e3d4576642f68157b709458a3e479b70c2c71",
+      "last_updated": "2026-08-25T18:56:27+00:00",
       "original_url": "https://learn.chatgpt.com/docs/artifacts-viewer",
       "path": "/docs/artifacts-viewer",
       "source_url": "https://learn.chatgpt.com/docs/artifacts-viewer.md",
@@ -120,8 +120,8 @@
       "title": "Authentication"
     },
     "automations.md": {
-      "hash": "e8ad46cc5379d66a417b29e9d92476847f53dead71c24750bfde679eb049f47c",
-      "last_updated": "2026-08-21T21:37:28+00:00",
+      "hash": "38fced8847d7b5edd8032118caa36ae712261c8b0acd788cac3d17d62458135e",
+      "last_updated": "2026-08-25T18:56:28+00:00",
       "original_url": "https://learn.chatgpt.com/docs/automations",
       "path": "/docs/automations",
       "source_url": "https://learn.chatgpt.com/docs/automations.md",
@@ -651,8 +651,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "bce0207f9a5e3a08c9415824d07e9efe6e97ae568578e009f42a002ac343af82",
-      "last_updated": "2026-08-25T16:00:09+00:00",
+      "hash": "af63bf4fb126ea22bd0c6fa8c997bb75ae1cad4555cbba5dde8c68b23db1c6e6",
+      "last_updated": "2026-08-25T18:56:48+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -966,8 +966,8 @@
       "title": "Sites"
     },
     "skills-and-plugins.md": {
-      "hash": "bbd5dc72a17bf11efda7430fbb7a463a4d4266ce3dc976290ce3c13930619344",
-      "last_updated": "2026-08-07T17:18:24+00:00",
+      "hash": "a7d2e1c18bfc368a40bd06259bc6c1f143e5ff558aa830af3ff110a43cc0af9d",
+      "last_updated": "2026-08-25T18:56:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/skills-and-plugins",
       "path": "/docs/skills-and-plugins",
       "source_url": "https://learn.chatgpt.com/docs/skills-and-plugins.md",
@@ -975,8 +975,8 @@
       "title": "Skills & Plugins"
     },
     "third-party__github.md": {
-      "hash": "cffb584c9abfd6adb84ec4d40f6eece429798eecb44e31ef74fcdbe46196fca0",
-      "last_updated": "2026-08-21T21:37:53+00:00",
+      "hash": "55d7019ccd68bb4e1ac74cc9aa1ed8c36b3802e8439ffa9e9ce799d91c7521b5",
+      "last_updated": "2026-08-25T18:57:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/third-party/github",
       "path": "/docs/third-party/github",
       "source_url": "https://learn.chatgpt.com/docs/third-party/github.md",
@@ -1047,8 +1047,8 @@
       "title": "ChatGPT on the web"
     },
     "whats-new.md": {
-      "hash": "b7dfe731fa786fa78eb4e30c7d76da202f08fc18633bb176d98539aba86df8b6",
-      "last_updated": "2026-08-21T21:37:55+00:00",
+      "hash": "d0b99b5290b5aeba7251533c1d95c86d933ef639458c4be78215c730c7b146c0",
+      "last_updated": "2026-08-25T18:57:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -1097,7 +1097,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-25T16:00:30+00:00",
+  "last_updated": "2026-08-25T18:57:04+00:00",
   "skipped": [
     {
       "path": "/docs",

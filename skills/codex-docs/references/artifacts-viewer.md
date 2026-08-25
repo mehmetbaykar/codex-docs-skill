@@ -12,6 +12,8 @@ When a task produces a file, give ChatGPT the source data, expected file type,
 structure, and review criteria that matter for the task. The preview and review
 tools depend on the surface you use.
 
+[Watch: Work with documents, spreadsheets, and presentations in ChatGPT](https://www.youtube.com/watch?v=E3dDr_QtBuo)
+
 The ChatGPT desktop app previews generated documents, presentations,
 spreadsheets, and PDF files alongside the chat. When automatic previews are
 enabled, the app can open a generated file after a task finishes.

@@ -14,6 +14,8 @@ and posts a standard GitHub code review focused on serious issues. Security
 Review, available in research preview, provides a more in-depth review of
 potential security issues in a pull request.
 
+[Watch: Codex code review walkthrough](https://www.youtube.com/watch?v=HwbSWVg5Ln4)
+
 ## Before you start
 
 Make sure you have:
