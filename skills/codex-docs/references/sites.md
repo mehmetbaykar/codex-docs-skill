@@ -364,6 +364,9 @@ Sites hosts web experiences that run in the supported Sites runtime. Some
 frameworks, private networks, databases, background services, and hosting
 patterns aren't supported.
 
+HTTP, HTTPS, and WebSockets are supported. Raw inbound and outbound TCP
+connections aren't.
+
 Each Site has these storage limits:
 
 | Resource            | Limit                  |

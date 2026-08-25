@@ -651,8 +651,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "af63bf4fb126ea22bd0c6fa8c997bb75ae1cad4555cbba5dde8c68b23db1c6e6",
-      "last_updated": "2026-08-22T06:59:11+00:00",
+      "hash": "bce0207f9a5e3a08c9415824d07e9efe6e97ae568578e009f42a002ac343af82",
+      "last_updated": "2026-08-25T16:00:09+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -957,8 +957,8 @@
       "title": "Improving the threat model"
     },
     "sites.md": {
-      "hash": "6582d6ae0742127eb9ec9f1bb87796d77033edb5cb30bef6751f49664ce15555",
-      "last_updated": "2026-08-21T21:37:53+00:00",
+      "hash": "51f7572492b19bb54f5d6fa07bd584c020fe695460a520e130a644f901e8a98f",
+      "last_updated": "2026-08-25T16:00:24+00:00",
       "original_url": "https://learn.chatgpt.com/docs/sites",
       "path": "/docs/sites",
       "source_url": "https://learn.chatgpt.com/docs/sites.md",
@@ -1097,7 +1097,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-25T01:52:25+00:00",
+  "last_updated": "2026-08-25T16:00:30+00:00",
   "skipped": [
     {
       "path": "/docs",

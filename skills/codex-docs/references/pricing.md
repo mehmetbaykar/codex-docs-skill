@@ -126,9 +126,9 @@ Choose the GPT-5.6 model that best fits your work:
   classification, extraction, support, background automation, and focused coding
   tasks.
 
-The estimates below show local messages per five-hour window. Cloud chats on
-ChatGPT plans use GPT-5.6 Sol and may use more of your allowance than local
-messages.
+The estimates below show local messages per five-hour window for Plus and
+Business Standard seats. Cloud chats on ChatGPT plans use GPT-5.6 Sol and may use
+more of your allowance than local messages.
 
   <thead class="whitespace-nowrap">
     <tr>
@@ -137,13 +137,7 @@ messages.
         Plus
       </th>
       <th scope="col" style="text-align:center">
-        Pro 5x
-      </th>
-      <th scope="col" style="text-align:center">
-        Pro 20x
-      </th>
-      <th scope="col" style="text-align:center">
-        Business
+        Business Standard
       </th>
       <th scope="col" style="text-align:center">
         API Key
@@ -154,8 +148,6 @@ messages.
     <tr>
       <td>GPT-5.6 Sol</td>
       <td style="text-align:center">10-100</td>
-      <td style="text-align:center">50-500</td>
-      <td style="text-align:center">200-2,000</td>
       <td style="text-align:center">10-100</td>
       <td style="text-align:center">
         [Usage-based](https://platform.openai.com/docs/pricing)
@@ -163,50 +155,16 @@ messages.
     </tr>
     <tr>
       <td>GPT-5.6 Terra</td>
-      <td style="text-align:center">25-200</td>
-      <td style="text-align:center">125-1,000</td>
-      <td style="text-align:center">500-4,000</td>
-      <td style="text-align:center">25-200</td>
+      <td style="text-align:center">20-170</td>
+      <td style="text-align:center">20-150</td>
       <td style="text-align:center">
         [Usage-based](https://platform.openai.com/docs/pricing)
       </td>
     </tr>
     <tr>
       <td>GPT-5.6 Luna</td>
-      <td style="text-align:center">250-2,000</td>
-      <td style="text-align:center">1,250-10,000</td>
-      <td style="text-align:center">5,000-40,000</td>
-      <td style="text-align:center">250-2,000</td>
-      <td style="text-align:center">
-        [Usage-based](https://platform.openai.com/docs/pricing)
-      </td>
-    </tr>
-    <tr>
-      <td>GPT-5.5</td>
-      <td style="text-align:center">15-80</td>
-      <td style="text-align:center">75-400</td>
-      <td style="text-align:center">300-1,600</td>
-      <td style="text-align:center">15-80</td>
-      <td style="text-align:center">
-        [Usage-based](https://platform.openai.com/docs/pricing)
-      </td>
-    </tr>
-    <tr>
-      <td>GPT-5.4</td>
-      <td style="text-align:center">20-100</td>
-      <td style="text-align:center">100-500</td>
-      <td style="text-align:center">400-2,000</td>
-      <td style="text-align:center">20-100</td>
-      <td style="text-align:center">
-        [Usage-based](https://platform.openai.com/docs/pricing)
-      </td>
-    </tr>
-    <tr>
-      <td>GPT-5.4 mini</td>
-      <td style="text-align:center">60-350</td>
-      <td style="text-align:center">300-1,750</td>
-      <td style="text-align:center">1,200-7,000</td>
-      <td style="text-align:center">60-350</td>
+      <td style="text-align:center">215-1,720</td>
+      <td style="text-align:center">200-1,550</td>
       <td style="text-align:center">
         [Usage-based](https://platform.openai.com/docs/pricing)
       </td>
@@ -214,24 +172,30 @@ messages.
   </tbody>
   <tfoot>
     <tr>
-      <td colspan="6" style="text-align:center">
-        On ChatGPT plans, local messages and cloud chats share a **five-hour
-        window**. Additional weekly limits may apply.
+      <td colspan="4" style="text-align:center">
+        On Plus and Business Standard seats, local messages and cloud chats
+        share a **five-hour window**. Additional weekly limits may apply.
       </td>
     </tr>
     <tr>
-      <td colspan="6" style="text-align:center">
+      <td colspan="4" style="text-align:center">
         For Enterprise/Edu users with flexible pricing, there are no fixed rate
         limits—usage scales with [credits](#credits-overview).
       </td>
     </tr>
     <tr>
-      <td colspan="6" style="text-align:center">
+      <td colspan="4" style="text-align:center">
         Enterprise and Edu plans without flexible pricing have the same per-seat
         usage limits as Plus for most features.
       </td>
     </tr>
   </tfoot>
+
+Pro 5x and Pro 20x include 5x and 20x the usage of Plus, respectively.
+
+Business Premium seats include 5x the usage of Standard seats, with no five-hour
+limit, so you can work through longer uninterrupted sessions. Weekly limits
+still apply to Pro and Business Premium seats.
 
 Usage limits are shared with other agentic features once pricing for those
 features is effective. This currently includes [ChatGPT for
