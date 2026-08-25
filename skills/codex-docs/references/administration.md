@@ -41,6 +41,13 @@
           icon: "shieldCheck",
         },
         {
+          title: "ChatGPT Work cloud security",
+          description:
+            "Review hosted execution, connected accounts, access controls, retention, and audit visibility.",
+          href: "/codex/enterprise/chatgpt-work-cloud-security",
+          icon: "shieldCheck",
+        },
+        {
           title: "ChatGPT Work admin FAQ",
           description:
             "Review access, data, governance, usage, and incident controls for ChatGPT Work.",

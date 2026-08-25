@@ -75,8 +75,9 @@ built-in browser directly. The selected experience can open pages, click, type,
 inspect rendered state, take screenshots, and verify the result of its work in
 the page.
 
-Open the **Plugins** tab and install **Browser**. Then ask ChatGPT or Codex to
-use the browser in your task, or reference it directly with `@Browser`.
+Browser is included with the desktop app and installs automatically. Ask ChatGPT
+or Codex to use the built-in browser in your task, or reference it directly with
+`@Browser`.
 
 For example:
 
