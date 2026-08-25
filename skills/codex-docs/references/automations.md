@@ -8,9 +8,10 @@ path: /docs/automations
 
 > For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
-Schedule recurring tasks to run in the background. Review active, paused, and
-completed tasks and recent runs in **Scheduled**. You can combine scheduled
-tasks with [skills](https://learn.chatgpt.com/docs/build-skills) for more complex work.
+Schedule recurring tasks to run in the background. On ChatGPT web and mobile,
+eligible plans can also run tasks from supported app events. Review active,
+paused, and completed tasks and recent runs in **Scheduled**. You can combine
+scheduled tasks with [skills](https://learn.chatgpt.com/docs/build-skills) for more complex work.
 
 [Watch: Schedule tasks with ChatGPT](https://www.youtube.com/watch?v=CToxp125mhc)
 
@@ -67,6 +68,40 @@ project, upload, or connected service.
 Before you schedule a task, test its prompt in a regular web chat.
 Review the first few runs, then adjust the prompt, tools, or cadence if the
 results are too broad or need additional context.
+
+## Trigger tasks from app events
+
+On eligible plans, scheduled tasks can run when a supported Gmail, Slack, or
+GitHub event occurs. Event-triggered tasks are available in ChatGPT on the web
+and mobile. They aren't available in the ChatGPT desktop app, Codex CLI, or the
+IDE extension.
+
+Ask ChatGPT to create the task, then describe the event to watch for and what
+to do when it happens. The trigger determines when the task runs; the saved
+prompt determines what each run does. One task can use multiple event triggers,
+but it can't combine event triggers with a time-based schedule.
+
+Supported event triggers include:
+
+- **Gmail:** New incoming messages, optionally filtered by sender or subject.
+- **Slack:** New messages in selected channels, optionally filtered by author
+  and whether thread replies are included. Reactions, edits, deletes, and
+  direct messages aren't supported.
+- **GitHub:** Pull request activity in a repository. Filter by pull request,
+  author, title, or label, and choose whether reviews, comments, commit updates,
+  or only merges should trigger the task.
+
+Connect and authorize the app before creating the task. For Slack, add
+`@ChatGPT` to every channel the task watches. For GitHub, the connected app
+must have access to the repository.
+
+When several matching events arrive close together, ChatGPT may combine them
+in one run. Open **Scheduled** to review pending events or choose **Run now**
+to process them.
+
+Availability depends on your plan and workspace settings. In managed
+workspaces, administrators can control access with the **Allow event-triggered
+scheduled tasks** permission.
 
 For example, schedule a task to evaluate telemetry errors and submit fixes,
 or to create reports about recent codebase changes. For ongoing work that
@@ -131,9 +166,9 @@ rely on automatic tool selection.
 ## Ask ChatGPT to create or update scheduled tasks
 
 You can create and update scheduled tasks from a ChatGPT or Codex chat.
-Describe the work, the schedule, and whether each scheduled run should return to
-the current chat or start a new chat. ChatGPT can draft the prompt, choose the
-right destination, and update the scheduled task when its scope or cadence
+Describe the work, when it should run, and whether each run should return to the
+current chat or start a new chat. ChatGPT can draft the prompt, choose the
+right destination, and update the task when its scope or cadence
 changes.
 
 For example, ask ChatGPT to schedule a follow-up from the current chat while a
@@ -157,8 +192,8 @@ time.
 Schedule a task inside a chat for:
 
 - checking a long-running operation until it finishes
-- polling Slack, GitHub, or another connected source when the results should
-  stay in the same chat
+- checking a connected source on a fixed cadence when you need a periodic
+  snapshot rather than a response to one supported app event
 - reminding ChatGPT to continue a review loop at a fixed cadence
 - running a skill-driven workflow that uses plugins, such as checking PR status
   and addressing new feedback

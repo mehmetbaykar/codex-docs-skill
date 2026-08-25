@@ -63,6 +63,13 @@
           icon: "connect",
         },
         {
+          title: "Site tools (WebMCP)",
+          description:
+            "Use WebMCP to give AI agents a direct way to work with your website.",
+          href: "/codex/webmcp",
+          icon: "tools",
+        },
+        {
           title: "Hooks",
           description: "Run custom commands when Codex emits lifecycle events.",
           href: "/codex/hooks",

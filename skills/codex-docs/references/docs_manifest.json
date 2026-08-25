@@ -4,11 +4,11 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 119,
+    "pages_fetched_successfully": 120,
     "pages_skipped": 2,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 121
+    "total_pages_discovered": 122
   },
   "files": {
     "administration.md": {
@@ -120,8 +120,8 @@
       "title": "Authentication"
     },
     "automations.md": {
-      "hash": "38fced8847d7b5edd8032118caa36ae712261c8b0acd788cac3d17d62458135e",
-      "last_updated": "2026-08-25T18:56:28+00:00",
+      "hash": "ff4a208affdfdb7023888cff8754d591840799efea601a11dfd61ca374236472",
+      "last_updated": "2026-08-25T21:43:24+00:00",
       "original_url": "https://learn.chatgpt.com/docs/automations",
       "path": "/docs/automations",
       "source_url": "https://learn.chatgpt.com/docs/automations.md",
@@ -129,8 +129,8 @@
       "title": "Scheduled tasks"
     },
     "browser.md": {
-      "hash": "9c9e758f3b257e154e65eea1a13b91512f215365c82a937b82d7e52cd08193c8",
-      "last_updated": "2026-08-25T01:51:51+00:00",
+      "hash": "97bea4043b09a558457951904cd7c7ed9bd18e15ea341aa766ed38a0ff67c597",
+      "last_updated": "2026-08-25T21:43:24+00:00",
       "original_url": "https://learn.chatgpt.com/docs/browser",
       "path": "/docs/browser",
       "source_url": "https://learn.chatgpt.com/docs/browser.md",
@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "41c9a74285beb435ecd359cdd4869b7f7586b182a1d1bced8d0431cf13197bea",
-      "last_updated": "2026-08-24T18:58:25+00:00",
+      "hash": "7a540d02a385fd8197d5aa6558924d30b05af9c6644cd61fc90805b302d4c41e",
+      "last_updated": "2026-08-25T21:43:25+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -165,13 +165,13 @@
       "title": "Codex Changelog"
     },
     "chrome-extension.md": {
-      "hash": "0bfa73cd32ab55ac686f3d5004c05cb461ee78eadc0e47dff4ef1faf343af034",
-      "last_updated": "2026-08-21T21:37:29+00:00",
+      "hash": "a68e247569fb806422846925de7e23dbeae32a3de7fe5a7614ec4dd5e087d89c",
+      "last_updated": "2026-08-25T21:43:25+00:00",
       "original_url": "https://learn.chatgpt.com/docs/chrome-extension",
       "path": "/docs/chrome-extension",
       "source_url": "https://learn.chatgpt.com/docs/chrome-extension.md",
       "status": "live",
-      "title": "Chrome extension"
+      "title": "Browser extension"
     },
     "cli-customization.md": {
       "hash": "07a499759ec2813c676e17b97b57b872ddcdf33423b45fe21ecba6eb1adc177c",
@@ -372,8 +372,8 @@
       "title": "Developer settings"
     },
     "developers.md": {
-      "hash": "8d0c484ec5d636551165b5f908746e1a9e39be7a6119472c0596eab2cb9f8ddc",
-      "last_updated": "2026-08-20T18:58:42+00:00",
+      "hash": "48fb990e477076e33fe2343ead15642887c6545c4a7355f6d8a193f049c7eb01",
+      "last_updated": "2026-08-25T21:43:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/developers",
       "path": "/docs/developers",
       "source_url": "https://learn.chatgpt.com/docs/developers.md",
@@ -444,8 +444,8 @@
       "title": "Feature Maturity"
     },
     "features.md": {
-      "hash": "5490c7fdd8664283ccb80ca34cd3ada8692bfd7dc297bccfb30086498f0b9154",
-      "last_updated": "2026-08-06T23:55:50+00:00",
+      "hash": "19046a2ff8f946a3e80becf580670ffabc7cf2dc81be3c7e8918f1aa35125d77",
+      "last_updated": "2026-08-25T21:43:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features",
       "path": "/docs/features",
       "source_url": "https://learn.chatgpt.com/docs/features.md",
@@ -696,8 +696,8 @@
       "title": "Commands"
     },
     "reference__settings.md": {
-      "hash": "3ef88794951a28d3203d5a9f69bd3517a0c0ad67f3baebc8949b52ea0acff858",
-      "last_updated": "2026-08-21T21:37:46+00:00",
+      "hash": "a579d429b19328c112b333a1864e6c175c2d0bc438b2c13ca94ff483269c8a44",
+      "last_updated": "2026-08-25T21:43:44+00:00",
       "original_url": "https://learn.chatgpt.com/docs/reference/settings",
       "path": "/docs/reference/settings",
       "source_url": "https://learn.chatgpt.com/docs/reference/settings.md",
@@ -1011,8 +1011,8 @@
       "title": "Use Codex in Slack"
     },
     "use-chatgpt.md": {
-      "hash": "dac1eee5e9ee032ad19779b24b00dc0ba245cdd355086ad9926a367f430b2e69",
-      "last_updated": "2026-08-21T21:37:54+00:00",
+      "hash": "b8bcf3d1bf1930b64df547fe1d7d7cb3b665b2cdb040900c238aaaa69217a0b1",
+      "last_updated": "2026-08-25T21:43:55+00:00",
       "original_url": "https://learn.chatgpt.com/docs/use-chatgpt",
       "path": "/docs/use-chatgpt",
       "source_url": "https://learn.chatgpt.com/docs/use-chatgpt.md",
@@ -1046,9 +1046,18 @@
       "status": "live",
       "title": "ChatGPT on the web"
     },
+    "webmcp.md": {
+      "hash": "34fc6b46f45fc837bf3f96211754491eb62948d19b4521608ef8c7cb9b32ef69",
+      "last_updated": "2026-08-25T21:43:56+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/webmcp",
+      "path": "/docs/webmcp",
+      "source_url": "https://learn.chatgpt.com/docs/webmcp.md",
+      "status": "live",
+      "title": "Site tools"
+    },
     "whats-new.md": {
-      "hash": "d0b99b5290b5aeba7251533c1d95c86d933ef639458c4be78215c730c7b146c0",
-      "last_updated": "2026-08-25T18:57:03+00:00",
+      "hash": "09b28c391552bcbb2af24f9d1124c6edbfbd3383d1db5099ddde8510fe708944",
+      "last_updated": "2026-08-25T21:43:57+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -1097,7 +1106,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-25T18:57:04+00:00",
+  "last_updated": "2026-08-25T21:43:58+00:00",
   "skipped": [
     {
       "path": "/docs",

@@ -72,7 +72,7 @@ Ask it to:
   with [Sites](https://learn.chatgpt.com/docs/sites).
 - **Work across websites and apps.** Use the [browser](https://learn.chatgpt.com/docs/browser) to
   research and interact with websites. In the desktop app, use the
-  [Chrome extension](https://learn.chatgpt.com/docs/chrome-extension),
+  [browser extension](https://learn.chatgpt.com/docs/chrome-extension),
   [Computer Use](https://learn.chatgpt.com/docs/computer-use), and [appshots](https://learn.chatgpt.com/docs/appshots) when
   those features are available.
 - **Run code and review technical work.** Run code and shell commands, analyze
