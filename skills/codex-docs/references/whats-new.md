@@ -12,6 +12,60 @@ This weekly digest highlights ChatGPT and Codex features that can change how you
 work, with examples and links to learn more. For every versioned update, bug fix,
 and minor improvement, see the [Codex changelog](https://learn.chatgpt.com/docs/changelog).
 
+## August 24–28, 2026
+
+### Work with more websites
+
+- **Use your browser:** Work in [Edge, Brave, Opera, or Vivaldi](https://learn.chatgpt.com/docs/chrome-extension)
+  as well as Chrome from the ChatGPT desktop app. Bring an open tab into a
+  ChatGPT Work or Codex chat and work with the website where you're already
+  signed in. Opera supports browser control but doesn't have side chat.
+
+- **Use a website's tools:** With [Site tools (WebMCP)](https://learn.chatgpt.com/docs/webmcp), ChatGPT
+  Work and Codex can use actions offered by a website in the desktop app's
+  built-in browser. For example, a document editor can provide tools to find
+  a section or add a comment. Update the desktop app and use GPT-5.6 Sol or
+  GPT-5.6 Terra. Site tools aren't available with GPT-5.6 Luna or in Enterprise
+  or Edu workspaces.
+
+- **Sign in through the cloud browser:** On eligible plans, continue a task
+  that needs a website account in ChatGPT Work on the web, iOS, or Android.
+  Follow the [sign-in request](https://learn.chatgpt.com/docs/browser?surface=web#web-sign-in-to-a-website)
+  and enter your details in the sign-in flow, not in the chat. This doesn't
+  connect your local browser profile. Website sign-in isn't available for
+  Enterprise or Edu workspaces.
+
+Availability depends on rollout and workspace settings.
+
+**Prompt:**
+
+```text
+Use @Edge to read the current page and turn it into a concise checklist.
+```
+
+[Read the August 25 browser release
+notes](https://learn.chatgpt.com/docs/changelog#codex-2026-08-25-browser).
+
+### Run scheduled tasks from app events
+
+[Scheduled tasks](https://learn.chatgpt.com/docs/automations?surface=web#web-trigger-tasks-from-app-events) can now
+start when a supported event occurs in Gmail, Slack, or GitHub. Use an event
+trigger to triage new email, summarize channel activity, or act on pull request
+feedback without polling on a fixed cadence.
+
+Event-triggered tasks are available in ChatGPT on the web and mobile for
+eligible plans. Connect the relevant app and approve its requested access first. In managed
+workspaces, administrators can control access.
+
+**Prompt:**
+
+```text
+When one of my pull requests in <owner>/<repository> receives new review feedback, summarize the feedback and prepare a revision plan.
+```
+
+[Read the August 25 release
+notes](https://learn.chatgpt.com/docs/changelog#codex-2026-08-25-event-triggers).
+
 ## August 17–21, 2026
 
 ### Work with more of your apps and content

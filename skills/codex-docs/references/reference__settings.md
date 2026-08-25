@@ -74,7 +74,7 @@ code fonts. You can also share your custom theme with friends.
 ## Browser
 
 Use these settings to install or enable the bundled Browser plugin, set up the
-[Chrome extension](https://learn.chatgpt.com/docs/chrome-extension), and manage allowed and blocked
+[browser extension](https://learn.chatgpt.com/docs/chrome-extension), and manage allowed and blocked
 websites. ChatGPT asks before using a website unless you've allowed it. Removing
 a blocked site lets ChatGPT ask again before using it in the browser.
 
