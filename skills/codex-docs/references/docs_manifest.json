@@ -4,11 +4,11 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 120,
+    "pages_fetched_successfully": 121,
     "pages_skipped": 2,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 122
+    "total_pages_discovered": 123
   },
   "files": {
     "administration.md": {
@@ -786,13 +786,22 @@
       "title": "Run bulk security scans"
     },
     "security__cli__ci.md": {
-      "hash": "14fb63db9d4aaa3249678d363421189b2ba08eafc110e812fa383d681934d9bf",
-      "last_updated": "2026-08-14T21:40:08+00:00",
+      "hash": "edbb6763bfb4f1146dbc58e3316675b9d2b48f707c18c8a82f20d63c2165a63b",
+      "last_updated": "2026-08-26T09:57:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/ci",
       "path": "/docs/security/cli/ci",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/ci.md",
       "status": "live",
       "title": "Run Codex Security in CI"
+    },
+    "security__cli__ci__gitlab.md": {
+      "hash": "73a0262c8fbd8a8450a2ee7e66afead2392ace65a251a5541ed3f2193e4ba730",
+      "last_updated": "2026-08-26T09:57:35+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/security/cli/ci/gitlab",
+      "path": "/docs/security/cli/ci/gitlab",
+      "source_url": "https://learn.chatgpt.com/docs/security/cli/ci/gitlab.md",
+      "status": "live",
+      "title": "Run Codex Security in GitLab CI/CD"
     },
     "security__cli__faq.md": {
       "hash": "e146e889deb1035a3b63ad6dfbef0c96b3d758e744a91a94407d743cf1f7640c",
@@ -1106,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-26T01:58:44+00:00",
+  "last_updated": "2026-08-26T09:57:46+00:00",
   "skipped": [
     {
       "path": "/docs",

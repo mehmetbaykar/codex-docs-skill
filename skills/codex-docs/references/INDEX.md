@@ -93,6 +93,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `security__cli` - [Codex Security CLI quickstart](https://learn.chatgpt.com/docs/security/cli)
 - `security__cli__bulk-scans` - [Run bulk security scans](https://learn.chatgpt.com/docs/security/cli/bulk-scans)
 - `security__cli__ci` - [Run Codex Security in CI](https://learn.chatgpt.com/docs/security/cli/ci)
+- `security__cli__ci__gitlab` - [Run Codex Security in GitLab CI/CD](https://learn.chatgpt.com/docs/security/cli/ci/gitlab)
 - `security__cli__faq` - [Codex Security CLI FAQ](https://learn.chatgpt.com/docs/security/cli/faq)
 - `security__cli__reference` - [Codex Security CLI reference](https://learn.chatgpt.com/docs/security/cli/reference)
 - `security__faq` - [Codex Security cloud FAQ](https://learn.chatgpt.com/docs/security/faq)
