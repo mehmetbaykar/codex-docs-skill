@@ -3,6 +3,24 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.150.1 (2026-08-27)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-377521340
+
+0.150.1
+
+## ChatGPT for iOS (2026-08-26)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-25-mobile
+
+ChatGPT for iOS
+
+## Codex CLI Release: 0.150.0 (2026-08-26)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-377374683
+
+0.150.0
+
 ## Browser extensions, site tools, and cloud sign-in (2026-08-25)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-25-browser
@@ -21,11 +39,23 @@ Run ChatGPT scheduled tasks from supported app activity instead of polling.
 
 Codex MCP server command deprecated
 
+## Codex CLI Release: 0.149.1 (2026-08-24)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-375371090
+
+0.149.1
+
 ## Codex and ChatGPT updates (2026-08-20)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-20-app
 
 New ways to work with Codex and ChatGPT.
+
+## Codex CLI Release: 0.149.0 (2026-08-20)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-374028976
+
+0.149.0
 
 ## GitLab support in Codex cloud (Beta) (2026-08-19)
 
@@ -38,6 +68,12 @@ Connect a GitLab project to Codex cloud, delegate tasks, and review merge reques
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-17-mobile
 
 ChatGPT for iOS
+
+## Codex CLI Release: 0.148.0 (2026-08-18)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-372686337
+
+0.148.0
 
 ## Public plugin catalog CSV export (2026-08-17)
 
@@ -69,6 +105,18 @@ Introducing Daybreak Blue and Daybreak Red
 
 ChatGPT for iOS
 
+## Codex CLI Release: 0.147.0 (2026-08-07)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-366471016
+
+0.147.0
+
+## Codex CLI Release: 0.146.1 (2026-08-05)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-365644216
+
+0.146.1
+
 ## GPT-5.4 and GPT-5.4 mini retire from Codex on August 31 (2026-07-31)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-31
@@ -93,6 +141,12 @@ Browse faster, review changes across repositories, and refine generated images i
 
 Sign in with ChatGPT (beta)
 
+## Codex CLI Release: 0.146.0 (2026-07-29)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-361463950
+
+0.146.0
+
 ## ChatGPT for iOS (2026-07-27)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-27-mobile
@@ -105,11 +159,23 @@ ChatGPT for iOS
 
 Talk through tasks with ChatGPT Voice and organize Codex projects across related local folders.
 
+## Codex CLI Release: 0.145.0 (2026-07-21)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-357545274
+
+0.145.0
+
 ## ChatGPT for iOS (2026-07-20)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-20-mobile
 
 ChatGPT for iOS
+
+## Codex CLI Release: 0.144.6 (2026-07-18)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-356112050
+
+0.144.6
 
 ## ChatGPT for iOS (2026-07-13)
 
