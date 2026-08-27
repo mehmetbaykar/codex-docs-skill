@@ -75,8 +75,8 @@
       "title": "Use ChatGPT Work and Codex with Amazon Bedrock"
     },
     "app-server.md": {
-      "hash": "1a3cf45cf90f9e081e6d8cb54fdc728f8d6a3f2f4a6772756fdb8c1372d7c777",
-      "last_updated": "2026-08-18T01:50:05+00:00",
+      "hash": "80db88643b7633a59d920a3cfcc2d03aefe9d6c4496f95b8633915078647ef04",
+      "last_updated": "2026-08-27T00:47:26+00:00",
       "original_url": "https://learn.chatgpt.com/docs/app-server",
       "path": "/docs/app-server",
       "source_url": "https://learn.chatgpt.com/docs/app-server.md",
@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "841d15888fc3e9d8b37f5740a243e7127fe3f8f4b613f6b62565989a8a81491f",
-      "last_updated": "2026-08-26T20:02:00+00:00",
+      "hash": "7a540d02a385fd8197d5aa6558924d30b05af9c6644cd61fc90805b302d4c41e",
+      "last_updated": "2026-08-27T00:47:28+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -264,8 +264,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "f43e6e52322d662617ced6b7485e5daa795d3793163e9f29671aefba15052aa0",
-      "last_updated": "2026-08-24T21:43:43+00:00",
+      "hash": "eef951acf4404ae433cc776c6c39763f0f5123caeafd1905438f977ab357d71d",
+      "last_updated": "2026-08-27T00:47:31+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
@@ -273,8 +273,8 @@
       "title": "Configuration Reference"
     },
     "config-file__config-sample.md": {
-      "hash": "0e8b892f28e78f20c8ea6476bc13c96b18293626047676af369c16db0cb33151",
-      "last_updated": "2026-08-15T01:49:11+00:00",
+      "hash": "b4b981e03cbbdf18dfa04f2207f0d26e95fed75f362ad95bad9129299aba8ec4",
+      "last_updated": "2026-08-27T00:47:31+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-sample",
       "path": "/docs/config-file/config-sample",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-sample.md",
@@ -417,8 +417,8 @@
       "title": "Codex environments"
     },
     "extend__mcp.md": {
-      "hash": "f864d084ac51f04adb215c1105722668e06c0bbd860c56158a3450e02af81310",
-      "last_updated": "2026-08-18T07:03:36+00:00",
+      "hash": "e39ecca025c3b7d9bb52c1124eaac870e55ee3871b1289b148bc6efdf61746a5",
+      "last_updated": "2026-08-27T00:47:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/extend/mcp",
       "path": "/docs/extend/mcp",
       "source_url": "https://learn.chatgpt.com/docs/extend/mcp.md",
@@ -651,8 +651,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "af63bf4fb126ea22bd0c6fa8c997bb75ae1cad4555cbba5dde8c68b23db1c6e6",
-      "last_updated": "2026-08-25T18:56:48+00:00",
+      "hash": "e27564ace8fa56d552811f84b7cb61e68ed8618c614104036fd0d56958bde3d8",
+      "last_updated": "2026-08-27T00:47:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -831,8 +831,8 @@
       "title": "Codex Security cloud FAQ"
     },
     "security__plugin.md": {
-      "hash": "c2ebd885950be5e4c0a52a15aa7a686e3dd43304b117672fa6d5ff381573362f",
-      "last_updated": "2026-08-14T21:40:09+00:00",
+      "hash": "e6d1f47db2c95e97268d8524ea2df4d389704b6e6d1905336d61aca00660f43b",
+      "last_updated": "2026-08-27T00:47:47+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin",
       "path": "/docs/security/plugin",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin.md",
@@ -840,8 +840,8 @@
       "title": "Codex Security plugin quickstart"
     },
     "security__plugin__changelog.md": {
-      "hash": "18b216688fbabeed699e4f725eaa990dc0d95551b16d462a68f919f56b4c37ee",
-      "last_updated": "2026-08-18T07:03:51+00:00",
+      "hash": "3e4c403c1898c4e6412b71213c6e1ea4908e58b8f5906439437d8c9ff845aaf9",
+      "last_updated": "2026-08-27T00:47:47+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/changelog",
       "path": "/docs/security/plugin/changelog",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/changelog.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-26T20:02:28+00:00",
+  "last_updated": "2026-08-27T00:47:55+00:00",
   "skipped": [
     {
       "path": "/docs",
