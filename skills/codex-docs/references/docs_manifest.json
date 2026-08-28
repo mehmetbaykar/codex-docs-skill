@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "d9b9cad524c06b67af56f09fec94d302c0c6b0b08d74b294f08323e0ecb6ebe4",
-      "last_updated": "2026-08-27T14:10:58+00:00",
+      "hash": "daad1f272ec55cf2607a37bf6b018644b2fa9c0b036b036f8e05af0c6830f9d6",
+      "last_updated": "2026-08-28T15:20:44+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -336,8 +336,8 @@
       "title": "Customization"
     },
     "cyber-safety.md": {
-      "hash": "318a39c5e32b179e584ab282e8b87d28fad97fcab4da221014c14ff446596b41",
-      "last_updated": "2026-08-11T10:10:35+00:00",
+      "hash": "657bb9e38e250ebc6f0c3eafc590fbbfc04200f4fc7b3f8d0c08a558f6df3162",
+      "last_updated": "2026-08-28T15:20:49+00:00",
       "original_url": "https://learn.chatgpt.com/docs/cyber-safety",
       "path": "/docs/cyber-safety",
       "source_url": "https://learn.chatgpt.com/docs/cyber-safety.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-28T00:25:31+00:00",
+  "last_updated": "2026-08-28T15:21:11+00:00",
   "skipped": [
     {
       "path": "/docs",
