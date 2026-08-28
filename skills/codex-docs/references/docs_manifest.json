@@ -1056,8 +1056,8 @@
       "title": "ChatGPT on the web"
     },
     "webmcp.md": {
-      "hash": "34fc6b46f45fc837bf3f96211754491eb62948d19b4521608ef8c7cb9b32ef69",
-      "last_updated": "2026-08-25T21:43:56+00:00",
+      "hash": "9df779448d19d6116db87f1fee6abce7201bf1f1c169c35487c24456427e72ee",
+      "last_updated": "2026-08-28T00:25:30+00:00",
       "original_url": "https://learn.chatgpt.com/docs/webmcp",
       "path": "/docs/webmcp",
       "source_url": "https://learn.chatgpt.com/docs/webmcp.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-27T14:11:32+00:00",
+  "last_updated": "2026-08-28T00:25:31+00:00",
   "skipped": [
     {
       "path": "/docs",
