@@ -159,12 +159,6 @@ ChatGPT for iOS
 
 Talk through tasks with ChatGPT Voice and organize Codex projects across related local folders.
 
-## Codex CLI Release: 0.145.0 (2026-07-21)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-357545274
-
-0.145.0
-
 ## ChatGPT for iOS (2026-07-20)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-20-mobile
