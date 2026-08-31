@@ -678,8 +678,8 @@
       "title": "Prompting"
     },
     "quickstart.md": {
-      "hash": "87ab3ab3c094934e48205600a319711b354f8770786d55f2d43bc5b8767a21bb",
-      "last_updated": "2026-08-21T21:37:45+00:00",
+      "hash": "ebf696047a8ece42496ca39cf06fbbf445b7e3b0e526f176caea357a91fc2128",
+      "last_updated": "2026-08-31T05:33:16+00:00",
       "original_url": "https://learn.chatgpt.com/docs/quickstart",
       "path": "/docs/quickstart",
       "source_url": "https://learn.chatgpt.com/docs/quickstart.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-29T16:43:41+00:00",
+  "last_updated": "2026-08-31T05:33:28+00:00",
   "skipped": [
     {
       "path": "/docs",
