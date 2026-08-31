@@ -210,8 +210,8 @@
       "title": "Code review"
     },
     "codex-sdk.md": {
-      "hash": "43d1c32149930663ede84fe9fb9b807ff661f67b5b3b3385c1d056ef0eb53ebb",
-      "last_updated": "2026-08-11T07:36:40+00:00",
+      "hash": "fc153cb9d57d43e4e62dcd20c941f676acc6f2a0bd0d0e1016b5e724b7bc40c7",
+      "last_updated": "2026-08-31T20:50:11+00:00",
       "original_url": "https://learn.chatgpt.com/docs/codex-sdk",
       "path": "/docs/codex-sdk",
       "source_url": "https://learn.chatgpt.com/docs/codex-sdk.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-08-31T05:33:28+00:00",
+  "last_updated": "2026-08-31T20:50:39+00:00",
   "skipped": [
     {
       "path": "/docs",
