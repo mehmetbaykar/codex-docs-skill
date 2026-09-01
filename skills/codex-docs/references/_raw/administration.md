@@ -112,6 +112,13 @@
           icon: "users",
         },
         {
+          title: "User lifecycle management",
+          description:
+            "Provision employees, update group access, and revoke departing users' credentials.",
+          href: "/codex/enterprise/user-lifecycle",
+          icon: "userLock",
+        },
+        {
           title: "Roles and workspace permissions",
           description:
             "Use the canonical map of workspace, runtime, API, plugin, and source-system controls.",
