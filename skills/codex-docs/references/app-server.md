@@ -321,7 +321,7 @@ If a client sends an experimental method or field without opting in, app-server 
 - `thread/backgroundTerminals/list` - list running background terminals for a loaded thread (experimental; requires `capabilities.experimentalApi`).
 - `thread/backgroundTerminals/terminate` - terminate one running background terminal by app-server `processId` (experimental; requires `capabilities.experimentalApi`).
 - `thread/rollback` - deprecated; drop the last N turns from the in-memory context and persist a rollback marker; returns the updated `thread`.
-- `turn/start` - add user input to a thread and begin Codex generation; responds with the initial `turn` and streams events. For `collaborationMode`, `settings.developer_instructions: null` means "use built-in instructions for the selected mode."
+- `turn/start` - add user input or standalone tool output to a thread and begin Codex generation; responds with the initial `turn` and streams events. For `collaborationMode`, `settings.developer_instructions: null` means "use built-in instructions for the selected mode."
 - `thread/inject_items` - append raw Responses API items to a loaded thread's model-visible history without starting a user turn.
 - `turn/steer` - append user input to the active in-flight turn for a thread; returns the accepted `turnId`.
 - `turn/interrupt` - request cancellation of an in-flight turn; success is `{}` and the turn ends with `status: "interrupted"`.
@@ -856,8 +856,12 @@ This API runs outside the sandbox with full access and doesn't inherit the threa
 
 If the thread already has an active turn, the command runs as an auxiliary action on that turn and its formatted output is injected into the turn's message stream. If the thread is idle, app-server starts a standalone turn for the shell command.
 
+Set `timeoutMs` to limit execution time in milliseconds. Omitting it or passing
+`null` uses the one-hour default. `0` requests an immediate timeout; negative
+values are rejected. The timeout doesn't delay the immediate RPC acknowledgement.
+
 ```json
-{ "method": "thread/shellCommand", "id": 26, "params": { "threadId": "thr_b", "command": "git status --short" } }
+{ "method": "thread/shellCommand", "id": 26, "params": { "threadId": "thr_b", "command": "git status --short", "timeoutMs": 10000 } }
 { "id": 26, "result": {} }
 ```
 
@@ -987,6 +991,31 @@ Examples:
 } }
 { "id": 30, "result": { "turn": { "id": "turn_456", "status": "inProgress", "items": [], "error": null } } }
 ```
+
+To start a turn with output from a tool your client ran, pass `toolOutput`
+with a nonempty `name`, an optional `namespace`, and an `output` string or
+array of content items. Set `input` to an empty array; you can't combine
+`toolOutput` with nonempty user input.
+
+```json
+{
+  "method": "turn/start",
+  "id": 31,
+  "params": {
+    "threadId": "thr_123",
+    "input": [],
+    "toolOutput": {
+      "name": "run_tests",
+      "namespace": null,
+      "output": "All 42 tests passed."
+    }
+  }
+}
+```
+
+The output remains tool output in the conversation and appears as a
+`functionCallOutput` item in notifications and persisted history. If a regular
+turn is already active, Codex queues the output for that turn.
 
 ### Inject items into a thread
 
@@ -1293,6 +1322,7 @@ The fuzzy file search session API emits per-query notifications:
 `ThreadItem` is the tagged union carried in turn responses and `item/*` notifications. Common item types include:
 
 - `userMessage` - `{id, content}` where `content` is a list of user inputs (`text`, `image`, or `localImage`).
+- `functionCallOutput` - `{id, name, namespace, output}` for standalone tool output supplied through `turn/start.toolOutput`. `namespace` can be `null`.
 - `agentMessage` - `{id, text, phase?}` containing the accumulated agent reply. When present, `phase` uses Responses API wire values (`commentary`, `final_answer`).
 - `plan` - `{id, text}` containing proposed plan text in plan mode. Treat the final `plan` item from `item/completed` as authoritative.
 - `reasoning` - `{id, summary, content}` where `summary` holds streamed reasoning summaries and `content` holds raw reasoning blocks.
