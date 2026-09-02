@@ -28,6 +28,13 @@
           href: "/codex/enterprise/admin-setup",
           icon: "users",
         },
+      ],
+    },
+    {
+      title: "ChatGPT Work",
+      description:
+        "Review the ChatGPT Work overview and administration reference.",
+      pages: [
         {
           title: "ChatGPT Work Overview",
           description:
