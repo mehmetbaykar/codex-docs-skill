@@ -12,8 +12,8 @@
   },
   "files": {
     "administration.md": {
-      "hash": "73580125a9cb8ead95ef2cd6df089e3e816e0e165c85e029777a0f8809219a7f",
-      "last_updated": "2026-09-01T08:37:50+00:00",
+      "hash": "d4ae9af5e6523cb40c9839999727fea70e2450bc8e6d58ae189919e9e3a62c38",
+      "last_updated": "2026-09-02T04:32:02+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-01T23:18:23+00:00",
+  "last_updated": "2026-09-02T04:32:33+00:00",
   "skipped": [
     {
       "path": "/docs",
