@@ -231,6 +231,12 @@ chatgpt_base_url = "https://chatgpt.com/backend-api/"
 
 mcp_oauth_credentials_store = "auto"
 
+# Shared wait for optional MCP servers before building the initial tool catalog.
+
+# Default: 1000 ms. Set to 0 to wait for each server's startup_timeout_sec instead.
+
+# mcp_optional_startup_grace_ms = 1000
+
 # Optional global fixed port for MCP OAuth callback: 1-65535. Default: unset.
 
 # A server-specific oauth.callback_port overrides this global listener port.
@@ -382,6 +388,14 @@ web_search = "cached"
 # Skills (per-skill overrides)
 
 ################################################################################
+
+# Token budget for the available-skills catalog. Default: 2% of the model context
+
+# window. Explicit values must be positive and are capped at 10000 tokens.
+
+# [skills]
+
+# max_context_tokens = 2000
 
 # Disable or re-enable a specific skill without deleting it.
 
@@ -843,6 +857,10 @@ enabled = true
 
 # oauth_resource = "https://docs.example.com/" # optional OAuth resource
 
+# [mcp_servers.docs.tools.search]
+
+# output_token_limit = 30000 # positive token budget, before the 20% serialization allowance
+
 # --- Example: Streamable HTTP transport ---
 
 # [mcp_servers.github]
@@ -858,6 +876,8 @@ enabled = true
 # http_headers = { "X-Example" = "value" } # optional static headers
 
 # env_http_headers = { "X-Auth" = "AUTH_ENV" } # optional headers populated from env vars
+
+# http_headers_helper = "company-auth mcp-headers" # local command that prints a JSON header map
 
 # startup_timeout_sec = 10.0 # optional
 
