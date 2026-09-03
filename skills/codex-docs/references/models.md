@@ -8,6 +8,8 @@ path: /docs/models
 
 > For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
+GPT‑6 Astra is rolling out today for enterprises in our [Trusted Access Program⁠](https://openai-dotcom-preview.vercel.app/form/enterprise-trusted-access-for-cyber/), with access through API and our Plus, Pro, Business and Enterprise plans coming in the coming days.
+
 
 
 ## Choose a model
@@ -97,22 +99,55 @@ making it useful for larger tasks that can be split across subagents.
 <a id="deprecated-codex-models"></a>
 <a id="configure-your-default-local-model"></a>
 <a id="choose-a-model-for-cloud-tasks"></a>
+<a id="gpt-6-astra"></a>
 
 ## Recommended models
 
-Start with the default Power setting, which uses `gpt-5.6-sol` with medium
-  reasoning. Move toward **Smarter** for deeper reasoning or **Faster** for
-  faster, lower-cost work. Open **Advanced** when you want `gpt-5.6-luna` or a
-  specific model, reasoning effort, or speed.
+<a id="app-compare-models"></a>
 
-## Choosing Sol, Terra, and Luna
+Availability depends on the rollout, your sign-in method, and your client.
+See [pricing](https://learn.chatgpt.com/docs/pricing#gpt-6-astra-usage) for plan access and usage, and
+[workspace model availability](https://learn.chatgpt.com/docs/enterprise/workspace-model-availability#gpt-6-astra-in-enterprise)
+for Enterprise access.
 
-Codex offers three GPT-5.6 models: **Sol** for detail and polish, **Terra** as the
-everyday workhorse, and **Luna** for clear, repeatable work. If you are unsure,
-start with Sol.
+Start with the default Power setting available to your account. Move toward
+  **Smarter** for deeper reasoning or **Faster** for faster, lower-cost work.
+  Open **Advanced** when you want `gpt-5.6-luna` or a specific model, reasoning
+  effort, or speed.
+
+The picker illustrations show GPT-5.6 controls. For eligible Pro, Business
+($100), and Enterprise accounts, the Astra rollout updates the Power options
+to Terra Light, Sol Light, Sol Medium, Astra Light, Astra Medium, and Astra
+Extra High. Options can differ by plan and rollout stage.
+
+### Experimental context management
+
+On supported Codex clients, users signed in with ChatGPT Plus or Pro can opt
+in to experimental context management. Astra keeps notes across context
+windows and can search earlier messages and tool results from the same task.
+This experiment is off by default and isn't available with Business, Enterprise, or
+API-key sign-in at launch.
+
+To opt in, set `features.context_management.experimental_mode = true` in your
+`config.toml`, then start a new task. See the [configuration reference](https://learn.chatgpt.com/docs/config-file/config-reference)
+for the setting and [configuration basics](https://learn.chatgpt.com/docs/config-file/config-basic)
+for the file location. Workspace requirements still apply.
+
+<a id="choosing-sol-terra-and-luna"></a>
+
+## Choosing Astra, Sol, Terra, and Luna
+
+Choose **Astra** when a task needs the strongest capability across multiple
+steps and tools. **Sol** offers depth and polish, **Terra** suits everyday work,
+and **Luna** suits clear, repeatable tasks.
 
 ### Where each model shines
 
+- **Astra, for the hardest end-to-end work.** Choose Astra for complete workflows
+  across code, apps, and research that need sustained reasoning and judgment.
+  Give it the sources, templates, constraints, and checks that define a useful
+  result. Astra is better at asking focused questions and incorporating your
+  guidance while keeping the original goal and constraints in view.
 - **Sol, for complex, open-ended work.** Choose Sol for ambiguous, difficult, or
   high-value tasks that need extra analysis, judgment, or polish, such as
   complex code changes, deep research, or polished documents. For narrower
