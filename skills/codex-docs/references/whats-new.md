@@ -25,11 +25,9 @@ produce a document, spreadsheet, or presentation that fits your templates and
 task.
 
 Once Astra is available to your account, choose it from the model selector.
-Plus and standard Business
-include limited usage, and larger Pro and Business plans use their existing
-allowance. See [Astra usage and pricing](https://learn.chatgpt.com/docs/pricing#gpt-6-astra-usage) before
-starting a large task. Enterprise access requires both rollout eligibility and
-an administrator to enable it.
+See [usage and pricing](https://learn.chatgpt.com/docs/pricing) before starting a large task.
+Enterprise access requires both rollout eligibility and an administrator to
+enable it.
 
 ## August 24–28, 2026
 

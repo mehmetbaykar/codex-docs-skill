@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.153.2 (2026-09-03)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-382394608
+
+0.153.2
+
 ## Codex CLI Release: 0.153.1 (2026-09-03)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-382330424
@@ -176,12 +182,6 @@ Browse faster, review changes across repositories, and refine generated images i
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-07-29
 
 Sign in with ChatGPT (beta)
-
-## Codex CLI Release: 0.146.0 (2026-07-29)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-361463950
-
-0.146.0
 
 ## ChatGPT for iOS (2026-07-27)
 
