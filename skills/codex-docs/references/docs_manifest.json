@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "9e66ef092b1bfdff4da0c4ac9e1396f584ea210a5d3e3362b56cb04eb51c990d",
-      "last_updated": "2026-09-04T16:20:56+00:00",
+      "hash": "511500d80189eff20cc4316202401203f598b662d86d0bc0f81486735a1b7550",
+      "last_updated": "2026-09-04T20:46:38+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -570,8 +570,8 @@
       "title": "Use Codex with the Agents SDK"
     },
     "models.md": {
-      "hash": "4a6b149bfa74743f37e969db93c625d26bf77b90d5a84d2748b81fee14e6c316",
-      "last_updated": "2026-09-04T04:31:17+00:00",
+      "hash": "030784fa5faa5a27a7871374e63d29630be9b8bf80f06e251042ad589963fc87",
+      "last_updated": "2026-09-04T20:46:53+00:00",
       "original_url": "https://learn.chatgpt.com/docs/models",
       "path": "/docs/models",
       "source_url": "https://learn.chatgpt.com/docs/models.md",
@@ -651,8 +651,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "21fa0b4f0021f516f3b120dc145cbbff2898419e9e99c21944d448dd9ef18718",
-      "last_updated": "2026-09-04T04:31:20+00:00",
+      "hash": "6107c0bd9dee3869548c57aff9ab2ba4d8bb88343b453abfcf1014f8a8b3819d",
+      "last_updated": "2026-09-04T20:46:57+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -1065,8 +1065,8 @@
       "title": "Site tools"
     },
     "whats-new.md": {
-      "hash": "afaa9ef01dc0cf442642dfbe8fb9106d9feaff738f55aba61dd70a6b25dabee3",
-      "last_updated": "2026-09-04T04:31:35+00:00",
+      "hash": "693125781d18d1aa3caea4138b1a89b1ba34704a6c47ab78b8d7b940fc2e25a7",
+      "last_updated": "2026-09-04T20:47:12+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-04T16:21:29+00:00",
+  "last_updated": "2026-09-04T20:47:13+00:00",
   "skipped": [
     {
       "path": "/docs",
