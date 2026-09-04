@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "c6e5979817a9cdcfce98643bd38f93cc53400d08f7fe8fac4682807aaae7e9ee",
-      "last_updated": "2026-09-03T23:16:40+00:00",
+      "hash": "78753a4de80e85bd1e4eacdc82d540f5b8295f2bb85310b9bd57f8c89309e634",
+      "last_updated": "2026-09-04T04:31:02+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -471,8 +471,8 @@
       "title": "ChatGPT Voice"
     },
     "get-started-with-work.md": {
-      "hash": "01dddccd3d974a129b6985867be055d0a823a98689b152509967d15b92bfc2f3",
-      "last_updated": "2026-09-03T21:03:31+00:00",
+      "hash": "97759e68c448721a11e4a0db6b4fbff6e4b1f2655754f07435319be7f6e9b4ac",
+      "last_updated": "2026-09-04T04:31:13+00:00",
       "original_url": "https://learn.chatgpt.com/docs/get-started-with-work",
       "path": "/docs/get-started-with-work",
       "source_url": "https://learn.chatgpt.com/docs/get-started-with-work.md",
@@ -570,8 +570,8 @@
       "title": "Use Codex with the Agents SDK"
     },
     "models.md": {
-      "hash": "ec393c26d20e3beccb86743126757eda04f21b461143f8fef05ca3532b7d97e9",
-      "last_updated": "2026-09-03T23:16:52+00:00",
+      "hash": "4a6b149bfa74743f37e969db93c625d26bf77b90d5a84d2748b81fee14e6c316",
+      "last_updated": "2026-09-04T04:31:17+00:00",
       "original_url": "https://learn.chatgpt.com/docs/models",
       "path": "/docs/models",
       "source_url": "https://learn.chatgpt.com/docs/models.md",
@@ -651,8 +651,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "dfb5bd93e314443f3f27c7c4f8291a1026069960ecf80e1442d238de8c6a22c0",
-      "last_updated": "2026-09-03T23:16:55+00:00",
+      "hash": "21fa0b4f0021f516f3b120dc145cbbff2898419e9e99c21944d448dd9ef18718",
+      "last_updated": "2026-09-04T04:31:20+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -1065,8 +1065,8 @@
       "title": "Site tools"
     },
     "whats-new.md": {
-      "hash": "687c7aca8fe9feebc798130affa6c9cb396efc1218741e140d85d60b33dc5eff",
-      "last_updated": "2026-09-03T23:17:08+00:00",
+      "hash": "afaa9ef01dc0cf442642dfbe8fb9106d9feaff738f55aba61dd70a6b25dabee3",
+      "last_updated": "2026-09-04T04:31:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-03T23:17:09+00:00",
+  "last_updated": "2026-09-04T04:31:36+00:00",
   "skipped": [
     {
       "path": "/docs",

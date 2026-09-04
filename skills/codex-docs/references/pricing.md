@@ -75,59 +75,6 @@ path: /docs/pricing
 
 
 
-## GPT-6 Astra usage
-
-GPT‑6 Astra is rolling out today for enterprises in our [Trusted Access Program⁠](https://openai.com/form/enterprise-trusted-access-for-cyber/), with access through API and our Plus, Pro, Business and Enterprise plans coming in the coming days.
-
-Once Astra is available to your account, it uses your existing Work and Codex
-allowance or the billing arrangement for your workspace. The plan guidance
-below applies to ChatGPT Work and Codex, not Chat.
-
-  <thead>
-    <tr>
-      <th scope="col">Plan</th>
-      <th scope="col">How Astra usage is covered</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Plus and standard Business</td>
-      <td>
-        Limited Astra usage is included in your subscription. You don't need to
-        purchase credits to start using it. Eligible users can purchase credits
-        for additional usage after reaching included limits.
-      </td>
-    </tr>
-    <tr>
-      <td>Pro ($100 and $200) and Business ($100)</td>
-      <td>
-        Astra draws from your existing allowance. You can use that allowance for
-        Astra; it doesn't have a separate balance.
-      </td>
-    </tr>
-    <tr>
-      <td>Enterprise with credit-based billing</td>
-      <td>
-        Eligible usage draws from workspace credits under your rate card and
-        agreement.
-      </td>
-    </tr>
-    <tr>
-      <td>Enterprise with usage-based USD billing</td>
-      <td>
-        Eligible usage is billed in USD under your rate card and agreement.
-      </td>
-    </tr>
-  </tbody>
-
-Astra usage varies by task, context, and model settings. Check your
-[usage dashboard](#where-can-i-see-my-current-usage-limits) for current limits
-and reset times.
-
-See [token rates](#token-rates) for credit pricing.
-Signing in to Codex with ChatGPT uses your ChatGPT plan's rates and
-allowances; using your own API key follows [API pricing](https://developers.openai.com/api/docs/pricing).
-
 ## Invite friends and coworkers
 
 Eligible users can send Codex invitations from the profile menu in the
@@ -204,14 +151,6 @@ and reset times.
     </tr>
   </thead>
   <tbody class="whitespace-nowrap">
-    <tr>
-      <td>GPT-6 Astra</td>
-      <td style="text-align:center">3-30</td>
-      <td style="text-align:center">15-150</td>
-      <td style="text-align:center">60-600</td>
-      <td style="text-align:center">3-30</td>
-      <td style="text-align:center">[Usage-based](https://developers.openai.com/api/docs/pricing)</td>
-    </tr>
     <tr>
       <td>GPT-5.6 Sol</td>
       <td style="text-align:center">10-100</td>
