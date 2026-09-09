@@ -27,6 +27,12 @@ keys in user-level config instead. Config [profile files](https://learn.chatgpt.
 
 For sandbox and approval keys (`approval_policy`, `sandbox_mode`, and `sandbox_workspace_write.*`), pair this reference with [Sandbox and approvals](https://learn.chatgpt.com/docs/agent-approvals-security#sandbox-and-approvals), [Protected paths in writable roots](https://learn.chatgpt.com/docs/agent-approvals-security#protected-paths-in-writable-roots), and [Network access](https://learn.chatgpt.com/docs/agent-approvals-security#network-access). For beta permission profiles, see [Permissions](https://learn.chatgpt.com/docs/permissions).
 
+Codex and ChatGPT Work no longer support `approval_policy = "untrusted"`.
+Remove the setting or choose a supported policy. Project entries with
+`trust_level = "untrusted"` in user-level `~/.codex/config.toml` remain supported. See
+[Migrate from the retired `untrusted` approval policy](https://learn.chatgpt.com/docs/agent-approvals-security#migrate-from-the-retired-untrusted-approval-policy)
+for examples and approval tradeoffs.
+
       description:
         'Additional writable roots when `sandbox_mode = "workspace-write"`.',
     },
@@ -1310,6 +1316,35 @@ For sandbox and approval keys (`approval_policy`, `sandbox_mode`, and `sandbox_w
         "Unbind the action in that keymap context. Key names use normalized strings such as `ctrl-a`, `shift-enter`, `page-down`, or `minus`.",
     },
     {
+      key: "marketplaces.<name>.source_type",
+      type: "git | local",
+      description:
+        "Source kind for a configured plugin marketplace. Marketplaces can be defined in system, cloud-managed, user, or trusted-project config.toml.",
+    },
+    {
+      key: "marketplaces.<name>.source",
+      type: "string",
+      description:
+        "Git repository location or local marketplace root directory. Use an absolute path for a local source; the directory contains .agents/plugins/marketplace.json.",
+    },
+    {
+      key: "marketplaces.<name>.ref",
+      type: "string",
+      description: "Optional Git branch, tag, or commit for the marketplace.",
+    },
+    {
+      key: "marketplaces.<name>.sparse_paths",
+      type: "array<string>",
+      description:
+        "Optional sparse checkout paths for a Git marketplace. Include the marketplace catalog and any local plugin directories it references.",
+    },
+    {
+      key: "plugins.<plugin>.enabled",
+      type: "boolean",
+      description:
+        "Enable or disable a local-marketplace plugin using a `plugin-name@marketplace-name` key. Read from the effective merged config; trusted-project settings can override user, cloud-managed, and system defaults. Marketplace refresh can install or refresh configured plugins even when disabled. This does not override workspace-managed enabled states.",
+    },
+    {
       key: "plugins.<plugin>.mcp_servers.<server>.enabled",
       type: "boolean",
       description:
@@ -1637,6 +1672,11 @@ Use `allowed_sandbox_modes` with `sandbox_mode`. For permission-profile
 deployments, use `allowed_permission_profiles` with managed
 `default_permissions`.
 
+An `untrusted` entry in `allowed_approval_policies` is still valid for the
+stricter approval behavior Codex derives when a project uses
+`trust_level = "untrusted"`. It does not permit explicitly setting
+`approval_policy = "untrusted"`.
+
 The `[models.new_thread]` table supplies managed defaults, not enforcement.
 Explicit launch choices from dedicated CLI flags or `--config` overrides take
 precedence. An explicit model or reasoning-effort override skips both managed
@@ -1689,7 +1729,7 @@ from either one wins.
       key: "allowed_approval_policies",
       type: "array<string>",
       description:
-        "Allowed values for `approval_policy` (for example `untrusted`, `on-request`, `never`, and `granular`).",
+        "Allowed approval policies, such as `on-request`, `never`, and `granular`. Include `untrusted` to permit the stricter policy derived from an untrusted project; it cannot be selected directly with `approval_policy`.",
     },
     {
       key: "allowed_approvals_reviewers",
@@ -2448,7 +2488,7 @@ from either one wins.
       key: "marketplaces.restrict_to_allowed_sources",
       type: "boolean",
       description:
-        "When `true`, require user-configured marketplace sources to match `allowed_sources` for marketplace add, plugin install, and configured Git marketplace refresh operations. Codex-managed OpenAI marketplaces remain allowed when their reserved source and name match. This doesn't filter already configured user marketplaces at runtime.",
+        "When `true`, require configured marketplace sources to match `allowed_sources` for marketplace add, plugin install, refresh, and runtime loading. OpenAI-curated Git catalogs, including the API-key catalog, must also match the allowlist. Bundled and remotely installed workspace plugins are separate from this curated Git source policy.",
     },
     {
       key: "marketplaces.allowed_sources",
