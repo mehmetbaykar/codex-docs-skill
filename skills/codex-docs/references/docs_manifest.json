@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "cd220abbf7f4511f42c0225fbc9bf281cd3f1fae93a7a51e68aaaa3a219b3fc3",
-      "last_updated": "2026-09-09T11:23:02+00:00",
+      "hash": "40296a2f447b2f6ca3f52c41f4e5690bbd9a12c24b174a5405e44009798fdfb5",
+      "last_updated": "2026-09-09T23:14:20+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-09T20:57:25+00:00",
+  "last_updated": "2026-09-09T23:14:54+00:00",
   "skipped": [
     {
       "path": "/docs",
