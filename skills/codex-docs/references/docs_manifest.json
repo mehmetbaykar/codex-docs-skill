@@ -111,8 +111,8 @@
       "title": "Work with files"
     },
     "auth.md": {
-      "hash": "7f4dde6730ca27c0eb6fb9e744b08d949310e6a90242a658d221a049993b35fa",
-      "last_updated": "2026-08-21T01:56:59+00:00",
+      "hash": "f0d938866eb95d26a041493f000165b82a617c4e5900e09b6c93ebc265bf0231",
+      "last_updated": "2026-09-09T04:40:13+00:00",
       "original_url": "https://learn.chatgpt.com/docs/auth",
       "path": "/docs/auth",
       "source_url": "https://learn.chatgpt.com/docs/auth.md",
@@ -264,8 +264,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "39bffb347ceeabdc41514a30f3ece91e0b8a5c71f5dc02ee14ef11c490e35a03",
-      "last_updated": "2026-09-03T21:03:24+00:00",
+      "hash": "52e05d5b3541241d8b223e7a41a84a64c781391bc885a73ff79a957b68dc8043",
+      "last_updated": "2026-09-09T04:40:18+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-08T21:09:00+00:00",
+  "last_updated": "2026-09-09T04:40:43+00:00",
   "skipped": [
     {
       "path": "/docs",
