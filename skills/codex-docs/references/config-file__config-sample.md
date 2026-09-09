@@ -145,8 +145,6 @@ model_provider = "openai"
 
 # When to ask for command approval:
 
-# - untrusted: only known-safe read-only commands auto-run; others prompt
-
 # - on-request: model decides when to ask (default)
 
 # - never: never prompt (risky)

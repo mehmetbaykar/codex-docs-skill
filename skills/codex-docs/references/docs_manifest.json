@@ -21,8 +21,8 @@
       "title": "Administration"
     },
     "agent-approvals-security.md": {
-      "hash": "013e40f12d5fb12e3187d2673bf997a734148a7dc498919fb83d9d13138e0a4d",
-      "last_updated": "2026-09-03T21:03:15+00:00",
+      "hash": "60bdc1cee70483ddd4d13a93277bf6f7109bf381940d6cdf0c7d763fc5cfe916",
+      "last_updated": "2026-09-09T20:56:51+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
       "path": "/docs/agent-approvals-security",
       "source_url": "https://learn.chatgpt.com/docs/agent-approvals-security.md",
@@ -246,8 +246,8 @@
       "title": "Computer Use"
     },
     "config-file__config-advanced.md": {
-      "hash": "03fe39e484ee6b3dc35725052f3cd2442b42b806913d1e9d029f7fb54a2e335e",
-      "last_updated": "2026-08-18T01:50:11+00:00",
+      "hash": "112f113f0c7b05104be479c9d2109cf9cea55c3783809a10e7cc4e19feb02a38",
+      "last_updated": "2026-09-09T20:56:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
       "path": "/docs/config-file/config-advanced",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-advanced.md",
@@ -255,8 +255,8 @@
       "title": "Advanced Configuration"
     },
     "config-file__config-basic.md": {
-      "hash": "c13a7c71162246fcbb5cdb2d0dcfbf590309b2ef33649bcf65cef1ebb4df2274",
-      "last_updated": "2026-08-07T17:17:54+00:00",
+      "hash": "e3f9e492897f60a0feb83bbe940548dcc2383423c25c13691369ff929cbe6ecb",
+      "last_updated": "2026-09-09T20:56:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-basic",
       "path": "/docs/config-file/config-basic",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-basic.md",
@@ -264,8 +264,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "52e05d5b3541241d8b223e7a41a84a64c781391bc885a73ff79a957b68dc8043",
-      "last_updated": "2026-09-09T04:40:18+00:00",
+      "hash": "ea99cc9b23d189ece1c5bcc4cfbc74c943fa277e0d21b9c9909e7d8a23aba4e0",
+      "last_updated": "2026-09-09T20:56:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
@@ -273,8 +273,8 @@
       "title": "Configuration Reference"
     },
     "config-file__config-sample.md": {
-      "hash": "4a0abcf22005c1bebe0e043845a99d8b15101d5f85da6e90b4ca8c62a4465289",
-      "last_updated": "2026-09-02T21:02:28+00:00",
+      "hash": "f9aa8a9e8b94feb18a73d8cf27412349197738e2d0b867c786f77f54f1334c15",
+      "last_updated": "2026-09-09T20:56:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-sample",
       "path": "/docs/config-file/config-sample",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-sample.md",
@@ -561,8 +561,8 @@
       "title": "Long-running work"
     },
     "mcp-server.md": {
-      "hash": "ae814d6a85df5b3c50fa91640ccc06f4e4d2bdae73595eb61933fa3ed019a97f",
-      "last_updated": "2026-08-24T18:58:37+00:00",
+      "hash": "fccb6c3f284e0a713bdb7b53eaf9fc30939cec26ab95a0672e3c9e88b0ccd02a",
+      "last_updated": "2026-09-09T20:57:08+00:00",
       "original_url": "https://learn.chatgpt.com/docs/mcp-server",
       "path": "/docs/mcp-server",
       "source_url": "https://learn.chatgpt.com/docs/mcp-server.md",
@@ -732,8 +732,8 @@
       "title": "Codex Remote"
     },
     "sandboxing.md": {
-      "hash": "366fbd010b0d30350be7ce06f046978d42a621dd7778c3a086c8758bd82159b6",
-      "last_updated": "2026-08-21T21:37:47+00:00",
+      "hash": "69571c7bcf2ca79d5120351b59e4ef2a8fd590fa9230a7c189cff50461264c60",
+      "last_updated": "2026-09-09T20:57:14+00:00",
       "original_url": "https://learn.chatgpt.com/docs/sandboxing",
       "path": "/docs/sandboxing",
       "source_url": "https://learn.chatgpt.com/docs/sandboxing.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-09T11:23:35+00:00",
+  "last_updated": "2026-09-09T20:57:25+00:00",
   "skipped": [
     {
       "path": "/docs",
