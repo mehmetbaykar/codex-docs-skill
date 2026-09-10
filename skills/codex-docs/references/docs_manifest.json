@@ -138,8 +138,8 @@
       "title": "Browser"
     },
     "build-plugins.md": {
-      "hash": "f48d1e624a43a5a5b63fbc73b09db7b8e9b4a07e6f634a6056126a6e46de1c32",
-      "last_updated": "2026-09-08T21:08:26+00:00",
+      "hash": "70c03f4d85fe672919064a3a960ce028b6ba57e822758e643bc3a5816aa8bdd5",
+      "last_updated": "2026-09-10T16:25:09+00:00",
       "original_url": "https://learn.chatgpt.com/docs/build-plugins",
       "path": "/docs/build-plugins",
       "source_url": "https://learn.chatgpt.com/docs/build-plugins.md",
@@ -642,8 +642,8 @@
       "title": "Pets"
     },
     "plugins.md": {
-      "hash": "fd0baa0a6993f55de6cdf78c66293c7f87f6bbd545c8574635ba5b7e14cce8f9",
-      "last_updated": "2026-09-08T21:08:47+00:00",
+      "hash": "aa111adf70b93f33888fcede53fddf1e23b010e1038428fa528e84ce908d0ecb",
+      "last_updated": "2026-09-10T16:25:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/plugins",
       "path": "/docs/plugins",
       "source_url": "https://learn.chatgpt.com/docs/plugins.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-09T23:14:54+00:00",
+  "last_updated": "2026-09-10T16:25:36+00:00",
   "skipped": [
     {
       "path": "/docs",
