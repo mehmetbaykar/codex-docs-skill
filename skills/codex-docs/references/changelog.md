@@ -3,6 +3,18 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: Python SDK 0.154.0 (2026-09-10)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-386577294
+
+Python SDK 0.154.0
+
+## Codex CLI Release: Cygwin build inputs and matching source for Windows voice (2026-09-10)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-386594900
+
+Cygwin build inputs and matching source for Windows voice
+
 ## Codex CLI Release: 0.154.0 (2026-09-09)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-385887902
