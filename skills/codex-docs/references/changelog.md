@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Quick chats with Pets and Appshots on Windows (2026-09-11)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-09-11-app
+
+Quick chats with Pets and Appshots on Windows
+
 ## Codex CLI Release: Python SDK 0.154.0 (2026-09-10)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-386577294
