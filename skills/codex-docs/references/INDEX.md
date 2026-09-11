@@ -67,7 +67,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `integrated-terminal` - [Integrated terminal](https://learn.chatgpt.com/docs/integrated-terminal)
 - `linux__linux-app` - [ChatGPT desktop app for Linux](https://learn.chatgpt.com/docs/linux/linux-app)
 - `long-running-work` - [Long-running work](https://learn.chatgpt.com/docs/long-running-work)
-- `mcp-server` - [Use Codex with the Agents SDK](https://learn.chatgpt.com/docs/mcp-server)
+- `mcp-server` - [Codex MCP server removal](https://learn.chatgpt.com/docs/mcp-server)
 - `models` - [Models](https://learn.chatgpt.com/docs/models)
 - `non-interactive-mode` - [Non-interactive mode](https://learn.chatgpt.com/docs/non-interactive-mode)
 - `notifications` - [Notifications](https://learn.chatgpt.com/docs/notifications)

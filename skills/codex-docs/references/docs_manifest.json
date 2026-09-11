@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "7c8535636adebe588d3da3c4124deba8dab52cea9f00a0e7e77ab9179b3496c0",
-      "last_updated": "2026-09-11T04:38:46+00:00",
+      "hash": "9e8359f20fb0ef2b9172cb028b7812c11cbd06f2b8c1ff4095a82dc153bb289f",
+      "last_updated": "2026-09-11T16:29:10+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -210,8 +210,8 @@
       "title": "Code review"
     },
     "codex-sdk.md": {
-      "hash": "fc153cb9d57d43e4e62dcd20c941f676acc6f2a0bd0d0e1016b5e724b7bc40c7",
-      "last_updated": "2026-08-31T20:50:11+00:00",
+      "hash": "67a27e07957f5eaf99d429486c2d0a0a6388b2e3d737895c1b61ab222bf4b0e3",
+      "last_updated": "2026-09-11T16:29:11+00:00",
       "original_url": "https://learn.chatgpt.com/docs/codex-sdk",
       "path": "/docs/codex-sdk",
       "source_url": "https://learn.chatgpt.com/docs/codex-sdk.md",
@@ -354,8 +354,8 @@
       "title": "Recommended configuration"
     },
     "developer-commands.md": {
-      "hash": "ad9db6bd3faabafb945578ece5db405878dc42458cb9666a50f5bfc11f3bc4fd",
-      "last_updated": "2026-08-24T18:58:31+00:00",
+      "hash": "10ddb4e7e20a91ecb2fcd8d4840b7b0844cba4424883f18303f94d49d8b9a326",
+      "last_updated": "2026-09-11T16:29:16+00:00",
       "original_url": "https://learn.chatgpt.com/docs/developer-commands",
       "path": "/docs/developer-commands",
       "source_url": "https://learn.chatgpt.com/docs/developer-commands.md",
@@ -372,8 +372,8 @@
       "title": "Developer settings"
     },
     "developers.md": {
-      "hash": "48fb990e477076e33fe2343ead15642887c6545c4a7355f6d8a193f049c7eb01",
-      "last_updated": "2026-08-25T21:43:33+00:00",
+      "hash": "50d474431f132f8f057ce95b9b4e1c5efe9d6d8fa0d88af5950a6e11eb399a92",
+      "last_updated": "2026-09-11T16:29:17+00:00",
       "original_url": "https://learn.chatgpt.com/docs/developers",
       "path": "/docs/developers",
       "source_url": "https://learn.chatgpt.com/docs/developers.md",
@@ -561,13 +561,13 @@
       "title": "Long-running work"
     },
     "mcp-server.md": {
-      "hash": "fccb6c3f284e0a713bdb7b53eaf9fc30939cec26ab95a0672e3c9e88b0ccd02a",
-      "last_updated": "2026-09-09T20:57:08+00:00",
+      "hash": "d831957f8a7f47bcceec3b1691017a905424a51fd1181d1e33bbefca51fbb0a4",
+      "last_updated": "2026-09-11T16:29:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/mcp-server",
       "path": "/docs/mcp-server",
       "source_url": "https://learn.chatgpt.com/docs/mcp-server.md",
       "status": "live",
-      "title": "Use Codex with the Agents SDK"
+      "title": "Codex MCP server removal"
     },
     "models.md": {
       "hash": "030784fa5faa5a27a7871374e63d29630be9b8bf80f06e251042ad589963fc87",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-11T04:39:13+00:00",
+  "last_updated": "2026-09-11T16:29:42+00:00",
   "skipped": [
     {
       "path": "/docs",

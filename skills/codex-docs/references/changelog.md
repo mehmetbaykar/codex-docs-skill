@@ -27,6 +27,12 @@ Cygwin build inputs and matching source for Windows voice
 
 ChatGPT for iOS
 
+## Codex MCP server removed (2026-09-05)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-09-05
+
+Codex MCP server removed
+
 ## Codex CLI Release: 0.153.4 (2026-09-04)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-383061770
@@ -182,12 +188,6 @@ Introducing Daybreak Blue and Daybreak Red
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-03-mobile
 
 ChatGPT for iOS
-
-## Codex CLI Release: 0.147.0 (2026-08-07)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-366471016
-
-0.147.0
 
 ## GPT-5.4 and GPT-5.4 mini retire from Codex on August 31 (2026-07-31)
 
