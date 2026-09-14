@@ -291,8 +291,8 @@
       "title": "Environment variables"
     },
     "configuration.md": {
-      "hash": "57ba4b2a44a1936933319b40e511be95a1cdc6b1d30e4c4d597ac118c3befb99",
-      "last_updated": "2026-08-13T19:19:56+00:00",
+      "hash": "d2d0b47f7f8726e87935c056b4fe5721b3951f13fbcc93fd965cef5eb4954424",
+      "last_updated": "2026-09-14T19:52:21+00:00",
       "original_url": "https://learn.chatgpt.com/docs/configuration",
       "path": "/docs/configuration",
       "source_url": "https://learn.chatgpt.com/docs/configuration.md",
@@ -462,8 +462,8 @@
       "title": "Codex Micro"
     },
     "features__voice.md": {
-      "hash": "2c283cdba696593b034b549800402e8849b76392ccbc94622e5a906365354ada",
-      "last_updated": "2026-09-03T21:03:31+00:00",
+      "hash": "65760c5a9456f508afa15b95e4c9a890ed6abb95c5f31bdc17049fcfd2acc080",
+      "last_updated": "2026-09-14T19:52:25+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features/voice",
       "path": "/docs/features/voice",
       "source_url": "https://learn.chatgpt.com/docs/features/voice.md",
@@ -543,8 +543,8 @@
       "title": "Integrated terminal"
     },
     "linux__linux-app.md": {
-      "hash": "ea9530a19270ca4a781caca594aeb4d6e7b5a2fa70fe3abd6305a06a41649764",
-      "last_updated": "2026-08-12T19:20:09+00:00",
+      "hash": "ee1d4cb909466dc421de30ef01688ece4abc0903579ccbf5a9df9ec36394679b",
+      "last_updated": "2026-09-14T19:52:28+00:00",
       "original_url": "https://learn.chatgpt.com/docs/linux/linux-app",
       "path": "/docs/linux/linux-app",
       "source_url": "https://learn.chatgpt.com/docs/linux/linux-app.md",
@@ -651,8 +651,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "8d21751cac0f57532c45e468c762f35facd2f420a1915a47284550e3ee8cb974",
-      "last_updated": "2026-09-12T04:34:46+00:00",
+      "hash": "db2105eded907e5d5e1eb16528abb83b5e5add09db9a647fc9c77e78bf1151ce",
+      "last_updated": "2026-09-14T19:52:31+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-12T04:35:02+00:00",
+  "last_updated": "2026-09-14T19:52:43+00:00",
   "skipped": [
     {
       "path": "/docs",
