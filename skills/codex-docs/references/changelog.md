@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## GPT-5.5 retires from ChatGPT, ChatGPT Work, and Codex on October 14 (2026-09-14)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-09-14-gpt-55-retirement
+
+GPT-5.5 retires from ChatGPT, ChatGPT Work, and Codex on October 14
+
 ## Quick chats with Pets and Appshots on Windows (2026-09-11)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-11-app
