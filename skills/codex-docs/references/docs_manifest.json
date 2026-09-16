@@ -12,8 +12,8 @@
   },
   "files": {
     "administration.md": {
-      "hash": "d4ae9af5e6523cb40c9839999727fea70e2450bc8e6d58ae189919e9e3a62c38",
-      "last_updated": "2026-09-02T04:32:02+00:00",
+      "hash": "5673c23bcf7993f5aa70fb0c1f74ddf61f944ded8336614225bb2e94a84eb5de",
+      "last_updated": "2026-09-16T21:17:30+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "e7df494fc3dc2ddd552e04852d0033748839c55077f11476fdca14ccacab2c4d",
-      "last_updated": "2026-09-15T21:21:26+00:00",
+      "hash": "4981bdb72e4d0baf5aeae92c246c6299aaee6704da6385fc7d10955ed1350ea0",
+      "last_updated": "2026-09-16T21:17:36+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-15T21:21:56+00:00",
+  "last_updated": "2026-09-16T21:18:09+00:00",
   "skipped": [
     {
       "path": "/docs",
