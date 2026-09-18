@@ -133,11 +133,6 @@ runners. For general OpenAI API calls, continue to use Platform API keys.
 For setup steps, permissions, rotation, and revocation guidance, see
 [Access tokens](https://learn.chatgpt.com/docs/enterprise/access-tokens).
 
-If your cloud platform, CI system, or cluster already issues short-lived
-workload tokens, use
-[workload identity federation](https://learn.chatgpt.com/docs/enterprise/workload-identity)
-instead of storing an OpenAI credential.
-
 If your environment already provides a Codex access token, pipe it to the CLI:
 
 ```shell
