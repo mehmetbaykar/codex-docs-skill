@@ -182,8 +182,8 @@ for tasks that need more planning, analysis, or checking.
 - **High** and **Extra High** suit difficult work with multiple steps, sources,
   or tradeoffs.
 
-There is no exact mapping from GPT-5.5 reasoning efforts to GPT-5.6. Try a
-familiar task at a lower setting and adjust based on the result.
+GPT-5.5 reasoning efforts don't map exactly to GPT-5.6. Try a familiar task
+at a lower setting and adjust based on the result.
 
 ### Know when to use Max or Ultra
 

@@ -48,8 +48,8 @@
       "title": "Rules"
     },
     "agent-configuration__speed.md": {
-      "hash": "e3cdd617dad51cf1f4005c1e18c6beb4a1bacbfc63b0e9e70b4f703b7b8fe6d8",
-      "last_updated": "2026-09-15T21:21:22+00:00",
+      "hash": "b9eb721e98f1e0d0864abd6708e1b43da261f5e5d3d28b5fd1a25363cf0e6f16",
+      "last_updated": "2026-09-18T04:43:17+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/speed",
       "path": "/docs/agent-configuration/speed",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/speed.md",
@@ -57,8 +57,8 @@
       "title": "Speed"
     },
     "agent-configuration__subagents.md": {
-      "hash": "b23cf70e3431a12cf0e6157cbe8eb7d37ca362b489ea9ca4b813f44b1acaf701",
-      "last_updated": "2026-08-21T21:37:26+00:00",
+      "hash": "d31f3c81dec67b07e9fa2ff89983558b63f960595adf463613b6e481dbc0dea6",
+      "last_updated": "2026-09-18T04:43:18+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/subagents",
       "path": "/docs/agent-configuration/subagents",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/subagents.md",
@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "e7df494fc3dc2ddd552e04852d0033748839c55077f11476fdca14ccacab2c4d",
-      "last_updated": "2026-09-17T17:00:48+00:00",
+      "hash": "f3cf9200f744ea59ea232c1ac8008c726c35394f221bc026af83d104322b4692",
+      "last_updated": "2026-09-18T04:43:22+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -570,8 +570,8 @@
       "title": "Codex MCP server removal"
     },
     "models.md": {
-      "hash": "3ca6e518d09f648e2f88b37999609b0d4b1c4bbe4de593c1501b9fa43689a7f0",
-      "last_updated": "2026-09-15T21:21:39+00:00",
+      "hash": "e9500637341618f9059806a148ac18c9334468ada9470636f5ff5b0703d7b2e7",
+      "last_updated": "2026-09-18T04:43:37+00:00",
       "original_url": "https://learn.chatgpt.com/docs/models",
       "path": "/docs/models",
       "source_url": "https://learn.chatgpt.com/docs/models.md",
@@ -651,8 +651,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "b38ede480aac6c48cd8e8872377b34437d3935ff94ddbc2b15705316baea43a1",
-      "last_updated": "2026-09-15T21:21:42+00:00",
+      "hash": "f4d1fa1078431c31d7fd25714c888319054a4ef532aba32a3b07d2b594481216",
+      "last_updated": "2026-09-18T04:43:40+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -1115,7 +1115,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-17T17:01:16+00:00",
+  "last_updated": "2026-09-18T04:43:58+00:00",
   "skipped": [
     {
       "path": "/docs",

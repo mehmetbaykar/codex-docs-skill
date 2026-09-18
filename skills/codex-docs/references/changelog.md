@@ -3,6 +3,18 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.155.0 (2026-09-17)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-391114314
+
+0.155.0
+
+## GPT-5.3-Codex-Spark deprecated (2026-09-14)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-09-14-codex-spark-deprecation
+
+GPT-5.3-Codex-Spark deprecated
+
 ## GPT-5.5 retires from ChatGPT, ChatGPT Work, and Codex on October 14 (2026-09-14)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-14-gpt-55-retirement
@@ -164,12 +176,6 @@ Connect a GitLab project to Codex cloud, delegate tasks, and review merge reques
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-17-mobile
 
 ChatGPT for iOS
-
-## Codex CLI Release: 0.148.0 (2026-08-18)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-372686337
-
-0.148.0
 
 ## Public plugin catalog CSV export (2026-08-17)
 
