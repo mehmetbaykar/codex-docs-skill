@@ -165,12 +165,6 @@ Codex MCP server command deprecated
 
 New ways to work with Codex and ChatGPT.
 
-## Codex CLI Release: 0.149.0 (2026-08-20)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-374028976
-
-0.149.0
-
 ## GitLab support in Codex cloud (Beta) (2026-08-19)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-19-gitlab
