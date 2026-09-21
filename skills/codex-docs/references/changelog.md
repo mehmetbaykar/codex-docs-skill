@@ -159,12 +159,6 @@ Run ChatGPT scheduled tasks from supported app activity instead of polling.
 
 Codex MCP server command deprecated
 
-## Codex CLI Release: 0.149.1 (2026-08-24)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-375371090
-
-0.149.1
-
 ## Codex and ChatGPT updates (2026-08-20)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-20-app
