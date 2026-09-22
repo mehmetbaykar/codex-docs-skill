@@ -979,15 +979,15 @@ for examples and approval tradeoffs.
     },
     {
       key: "model_reasoning_effort",
-      type: "minimal | low | medium | high | xhigh",
+      type: "string",
       description:
-        "Adjust reasoning effort for supported models (Responses API only; `xhigh` is model-dependent).",
+        "Reasoning effort advertised by the selected model, such as `low`, `medium`, `high`, `xhigh`, `max`, or `ultra`. Available levels depend on the model and client.",
     },
     {
       key: "plan_mode_reasoning_effort",
-      type: "none | minimal | low | medium | high | xhigh",
+      type: "string",
       description:
-        "Plan-mode-specific reasoning override. When unset, Plan mode uses its built-in preset default.",
+        "Plan-mode-specific reasoning override using a level supported by the selected model. When unset, Plan mode uses its built-in preset default.",
     },
     {
       key: "model_reasoning_summary",
