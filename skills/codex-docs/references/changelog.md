@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.156.1 (2026-09-23)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-394258789
+
+0.156.1
+
 ## GPT-6 Sol and Luna in Codex and ChatGPT Work (2026-09-22)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-22-gpt-6-sol-luna
