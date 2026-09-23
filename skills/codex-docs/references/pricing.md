@@ -23,6 +23,7 @@ October 14, 2026. The OpenAI API isn't affected. See
 
         - GPT-6 Luna at Standard speed in the desktop app, subject to rollout
         - GPT-6 Luna at Standard speed in the desktop app, subject to rollout
+
         - Codex on the web, in the CLI, in the IDE extension, and on iOS
         - Cloud-based integrations like automatic code review and Slack
           integration
@@ -30,13 +31,16 @@ October 14, 2026. The OpenAI API isn't affected. See
         - Flexibly extend usage with [ChatGPT credits](#credits-overview)
         - Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
           Plus plan
+
         - 5x or 20x more Codex usage than Plus*
         - Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
           Pro plan
+
         - Codex in the CLI, SDK, or IDE extension
         - No cloud-based features (GitHub code review, Slack, etc.)
         - Model availability follows the API models available to your key
         - Pay for Codex usage based on [API pricing](https://developers.openai.com/api/docs/pricing)
+
 
 
 
@@ -54,6 +58,7 @@ October 14, 2026. The OpenAI API isn't affected. See
           more](https://openai.com/business-data/)
         - Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
           Business plan
+
         - Priority request processing
         - Enterprise-level security and controls, including SCIM, EKM, user
           analytics, domain verification, and role-based access control
@@ -67,10 +72,12 @@ October 14, 2026. The OpenAI API isn't affected. See
 
 
 
+
         - Codex in the CLI, SDK, or IDE extension
         - No cloud-based features (GitHub code review, Slack, etc.)
         - Model availability follows the API models available to your key
         - Pay for Codex usage based on [API pricing](https://developers.openai.com/api/docs/pricing)
+
 
 
 
