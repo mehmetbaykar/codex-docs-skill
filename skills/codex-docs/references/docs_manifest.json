@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "ecb36c9f53b86516ad850d716f9b82645777a35eedd6e4721a6b381668e38022",
-      "last_updated": "2026-09-24T11:44:03+00:00",
+      "hash": "b9183ac1af07f70306e1fcfa150444c94a5084cdbebd227d369e03294ba43c07",
+      "last_updated": "2026-09-24T21:30:10+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -849,8 +849,8 @@
       "title": "Codex Security plugin quickstart"
     },
     "security__plugin__changelog.md": {
-      "hash": "569f3052c060a2338338fa20186d51082b0b239a00180029abbd51afe360db29",
-      "last_updated": "2026-09-10T20:51:50+00:00",
+      "hash": "497fc3982048c46b1ce2dc22475101d72187d79ff85a55ced25c530693dc8c0a",
+      "last_updated": "2026-09-24T21:30:30+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/changelog",
       "path": "/docs/security/plugin/changelog",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/changelog.md",
@@ -1124,7 +1124,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-24T11:44:36+00:00",
+  "last_updated": "2026-09-24T21:30:37+00:00",
   "skipped": [
     {
       "path": "/docs",
