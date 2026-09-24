@@ -135,12 +135,6 @@ ChatGPT for iOS
 
 0.152.0
 
-## Codex CLI Release: 0.151.0 (2026-08-29)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-378941035
-
-0.151.0
-
 ## ChatGPT for iOS (2026-08-26)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-25-mobile
