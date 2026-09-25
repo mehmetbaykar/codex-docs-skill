@@ -3,23 +3,11 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
-## Codex CLI Release: 0.157.0 (2026-09-25)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-396234532
-
-0.157.0
-
 ## ChatGPT for iOS (2026-09-23)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-23-mobile
 
 ChatGPT for iOS
-
-## Codex CLI Release: 0.156.1 (2026-09-23)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-394258789
-
-0.156.1
 
 ## GPT-6 Sol and Luna in Codex and ChatGPT Work (2026-09-22)
 
@@ -27,29 +15,11 @@ ChatGPT for iOS
 
 GPT-6 Sol and Luna in Codex and ChatGPT Work
 
-## Codex CLI Release: 0.156.0 (2026-09-22)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-394061815
-
-0.156.0
-
 ## ChatGPT for iOS (2026-09-18)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-18-mobile
 
 ChatGPT for iOS
-
-## Codex CLI Release: 0.155.1 (2026-09-18)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-391752266
-
-0.155.1
-
-## Codex CLI Release: 0.155.0 (2026-09-17)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-391114314
-
-0.155.0
 
 ## GPT-5.3-Codex-Spark deprecated (2026-09-14)
 
@@ -69,24 +39,6 @@ GPT-5.5 retires from ChatGPT, ChatGPT Work, and Codex on October 14
 
 Quick chats with Pets and Appshots on Windows
 
-## Codex CLI Release: Python SDK 0.154.0 (2026-09-10)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-386577294
-
-Python SDK 0.154.0
-
-## Codex CLI Release: Cygwin build inputs and matching source for Windows voice (2026-09-10)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-386594900
-
-Cygwin build inputs and matching source for Windows voice
-
-## Codex CLI Release: 0.154.0 (2026-09-09)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-385887902
-
-0.154.0
-
 ## ChatGPT for iOS (2026-09-08)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-08-mobile
@@ -99,53 +51,11 @@ ChatGPT for iOS
 
 Codex MCP server removed
 
-## Codex CLI Release: 0.153.4 (2026-09-04)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-383061770
-
-0.153.4
-
-## Codex CLI Release: 0.153.3 (2026-09-04)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-382954374
-
-0.153.3
-
-## Codex CLI Release: 0.153.2 (2026-09-03)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-382394608
-
-0.153.2
-
-## Codex CLI Release: 0.153.1 (2026-09-03)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-382330424
-
-0.153.1
-
-## Codex CLI Release: 0.153.0 (2026-09-03)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-381669913
-
-0.153.0
-
 ## ChatGPT for iOS (2026-09-01)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-02-mobile
 
 ChatGPT for iOS
-
-## Codex CLI Release: 0.152.1 (2026-09-01)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-380862087
-
-0.152.1
-
-## Codex CLI Release: 0.152.0 (2026-09-01)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-380164108
-
-0.152.0
 
 ## ChatGPT for iOS (2026-08-26)
 

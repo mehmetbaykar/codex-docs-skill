@@ -46,6 +46,13 @@
           icon: "workspace",
         },
         {
+          title: "Build plugins",
+          description:
+            "Create and refine reusable workflows in a conversation with ChatGPT.",
+          href: "/codex/build-plugins",
+          icon: "plugin",
+        },
+        {
           title: "Visualizations",
           description:
             "Turn ideas and information into interactive visual explanations.",

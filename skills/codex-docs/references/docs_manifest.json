@@ -138,8 +138,8 @@
       "title": "Browser"
     },
     "build-plugins.md": {
-      "hash": "70c03f4d85fe672919064a3a960ce028b6ba57e822758e643bc3a5816aa8bdd5",
-      "last_updated": "2026-09-10T16:25:09+00:00",
+      "hash": "49f89523d22a50bb6f46373f393b58e98eb9dbd711c554fd01f183096a1a4c05",
+      "last_updated": "2026-09-25T17:09:44+00:00",
       "original_url": "https://learn.chatgpt.com/docs/build-plugins",
       "path": "/docs/build-plugins",
       "source_url": "https://learn.chatgpt.com/docs/build-plugins.md",
@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "28e17dc09f1d1933fc8a396118411c06f7c37f0b570caf407124723da09aaf9e",
-      "last_updated": "2026-09-25T04:56:03+00:00",
+      "hash": "77ec2e2a03a395108dc5dc9db1980be2e9c4f510900fd9b078615ebea6b74af4",
+      "last_updated": "2026-09-25T17:09:45+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -444,8 +444,8 @@
       "title": "Feature Maturity"
     },
     "features.md": {
-      "hash": "92acb487ecd7f354eb5410f2b859d29d7a500e80732cc61e8dd2cf6f697f9b77",
-      "last_updated": "2026-09-11T23:17:10+00:00",
+      "hash": "83205b98dafbe1dc215c39df607e66c9a9fc7acb5b284d7a41fc25d99a53c828",
+      "last_updated": "2026-09-25T17:09:54+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features",
       "path": "/docs/features",
       "source_url": "https://learn.chatgpt.com/docs/features.md",
@@ -471,8 +471,8 @@
       "title": "ChatGPT Voice"
     },
     "get-started-with-work.md": {
-      "hash": "f29169e212494bf3f3b5e3ab7143bbe76fe4ee8062b8c4366ca2ee97120957b8",
-      "last_updated": "2026-09-22T21:17:29+00:00",
+      "hash": "f82e1e6f849df9e51ce515653ad84f5954c9d6f3c4179b37b9152047009bd471",
+      "last_updated": "2026-09-25T17:09:54+00:00",
       "original_url": "https://learn.chatgpt.com/docs/get-started-with-work",
       "path": "/docs/get-started-with-work",
       "source_url": "https://learn.chatgpt.com/docs/get-started-with-work.md",
@@ -660,8 +660,8 @@
       "title": "Pets"
     },
     "plugins.md": {
-      "hash": "aa111adf70b93f33888fcede53fddf1e23b010e1038428fa528e84ce908d0ecb",
-      "last_updated": "2026-09-10T16:25:23+00:00",
+      "hash": "235c92ab653e8900b51cbff18e65240097f2bda12d21aa4dd550fd3b62e1517a",
+      "last_updated": "2026-09-25T17:10:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/plugins",
       "path": "/docs/plugins",
       "source_url": "https://learn.chatgpt.com/docs/plugins.md",
@@ -993,8 +993,8 @@
       "title": "Sites"
     },
     "skills-and-plugins.md": {
-      "hash": "10005e086d03cb7b8811d0a173d0b0062485915040315781353eda7787d419ed",
-      "last_updated": "2026-09-25T04:56:33+00:00",
+      "hash": "c941ba21899304157f2af7047c3fdd9201c106a6a6798c36d0cd8a4243344bb4",
+      "last_updated": "2026-09-25T17:10:10+00:00",
       "original_url": "https://learn.chatgpt.com/docs/skills-and-plugins",
       "path": "/docs/skills-and-plugins",
       "source_url": "https://learn.chatgpt.com/docs/skills-and-plugins.md",
@@ -1074,8 +1074,8 @@
       "title": "ChatGPT on the web"
     },
     "webmcp.md": {
-      "hash": "2978df458a181ca95dbfc6e111efe0b100feeac5b58ff9e29efbf3f3e874ede4",
-      "last_updated": "2026-09-22T21:17:46+00:00",
+      "hash": "67049594713cc9d0ffcca548c4b196d7ebd9ff42a6059bddef154f68c99e200e",
+      "last_updated": "2026-09-25T17:10:12+00:00",
       "original_url": "https://learn.chatgpt.com/docs/webmcp",
       "path": "/docs/webmcp",
       "source_url": "https://learn.chatgpt.com/docs/webmcp.md",
@@ -1133,7 +1133,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-25T04:56:38+00:00",
+  "last_updated": "2026-09-25T17:10:14+00:00",
   "skipped": [
     {
       "path": "/docs",
