@@ -68,6 +68,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `linux__linux-app` - [ChatGPT desktop app for Linux](https://learn.chatgpt.com/docs/linux/linux-app)
 - `long-running-work` - [Long-running work](https://learn.chatgpt.com/docs/long-running-work)
 - `mcp-server` - [Codex MCP server removal](https://learn.chatgpt.com/docs/mcp-server)
+- `migrate-custom-gpts` - [Moving your custom GPT workflows to plugins](https://learn.chatgpt.com/docs/migrate-custom-gpts)
 - `model-selection` - [Model selection](https://learn.chatgpt.com/docs/model-selection)
 - `models` - [Models](https://learn.chatgpt.com/docs/models)
 - `non-interactive-mode` - [Non-interactive mode](https://learn.chatgpt.com/docs/non-interactive-mode)

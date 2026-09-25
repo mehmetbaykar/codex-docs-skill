@@ -4,16 +4,16 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 122,
+    "pages_fetched_successfully": 123,
     "pages_skipped": 2,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 124
+    "total_pages_discovered": 125
   },
   "files": {
     "administration.md": {
-      "hash": "0c76446f80d1bedd871c0537c20ebdce9e6b46f6c16214e280acde8ad7ff67ce",
-      "last_updated": "2026-09-18T20:55:06+00:00",
+      "hash": "8bdf98690c49c3311903339c2a253c4cc5b4939115362250a9b653b15d701c63",
+      "last_updated": "2026-09-25T04:55:57+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "b9183ac1af07f70306e1fcfa150444c94a5084cdbebd227d369e03294ba43c07",
-      "last_updated": "2026-09-24T21:30:10+00:00",
+      "hash": "28e17dc09f1d1933fc8a396118411c06f7c37f0b570caf407124723da09aaf9e",
+      "last_updated": "2026-09-25T04:56:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -568,6 +568,15 @@
       "source_url": "https://learn.chatgpt.com/docs/mcp-server.md",
       "status": "live",
       "title": "Codex MCP server removal"
+    },
+    "migrate-custom-gpts.md": {
+      "hash": "1a7fd769599051961e86744db9208f32e8aa6d1fb51c25ca58554cc5cc88f727",
+      "last_updated": "2026-09-25T04:56:18+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/migrate-custom-gpts",
+      "path": "/docs/migrate-custom-gpts",
+      "source_url": "https://learn.chatgpt.com/docs/migrate-custom-gpts.md",
+      "status": "live",
+      "title": "Moving your custom GPT workflows to plugins"
     },
     "model-selection.md": {
       "hash": "f4a01328829770695e306858afc265cbe071b24aca4e12b68ef9aa474c66b35a",
@@ -984,8 +993,8 @@
       "title": "Sites"
     },
     "skills-and-plugins.md": {
-      "hash": "f55e7cfc53cac21079d9947e7fea9e2f01f6ecae4cb7b4a3c8c8a10a9544f885",
-      "last_updated": "2026-09-08T21:08:57+00:00",
+      "hash": "10005e086d03cb7b8811d0a173d0b0062485915040315781353eda7787d419ed",
+      "last_updated": "2026-09-25T04:56:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/skills-and-plugins",
       "path": "/docs/skills-and-plugins",
       "source_url": "https://learn.chatgpt.com/docs/skills-and-plugins.md",
@@ -1124,7 +1133,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-24T21:30:37+00:00",
+  "last_updated": "2026-09-25T04:56:38+00:00",
   "skipped": [
     {
       "path": "/docs",
