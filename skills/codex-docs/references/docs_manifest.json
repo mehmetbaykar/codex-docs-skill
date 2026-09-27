@@ -156,8 +156,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "30a1124c4153afe094a306f1625d9a6d596f72a63e1d5bf722f0e1eefce23744",
-      "last_updated": "2026-09-26T21:09:07+00:00",
+      "hash": "77ec2e2a03a395108dc5dc9db1980be2e9c4f510900fd9b078615ebea6b74af4",
+      "last_updated": "2026-09-27T05:17:08+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -264,8 +264,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "e575bd5e58abe5f050b537a214f2c074b17c1823f356c328ef5735ecda2206e0",
-      "last_updated": "2026-09-22T21:17:23+00:00",
+      "hash": "4aec68a4e60a1b892e19b3cf6944488718c1cdff948b081ed9edd8a9538fc08e",
+      "last_updated": "2026-09-27T05:17:12+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
@@ -1133,7 +1133,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-09-26T21:09:36+00:00",
+  "last_updated": "2026-09-27T05:17:38+00:00",
   "skipped": [
     {
       "path": "/docs",
