@@ -9,6 +9,12 @@
 
 GPT-6.1 Sol in Codex and ChatGPT Work
 
+## Codex CLI Release: 0.159.1 (2026-09-29)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-399499631
+
+0.159.1
+
 ## Codex CLI Release: 0.159.0 (2026-09-29)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-398926954
