@@ -3,11 +3,29 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.158.0 (2026-09-28)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-397962047
+
+0.158.0
+
+## Codex CLI Release: 0.157.1 (2026-09-26)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-397006677
+
+0.157.1
+
 ## macOS security update (2026-09-25)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-25-app
 
 macOS security update
+
+## Codex CLI Release: 0.157.0 (2026-09-25)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-396234532
+
+0.157.0
 
 ## ChatGPT for iOS (2026-09-23)
 
@@ -15,17 +33,41 @@ macOS security update
 
 ChatGPT for iOS
 
+## Codex CLI Release: 0.156.1 (2026-09-23)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-394258789
+
+0.156.1
+
 ## GPT-6 Sol and Luna in Codex and ChatGPT Work (2026-09-22)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-22-gpt-6-sol-luna
 
 GPT-6 Sol and Luna in Codex and ChatGPT Work
 
+## Codex CLI Release: 0.156.0 (2026-09-22)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-394061815
+
+0.156.0
+
 ## ChatGPT for iOS (2026-09-18)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-18-mobile
 
 ChatGPT for iOS
+
+## Codex CLI Release: 0.155.1 (2026-09-18)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-391752266
+
+0.155.1
+
+## Codex CLI Release: 0.155.0 (2026-09-17)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-391114314
+
+0.155.0
 
 ## GPT-5.3-Codex-Spark deprecated (2026-09-14)
 
@@ -44,6 +86,18 @@ GPT-5.5 retires from ChatGPT, ChatGPT Work, and Codex on October 14
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-11-app
 
 Quick chats with Pets and Appshots on Windows
+
+## Codex CLI Release: Python SDK 0.154.0 (2026-09-10)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-386577294
+
+Python SDK 0.154.0
+
+## Codex CLI Release: Cygwin build inputs and matching source for Windows voice (2026-09-10)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-386594900
+
+Cygwin build inputs and matching source for Windows voice
 
 ## ChatGPT for iOS (2026-09-08)
 
