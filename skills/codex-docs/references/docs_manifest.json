@@ -390,8 +390,8 @@
       "title": "Developers"
     },
     "dots.md": {
-      "hash": "1ff1504294002644c3e4039e033be3b520aa167e6cb546df4285db423aa17186",
-      "last_updated": "2026-09-29T18:33:12+00:00",
+      "hash": "6da6c25ecce57c9fdc6ccd1f7b4aa4065fae5601bedb4c051a759769072aeaf5",
+      "last_updated": "2026-10-01T18:34:08+00:00",
       "original_url": "https://learn.chatgpt.com/docs/dots",
       "path": "/docs/dots",
       "source_url": "https://learn.chatgpt.com/docs/dots.md",
@@ -417,8 +417,8 @@
       "title": "Connect computers and apps to your dot"
     },
     "dots__controls.md": {
-      "hash": "c87795eace568801306b5627796a05cf99c511ff608975d2c57898052c3c8ba7",
-      "last_updated": "2026-09-29T18:33:13+00:00",
+      "hash": "4cca4cb60083a70a357916f42c87b5e9cbc2b8c2d33344325442cb3d9ab10855",
+      "last_updated": "2026-10-01T18:34:09+00:00",
       "original_url": "https://learn.chatgpt.com/docs/dots/controls",
       "path": "/docs/dots/controls",
       "source_url": "https://learn.chatgpt.com/docs/dots/controls.md",
@@ -1209,8 +1209,8 @@
       "title": "Site tools"
     },
     "whats-new.md": {
-      "hash": "ede77b404e9eda24898b9a56e5bd0b36a4528174a7eb553835ddc56a293607da",
-      "last_updated": "2026-09-29T18:33:40+00:00",
+      "hash": "1cec58711d3d212ea03d54b275bf2cb1050a82e5d93b5c1b6f1be95c877bf166",
+      "last_updated": "2026-10-01T18:34:30+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -1218,8 +1218,8 @@
       "title": "What's new"
     },
     "whats-new__devday-2026.md": {
-      "hash": "da890c7cf2c909fc7c777f8c85f17ec3b7782e7568fc504dbea6e416cca49ae3",
-      "last_updated": "2026-09-29T18:33:40+00:00",
+      "hash": "7e3ee9cc5b1ffc557431146e9f4664f729a490da1a924039d54c65491a67ba90",
+      "last_updated": "2026-10-01T18:34:30+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new/devday-2026",
       "path": "/docs/whats-new/devday-2026",
       "source_url": "https://learn.chatgpt.com/docs/whats-new/devday-2026.md",
@@ -1277,7 +1277,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-01T03:37:43+00:00",
+  "last_updated": "2026-10-01T18:34:32+00:00",
   "skipped": [
     {
       "path": "/docs",
