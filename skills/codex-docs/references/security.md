@@ -89,9 +89,16 @@ desktop app.
 Open **Plugins** to find and install **Codex Security Cloud**. Follow
 [Cloud setup](https://learn.chatgpt.com/docs/security/setup) to connect GitHub and start your first scan.
 
+<figure className="not-prose my-8">
+  <figcaption className="mt-3 text-sm text-secondary">
+    Track open findings and fixes across repositories. This example uses
+    fictional repositories, findings, and counts.
+  </figcaption>
+</figure>
+
 ## How Codex Security Cloud works
 
-Choose a **Repository** scan to review a repository once, or **Commit changes**
+Choose **One-Time Scan** to review a repository once, or **Continuous Scanning**
 to monitor new commits. Codex uses repository context to identify likely
 vulnerabilities and validates issues in an isolated environment when possible.
 

@@ -849,8 +849,8 @@
       "title": "Security"
     },
     "security.md": {
-      "hash": "b66478a9c68cc370d801dc7ff4911dd1ede546ee35825ce58c6cee816caed3e2",
-      "last_updated": "2026-09-29T18:33:27+00:00",
+      "hash": "75cf8a1b38b94f3af57061f0201c5cd51518ed58b6335a002fa343d8da5019fa",
+      "last_updated": "2026-10-02T01:03:14+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security",
       "path": "/docs/security",
       "source_url": "https://learn.chatgpt.com/docs/security.md",
@@ -1038,8 +1038,8 @@
       "title": "Security Review"
     },
     "security__setup.md": {
-      "hash": "39233f42294c87de81b8624285f85964e4e903c1b17a25682ab4f55ec12e68f2",
-      "last_updated": "2026-09-29T18:33:34+00:00",
+      "hash": "e1c8111a6e977365e71fd22ae098c014f0e67e583df53d7d576fb3ef4f05d693",
+      "last_updated": "2026-10-02T01:03:21+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/setup",
       "path": "/docs/security/setup",
       "source_url": "https://learn.chatgpt.com/docs/security/setup.md",
@@ -1277,7 +1277,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-01T21:26:07+00:00",
+  "last_updated": "2026-10-02T01:03:29+00:00",
   "skipped": [
     {
       "path": "/docs",
