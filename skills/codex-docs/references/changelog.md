@@ -99,12 +99,6 @@ ChatGPT for iOS
 
 0.155.1
 
-## Codex CLI Release: 0.155.0 (2026-09-17)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-391114314
-
-0.155.0
-
 ## GPT-5.3-Codex-Spark deprecated (2026-09-14)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-14-codex-spark-deprecation
