@@ -228,8 +228,8 @@
       "title": "Codex SDK"
     },
     "codex__cli.md": {
-      "hash": "2e4542d9a9ff33ba85e057fb5cd2d94436de6c595f0331367d99ef0be38bb7ae",
-      "last_updated": "2026-08-07T17:17:53+00:00",
+      "hash": "3d9785d2d9bd0a3fc60f2e2b770da225225b1e3a1e62cf4c08caf18a70191a12",
+      "last_updated": "2026-10-02T18:32:45+00:00",
       "original_url": "https://learn.chatgpt.com/docs/codex/cli",
       "path": "/docs/codex/cli",
       "source_url": "https://learn.chatgpt.com/docs/codex/cli.md",
@@ -1277,7 +1277,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-02T15:28:54+00:00",
+  "last_updated": "2026-10-02T18:33:23+00:00",
   "skipped": [
     {
       "path": "/docs",
