@@ -93,8 +93,8 @@
       "title": "Codex App Server"
     },
     "app.md": {
-      "hash": "173ef022cefd2408a9749202aa1fe56f72f094f1df34d1f4e730bb0ed60df755",
-      "last_updated": "2026-08-12T19:19:53+00:00",
+      "hash": "f4d35202d8105e4a79be8d9a861673ecb47dfeda33a9dbf98844e1bf992316b2",
+      "last_updated": "2026-10-06T15:26:44+00:00",
       "original_url": "https://learn.chatgpt.com/docs/app",
       "path": "/docs/app",
       "source_url": "https://learn.chatgpt.com/docs/app.md",
@@ -462,8 +462,8 @@
       "title": "Cloud environments"
     },
     "environments__git-worktrees.md": {
-      "hash": "86f4f2c0307bc7825ac81b2dcdb43987ee665b06b03acae3ee639e18e055d266",
-      "last_updated": "2026-08-21T21:37:36+00:00",
+      "hash": "18ade45a5f5dd7700a5d23b09ff6fef254309d35fe671e5975db621a992fd5dc",
+      "last_updated": "2026-10-06T15:26:58+00:00",
       "original_url": "https://learn.chatgpt.com/docs/environments/git-worktrees",
       "path": "/docs/environments/git-worktrees",
       "source_url": "https://learn.chatgpt.com/docs/environments/git-worktrees.md",
@@ -516,8 +516,8 @@
       "title": "Feature Maturity"
     },
     "features.md": {
-      "hash": "9c845193c20d9a4ce77e52323dffce88f6768c32619d621e3a44f32d5e000165",
-      "last_updated": "2026-09-29T18:33:16+00:00",
+      "hash": "6e9dcfcfadbd66328160d8b3dc75d1f52394abea054f47e60f2165c5fd607dd6",
+      "last_updated": "2026-10-06T15:27:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features",
       "path": "/docs/features",
       "source_url": "https://learn.chatgpt.com/docs/features.md",
@@ -534,8 +534,8 @@
       "title": "Codex Micro"
     },
     "features__voice.md": {
-      "hash": "65760c5a9456f508afa15b95e4c9a890ed6abb95c5f31bdc17049fcfd2acc080",
-      "last_updated": "2026-09-14T19:52:25+00:00",
+      "hash": "80131aadf5ee2d1d0d564b5104cfea1111cccfd27e9d3aaa614d8cf60c952b5b",
+      "last_updated": "2026-10-06T15:27:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features/voice",
       "path": "/docs/features/voice",
       "source_url": "https://learn.chatgpt.com/docs/features/voice.md",
@@ -561,8 +561,8 @@
       "title": "Codex GitHub Action"
     },
     "glossary.md": {
-      "hash": "e4f04e6df5337b68b7fb4a235a9103f00b7b682f08df918e9b239a717cf4e625",
-      "last_updated": "2026-09-29T18:33:18+00:00",
+      "hash": "9a5e42ea8dedd0fa91a2a443f94f3097127ab189a064ddd95822841a53833140",
+      "last_updated": "2026-10-06T15:27:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/glossary",
       "path": "/docs/glossary",
       "source_url": "https://learn.chatgpt.com/docs/glossary.md",
@@ -649,6 +649,15 @@
       "source_url": "https://learn.chatgpt.com/docs/migrate-custom-gpts.md",
       "status": "live",
       "title": "Moving your custom GPT workflows to plugins"
+    },
+    "mobile.md": {
+      "hash": "c5b9e57a0bfd9b3503f5fa97571275ef9563a659ceb714d03539155ac3760d27",
+      "last_updated": "2026-10-06T15:27:04+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/mobile",
+      "path": "/docs/mobile",
+      "source_url": "https://learn.chatgpt.com/docs/mobile.md",
+      "status": "live",
+      "title": "Codex on mobile"
     },
     "model-selection.md": {
       "hash": "618c9f812d15e6ab0c2de3ae0aa08fd585dd174647449b2f1335b6aecf03571a",
@@ -804,22 +813,13 @@
       "title": "Troubleshooting"
     },
     "remote-connections.md": {
-      "hash": "4609e7063387a843d51069f6e4c117d073c484ee5f5fefb34990448136fa587c",
-      "last_updated": "2026-09-29T18:33:26+00:00",
+      "hash": "fa448a74f6f69569b5e115ab4fbf38fe0300d38d8a2e1b892657d2f7e7e2463c",
+      "last_updated": "2026-10-06T15:27:10+00:00",
       "original_url": "https://learn.chatgpt.com/docs/remote-connections",
       "path": "/docs/remote-connections",
       "source_url": "https://learn.chatgpt.com/docs/remote-connections.md",
       "status": "live",
       "title": "Remote connections"
-    },
-    "remote.md": {
-      "hash": "f740d45a0148093f68007c64240662ea238c972b188883ffd2eade8cac07b44a",
-      "last_updated": "2026-09-29T18:33:26+00:00",
-      "original_url": "https://learn.chatgpt.com/docs/remote",
-      "path": "/docs/remote",
-      "source_url": "https://learn.chatgpt.com/docs/remote.md",
-      "status": "live",
-      "title": "Codex Remote"
     },
     "sandboxing.md": {
       "hash": "4c2b56a2638ca6ab30d28f4703a1fcc6bff0f7e0d07f7254035963a44563f20d",
@@ -1277,7 +1277,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-06T09:32:03+00:00",
+  "last_updated": "2026-10-06T15:27:26+00:00",
   "skipped": [
     {
       "path": "/docs",
