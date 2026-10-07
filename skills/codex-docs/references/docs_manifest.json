@@ -705,8 +705,8 @@
       "title": "Open Source"
     },
     "permission-modes.md": {
-      "hash": "2fcde87aee3d4239052f1f7198ab797dcd014691cc25c3f51692dc47b37bdc6b",
-      "last_updated": "2026-08-21T21:37:42+00:00",
+      "hash": "24da1b54e5634c4cedb1cf04e5c70e88c95109866cc1587b40062a58e1ff56cb",
+      "last_updated": "2026-10-07T21:27:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/permission-modes",
       "path": "/docs/permission-modes",
       "source_url": "https://learn.chatgpt.com/docs/permission-modes.md",
@@ -804,8 +804,8 @@
       "title": "Settings"
     },
     "reference__troubleshooting.md": {
-      "hash": "1eef5dc0199c1a0370ec3875976dd008c924bdeae6c781720bafafe22ca4f023",
-      "last_updated": "2026-09-29T18:33:26+00:00",
+      "hash": "53dbc7096771a6a05b122b7e8620412288d8ae28722e0057b9dd665f08fad5d0",
+      "last_updated": "2026-10-07T21:27:37+00:00",
       "original_url": "https://learn.chatgpt.com/docs/reference/troubleshooting",
       "path": "/docs/reference/troubleshooting",
       "source_url": "https://learn.chatgpt.com/docs/reference/troubleshooting.md",
@@ -831,8 +831,8 @@
       "title": "Sandbox"
     },
     "sandboxing__auto-review.md": {
-      "hash": "b1c984419bd7c8c01903bada34a7266ba080a9a7f4564b77dafe43edd72259df",
-      "last_updated": "2026-08-11T10:10:48+00:00",
+      "hash": "09b2c03b100315075f848e8de2884efa441dd21cfa5931ee06e28094b765bdf1",
+      "last_updated": "2026-10-07T21:27:38+00:00",
       "original_url": "https://learn.chatgpt.com/docs/sandboxing/auto-review",
       "path": "/docs/sandboxing/auto-review",
       "source_url": "https://learn.chatgpt.com/docs/sandboxing/auto-review.md",
@@ -1277,7 +1277,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-07T18:34:23+00:00",
+  "last_updated": "2026-10-07T21:27:53+00:00",
   "skipped": [
     {
       "path": "/docs",
