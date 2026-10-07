@@ -27,7 +27,7 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Increase font size | **⌘++** or **⌘+Numpad +** |
 | Decrease font size | **⌘+-** or **⌘+Numpad −** |
 | Reset font size | **⌘+0** or **⌘+Numpad 0** |
-| Toggle sidebar | **⌘+B** |
+| Toggle sidebar | **⌘+B** or **⌘+⇧+S** |
 | Toggle bottom panel (Codex only) | **⌘+J** |
 | Toggle terminal (Codex only) | **⌃+`** |
 | Clear terminal (When the terminal is focused) | **⌃+L** or **⌘+K** |
@@ -35,6 +35,8 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Undo last app action | **⌘+Z** |
 | Redo last app action | **⌘+⇧+Z** |
 | Close current tab or window | **⌘+W** |
+| Reopen closed tab | **⌘+⇧+T** |
+| Close other tabs | **⌘+⌥+W** |
 | Toggle full screen | **⌘+⌃+F** |
 | Quit the app | **⌘+Q** |
 
@@ -62,9 +64,9 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Input and modes | Shortcut |
 | --- | --- |
 | Open model picker | **⌃+⇧+M** |
+| Open recent models | **⌃+⌘+M** |
 | Open project picker | **⌘+⌥+⇧+O** |
 | Start voice chat (When voice chat is available) | **⌃+⇧+V** |
-| Start dictation (When dictation is available) | **⌃+⇧+D** |
 | Restore previous composer prompt (When the composer is empty) | **↑** |
 | Approve request (When an approval request is open) | **⏎** |
 | Decline request (When an approval request is open) | **Esc** |
@@ -87,10 +89,9 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Reload browser page (When the built-in browser is focused) | **⌘+R** |
 | Reload browser page without cache (When the built-in browser is focused) | **⌘+⇧+R** |
 | Copy browser URL (When the built-in browser is focused) | **⌘+⇧+C** |
-| Toggle browser browse or comment mode (When browser commenting is available) | **⌘+.** |
+| Toggle browser browse or comment mode (When browser commenting is available) | **⌘+⇧+.** |
 | Copy conversation path (Codex only) | **⌘+⌥+⇧+C** |
 | Copy chat deep link | **⌘+⌥+L** |
-| Copy session ID | **⌘+⌥+C** |
 | Copy working directory (Codex only) | **⌘+⇧+C** |
 | Take an Appshot (press both keys simultaneously) | **⌘+⌘** |
 
@@ -107,7 +108,7 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Increase font size | **Ctrl++** or **Ctrl+=** or **Ctrl+Numpad +** |
 | Decrease font size | **Ctrl+-** or **Ctrl+Numpad −** |
 | Reset font size | **Ctrl+0** or **Ctrl+Numpad 0** |
-| Toggle sidebar | **Ctrl+B** |
+| Toggle sidebar | **Ctrl+B** or **Ctrl+Shift+S** |
 | Toggle bottom panel (Codex only) | **Ctrl+J** |
 | Toggle terminal (Codex only) | **Ctrl+`** |
 | Clear terminal (When the terminal is focused) | **Ctrl+L** or **Ctrl+K** |
@@ -115,6 +116,8 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Undo last app action | **Ctrl+Z** |
 | Redo last app action | **Ctrl+Y** or **Ctrl+Shift+Z** |
 | Close current tab or window | **Ctrl+W** or **Ctrl+F4** |
+| Reopen closed tab | **Ctrl+Shift+T** |
+| Close other tabs | **Ctrl+Alt+W** |
 | Toggle full screen | **F11** |
 | Quit the app | **Ctrl+Q** |
 
@@ -142,9 +145,8 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Input and modes | Shortcut |
 | --- | --- |
 | Open model picker | **Ctrl+Shift+M** |
+| Open recent models | **Alt+M** |
 | Open project picker | **Ctrl+Alt+Shift+O** |
-| Start voice chat (When voice chat is available) | **Ctrl+Shift+V** |
-| Start dictation (When dictation is available) | **Ctrl+Shift+D** |
 | Restore previous composer prompt (When the composer is empty) | **↑** |
 | Approve request (When an approval request is open) | **⏎** |
 | Decline request (When an approval request is open) | **Esc** |
@@ -167,9 +169,9 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Reload browser page (When the built-in browser is focused) | **Ctrl+R** |
 | Reload browser page without cache (When the built-in browser is focused) | **Ctrl+Shift+R** |
 | Copy browser URL (When the built-in browser is focused) | **Ctrl+Shift+C** |
-| Toggle browser browse or comment mode (When browser commenting is available) | **Ctrl+.** |
+| Toggle browser browse or comment mode (When browser commenting is available) | **Ctrl+Shift+.** |
+| Copy conversation path (Codex only) | **Ctrl+Alt+Shift+C** |
 | Copy chat deep link | **Ctrl+Alt+L** |
-| Copy session ID | **Ctrl+Alt+C** |
 | Copy working directory (Codex only) | **Ctrl+Shift+C** |
 
 ### Linux
@@ -185,7 +187,7 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Increase font size | **Ctrl++** or **Ctrl+=** or **Ctrl+Numpad +** |
 | Decrease font size | **Ctrl+-** or **Ctrl+Numpad −** |
 | Reset font size | **Ctrl+0** or **Ctrl+Numpad 0** |
-| Toggle sidebar | **Ctrl+B** |
+| Toggle sidebar | **Ctrl+B** or **Ctrl+Shift+S** |
 | Toggle bottom panel (Codex only) | **Ctrl+J** |
 | Toggle terminal (Codex only) | **Ctrl+`** |
 | Clear terminal (When the terminal is focused) | **Ctrl+L** or **Ctrl+K** |
@@ -193,6 +195,8 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Undo last app action | **Ctrl+Z** |
 | Redo last app action | **Ctrl+Y** or **Ctrl+Shift+Z** |
 | Close current tab or window | **Ctrl+W** or **Ctrl+F4** |
+| Reopen closed tab | **Ctrl+Shift+T** |
+| Close other tabs | **Ctrl+Alt+W** |
 | Toggle full screen | **F11** |
 | Quit the app | **Ctrl+Q** |
 
@@ -220,9 +224,8 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Input and modes | Shortcut |
 | --- | --- |
 | Open model picker | **Ctrl+Shift+M** |
+| Open recent models | **Alt+M** |
 | Open project picker | **Ctrl+Alt+Shift+O** |
-| Start voice chat (When voice chat is available) | **Ctrl+Shift+V** |
-| Start dictation (When dictation is available) | **Ctrl+Shift+D** |
 | Restore previous composer prompt (When the composer is empty) | **↑** |
 | Approve request (When an approval request is open) | **⏎** |
 | Decline request (When an approval request is open) | **Esc** |
@@ -245,9 +248,9 @@ Choose your platform to see its default shortcuts. Some shortcuts appear only wh
 | Reload browser page (When the built-in browser is focused) | **Ctrl+R** |
 | Reload browser page without cache (When the built-in browser is focused) | **Ctrl+Shift+R** |
 | Copy browser URL (When the built-in browser is focused) | **Ctrl+Shift+C** |
-| Toggle browser browse or comment mode (When browser commenting is available) | **Ctrl+.** |
+| Toggle browser browse or comment mode (When browser commenting is available) | **Ctrl+Shift+.** |
+| Copy conversation path (Codex only) | **Ctrl+Alt+Shift+C** |
 | Copy chat deep link | **Ctrl+Alt+L** |
-| Copy session ID | **Ctrl+Alt+C** |
 | Copy working directory (Codex only) | **Ctrl+Shift+C** |To find, customize, or reset app shortcuts, open **Settings > Keyboard
 Shortcuts**.
 

@@ -187,8 +187,8 @@ asks for a final check without spelling out every step.
 
 ## Use voice dictation
 
-In the ChatGPT desktop app, press `Ctrl+Shift+D` while the composer is
-visible, then start talking. ChatGPT transcribes your speech into the composer
+In the ChatGPT desktop app, select **Dictate** in the composer, then start
+talking. ChatGPT transcribes your speech into the composer
 so you can review and edit it before sending the prompt.
 
 
