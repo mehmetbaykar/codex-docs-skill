@@ -12,8 +12,8 @@
   },
   "files": {
     "administration.md": {
-      "hash": "e110829857bf3b68e92ab096236faffb8152f43d9870c98b0454ba47fcd45a78",
-      "last_updated": "2026-10-02T21:24:58+00:00",
+      "hash": "d1e227931821869e3cc1714baf74d34f6825e4c8b33fc7586ad7f70fbc154e2e",
+      "last_updated": "2026-10-07T18:33:46+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -66,8 +66,8 @@
       "title": "Subagents"
     },
     "amazon-bedrock.md": {
-      "hash": "cb3aefa45ca2116fc5c40b7c2aee4013d5d3f7346ab8184dbbfcea0e6859f33a",
-      "last_updated": "2026-09-30T18:31:48+00:00",
+      "hash": "e19f3769d7e2472d20b1c70f13582b658e28deade4a111a618a54ad9ae1f934f",
+      "last_updated": "2026-10-07T18:33:47+00:00",
       "original_url": "https://learn.chatgpt.com/docs/amazon-bedrock",
       "path": "/docs/amazon-bedrock",
       "source_url": "https://learn.chatgpt.com/docs/amazon-bedrock.md",
@@ -120,8 +120,8 @@
       "title": "Work with files"
     },
     "auth.md": {
-      "hash": "1903bd68ef6ab5cb3f130b2d4ff6697816618aa7c44307221918977b49332ebb",
-      "last_updated": "2026-09-30T18:31:50+00:00",
+      "hash": "07f0352c7e6e6e439233c639b5196c0d9461dc3bb4602c7ee86325727f2e95e9",
+      "last_updated": "2026-10-07T18:33:49+00:00",
       "original_url": "https://learn.chatgpt.com/docs/auth",
       "path": "/docs/auth",
       "source_url": "https://learn.chatgpt.com/docs/auth.md",
@@ -165,8 +165,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "8bde17fc5093c7f56f8ee2afbd33f767ef98f4e4b962f2ee1063559cfc9ea78d",
-      "last_updated": "2026-10-07T12:40:28+00:00",
+      "hash": "8b76b65a36bb98024592d773db56442a35b402a9ee78da962911b0253b13296c",
+      "last_updated": "2026-10-07T18:33:51+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -255,8 +255,8 @@
       "title": "Computer Use"
     },
     "config-file__config-advanced.md": {
-      "hash": "f4bdd4f1f4e3254567b9ec94a1397809bf869cdd8e0fa8d9a95805a79a13bd14",
-      "last_updated": "2026-09-30T18:31:54+00:00",
+      "hash": "a9e228d0e58414fc2c05e3137c6e9dfc9cd0cee448443b3dbe223706a85230ef",
+      "last_updated": "2026-10-07T18:33:53+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
       "path": "/docs/config-file/config-advanced",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-advanced.md",
@@ -1277,7 +1277,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-07T15:38:21+00:00",
+  "last_updated": "2026-10-07T18:34:23+00:00",
   "skipped": [
     {
       "path": "/docs",
