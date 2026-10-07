@@ -75,8 +75,8 @@
       "title": "Use ChatGPT Work and Codex with Amazon Bedrock"
     },
     "annotations-extensibility.md": {
-      "hash": "fbbcc3614cbc905c8b8edce53c4712bd22019493a71bf8e8499ac0988e4c56e3",
-      "last_updated": "2026-09-29T18:33:00+00:00",
+      "hash": "36a244ce736c0ed9633f7802e82574fa328f04b687c382d2339bfd39acef6b34",
+      "last_updated": "2026-10-07T15:37:39+00:00",
       "original_url": "https://learn.chatgpt.com/docs/annotations-extensibility",
       "path": "/docs/annotations-extensibility",
       "source_url": "https://learn.chatgpt.com/docs/annotations-extensibility.md",
@@ -111,8 +111,8 @@
       "title": "Appshots"
     },
     "artifacts-viewer.md": {
-      "hash": "c525747326acb201c452750c7e9e3d4576642f68157b709458a3e479b70c2c71",
-      "last_updated": "2026-08-25T18:56:27+00:00",
+      "hash": "63d0a46f5d6d14117184fc52895d049ca8fc7c7b9208fefcdb9c8000c787aeb7",
+      "last_updated": "2026-10-07T15:37:41+00:00",
       "original_url": "https://learn.chatgpt.com/docs/artifacts-viewer",
       "path": "/docs/artifacts-viewer",
       "source_url": "https://learn.chatgpt.com/docs/artifacts-viewer.md",
@@ -138,8 +138,8 @@
       "title": "Scheduled tasks"
     },
     "browser.md": {
-      "hash": "bab6de3491eba11cbee229f79dfd37f613e06a02846864e8a3b7b5f13b6398c3",
-      "last_updated": "2026-09-29T18:33:03+00:00",
+      "hash": "9ea3106611c8e5004d1423d4068b291bb58a55594a4519b0e1b2c1bbb5ed2014",
+      "last_updated": "2026-10-07T15:37:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/browser",
       "path": "/docs/browser",
       "source_url": "https://learn.chatgpt.com/docs/browser.md",
@@ -273,8 +273,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "313d9b766d1847fa0e3cf945a799d977413a0b413bda94bc2a80b8edae268f3f",
-      "last_updated": "2026-09-29T18:33:08+00:00",
+      "hash": "92b810a69b75ae96bce8500b2296cf71b66f160cb59c937af2f64a85a66caf24",
+      "last_updated": "2026-10-07T15:37:46+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
@@ -327,8 +327,8 @@
       "title": "Computer History"
     },
     "customization__memories.md": {
-      "hash": "048fd01656ad34d85ef3553164b4ad80c68fcc78a5dd2f03118f9a7f294c12e9",
-      "last_updated": "2026-08-13T19:19:57+00:00",
+      "hash": "2d9a78744aa0c2afff3bc3d57f120afe59289c17750f2ad492debe1635454eb5",
+      "last_updated": "2026-10-07T15:37:48+00:00",
       "original_url": "https://learn.chatgpt.com/docs/customization/memories",
       "path": "/docs/customization/memories",
       "source_url": "https://learn.chatgpt.com/docs/customization/memories.md",
@@ -723,8 +723,8 @@
       "title": "Permissions"
     },
     "personalize.md": {
-      "hash": "ef9e54bfd20590c45c7ed2436a3ce9a93e5f446ceebd6e1a032ac8dd926e6211",
-      "last_updated": "2026-09-11T23:17:16+00:00",
+      "hash": "3f3f740142d0e6b68798ff7e7c3faf0033033ad3841d684b6474235445e5f8ea",
+      "last_updated": "2026-10-07T15:38:02+00:00",
       "original_url": "https://learn.chatgpt.com/docs/personalize",
       "path": "/docs/personalize",
       "source_url": "https://learn.chatgpt.com/docs/personalize.md",
@@ -768,8 +768,8 @@
       "title": "Projects and chats"
     },
     "prompting.md": {
-      "hash": "9caf0d1e6bcfe3e0d2a58799bc1f9963fce4b119621ee3424205d6c04bedc378",
-      "last_updated": "2026-08-21T21:37:44+00:00",
+      "hash": "40eac616d179540325e3e502f1d6a71b775486b43cd066333a5c18ba035402bf",
+      "last_updated": "2026-10-07T15:38:04+00:00",
       "original_url": "https://learn.chatgpt.com/docs/prompting",
       "path": "/docs/prompting",
       "source_url": "https://learn.chatgpt.com/docs/prompting.md",
@@ -786,8 +786,8 @@
       "title": "Quickstart"
     },
     "reference__commands.md": {
-      "hash": "7010bb923b86ad2263b0905afbda58bb8c4895d304feef600e26be0e92d514bc",
-      "last_updated": "2026-09-29T18:33:25+00:00",
+      "hash": "47b0e600f0e9baea61b99933048f58a76fdce861767bd055f9627c80fdb5185c",
+      "last_updated": "2026-10-07T15:38:04+00:00",
       "original_url": "https://learn.chatgpt.com/docs/reference/commands",
       "path": "/docs/reference/commands",
       "source_url": "https://learn.chatgpt.com/docs/reference/commands.md",
@@ -795,8 +795,8 @@
       "title": "Commands"
     },
     "reference__settings.md": {
-      "hash": "8955950232a64ea1be9031cefc60fc3dbd319db151885766d0fc6da6e8e93b6b",
-      "last_updated": "2026-09-11T23:17:18+00:00",
+      "hash": "be9a9666d6f7ce413962fffcbaf3d9015bf2cac5d84e850347afe0f13ad2e69d",
+      "last_updated": "2026-10-07T15:38:05+00:00",
       "original_url": "https://learn.chatgpt.com/docs/reference/settings",
       "path": "/docs/reference/settings",
       "source_url": "https://learn.chatgpt.com/docs/reference/settings.md",
@@ -1277,7 +1277,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-07T12:41:02+00:00",
+  "last_updated": "2026-10-07T15:38:21+00:00",
   "skipped": [
     {
       "path": "/docs",
