@@ -165,8 +165,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "675bf68716f42324f9c581cf830a633ff47e62e4606bc25959621b969328501a",
-      "last_updated": "2026-10-06T21:25:47+00:00",
+      "hash": "67d8b32b297ad1a885a7ad1fdbe8c5ca4ac4c1c8806988f2eb0567bf356ea1c6",
+      "last_updated": "2026-10-07T01:05:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -318,8 +318,8 @@
       "title": "Custom Prompts"
     },
     "customization__computer-history.md": {
-      "hash": "c1896323e71701fd18dd44207267834e3114ed86e714ec09415cff9fb6a75298",
-      "last_updated": "2026-08-21T21:37:34+00:00",
+      "hash": "0db33d55f51129d59f61e0421683f4785ea3e2c23c4d8a5de459d38586ad5be1",
+      "last_updated": "2026-10-07T01:05:40+00:00",
       "original_url": "https://learn.chatgpt.com/docs/customization/computer-history",
       "path": "/docs/customization/computer-history",
       "source_url": "https://learn.chatgpt.com/docs/customization/computer-history.md",
@@ -1277,7 +1277,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-06T21:26:29+00:00",
+  "last_updated": "2026-10-07T01:06:09+00:00",
   "skipped": [
     {
       "path": "/docs",
