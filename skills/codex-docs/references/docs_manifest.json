@@ -4,11 +4,11 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 139,
+    "pages_fetched_successfully": 140,
     "pages_skipped": 2,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 141
+    "total_pages_discovered": 142
   },
   "files": {
     "administration.md": {
@@ -48,8 +48,8 @@
       "title": "Rules"
     },
     "agent-configuration__speed.md": {
-      "hash": "06f01af7a4e4bedc3695b39c1dab8d7a0039f31b9e32349fa2fb41be33be0d22",
-      "last_updated": "2026-09-29T18:32:59+00:00",
+      "hash": "acd018676e830247e6f7c401e5cf8b934260fee850d98fccfb33fe2fcfe9b960",
+      "last_updated": "2026-10-08T18:33:37+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/speed",
       "path": "/docs/agent-configuration/speed",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/speed.md",
@@ -165,8 +165,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "8b76b65a36bb98024592d773db56442a35b402a9ee78da962911b0253b13296c",
-      "last_updated": "2026-10-08T12:40:23+00:00",
+      "hash": "d77271d496a6dd87012fdf5a7c228c6c1702ff985af42c7d7376dd371f4c5136",
+      "last_updated": "2026-10-08T18:33:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -669,8 +669,8 @@
       "title": "Model selection"
     },
     "models.md": {
-      "hash": "70b04c100b6a619e86217bfcf53ec102df7d2be3b29e86028f56e731bd0fd606",
-      "last_updated": "2026-09-30T18:32:07+00:00",
+      "hash": "a519035c3d1fa8d9fdee0a021c586e7e92614f4b7230d50a8a5b3e29c23128e5",
+      "last_updated": "2026-10-08T18:33:57+00:00",
       "original_url": "https://learn.chatgpt.com/docs/models",
       "path": "/docs/models",
       "source_url": "https://learn.chatgpt.com/docs/models.md",
@@ -750,8 +750,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "81c6d5aa9b3de89408a62d11907106beeb8c5d071482475a38074c8cec9e46b1",
-      "last_updated": "2026-10-01T21:25:48+00:00",
+      "hash": "0329dd3aae100ab72a16308e40af38853e7f7db82eb1136c732d4a7fc04b78e3",
+      "last_updated": "2026-10-08T18:33:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -1209,8 +1209,8 @@
       "title": "Site tools"
     },
     "whats-new.md": {
-      "hash": "1cec58711d3d212ea03d54b275bf2cb1050a82e5d93b5c1b6f1be95c877bf166",
-      "last_updated": "2026-10-01T18:34:30+00:00",
+      "hash": "83f6ce2829fd5b2683bbba104ffbca749270505c1b7f6e22a9ed7d38828e6e0b",
+      "last_updated": "2026-10-08T18:34:13+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -1225,6 +1225,15 @@
       "source_url": "https://learn.chatgpt.com/docs/whats-new/devday-2026.md",
       "status": "live",
       "title": "DevDay 2026"
+    },
+    "whats-new__october-5-9-2026.md": {
+      "hash": "195bcd1f1d4299f9c9b308f278cf7c3b06ebf1e2fe1c574097a89200ae51f5e5",
+      "last_updated": "2026-10-08T18:34:14+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/whats-new/october-5-9-2026",
+      "path": "/docs/whats-new/october-5-9-2026",
+      "source_url": "https://learn.chatgpt.com/docs/whats-new/october-5-9-2026.md",
+      "status": "live",
+      "title": "October 5\u20139, 2026"
     },
     "whats-new__september-28-october-2-2026.md": {
       "hash": "ebbf575ca48e8639fe1828a49c755e96fc047d8774c34452e1db78261c029afb",
@@ -1277,7 +1286,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-08T12:40:53+00:00",
+  "last_updated": "2026-10-08T18:34:15+00:00",
   "skipped": [
     {
       "path": "/docs",
