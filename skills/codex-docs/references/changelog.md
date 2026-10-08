@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work (2026-10-08)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-08-gpt-61-sol-ultrafast
+
+GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work
+
 ## ChatGPT for iOS (2026-10-07)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-10-07-mobile
