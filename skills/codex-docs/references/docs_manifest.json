@@ -75,8 +75,8 @@
       "title": "Use ChatGPT Work and Codex with Amazon Bedrock"
     },
     "annotations-extensibility.md": {
-      "hash": "36a244ce736c0ed9633f7802e82574fa328f04b687c382d2339bfd39acef6b34",
-      "last_updated": "2026-10-07T15:37:39+00:00",
+      "hash": "4b70487640819e4f9a8f6fb52656aff70c9faf192e0c1b5bc3edd9780d877903",
+      "last_updated": "2026-10-08T12:40:20+00:00",
       "original_url": "https://learn.chatgpt.com/docs/annotations-extensibility",
       "path": "/docs/annotations-extensibility",
       "source_url": "https://learn.chatgpt.com/docs/annotations-extensibility.md",
@@ -165,8 +165,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "edc3d9e425d13ec3dbbcb73247f6f2d8b8d3e156f87c8832af303356f595fc37",
-      "last_updated": "2026-10-08T09:33:20+00:00",
+      "hash": "8b76b65a36bb98024592d773db56442a35b402a9ee78da962911b0253b13296c",
+      "last_updated": "2026-10-08T12:40:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -1277,7 +1277,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-08T09:33:57+00:00",
+  "last_updated": "2026-10-08T12:40:53+00:00",
   "skipped": [
     {
       "path": "/docs",
