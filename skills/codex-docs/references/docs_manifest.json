@@ -21,8 +21,8 @@
       "title": "Administration"
     },
     "agent-approvals-security.md": {
-      "hash": "bca500187ae949acaee9f366bea36c2a8fc31912445bb7036de996037eea6cd0",
-      "last_updated": "2026-09-29T18:32:58+00:00",
+      "hash": "824ab33d71b737af1023d7c1333c718fb2e6ed732fc769a96953ae5c716503f2",
+      "last_updated": "2026-10-08T21:26:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
       "path": "/docs/agent-approvals-security",
       "source_url": "https://learn.chatgpt.com/docs/agent-approvals-security.md",
@@ -264,8 +264,8 @@
       "title": "Advanced Configuration"
     },
     "config-file__config-basic.md": {
-      "hash": "a37f109219d86e440ee82a019298ed6ffc0dabf4138f8fae43c1d81837504360",
-      "last_updated": "2026-09-29T18:33:07+00:00",
+      "hash": "cbc250f4820064cc5b3dfd599d5c11d11c47e06d4a7b8d829865fa257ffd8b8e",
+      "last_updated": "2026-10-08T21:26:31+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-basic",
       "path": "/docs/config-file/config-basic",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-basic.md",
@@ -273,8 +273,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "92b810a69b75ae96bce8500b2296cf71b66f160cb59c937af2f64a85a66caf24",
-      "last_updated": "2026-10-07T15:37:46+00:00",
+      "hash": "c383cc5391a31edfec8abd1b3a56e586da769f71e5012c6143edec2cf1c3438e",
+      "last_updated": "2026-10-08T21:26:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
@@ -282,8 +282,8 @@
       "title": "Configuration Reference"
     },
     "config-file__config-sample.md": {
-      "hash": "a17a80db39eb054021b90dedb544760cb7f8fe2bee7811c2536681c7838c3973",
-      "last_updated": "2026-09-29T18:33:08+00:00",
+      "hash": "2ed62c74ea4b36775d9b0e000536efe3ac583bd96518395ccc69d43db330d606",
+      "last_updated": "2026-10-08T21:26:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-sample",
       "path": "/docs/config-file/config-sample",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-sample.md",
@@ -714,8 +714,8 @@
       "title": "Permissions"
     },
     "permissions.md": {
-      "hash": "f8fd7465cd854eefdb506beddab4d002e4fbf0700f90639cb2998ab023019f2e",
-      "last_updated": "2026-09-29T18:33:23+00:00",
+      "hash": "c8dbc5790043c9196614e430a3987b308fbbe268ec547b5756be44114ba37726",
+      "last_updated": "2026-10-08T21:26:46+00:00",
       "original_url": "https://learn.chatgpt.com/docs/permissions",
       "path": "/docs/permissions",
       "source_url": "https://learn.chatgpt.com/docs/permissions.md",
@@ -1254,8 +1254,8 @@
       "title": "ChatGPT desktop app for Windows"
     },
     "windows__windows-sandbox.md": {
-      "hash": "3ffebc13c5cf1d901d65361009a2d64ad9b57ff07a16e53f400dc55dabe31421",
-      "last_updated": "2026-08-25T01:52:25+00:00",
+      "hash": "4939496879278b66122c51e21e54de18046060e0cc61f6fc089c8f36c48912f8",
+      "last_updated": "2026-10-08T21:27:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/windows/windows-sandbox",
       "path": "/docs/windows/windows-sandbox",
       "source_url": "https://learn.chatgpt.com/docs/windows/windows-sandbox.md",
@@ -1263,8 +1263,8 @@
       "title": "Windows sandbox"
     },
     "windows__wsl.md": {
-      "hash": "0eef90e10c25c2c1c9b47ea89f141e59aa9c8c9c934c242a41cdfefa65988b84",
-      "last_updated": "2026-08-25T01:52:25+00:00",
+      "hash": "8263205f30e42e8d771f21939c07838b90bc268b9b51da1e5136cac7c36c4750",
+      "last_updated": "2026-10-08T21:27:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/windows/wsl",
       "path": "/docs/windows/wsl",
       "source_url": "https://learn.chatgpt.com/docs/windows/wsl.md",
@@ -1286,7 +1286,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-08T18:34:15+00:00",
+  "last_updated": "2026-10-08T21:27:03+00:00",
   "skipped": [
     {
       "path": "/docs",
