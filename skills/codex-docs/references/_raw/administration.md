@@ -107,8 +107,15 @@
         {
           title: "Groups and provisioning",
           description:
-            "Manage manual and SCIM groups, provisioning, and rollout cohorts.",
+            "Compare membership sources and understand group permissions.",
           href: "/codex/enterprise/groups-and-provisioning",
+          icon: "users",
+        },
+        {
+          title: "Dynamic groups",
+          description:
+            "Manage group membership with rules based on SCIM user attributes.",
+          href: "/codex/enterprise/dynamic-groups",
           icon: "users",
         },
         {
