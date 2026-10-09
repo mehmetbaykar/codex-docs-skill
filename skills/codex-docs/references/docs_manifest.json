@@ -21,8 +21,8 @@
       "title": "Administration"
     },
     "agent-approvals-security.md": {
-      "hash": "824ab33d71b737af1023d7c1333c718fb2e6ed732fc769a96953ae5c716503f2",
-      "last_updated": "2026-10-08T21:26:23+00:00",
+      "hash": "00c43e9acd2a5dcccdf91976f8a34007d6d513167d6d686d9333c06fffefb6b3",
+      "last_updated": "2026-10-09T18:31:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
       "path": "/docs/agent-approvals-security",
       "source_url": "https://learn.chatgpt.com/docs/agent-approvals-security.md",
@@ -264,8 +264,8 @@
       "title": "Advanced Configuration"
     },
     "config-file__config-basic.md": {
-      "hash": "cbc250f4820064cc5b3dfd599d5c11d11c47e06d4a7b8d829865fa257ffd8b8e",
-      "last_updated": "2026-10-08T21:26:31+00:00",
+      "hash": "041ea1295bce9492c6a9137e4c0e89723ca8fdec26881c53e2db80c13aa87da0",
+      "last_updated": "2026-10-09T18:31:49+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-basic",
       "path": "/docs/config-file/config-basic",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-basic.md",
@@ -390,8 +390,8 @@
       "title": "Developers"
     },
     "dots.md": {
-      "hash": "6da6c25ecce57c9fdc6ccd1f7b4aa4065fae5601bedb4c051a759769072aeaf5",
-      "last_updated": "2026-10-01T18:34:08+00:00",
+      "hash": "5e29e98984f04cd612e5f1762564dae6883cf095050f4c28f9b961777d153692",
+      "last_updated": "2026-10-09T18:31:52+00:00",
       "original_url": "https://learn.chatgpt.com/docs/dots",
       "path": "/docs/dots",
       "source_url": "https://learn.chatgpt.com/docs/dots.md",
@@ -1254,8 +1254,8 @@
       "title": "ChatGPT desktop app for Windows"
     },
     "windows__windows-sandbox.md": {
-      "hash": "4939496879278b66122c51e21e54de18046060e0cc61f6fc089c8f36c48912f8",
-      "last_updated": "2026-10-08T21:27:03+00:00",
+      "hash": "7c8abbc6830ccdced1c9740fdb7e76c6a85826e3f87da03d66df22e33b913647",
+      "last_updated": "2026-10-09T18:32:16+00:00",
       "original_url": "https://learn.chatgpt.com/docs/windows/windows-sandbox",
       "path": "/docs/windows/windows-sandbox",
       "source_url": "https://learn.chatgpt.com/docs/windows/windows-sandbox.md",
@@ -1286,7 +1286,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-09T12:38:16+00:00",
+  "last_updated": "2026-10-09T18:32:17+00:00",
   "skipped": [
     {
       "path": "/docs",
