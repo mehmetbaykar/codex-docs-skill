@@ -4,11 +4,11 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 140,
+    "pages_fetched_successfully": 141,
     "pages_skipped": 2,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 142
+    "total_pages_discovered": 143
   },
   "files": {
     "administration.md": {
@@ -390,8 +390,8 @@
       "title": "Developers"
     },
     "dots.md": {
-      "hash": "5e29e98984f04cd612e5f1762564dae6883cf095050f4c28f9b961777d153692",
-      "last_updated": "2026-10-09T18:31:52+00:00",
+      "hash": "d7abf7878e896044792bfaaf724ea53f0c5a4bf4815f6f915dc5e83db137d513",
+      "last_updated": "2026-10-09T21:25:45+00:00",
       "original_url": "https://learn.chatgpt.com/docs/dots",
       "path": "/docs/dots",
       "source_url": "https://learn.chatgpt.com/docs/dots.md",
@@ -399,8 +399,8 @@
       "title": "Meet dots"
     },
     "dots__channels.md": {
-      "hash": "d93e095f142d473cdea0a21e56e085da090b0acc495d5d8a961a8be5237f983a",
-      "last_updated": "2026-09-29T18:33:12+00:00",
+      "hash": "f034d91b5a26a9578b5665d48f275cca600607300ea3efe0afa688b9e0da8014",
+      "last_updated": "2026-10-09T21:25:45+00:00",
       "original_url": "https://learn.chatgpt.com/docs/dots/channels",
       "path": "/docs/dots/channels",
       "source_url": "https://learn.chatgpt.com/docs/dots/channels.md",
@@ -426,8 +426,8 @@
       "title": "Control your dot"
     },
     "dots__getting-started.md": {
-      "hash": "7cca5834ddb0afd1d960f03f1044c5c7def310cbdd604bebe784e43ba019cb8c",
-      "last_updated": "2026-09-29T18:33:13+00:00",
+      "hash": "58adc64b07cf961498ecd9691e834fb073766281fdb67bd333c73dcd8892bc0e",
+      "last_updated": "2026-10-09T21:25:46+00:00",
       "original_url": "https://learn.chatgpt.com/docs/dots/getting-started",
       "path": "/docs/dots/getting-started",
       "source_url": "https://learn.chatgpt.com/docs/dots/getting-started.md",
@@ -1209,8 +1209,8 @@
       "title": "Site tools"
     },
     "whats-new.md": {
-      "hash": "83f6ce2829fd5b2683bbba104ffbca749270505c1b7f6e22a9ed7d38828e6e0b",
-      "last_updated": "2026-10-08T18:34:13+00:00",
+      "hash": "aec84a8688d982d185db54cd50f8aa396ce7c739816d49e860a2f3e552039cca",
+      "last_updated": "2026-10-09T21:26:13+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -1226,9 +1226,18 @@
       "status": "live",
       "title": "DevDay 2026"
     },
+    "whats-new__dots-october-9-2026.md": {
+      "hash": "afbf2b49430ecd4c91a99dc473e351cecfa38b0dd26411bcd79ce5755c6d988d",
+      "last_updated": "2026-10-09T21:26:13+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026",
+      "path": "/docs/whats-new/dots-october-9-2026",
+      "source_url": "https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026.md",
+      "status": "live",
+      "title": "Create your dot in the ChatGPT mobile app"
+    },
     "whats-new__october-5-9-2026.md": {
-      "hash": "195bcd1f1d4299f9c9b308f278cf7c3b06ebf1e2fe1c574097a89200ae51f5e5",
-      "last_updated": "2026-10-08T18:34:14+00:00",
+      "hash": "9a1b74107094b4b6657b6aa2112b1450a5a6e0ed9cea487818fb784ea6aed29d",
+      "last_updated": "2026-10-09T21:26:13+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new/october-5-9-2026",
       "path": "/docs/whats-new/october-5-9-2026",
       "source_url": "https://learn.chatgpt.com/docs/whats-new/october-5-9-2026.md",
@@ -1286,7 +1295,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-09T18:32:17+00:00",
+  "last_updated": "2026-10-09T21:26:15+00:00",
   "skipped": [
     {
       "path": "/docs",
