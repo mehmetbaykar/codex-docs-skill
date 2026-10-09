@@ -23,7 +23,9 @@ Powered by GPT-6 Astra, your dot lives in the cloud and has its own computer and
 
 ## Make it your own
 
-Create your dot in the ChatGPT desktop app or a desktop browser. Setup offers app connections and, in the desktop app, access to your computer. Your dot introduces itself and uses the context available to it to suggest ways it can help. You can start talking to it while it gets to know your work.
+Create your dot in the ChatGPT mobile app, desktop app, or a desktop browser. On your phone, you can give it a name, customize its appearance, and connect plugins. In the desktop app, you can also connect your computer. See [Getting started](https://learn.chatgpt.com/docs/dots/getting-started#create-your-dot) for setup steps.
+
+Your dot introduces itself and uses the context available to it to suggest ways it can help. You can start talking to it while it gets to know your work.
 
 Give your dot a name and choose its shape, color, eyes, glasses, and accessories. You can change these anytime.
 
@@ -37,9 +39,9 @@ Your dot starts with a handle such as @yourname-dot. Naming it updates the handl
 
 ## Message or call your dot
 
-Continue talking to your dot in ChatGPT on desktop or in the mobile app when the supporting update is available. Create your dot on desktop first; mobile web is not supported.
+Create and talk to your dot in the ChatGPT mobile app, desktop app, or a desktop browser. You can start on any of these and continue with the same dot on another device. Mobile web is not supported.
 
-> Illustration: An illustrative ChatGPT conversation starts on desktop and continues with the same dot in the mobile app: a venue comparison gains a budget constraint. Mobile use requires the supporting app update.
+> Illustration: An illustrative ChatGPT conversation with the same dot on desktop and in the mobile app: a venue comparison gains a budget constraint.
 
 You can message your dot or call it to discuss work, change priorities, or make a decision. In ChatGPT, select the phone button in your dot’s conversation to start a call. You can also type messages while you’re talking. Work you’ve assigned can continue after the call ends.
 
@@ -153,12 +155,6 @@ Start with work you regularly need to check or update. Describe the responsibili
 
 For an offsite, share the plan and venue emails, then ask your dot to identify upcoming decisions and deadlines.
 
-**An offsite to organize:**
-
-```text
-Help me keep our offsite on track. Read the plan and venue emails I shared, and make a list of decisions, deadlines, and things we're waiting on. Focus on anything that affects the budget or needs an answer this week. Draft suggested replies for my review, but don't send them.
-```
-
 Review the first result and correct any missing details before expanding the responsibility.
 
 <a id="keep-working-together"></a>
@@ -167,12 +163,6 @@ Review the first result and correct any missing details before expanding the res
 ### Choose when and where to hear from it
 
 Tell your dot what to keep current and which changes deserve your attention. It can decide when to follow up. If you want an update at a specific time, include a time zone and a duration or end date, and ask it to confirm the schedule.
-
-**A scheduled check-in:**
-
-```text
-Check the connected planning channel each weekday at 9 AM Central for the next four weeks. Update our offsite list when something changes. Message me in ChatGPT if a deadline is at risk or you need a decision from me. Keep routine updates in the checklist. Confirm the schedule.
-```
 
 ### Review and redirect
 
@@ -206,7 +196,7 @@ Dots are rolling out gradually. You may not see dots immediately, even if your p
 
 Conversations with your dot don’t count toward your ChatGPT usage limits. Tasks your dot starts or manages in Work or Codex count toward those products’ usage limits as usual. Your plan includes an allowance for deeper work, with extended limits for the first month after launch.
 
-Create your dot in the desktop app or in ChatGPT on a desktop browser. After setup, use the same dot in the mobile app when the supporting update is available. Mobile web is not supported.
+You can create your dot in the ChatGPT mobile app, desktop app, or a desktop browser. Use the latest version of the mobile app for mobile setup. Mobile web is not supported.
 
 ## Reference
 
