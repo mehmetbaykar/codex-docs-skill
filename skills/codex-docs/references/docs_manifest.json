@@ -1227,8 +1227,8 @@
       "title": "DevDay 2026"
     },
     "whats-new__dots-october-9-2026.md": {
-      "hash": "afbf2b49430ecd4c91a99dc473e351cecfa38b0dd26411bcd79ce5755c6d988d",
-      "last_updated": "2026-10-09T21:26:13+00:00",
+      "hash": "cc173fdd6db82a846cb3f3b9ec4e76fb0686b8cdc8ea4952056197dc1e9c6803",
+      "last_updated": "2026-10-10T01:05:30+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026",
       "path": "/docs/whats-new/dots-october-9-2026",
       "source_url": "https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026.md",
@@ -1295,7 +1295,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-09T21:26:15+00:00",
+  "last_updated": "2026-10-10T01:05:31+00:00",
   "skipped": [
     {
       "path": "/docs",
