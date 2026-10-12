@@ -1029,8 +1029,8 @@
       "title": "Codex Security TypeScript SDK"
     },
     "security__security-review.md": {
-      "hash": "1f9516186dae206053d89c7dbb7a29286d1ff1f8b7e2ebbca12a7686a5946d9e",
-      "last_updated": "2026-09-29T18:33:34+00:00",
+      "hash": "0562a299f0e155dae826775d75b983037ee967d2d47245a7e73ff33631f02137",
+      "last_updated": "2026-10-12T18:34:21+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/security-review",
       "path": "/docs/security/security-review",
       "source_url": "https://learn.chatgpt.com/docs/security/security-review.md",
@@ -1083,8 +1083,8 @@
       "title": "Skills & Plugins"
     },
     "space.md": {
-      "hash": "62fb68688d3f51ca4902b00a21e4c7dbe02810d45a53cf4f7bb7a3fb00096af1",
-      "last_updated": "2026-09-29T18:33:36+00:00",
+      "hash": "fa24ad6dde89b556383336236f946aa7e13ccc01b8cb0173a64faaf34782e424",
+      "last_updated": "2026-10-12T18:34:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/space",
       "path": "/docs/space",
       "source_url": "https://learn.chatgpt.com/docs/space.md",
@@ -1128,8 +1128,8 @@
       "title": "Work with pages"
     },
     "third-party__github.md": {
-      "hash": "aeaf9fe4e877aedbd4740d51a8e96136a079a0bb7c73b8d87edac76ce7e6cff6",
-      "last_updated": "2026-09-29T18:33:37+00:00",
+      "hash": "c2b5ff3e819db5e53b4081cff9babc71fe496a5bfff41eb8c6d6b7b112a28fcf",
+      "last_updated": "2026-10-12T18:34:25+00:00",
       "original_url": "https://learn.chatgpt.com/docs/third-party/github",
       "path": "/docs/third-party/github",
       "source_url": "https://learn.chatgpt.com/docs/third-party/github.md",
@@ -1137,8 +1137,8 @@
       "title": "Review GitHub pull requests with Codex"
     },
     "third-party__gitlab.md": {
-      "hash": "daf4451381c5daa058f9a0a62738e909b32c8cb94c100d5b72d13ef4fdeb031d",
-      "last_updated": "2026-09-29T18:33:38+00:00",
+      "hash": "2ab0929f1938454fb58748af2dbfdac5f29768aa759eb4bf74cb3e36ab56f1ff",
+      "last_updated": "2026-10-12T18:34:25+00:00",
       "original_url": "https://learn.chatgpt.com/docs/third-party/gitlab",
       "path": "/docs/third-party/gitlab",
       "source_url": "https://learn.chatgpt.com/docs/third-party/gitlab.md",
@@ -1295,7 +1295,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-12T03:43:14+00:00",
+  "last_updated": "2026-10-12T18:34:30+00:00",
   "skipped": [
     {
       "path": "/docs",
