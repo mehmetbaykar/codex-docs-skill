@@ -51,9 +51,11 @@ it with a model you can use.
 
 model = "gpt-6.1-sol"
 
-# Communication style for supported models. Allowed values: none | friendly | pragmatic
+# Omit the built-in Personality section from model instructions. Default: unset.
 
-# personality = "pragmatic"
+# Legacy friendly and pragmatic values are accepted but no longer select a style.
+
+# personality = "none"
 
 # Optional model override for /review. Default: unset (uses current session model).
 
@@ -318,10 +320,6 @@ hide_agent_reasoning = false
 # Show raw reasoning content when available. Default: false
 
 show_raw_agent_reasoning = false
-
-# Disable burst-paste detection in the TUI. Default: false
-
-disable_paste_burst = false
 
 # Track Windows onboarding acknowledgement (Windows only). Default: false
 
@@ -607,6 +605,12 @@ persistence = "save-all"
 
 [tui]
 
+# Disable burst-paste detection. Default: false.
+
+# Overrides the legacy top-level disable_paste_burst setting.
+
+disable_paste_burst = false
+
 # Desktop notifications from the TUI: boolean or filtered list. Default: true
 
 # Examples: false | ["agent-turn-complete", "approval-requested"]
@@ -628,6 +632,18 @@ animations = true
 # Show onboarding tooltips in the welcome screen. Default: true
 
 show_tooltips = true
+
+# Generate automatic recaps while the terminal is unfocused. Default: true.
+
+# /recap remains available when this is false.
+
+# auto_recap = true
+
+# Show informational server-version notices. Default: true.
+
+# Does not hide compatibility errors or version status.
+
+# show_server_version_notice = true
 
 # Control alternate screen usage (auto skips it in Zellij to preserve scrollback).
 
@@ -689,7 +705,9 @@ show_tooltips = true
 
 # "gpt-6.1-sol" = 1
 
-# Enable or disable analytics for this machine. When unset, Codex uses its default behavior.
+# Enable or disable analytics. When unset, the client default applies.
+
+# In Codex CLI, false also disables custom OTLP metrics exporters.
 
 [analytics]
 enabled = true
@@ -737,7 +755,7 @@ prefer_mxc = true
 
 # hooks = false
 
-# unified_exec = true
+# Resumable execution is enabled on all platforms. Only managed requirements can disable it.
 
 # shell_snapshot = true
 
@@ -745,11 +763,11 @@ prefer_mxc = true
 
 # remote_plugin = true
 
-# personality = true
-
 # network_proxy = true # required to enforce permission-profile domain rules
 
 # fast_mode = true
+
+# ultrafast_mode = true # independent of fast_mode; model and account access still apply
 
 # enable_request_compression = true
 
@@ -907,6 +925,8 @@ prefer_mxc = true
 
 # client_id = "my-pre-registered-client" # OAuth client registered with the provider
 
+# client_secret = "<client-secret>" # optional confidential client secret; stored in config
+
 # callback_url = "http://127.0.0.1/callback" # saved registered callback for this client
 
 # callback_port = 4321 # server-specific listener port; overrides the global setting
@@ -1000,6 +1020,18 @@ prefer_mxc = true
 # base_url = "https://proxy.example.com/v1"
 
 # wire_api = "responses"
+
+# model_catalog_url = "https://proxy.example.com/codex-models.json" # full Codex-native catalog URL
+
+# Optional provider capability overrides. Omit to keep provider defaults.
+
+# Model and turn settings may restrict these capabilities further.
+
+# [model_providers.proxy.capabilities]
+
+# external_web_access = false # whether hosted web search can access the live web
+
+# remote_compaction = "unsupported" # unsupported (local compaction) | v2
 
 #
 
@@ -1119,7 +1151,7 @@ prefer_mxc = true
 
 # model_verbosity = "medium"
 
-# personality = "pragmatic" # or "friendly" or "none"
+# personality = "none" # omit the built-in Personality section
 
 # chatgpt_base_url = "https://chatgpt.com/backend-api/"
 
@@ -1131,7 +1163,7 @@ prefer_mxc = true
 
 # tools_view_image = true
 
-# features = { unified_exec = false }
+# features = { shell_snapshot = false }
 
 ################################################################################
 
@@ -1159,7 +1191,7 @@ prefer_mxc = true
 
 ################################################################################
 
-# OpenTelemetry (OTEL) - disabled by default
+# OpenTelemetry (OTEL)
 
 ################################################################################
 
@@ -1182,6 +1214,10 @@ exporter = "none"
 trace_exporter = "none"
 
 # Metrics exporter: none | statsig | otlp-http | otlp-grpc
+
+# Default: statsig. In Codex CLI, analytics.enabled = false disables all metrics exporters.
+
+# Set to none to disable metrics export.
 
 metrics_exporter = "statsig"
 
