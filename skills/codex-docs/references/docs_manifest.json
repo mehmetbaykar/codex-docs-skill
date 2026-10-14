@@ -48,8 +48,8 @@
       "title": "Rules"
     },
     "agent-configuration__speed.md": {
-      "hash": "acd018676e830247e6f7c401e5cf8b934260fee850d98fccfb33fe2fcfe9b960",
-      "last_updated": "2026-10-08T18:33:37+00:00",
+      "hash": "80450a57428be26947dfc1500edac617fac99f5fabc72684fff29c2aaef7b3cf",
+      "last_updated": "2026-10-14T21:23:31+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/speed",
       "path": "/docs/agent-configuration/speed",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/speed.md",
@@ -129,8 +129,8 @@
       "title": "Authentication"
     },
     "automations.md": {
-      "hash": "9f7867d07eb5806b1659bd957521f7cb099747d3e9ee8ec33e9b7ff9764c754a",
-      "last_updated": "2026-09-29T18:33:02+00:00",
+      "hash": "0a5b6c1e5d4b1a07a424955671a3106458c47dc72072c9fae6a512a9b8d7b958",
+      "last_updated": "2026-10-14T21:23:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/automations",
       "path": "/docs/automations",
       "source_url": "https://learn.chatgpt.com/docs/automations.md",
@@ -165,8 +165,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "dabcc02c3bc830a7200aadab30798a627f0b93c767afdb91b6ec6612063efedb",
-      "last_updated": "2026-10-14T18:32:14+00:00",
+      "hash": "d2c32d9cf70f7390ef7cf06d5302fd7f59782cecb46e35819c38ab5690e96811",
+      "last_updated": "2026-10-14T21:23:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -669,8 +669,8 @@
       "title": "Model selection"
     },
     "models.md": {
-      "hash": "a519035c3d1fa8d9fdee0a021c586e7e92614f4b7230d50a8a5b3e29c23128e5",
-      "last_updated": "2026-10-08T18:33:57+00:00",
+      "hash": "aff4eea5fb7c3f074f04a187b278e4de1f0e92c55c7c7f43fdb1c1d9f923dbbf",
+      "last_updated": "2026-10-14T21:23:48+00:00",
       "original_url": "https://learn.chatgpt.com/docs/models",
       "path": "/docs/models",
       "source_url": "https://learn.chatgpt.com/docs/models.md",
@@ -750,8 +750,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "0329dd3aae100ab72a16308e40af38853e7f7db82eb1136c732d4a7fc04b78e3",
-      "last_updated": "2026-10-08T18:33:59+00:00",
+      "hash": "cce1e0e3abe4cdf570fe511965a8075dec2d6798a38b4863d9091074a1952faa",
+      "last_updated": "2026-10-14T21:23:50+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -1295,7 +1295,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-14T18:32:51+00:00",
+  "last_updated": "2026-10-14T21:24:05+00:00",
   "skipped": [
     {
       "path": "/docs",
