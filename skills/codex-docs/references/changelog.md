@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## GPT-5.5 retirement in Codex (2026-10-14)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-14-gpt-55-retirement
+
+GPT-5.5 retirement in Codex
+
 ## Codex CLI Release: 0.162.1 (2026-10-09)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-408271623
@@ -122,12 +128,6 @@ ChatGPT for iOS
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-22-gpt-6-sol-luna
 
 GPT-6 Sol and Luna in Codex and ChatGPT Work
-
-## Codex CLI Release: 0.156.0 (2026-09-22)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-394061815
-
-0.156.0
 
 ## ChatGPT for iOS (2026-09-18)
 
