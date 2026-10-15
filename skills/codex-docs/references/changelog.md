@@ -9,6 +9,12 @@
 
 GPT-5.5 retirement in Codex
 
+## Composer predictions in Codex (2026-10-09)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-09-composer-predictions
+
+Composer predictions in Codex
+
 ## GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work (2026-10-08)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-10-08-gpt-61-sol-ultrafast
