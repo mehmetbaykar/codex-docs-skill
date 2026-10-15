@@ -15,11 +15,23 @@ GPT-5.5 retirement in Codex
 
 Composer predictions in Codex
 
+## Codex app (2026-10-08)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-08-app
+
+Codex app
+
 ## GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work (2026-10-08)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-10-08-gpt-61-sol-ultrafast
 
 GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work
+
+## Codex app (2026-10-07)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-07-app
+
+Codex app
 
 ## ChatGPT for iOS (2026-10-07)
 
@@ -32,6 +44,18 @@ ChatGPT for iOS
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-10-02-mobile
 
 ChatGPT for iOS
+
+## Codex app (2026-10-01)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-01-app
+
+Codex app
+
+## Codex app (2026-09-29)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-09-29-app
+
+Codex app
 
 ## GPT-6.1 Sol in Codex and ChatGPT Work (2026-09-29)
 
@@ -51,6 +75,12 @@ macOS security update
 
 ChatGPT for iOS
 
+## Codex app (2026-09-22)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-09-22-app
+
+Codex app
+
 ## GPT-6 Sol and Luna in Codex and ChatGPT Work (2026-09-22)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-22-gpt-6-sol-luna
@@ -62,6 +92,18 @@ GPT-6 Sol and Luna in Codex and ChatGPT Work
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-18-mobile
 
 ChatGPT for iOS
+
+## Codex app (2026-09-17)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-09-17-app
+
+Codex app
+
+## Codex app (2026-09-16)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-09-16-app
+
+Codex app
 
 ## GPT-5.3-Codex-Spark deprecated (2026-09-14)
 
@@ -81,6 +123,12 @@ GPT-5.5 retires from ChatGPT, ChatGPT Work, and Codex on October 14
 
 Quick chats with Pets and Appshots on Windows
 
+## Codex app (2026-09-08)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-09-08-app
+
+Codex app
+
 ## ChatGPT for iOS (2026-09-08)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-08-mobile
@@ -93,11 +141,29 @@ ChatGPT for iOS
 
 Codex MCP server removed
 
+## Codex app (2026-09-02)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-09-02-app
+
+Codex app
+
 ## ChatGPT for iOS (2026-09-01)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-09-02-mobile
 
 ChatGPT for iOS
+
+## Codex app (2026-08-31)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-31-app
+
+Codex app
+
+## Codex app (2026-08-27)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-27-app
+
+Codex app
 
 ## ChatGPT for iOS (2026-08-26)
 
@@ -129,6 +195,12 @@ Codex MCP server command deprecated
 
 New ways to work with Codex and ChatGPT.
 
+## Codex app (2026-08-19)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-19-app
+
+Codex app
+
 ## GitLab support in Codex cloud (Beta) (2026-08-19)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-19-gitlab
@@ -146,6 +218,12 @@ ChatGPT for iOS
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-17-admin-csv
 
 Download public plugin, app, and skill metadata for workspace security and governance reviews.
+
+## Codex app (2026-08-17)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-17-app
+
+Codex app
 
 ## Computer History (2026-08-13)
 
@@ -170,6 +248,18 @@ Introducing Daybreak Blue and Daybreak Red
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-08-03-mobile
 
 ChatGPT for iOS
+
+## Codex app (2026-08-06)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-06-app
+
+Codex app
+
+## Codex app (2026-08-04)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-08-04-app
+
+Codex app
 
 ## GPT-5.4 and GPT-5.4 mini retire from Codex on August 31 (2026-07-31)
 
@@ -534,6 +624,12 @@ Codex app
 ## Codex app (2026-02-26)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-02-26-app
+
+Codex app
+
+## Codex app (2026-02-24)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-02-24-app
 
 Codex app
 
