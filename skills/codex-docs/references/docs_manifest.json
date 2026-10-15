@@ -4,11 +4,11 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 141,
+    "pages_fetched_successfully": 142,
     "pages_skipped": 2,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 143
+    "total_pages_discovered": 144
   },
   "files": {
     "administration.md": {
@@ -516,8 +516,8 @@
       "title": "Feature Maturity"
     },
     "features.md": {
-      "hash": "6e9dcfcfadbd66328160d8b3dc75d1f52394abea054f47e60f2165c5fd607dd6",
-      "last_updated": "2026-10-06T15:27:00+00:00",
+      "hash": "615735cf0e2c14e506e4a515fb8209d7105976793edfc66dc0aa6b7bde25e554",
+      "last_updated": "2026-10-15T03:29:54+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features",
       "path": "/docs/features",
       "source_url": "https://learn.chatgpt.com/docs/features.md",
@@ -532,6 +532,15 @@
       "source_url": "https://learn.chatgpt.com/docs/features/codex-micro.md",
       "status": "live",
       "title": "Codex Micro"
+    },
+    "features__composer-predictions.md": {
+      "hash": "8ba1dcba7fa30ec596b5b175798535f365026095853c8c638f5cb09f8d3f98fc",
+      "last_updated": "2026-10-15T03:29:54+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/features/composer-predictions",
+      "path": "/docs/features/composer-predictions",
+      "source_url": "https://learn.chatgpt.com/docs/features/composer-predictions.md",
+      "status": "live",
+      "title": "Composer Predictions"
     },
     "features__voice.md": {
       "hash": "80131aadf5ee2d1d0d564b5104cfea1111cccfd27e9d3aaa614d8cf60c952b5b",
@@ -1295,7 +1304,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-15T00:54:15+00:00",
+  "last_updated": "2026-10-15T03:30:21+00:00",
   "skipped": [
     {
       "path": "/docs",

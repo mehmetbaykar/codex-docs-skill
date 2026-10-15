@@ -120,6 +120,12 @@
           icon: "chat",
         },
         {
+          title: "Composer Predictions",
+          description: "Get suggestions for your next message in Codex.",
+          href: "/codex/features/composer-predictions",
+          icon: "chat",
+        },
+        {
           title: "Plugins",
           description:
             "Install reusable workflows, connected tools, and shared context.",
