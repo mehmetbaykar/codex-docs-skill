@@ -4,16 +4,16 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 142,
+    "pages_fetched_successfully": 146,
     "pages_skipped": 2,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 144
+    "total_pages_discovered": 148
   },
   "files": {
     "administration.md": {
-      "hash": "fce71119fc58813598827163138ee1e01bd8889f0f8502ddfa591f0323a3f887",
-      "last_updated": "2026-10-09T12:37:31+00:00",
+      "hash": "0e7390223a4720abdb767495536bf5cc9cb3976ee6c143558fffb6e7bbf03feb",
+      "last_updated": "2026-10-15T21:25:18+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -147,8 +147,8 @@
       "title": "Browser"
     },
     "build-plugins.md": {
-      "hash": "73d69040c3bc690d78c2f92b59c5bcaac39b071b46069a0503a3a8c3296a2042",
-      "last_updated": "2026-09-29T18:33:03+00:00",
+      "hash": "a21ba4fc28d7233c1c4e71236171776fb425110d0592a5a510c215b82b112366",
+      "last_updated": "2026-10-15T21:25:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/build-plugins",
       "path": "/docs/build-plugins",
       "source_url": "https://learn.chatgpt.com/docs/build-plugins.md",
@@ -165,8 +165,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "3391f18e044a2d43ff9ad9e89e38eecda8c392ea983e7922837e9e7b51f239a1",
-      "last_updated": "2026-10-15T12:36:27+00:00",
+      "hash": "d9686ccbb9c7bf9164f6718b188a1d0f171f65115bfeee3fe403ea40866fdf95",
+      "last_updated": "2026-10-15T21:25:24+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -489,8 +489,8 @@
       "title": "Codex environments"
     },
     "extend__mcp.md": {
-      "hash": "9be78c4e364f815b7c98a79754f556f3a89aaafcf4d4a0a6f6900bb52aa1325b",
-      "last_updated": "2026-10-14T00:54:58+00:00",
+      "hash": "ef6f483837d480f05d61b53484fd6ae2838afdaee19a0a576ac397d8a4915273",
+      "last_updated": "2026-10-15T21:25:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/extend/mcp",
       "path": "/docs/extend/mcp",
       "source_url": "https://learn.chatgpt.com/docs/extend/mcp.md",
@@ -516,8 +516,8 @@
       "title": "Feature Maturity"
     },
     "features.md": {
-      "hash": "615735cf0e2c14e506e4a515fb8209d7105976793edfc66dc0aa6b7bde25e554",
-      "last_updated": "2026-10-15T03:29:54+00:00",
+      "hash": "187dd14b53135cdc34d787b8ff0cd83a8e2aa8d7e7065ec8430249ec38b9fa44",
+      "last_updated": "2026-10-15T21:25:34+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features",
       "path": "/docs/features",
       "source_url": "https://learn.chatgpt.com/docs/features.md",
@@ -651,8 +651,8 @@
       "title": "Codex MCP server removal"
     },
     "migrate-custom-gpts.md": {
-      "hash": "76eb914bc2ccaf5e4c7076126fb82155d5726325420ecb6bdcf9fdc3f4ffa641",
-      "last_updated": "2026-09-29T18:33:21+00:00",
+      "hash": "3ffd32e49ba4239745f77954791ebde2802f8183bdc6e06da3bcc3e758263b36",
+      "last_updated": "2026-10-15T21:25:39+00:00",
       "original_url": "https://learn.chatgpt.com/docs/migrate-custom-gpts",
       "path": "/docs/migrate-custom-gpts",
       "source_url": "https://learn.chatgpt.com/docs/migrate-custom-gpts.md",
@@ -750,8 +750,8 @@
       "title": "Pets"
     },
     "plugins.md": {
-      "hash": "c12be16cb90fcfddd0cac4c7482a5c90b605101328e04260b5a0c6b34b5df032",
-      "last_updated": "2026-09-29T18:33:24+00:00",
+      "hash": "a947f02d1b12e9621f1d020bca1bd02703b0f3d935d2db3bb786842dbfdaf8f5",
+      "last_updated": "2026-10-15T21:25:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/plugins",
       "path": "/docs/plugins",
       "source_url": "https://learn.chatgpt.com/docs/plugins.md",
@@ -1074,13 +1074,49 @@
       "title": "Sign in with ChatGPT"
     },
     "sites.md": {
-      "hash": "482592e80a71f8e7e2cf6cd082b5ca6d717afe70f133a96f63bfde605406c551",
-      "last_updated": "2026-09-29T18:33:35+00:00",
+      "hash": "4199fe1d386c8fdce82ec5274f647722e210471646b2bc3a83284fad7beb1a19",
+      "last_updated": "2026-10-15T21:25:52+00:00",
       "original_url": "https://learn.chatgpt.com/docs/sites",
       "path": "/docs/sites",
       "source_url": "https://learn.chatgpt.com/docs/sites.md",
       "status": "live",
       "title": "Sites"
+    },
+    "sites__creating-a-site.md": {
+      "hash": "c4f923bbefd245ca13ecfc41198704ba3c70a11c077f6d1de58a2249cdbe72dd",
+      "last_updated": "2026-10-15T21:25:52+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/sites/creating-a-site",
+      "path": "/docs/sites/creating-a-site",
+      "source_url": "https://learn.chatgpt.com/docs/sites/creating-a-site.md",
+      "status": "live",
+      "title": "Create a site"
+    },
+    "sites__data-and-connections.md": {
+      "hash": "e6bbd72a33d4df16f627bde8f04b4f13b0d60292b8377b7f751a3b2cf17040a0",
+      "last_updated": "2026-10-15T21:25:52+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/sites/data-and-connections",
+      "path": "/docs/sites/data-and-connections",
+      "source_url": "https://learn.chatgpt.com/docs/sites/data-and-connections.md",
+      "status": "live",
+      "title": "Data and connections"
+    },
+    "sites__managing-a-site.md": {
+      "hash": "b3f3f1148bdf42b02ee0826bf7057b617ce5719a47a5c5785c8b8b43c762d099",
+      "last_updated": "2026-10-15T21:25:52+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/sites/managing-a-site",
+      "path": "/docs/sites/managing-a-site",
+      "source_url": "https://learn.chatgpt.com/docs/sites/managing-a-site.md",
+      "status": "live",
+      "title": "Manage a site"
+    },
+    "sites__publishing-and-sharing.md": {
+      "hash": "f7dec7d104f8da6539cdcf398f2ba09f59beeea36b3812b47265fcbc3b60c75f",
+      "last_updated": "2026-10-15T21:25:53+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/sites/publishing-and-sharing",
+      "path": "/docs/sites/publishing-and-sharing",
+      "source_url": "https://learn.chatgpt.com/docs/sites/publishing-and-sharing.md",
+      "status": "live",
+      "title": "Publish and share"
     },
     "skills-and-plugins.md": {
       "hash": "c941ba21899304157f2af7047c3fdd9201c106a6a6798c36d0cd8a4243344bb4",
@@ -1304,7 +1340,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-15T12:37:01+00:00",
+  "last_updated": "2026-10-15T21:25:59+00:00",
   "skipped": [
     {
       "path": "/docs",
