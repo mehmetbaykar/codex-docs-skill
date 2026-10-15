@@ -38,7 +38,7 @@
       ],
     },
     {
-      title: "Feature setup",
+      title: "Feature Configuration",
       description:
         "Choose a setup task, then review its access and security requirements.",
       pages: [
@@ -55,6 +55,13 @@
             "Control Library sharing permissions and help members share pages.",
           href: "/codex/space/collaboration#for-workspace-admins",
           icon: "userLock",
+        },
+        {
+          title: "Sites administration",
+          description:
+            "Enable sites, configure connections, and review hosting, access controls, and data responsibilities.",
+          href: "/codex/enterprise/sites",
+          icon: "shieldCheck",
         },
         {
           title: "Set up teams and Team Tasks",
@@ -83,13 +90,6 @@
             "Review shared policies and compatibility, then enable local computer access separately for Work and dots.",
           href: "/codex/enterprise/cloud-local-access#how-to-set-up-local-computer-access",
           icon: "settings",
-        },
-        {
-          title: "Set up Sites and connected plugins",
-          description:
-            "Enable tenant and plugin access so Sites can use visitors' connected accounts.",
-          href: "/codex/enterprise/sites#enable-plugin-use-in-sites",
-          icon: "connect",
         },
       ],
     },
