@@ -158,9 +158,9 @@
         "Deploy apps and configure updates, runtime settings, remote connections, and model access.",
       pages: [
         {
-          title: "Windows app deployment",
+          title: "Windows app and CLI deployment",
           description:
-            "Choose an installation and update path for managed Windows devices.",
+            "Deploy the Windows app and Codex CLI on managed Windows devices.",
           href: "/codex/enterprise/windows-deployment",
           icon: "settings",
         },
@@ -176,6 +176,13 @@
           description:
             "Review the global baseline in Agent Security, policy precedence for this feature, and supported runtime requirements.",
           href: "/codex/enterprise/managed-configuration",
+          icon: "dataControls",
+        },
+        {
+          title: "Codex security cookbook",
+          description:
+            "Configure and verify enterprise security controls, then combine them for common security goals.",
+          href: "/codex/enterprise/security-cookbook",
           icon: "dataControls",
         },
         {
