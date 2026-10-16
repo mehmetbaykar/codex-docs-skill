@@ -122,7 +122,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `security__sdk` - [Codex Security TypeScript SDK](https://learn.chatgpt.com/docs/security/sdk)
 - `security__security-review` - [Security Review](https://learn.chatgpt.com/docs/security/security-review)
 - `security__setup` - [Codex Security Cloud setup](https://learn.chatgpt.com/docs/security/setup)
-- `security__threat-model` - [Improving the threat model](https://learn.chatgpt.com/docs/security/threat-model)
+- `security__threat-model` - [Improve the Cloud threat model](https://learn.chatgpt.com/docs/security/threat-model)
 - `sign-in-with-chatgpt` - [Sign in with ChatGPT](https://learn.chatgpt.com/docs/sign-in-with-chatgpt)
 - `sites` - [Sites](https://learn.chatgpt.com/docs/sites)
 - `sites__creating-a-site` - [Create a site](https://learn.chatgpt.com/docs/sites/creating-a-site)

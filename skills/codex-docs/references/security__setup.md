@@ -8,12 +8,23 @@ path: /docs/security/setup
 
 > For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
 
-Use the Codex Security Cloud plugin to scan connected GitHub repositories,
-review findings, and monitor new commits.
+Run a first scan of a connected GitHub repository with Codex Security Cloud,
+then review its findings. Afterward, you can enable monitoring for new commits.
 
 Codex Security Cloud runs scans in [Codex cloud](https://learn.chatgpt.com/docs/cloud). For scans of a
   local repository in the desktop app or CLI, use the separate [Codex Security
   plugin](https://learn.chatgpt.com/docs/security/plugin).
+
+## Before you start
+
+Use a workspace with Codex Security Cloud access and [Codex cloud](https://learn.chatgpt.com/docs/cloud)
+set up. You need permission to connect the GitHub repository you want to scan.
+You can create its cloud environment during setup.
+
+If the plugin is unavailable, check access with your workspace administrator.
+If a repository is missing, use **Configure access** in the repository picker to
+check the GitHub app's organization and repository access. If you can't grant
+access yourself, ask your GitHub administrator to add the repository.
 
 ## 1. Install and open the plugin
 
@@ -21,8 +32,6 @@ Codex Security Cloud runs scans in [Codex cloud](https://learn.chatgpt.com/docs/
 2. Search the plugin marketplace for **Codex Security Cloud**.
 3. Install and enable the plugin, then open **Security Cloud** from your
    installed plugins or sidebar.
-
-If access is unavailable, check with your workspace administrator.
 
 ## 2. Connect GitHub
 
@@ -33,10 +42,6 @@ connection and access to the repository.
 
 Codex Security Cloud doesn't support workspace connections.
 
-If a repository is missing, use **Configure access** in the repository picker to
-check the GitHub app's organization and repository access. If you can't grant
-access yourself, ask your GitHub administrator to add the repository.
-
 ## 3. Start a repository scan
 
 1. In **New Scan**, choose the repository.
@@ -46,8 +51,9 @@ access yourself, ask your GitHub administrator to add the repository.
 3. Under **Scan Method**, select **One-Time Scan**.
 4. Select **Create**.
 
-Open the scan in **Scans** to follow its progress and review its findings and
-artifacts.
+Open the scan in **Scans** to follow progress. Wait for it to finish, then
+check the reported status and target before interpreting its findings. If it
+fails or is canceled, read the available output as an incomplete review.
 
 ## 4. Review findings and available fixes
 
@@ -59,19 +65,28 @@ findings.
 <figure className="not-prose my-8">
   <figcaption className="mt-3 text-sm text-secondary">
     Filter and review open findings. Repositories, findings, and counts are
-    fictional and match the overview example.
+    fictional.
   </figcaption>
 </figure>
 
-Select an issue to review its affected code, validation evidence, and
-remediation guidance.
+Open a finding from the scan or from **Findings**. Check its affected code and
+revision, the path an attacker could take, and the validation evidence. Read
+any unresolved assumptions before deciding whether the issue applies. A scan
+with no reported findings doesn't establish that the repository has no
+vulnerabilities.
 
-When a finding offers **Fix with Codex**, select it to generate a proposed
-patch. Review the patch before selecting **Create draft pull request**.
+When a repository finding offers **Fix with Codex**, selecting it starts a
+Codex conversation to check the finding against current code, implement a fix,
+and run relevant tests. Review the resulting changes and test evidence there.
+
+Findings from commit monitoring can instead offer a suggested patch. Review
+that patch before selecting **Create draft pull request**. These actions have
+different effects, so follow the workflow shown for the finding.
 
 ## 5. Monitor new commits
 
-To review changes as new commits arrive:
+Once you've reviewed the first scan, you can monitor changes as new commits
+arrive:
 
 1. Select **Scan**, then choose the repository and review the environment.
 2. Under **Scan Method**, select **Continuous Scanning**. Codex Security scans
@@ -98,12 +113,10 @@ that repository's shared configuration in the workspace, not just to the person
 making the change. If you can't edit it, ask the scan owner or a Codex Security
 administrator.
 
-Review and edit the generated threat model under **Project context**, then
-select **Save**. See [Improving the threat model](https://learn.chatgpt.com/docs/security/threat-model)
-for guidance.
+Review the generated threat model in **Monitoring settings** and update it
+with deployment or security context the code doesn't establish. See
+[Improve the threat model](https://learn.chatgpt.com/docs/security/threat-model).
 
-## Related docs
-
-- [Codex Security](https://learn.chatgpt.com/docs/security) gives the product overview.
-- [Codex Security Cloud FAQ](https://learn.chatgpt.com/docs/security/faq) covers common Cloud questions.
-- [Improving the threat model](https://learn.chatgpt.com/docs/security/threat-model) explains how to improve scan context and finding prioritization.
+For questions about builds, validation, or result interpretation, see the
+[Cloud FAQ](https://learn.chatgpt.com/docs/security/faq). To review GitHub pull requests, use
+[Security Review](https://learn.chatgpt.com/docs/security/security-review).
