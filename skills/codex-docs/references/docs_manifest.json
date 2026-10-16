@@ -165,8 +165,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "c3169302d8f7a1feb12733498e2edda1aa308d190bf56322b63a33bd1280ea02",
-      "last_updated": "2026-10-16T15:24:15+00:00",
+      "hash": "3391f18e044a2d43ff9ad9e89e38eecda8c392ea983e7922837e9e7b51f239a1",
+      "last_updated": "2026-10-16T18:29:30+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -1128,8 +1128,8 @@
       "title": "Skills & Plugins"
     },
     "space.md": {
-      "hash": "fa24ad6dde89b556383336236f946aa7e13ccc01b8cb0173a64faaf34782e424",
-      "last_updated": "2026-10-12T18:34:23+00:00",
+      "hash": "ae2b721d6bb4333445cc9a6208a459a55315515e2b26910ff9824e648cd39d34",
+      "last_updated": "2026-10-16T18:30:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/space",
       "path": "/docs/space",
       "source_url": "https://learn.chatgpt.com/docs/space.md",
@@ -1146,8 +1146,8 @@
       "title": "Work with agents in Space"
     },
     "space__collaboration.md": {
-      "hash": "6de682dc6265d2d430b0bad9a8b89960679fcb2f6f01fc42a563b6c5f94fc8fb",
-      "last_updated": "2026-09-29T18:33:37+00:00",
+      "hash": "b60fa763e5c54c03498653067aa1e2cb82aad6013c8f64f132fef63607c186fd",
+      "last_updated": "2026-10-16T18:30:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/space/collaboration",
       "path": "/docs/space/collaboration",
       "source_url": "https://learn.chatgpt.com/docs/space/collaboration.md",
@@ -1155,8 +1155,8 @@
       "title": "Collaborate in Space"
     },
     "space__getting-started.md": {
-      "hash": "8ee6ed07ea0fa5b32afefed17b818a440b0495523f4aae826d0efcebefef8659",
-      "last_updated": "2026-09-29T18:33:37+00:00",
+      "hash": "76d5a8a461f94e56a5beb156b02a28f68e7800b55bb84bcc5574ed3ad84c3202",
+      "last_updated": "2026-10-16T18:30:04+00:00",
       "original_url": "https://learn.chatgpt.com/docs/space/getting-started",
       "path": "/docs/space/getting-started",
       "source_url": "https://learn.chatgpt.com/docs/space/getting-started.md",
@@ -1340,7 +1340,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-16T15:24:51+00:00",
+  "last_updated": "2026-10-16T18:30:09+00:00",
   "skipped": [
     {
       "path": "/docs",
