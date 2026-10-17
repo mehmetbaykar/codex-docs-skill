@@ -867,8 +867,8 @@
       "title": "Codex Security"
     },
     "security__cli.md": {
-      "hash": "eb5cfb685ec3bce664619a1110fcfaca4513a079e2b4ae60325e5fa697d91d03",
-      "last_updated": "2026-10-16T06:39:36+00:00",
+      "hash": "7eb49f546273d79c71dd6395d87a05eff43e62f5a87ad1bac3fbf562bd110169",
+      "last_updated": "2026-10-17T06:35:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli",
       "path": "/docs/security/cli",
       "source_url": "https://learn.chatgpt.com/docs/security/cli.md",
@@ -885,8 +885,8 @@
       "title": "Run bulk security scans"
     },
     "security__cli__ci.md": {
-      "hash": "a6acc5dda018c1820ce301815dd67c9d8dd20634c76758e43484f6d4487ce533",
-      "last_updated": "2026-10-16T06:39:37+00:00",
+      "hash": "38542a99fdc5eb3f55808237f2a7640c12d4f9a14e8958490b436daecdc04dc9",
+      "last_updated": "2026-10-17T06:35:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/ci",
       "path": "/docs/security/cli/ci",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/ci.md",
@@ -912,8 +912,8 @@
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "5e9236b69ec9e68345c76af52dcc666964d23127db9b3ed9ab94dd708e5b8aad",
-      "last_updated": "2026-10-16T06:39:37+00:00",
+      "hash": "749465fd4c4032228656c5625d8ed75c1ae9a94782a8870b4febcad1dcc3fd03",
+      "last_updated": "2026-10-17T06:35:36+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/reference.md",
@@ -1029,8 +1029,8 @@
       "title": "Use the Codex Security workbench"
     },
     "security__sdk.md": {
-      "hash": "0c8fc76e24a1951f2bbfad705b7f8fd83bbc9a270bb958b117c1c601c6a61048",
-      "last_updated": "2026-10-16T06:39:41+00:00",
+      "hash": "7ab860fc93ef4ef657f31494c9516600dd3d2d13fa8f24b6390793d19b76cba9",
+      "last_updated": "2026-10-17T06:35:39+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/sdk",
       "path": "/docs/security/sdk",
       "source_url": "https://learn.chatgpt.com/docs/security/sdk.md",
@@ -1340,7 +1340,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-17T03:28:00+00:00",
+  "last_updated": "2026-10-17T06:35:47+00:00",
   "skipped": [
     {
       "path": "/docs",
