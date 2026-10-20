@@ -46,7 +46,7 @@
           title: "Configure dots permissions",
           description:
             "Manage dots access, communication, computers, and custom rules.",
-          href: "/codex/dots/controls#for-workspace-admins",
+          href: "/codex/enterprise/dots-admin-guide",
           icon: "shieldCheck",
         },
         {
