@@ -4,11 +4,11 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 146,
+    "pages_fetched_successfully": 147,
     "pages_skipped": 2,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 148
+    "total_pages_discovered": 149
   },
   "files": {
     "administration.md": {
@@ -417,8 +417,8 @@
       "title": "Connect computers and apps to your dot"
     },
     "dots__controls.md": {
-      "hash": "4cca4cb60083a70a357916f42c87b5e9cbc2b8c2d33344325442cb3d9ab10855",
-      "last_updated": "2026-10-01T18:34:09+00:00",
+      "hash": "a2f9236a3b8ea8acc18bef229e4e951b69f683d3f7398ebaf604cef441e49c76",
+      "last_updated": "2026-10-20T00:55:48+00:00",
       "original_url": "https://learn.chatgpt.com/docs/dots/controls",
       "path": "/docs/dots/controls",
       "source_url": "https://learn.chatgpt.com/docs/dots/controls.md",
@@ -435,8 +435,8 @@
       "title": "Get started with your dot"
     },
     "dots__tasks-and-memory.md": {
-      "hash": "f91a39f4d315672d2855d2cb0bdd68449ec2c0914a5e931f83fcb96e206148ef",
-      "last_updated": "2026-09-29T18:33:13+00:00",
+      "hash": "e8fec783deca0834a4b041760c1d04823f15bf4b19d2453d67d9938fe6047f9d",
+      "last_updated": "2026-10-20T00:55:48+00:00",
       "original_url": "https://learn.chatgpt.com/docs/dots/tasks-and-memory",
       "path": "/docs/dots/tasks-and-memory",
       "source_url": "https://learn.chatgpt.com/docs/dots/tasks-and-memory.md",
@@ -867,8 +867,8 @@
       "title": "Codex Security"
     },
     "security__cli.md": {
-      "hash": "7eb49f546273d79c71dd6395d87a05eff43e62f5a87ad1bac3fbf562bd110169",
-      "last_updated": "2026-10-17T06:35:35+00:00",
+      "hash": "18ab7527fb794ce91c2fbf1f9bd9fa2af577b3a43813b77eb3e7fbb16d46730a",
+      "last_updated": "2026-10-20T00:56:02+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli",
       "path": "/docs/security/cli",
       "source_url": "https://learn.chatgpt.com/docs/security/cli.md",
@@ -885,17 +885,26 @@
       "title": "Run bulk security scans"
     },
     "security__cli__ci.md": {
-      "hash": "38542a99fdc5eb3f55808237f2a7640c12d4f9a14e8958490b436daecdc04dc9",
-      "last_updated": "2026-10-17T06:35:35+00:00",
+      "hash": "37814630f2238785b285343d0b7eac2446dc9a20eb33d16daae0e675a3ede651",
+      "last_updated": "2026-10-20T00:56:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/ci",
       "path": "/docs/security/cli/ci",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/ci.md",
       "status": "live",
-      "title": "Run Codex Security in CI"
+      "title": "Codex Security CI/CD overview"
+    },
+    "security__cli__ci__github.md": {
+      "hash": "9beb4fb1d0d2d2220cae571ec6977ca44318dc2fe864010d6e49b705afefad86",
+      "last_updated": "2026-10-20T00:56:03+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/security/cli/ci/github",
+      "path": "/docs/security/cli/ci/github",
+      "source_url": "https://learn.chatgpt.com/docs/security/cli/ci/github.md",
+      "status": "live",
+      "title": "Run Codex Security in GitHub Actions"
     },
     "security__cli__ci__gitlab.md": {
-      "hash": "1cbf8f6f2d5f8fec126512b8d9636d034078089527dc7482d2772c0e071785a9",
-      "last_updated": "2026-10-16T06:39:37+00:00",
+      "hash": "7958123fc2dd0c2d172629954d110f0e386a8fa514bb1d3f0664f2d2a5b53857",
+      "last_updated": "2026-10-20T00:56:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/ci/gitlab",
       "path": "/docs/security/cli/ci/gitlab",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/ci/gitlab.md",
@@ -903,8 +912,8 @@
       "title": "Run Codex Security in GitLab CI/CD"
     },
     "security__cli__faq.md": {
-      "hash": "6467fbeaa2fd99163c9f8ed82ab8f8b6ea6dce5bfc55d2e9a4a0b891457ffd1e",
-      "last_updated": "2026-10-16T06:39:37+00:00",
+      "hash": "ab7748de2656fb436e08874e7585d4f5efd9b235e1f29613892296833875277c",
+      "last_updated": "2026-10-20T00:56:04+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/faq",
       "path": "/docs/security/cli/faq",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/faq.md",
@@ -1340,7 +1349,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-19T21:24:56+00:00",
+  "last_updated": "2026-10-20T00:56:16+00:00",
   "skipped": [
     {
       "path": "/docs",
