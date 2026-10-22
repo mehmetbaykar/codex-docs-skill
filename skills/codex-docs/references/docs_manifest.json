@@ -489,8 +489,8 @@
       "title": "Codex environments"
     },
     "extend__mcp.md": {
-      "hash": "ef6f483837d480f05d61b53484fd6ae2838afdaee19a0a576ac397d8a4915273",
-      "last_updated": "2026-10-15T21:25:33+00:00",
+      "hash": "edd40b110e9dca93f8a24e8715d1464cec6e2b59d85f7723530b8cdc91181470",
+      "last_updated": "2026-10-22T21:24:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/extend/mcp",
       "path": "/docs/extend/mcp",
       "source_url": "https://learn.chatgpt.com/docs/extend/mcp.md",
@@ -1349,7 +1349,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-22T18:30:56+00:00",
+  "last_updated": "2026-10-22T21:24:52+00:00",
   "skipped": [
     {
       "path": "/docs",
