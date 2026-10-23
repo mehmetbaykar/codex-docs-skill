@@ -140,6 +140,13 @@
           icon: "storage",
         },
         {
+          title: "Model catalogs",
+          description:
+            "Serve current model defaults through a cloud or gateway integration.",
+          href: "/codex/model-catalogs",
+          icon: "settings",
+        },
+        {
           title: "GitHub Action",
           description: "Run Codex from GitHub Actions workflows.",
           href: "/codex/github-action",
