@@ -4,11 +4,11 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 147,
+    "pages_fetched_successfully": 148,
     "pages_skipped": 2,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 149
+    "total_pages_discovered": 150
   },
   "files": {
     "administration.md": {
@@ -381,8 +381,8 @@
       "title": "Developer settings"
     },
     "developers.md": {
-      "hash": "3e7acfd65214d7d643e0a6f91d37ae71941acb7aefae9251e7f25598ba0239e6",
-      "last_updated": "2026-09-29T18:33:12+00:00",
+      "hash": "cae39d1d10122cf4ba0e9072ea93cbfb3c12e50054a284a2a549d80e922b1c9a",
+      "last_updated": "2026-10-23T21:23:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/developers",
       "path": "/docs/developers",
       "source_url": "https://learn.chatgpt.com/docs/developers.md",
@@ -667,6 +667,15 @@
       "source_url": "https://learn.chatgpt.com/docs/mobile.md",
       "status": "live",
       "title": "Codex on mobile"
+    },
+    "model-catalogs.md": {
+      "hash": "fa037860534cae59d648099938c36ea06bd297676a233295b4193404bccf5267",
+      "last_updated": "2026-10-23T21:24:08+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/model-catalogs",
+      "path": "/docs/model-catalogs",
+      "source_url": "https://learn.chatgpt.com/docs/model-catalogs.md",
+      "status": "live",
+      "title": "Implementing model catalogs for gateways and clouds"
     },
     "model-selection.md": {
       "hash": "618c9f812d15e6ab0c2de3ae0aa08fd585dd174647449b2f1335b6aecf03571a",
@@ -1349,7 +1358,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-23T06:40:24+00:00",
+  "last_updated": "2026-10-23T21:24:29+00:00",
   "skipped": [
     {
       "path": "/docs",

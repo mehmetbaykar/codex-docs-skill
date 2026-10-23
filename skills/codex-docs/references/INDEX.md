@@ -79,6 +79,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `mcp-server` - [Codex MCP server removal](https://learn.chatgpt.com/docs/mcp-server)
 - `migrate-custom-gpts` - [Moving your custom GPT workflows to plugins](https://learn.chatgpt.com/docs/migrate-custom-gpts)
 - `mobile` - [Codex on mobile](https://learn.chatgpt.com/docs/mobile)
+- `model-catalogs` - [Implementing model catalogs for gateways and clouds](https://learn.chatgpt.com/docs/model-catalogs)
 - `model-selection` - [Model selection](https://learn.chatgpt.com/docs/model-selection)
 - `models` - [Models](https://learn.chatgpt.com/docs/models)
 - `non-interactive-mode` - [Non-interactive mode](https://learn.chatgpt.com/docs/non-interactive-mode)
