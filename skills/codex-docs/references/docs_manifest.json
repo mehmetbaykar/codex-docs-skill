@@ -4,11 +4,11 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 148,
+    "pages_fetched_successfully": 149,
     "pages_skipped": 2,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 150
+    "total_pages_discovered": 151
   },
   "files": {
     "administration.md": {
@@ -48,8 +48,8 @@
       "title": "Rules"
     },
     "agent-configuration__speed.md": {
-      "hash": "80450a57428be26947dfc1500edac617fac99f5fabc72684fff29c2aaef7b3cf",
-      "last_updated": "2026-10-14T21:23:31+00:00",
+      "hash": "dbf524720e4942c2c89a5bf22d7cfbc7945d4b0fc98d476e5cc943ab01878964",
+      "last_updated": "2026-10-26T18:39:05+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/speed",
       "path": "/docs/agent-configuration/speed",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/speed.md",
@@ -165,8 +165,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "ea82510696148a0dd06f66f38a92aaf3bf113b6a54e52eed5bf1b9cb17f8812f",
-      "last_updated": "2026-10-26T09:39:07+00:00",
+      "hash": "110f6da42060903110ec687da259d4ed0c6f8e3f27198dc22f3bb3b21004ca77",
+      "last_updated": "2026-10-26T18:39:10+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -534,8 +534,8 @@
       "title": "Codex Micro"
     },
     "features__composer-predictions.md": {
-      "hash": "8ba1dcba7fa30ec596b5b175798535f365026095853c8c638f5cb09f8d3f98fc",
-      "last_updated": "2026-10-15T03:29:54+00:00",
+      "hash": "a04a0a285205c3ffc6b31de86a62a5aec556c820e4fa943e27e14fce5d8bed10",
+      "last_updated": "2026-10-26T18:39:20+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features/composer-predictions",
       "path": "/docs/features/composer-predictions",
       "source_url": "https://learn.chatgpt.com/docs/features/composer-predictions.md",
@@ -678,8 +678,8 @@
       "title": "Implementing model catalogs for gateways and clouds"
     },
     "model-selection.md": {
-      "hash": "618c9f812d15e6ab0c2de3ae0aa08fd585dd174647449b2f1335b6aecf03571a",
-      "last_updated": "2026-09-29T18:33:21+00:00",
+      "hash": "f729a2a8edde5f07bcf1f01bec41a5dc2d87ae6697a40f75181c237f0fbdf183",
+      "last_updated": "2026-10-26T18:39:25+00:00",
       "original_url": "https://learn.chatgpt.com/docs/model-selection",
       "path": "/docs/model-selection",
       "source_url": "https://learn.chatgpt.com/docs/model-selection.md",
@@ -687,8 +687,8 @@
       "title": "Model selection"
     },
     "models.md": {
-      "hash": "aff4eea5fb7c3f074f04a187b278e4de1f0e92c55c7c7f43fdb1c1d9f923dbbf",
-      "last_updated": "2026-10-14T21:23:48+00:00",
+      "hash": "da06a1832546f40beb2709898663cbb76a2f220a47ffee8807a6e28053bfc20a",
+      "last_updated": "2026-10-26T18:39:25+00:00",
       "original_url": "https://learn.chatgpt.com/docs/models",
       "path": "/docs/models",
       "source_url": "https://learn.chatgpt.com/docs/models.md",
@@ -768,8 +768,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "cce1e0e3abe4cdf570fe511965a8075dec2d6798a38b4863d9091074a1952faa",
-      "last_updated": "2026-10-14T21:23:50+00:00",
+      "hash": "f6452cf72e4d66d7817a01c96c8da36de853879a70e69416cb50c67c53557523",
+      "last_updated": "2026-10-26T18:39:27+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -1272,8 +1272,8 @@
       "title": "Site tools"
     },
     "whats-new.md": {
-      "hash": "773bee3bef0a8220a50478d58ea9ad02ae1cc41cbe6aed3ce33f33490523b240",
-      "last_updated": "2026-10-16T21:22:35+00:00",
+      "hash": "020e5e909cc84dcc8d86f9c1101e07864b5395595565fcf2fa18020849c23595",
+      "last_updated": "2026-10-26T18:39:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -1297,6 +1297,15 @@
       "source_url": "https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026.md",
       "status": "live",
       "title": "Create your dot in the ChatGPT mobile app"
+    },
+    "whats-new__october-26-30-2026.md": {
+      "hash": "823a70a6bcb6da8fea6f2a3a27ee451a52df24cdfa973045ca0a74f5ae6bba21",
+      "last_updated": "2026-10-26T18:39:43+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/whats-new/october-26-30-2026",
+      "path": "/docs/whats-new/october-26-30-2026",
+      "source_url": "https://learn.chatgpt.com/docs/whats-new/october-26-30-2026.md",
+      "status": "live",
+      "title": "October 26\u201330, 2026"
     },
     "whats-new__october-5-9-2026.md": {
       "hash": "9a1b74107094b4b6657b6aa2112b1450a5a6e0ed9cea487818fb784ea6aed29d",
@@ -1358,7 +1367,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-26T09:39:49+00:00",
+  "last_updated": "2026-10-26T18:39:44+00:00",
   "skipped": [
     {
       "path": "/docs",

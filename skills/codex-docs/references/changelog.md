@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## GPT-6.1 Terra in Work and Codex (2026-10-26)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-26-gpt-61-terra
+
+GPT-6.1 Terra in Work and Codex
+
 ## Codex CLI Release: 0.164.0 (2026-10-23)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-421457270
