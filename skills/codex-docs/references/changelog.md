@@ -9,6 +9,12 @@
 
 0.164.0
 
+## ChatGPT for iOS (2026-10-22)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-22-mobile
+
+ChatGPT for iOS
+
 ## Codex CLI Release: 0.163.0 (2026-10-15)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-414286110
@@ -20,6 +26,12 @@
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-10-14-gpt-55-retirement
 
 GPT-5.5 retirement in Codex
+
+## ChatGPT for iOS (2026-10-13)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-13-mobile
+
+ChatGPT for iOS
 
 ## Composer predictions in Codex (2026-10-09)
 
