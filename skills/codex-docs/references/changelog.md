@@ -3,6 +3,12 @@
 > Source: https://learn.chatgpt.com/docs/changelog
 > RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.165.0 (2026-10-27)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-425927431
+
+0.165.0
+
 ## GPT-6.1 Terra in Work and Codex (2026-10-26)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-10-26-gpt-61-terra
@@ -645,23 +651,11 @@ Start, track, and approve Codex tasks from your phone with secure one-to-one rem
 
 ChatGPT for iOS
 
-## Codex CLI Release: 0.142.0 (2026-06-22)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-343189954
-
-0.142.0
-
 ## Record & Replay and remote task handoff (2026-06-18)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-18-app
 
 Turn demonstrated workflows into reusable skills where available and hand tasks to a connected host.
-
-## Codex CLI Release: 0.141.0 (2026-06-18)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-341160952
-
-0.141.0
 
 ## More Codex features in the EEA, UK, and Switzerland (2026-06-16)
 
