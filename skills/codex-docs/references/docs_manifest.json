@@ -165,8 +165,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "110f6da42060903110ec687da259d4ed0c6f8e3f27198dc22f3bb3b21004ca77",
-      "last_updated": "2026-10-26T18:39:10+00:00",
+      "hash": "7b6098325ba2f4af42eb307b8e912baf1e68d59fc50a8452a4aaa33e35fed834",
+      "last_updated": "2026-10-27T21:18:34+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -453,8 +453,8 @@
       "title": "Codex Cloud (Legacy)"
     },
     "environments__cloud-environments.md": {
-      "hash": "4d0df70e5d0103391d2a98a84523bb71f2b47d9ed82a3cf01ff7d9a9783d92ba",
-      "last_updated": "2026-10-22T03:30:10+00:00",
+      "hash": "e12316fd21f896e4be1167dd3e48ecf1e4ad8c9d9b13f07f0fa1d156d06008f3",
+      "last_updated": "2026-10-27T21:18:44+00:00",
       "original_url": "https://learn.chatgpt.com/docs/environments/cloud-environments",
       "path": "/docs/environments/cloud-environments",
       "source_url": "https://learn.chatgpt.com/docs/environments/cloud-environments.md",
@@ -1367,7 +1367,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-27T18:22:51+00:00",
+  "last_updated": "2026-10-27T21:19:17+00:00",
   "skipped": [
     {
       "path": "/docs",
