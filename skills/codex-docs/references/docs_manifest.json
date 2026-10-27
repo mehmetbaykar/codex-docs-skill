@@ -12,8 +12,8 @@
   },
   "files": {
     "administration.md": {
-      "hash": "d020184893ea0234b94c2dde604ff3fa0c1f4ffc852b597898b9a6919d49dd83",
-      "last_updated": "2026-10-22T18:30:15+00:00",
+      "hash": "45c86ad058f4addca948a45052ccef291f2c42809dd98b6a3652abc2758292d8",
+      "last_updated": "2026-10-27T18:22:08+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -66,8 +66,8 @@
       "title": "Subagents"
     },
     "amazon-bedrock.md": {
-      "hash": "e19f3769d7e2472d20b1c70f13582b658e28deade4a111a618a54ad9ae1f934f",
-      "last_updated": "2026-10-07T18:33:47+00:00",
+      "hash": "ef2f40563c5223e706539101cda6276140cbc53f51564ddb719052b751bd5734",
+      "last_updated": "2026-10-27T18:22:10+00:00",
       "original_url": "https://learn.chatgpt.com/docs/amazon-bedrock",
       "path": "/docs/amazon-bedrock",
       "source_url": "https://learn.chatgpt.com/docs/amazon-bedrock.md",
@@ -120,8 +120,8 @@
       "title": "Work with files"
     },
     "auth.md": {
-      "hash": "07f0352c7e6e6e439233c639b5196c0d9461dc3bb4602c7ee86325727f2e95e9",
-      "last_updated": "2026-10-07T18:33:49+00:00",
+      "hash": "b78dad5ccfcada30d5dded1f531395d2ad7c03df3c8554036ee7ae88d71d6371",
+      "last_updated": "2026-10-27T18:22:12+00:00",
       "original_url": "https://learn.chatgpt.com/docs/auth",
       "path": "/docs/auth",
       "source_url": "https://learn.chatgpt.com/docs/auth.md",
@@ -255,8 +255,8 @@
       "title": "Computer Use"
     },
     "config-file__config-advanced.md": {
-      "hash": "86caafefc2a9c32776ca5589bbfe0d694660d40bd473e006eab5bf047df22bdf",
-      "last_updated": "2026-10-14T00:54:51+00:00",
+      "hash": "2d7b9808a583ca104f723ad509da8322b7ee5c4af3fc30b832a3197432cdbed8",
+      "last_updated": "2026-10-27T18:22:17+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
       "path": "/docs/config-file/config-advanced",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-advanced.md",
@@ -1367,7 +1367,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-26T21:26:03+00:00",
+  "last_updated": "2026-10-27T18:22:51+00:00",
   "skipped": [
     {
       "path": "/docs",
