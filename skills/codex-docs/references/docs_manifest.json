@@ -390,8 +390,8 @@
       "title": "Developers"
     },
     "dots.md": {
-      "hash": "d7abf7878e896044792bfaaf724ea53f0c5a4bf4815f6f915dc5e83db137d513",
-      "last_updated": "2026-10-09T21:25:45+00:00",
+      "hash": "4f88cf7c49b7f635fc1cf622593aaf1e8c49ce8571af3698bbaf25cd35979af6",
+      "last_updated": "2026-10-28T18:24:14+00:00",
       "original_url": "https://learn.chatgpt.com/docs/dots",
       "path": "/docs/dots",
       "source_url": "https://learn.chatgpt.com/docs/dots.md",
@@ -399,8 +399,8 @@
       "title": "Meet dots"
     },
     "dots__channels.md": {
-      "hash": "66b65e8821f7a9490a6ef36cf1a101f59322bde4dfd61849855b8578035ff8cb",
-      "last_updated": "2026-10-16T21:22:05+00:00",
+      "hash": "6d7a0253572bde77f5fe0fc49f1d74813f91c0f5350e586f78de3e5b60918901",
+      "last_updated": "2026-10-28T18:24:15+00:00",
       "original_url": "https://learn.chatgpt.com/docs/dots/channels",
       "path": "/docs/dots/channels",
       "source_url": "https://learn.chatgpt.com/docs/dots/channels.md",
@@ -687,8 +687,8 @@
       "title": "Model selection"
     },
     "models.md": {
-      "hash": "da06a1832546f40beb2709898663cbb76a2f220a47ffee8807a6e28053bfc20a",
-      "last_updated": "2026-10-26T18:39:25+00:00",
+      "hash": "5feac6069b925398ccac16b063608534946e946e2ba70afa4e6cd92c7f2ebe7a",
+      "last_updated": "2026-10-28T18:24:25+00:00",
       "original_url": "https://learn.chatgpt.com/docs/models",
       "path": "/docs/models",
       "source_url": "https://learn.chatgpt.com/docs/models.md",
@@ -768,8 +768,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "f6452cf72e4d66d7817a01c96c8da36de853879a70e69416cb50c67c53557523",
-      "last_updated": "2026-10-26T18:39:27+00:00",
+      "hash": "af601b424cc53a8474d69484629968cd424802f724d93dc9d49f76990217f040",
+      "last_updated": "2026-10-28T18:24:28+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "source_url": "https://learn.chatgpt.com/docs/pricing.md",
@@ -876,8 +876,8 @@
       "title": "Codex Security"
     },
     "security__cli.md": {
-      "hash": "18ab7527fb794ce91c2fbf1f9bd9fa2af577b3a43813b77eb3e7fbb16d46730a",
-      "last_updated": "2026-10-20T00:56:02+00:00",
+      "hash": "02ec0e0c097b9715545f3363fd748af74db90cfd0df99e254895e4e00d8607a8",
+      "last_updated": "2026-10-28T18:24:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli",
       "path": "/docs/security/cli",
       "source_url": "https://learn.chatgpt.com/docs/security/cli.md",
@@ -885,8 +885,8 @@
       "title": "Codex Security CLI quickstart"
     },
     "security__cli__bulk-scans.md": {
-      "hash": "ad5ecaae5163639c8b13bf9c15ce39c23f472aec04997c0cfe83dc8723d6abdd",
-      "last_updated": "2026-10-16T06:39:36+00:00",
+      "hash": "63fbb5819ca9dc35ee07c2b7f66f91b301c580a3e6d593e4af1fdec1d008bcb5",
+      "last_updated": "2026-10-28T18:24:32+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/bulk-scans",
       "path": "/docs/security/cli/bulk-scans",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/bulk-scans.md",
@@ -930,8 +930,8 @@
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "749465fd4c4032228656c5625d8ed75c1ae9a94782a8870b4febcad1dcc3fd03",
-      "last_updated": "2026-10-17T06:35:36+00:00",
+      "hash": "6a3a70afa8eb3f5f4a10f6a350d034ec32ad4ed75153d39b7c476e330a402544",
+      "last_updated": "2026-10-28T18:24:34+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/reference.md",
@@ -948,8 +948,8 @@
       "title": "Codex Security Cloud FAQ"
     },
     "security__plugin.md": {
-      "hash": "8d7aa36df37d77a97b0d42fa2ac5fd549facd6bc6261807156f08a43c1799c3f",
-      "last_updated": "2026-10-22T15:28:31+00:00",
+      "hash": "aa39898a9964ff276ca43fd324e73dffa804a538e4746c06e11772f8bf831db4",
+      "last_updated": "2026-10-28T18:24:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin",
       "path": "/docs/security/plugin",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin.md",
@@ -957,8 +957,8 @@
       "title": "Codex Security plugin quickstart"
     },
     "security__plugin__changelog.md": {
-      "hash": "5503f39be8bc33d97117f5b0651e1a611707f5b2a7a2852f2d821c3fa0a3b9a1",
-      "last_updated": "2026-10-16T06:39:38+00:00",
+      "hash": "e93018ef757e64e0bc2a78a13ead6ba61ac4843f3c788706e1c97920a0e8f3a4",
+      "last_updated": "2026-10-28T18:24:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/changelog",
       "path": "/docs/security/plugin/changelog",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/changelog.md",
@@ -975,8 +975,8 @@
       "title": "Review code changes for security"
     },
     "security__plugin__deep-scans.md": {
-      "hash": "12590d927bb525102ea683509beeb010720c5d1f47fd54444b70953a3d52261f",
-      "last_updated": "2026-10-16T06:39:39+00:00",
+      "hash": "17a92a73bd60e3d294c13c59ead19f2e5112eea7e515a1be1e86878f1b971aa9",
+      "last_updated": "2026-10-28T18:24:36+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/deep-scans",
       "path": "/docs/security/plugin/deep-scans",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/deep-scans.md",
@@ -1047,8 +1047,8 @@
       "title": "Use the Codex Security workbench"
     },
     "security__sdk.md": {
-      "hash": "7ab860fc93ef4ef657f31494c9516600dd3d2d13fa8f24b6390793d19b76cba9",
-      "last_updated": "2026-10-17T06:35:39+00:00",
+      "hash": "fefa7bdc2d2ca13725ef33d35a5a1942e4d54c0350bd8393a343e4c66228b244",
+      "last_updated": "2026-10-28T18:24:38+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/sdk",
       "path": "/docs/security/sdk",
       "source_url": "https://learn.chatgpt.com/docs/security/sdk.md",
@@ -1367,7 +1367,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-27T21:19:17+00:00",
+  "last_updated": "2026-10-28T18:24:49+00:00",
   "skipped": [
     {
       "path": "/docs",
