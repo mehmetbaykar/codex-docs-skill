@@ -148,6 +148,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `webmcp` - [Site tools](https://learn.chatgpt.com/docs/webmcp)
 - `whats-new` - [What's new](https://learn.chatgpt.com/docs/whats-new)
 - `whats-new__devday-2026` - [DevDay 2026](https://learn.chatgpt.com/docs/whats-new/devday-2026)
+- `whats-new__dots-october-28-2026` - [Text your dot](https://learn.chatgpt.com/docs/whats-new/dots-october-28-2026)
 - `whats-new__dots-october-9-2026` - [Create your dot in the ChatGPT mobile app](https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026)
 - `whats-new__october-26-30-2026` - [October 26–30, 2026](https://learn.chatgpt.com/docs/whats-new/october-26-30-2026)
 - `whats-new__october-5-9-2026` - [October 5–9, 2026](https://learn.chatgpt.com/docs/whats-new/october-5-9-2026)

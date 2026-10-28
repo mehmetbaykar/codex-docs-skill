@@ -89,7 +89,7 @@ Your dot can use relevant context from your conversations in ChatGPT and other c
 
 ### Set up texting
 
-1. Open your dot’s profile in ChatGPT on the web and select **Texting**.
+1. Open your dot’s profile in the ChatGPT mobile app, desktop app, or a desktop web browser and select **Texting**.
 2. Enter your phone number and follow the steps to verify it.
 3. Save your dot’s contact card when you receive it. Send your dot a message to start chatting.
 
