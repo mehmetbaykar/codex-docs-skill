@@ -12,8 +12,8 @@
   },
   "files": {
     "administration.md": {
-      "hash": "45c86ad058f4addca948a45052ccef291f2c42809dd98b6a3652abc2758292d8",
-      "last_updated": "2026-10-27T18:22:08+00:00",
+      "hash": "921fc2933eeff11137eb673896f6a7f97abc7323103326729650ee3b4913d9c0",
+      "last_updated": "2026-10-29T15:20:54+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -147,8 +147,8 @@
       "title": "Browser"
     },
     "build-plugins.md": {
-      "hash": "a21ba4fc28d7233c1c4e71236171776fb425110d0592a5a510c215b82b112366",
-      "last_updated": "2026-10-15T21:25:23+00:00",
+      "hash": "5f7f4639f068d00e1cd869d68948c4b2afae48fe3f9bdffa52314ba696e8fbdd",
+      "last_updated": "2026-10-29T15:20:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/build-plugins",
       "path": "/docs/build-plugins",
       "source_url": "https://learn.chatgpt.com/docs/build-plugins.md",
@@ -759,8 +759,8 @@
       "title": "Pets"
     },
     "plugins.md": {
-      "hash": "a947f02d1b12e9621f1d020bca1bd02703b0f3d935d2db3bb786842dbfdaf8f5",
-      "last_updated": "2026-10-15T21:25:42+00:00",
+      "hash": "88cd9e04b6fa62d2755577bdac215130a928d2398fe73ef8fdcc6a822f4ebb8a",
+      "last_updated": "2026-10-29T15:21:22+00:00",
       "original_url": "https://learn.chatgpt.com/docs/plugins",
       "path": "/docs/plugins",
       "source_url": "https://learn.chatgpt.com/docs/plugins.md",
@@ -912,8 +912,8 @@
       "title": "Run Codex Security in GitHub Actions"
     },
     "security__cli__ci__gitlab.md": {
-      "hash": "7958123fc2dd0c2d172629954d110f0e386a8fa514bb1d3f0664f2d2a5b53857",
-      "last_updated": "2026-10-20T00:56:03+00:00",
+      "hash": "70330e74bf092178fdb401ea916788e54c0e8de59d9595038d66c41e5546cb3e",
+      "last_updated": "2026-10-29T15:21:27+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/ci/gitlab",
       "path": "/docs/security/cli/ci/gitlab",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/ci/gitlab.md",
@@ -1376,7 +1376,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-29T03:24:03+00:00",
+  "last_updated": "2026-10-29T15:21:42+00:00",
   "skipped": [
     {
       "path": "/docs",

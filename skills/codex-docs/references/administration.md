@@ -331,7 +331,7 @@
           icon: "connect",
         },
         {
-          title: "Plugin management",
+          title: "Import and sync plugins from GitHub",
           description: "Import and sync workspace plugins from GitHub.",
           href: "/codex/enterprise/plugin-management",
           icon: "connect",
