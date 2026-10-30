@@ -1772,7 +1772,7 @@ Note: Rename `experimental_instructions_file` to `model_instructions_file`. Code
 `requirements.toml` is an admin-enforced configuration file that constrains security-sensitive settings users can't override. For details, locations, and examples, see [Admin-enforced requirements](https://learn.chatgpt.com/docs/enterprise/managed-configuration#admin-enforced-requirements-requirementstoml).
 
 For ChatGPT Business and Enterprise users, Codex can also apply cloud-fetched
-requirements. See the security page for precedence details.
+requirements. See the security page for precedence details. To serve CLI policy from your own HTTPS endpoint, see [Self-host Codex configuration for your team](https://learn.chatgpt.com/docs/enterprise/configuration-server).
 
 Use `[features]` in `requirements.toml` to pin runtime feature flags by the same
 canonical keys that `config.toml` uses. Requirements can also include documented
@@ -1812,6 +1812,50 @@ the same policy source, but normal feature, approval, and other policy checks
 still apply. Where managed requirements and `config.toml` both apply, a `deny`
 from either one wins.
 
+      description:
+        "Optional OAuth permissions to request from the identity provider.",
+    },
+    {
+      key: "config_server.oauth.resource",
+      type: "string",
+      description:
+        "Optional OAuth resource identifier required by the identity provider.",
+    },
+    {
+      key: "config_server.oauth.redirect_port",
+      type: "number",
+      description:
+        "Optional port for the browser callback on 127.0.0.1. By default, Codex chooses an available port.",
+    },
+    {
+      key: "sqlite_home",
+      type: "string (path)",
+      description:
+        "Enforce the directory where Codex stores SQLite-backed runtime state.",
+    },
+    {
+      key: "log_dir",
+      type: "string (path)",
+      description: "Enforce the directory where Codex writes local log files.",
+    },
+    {
+      key: "model_catalog_json",
+      type: "string (path)",
+      description: "Enforce the JSON model catalog Codex uses at startup.",
+    },
+    {
+      key: "check_for_update_on_startup",
+      type: "boolean",
+      description: "Enforce whether Codex checks for updates when it starts.",
+    },
+    {
+      key: "allow_login_shell",
+      type: "boolean",
+      description: "Enforce whether shell tools can start a login shell.",
+    },
+    {
+      key: "allowed_login_methods",
+      type: "array<string>",
       description:
         "Allow `chatgpt`, `api`, or both. If omitted, this setting doesn't restrict login methods. If set, the list must contain at least one method. `api` permits API authentication, including Amazon Bedrock. Set through the local system requirements file or macOS MDM. Cloud-managed values are ignored.",
     },

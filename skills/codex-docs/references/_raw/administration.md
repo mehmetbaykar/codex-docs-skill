@@ -174,6 +174,13 @@
           icon: "dataControls",
         },
         {
+          title: "Self-host Codex configuration for your team",
+          description:
+            "Serve Codex defaults and required settings from your own HTTPS endpoint.",
+          href: "/codex/enterprise/configuration-server",
+          icon: "settings",
+        },
+        {
           title: "Codex security cookbook",
           description:
             "Configure and verify enterprise security controls, then combine them for common security goals.",

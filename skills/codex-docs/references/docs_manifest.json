@@ -12,8 +12,8 @@
   },
   "files": {
     "administration.md": {
-      "hash": "921fc2933eeff11137eb673896f6a7f97abc7323103326729650ee3b4913d9c0",
-      "last_updated": "2026-10-29T15:20:54+00:00",
+      "hash": "7b4084e29d12678c0cf2a87741323046480a6c35071d1ec2c8f8e01f84982751",
+      "last_updated": "2026-10-30T18:19:41+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -273,8 +273,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "bba2739da94f57b1cb8b771f73c86141fece82e54a5ec9dc7a8f2b0f77d2e2f7",
-      "last_updated": "2026-10-15T12:36:30+00:00",
+      "hash": "e712fa19bba9c86b0e3ca537bdc2ca0cd45195cea10a291ed526e3f70efdead6",
+      "last_updated": "2026-10-30T18:19:50+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
@@ -930,8 +930,8 @@
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "6a3a70afa8eb3f5f4a10f6a350d034ec32ad4ed75153d39b7c476e330a402544",
-      "last_updated": "2026-10-28T18:24:34+00:00",
+      "hash": "f7fc1e70c7be689424ab8c1486438b145dbcedd2cc88668490cd5175ed0c5737",
+      "last_updated": "2026-10-30T18:20:12+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/reference.md",
@@ -1376,7 +1376,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-30T00:45:47+00:00",
+  "last_updated": "2026-10-30T18:20:26+00:00",
   "skipped": [
     {
       "path": "/docs",
