@@ -1092,8 +1092,8 @@
       "title": "Sign in with ChatGPT"
     },
     "sites.md": {
-      "hash": "4199fe1d386c8fdce82ec5274f647722e210471646b2bc3a83284fad7beb1a19",
-      "last_updated": "2026-10-15T21:25:52+00:00",
+      "hash": "1df35af485a63cca122dc315c5b30a37957ac0a30c7d106d49b6a465f58ed4b7",
+      "last_updated": "2026-10-30T00:45:38+00:00",
       "original_url": "https://learn.chatgpt.com/docs/sites",
       "path": "/docs/sites",
       "source_url": "https://learn.chatgpt.com/docs/sites.md",
@@ -1376,7 +1376,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-29T21:19:33+00:00",
+  "last_updated": "2026-10-30T00:45:47+00:00",
   "skipped": [
     {
       "path": "/docs",
