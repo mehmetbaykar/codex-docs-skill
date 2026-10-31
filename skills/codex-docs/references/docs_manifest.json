@@ -876,8 +876,8 @@
       "title": "Codex Security"
     },
     "security__cli.md": {
-      "hash": "3c83ee1b0586f1af0305bbab64d78e8fe3834dbc5c1ef4d892c6675338db11eb",
-      "last_updated": "2026-10-30T21:18:43+00:00",
+      "hash": "1932c41d15d75dfb5b8acd7797b4fc50f3eea95292da4dd19d6f16e429d48fc8",
+      "last_updated": "2026-10-31T00:36:56+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli",
       "path": "/docs/security/cli",
       "source_url": "https://learn.chatgpt.com/docs/security/cli.md",
@@ -984,8 +984,8 @@
       "title": "Run a deep security scan"
     },
     "security__plugin__export-findings.md": {
-      "hash": "d4c1b4b265ce24b3925a48518acac4bd993d7ddb743543e2ffa0f43db2fa8d0b",
-      "last_updated": "2026-10-16T06:39:39+00:00",
+      "hash": "5ef0eb39f87b618c2525b8aed696fe6442b9761b78c4d6f941ec050185820fd5",
+      "last_updated": "2026-10-31T00:36:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/export-findings",
       "path": "/docs/security/plugin/export-findings",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/export-findings.md",
@@ -1272,8 +1272,8 @@
       "title": "Site tools"
     },
     "whats-new.md": {
-      "hash": "bffd89cc68a62a4212b7f52311212f668ae8d0d5b839f020d32f5f6641edba20",
-      "last_updated": "2026-10-28T21:19:36+00:00",
+      "hash": "470f30d5049e2184fcd9faf14ad031a680095f591ac269429e7f14c8917869a6",
+      "last_updated": "2026-10-31T00:37:08+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "source_url": "https://learn.chatgpt.com/docs/whats-new.md",
@@ -1281,8 +1281,8 @@
       "title": "What's new"
     },
     "whats-new__devday-2026.md": {
-      "hash": "7e3ee9cc5b1ffc557431146e9f4664f729a490da1a924039d54c65491a67ba90",
-      "last_updated": "2026-10-01T18:34:30+00:00",
+      "hash": "81354d940dcb2b3cdf6d6406f70e305e3252e01b132feb1b892fff89a56b37b6",
+      "last_updated": "2026-10-31T00:37:08+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new/devday-2026",
       "path": "/docs/whats-new/devday-2026",
       "source_url": "https://learn.chatgpt.com/docs/whats-new/devday-2026.md",
@@ -1326,8 +1326,8 @@
       "title": "October 5\u20139, 2026"
     },
     "whats-new__september-28-october-2-2026.md": {
-      "hash": "ebbf575ca48e8639fe1828a49c755e96fc047d8774c34452e1db78261c029afb",
-      "last_updated": "2026-09-29T18:33:41+00:00",
+      "hash": "8377f6f18741f515af01d1a32fb43690e01ce6b89b7b3394e4e78dad46ba8617",
+      "last_updated": "2026-10-31T00:37:10+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new/september-28-october-2-2026",
       "path": "/docs/whats-new/september-28-october-2-2026",
       "source_url": "https://learn.chatgpt.com/docs/whats-new/september-28-october-2-2026.md",
@@ -1376,7 +1376,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-30T21:19:01+00:00",
+  "last_updated": "2026-10-31T00:37:11+00:00",
   "skipped": [
     {
       "path": "/docs",

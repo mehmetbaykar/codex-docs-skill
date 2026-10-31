@@ -28,11 +28,24 @@ permissions](https://learn.chatgpt.com/docs/security/cli/reference#local-scan-pe
 
 ## Set up and verify the CLI
 
-Run the public package with `npx`:
+Install the public package globally, then check its version:
+
+```bash
+npm install -g @openai/codex-security
+codex-security --version
+```
+
+The package provides the `codex-security` command and its `cs` alias. Ensure
+npm's global executable directory is on your `PATH`.
+
+To run without a global installation, use `npx`:
 
 ```bash
 npx @openai/codex-security --version
 ```
+
+The examples below use `npx @openai/codex-security`. After a global
+installation, you can use `codex-security` instead.
 
 The command prints the installed package version. Use `info --json` to check
 the bundled plugin version, or `--help` to list commands.
