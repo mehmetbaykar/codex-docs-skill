@@ -59,6 +59,7 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `environments__git-worktrees` - [Worktrees](https://learn.chatgpt.com/docs/environments/git-worktrees)
 - `environments__local-environment` - [Local environments](https://learn.chatgpt.com/docs/environments/local-environment)
 - `environments__modes` - [Codex environments](https://learn.chatgpt.com/docs/environments/modes)
+- `environments__network-file-systems` - [Run Codex with an NFS home directory](https://learn.chatgpt.com/docs/environments/network-file-systems)
 - `extend__mcp` - [Model Context Protocol](https://learn.chatgpt.com/docs/extend/mcp)
 - `extend__record-and-replay` - [Record & Replay](https://learn.chatgpt.com/docs/extend/record-and-replay)
 - `feature-maturity` - [Feature Maturity](https://learn.chatgpt.com/docs/feature-maturity)
