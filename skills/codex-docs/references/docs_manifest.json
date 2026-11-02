@@ -84,8 +84,8 @@
       "title": "Annotations Extensibility"
     },
     "app-server.md": {
-      "hash": "b0109f9632f006389897dcdc5ba619a91b3e3d1167baf497685f26655536e544",
-      "last_updated": "2026-11-02T09:22:47+00:00",
+      "hash": "8ee2158f69440c4060259a6adddc8f1d98721207ba4c095f192a521e575583d4",
+      "last_updated": "2026-11-02T15:19:28+00:00",
       "original_url": "https://learn.chatgpt.com/docs/app-server",
       "path": "/docs/app-server",
       "source_url": "https://learn.chatgpt.com/docs/app-server.md",
@@ -156,8 +156,8 @@
       "title": "Build plugins"
     },
     "build-skills.md": {
-      "hash": "9eea1803d64b8528d0d8805856bdc822241419e4e8f8746713f0c21d4003a5e5",
-      "last_updated": "2026-10-14T00:54:48+00:00",
+      "hash": "9e8d375581ad8e3d25eeb6e5803d90d04b56652aed3b523008d3ded85271ba79",
+      "last_updated": "2026-11-02T15:19:29+00:00",
       "original_url": "https://learn.chatgpt.com/docs/build-skills",
       "path": "/docs/build-skills",
       "source_url": "https://learn.chatgpt.com/docs/build-skills.md",
@@ -219,8 +219,8 @@
       "title": "Code review"
     },
     "codex-sdk.md": {
-      "hash": "af02ff4fd6a31a62b2e383ed04ce973124bd3b16c3d55f7de4a6196df4adb6c0",
-      "last_updated": "2026-11-02T09:22:52+00:00",
+      "hash": "bff36b6c5927eb5a3d645466d180702c8b2c98e8bf9d4c4ed4bf71c4f14b31ab",
+      "last_updated": "2026-11-02T15:19:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/codex-sdk",
       "path": "/docs/codex-sdk",
       "source_url": "https://learn.chatgpt.com/docs/codex-sdk.md",
@@ -255,8 +255,8 @@
       "title": "Computer Use"
     },
     "config-file__config-advanced.md": {
-      "hash": "965840426792ee900c6c402ddaa37066a33c49ebd5757e2ced48bb5ef6622c1e",
-      "last_updated": "2026-11-02T09:22:54+00:00",
+      "hash": "1338a76e027bb21c82b8d3f47671c43f1c9650a1170a76005aab3f54ae528bd2",
+      "last_updated": "2026-11-02T15:19:34+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
       "path": "/docs/config-file/config-advanced",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-advanced.md",
@@ -264,8 +264,8 @@
       "title": "Advanced Configuration"
     },
     "config-file__config-basic.md": {
-      "hash": "3094008da4077d823520f88b2d61c40dd8da3ccc8a855b66ffd18e879d027be9",
-      "last_updated": "2026-10-14T00:54:52+00:00",
+      "hash": "295ad791393abc0e05c6068f4c46a7eb3480b7bf0c21a514d2ea88fd4cb93976",
+      "last_updated": "2026-11-02T15:19:34+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-basic",
       "path": "/docs/config-file/config-basic",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-basic.md",
@@ -273,8 +273,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "e712fa19bba9c86b0e3ca537bdc2ca0cd45195cea10a291ed526e3f70efdead6",
-      "last_updated": "2026-10-30T18:19:50+00:00",
+      "hash": "8e2e4c972332a455b28696109962c91690aade8099354fbed59541e73d798ff9",
+      "last_updated": "2026-11-02T15:19:34+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-reference.md",
@@ -282,8 +282,8 @@
       "title": "Configuration Reference"
     },
     "config-file__config-sample.md": {
-      "hash": "93b2ae461e578e2d9e6600e3c2286794e56b2932e0a5e1bb4ee9c62e7d7bf60a",
-      "last_updated": "2026-10-14T00:54:52+00:00",
+      "hash": "bef15b131c93735dca8877a021102d6df70d25bb9b93b26bc04f1eddb1a7e6e0",
+      "last_updated": "2026-11-02T15:19:35+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-sample",
       "path": "/docs/config-file/config-sample",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-sample.md",
@@ -327,8 +327,8 @@
       "title": "Computer History"
     },
     "customization__memories.md": {
-      "hash": "2d9a78744aa0c2afff3bc3d57f120afe59289c17750f2ad492debe1635454eb5",
-      "last_updated": "2026-10-07T15:37:48+00:00",
+      "hash": "3f8cd13361599e41f5ff3966d2d12028ba9c6d4bc842f3b73ce702575be847b2",
+      "last_updated": "2026-11-02T15:19:36+00:00",
       "original_url": "https://learn.chatgpt.com/docs/customization/memories",
       "path": "/docs/customization/memories",
       "source_url": "https://learn.chatgpt.com/docs/customization/memories.md",
@@ -363,8 +363,8 @@
       "title": "Recommended configuration"
     },
     "developer-commands.md": {
-      "hash": "e85230226a2befb8e3f7d1db0ec94bee7d69c80074838c39f85a23c2285b5f9e",
-      "last_updated": "2026-10-14T00:54:55+00:00",
+      "hash": "962ef12e5de9cfab0e45137a7bd2d61598b831a50bcbd768c31755f0516710eb",
+      "last_updated": "2026-11-02T15:19:37+00:00",
       "original_url": "https://learn.chatgpt.com/docs/developer-commands",
       "path": "/docs/developer-commands",
       "source_url": "https://learn.chatgpt.com/docs/developer-commands.md",
@@ -489,8 +489,8 @@
       "title": "Codex environments"
     },
     "extend__mcp.md": {
-      "hash": "edd40b110e9dca93f8a24e8715d1464cec6e2b59d85f7723530b8cdc91181470",
-      "last_updated": "2026-10-22T21:24:23+00:00",
+      "hash": "f2ccaff3b7525e7c58626e0cbfae80854e03558a03b99ace6931c2bdd22b79fe",
+      "last_updated": "2026-11-02T15:19:41+00:00",
       "original_url": "https://learn.chatgpt.com/docs/extend/mcp",
       "path": "/docs/extend/mcp",
       "source_url": "https://learn.chatgpt.com/docs/extend/mcp.md",
@@ -579,8 +579,8 @@
       "title": "Glossary"
     },
     "hooks.md": {
-      "hash": "a391b1b2306f06ea642a5bc2c156a0e042f6ba6e16a711154e2848b123973907",
-      "last_updated": "2026-10-14T00:55:01+00:00",
+      "hash": "044b40608a94f93beaba6a396143092f6f0260c45f9b3fa408cf5094049aec7c",
+      "last_updated": "2026-11-02T15:19:43+00:00",
       "original_url": "https://learn.chatgpt.com/docs/hooks",
       "path": "/docs/hooks",
       "source_url": "https://learn.chatgpt.com/docs/hooks.md",
@@ -606,8 +606,8 @@
       "title": "Image inputs"
     },
     "import.md": {
-      "hash": "0c105de3dc3e10ee9327ab4f9e993b45fe6b18cbbac2867b8134526de18cc41d",
-      "last_updated": "2026-08-21T21:37:40+00:00",
+      "hash": "f6128a3b58c846693935110f858c0ee26a609bc09399a2fb3fb7c613b20ce799",
+      "last_updated": "2026-11-02T15:19:44+00:00",
       "original_url": "https://learn.chatgpt.com/docs/import",
       "path": "/docs/import",
       "source_url": "https://learn.chatgpt.com/docs/import.md",
@@ -1263,8 +1263,8 @@
       "title": "ChatGPT on the web"
     },
     "webmcp.md": {
-      "hash": "3f29ad9bb3e7aed0762a2a98ed24febfd7eb258e1cfc84f34ab84498a0aa9ae2",
-      "last_updated": "2026-11-02T09:23:24+00:00",
+      "hash": "fc6a19747b8a39b7e7ee383fe5415467dfc4daa734725198df819b796754182c",
+      "last_updated": "2026-11-02T15:20:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/webmcp",
       "path": "/docs/webmcp",
       "source_url": "https://learn.chatgpt.com/docs/webmcp.md",
@@ -1376,7 +1376,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-11-02T09:23:27+00:00",
+  "last_updated": "2026-11-02T15:20:06+00:00",
   "skipped": [
     {
       "path": "/docs",
