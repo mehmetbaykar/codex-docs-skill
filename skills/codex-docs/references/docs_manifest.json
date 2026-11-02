@@ -4,16 +4,16 @@
     "failed_pages": [],
     "fetch_tool_version": "2.0",
     "pages_failed": 0,
-    "pages_fetched_successfully": 150,
+    "pages_fetched_successfully": 151,
     "pages_skipped": 2,
     "pages_stale": 0,
     "stale_pages": [],
-    "total_pages_discovered": 152
+    "total_pages_discovered": 153
   },
   "files": {
     "administration.md": {
-      "hash": "7b4084e29d12678c0cf2a87741323046480a6c35071d1ec2c8f8e01f84982751",
-      "last_updated": "2026-10-30T18:19:41+00:00",
+      "hash": "35dfd64d3e2a0bef92092177e9be12496661dfea1bccbb29c47b5033214bd09c",
+      "last_updated": "2026-11-02T21:18:30+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "source_url": "https://learn.chatgpt.com/docs/administration.md",
@@ -165,8 +165,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "2f8bae46aaf75f5d828797fa1e0b5826c57fde48b7ada1082e785ea0f1094261",
-      "last_updated": "2026-10-29T21:18:56+00:00",
+      "hash": "0e69772f44a450217dbcb0eb7aff2647d9dcb06753455a2cd68da48df4207889",
+      "last_updated": "2026-11-02T21:18:37+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "source_url": "https://learn.chatgpt.com/docs/changelog/rss.xml",
@@ -291,8 +291,8 @@
       "title": "Sample Configuration"
     },
     "config-file__environment-variables.md": {
-      "hash": "295ff7b213ff3f8c6af0c104627d79d8bfc5c786f8aa36dc27ac6a9a271f6196",
-      "last_updated": "2026-09-18T20:55:14+00:00",
+      "hash": "ba22148e926ecd5f1ae435d50560ac0fcc29163ca1466cdf30cd17af62b8878b",
+      "last_updated": "2026-11-02T21:18:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/environment-variables",
       "path": "/docs/config-file/environment-variables",
       "source_url": "https://learn.chatgpt.com/docs/config-file/environment-variables.md",
@@ -487,6 +487,15 @@
       "source_url": "https://learn.chatgpt.com/docs/environments/modes.md",
       "status": "live",
       "title": "Codex environments"
+    },
+    "environments__network-file-systems.md": {
+      "hash": "bc5a32cb6c04c3e12b466718d9cebb85aeac1463ee26a5bdfd880b31c6e9a163",
+      "last_updated": "2026-11-02T21:18:49+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/environments/network-file-systems",
+      "path": "/docs/environments/network-file-systems",
+      "source_url": "https://learn.chatgpt.com/docs/environments/network-file-systems.md",
+      "status": "live",
+      "title": "Run Codex with an NFS home directory"
     },
     "extend__mcp.md": {
       "hash": "f2ccaff3b7525e7c58626e0cbfae80854e03558a03b99ace6931c2bdd22b79fe",
@@ -696,8 +705,8 @@
       "title": "Models"
     },
     "non-interactive-mode.md": {
-      "hash": "876d62182047115545bd6f46a8756b08bf0a4a3f1a2f9495d7b50443eb3652a2",
-      "last_updated": "2026-10-14T00:55:04+00:00",
+      "hash": "0087a1cdefa8682560fdae1e2ec3fd98ddd6ee7599fa39688769311ec77cd30b",
+      "last_updated": "2026-11-02T21:18:56+00:00",
       "original_url": "https://learn.chatgpt.com/docs/non-interactive-mode",
       "path": "/docs/non-interactive-mode",
       "source_url": "https://learn.chatgpt.com/docs/non-interactive-mode.md",
@@ -885,8 +894,8 @@
       "title": "Codex Security CLI quickstart"
     },
     "security__cli__bulk-scans.md": {
-      "hash": "63fbb5819ca9dc35ee07c2b7f66f91b301c580a3e6d593e4af1fdec1d008bcb5",
-      "last_updated": "2026-10-28T18:24:32+00:00",
+      "hash": "702703058ea2bbbe6e863f0864acec79ebd9635d7e08e7bf9d5b40dc73dac0a0",
+      "last_updated": "2026-11-02T21:19:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/bulk-scans",
       "path": "/docs/security/cli/bulk-scans",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/bulk-scans.md",
@@ -921,8 +930,8 @@
       "title": "Run Codex Security in GitLab CI/CD"
     },
     "security__cli__faq.md": {
-      "hash": "ab7748de2656fb436e08874e7585d4f5efd9b235e1f29613892296833875277c",
-      "last_updated": "2026-10-20T00:56:04+00:00",
+      "hash": "45e78502114100bb3d592347c3b854bea7517d5c4316d26cacb560f27a90fbb9",
+      "last_updated": "2026-11-02T21:19:05+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/faq",
       "path": "/docs/security/cli/faq",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/faq.md",
@@ -930,8 +939,8 @@
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "f091de9e95312047ee45eedfcec37d126f95a24e857c6276c841f1d9864f61e1",
-      "last_updated": "2026-10-30T21:18:45+00:00",
+      "hash": "ecd6705611ee472299ce44f16e93e470c3d1f95bf5bbce2dcb790ca84ddec746",
+      "last_updated": "2026-11-02T21:19:05+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "source_url": "https://learn.chatgpt.com/docs/security/cli/reference.md",
@@ -1047,8 +1056,8 @@
       "title": "Use the Codex Security workbench"
     },
     "security__sdk.md": {
-      "hash": "2e4a9e00ba61a50794a0ab9bc8b2cf0e969e8ca376f3469a2869c7249b6d6388",
-      "last_updated": "2026-11-02T09:23:18+00:00",
+      "hash": "07208160463c7099620c1d715343d693f688b7687c2ee82b86ecadf425c4b942",
+      "last_updated": "2026-11-02T21:19:09+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/sdk",
       "path": "/docs/security/sdk",
       "source_url": "https://learn.chatgpt.com/docs/security/sdk.md",
@@ -1376,7 +1385,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-11-02T15:20:06+00:00",
+  "last_updated": "2026-11-02T21:19:20+00:00",
   "skipped": [
     {
       "path": "/docs",
