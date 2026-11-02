@@ -39,8 +39,8 @@
       "title": "Custom instructions with AGENTS.md"
     },
     "agent-configuration__rules.md": {
-      "hash": "f9a0143426a17b064461ea2bf56803bf7f5764bcf1284e7ddd88d3475df11240",
-      "last_updated": "2026-09-29T18:32:59+00:00",
+      "hash": "d9112b5c4f7a617f3fe60ae5ba72b4c69852e58408ed587f1d5e50152102a580",
+      "last_updated": "2026-11-02T09:22:46+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/rules",
       "path": "/docs/agent-configuration/rules",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/rules.md",
@@ -75,8 +75,8 @@
       "title": "Use ChatGPT Work and Codex with Amazon Bedrock"
     },
     "annotations-extensibility.md": {
-      "hash": "4b70487640819e4f9a8f6fb52656aff70c9faf192e0c1b5bc3edd9780d877903",
-      "last_updated": "2026-10-08T12:40:20+00:00",
+      "hash": "06caadb07e056adce0c2c47b13415a32ed9515a916c400777b6abdccde00bd4d",
+      "last_updated": "2026-11-02T09:22:47+00:00",
       "original_url": "https://learn.chatgpt.com/docs/annotations-extensibility",
       "path": "/docs/annotations-extensibility",
       "source_url": "https://learn.chatgpt.com/docs/annotations-extensibility.md",
@@ -84,8 +84,8 @@
       "title": "Annotations Extensibility"
     },
     "app-server.md": {
-      "hash": "b8f45fc20b86b436f4b520ba6e1f5e518059a8f755a18cccd29c1acdcd197baf",
-      "last_updated": "2026-10-14T00:54:47+00:00",
+      "hash": "b0109f9632f006389897dcdc5ba619a91b3e3d1167baf497685f26655536e544",
+      "last_updated": "2026-11-02T09:22:47+00:00",
       "original_url": "https://learn.chatgpt.com/docs/app-server",
       "path": "/docs/app-server",
       "source_url": "https://learn.chatgpt.com/docs/app-server.md",
@@ -219,8 +219,8 @@
       "title": "Code review"
     },
     "codex-sdk.md": {
-      "hash": "93948b4cb4b5c548961c04854800b3650cc1ebf83c24e45b80a0cee0240327e2",
-      "last_updated": "2026-10-14T00:54:51+00:00",
+      "hash": "af02ff4fd6a31a62b2e383ed04ce973124bd3b16c3d55f7de4a6196df4adb6c0",
+      "last_updated": "2026-11-02T09:22:52+00:00",
       "original_url": "https://learn.chatgpt.com/docs/codex-sdk",
       "path": "/docs/codex-sdk",
       "source_url": "https://learn.chatgpt.com/docs/codex-sdk.md",
@@ -255,8 +255,8 @@
       "title": "Computer Use"
     },
     "config-file__config-advanced.md": {
-      "hash": "2d7b9808a583ca104f723ad509da8322b7ee5c4af3fc30b832a3197432cdbed8",
-      "last_updated": "2026-10-27T18:22:17+00:00",
+      "hash": "965840426792ee900c6c402ddaa37066a33c49ebd5757e2ced48bb5ef6622c1e",
+      "last_updated": "2026-11-02T09:22:54+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
       "path": "/docs/config-file/config-advanced",
       "source_url": "https://learn.chatgpt.com/docs/config-file/config-advanced.md",
@@ -354,8 +354,8 @@
       "title": "Models and Trusted Access"
     },
     "cyber-safety__recommended-configuration.md": {
-      "hash": "e5a08ba3f16ca85fac1fbde1ed8d040eafcad5d8228f3f315011bafcf3f02bb7",
-      "last_updated": "2026-08-15T01:49:13+00:00",
+      "hash": "504db228f09aa68e1fed1222177a33e7f6ecb54dafb2b9aa6cdf8ab3e64a1e98",
+      "last_updated": "2026-11-02T09:22:57+00:00",
       "original_url": "https://learn.chatgpt.com/docs/cyber-safety/recommended-configuration",
       "path": "/docs/cyber-safety/recommended-configuration",
       "source_url": "https://learn.chatgpt.com/docs/cyber-safety/recommended-configuration.md",
@@ -462,8 +462,8 @@
       "title": "Cloud environments"
     },
     "environments__git-worktrees.md": {
-      "hash": "d974788841c4223723c09992f2da4d69cf10365de3bdf4d74f0dc6a959453c7c",
-      "last_updated": "2026-10-26T21:25:37+00:00",
+      "hash": "37c4444dd116a05a1fd8af444d4648f874be99da1990679da4d572b410c1b0f0",
+      "last_updated": "2026-11-02T09:23:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/environments/git-worktrees",
       "path": "/docs/environments/git-worktrees",
       "source_url": "https://learn.chatgpt.com/docs/environments/git-worktrees.md",
@@ -966,8 +966,8 @@
       "title": "Codex Security plugin changelog"
     },
     "security__plugin__code-changes.md": {
-      "hash": "2c43c093a7c0d531a727dbcee524eb5eb149b22066a0dc901c7e5e9b3dd34bbe",
-      "last_updated": "2026-10-16T06:39:38+00:00",
+      "hash": "cc58173740796b545bef0bd8e86a4e756cd78a71361c0fe42ce6245485312bfc",
+      "last_updated": "2026-11-02T09:23:15+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/code-changes",
       "path": "/docs/security/plugin/code-changes",
       "source_url": "https://learn.chatgpt.com/docs/security/plugin/code-changes.md",
@@ -1047,8 +1047,8 @@
       "title": "Use the Codex Security workbench"
     },
     "security__sdk.md": {
-      "hash": "ac98fd3bbcd936be2fa418a9cca191a38a3dfa5f3361aec629f9283895fee02d",
-      "last_updated": "2026-10-30T21:18:50+00:00",
+      "hash": "2e4a9e00ba61a50794a0ab9bc8b2cf0e969e8ca376f3469a2869c7249b6d6388",
+      "last_updated": "2026-11-02T09:23:18+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/sdk",
       "path": "/docs/security/sdk",
       "source_url": "https://learn.chatgpt.com/docs/security/sdk.md",
@@ -1263,8 +1263,8 @@
       "title": "ChatGPT on the web"
     },
     "webmcp.md": {
-      "hash": "f84ecb29545bb382a9ae886483f585bb06624c81a2c15c3465483d07bc190760",
-      "last_updated": "2026-09-29T18:33:40+00:00",
+      "hash": "3f29ad9bb3e7aed0762a2a98ed24febfd7eb258e1cfc84f34ab84498a0aa9ae2",
+      "last_updated": "2026-11-02T09:23:24+00:00",
       "original_url": "https://learn.chatgpt.com/docs/webmcp",
       "path": "/docs/webmcp",
       "source_url": "https://learn.chatgpt.com/docs/webmcp.md",
@@ -1376,7 +1376,7 @@
       "/docs/*"
     ]
   },
-  "last_updated": "2026-10-31T00:37:11+00:00",
+  "last_updated": "2026-11-02T09:23:27+00:00",
   "skipped": [
     {
       "path": "/docs",

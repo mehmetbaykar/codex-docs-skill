@@ -156,7 +156,7 @@ Example (Node.js / TypeScript):
 
 ```typescript
 import { spawn } from "node:child_process";
-
+import readline from "node:readline";
 const proc = spawn("codex", ["app-server"], {
   stdio: ["pipe", "pipe", "inherit"],
 });
@@ -168,6 +168,24 @@ let threadId: string | null = null;
 rl.on("line", (line) => {
   const msg = JSON.parse(line) as any;
   console.log("server:", msg);
+  if (msg.id === 0 && msg.result) {
+    send({ method: "initialized", params: {} });
+    send({
+      method: "thread/start",
+      id: 1,
+      params: { model: "gpt-6.1-sol" },
+    });
+  }
+  if (msg.method === "turn/completed") {
+    proc.stdin.end();
+    rl.close();
+  }
+  if (msg.error) {
+    console.error(msg.error);
+    process.exitCode = 1;
+    proc.stdin.end();
+    rl.close();
+  }
   if (msg.id === 1 && msg.result?.thread?.id && !threadId) {
     threadId = msg.result.thread.id;
     send({
@@ -191,8 +209,11 @@ send({
     },
   },
 });
-send({ method: "initialized", params: {} });
-send({ method: "thread/start", id: 1, params: { model: "gpt-6.1-sol" } });
+proc.on("error", (error) => {
+  console.error(error);
+  process.exitCode = 1;
+  rl.close();
+});
 ```
 
 ## Core primitives
@@ -1540,7 +1561,7 @@ If you omit the `skill` item, the model will still parse the `$<skill-name>` mar
 
 Example:
 
-```
+```text
 $skill-creator Add a new skill for triaging flaky CI and include step-by-step usage.
 ```
 
