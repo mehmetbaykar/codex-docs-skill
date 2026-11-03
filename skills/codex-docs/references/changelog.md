@@ -1,7 +1,12 @@
+---
+title: "Codex Changelog"
+source: https://learn.chatgpt.com/docs/changelog
+path: /docs/changelog
+---
+
 # Codex Changelog
 
-> Source: https://learn.chatgpt.com/docs/changelog
-> RSS: https://learn.chatgpt.com/docs/changelog/rss.xml
+> Rendered from the changelog RSS feed: https://learn.chatgpt.com/docs/changelog/rss.xml
 
 ## Codex CLI Release: 0.166.0 (2026-10-29)
 

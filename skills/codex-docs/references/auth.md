@@ -6,8 +6,6 @@ path: /docs/auth
 
 # Authentication
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 To connect a local client to your organization's gateway with or without ChatGPT sign-in, see [Connect to a gateway](https://learn.chatgpt.com/docs/enterprise/connect-to-a-gateway).
 Direct Bedrock access uses the
 [Amazon Bedrock authentication options](https://learn.chatgpt.com/docs/amazon-bedrock#authentication-options).
@@ -204,8 +202,8 @@ Admins can enforce `cli_auth_credentials_store` and `chatgpt_base_url` through
 Users can't override those requirements through `config.toml` or CLI overrides.
 
 If you use file-based storage, treat `~/.codex/auth.json` like a password: it
-  contains access tokens. Don't commit it, paste it into tickets, or share it in
-  chat.
+contains access tokens. Don't commit it, paste it into tickets, or share it in
+chat.
 
 ## Enforce a login method or workspace
 
@@ -322,7 +320,7 @@ ssh -L 1455:localhost:1455 user@remote
 When you define a [custom model provider](https://learn.chatgpt.com/docs/config-file/config-advanced#custom-model-providers) in your configuration file, you can choose one of these authentication methods:
 
 - **OpenAI authentication**: Set `requires_openai_auth = true` to use OpenAI authentication. You can then sign in with ChatGPT or an API key. This is useful when you access OpenAI models through an LLM proxy server. When `requires_openai_auth = true`, Codex ignores `env_key`.
-- **Environment variable authentication**: Set `env_key = ""` to use a provider-specific API key from the local environment variable named ``.
+- **Environment variable authentication**: Set `env_key = "<ENV_VARIABLE_NAME>"` to use a provider-specific API key from the local environment variable named `<ENV_VARIABLE_NAME>`.
 - **Native gateway OAuth**: Configure `[model_providers.<id>.gateway_oauth]` for browser sign-in through your organization's identity provider. It works with or without ChatGPT sign-in. See [Native gateway OAuth](https://learn.chatgpt.com/docs/enterprise/connect-to-a-gateway#use-native-gateway-oauth) for the gateway requirements and configuration.
 - **Command-backed authentication**: Configure `[model_providers.<id>.auth]` to obtain a token from an installed [credential helper](https://learn.chatgpt.com/docs/config-file/config-advanced#custom-model-providers).
 - **No authentication**: For a local model that doesn't require credentials, leave `requires_openai_auth` unset or `false` and omit credential settings, including `env_key`, `experimental_bearer_token`, `auth`, and `gateway_oauth`.

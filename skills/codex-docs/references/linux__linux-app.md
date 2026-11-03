@@ -6,8 +6,6 @@ path: /docs/linux/linux-app
 
 # ChatGPT desktop app for Linux
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 The ChatGPT desktop app for Linux is available in preview. Install the package
 for your Linux distribution and processor architecture, then sign in with your
 ChatGPT account to work with projects, local files, and Codex.

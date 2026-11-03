@@ -6,8 +6,6 @@ path: /docs/codex/cli
 
 # Codex CLI
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 ## Inspect, edit, and run code from your terminal
 
 Inspect code, make changes, run commands, and automate repeatable work without leaving your terminal.

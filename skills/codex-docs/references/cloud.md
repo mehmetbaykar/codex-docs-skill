@@ -6,8 +6,6 @@ path: /docs/cloud
 
 # Codex Cloud
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 ## Run coding tasks in the cloud
 
 Give Codex coding tasks to work through in the cloud, from investigating bugs to building features. Review changes and continue from the web, mobile, or desktop app.

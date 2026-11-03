@@ -6,8 +6,6 @@ path: /docs/extend/mcp
 
 # Model Context Protocol
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Model Context Protocol (MCP) lets ChatGPT and Codex use tools and information from other systems. An MCP server describes the available tools and handles their requests—for example, looking up a ticket or retrieving documentation.
 
 Choose the path that fits your task:

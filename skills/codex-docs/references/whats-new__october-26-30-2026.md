@@ -6,8 +6,6 @@ path: /docs/whats-new/october-26-30-2026
 
 # October 26–30, 2026
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 [Back to What's new](https://learn.chatgpt.com/docs/whats-new#october-2630-2026)
 
 ## [Text your dot](https://learn.chatgpt.com/docs/whats-new/dots-october-28-2026)

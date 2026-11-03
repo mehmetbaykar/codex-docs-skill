@@ -6,8 +6,6 @@ path: /docs/quickstart
 
 # Quickstart
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 ## Where to use ChatGPT
 
 ChatGPT is available across different surfaces, including the
@@ -17,19 +15,18 @@ the option that fits your work.
 > Illustration: Cards compare the ChatGPT desktop app and ChatGPT on the web
 
 If you're a developer and want to use Codex in your terminal or code editor,
-  try [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) or the [Codex IDE extension](https://learn.chatgpt.com/docs/codex/ide). For remote
-  coding work, create a reusable [Codex Cloud
-  environment](https://learn.chatgpt.com/docs/environments/cloud-environments) on the web or in the
-  desktop app. In a new task, choose **Work in** > **Cloud**, open **Select
-  environment**, then select **Create environment**. Codex inspects your
-  repositories and helps prepare and test the setup before you publish it.
-  You can then start and continue cloud tasks on the web, on mobile, or in the
-  desktop app. On mobile, open **Codex** and select the published environment.
+try [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) or the [Codex IDE extension](https://learn.chatgpt.com/docs/codex/ide). For remote
+coding work, create a reusable [Codex Cloud
+environment](https://learn.chatgpt.com/docs/environments/cloud-environments) on the web or in the
+desktop app. In a new task, choose **Work in** > **Cloud**, open **Select
+environment**, then select **Create environment**. Codex inspects your
+repositories and helps prepare and test the setup before you publish it.
+You can then start and continue cloud tasks on the web, on mobile, or in the
+desktop app. On mobile, open **Codex** and select the published environment.
 
 ## Setup
 
 {/* prettier-ignore */}
-
 
 The ChatGPT desktop app is available for macOS, Windows, and Linux. Use it for
 projects, local files, longer tasks, and quick chats. For supported Linux
@@ -53,10 +50,6 @@ distributions and package installation, see the
 
 4.  <h3 id="setup-app-start-task">Start a chat</h3>
 
-
-
-
-
                 - For research, analysis, or deliverables such as documents, presentations,
                   spreadsheets, and Sites, select **ChatGPT**, then switch to **Work** at the
                   top of the new chat page, above the composer.
@@ -68,15 +61,9 @@ distributions and package installation, see the
 
                 Learn more about [using ChatGPT](https://learn.chatgpt.com/docs/use-chatgpt).
 
-
-
-
-
 5.  <h3 id="setup-app-send-message">Send your first message</h3>
 
     Describe your goal and add any files or context ChatGPT needs. Try an example:
-
-
 
 **Prepare a decision:**
 
@@ -98,10 +85,6 @@ Inspect this app, identify one high-impact usability improvement, implement it, 
 
 Explore more [use cases](https://learn.chatgpt.com/use-cases).
 
-
-
-
-
 ChatGPT is available on the web and includes Chat and ChatGPT Work.
 
 1. <h3 id="setup-web-sign-in">Open ChatGPT and sign in</h3>
@@ -110,20 +93,12 @@ Go to [ChatGPT](https://chatgpt.com) and sign in with your ChatGPT account.
 
 2.  <h3 id="setup-web-start-task">Start a chat</h3>
 
-
-
-
-
                 - Select **Chat** to ask questions, explore ideas, and work through a topic
                   conversationally.
                 - Select **Work** to research, analyze information, and create documents,
                   presentations, spreadsheets, Sites, or other finished work.
 
                 Learn more about [using ChatGPT](https://learn.chatgpt.com/docs/use-chatgpt).
-
-
-
-
 
 3.  <h3 id="setup-web-select-workspace">Select where ChatGPT should work</h3>
 
@@ -132,8 +107,6 @@ Go to [ChatGPT](https://chatgpt.com) and sign in with your ChatGPT account.
 4.  <h3 id="setup-web-send-message">Send your first message</h3>
 
     Describe your goal and add any files or context ChatGPT needs. Try an example:
-
-
 
 **Make a decision:**
 
@@ -153,16 +126,10 @@ Every weekday at 8:00 a.m., review my connected calendar and recent messages, th
 Help me plan my event. Ask me about the occasion, guests, date, location, budget, and anything else you need. Then create a timeline, budget, invitation copy, and checklist, and publish a Site I can use to invite guests and collect RSVPs.
 ```
 
-
-
 ## Next steps
 [Learn more about the ChatGPT desktop app
 
-
-
-    Use the ChatGPT desktop app to work with your local projects.](https://learn.chatgpt.com/docs/app)
+Use the ChatGPT desktop app to work with your local projects.](https://learn.chatgpt.com/docs/app)
 [Import your setup
 
-
-
-    Bring supported setup, projects, and recent work into ChatGPT.](https://learn.chatgpt.com/docs/import)
+Bring supported setup, projects, and recent work into ChatGPT.](https://learn.chatgpt.com/docs/import)

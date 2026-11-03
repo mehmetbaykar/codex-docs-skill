@@ -6,8 +6,6 @@ path: /docs/developer-settings
 
 # Developer settings
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 ChatGPT web stores product and workspace preferences in ChatGPT settings. ChatGPT Work
 chats run in a managed environment and don't read local Codex
 configuration files. Use the controls your workspace exposes in ChatGPT

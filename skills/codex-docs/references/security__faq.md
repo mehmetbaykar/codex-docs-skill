@@ -6,8 +6,6 @@ path: /docs/security/faq
 
 # Codex Security Cloud FAQ
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 These answers apply to Codex Security Cloud. For installation and a first scan,
 use [Cloud setup](https://learn.chatgpt.com/docs/security/setup). Local scans have separate
 [plugin](https://learn.chatgpt.com/docs/security/plugin) and [CLI](https://learn.chatgpt.com/docs/security/cli) guides.

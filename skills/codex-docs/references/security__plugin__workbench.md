@@ -6,8 +6,6 @@ path: /docs/security/plugin/workbench
 
 # Use the Codex Security workbench
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use the Security workbench to start scans, review saved findings, and inspect
 a repository's scan history. Each scan runs in a Codex task you can open to
 inspect its activity.
@@ -17,8 +15,8 @@ Install and enable the [Codex Security plugin](https://learn.chatgpt.com/docs/se
 select **Security** in the sidebar.
 
 If **Security** doesn't appear, confirm that **Codex** is selected and the
-  plugin is installed and enabled. Update the desktop app and plugin if needed,
-  and check whether your workspace administrator allows the plugin.
+plugin is installed and enabled. Update the desktop app and plugin if needed,
+and check whether your workspace administrator allows the plugin.
 
 ## Start a scan
 
@@ -38,9 +36,9 @@ with `xhigh` reasoning effort.
 6. Select **Start scan**.
 
 <figure className="not-prose my-8">
-  <figcaption className="mt-3 text-sm text-secondary">
-    Choose a repository and configure a scan in the Security workbench.
-  </figcaption>
+<figcaption className="mt-3 text-sm text-secondary">
+  Choose a repository and configure a scan in the Security workbench.
+</figcaption>
 </figure>
 
 See [Run a security scan](https://learn.chatgpt.com/docs/security/plugin/scans), [Run a deep security
@@ -60,10 +58,10 @@ When the scan completes, open its results to review the target, revision,
 findings, coverage, and available report artifacts.
 
 <figure className="not-prose my-8">
-  <figcaption className="mt-3 text-sm text-secondary">
-    Review findings, severity, scan coverage, and artifacts after a scan
-    completes.
-  </figcaption>
+<figcaption className="mt-3 text-sm text-secondary">
+  Review findings, severity, scan coverage, and artifacts after a scan
+  completes.
+</figcaption>
 </figure>
 
 ## Review findings across scans
@@ -77,8 +75,8 @@ review, apply, or verify a fix. See [Fix and verify security
 findings](https://learn.chatgpt.com/docs/security/plugin/fix-findings) for the remediation workflow.
 
 The **Findings** tab shows findings from saved Codex Security scans. Imported
-  tickets and other existing security issues remain part of the separate
-  [backlog triage workflow](https://learn.chatgpt.com/docs/security/plugin/triage-backlog).
+tickets and other existing security issues remain part of the separate
+[backlog triage workflow](https://learn.chatgpt.com/docs/security/plugin/triage-backlog).
 
 ## Inspect repository history
 

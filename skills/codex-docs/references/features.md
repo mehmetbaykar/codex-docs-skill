@@ -1,327 +1,84 @@
+---
+title: "Features"
+source: https://learn.chatgpt.com/docs/features
+path: /docs/features
+---
+
 # Features
 
-> Source: https://learn.chatgpt.com/docs/features
-> Note: MDX cleaning failed for this page, so this file contains raw source.
+Explore workflows, capabilities, commands, and settings for working in ChatGPT.
 
-# Features
+ChatGPT brings projects and long-running chats together with web browsing, files, images, and plugins. Commands, settings, and troubleshooting references round out these workflows, from choosing the right workflow to giving each chat the context and tools it needs.
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+[Explore projects and chats](https://learn.chatgpt.com/docs/projects)
 
-<CodexDocsOverviewLanding
-  title="Features"
-  description="Explore workflows, capabilities, commands, and settings for working in ChatGPT."
-  intro="ChatGPT brings projects and long-running chats together with web browsing, files, images, and plugins. Commands, settings, and troubleshooting references round out these workflows, from choosing the right workflow to giving each chat the context and tools it needs."
-  primaryCta={{
-    label: "Explore projects and chats",
-    href: "/codex/projects",
-  }}
-  hero={{
-    illustration: "features-menu",
-    backgroundImage: "/images/codex/codex-wallpaper-1.webp",
-    alt: "Codex navigation and Add menu for chats, plugins, and content tools",
-  }}
-  sections={[
-    {
-      title: "Workflows",
-      description: "Ways to organize, delegate, and review work.",
-      pages: [
-        {
-          title: "Projects and chats",
-          description: "Keep related chats, context, and work together.",
-          href: "/codex/projects",
-          icon: "folder",
-        },
-        {
-          title: "Codex on mobile",
-          description:
-            "Start tasks, approve actions, and review work from your phone.",
-          href: "/codex/mobile",
-          icon: "connect",
-        },
-        {
-          title: "Build plugins",
-          description:
-            "Create and refine reusable workflows in a conversation with ChatGPT.",
-          href: "/codex/build-plugins",
-          icon: "plugin",
-        },
-        {
-          title: "Visualizations",
-          description:
-            "Turn ideas and information into interactive visual explanations.",
-          href: "/codex/visualizations",
-          icon: "sparkles",
-        },
-        {
-          title: "Scheduled tasks",
-          description: "Schedule recurring work and review completed results.",
-          href: "/codex/automations",
-          icon: "calendar",
-        },
-        {
-          title: "Long-running work",
-          description: "Let ChatGPT continue working while you step away.",
-          href: "/codex/long-running-work",
-          icon: "threads",
-        },
-        {
-          title: "Notifications",
-          description:
-            "Choose how ChatGPT tells you when work needs attention.",
-          href: "/codex/notifications",
-          icon: "chat",
-        },
-        {
-          title: "Pets",
-          description: "Choose a companion, start chats, and follow activity.",
-          href: "/codex/pets",
-          icon: "customize",
-        },
-        {
-          title: "Codex Micro",
-          description:
-            "Monitor and control ChatGPT chats from a Work Louder keyboard.",
-          href: "/codex/features/codex-micro",
-          icon: "key",
-        },
-      ],
-    },
-    {
-      title: "Capabilities",
-      description:
-        "Tools ChatGPT can use to understand, create, and take action.",
-      pages: [
-        {
-          title: "Browser",
-          description:
-            "Let ChatGPT browse websites and take action while you stay in control.",
-          href: "/codex/browser",
-          icon: "webSearch",
-        },
-        {
-          title: "Computer use",
-          description:
-            "Let ChatGPT interact with apps through the visual interface.",
-          href: "/codex/computer-use",
-          icon: "computerUse",
-        },
-        {
-          title: "ChatGPT Voice",
-          description:
-            "Try voice in Chat, Work, and Codex in the ChatGPT desktop app.",
-          href: "/codex/features/voice",
-          icon: "chat",
-        },
-        {
-          title: "Composer Predictions",
-          description: "Get suggestions for your next message in Codex.",
-          href: "/codex/features/composer-predictions",
-          icon: "chat",
-        },
-        {
-          title: "Plugins",
-          description:
-            "Install reusable workflows, connected tools, and shared context.",
-          href: "/codex/plugins",
-          icon: "plugin",
-        },
-        {
-          title: "Sign in with ChatGPT",
-          description:
-            "Use your ChatGPT account in other apps and choose how they use your plan.",
-          href: "/codex/sign-in-with-chatgpt",
-          icon: "connect",
-        },
-        {
-          title: "Web search",
-          description:
-            "Find current information and bring sources into a task.",
-          href: "/codex/web-search",
-          icon: "webSearch",
-        },
-        {
-          title: "Image generation",
-          description: "Create and edit images as part of your work.",
-          href: "/codex/image-generation",
-          icon: "customize",
-        },
-        {
-          title: "Image inputs",
-          description: "Use screenshots and images as context for ChatGPT.",
-          href: "/codex/image-inputs",
-          icon: "computerUse",
-        },
-        {
-          title: "Appshots",
-          description: "Capture app state for visual inspection and debugging.",
-          href: "/codex/appshots",
-          icon: "workspace",
-        },
-        {
-          title: "Browser extension",
-          description:
-            "Use Chrome, Edge, Brave, Opera, or Vivaldi with ChatGPT.",
-          href: "/codex/chrome-extension",
-          icon: "connect",
-        },
-        {
-          title: "Work with files",
-          description:
-            "Create, preview, and refine documents and other generated files.",
-          href: "/codex/artifacts-viewer",
-          icon: "stack",
-        },
-      ],
-    },
-    {
-      title: "Sites",
-      description: "Build, connect, publish, and manage websites in ChatGPT.",
-      pages: [
-        {
-          title: "Overview",
-          description:
-            "Explore what you can build and find availability and limits.",
-          href: "/codex/sites",
-          icon: "workspace",
-        },
-        {
-          title: "Create a site",
-          description: "Describe, build, and refine a website in ChatGPT.",
-          href: "/codex/sites/creating-a-site",
-          icon: "workspace",
-        },
-        {
-          title: "Data and connections",
-          description:
-            "Save records, connect apps, and add sign-in to your site.",
-          href: "/codex/sites/data-and-connections",
-          icon: "workspace",
-        },
-        {
-          title: "Publish and share",
-          description:
-            "Review your site, choose its audience, and invite editors.",
-          href: "/codex/sites/publishing-and-sharing",
-          icon: "workspace",
-        },
-        {
-          title: "Manage a site",
-          description:
-            "Review analytics, change settings, and manage site versions.",
-          href: "/codex/sites/managing-a-site",
-          icon: "workspace",
-        },
-      ],
-    },
-    {
-      title: "ChatGPT dots",
-      description: "Set up your dot and manage its ongoing work.",
-      pages: [
-        {
-          title: "Overview",
-          description: "Understand your dot and its connections.",
-          href: "/codex/dots",
-          icon: "robot",
-        },
-        {
-          title: "Getting started",
-          description: "Create your dot and give it a responsibility.",
-          href: "/codex/dots/getting-started",
-          icon: "chat",
-        },
-        {
-          title: "Messaging",
-          description: "Contact your dot in ChatGPT and connected channels.",
-          href: "/codex/dots/channels",
-          icon: "connect",
-        },
-        {
-          title: "Tasks and memory",
-          description: "Understand scheduled work, context, and research.",
-          href: "/codex/dots/tasks-and-memory",
-          icon: "calendar",
-        },
-        {
-          title: "Computers and apps",
-          description: "Connect tools and inspect computer work.",
-          href: "/codex/dots/computers-and-apps",
-          icon: "computerUse",
-        },
-        {
-          title: "Controls",
-          description: "Review activity, manage rules, and stop work.",
-          href: "/codex/dots/controls",
-          icon: "settings",
-        },
-      ],
-    },
-    {
-      title: "ChatGPT Space",
-      description:
-        "Develop shared work in Pages with ChatGPT and collaborators.",
-      pages: [
-        {
-          title: "Space overview",
-          description:
-            "Find files and Pages, and develop your work with ChatGPT.",
-          href: "/codex/space",
-          icon: "workspace",
-        },
-        {
-          title: "Getting started",
-          description: "Draft your first Page.",
-          href: "/codex/space/getting-started",
-          icon: "folder",
-        },
-        {
-          title: "Pages",
-          description: "Write, organize, and revise your work.",
-          href: "/codex/space/pages",
-          icon: "stack",
-        },
-        {
-          title: "Work with the agent",
-          description: "Give ChatGPT context, boundaries, and a clear task.",
-          href: "/codex/space/agents",
-          icon: "chat",
-        },
-        {
-          title: "Collaboration",
-          description: "Choose who can view, comment on, or edit your work.",
-          href: "/codex/space/collaboration",
-          icon: "connect",
-        },
-      ],
-    },
-    {
-      title: "Reference",
-      description: "Find commands and settings for the ChatGPT desktop app.",
-      pages: [
-        {
-          title: "Commands",
-          description: "Use app commands, keyboard shortcuts, and deep links.",
-          href: "/codex/reference/commands",
-          icon: "terminal",
-        },
-        {
-          title: "Slash commands",
-          description: "Use shortcuts for common interactive actions.",
-          href: "/codex/reference/slash-commands",
-          icon: "code",
-        },
-        {
-          title: "Settings",
-          description: "Configure ChatGPT desktop app preferences.",
-          href: "/codex/reference/settings",
-          icon: "settings",
-        },
-        {
-          title: "Troubleshooting",
-          description: "Resolve common issues in the ChatGPT desktop app.",
-          href: "/codex/reference/troubleshooting",
-          icon: "tools",
-        },
-      ],
-    },
-  ]}
-/>
+## Workflows
+
+Ways to organize, delegate, and review work.
+
+- [Projects and chats](https://learn.chatgpt.com/docs/projects): Keep related chats, context, and work together.
+- [Codex on mobile](https://learn.chatgpt.com/docs/mobile): Start tasks, approve actions, and review work from your phone.
+- [Build plugins](https://learn.chatgpt.com/docs/build-plugins): Create and refine reusable workflows in a conversation with ChatGPT.
+- [Visualizations](https://learn.chatgpt.com/docs/visualizations): Turn ideas and information into interactive visual explanations.
+- [Scheduled tasks](https://learn.chatgpt.com/docs/automations): Schedule recurring work and review completed results.
+- [Long-running work](https://learn.chatgpt.com/docs/long-running-work): Let ChatGPT continue working while you step away.
+- [Notifications](https://learn.chatgpt.com/docs/notifications): Choose how ChatGPT tells you when work needs attention.
+- [Pets](https://learn.chatgpt.com/docs/pets): Choose a companion, start chats, and follow activity.
+- [Codex Micro](https://learn.chatgpt.com/docs/features/codex-micro): Monitor and control ChatGPT chats from a Work Louder keyboard.
+
+## Capabilities
+
+Tools ChatGPT can use to understand, create, and take action.
+
+- [Browser](https://learn.chatgpt.com/docs/browser): Let ChatGPT browse websites and take action while you stay in control.
+- [Computer use](https://learn.chatgpt.com/docs/computer-use): Let ChatGPT interact with apps through the visual interface.
+- [ChatGPT Voice](https://learn.chatgpt.com/docs/features/voice): Try voice in Chat, Work, and Codex in the ChatGPT desktop app.
+- [Composer Predictions](https://learn.chatgpt.com/docs/features/composer-predictions): Get suggestions for your next message in Codex.
+- [Plugins](https://learn.chatgpt.com/docs/plugins): Install reusable workflows, connected tools, and shared context.
+- [Sign in with ChatGPT](https://learn.chatgpt.com/docs/sign-in-with-chatgpt): Use your ChatGPT account in other apps and choose how they use your plan.
+- [Web search](https://learn.chatgpt.com/docs/web-search): Find current information and bring sources into a task.
+- [Image generation](https://learn.chatgpt.com/docs/image-generation): Create and edit images as part of your work.
+- [Image inputs](https://learn.chatgpt.com/docs/image-inputs): Use screenshots and images as context for ChatGPT.
+- [Appshots](https://learn.chatgpt.com/docs/appshots): Capture app state for visual inspection and debugging.
+- [Browser extension](https://learn.chatgpt.com/docs/chrome-extension): Use Chrome, Edge, Brave, Opera, or Vivaldi with ChatGPT.
+- [Work with files](https://learn.chatgpt.com/docs/artifacts-viewer): Create, preview, and refine documents and other generated files.
+
+## Sites
+
+Build, connect, publish, and manage websites in ChatGPT.
+
+- [Overview](https://learn.chatgpt.com/docs/sites): Explore what you can build and find availability and limits.
+- [Create a site](https://learn.chatgpt.com/docs/sites/creating-a-site): Describe, build, and refine a website in ChatGPT.
+- [Data and connections](https://learn.chatgpt.com/docs/sites/data-and-connections): Save records, connect apps, and add sign-in to your site.
+- [Publish and share](https://learn.chatgpt.com/docs/sites/publishing-and-sharing): Review your site, choose its audience, and invite editors.
+- [Manage a site](https://learn.chatgpt.com/docs/sites/managing-a-site): Review analytics, change settings, and manage site versions.
+
+## ChatGPT dots
+
+Set up your dot and manage its ongoing work.
+
+- [Overview](https://learn.chatgpt.com/docs/dots): Understand your dot and its connections.
+- [Getting started](https://learn.chatgpt.com/docs/dots/getting-started): Create your dot and give it a responsibility.
+- [Messaging](https://learn.chatgpt.com/docs/dots/channels): Contact your dot in ChatGPT and connected channels.
+- [Tasks and memory](https://learn.chatgpt.com/docs/dots/tasks-and-memory): Understand scheduled work, context, and research.
+- [Computers and apps](https://learn.chatgpt.com/docs/dots/computers-and-apps): Connect tools and inspect computer work.
+- [Controls](https://learn.chatgpt.com/docs/dots/controls): Review activity, manage rules, and stop work.
+
+## ChatGPT Space
+
+Develop shared work in Pages with ChatGPT and collaborators.
+
+- [Space overview](https://learn.chatgpt.com/docs/space): Find files and Pages, and develop your work with ChatGPT.
+- [Getting started](https://learn.chatgpt.com/docs/space/getting-started): Draft your first Page.
+- [Pages](https://learn.chatgpt.com/docs/space/pages): Write, organize, and revise your work.
+- [Work with the agent](https://learn.chatgpt.com/docs/space/agents): Give ChatGPT context, boundaries, and a clear task.
+- [Collaboration](https://learn.chatgpt.com/docs/space/collaboration): Choose who can view, comment on, or edit your work.
+
+## Reference
+
+Find commands and settings for the ChatGPT desktop app.
+
+- [Commands](https://learn.chatgpt.com/docs/reference/commands): Use app commands, keyboard shortcuts, and deep links.
+- [Slash commands](https://learn.chatgpt.com/docs/reference/slash-commands): Use shortcuts for common interactive actions.
+- [Settings](https://learn.chatgpt.com/docs/reference/settings): Configure ChatGPT desktop app preferences.
+- [Troubleshooting](https://learn.chatgpt.com/docs/reference/troubleshooting): Resolve common issues in the ChatGPT desktop app.

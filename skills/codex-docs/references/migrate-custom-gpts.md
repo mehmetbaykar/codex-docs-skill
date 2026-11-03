@@ -6,8 +6,6 @@ path: /docs/migrate-custom-gpts
 
 # Moving your custom GPT workflows to plugins
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Custom GPTs helped you make ChatGPT your own. Plugins build on that work, bringing your instructions and knowledge into workflows that can do more.
 
 This guide is for ChatGPT Enterprise workspace admins and people migrating GPTs they created. Start with the path that fits your role:
@@ -49,13 +47,12 @@ With plugins, you can choose an available plugin or skill directly. In ChatGPT, 
 
 <figure class="mx-auto w-full max-w-[640px]">
 
-
 [Select a plugin from the ChatGPT composer](https://cdn.openai.com/devhub/docs/codex/migrate-custom-gpts/invoke-plugin-hq.webm)
 
-  <figcaption class="text-center">
-    Select an available plugin from the composer, then describe the task you
-    want it to help with.
-  </figcaption>
+<figcaption class="text-center">
+  Select an available plugin from the composer, then describe the task you
+  want it to help with.
+</figcaption>
 </figure>
 
 You can also describe your task: ChatGPT can [automatically use a relevant installed skill](https://learn.chatgpt.com/docs/build-skills#how-chatgpt-and-codex-use-skills), including a skill packaged in a plugin, when its description matches what you need.
@@ -76,27 +73,24 @@ Automatic skill selection depends on the task and available capabilities; an ins
 | Share with your team       | You share the GPT with an allowed audience.                                                | You share or publish the plugin under workspace permissions. Review access before rollout.         |
 
 <figure id="clip-what-transfers" class="my-8 w-full scroll-mt-32">
-  <h4 class="!mb-4 !mt-0 text-lg">What transfers to a plugin</h4>
-
+<h4 class="!mb-4 !mt-0 text-lg">What transfers to a plugin</h4>
 
 [What transfers to a plugin](https://cdn.openai.com/devhub/docs/codex/migrate-custom-gpts/01-what-transfers-hq.mp4)
 
-  <figcaption
-    id="01-what-transfers-description"
-    class="!mt-4 text-sm text-secondary"
-  >
-    **
-      See what moves into a plugin and what needs rebuilding.
-    **
+<figcaption
+  id="01-what-transfers-description"
+  class="!mt-4 text-sm text-secondary"
+>
+  **
+    See what moves into a plugin and what needs rebuilding.
+  **
 
+    See how a GPT’s instructions and reference files become a skill and
+    connected apps remain part of the plugin. Custom actions do not transfer;
+    plan to replace them with a supported app’s read or write actions, or a
+    custom MCP server.
 
-      See how a GPT’s instructions and reference files become a skill and
-      connected apps remain part of the plugin. Custom actions do not transfer;
-      plan to replace them with a supported app’s read or write actions, or a
-      custom MCP server.
-
-
-  </figcaption>
+</figcaption>
 </figure>
 
 <a id="plan-your-transition"></a>
@@ -119,27 +113,24 @@ Start with GPTs your team relies on most. Agree with their creators on what to k
 - Confirm which GPTs are published. Have creators publish needed drafts while GPT creation is still available; public sharing isn’t required.
 
 <figure id="clip-prioritize-workflows" class="my-8 w-full scroll-mt-32">
-  <h4 class="!mb-4 !mt-0 text-lg">Choose priority workflows</h4>
-
+<h4 class="!mb-4 !mt-0 text-lg">Choose priority workflows</h4>
 
 [Choose priority workflows](https://cdn.openai.com/devhub/docs/codex/migrate-custom-gpts/02-prioritize-workflows-hq.mp4)
 
-  <figcaption
-    id="02-prioritize-workflows-description"
-    class="!mt-4 text-sm text-secondary"
-  >
-    **
-      Use ownership and recent usage to prioritize your GPT migrations.
-    **
+<figcaption
+  id="02-prioritize-workflows-description"
+  class="!mt-4 text-sm text-secondary"
+>
+  **
+    Use ownership and recent usage to prioritize your GPT migrations.
+  **
 
+    Identify the GPTs your team still relies on and consider leaving unused
+    workflows behind. Admins with access to the ChatGPT admin plugin can
+    request GPT names, owners, and message counts from the last 30 days to
+    help prioritize.
 
-      Identify the GPTs your team still relies on and consider leaving unused
-      workflows behind. Admins with access to the ChatGPT admin plugin can
-      request GPT names, owners, and message counts from the last 30 days to
-      help prioritize.
-
-
-  </figcaption>
+</figcaption>
 </figure>
 
 ### Review workspace permissions
@@ -314,24 +305,21 @@ Your new plugin starts private. Test it, then share it with the people who need 
 
 <figure id="migration-preview" class="my-8 w-full scroll-mt-32">
 
-
 [Watch the migration workflow](https://cdn.openai.com/devhub/docs/codex/migrate-custom-gpts/03-migration-walkthrough-hq.mp4)
 
-  <figcaption
-    id="03-migration-walkthrough-description"
-    class="!mt-4 text-sm text-secondary"
-  >
-    **
-      Follow the migration steps, then review and install your plugin.
-    **
+<figcaption
+  id="03-migration-walkthrough-description"
+  class="!mt-4 text-sm text-secondary"
+>
+  **
+    Follow the migration steps, then review and install your plugin.
+  **
 
+    This video shows an earlier app interface. In the current app, select
+    **Customize**, then **Plugins**, in the left
+    navigation to find your plugins.
 
-      This video shows an earlier app interface. In the current app, select
-      **Customize**, then **Plugins**, in the left
-      navigation to find your plugins.
-
-
-  </figcaption>
+</figcaption>
 </figure>
 
 ### Step 2: Test with familiar work
@@ -349,17 +337,16 @@ If a required capability is missing, wait to switch that workflow until you have
 
 <figure id="clip-test-and-share" class="my-8 w-full scroll-mt-32">
 
-
 [Test before sharing](https://cdn.openai.com/devhub/docs/codex/migrate-custom-gpts/04-test-and-share-hq.mp4)
 
-  <figcaption
-    id="04-test-and-share-description"
-    class="!mt-4 text-sm text-secondary"
-  >
-    **
-      Test familiar workflows and refine the plugin before sharing it.
-    **
-  </figcaption>
+<figcaption
+  id="04-test-and-share-description"
+  class="!mt-4 text-sm text-secondary"
+>
+  **
+    Test familiar workflows and refine the plugin before sharing it.
+  **
+</figcaption>
 </figure>
 
 ### Step 3: Share and verify access

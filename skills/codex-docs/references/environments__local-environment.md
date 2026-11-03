@@ -6,12 +6,10 @@ path: /docs/environments/local-environment
 
 # Local environments
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Local environments let you configure setup steps for worktrees as well as common actions for a project.
 
 Local environments are available only in Codex in the ChatGPT desktop app.
-  Select **Codex** before you configure or use a local environment.
+Select **Codex** before you configure or use a local environment.
 
 You configure your local environments through the [ChatGPT desktop app settings](codex://settings) pane. You can check the generated file into your project's Git repository to share with others.
 
@@ -39,8 +37,6 @@ If your setup is platform-specific, define setup scripts for macOS, Windows, or 
 Use actions to define common tasks like starting your app's development server or running your test suite. These actions appear in the ChatGPT desktop app top bar for quick access. The actions run within the app's [integrated terminal](https://learn.chatgpt.com/docs/integrated-terminal).
 
 Actions are helpful to keep you from typing common actions like triggering a build for your project or starting a development server. For one-off quick debugging you can use the integrated terminal directly.
-
-
 
 > Illustration: Project actions list shown in ChatGPT desktop app settings
 

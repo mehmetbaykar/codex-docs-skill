@@ -6,8 +6,6 @@ path: /docs/codex/ide
 
 # Codex IDE extension
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 ## Build with the context already in your editor
 
 Work with Codex beside your code. Bring open files and selections into the prompt, review edits in place, and hand off longer work without breaking your flow.

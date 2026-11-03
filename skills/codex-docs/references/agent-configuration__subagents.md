@@ -6,8 +6,6 @@ path: /docs/agent-configuration/subagents
 
 # Subagents
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 ChatGPT Work and Codex can run subagent workflows by spawning specialized
 agents in parallel and then collecting their results in one response. This can
 be particularly helpful for complex tasks that are highly parallel, such as
@@ -133,10 +131,10 @@ configure `[agents]` defaults in `config.toml`, or set `model` and
 For example, use `gpt-6-luna` for fast scans or a higher-effort `gpt-6.1-sol` configuration for more demanding reasoning.
 
 For most tasks in Codex, start with
-  `gpt-6.1-sol` when your
-  signed-in account or workspace has [access](https://learn.chatgpt.com/docs/models#gpt-6.1-sol).
-  Otherwise, choose a model available to you. Use `gpt-6-luna` when you want a
-  faster, lower-cost option for lighter subagent work.
+`gpt-6.1-sol` when your
+signed-in account or workspace has [access](https://learn.chatgpt.com/docs/models#gpt-6.1-sol).
+Otherwise, choose a model available to you. Use `gpt-6-luna` when you want a
+faster, lower-cost option for lighter subagent work.
 
 ### Model choice
 

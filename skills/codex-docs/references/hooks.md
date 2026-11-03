@@ -6,8 +6,6 @@ path: /docs/hooks
 
 # Hooks
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Hooks are an extensibility framework for Codex. They let you run scripts or MCP
 tools during the agentic loop, enabling features such as:
 
@@ -545,10 +543,10 @@ shorter, model-visible preview. If the file can't be written, the model still
 receives a truncated preview.
 
 Keep hook and plugin context concise. Context from multiple hooks and plugins
-  adds up and can degrade model performance. Raising `additionalContextLimit`
-  increases that risk. Avoid setting the limit to `0` unless the hook enforces a
-  strict output cap; otherwise, a single hook can consume the entire context
-  window.
+adds up and can degrade model performance. Raising `additionalContextLimit`
+increases that risk. Avoid setting the limit to `0` unless the hook enforces a
+strict output cap; otherwise, a single hook can consume the entire context
+window.
 
 For any command hook that returns `additionalContext`, set
 `additionalContextLimit` on the handler to customize the approximate token
@@ -640,8 +638,8 @@ Use the same event-specific JSON output as a synchronous hook. Codex adds
 warning.
 
 Background hooks can't block, approve, rewrite, or otherwise control the
-  operation that triggered them. Use synchronous hooks for tool policies,
-  permission decisions, prompt rejection, or turn continuation.
+operation that triggered them. Use synchronous hooks for tool policies,
+permission decisions, prompt rejection, or turn continuation.
 
 ### Limitations
 
@@ -1147,7 +1145,7 @@ for this event.
 ## Schemas
 
 The linked `main` branch schemas may include hook fields that are not in the
-  current release. Use this page as the release behavior reference.
+current release. Use this page as the release behavior reference.
 
 If you need the exact current wire format, see the generated schemas in the
 [Codex GitHub repository](https://github.com/openai/codex/tree/main/codex-rs/hooks/schema/generated).

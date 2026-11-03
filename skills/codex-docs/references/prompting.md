@@ -6,8 +6,6 @@ path: /docs/prompting
 
 # Prompting
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 <a id="prompts"></a>
 
 ## Prompting overview
@@ -83,9 +81,7 @@ in the composer to choose a specific plugin.
 
 [Learn about plugins
 
-
-
-    Find, install, and use plugins in ChatGPT and Codex.](https://learn.chatgpt.com/docs/plugins)
+Find, install, and use plugins in ChatGPT and Codex.](https://learn.chatgpt.com/docs/plugins)
 
 ### Personalize ChatGPT
 
@@ -95,9 +91,7 @@ prompt.
 
 [Review personalization settings
 
-
-
-    Set a default personality, custom instructions, and other app preferences.](https://learn.chatgpt.com/docs/reference/settings#personalization)
+Set a default personality, custom instructions, and other app preferences.](https://learn.chatgpt.com/docs/reference/settings#personalization)
 
 ## Set boundaries that prevent real problems
 
@@ -190,8 +184,6 @@ asks for a final check without spelling out every step.
 In the ChatGPT desktop app, select **Dictate** in the composer, then start
 talking. ChatGPT transcribes your speech into the composer
 so you can review and edit it before sending the prompt.
-
-
 
 > Illustration: Voice dictation indicator in the composer with a transcribed prompt
 

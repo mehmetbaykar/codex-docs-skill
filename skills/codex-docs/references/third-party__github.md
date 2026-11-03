@@ -6,8 +6,6 @@ path: /docs/third-party/github
 
 # Review GitHub pull requests with Codex
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use Codex code review to get another high-signal review pass on GitHub pull
 requests. Codex reviews the pull request diff, follows your repository guidance,
 and posts a standard GitHub code review focused on serious issues. Security
@@ -33,35 +31,20 @@ GitHub push or admin permission for its settings.
 2. Go to [Codex settings](https://chatgpt.com/settings/code-review).
 3. Choose your repository, then turn on **Automatic review** under **Review code**.
 
-
-
-
 > Illustration: Codex settings showing repositories and the personal Automatic review toggle
-
-
 
 ## Request a Codex review
 
 1. In a pull request comment, mention `@codex review`.
 2. Wait for Codex to react (👀) and post a review.
 
-
-
-
 > Illustration: A pull request comment with @codex review
-
-
 
 Codex posts a review on the pull request, just like a teammate would. In
 GitHub, Codex flags only P0 and P1 issues so review comments stay focused on
 high-priority risks.
 
-
-
-
 > Illustration: Example Codex code review on a pull request
-
-
 
 ## Enable automatic reviews
 

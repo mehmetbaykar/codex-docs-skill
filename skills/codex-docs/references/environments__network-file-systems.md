@@ -6,8 +6,6 @@ path: /docs/environments/network-file-systems
 
 # Run Codex with an NFS home directory
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 When Linux hosts share a [Codex home](https://learn.chatgpt.com/docs/config-file/config-advanced#config-and-state-locations) (`~/.codex` by default) over Network File System (NFS), they can corrupt a SQLite database if they open it in write-ahead log (WAL) mode at the same time. For interactive work in the CLI or the [Codex app over SSH](https://learn.chatgpt.com/docs/remote-connections#connect-to-an-ssh-host), [migrate the shared home](#migrate-an-existing-nfs-home). For [independent batch jobs](#run-independent-batch-jobs), keep each host’s Codex home or SQLite directory on local disk.
 
 ## Why NFS can break SQLite
@@ -28,10 +26,10 @@ During migration, do not set or change the SQLite home or log directory.
 
 ### 2. Stop Codex on every host
 
-  End active turns, close the app and CLI, and stop remote app servers,
-  background daemons, and scheduled jobs that use this home. Keep them stopped
-  on every host until migration completes. A concurrent writer can corrupt the
-  database and lose changes to goals or memories.
+End active turns, close the app and CLI, and stop remote app servers,
+background daemons, and scheduled jobs that use this home. Keep them stopped
+on every host until migration completes. A concurrent writer can corrupt the
+database and lose changes to goals or memories.
 
 Session rollouts are separate files and can’t restore all database state.
 
@@ -73,8 +71,8 @@ log_dir = "/var/local/codex/alice/logs"
 New logs go to that directory. Older logs stay in place.
 
 A managed `sqlite_home` keeps the SQLite logs database in the required
-  directory even when you set `log_dir`. See [managed
-  configuration](https://learn.chatgpt.com/docs/enterprise/managed-configuration).
+directory even when you set `log_dir`. See [managed
+configuration](https://learn.chatgpt.com/docs/enterprise/managed-configuration).
 
 ## Enforce the journal mode across a fleet
 

@@ -6,8 +6,6 @@ path: /docs/cyber-safety/recommended-configuration
 
 # Recommended configuration
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 The security controls appropriate for a cybersecurity workflow depend on the model, the actions it can take, the systems it can access, and the sensitivity of the data involved.
 
 For most Daybreak Blue workflows, your organization's existing security practices—such as access controls, credential protection, and review of sensitive actions—may be sufficient.
@@ -15,9 +13,9 @@ For most Daybreak Blue workflows, your organization's existing security practice
 Daybreak Red workflows, autonomous security testing, and activities involving production systems, sensitive data, or external tools may require stronger safeguards. The recommendations below are intended primarily for these higher-risk scenarios.
 
 You are responsible for assessing the risks of your particular workflow and
-  implementing appropriate security controls. Model safeguards and Trusted
-  Access do not replace your organization's own security, monitoring, and
-  oversight practices.
+implementing appropriate security controls. Model safeguards and Trusted
+Access do not replace your organization's own security, monitoring, and
+oversight practices.
 
 Trusted Access governs approved model access, but it doesn't configure your environment or enforce limits on approved systems and actions. Your team must set up appropriate isolation, permission, review, monitoring, and human-oversight controls. Assume the model, its tools, and every connected system could be compromised, then configure the environment so they still can't reach unauthorized systems, expose credentials, disable safeguards, or persist after the work ends.
 

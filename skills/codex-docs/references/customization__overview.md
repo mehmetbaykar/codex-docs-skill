@@ -6,8 +6,6 @@ path: /docs/customization/overview
 
 # Customization
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Customization is how you make Codex work the way your team works.
 
 In Codex, customization comes from a few layers that work together:
@@ -50,6 +48,11 @@ Pair `AGENTS.md` with infrastructure that enforces those rules: pre-commit hooks
 Codex can load guidance from multiple locations: a global file in your Codex home directory (for you as a developer) and repo-specific files that teams can check in. Files closer to the working directory take precedence.
 Use the global file to shape how Codex communicates with you (for example, review style, verbosity, and defaults), and keep repo files focused on team and codebase rules.
 
+- ~/.codex/
+  - AGENTS.md: Global (for you as a developer)
+- repo-root/
+  - AGENTS.md: repo-specific (for your team)
+
 [Custom instructions with AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)
 
 ## Skills
@@ -65,6 +68,12 @@ connectors, package it as a [plugin](https://learn.chatgpt.com/docs/build-plugin
 authoring format; plugins are the installable distribution unit.
 
 A skill is typically a `SKILL.md` file plus optional scripts, references, and assets.
+
+- my-skill/
+  - SKILL.md: Required: instructions + metadata
+  - scripts/: Optional: executable code
+  - references/: Optional: documentation
+  - assets/: Optional: templates, resources
 
 The skill directory can include a `scripts/` folder with CLI scripts that Codex invokes as part of the workflow (for example, seed data or run validations). When the workflow needs external systems (issue trackers, design tools, docs servers), pair the skill with [MCP](https://learn.chatgpt.com/docs/extend/mcp).
 

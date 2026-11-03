@@ -6,8 +6,6 @@ path: /docs/remote-connections
 
 # Remote connections
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Remote connections let you access work running on another device or machine.
 In the ChatGPT mobile app for iOS, open **Codex** to work with ChatGPT or Codex
 chats on a connected Mac or Windows device. If your mobile app still shows
@@ -41,21 +39,16 @@ The next sections cover using the ChatGPT mobile app to access a desktop host.
 To connect Codex to a project on an SSH host, see
 [connect to an SSH host](#connect-to-an-ssh-host).
 
-
-
-
 > Illustration: Mobile connection setup screen in the ChatGPT mobile app
-
-
 
 <a id="before-you-set-up-remote"></a>
 
 ## Before you set up mobile access
 
 Remote access supports hosts running the ChatGPT desktop app on macOS and
-  Windows. You can control a host from ChatGPT on iOS or Android, or from
-  another Mac or Windows device when **Control other devices** is available.
-  Availability can vary by rollout.
+Windows. You can control a host from ChatGPT on iOS or Android, or from
+another Mac or Windows device when **Control other devices** is available.
+Availability can vary by rollout.
 
 Make sure you have:
 
@@ -83,8 +76,8 @@ The QR code pairs that phone with that host. Pair every phone or supported
 desktop app device with every host you want it to control.
 
 Existing connections used since June 8, 2026, remain paired. If you haven't
-  used an existing connection since June 8, 2026, update both apps and pair the
-  devices again.
+used an existing connection since June 8, 2026, update both apps and pair the
+devices again.
 
 1. Start setup on your computer.
 
@@ -162,7 +155,7 @@ resources.
 For SSH setup details, see [connect to an SSH host](#connect-to-an-ssh-host).
 
 For browser or desktop tasks on an always-on computer or remote host, enable
-  Computer Use and install the Chrome extension on that host.
+Computer Use and install the Chrome extension on that host.
 
 ## What comes from the connected host
 
@@ -215,8 +208,8 @@ unauthenticated public listeners.
      IdentityFile ~/.ssh/id_ed25519
 ```
 
-   Codex reads concrete host aliases from `~/.ssh/config`, resolves them with
-   OpenSSH, and ignores pattern-only hosts.
+Codex reads concrete host aliases from `~/.ssh/config`, resolves them with
+OpenSSH, and ignores pattern-only hosts.
 
 2. Confirm you can SSH to the host from the machine running the app.
 

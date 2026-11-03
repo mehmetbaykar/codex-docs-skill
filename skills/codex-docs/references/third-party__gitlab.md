@@ -6,8 +6,6 @@ path: /docs/third-party/gitlab
 
 # Review GitLab merge requests with Codex
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use Codex code review to get another high-signal review pass on GitLab merge
 requests. Codex reviews the merge request diff, follows your repository
 guidance, and posts a standard GitLab code review focused on serious issues.

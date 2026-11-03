@@ -6,16 +6,14 @@ path: /docs/customization/computer-history
 
 # Computer History
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Computer History is **off by default** for ChatGPT Pro, Business, and
-  Enterprise users in the ChatGPT desktop app on macOS. Pro users can choose to
-  turn it on. For Business and Enterprise workspaces, an administrator must
-  explicitly grant access before each member can choose to turn it on. Computer
-  History also requires [Memories](https://learn.chatgpt.com/docs/customization/memories) and is not
-  available with an API key or Amazon Bedrock. It's available in supported
-  regions, including the European Economic Area (EEA), Switzerland, and the
-  United Kingdom.
+Enterprise users in the ChatGPT desktop app on macOS. Pro users can choose to
+turn it on. For Business and Enterprise workspaces, an administrator must
+explicitly grant access before each member can choose to turn it on. Computer
+History also requires [Memories](https://learn.chatgpt.com/docs/customization/memories) and is not
+available with an API key or Amazon Bedrock. It's available in supported
+regions, including the European Economic Area (EEA), Switzerland, and the
+United Kingdom.
 
 Computer History turns your activity across apps and websites into memories and
 a timeline that ChatGPT and Codex can reference. You can ask natural questions

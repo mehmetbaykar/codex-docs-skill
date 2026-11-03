@@ -6,8 +6,6 @@ path: /docs/reference/settings
 
 # Settings
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use the settings panel to personalize the app and manage everyday preferences.
 Open [**Settings**](codex://settings) from the app menu or press
 
@@ -54,23 +52,17 @@ In **Settings**, you can change the app appearance by choosing a base theme,
 adjusting accent, background, and foreground colors, and changing the UI and
 code fonts. You can also share your custom theme with friends.
 
-
-
 > Illustration: ChatGPT desktop app Appearance settings showing theme selection, color controls, and font options
 
 ## Pets
 
+Pets are optional animated companions for the app. In **Settings > Pets**,
+choose a built-in or custom pet, then use `/pet`, **Show pet**, or **Hide pet**
+to control the floating overlay. Choose **Mini** to keep the chat controls
+visible without a pet.
 
-
-    Pets are optional animated companions for the app. In **Settings > Pets**,
-    choose a built-in or custom pet, then use `/pet`, **Show pet**, or **Hide pet**
-    to control the floating overlay. Choose **Mini** to keep the chat controls
-    visible without a pet.
-
-    See [Pets](https://learn.chatgpt.com/docs/pets?surface=app) to start chats, use voice, follow
-    activity, or create your own pet.
-
-
+See [Pets](https://learn.chatgpt.com/docs/pets?surface=app) to start chats, use voice, follow
+activity, or create your own pet.
 
 <a id="browser-use"></a>
 
@@ -125,7 +117,5 @@ context. Use **Unarchive** to restore a chat.
 In the ChatGPT desktop app, pop out an active chat into a separate window and place it
 next to your browser, editor, or design preview. Turn on **Always on top** when
 you want the chat to remain visible while you work in another app.
-
-
 
 > Illustration: ChatGPT desktop app chat displayed in a floating pop-out window

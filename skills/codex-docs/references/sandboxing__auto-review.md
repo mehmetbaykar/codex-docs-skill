@@ -6,17 +6,15 @@ path: /docs/sandboxing/auto-review
 
 # Auto-review
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Auto-review replaces manual approval at the sandbox boundary with a separate
 reviewer agent. The main Codex agent still runs inside the same sandbox, with
 the same approval policy and the same network and filesystem limits. The
 difference is who reviews eligible escalation requests.
 
 Auto-review only applies when approvals are interactive. In practice, that
-  means `approval_policy = "on-request"` or a granular approval policy that
-  still surfaces the relevant prompt category. With `approval_policy = "never"`,
-  there is nothing to review.
+means `approval_policy = "on-request"` or a granular approval policy that
+still surfaces the relevant prompt category. With `approval_policy = "never"`,
+there is nothing to review.
 
 In the ChatGPT desktop app, selecting an approved Daybreak model
 automatically switches the permissions control to **Approve for me** when that

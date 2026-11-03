@@ -6,10 +6,8 @@ path: /docs/browser
 
 # Browser
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Browser isn't available in Codex CLI or the Codex IDE extension. Open the
-  ChatGPT desktop app to use the built-in browser.
+ChatGPT desktop app to use the built-in browser.
 
 Browser lets ChatGPT open websites, gather current information, and take action
 while you stay in control. Use it to compare options, complete a multi-step task
@@ -50,8 +48,6 @@ regular browser profile.
 Select **New tab**, then enter a URL to open the built-in browser. You can also
 open a URL from the chat or press `Cmd`+`T`
 (`Ctrl`+`T` on Windows and Linux) to open a browser tab.
-
-
 
 > Illustration: ChatGPT desktop app showing a browser comment on a local web app preview
 
@@ -112,8 +108,8 @@ making a purchase, changing permissions, or deleting data. ChatGPT can't
 automate file uploads in the built-in browser.
 
 Instructions on a page can be misleading or malicious. A website permission
-  lets ChatGPT interact with that site; it doesn't make the site's content
-  trustworthy or approve every action.
+lets ChatGPT interact with that site; it doesn't make the site's content
+trustworthy or approve every action.
 
 ## Preview a page
 
@@ -162,8 +158,6 @@ the text input to give ChatGPT more granular style feedback. You can change
 values such as font, text, spacing, and color, preview the result on the page,
 and then send the annotation with a clearer target.
 
-
-
 > Illustration: ChatGPT desktop app showing built-in browser annotation style controls
 
 ## Keep browser tasks scoped
@@ -208,8 +202,6 @@ For example:
 This app is slow. Use @Browser to capture a performance trace and inspect
 network traffic, then identify the bottleneck.
 ```
-
-
 
 > Illustration: ChatGPT desktop app Browser settings showing Developer mode with full CDP access enabled
 

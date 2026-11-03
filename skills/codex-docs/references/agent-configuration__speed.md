@@ -6,8 +6,6 @@ path: /docs/agent-configuration/speed
 
 # Speed
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 You can increase model speed in Codex in exchange for higher usage.
 
 ## Fast mode
@@ -51,8 +49,8 @@ eligible Ultrafast usage.
 ## Availability and billing details
 
 **ChatGPT Work and Codex share usage.** Both use the same
-  pricing, credits, and usage limits. See [Codex pricing](https://learn.chatgpt.com/docs/pricing) for
-  details.
+pricing, credits, and usage limits. See [Codex pricing](https://learn.chatgpt.com/docs/pricing) for
+details.
 
 See [Models](https://learn.chatgpt.com/docs/models) for model availability and
 [Pricing](https://learn.chatgpt.com/docs/pricing#token-rates) for token rates.

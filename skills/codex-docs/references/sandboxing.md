@@ -6,8 +6,6 @@ path: /docs/sandboxing
 
 # Sandbox
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 The sandbox is the boundary that lets the agent act autonomously without giving it
 unrestricted access to your machine. When a local chat runs commands in the
 **ChatGPT desktop app**, **Codex CLI**, or **IDE extension**, those commands run inside a
@@ -19,8 +17,8 @@ those boundaries, the agent can keep moving without stopping for confirmation. W
 it needs to go beyond them, the approval flow takes over.
 
 Sandboxing and approvals are different controls that work together. The
-  sandbox defines technical boundaries. The approval policy decides when the
-  agent must stop and ask before crossing them.
+sandbox defines technical boundaries. The approval policy decides when the
+agent must stop and ask before crossing them.
 
 ## What the sandbox does
 
@@ -59,21 +57,13 @@ Linux sandbox implementation when you run in WSL2.
 
 On **Linux and WSL2**, install `bubblewrap` with your package manager first:
 
-
-
 ```bash
 sudo apt install bubblewrap
 ```
 
-
-
-
-
 ```bash
 sudo dnf install bubblewrap
 ```
-
-
 
 Codex uses the first `bwrap` executable it finds on `PATH`. If no `bwrap`
 executable is available, Codex falls back to a bundled helper, but that helper
@@ -86,9 +76,9 @@ AppArmor setting, prefer loading the `bwrap` AppArmor profile so `bwrap` can
 keep working without disabling the restriction globally.
 
 **Ubuntu AppArmor note:** On Ubuntu 25.04, installing `bubblewrap` from
-  Ubuntu's package repository should work without extra AppArmor setup. The
-  `bwrap-userns-restrict` profile ships in the `apparmor` package at
-  `/etc/apparmor.d/bwrap-userns-restrict`.
+Ubuntu's package repository should work without extra AppArmor setup. The
+`bwrap-userns-restrict` profile ships in the `apparmor` package at
+`/etc/apparmor.d/bwrap-userns-restrict`.
 
 On Ubuntu 24.04, Codex may still warn that it can't create the needed user
 namespace after `bubblewrap` is installed. Copy and load the extra profile:
@@ -170,12 +160,7 @@ Depending on your configuration, the menu can include **Ask for approval**,
 **Approve for me** for eligible approval requests, **Full access**, and named or
 custom permissions profiles.
 
-
-
-
 > Illustration: Codex approval mode selector in the IDE extension
-
-
 
 <a id="configure-defaults"></a>
 

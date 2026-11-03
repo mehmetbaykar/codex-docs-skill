@@ -6,8 +6,6 @@ path: /docs/security/plugin/export-findings
 
 # Export and track security findings
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Export findings from a completed scan to use them in another tool. To track
 remediation or coordinate disclosure, ask Codex to prepare an issue or a
 private draft GitHub Security Advisory.
@@ -34,19 +32,19 @@ from the plugin after making those changes. Open `exports/findings.csv` in
 the scan directory. The CLI exports the saved scan without local triage updates.
 
 <figure className="not-prose my-8">
-  <figcaption className="mt-3 text-sm text-secondary">
-    Open the coverage, findings, scan manifest, Markdown report, or SARIF
-    artifact from a completed scan.
-  </figcaption>
+<figcaption className="mt-3 text-sm text-secondary">
+  Open the coverage, findings, scan manifest, Markdown report, or SARIF
+  artifact from a completed scan.
+</figcaption>
 </figure>
 
 Select **Markdown report** to open `report.md` in your configured editor.
 
 <figure className="not-prose my-8">
-  <figcaption className="mt-3 text-sm text-secondary">
-    Review the scan scope, threat model, validated findings, and detailed report
-    links in the generated Markdown report.
-  </figcaption>
+<figcaption className="mt-3 text-sm text-secondary">
+  Review the scan scope, threat model, validated findings, and detailed report
+  links in the generated Markdown report.
+</figcaption>
 </figure>
 
 Keep the whole scan directory when you archive the report. Tracking requires
@@ -76,10 +74,10 @@ project. Creating an issue requires browse and create permissions. You need
 read access to reuse an existing issue and both read and edit access to update it.
 
 For a draft advisory, sign in to GitHub.com with GitHub CLI (`gh`) using an
-  account with administrator access to the public, non-fork source repository.
-  Select one finding from a scan whose target is a Git revision
-  (`git_revision`). Commit-diff scans don't qualify. Have the package name,
-  ecosystem, and affected versions ready.
+account with administrator access to the public, non-fork source repository.
+Select one finding from a scan whose target is a Git revision
+(`git_revision`). Commit-diff scans don't qualify. Have the package name,
+ecosystem, and affected versions ready.
 
 <a id="review-the-proposed-write"></a>
 

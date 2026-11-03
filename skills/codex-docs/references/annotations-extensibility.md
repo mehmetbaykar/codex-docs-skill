@@ -6,14 +6,12 @@ path: /docs/annotations-extensibility
 
 # Annotations Extensibility
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 The Browser Annotation API lets your website customize what people select,
 what context accompanies their feedback, and which controls they use to preview
 changes before sending an annotation to ChatGPT.
 
 In ChatGPT Enterprise and Edu workspaces, an admin must allow **Site
-  annotation customizations** through workspace policy.
+annotation customizations** through workspace policy.
 
 [Browser annotations](https://learn.chatgpt.com/docs/browser?surface=app#app-comment-on-the-page) work on your site without any code changes.
 People can select part of a page, add a comment, and send it in Context to Codex or ChatGPT Work.
@@ -35,8 +33,6 @@ See the Browser Annotation API in action on this guide.
 4. You can still annotate any item on the page and see default annotation behavior.
 
   [Open in ChatGPT's browser](https://chatgpt.com/codex/deeplink?url=https%3A%2F%2Flearn.chatgpt.com%2Fdocs%2Fannotations-extensibility)
-
-
 
 ## Choose what to customize
 
@@ -125,7 +121,7 @@ native actions on controls remain blocked during Annotation mode. Explicit
 `request()` calls keep their existing behavior.
 
 Text selection containers take effect only during Annotation mode when the
-  site annotation capability and per-site setting are enabled.
+site annotation capability and per-site setting are enabled.
 
 ## Add context to a selection
 
@@ -146,22 +142,14 @@ email address for a request to draft an email:
 </section>
 ```
 
-  **Try it**
+**Try it**
 
-
-        **Alex Morgan**
+      **Alex Morgan**
 
 Project lead
 
-
-
-
-
-      Select the contact in Annotation mode to see the email address included as
-      context.
-
-
-
+Select the contact in Annotation mode to see the email address included as
+context.
 
 Selecting either line selects the entire row. The metadata appears with the
 annotation and accompanies it in the conversation. Include only context you
@@ -227,31 +215,25 @@ paragraph selected and an editable comment. The person can edit, save, and send 
 their message. Opening an annotation doesn't send a message to ChatGPT; only
 the user can submit it.
 
-  **Try it**
+**Try it**
 
+    Standard delivery takes three to five business days.
 
+  <button
+    type="button"
+    className="annotation-prompt-button"
+    data-annotation-request-button
+    data-prompt="Explain this delivery estimate."
+  >
+    Explain more
+  </button>
 
-
-      Standard delivery takes three to five business days.
-
-
-    <button
-      type="button"
-      className="annotation-prompt-button"
-      data-annotation-request-button
-      data-prompt="Explain this delivery estimate."
-    >
-      Explain more
-    </button>
-
-    <p
-      className="annotation-try-it-hint"
-      data-annotation-request-feedback
-      role="status"
-      aria-live="polite"
-    >
-
-
+  <p
+    className="annotation-try-it-hint"
+    data-annotation-request-feedback
+    role="status"
+    aria-live="polite"
+  >
 
 Keep the call within the active user interaction. Awaiting a network request
 first can lose that interaction.
@@ -313,37 +295,28 @@ button.addEventListener("click", () => {
 });
 ```
 
-  **Try it**
+**Try it**
 
+    Your trial includes full access for
+    <mark data-example-target>14 days</mark>.
 
+    Open an annotation on just the highlighted words.
 
+  <button
+    type="button"
+    className="annotation-prompt-button"
+    data-example-request
+    data-prompt="Explain when this trial ends."
+  >
+    Ask about highlighted text
+  </button>
 
-      Your trial includes full access for
-      <mark data-example-target>14 days</mark>.
-
-
-
-
-      Open an annotation on just the highlighted words.
-
-
-    <button
-      type="button"
-      className="annotation-prompt-button"
-      data-example-request
-      data-prompt="Explain when this trial ends."
-    >
-      Ask about highlighted text
-    </button>
-
-    <p
-      className="annotation-try-it-hint"
-      data-example-feedback
-      role="status"
-      aria-live="polite"
-    >
-
-
+  <p
+    className="annotation-try-it-hint"
+    data-example-feedback
+    role="status"
+    aria-live="polite"
+  >
 
 The range must contain nonempty visible text in the current document, with at
 least part of the selection in the visible page area. It can contain at most
@@ -451,25 +424,18 @@ function disposeAnnotationControls() {
 }
 ```
 
-  **Try it**
+**Try it**
 
+  **Card padding (pixels)**
+    <article data-example-target oai-annotatable="">
+      Profile card
+    </article>
+    <article data-example-target oai-annotatable="">
+      Summary card
+    </article>
 
-    **Card padding (pixels)**
-      <article data-example-target oai-annotatable="">
-        Profile card
-      </article>
-      <article data-example-target oai-annotatable="">
-        Summary card
-      </article>
-
-
-
-
-      Select either card in Annotation mode, then change Card padding (pixels).
-      Select Adjust if needed. Both cards update together.
-
-
-
+    Select either card in Annotation mode, then change Card padding (pixels).
+    Select Adjust if needed. Both cards update together.
 
 Annotate either card and change **Card padding (pixels)** from 16 to 24. On
 hosted sites in ChatGPT, the controls appear automatically; in Codex or on
@@ -550,22 +516,14 @@ const pageBackgroundControl = {
 };
 ```
 
-  **Try it**
+**Try it**
 
-
-    **Page background**
+  **Page background**
 
 Page preview
 
-
-
-
-
-      Select the preview in Annotation mode, then change Page background. Select
-      Adjust if needed. The label stays the same as the color changes.
-
-
-
+Select the preview in Annotation mode, then change Page background. Select
+Adjust if needed. The label stays the same as the color changes.
 
 The supported control types are:
 
@@ -718,40 +676,28 @@ const surface = document.oai?.annotation?.registerSurface?.({
 });
 ```
 
-  **Try it**
+**Try it**
 
-
-
-
-      <canvas
-        className="annotation-canvas-preview"
-        data-example-canvas
-        oai-annotatable=""
-        width="640"
-        height="360"
-      >
+    <canvas
+      className="annotation-canvas-preview"
+      data-example-canvas
+      oai-annotatable=""
+      width="640"
+      height="360"
+    >
 
 Circle
 
-
 Triangle
-
 
 Square
 
-
 Star
 
-      </canvas>
+</canvas>
 
-
-
-
-      Enter Annotation mode, then select a shape to see its name, ID, and fill
-      color in the annotation. The space between shapes is not selectable.
-
-
-
+Enter Annotation mode, then select a shape to see its name, ID, and fill
+color in the annotation. The space between shapes is not selectable.
 
 In the code sample, selecting the bar in Annotation mode identifies it as
 `revenue-this-quarter`.

@@ -6,8 +6,6 @@ path: /docs/windows/windows-app
 
 # ChatGPT desktop app for Windows
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 The [ChatGPT desktop app for Windows](https://get.microsoft.com/installer/download/9PLM9XGG6VKS?cid=website_cta_psi) gives you one interface for
 working across projects, running parallel chats, and reviewing results.
 The Windows app supports core workflows such as worktrees, scheduled tasks, Git
@@ -15,8 +13,6 @@ functionality, the built-in browser, file previews, plugins, and skills.
 It runs natively on Windows using PowerShell and the
 [Windows sandbox](https://learn.chatgpt.com/docs/windows/windows-sandbox#windows-sandbox), or you can configure it to
 run in [Windows Subsystem for Linux 2 (WSL2)](#windows-subsystem-for-linux-wsl).
-
-
 
 > Illustration: ChatGPT desktop app for Windows showing a project sidebar, active chat, and review pane
 
@@ -40,13 +36,13 @@ winget install --id 9PLM9XGG6VKS -s msstore
 The ChatGPT desktop app on Windows supports a native [Windows sandbox](https://learn.chatgpt.com/docs/windows/windows-sandbox#windows-sandbox) when the agent runs in PowerShell, and uses Linux sandboxing when you run the agent in [Windows Subsystem for Linux 2 (WSL2)](#windows-subsystem-for-linux-wsl). To apply sandbox protections in either mode, select **Ask for approval** beneath the composer before sending messages to Codex.
 
 Running Codex in full access mode means Codex is not limited to your project
-  directory and might perform unintentional destructive actions that can lead to
-  data loss. Keep sandbox boundaries in place and use
-  [rules](https://learn.chatgpt.com/docs/agent-configuration/rules) for targeted exceptions, or set your
-  [approval policy to
-  never](https://learn.chatgpt.com/docs/agent-approvals-security#run-without-approval-prompts) to have
-  Codex attempt to solve problems without asking for escalated permissions,
-  based on your [approval and security setup](https://learn.chatgpt.com/docs/agent-approvals-security).
+directory and might perform unintentional destructive actions that can lead to
+data loss. Keep sandbox boundaries in place and use
+[rules](https://learn.chatgpt.com/docs/agent-configuration/rules) for targeted exceptions, or set your
+[approval policy to
+never](https://learn.chatgpt.com/docs/agent-approvals-security#run-without-approval-prompts) to have
+Codex attempt to solve problems without asking for escalated permissions,
+based on your [approval and security setup](https://learn.chatgpt.com/docs/agent-approvals-security).
 
 ## Customize for your dev setup
 
@@ -56,8 +52,6 @@ Choose a default app for **Open**, such as Visual Studio, VS Code, or another
 editor. You can override that choice per project. If you already picked a
 different app from the **Open** menu for a project, that project-specific
 choice takes precedence.
-
-
 
 > Illustration: ChatGPT desktop app settings showing the default Open In app on Windows
 
@@ -74,8 +68,6 @@ installed, options include:
 This change applies only to new terminal sessions. If you already have an
 integrated terminal open, restart the app or start a new chat before
 expecting the new default terminal to appear.
-
-
 
 > Illustration: ChatGPT desktop app settings showing the integrated terminal selection on Windows
 
@@ -102,8 +94,6 @@ place after restart.
 
 WSL1 was supported through Codex `0.114`. Starting in Codex `0.115`, the Linux
 sandbox moved to `bubblewrap`, so WSL1 is no longer supported.
-
-
 
 > Illustration: ChatGPT desktop app settings showing the agent selector with Windows native and WSL options
 

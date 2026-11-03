@@ -6,8 +6,6 @@ path: /docs/sign-in-with-chatgpt
 
 # Sign in with ChatGPT
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Sign in with ChatGPT lets you sign in to participating apps and sites with your
 ChatGPT account. In supported apps, eligible ChatGPT Plus and Pro subscribers can
 also choose to use their ChatGPT plan for AI requests.
@@ -17,144 +15,129 @@ can access before you connect it.
 
 ## Partners
 
-
-
-
 Apps with ChatGPT plan usage:
 
-    <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 [&>li>a]:block [&>li>a]:rounded-xl [&>li>a]:border [&>li>a]:border-default [&>li>a]:bg-surface-secondary [&>li>a]:px-4 [&>li>a]:py-4 [&>li>a]:text-center [&>li>a]:font-medium [&>li>a:hover]:underline">
-      <li>
-        [
+<ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 [&>li>a]:block [&>li>a]:rounded-xl [&>li>a]:border [&>li>a]:border-default [&>li>a]:bg-surface-secondary [&>li>a]:px-4 [&>li>a]:py-4 [&>li>a]:text-center [&>li>a]:font-medium [&>li>a:hover]:underline">
+  <li>
+    [
 Amp Code
 ](https://ampcode.com/auth/sign-in)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Conductor
 ](https://app.conductor.build/users/log_in)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Dactyl
 ](https://dactyl.dev/)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Devin
 ](https://app.devin.ai/login)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Hermes Agent
 ](https://portal.nousresearch.com/login)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Hyperagent
 ](https://hyperagent.com/login)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Kilo Code
 ](https://app.kilo.ai/users/sign_in)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Lovable (coming soon)
 ](https://lovable.dev/login)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Notion
 ](https://app.notion.com/login)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Vercel
 ](https://vercel.com/login)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Vorflux
 ](https://us1.vorflux.com/login)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Warp
 ](https://app.warp.dev/login)
-      </li>
-    </ul>
-
-
-
-
+</li>
+</ul>
 
 Apps with sign-in only:
 
+{
+  "These apps let you sign in with ChatGPT without using your ChatGPT plan."
+}
 
-
-      {
-        "These apps let you sign in with ChatGPT without using your ChatGPT plan."
-      }
-
-
-    <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 [&>li>a]:block [&>li>a]:rounded-xl [&>li>a]:border [&>li>a]:border-default [&>li>a]:bg-surface-secondary [&>li>a]:px-4 [&>li>a]:py-4 [&>li>a]:text-center [&>li>a]:font-medium [&>li>a:hover]:underline">
-      <li>
-        [
+<ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3 [&>li>a]:block [&>li>a]:rounded-xl [&>li>a]:border [&>li>a]:border-default [&>li>a]:bg-surface-secondary [&>li>a]:px-4 [&>li>a]:py-4 [&>li>a]:text-center [&>li>a]:font-medium [&>li>a:hover]:underline">
+<li>
+  [
 Airtable
 ](https://airtable.com/login)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Canva
 ](https://www.canva.com/login/)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 GitLab
 ](https://gitlab.com/users/sign_in)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 HubSpot
 ](https://app.hubspot.com/login)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Supabase
 ](https://supabase.com/dashboard/sign-in)
-      </li>
-    </ul>
-
-
-
-
+</li>
+</ul>
 
 Open-source integrations:
 
-    <ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-4 [&>li>a]:block [&>li>a]:rounded-xl [&>li>a]:border [&>li>a]:border-default [&>li>a]:bg-surface-secondary [&>li>a]:px-4 [&>li>a]:py-4 [&>li>a]:text-center [&>li>a]:font-medium [&>li>a:hover]:underline">
-      <li>
-        [
+<ul className="m-0 grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-4 [&>li>a]:block [&>li>a]:rounded-xl [&>li>a]:border [&>li>a]:border-default [&>li>a]:bg-surface-secondary [&>li>a]:px-4 [&>li>a]:py-4 [&>li>a]:text-center [&>li>a]:font-medium [&>li>a:hover]:underline">
+  <li>
+    [
 OpenClaw
 ](https://github.com/openclaw/openclaw)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 OpenCode
 ](https://github.com/anomalyco/opencode)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 Pi
 ](https://github.com/earendil-works/pi)
-      </li>
-      <li>
-        [
+</li>
+<li>
+  [
 T3
 ](https://github.com/pingdotgg/t3code)
-      </li>
-    </ul>
-
+</li>
+</ul>
 
 ## Sign in with ChatGPT
 

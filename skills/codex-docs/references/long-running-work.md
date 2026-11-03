@@ -6,8 +6,6 @@ path: /docs/long-running-work
 
 # Long-running work
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 For work that may take many steps, give ChatGPT a clear outcome, constraints,
 and definition of done. Keep related work in the same chat so
 ChatGPT can use the same context to choose the next step and decide when the
@@ -30,8 +28,6 @@ the same session to steer the work or ask for a status update.
 
 In the IDE extension chat, enter `/goal` to start Goal mode for the open
 workspace. Continue the same chat to steer the task while it runs.
-
-
 
 > Illustration: ChatGPT desktop app goal progress controls above the composer
 

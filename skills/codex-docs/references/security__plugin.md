@@ -6,26 +6,21 @@ path: /docs/security/plugin
 
 # Codex Security plugin quickstart
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Install the Codex Security plugin, run a standard scan of a local repository,
 and review its findings. The scan leaves your source unchanged and saves a
 report with evidence and remediation guidance.
 
 This page covers the Codex Security plugin in the desktop app or Codex CLI. To
-  scan a connected GitHub repository in Codex cloud, install the separate
-  **Codex Security Cloud** plugin from the plugin marketplace. See [Cloud
-  setup](https://learn.chatgpt.com/docs/security/setup).
+scan a connected GitHub repository in Codex cloud, install the separate
+**Codex Security Cloud** plugin from the plugin marketplace. See [Cloud
+setup](https://learn.chatgpt.com/docs/security/setup).
 
 ## Install the plugin
 
 1. Open [Codex in the ChatGPT desktop app](https://learn.chatgpt.com/docs/app).
 2. Open **Plugins**, search for **Codex Security**, or use the button below:
 
-
-
        Install the Codex Security plugin
-
 
 3. Confirm the plugin is enabled, then open **Security** in the sidebar.
 
@@ -44,8 +39,8 @@ For a personal account, see [plugin and app troubleshooting](https://help.openai
 3. Enter `/new` to start a new chat for the repository.
 
 If **Security** doesn't appear in the desktop-app sidebar, confirm that
-  **Codex** is selected and the plugin is enabled. Update the app and plugin if
-  needed, and check whether your workspace administrator allows the plugin.
+**Codex** is selected and the plugin is enabled. Update the app and plugin if
+needed, and check whether your workspace administrator allows the plugin.
 
 ### Check versions and updates
 
@@ -81,9 +76,9 @@ For the best scan quality, use `gpt-5.6-sol`
 with `xhigh` reasoning effort.
 
 <figure className="not-prose my-8">
-  <figcaption className="mt-3 text-sm text-secondary">
-    Choose a repository and configure a new security scan before you start it.
-  </figcaption>
+<figcaption className="mt-3 text-sm text-secondary">
+  Choose a repository and configure a new security scan before you start it.
+</figcaption>
 </figure>
 
 1. Open the scan setup

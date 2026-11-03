@@ -6,8 +6,6 @@ path: /docs/webmcp
 
 # Site tools
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Site tools are ChatGPT's implementation of the proposed
 [WebMCP standard](https://webmachinelearning.github.io/webmcp/). With WebMCP,
 a website can offer useful actions directly to an AI agent alongside the
@@ -18,8 +16,8 @@ In the [built-in browser](https://learn.chatgpt.com/docs/browser) in the ChatGPT
 Work and Codex can discover and use these tools when they are available.
 
 Site tools require a supported model and a page that provides tools. Your
-  account or your managed workspace's browser policy can grant access. Your
-  browser settings and site permissions still apply.
+account or your managed workspace's browser policy can grant access. Your
+browser settings and site permissions still apply.
 
 ## WebMCP vs. MCP
 

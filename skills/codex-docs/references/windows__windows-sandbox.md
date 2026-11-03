@@ -6,8 +6,6 @@ path: /docs/windows/windows-sandbox
 
 # Windows sandbox
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use Codex on Windows with the native [ChatGPT desktop app](https://learn.chatgpt.com/docs/windows/windows-app), the
 [CLI](https://learn.chatgpt.com/docs/codex/cli), or the [IDE extension](https://learn.chatgpt.com/docs/codex/ide).
 
@@ -20,8 +18,6 @@ requiring WSL or a virtual machine. This keeps Codex in Windows-native
 workflows while enforcing bounded filesystem and network permissions.
 
 For enterprise installation, see the [Windows Deployment Guide](https://learn.chatgpt.com/docs/enterprise/windows-deployment).
-
-
 
 > Illustration: ChatGPT desktop app Windows sandbox setup prompt above the message composer
 
@@ -131,13 +127,13 @@ Replace the identity and path with the employee's Windows identity and `CODEX_HO
 ### Sandbox permissions
 
 Running Codex in full access mode means Codex is not limited to your project
-  directory and might perform unintentional destructive actions that can lead to
-  data loss. For safer automation, keep sandbox boundaries in place and use
-  [rules](https://learn.chatgpt.com/docs/agent-configuration/rules) for specific exceptions, or set your
-  [approval policy to
-  never](https://learn.chatgpt.com/docs/agent-approvals-security#run-without-approval-prompts) to have
-  Codex attempt to solve problems without asking for escalated permissions,
-  based on your [approval and security setup](https://learn.chatgpt.com/docs/agent-approvals-security).
+directory and might perform unintentional destructive actions that can lead to
+data loss. For safer automation, keep sandbox boundaries in place and use
+[rules](https://learn.chatgpt.com/docs/agent-configuration/rules) for specific exceptions, or set your
+[approval policy to
+never](https://learn.chatgpt.com/docs/agent-approvals-security#run-without-approval-prompts) to have
+Codex attempt to solve problems without asking for escalated permissions,
+based on your [approval and security setup](https://learn.chatgpt.com/docs/agent-approvals-security).
 
 ### Windows version matrix
 

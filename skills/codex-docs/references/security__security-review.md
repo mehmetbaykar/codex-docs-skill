@@ -6,8 +6,6 @@ path: /docs/security/security-review
 
 # Security Review
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Codex Security Review is available to ChatGPT Enterprise, Business, Edu, and
 Pro customers. It isn't available on Plus. Security reviews consume included
 Codex allowance or ChatGPT credits.

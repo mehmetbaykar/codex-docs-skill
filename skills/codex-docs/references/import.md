@@ -6,8 +6,6 @@ path: /docs/import
 
 # Import from another agent
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use the import flow to bring instructions, settings, skills, plugins, projects,
 and recent work from another agent into the ChatGPT desktop app or Codex CLI.
 The desktop app can import from **Claude Code**, **Claude Cowork**,

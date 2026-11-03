@@ -6,8 +6,6 @@ path: /docs/plugins
 
 # Plugins
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 ## Overview
 
 Plugins bundle capabilities into reusable workflows in ChatGPT and Codex. They
@@ -29,10 +27,9 @@ Plugins marked **Desktop only** require the ChatGPT desktop app. You can discove
 but you must open the ChatGPT desktop app to install and use them. They aren't
 available on mobile.
 
-    {"For help installing and using plugins, see "}
-    [{"Plugins in ChatGPT and Codex"}](https://help.openai.com/articles/20001256)
-    {" in the Help Center."}
-
+{"For help installing and using plugins, see "}
+[{"Plugins in ChatGPT and Codex"}](https://help.openai.com/articles/20001256)
+{" in the Help Center."}
 
 Open the **Plugins** tab to browse and install plugins. After installation, you
 can use plugins in Chat or Work in ChatGPT, or in Codex. Installed plugins can

@@ -6,8 +6,6 @@ path: /docs/mobile
 
 # Codex on mobile
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 ## Start, guide, and review tasks from your phone
 
 Follow progress, approve actions, and send instructions from your phone. Codex runs tasks in the cloud or on a connected computer.

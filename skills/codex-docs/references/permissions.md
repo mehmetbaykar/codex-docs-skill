@@ -6,16 +6,14 @@ path: /docs/permissions
 
 # Permissions
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Beta. Permission profiles are under active development and may change.
 
 Permission profiles do not compose with the older sandbox settings. Configure
-  either `default_permissions` and `[permissions]`, or `sandbox_mode` /
-  `sandbox_workspace_write`, but not both. If `sandbox_mode` appears in any
-  loaded config file, you pass `--sandbox`, or the selected config profile sets
-  `sandbox_mode`, Codex uses those older sandbox settings instead of
-  `default_permissions`.
+either `default_permissions` and `[permissions]`, or `sandbox_mode` /
+`sandbox_workspace_write`, but not both. If `sandbox_mode` appears in any
+loaded config file, you pass `--sandbox`, or the selected config profile sets
+`sandbox_mode`, Codex uses those older sandbox settings instead of
+`default_permissions`.
 
 Managed `allowed_permission_profiles` is the exception: it makes Codex use
 permission profiles. Remove older settings such as
@@ -30,10 +28,10 @@ rules, which define what commands can read or write, with network rules, which
 define which destinations commands can reach.
 
 A profile's `network.enabled = true` permits command network access, but it
-  does not start the network proxy. To enforce profile domain rules, also set
-  `features.network_proxy = true` in `config.toml`, or use enabled,
-  administrator-managed `[experimental_network]` requirements. Without an active
-  proxy, profile domain rules do not restrict direct network access.
+does not start the network proxy. To enforce profile domain rules, also set
+`features.network_proxy = true` in `config.toml`, or use enabled,
+administrator-managed `[experimental_network]` requirements. Without an active
+proxy, profile domain rules do not restrict direct network access.
 
 Use profiles to give Codex enough access for the current chat without granting
 broad access to your machine or network. For example, a read-only profile can

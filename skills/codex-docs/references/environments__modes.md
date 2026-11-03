@@ -6,8 +6,6 @@ path: /docs/environments/modes
 
 # Codex environments
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 In the ChatGPT desktop app, open the ChatGPT dropdown and select **Codex**.
 When starting a Codex chat, choose where it runs:
 
@@ -44,7 +42,5 @@ Your computer's local files, running processes, browser sign-ins, and VPN access
 aren't automatically transferred to it.
 
 For more terms, see [Codex concepts](https://learn.chatgpt.com/docs/prompting).
-
-
 
 > Illustration: Desktop composer with the Work in menu open to This computer and Cloud, and a separate Worktree option

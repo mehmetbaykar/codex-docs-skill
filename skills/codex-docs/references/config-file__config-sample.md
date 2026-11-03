@@ -6,8 +6,6 @@ path: /docs/config-file/config-sample
 
 # Sample Configuration
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 This sample describes Codex configuration. For Local computer access with Work Cloud, use the [Configuration Reference](https://learn.chatgpt.com/docs/config-file/config-reference) to check which settings apply.
 
 For Work with local access and dots, supported Global policy governs the shared cloud orchestrator when managed policy is enabled; applicable local execution requirements govern the connected computer. Work cloud containers use existing Work Cloud policies. For local execution, MDM and legacy managed-device requirements take precedence over Agent Security, which takes precedence over the device's system requirements file. See [Managed configuration](https://learn.chatgpt.com/docs/enterprise/managed-configuration) for policy order, field-specific merge rules, and network limits.

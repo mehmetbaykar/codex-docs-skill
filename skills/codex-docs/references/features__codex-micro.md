@@ -6,22 +6,12 @@ path: /docs/features/codex-micro
 
 # Codex Micro
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Codex Micro is a limited-run collaboration between Codex and Work Louder. It
 works with the ChatGPT desktop app, giving you a quick way to check on chats,
 jump between them, use voice input, and trigger common actions or skills without
 leaving the keyboard.
 
-
-
-
-
-
-
 > Illustration: Interactive Codex Micro keyboard with illuminated Agent Keys, customizable Command Keys, a dial, and an analog stick
-
-
 
 ## Set up Codex Micro
 
@@ -110,8 +100,6 @@ assignments**, an Agent Key can trigger an action instead.
 
 Codex Micro comes with six actions in its default layout:
 
-
-
 |                            Key                            | Default action                           |
 | :-------------------------------------------------------: | ---------------------------------------- |
 |     | Turn Fast mode on or off.                |
@@ -120,10 +108,6 @@ Codex Micro comes with six actions in its default layout:
 |    | Continue the current chat in a new chat. |
 |       | Start push-to-talk.                      |
 |   | Send the message in the composer.        |
-
-
-
-
 
 The Mic key uses your computer's microphone. Codex Micro doesn't have a
 microphone of its own. By default, it uses **Push to talk**: hold the key while
@@ -150,11 +134,7 @@ After you remap a key, swap the physical keycap to match its new action.
 Select **Reset layout** to restore the default Command Key and analog stick
 assignments without changing the Agent Key mode or custom chat assignments.
 
-
-
 ## Use the analog stick and dial
-
-
 
 The analog stick moves freely in any direction. When you push it far enough
 from the center, ChatGPT turns the movement into one of four directional
@@ -163,18 +143,12 @@ actions. Codex Micro starts with the mappings shown here.
 Choose any available ChatGPT desktop command or enabled skill for each
 direction in the device settings.
 
-
-
-
-
 | Direction | Default action             |
 | --------- | -------------------------- |
 | Up        | Turn Plan mode on or off.  |
 | Right     | Go forward in app history. |
 | Down      | Show or hide the sidebar.  |
 | Left      | Go back in app history.    |
-
-
 
 The dial uses **Composer navigation** by default. Turn it to move through
 composer controls and options, then press it to open or select the focused

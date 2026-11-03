@@ -6,8 +6,6 @@ path: /docs/security/plugin/fix-findings
 
 # Fix and verify security findings
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Start with one finding whose evidence you accept. Generate a patch,
 review it, and verify the original issue against the changed code. A generated
 or applied patch isn't yet a verified fix.
@@ -54,9 +52,9 @@ a fix.
    reason or keep it open for more work.
 
 <figure className="not-prose my-8">
-  <figcaption className="mt-3 text-sm text-secondary">
-    Review the generated security fix before applying it to your checkout.
-  </figcaption>
+<figcaption className="mt-3 text-sm text-secondary">
+  Review the generated security fix before applying it to your checkout.
+</figcaption>
 </figure>
 
 ## Fix a finding in a conversation

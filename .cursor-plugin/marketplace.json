@@ -1,0 +1,16 @@
+{
+  "name": "codex-docs-skill",
+  "owner": {
+    "name": "Mehmet Baykar"
+  },
+  "metadata": {
+    "description": "Unofficial Codex documentation mirror packaged as an Agent Skill."
+  },
+  "plugins": [
+    {
+      "name": "codex-docs",
+      "source": "./",
+      "description": "Answers OpenAI Codex questions from a local mirror of the official documentation, recipes, and guides, refreshed every 3 hours."
+    }
+  ]
+}

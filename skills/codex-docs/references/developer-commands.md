@@ -6,8 +6,6 @@ path: /docs/developer-commands
 
 # Developer commands
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 ChatGPT web has its own composer command menu. Type `/` to see the actions
 available in the current chat. It doesn't expose the ChatGPT desktop app or CLI
 command set; the Codex slash commands, CLI commands, and flags in this
@@ -28,10 +26,10 @@ available from the app composer, including `/feedback`, `/goal`, `/init`,
 This page catalogs every documented Codex CLI command and flag. Use the interactive tables to search by key or description. Each section shows the option's maturity and flags deprecated options and risky combinations.
 
 The CLI inherits most defaults from `~/.codex/config.toml`. Any
-  `-c key=value` overrides you pass at the command line take
-  precedence for that invocation. See [Config
-  basics](https://learn.chatgpt.com/docs/config-file/config-basic#configuration-precedence) for more
-  information.
+`-c key=value` overrides you pass at the command line take
+precedence for that invocation. See [Config
+basics](https://learn.chatgpt.com/docs/config-file/config-basic#configuration-precedence) for more
+information.
 
 ## Global flags
 
@@ -43,8 +41,8 @@ applies `--oss` to `exec`.
 ## Command overview
 
 The Maturity column uses feature maturity labels such as Experimental, Beta,
-  Stable, and Deprecated. See [Feature Maturity](https://learn.chatgpt.com/docs/feature-maturity) for
-  how to interpret these labels.
+Stable, and Deprecated. See [Feature Maturity](https://learn.chatgpt.com/docs/feature-maturity) for
+how to interpret these labels.
 
 ## Command details
 
@@ -52,12 +50,12 @@ The Maturity column uses feature maturity labels such as Experimental, Beta,
 
 Running `codex` with no subcommand launches the interactive terminal UI (TUI). The agent accepts the global flags above plus image attachments. Web search defaults to cached mode; use `--search` to switch to live browsing. For low-friction local work, use `--sandbox workspace-write --ask-for-approval on-request`.
 
-Use `--remote ws://host:port` or `--remote wss://host:port` to connect the TUI to an app server started with `codex app-server --listen ws://IP:PORT`. For a local Unix socket, use `--remote unix://` for the default socket or `--remote unix://PATH` for an explicit path. Add `--remote-auth-token-env ` when the server requires a bearer token for WebSocket authentication.
+Use `--remote ws://host:port` or `--remote wss://host:port` to connect the TUI to an app server started with `codex app-server --listen ws://IP:PORT`. For a local Unix socket, use `--remote unix://` for the default socket or `--remote unix://PATH` for an explicit path. Add `--remote-auth-token-env <ENV_VAR>` when the server requires a bearer token for WebSocket authentication.
 
 ### `codex agents`
 
 Open the command center to browse chats and switch between agents on a shared
-server. Use `--remote ` to connect to a remote server and `--cd ` to
+server. Use `--remote <URL>` to connect to a remote server and `--cd <DIR>` to
 set the directory for new remote tasks. `codex agents` doesn't support
 `--no-daemon`.
 
@@ -210,7 +208,7 @@ Use `codex exec` (or the short form `codex e`) for scripted or CI-style runs tha
 
 Codex writes formatted output by default. Add `--json` to receive newline-delimited JSON events (one per state change). The optional `resume` subcommand lets you continue non-interactive tasks. Use `--last` to pick the most recent session from the current working directory, or add `--all` to search across all sessions:
 
-Use `codex exec fork  [PROMPT]` to copy a saved session into a new
+Use `codex exec fork <SESSION_ID> [PROMPT]` to copy a saved session into a new
 session. The session argument accepts a UUID or name. With no prompt, Codex
 creates the fork without starting a turn. Pass `-` as the prompt to read it from
 stdin, or add `--image` to attach images.
@@ -285,7 +283,7 @@ with `name`, `root`, and optional `marketplaceSource`; upgrade JSON includes
 ### `codex mcp-server`
 
 The `codex mcp-server` command and standalone `codex-mcp-server` binary have
-  been removed. Use the [Codex app server](https://learn.chatgpt.com/docs/app-server) instead.
+been removed. Use the [Codex app server](https://learn.chatgpt.com/docs/app-server) instead.
 
 ### `codex resume`
 
@@ -304,7 +302,7 @@ Fork a previous interactive session into a new chat. By default, `codex fork` op
 When the current and saved session directories differ, `codex fork` uses the
 same working-directory prompt and `tui.resume_cwd` setting as `codex resume`.
 
-To fork into a managed Git worktree, run `codex fork  --worktree`.
+To fork into a managed Git worktree, run `codex fork <SESSION_ID> --worktree`.
 This requires an explicit session ID and local execution; it doesn't support
 `--last` or the session picker.
 
@@ -663,7 +661,7 @@ chat. Codex disables both actions while a task is in progress.
 Expected: Codex archives the session and returns to the command center when
 connected to a local background server or remote server. Without a shared
 server, Codex exits. Codex keeps the transcript; restore it later with
-`codex unarchive `.
+`codex unarchive <SESSION>`.
 
 If a turn is running, confirming `/archive` stops that turn before archiving.
 

@@ -6,8 +6,6 @@ path: /docs/model-selection
 
 # Model selection
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 ## Meet the models
 
 Availability, tools, reasoning settings, and usage limits differ by product and
@@ -42,10 +40,10 @@ for access through your ChatGPT plan.
 
 ## How to think about models and reasoning effort
 
-  Luna is our most efficient model, while Astra is our state-of-the-art, most
-  powerful model. If you don't need to think about usage or how long it takes to
-  complete a task, you can default to Astra. To optimize usage, use the guidance
-  below to choose a model and reasoning effort for your needs.
+Luna is our most efficient model, while Astra is our state-of-the-art, most
+powerful model. If you don't need to think about usage or how long it takes to
+complete a task, you can default to Astra. To optimize usage, use the guidance
+below to choose a model and reasoning effort for your needs.
 
 1. **Luna · Low**
 
