@@ -6,8 +6,6 @@ path: /docs/config-file/config-basic
 
 # Config basics
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Codex reads configuration details from more than one location. Your personal defaults live in `~/.codex/config.toml`, and you can add project overrides with `.codex/config.toml` files. For security, Codex loads project `.codex/` layers only when you trust the project.
 
 ## Codex configuration file
@@ -54,10 +52,10 @@ If you mark a project as untrusted, Codex skips project-scoped `.codex/` layers,
 For one-off overrides via `-c`/`--config` (including TOML quoting rules), see [Advanced Config](https://learn.chatgpt.com/docs/config-file/config-advanced#one-off-overrides-from-the-cli).
 
 On managed machines, your organization may also enforce constraints via
-  `requirements.toml` (for example, disallowing `approval_policy = "never"` or
-  `sandbox_mode = "danger-full-access"`). See [Managed
-  configuration](https://learn.chatgpt.com/docs/enterprise/managed-configuration) and [Admin-enforced
-  requirements](https://learn.chatgpt.com/docs/enterprise/managed-configuration#admin-enforced-requirements-requirementstoml).
+`requirements.toml` (for example, disallowing `approval_policy = "never"` or
+`sandbox_mode = "danger-full-access"`). See [Managed
+configuration](https://learn.chatgpt.com/docs/enterprise/managed-configuration) and [Admin-enforced
+requirements](https://learn.chatgpt.com/docs/enterprise/managed-configuration#admin-enforced-requirements-requirementstoml).
 
 ## Common configuration options
 
@@ -222,9 +220,9 @@ Use the `[features]` table in `config.toml` to toggle optional and experimental 
 | `web_search_request` |  false  | Deprecated | Legacy toggle that maps to `web_search = "live"` when unset                              |
 
 This table lists common user-facing flags, not every internal or
-  under-development feature. The Maturity column uses labels such as
-  Experimental, Beta, and Stable. See [Feature
-  Maturity](https://learn.chatgpt.com/docs/feature-maturity) for how to interpret these labels.
+under-development feature. The Maturity column uses labels such as
+Experimental, Beta, and Stable. See [Feature
+Maturity](https://learn.chatgpt.com/docs/feature-maturity) for how to interpret these labels.
 
 Omit feature keys to keep their defaults.
 

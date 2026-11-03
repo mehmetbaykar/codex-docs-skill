@@ -6,8 +6,6 @@ path: /docs/code-review
 
 # Code review
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use ChatGPT or Codex to understand code changes, investigate potential issues,
 and prepare review feedback.
 
@@ -256,8 +254,6 @@ Review findings appear as inline comments in the review pane.
 Reviews run in the current chat by default. Under **Settings** > **General** >
 **Code review**, choose **Detached** to start a separate review chat. See
 [developer settings](https://learn.chatgpt.com/docs/developer-settings?surface=app#app-code-review).
-
-
 
 > Illustration: Inline code review comments displayed in the review pane
 

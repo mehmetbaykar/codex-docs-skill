@@ -1,10 +1,10 @@
 # Codex Docs Index
 
-Local mirror of OpenAI Codex documentation from https://learn.chatgpt.com/docs.
+Local mirror of the Codex documentation from https://learn.chatgpt.com/docs.
 
-Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/codex-docs hooks` in Claude Code.
+Invoke this skill with a topic: `/codex-docs hooks` in Claude Code or Cursor, `$codex-docs hooks` in Codex.
 
-## Topics
+## Documentation
 
 - `administration` - [Administration](https://learn.chatgpt.com/docs/administration)
 - `agent-approvals-security` - [Agent approvals & security](https://learn.chatgpt.com/docs/agent-approvals-security)
@@ -16,8 +16,6 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `annotations-extensibility` - [Annotations Extensibility](https://learn.chatgpt.com/docs/annotations-extensibility)
 - `app-server` - [Codex App Server](https://learn.chatgpt.com/docs/app-server)
 - `app` - [ChatGPT desktop app](https://learn.chatgpt.com/docs/app)
-- `appshots` - [Appshots](https://learn.chatgpt.com/docs/appshots)
-- `artifacts-viewer` - [Work with files](https://learn.chatgpt.com/docs/artifacts-viewer)
 - `auth` - [Authentication](https://learn.chatgpt.com/docs/auth)
 - `automations` - [Scheduled tasks](https://learn.chatgpt.com/docs/automations)
 - `browser` - [Browser](https://learn.chatgpt.com/docs/browser)
@@ -48,12 +46,6 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `developer-commands` - [Developer commands](https://learn.chatgpt.com/docs/developer-commands)
 - `developer-settings` - [Developer settings](https://learn.chatgpt.com/docs/developer-settings)
 - `developers` - [Developers](https://learn.chatgpt.com/docs/developers)
-- `dots` - [Meet dots](https://learn.chatgpt.com/docs/dots)
-- `dots__channels` - [Message your dot](https://learn.chatgpt.com/docs/dots/channels)
-- `dots__computers-and-apps` - [Connect computers and apps to your dot](https://learn.chatgpt.com/docs/dots/computers-and-apps)
-- `dots__controls` - [Control your dot](https://learn.chatgpt.com/docs/dots/controls)
-- `dots__getting-started` - [Get started with your dot](https://learn.chatgpt.com/docs/dots/getting-started)
-- `dots__tasks-and-memory` - [Tasks and memory](https://learn.chatgpt.com/docs/dots/tasks-and-memory)
 - `environments__cloud-environment` - [Codex Cloud (Legacy)](https://learn.chatgpt.com/docs/environments/cloud-environment)
 - `environments__cloud-environments` - [Cloud environments](https://learn.chatgpt.com/docs/environments/cloud-environments)
 - `environments__git-worktrees` - [Worktrees](https://learn.chatgpt.com/docs/environments/git-worktrees)
@@ -67,11 +59,9 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `features__codex-micro` - [Codex Micro](https://learn.chatgpt.com/docs/features/codex-micro)
 - `features__composer-predictions` - [Composer Predictions](https://learn.chatgpt.com/docs/features/composer-predictions)
 - `features__voice` - [ChatGPT Voice](https://learn.chatgpt.com/docs/features/voice)
-- `get-started-with-work` - [Get started with ChatGPT Work](https://learn.chatgpt.com/docs/get-started-with-work)
 - `github-action` - [Codex GitHub Action](https://learn.chatgpt.com/docs/github-action)
 - `glossary` - [Glossary](https://learn.chatgpt.com/docs/glossary)
 - `hooks` - [Hooks](https://learn.chatgpt.com/docs/hooks)
-- `image-generation` - [Image generation](https://learn.chatgpt.com/docs/image-generation)
 - `image-inputs` - [Image inputs](https://learn.chatgpt.com/docs/image-inputs)
 - `import` - [Import from another agent](https://learn.chatgpt.com/docs/import)
 - `integrated-terminal` - [Integrated terminal](https://learn.chatgpt.com/docs/integrated-terminal)
@@ -88,8 +78,6 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `open-source` - [Open Source](https://learn.chatgpt.com/docs/open-source)
 - `permission-modes` - [Permissions](https://learn.chatgpt.com/docs/permission-modes)
 - `permissions` - [Permissions](https://learn.chatgpt.com/docs/permissions)
-- `personalize` - [Personalize ChatGPT](https://learn.chatgpt.com/docs/personalize)
-- `pets` - [Pets](https://learn.chatgpt.com/docs/pets)
 - `plugins` - [Plugins](https://learn.chatgpt.com/docs/plugins)
 - `pricing` - [Pricing](https://learn.chatgpt.com/docs/pricing)
 - `projects` - [Projects and chats](https://learn.chatgpt.com/docs/projects)
@@ -127,30 +115,15 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `security__setup` - [Codex Security Cloud setup](https://learn.chatgpt.com/docs/security/setup)
 - `security__threat-model` - [Improve the Cloud threat model](https://learn.chatgpt.com/docs/security/threat-model)
 - `sign-in-with-chatgpt` - [Sign in with ChatGPT](https://learn.chatgpt.com/docs/sign-in-with-chatgpt)
-- `sites` - [Sites](https://learn.chatgpt.com/docs/sites)
-- `sites__creating-a-site` - [Create a site](https://learn.chatgpt.com/docs/sites/creating-a-site)
-- `sites__data-and-connections` - [Data and connections](https://learn.chatgpt.com/docs/sites/data-and-connections)
-- `sites__managing-a-site` - [Manage a site](https://learn.chatgpt.com/docs/sites/managing-a-site)
-- `sites__publishing-and-sharing` - [Publish and share](https://learn.chatgpt.com/docs/sites/publishing-and-sharing)
 - `skills-and-plugins` - [Skills & Plugins](https://learn.chatgpt.com/docs/skills-and-plugins)
-- `space` - [ChatGPT Space](https://learn.chatgpt.com/docs/space)
-- `space__agents` - [Work with agents in Space](https://learn.chatgpt.com/docs/space/agents)
-- `space__collaboration` - [Collaborate in Space](https://learn.chatgpt.com/docs/space/collaboration)
-- `space__getting-started` - [Get started with ChatGPT Space](https://learn.chatgpt.com/docs/space/getting-started)
-- `space__pages` - [Work with pages](https://learn.chatgpt.com/docs/space/pages)
 - `third-party__github` - [Review GitHub pull requests with Codex](https://learn.chatgpt.com/docs/third-party/github)
 - `third-party__gitlab` - [Review GitLab merge requests with Codex](https://learn.chatgpt.com/docs/third-party/gitlab)
 - `third-party__linear` - [Use Codex in Linear](https://learn.chatgpt.com/docs/third-party/linear)
 - `third-party__slack` - [Use ChatGPT in Slack](https://learn.chatgpt.com/docs/third-party/slack)
-- `use-chatgpt` - [Use ChatGPT](https://learn.chatgpt.com/docs/use-chatgpt)
-- `visualizations` - [Visualizations](https://learn.chatgpt.com/docs/visualizations)
 - `web-search` - [Web search](https://learn.chatgpt.com/docs/web-search)
-- `web` - [ChatGPT on the web](https://learn.chatgpt.com/docs/web)
 - `webmcp` - [Site tools](https://learn.chatgpt.com/docs/webmcp)
 - `whats-new` - [What's new](https://learn.chatgpt.com/docs/whats-new)
 - `whats-new__devday-2026` - [DevDay 2026](https://learn.chatgpt.com/docs/whats-new/devday-2026)
-- `whats-new__dots-october-28-2026` - [Text your dot](https://learn.chatgpt.com/docs/whats-new/dots-october-28-2026)
-- `whats-new__dots-october-9-2026` - [Create your dot in the ChatGPT mobile app](https://learn.chatgpt.com/docs/whats-new/dots-october-9-2026)
 - `whats-new__october-26-30-2026` - [October 26–30, 2026](https://learn.chatgpt.com/docs/whats-new/october-26-30-2026)
 - `whats-new__october-5-9-2026` - [October 5–9, 2026](https://learn.chatgpt.com/docs/whats-new/october-5-9-2026)
 - `whats-new__september-28-october-2-2026` - [September 28–October 2, 2026](https://learn.chatgpt.com/docs/whats-new/september-28-october-2-2026)
@@ -158,7 +131,70 @@ Invoke this skill with a topic, for example `$codex-docs hooks` in Codex or `/co
 - `windows__windows-sandbox` - [Windows sandbox](https://learn.chatgpt.com/docs/windows/windows-sandbox)
 - `windows__wsl` - [WSL](https://learn.chatgpt.com/docs/windows/wsl)
 
-## Skipped Sitemap Pages
+## Recipes
 
-- `/docs` - No .md endpoint and no special fetcher
-- `/docs/screenshot-review` - No .md endpoint and no special fetcher
+- `use-cases__agent-friendly-clis` - [Create a CLI Codex can use](https://learn.chatgpt.com/use-cases/agent-friendly-clis)
+- `use-cases__ai-app-evals` - [Add evals to your AI application](https://learn.chatgpt.com/use-cases/ai-app-evals)
+- `use-cases__api-integration-migrations` - [Upgrade your API integration](https://learn.chatgpt.com/use-cases/api-integration-migrations)
+- `use-cases__automate-security-reviews-in-github-cloud` - [Automate security reviews in GitHub Cloud](https://learn.chatgpt.com/use-cases/automate-security-reviews-in-github-cloud)
+- `use-cases__automate-security-scans-in-ci` - [Automate security scans in CI](https://learn.chatgpt.com/use-cases/automate-security-scans-in-ci)
+- `use-cases__automation-bug-triage` - [Automate bug triage](https://learn.chatgpt.com/use-cases/automation-bug-triage)
+- `use-cases__browser-games` - [Create browser-based games](https://learn.chatgpt.com/use-cases/browser-games)
+- `use-cases__build-an-ai-tour-guide` - [Build an AI tour guide](https://learn.chatgpt.com/use-cases/build-an-ai-tour-guide)
+- `use-cases__code-migrations` - [Run code migrations](https://learn.chatgpt.com/use-cases/code-migrations)
+- `use-cases__codebase-onboarding` - [Understand large codebases](https://learn.chatgpt.com/use-cases/codebase-onboarding)
+- `use-cases__collections__game-development` - [Game development](https://learn.chatgpt.com/use-cases/collections/game-development)
+- `use-cases__collections__native-development` - [Native development](https://learn.chatgpt.com/use-cases/collections/native-development)
+- `use-cases__collections__production-systems` - [Production systems](https://learn.chatgpt.com/use-cases/collections/production-systems)
+- `use-cases__collections__security` - [Security](https://learn.chatgpt.com/use-cases/collections/security)
+- `use-cases__collections__web-development` - [Web development](https://learn.chatgpt.com/use-cases/collections/web-development)
+- `use-cases__create-custom-review-workflows-with-github-actions` - [Create custom review workflows with GitHub Actions](https://learn.chatgpt.com/use-cases/create-custom-review-workflows-with-github-actions)
+- `use-cases__deep-security-scan` - [Run a deep security scan](https://learn.chatgpt.com/use-cases/deep-security-scan)
+- `use-cases__dependency-incident-audits` - [Audit dependency incidents](https://learn.chatgpt.com/use-cases/dependency-incident-audits)
+- `use-cases__deploy-app-or-website` - [Deploy an app or website](https://learn.chatgpt.com/use-cases/deploy-app-or-website)
+- `use-cases__discover-protein-folding-architectures` - [Discover protein folding models](https://learn.chatgpt.com/use-cases/discover-protein-folding-architectures)
+- `use-cases__figma-designs-to-code` - [Turn Figma designs into code](https://learn.chatgpt.com/use-cases/figma-designs-to-code)
+- `use-cases__find-vulnerabilities-in-your-code` - [Run your first security scan](https://learn.chatgpt.com/use-cases/find-vulnerabilities-in-your-code)
+- `use-cases__fix-a-finding-from-your-security-scan` - [Fix a finding from your security scan](https://learn.chatgpt.com/use-cases/fix-a-finding-from-your-security-scan)
+- `use-cases__follow-goals` - [Follow a goal](https://learn.chatgpt.com/use-cases/follow-goals)
+- `use-cases__frontend-designs` - [Build responsive front-end designs](https://learn.chatgpt.com/use-cases/frontend-designs)
+- `use-cases__getting-started-with-daybreak-blue` - [Getting Started with Daybreak Blue.](https://learn.chatgpt.com/use-cases/getting-started-with-daybreak-blue)
+- `use-cases__github-code-reviews` - [Review GitHub pull requests](https://learn.chatgpt.com/use-cases/github-code-reviews)
+- `use-cases__idea-to-proof-of-concept` - [Get from idea to proof of concept](https://learn.chatgpt.com/use-cases/idea-to-proof-of-concept)
+- `use-cases__incident-to-tested-fix` - [Investigate an incident and test a fix](https://learn.chatgpt.com/use-cases/incident-to-tested-fix)
+- `use-cases__ios-app-intents` - [Add iOS app intents](https://learn.chatgpt.com/use-cases/ios-app-intents)
+- `use-cases__ios-liquid-glass` - [Adopt liquid glass](https://learn.chatgpt.com/use-cases/ios-liquid-glass)
+- `use-cases__ios-simulator-bug-debugging` - [Debug in iOS simulator](https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging)
+- `use-cases__ios-swiftui-view-refactor` - [Refactor SwiftUI screens](https://learn.chatgpt.com/use-cases/ios-swiftui-view-refactor)
+- `use-cases__issue-to-tested-pr` - [Turn an issue into a tested pull request](https://learn.chatgpt.com/use-cases/issue-to-tested-pr)
+- `use-cases__iterate-on-difficult-problems` - [Iterate on difficult problems](https://learn.chatgpt.com/use-cases/iterate-on-difficult-problems)
+- `use-cases__macos-sidebar-detail-inspector` - [Build a Mac app shell](https://learn.chatgpt.com/use-cases/macos-sidebar-detail-inspector)
+- `use-cases__macos-telemetry-logs` - [Add Mac telemetry](https://learn.chatgpt.com/use-cases/macos-telemetry-logs)
+- `use-cases__manage-supply-chain-risk-in-cicd` - [Manage supply chain risk in the CI/CD](https://learn.chatgpt.com/use-cases/manage-supply-chain-risk-in-cicd)
+- `use-cases__migrate-a-validation-module` - [Migrate a validation module](https://learn.chatgpt.com/use-cases/migrate-a-validation-module)
+- `use-cases__native-ios-apps` - [Build for iOS](https://learn.chatgpt.com/use-cases/native-ios-apps)
+- `use-cases__native-macos-apps` - [Build for macOS](https://learn.chatgpt.com/use-cases/native-macos-apps)
+- `use-cases__qa-your-app-with-computer-use` - [QA your app with Computer Use](https://learn.chatgpt.com/use-cases/qa-your-app-with-computer-use)
+- `use-cases__react-native-expo-apps` - [Build React Native apps with Expo](https://learn.chatgpt.com/use-cases/react-native-expo-apps)
+- `use-cases__refactor-your-codebase` - [Refactor your codebase](https://learn.chatgpt.com/use-cases/refactor-your-codebase)
+- `use-cases__remediate-vulnerability-backlog` - [Remediate a vulnerability backlog](https://learn.chatgpt.com/use-cases/remediate-vulnerability-backlog)
+- `use-cases__reusable-codex-skills` - [Save workflows as skills](https://learn.chatgpt.com/use-cases/reusable-codex-skills)
+- `use-cases__review-code-changes-in-codex-desktop` - [Review code changes in Codex Desktop](https://learn.chatgpt.com/use-cases/review-code-changes-in-codex-desktop)
+- `use-cases__run-security-reviews-from-the-cli` - [Run security reviews from the CLI](https://learn.chatgpt.com/use-cases/run-security-reviews-from-the-cli)
+- `use-cases__scan-code-changes-for-security` - [Scan code changes for security](https://learn.chatgpt.com/use-cases/scan-code-changes-for-security)
+- `use-cases__scan-multiple-repositories` - [Scan multiple repositories](https://learn.chatgpt.com/use-cases/scan-multiple-repositories)
+- `use-cases__set-up-security-context` - [Set up security context](https://learn.chatgpt.com/use-cases/set-up-security-context)
+- `use-cases__slack-coding-tasks` - [Kick off coding tasks from Slack](https://learn.chatgpt.com/use-cases/slack-coding-tasks)
+- `use-cases__update-documentation` - [Keep documentation up-to-date](https://learn.chatgpt.com/use-cases/update-documentation)
+- `use-cases__user-stories-to-ui-mocks` - [Turn user stories into UI mocks](https://learn.chatgpt.com/use-cases/user-stories-to-ui-mocks)
+
+## Guides
+
+- `guides__best-practices` - [Best practices](https://learn.chatgpt.com/guides/best-practices)
+- `guides__build-ai-native-engineering-team` - [Building an AI-Native Engineering Team](https://learn.chatgpt.com/guides/build-ai-native-engineering-team)
+
+## Skipped Pages
+
+- `/docs` - No .md endpoint
+- `/docs/screenshot-review` - No .md endpoint
+- `/use-cases/collections` - No .md endpoint

@@ -1,0 +1,18 @@
+{
+  "name": "codex-docs",
+  "version": "2026.1103.1808",
+  "description": "Answers OpenAI Codex questions from a local mirror of the official documentation, recipes, and guides, refreshed every 3 hours.",
+  "author": {
+    "name": "Mehmet Baykar"
+  },
+  "homepage": "https://github.com/mehmetbaykar/codex-docs-skill",
+  "repository": "https://github.com/mehmetbaykar/codex-docs-skill",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "openai",
+    "documentation",
+    "agent-skills"
+  ],
+  "skills": "./skills/"
+}

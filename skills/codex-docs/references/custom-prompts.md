@@ -6,10 +6,8 @@ path: /docs/custom-prompts
 
 # Custom Prompts
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Custom prompts are deprecated. Use [skills](https://learn.chatgpt.com/docs/build-skills) for reusable
-  instructions that Codex can invoke explicitly or implicitly.
+instructions that Codex can invoke explicitly or implicitly.
 
 Custom prompts (deprecated) let you turn Markdown files into reusable prompts that you can invoke as slash commands in both the Codex CLI and the Codex IDE extension.
 

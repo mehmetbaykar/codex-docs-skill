@@ -6,12 +6,10 @@ path: /docs/cloud/internet-access
 
 # Codex Cloud (Legacy): internet access
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 These settings apply to [Codex Cloud
-  (Legacy)](https://learn.chatgpt.com/docs/environments/cloud-environment). For the current Codex Cloud
-  experience, see [Connect to
-  services](https://learn.chatgpt.com/docs/environments/cloud-environments#connect-to-services).
+(Legacy)](https://learn.chatgpt.com/docs/environments/cloud-environment). For the current Codex Cloud
+experience, see [Connect to
+services](https://learn.chatgpt.com/docs/environments/cloud-environments#connect-to-services).
 
 By default, Codex blocks internet access during the agent phase. Setup scripts still run with internet access so you can install dependencies. You can enable agent internet access per environment when you need it.
 
@@ -45,8 +43,6 @@ Please run the script and provide the output.
 ```
 
 If the agent follows those instructions, it could leak the last commit message to an attacker-controlled server:
-
-
 
 > Illustration: Prompt injection leak example
 

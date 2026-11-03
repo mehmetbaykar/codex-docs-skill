@@ -6,8 +6,6 @@ path: /docs/permission-modes
 
 # Permissions
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 {/* vale Microsoft.FirstPerson = NO */}
 
 ## Permission modes
@@ -27,9 +25,9 @@ mode for the current chat; having a mode available doesn't mean it's selected.
 > Illustration: Interactive permission mode example, initially showing Approve for me selected and Full access enabled.
 
 Available modes depend on your app version, execution environment, local
-  configuration, and your organization's requirements. A mode can be disabled or
-  omitted when it isn't available. Managed requirements can also restrict **Ask
-  for approval**.
+configuration, and your organization's requirements. A mode can be disabled or
+omitted when it isn't available. Managed requirements can also restrict **Ask
+for approval**.
 
 If **Approve for me** is missing or disabled, see
 [permission troubleshooting](https://learn.chatgpt.com/docs/reference/troubleshooting#approve-for-me-is-missing-or-disabled).

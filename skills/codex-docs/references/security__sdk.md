@@ -6,8 +6,6 @@ path: /docs/security/sdk
 
 # Codex Security TypeScript SDK
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use the Codex Security TypeScript SDK to run security scans on repositories and
 code changes from your application or developer tool. The SDK returns typed
 findings, the scan manifest, and paths to saved reports.
@@ -21,8 +19,8 @@ To read or resume compressed Codex sessions (`.jsonl.zst`), use Node.js
 on all supported Node.js versions.
 
 For general coding agents, see the [Codex SDK guide](https://learn.chatgpt.com/docs/codex-sdk). For
-  terminal and CI workflows, see the [Codex Security CLI
-  quickstart](https://learn.chatgpt.com/docs/security/cli).
+terminal and CI workflows, see the [Codex Security CLI
+quickstart](https://learn.chatgpt.com/docs/security/cli).
 
 ## Set up the SDK
 

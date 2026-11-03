@@ -6,8 +6,6 @@ path: /docs/third-party/slack
 
 # Use ChatGPT in Slack
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Mention `@ChatGPT` in a Slack channel to start a request. If your workspace has
 Cloud delegation enabled, ChatGPT can send repository work to a separate
 [Codex Cloud](https://learn.chatgpt.com/docs/cloud) task and return the result to the thread.

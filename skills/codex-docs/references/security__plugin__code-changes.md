@@ -6,8 +6,6 @@ path: /docs/security/plugin/code-changes
 
 # Review code changes for security
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Run a security change review to find regressions in one Git-backed change set.
 Codex reviews each changed source-like file and its directly supporting code.
 It doesn't expand the review into a full repository audit.
@@ -127,8 +125,6 @@ Scan results can include sensitive vulnerability details. Keep artifacts
 private, and review the destination and content before publishing findings.
 Choose the example for your CI provider:
 
-
-
 ```yaml
 name: Codex Security review
 
@@ -175,10 +171,6 @@ jobs:
           path: ${{ runner.temp }}/codex-security/codex-security-scans
 ```
 
-
-
-
-
 Create a masked `CODEX_SECURITY_API_KEY` CI/CD variable and review the scan
 artifacts privately before sharing findings.
 
@@ -213,10 +205,6 @@ codex-security-review:
     paths:
       - codex-security-artifacts.tar.gz
 ```
-
-
-
-
 
 ```yaml
 trigger: none
@@ -256,10 +244,6 @@ steps:
 
 For Azure Repos, configure a **Build validation** branch policy to run the
 pipeline on pull requests.
-
-
-
-
 
 ```groovy snippet=configuration reason="Jenkins pipeline configuration for the documented CI integration"
 pipeline {
@@ -316,8 +300,6 @@ pipeline {
   }
 }
 ```
-
-
 
 The examples skip forked pull requests. Run credentialed jobs only from a
 protected pipeline definition and only for contributors trusted with the scan

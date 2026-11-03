@@ -6,8 +6,6 @@ path: /docs/security
 
 # Codex Security
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Codex Security reviews code for vulnerabilities and reports evidence you can
 use to investigate and fix them. Choose how to run it based on where your code
 lives and how you want to review the results.
@@ -35,10 +33,10 @@ connection, and a compatible Codex cloud environment. You can connect the
 repository and create an environment during setup.
 
 <figure className="not-prose my-8">
-  <figcaption className="mt-3 text-sm text-secondary">
-    Track open findings and fixes across repositories. This example uses
-    fictional repositories, findings, and counts.
-  </figcaption>
+<figcaption className="mt-3 text-sm text-secondary">
+  Track open findings and fixes across repositories. This example uses
+  fictional repositories, findings, and counts.
+</figcaption>
 </figure>
 
 For security reviews posted to GitHub pull requests, see

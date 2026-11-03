@@ -1,6 +1,7 @@
 interface:
   display_name: "Codex Docs"
-  short_description: "Search and read OpenAI Codex documentation locally"
+  short_description: "Answer Codex questions from a local docs mirror"
+  default_prompt: "Use $codex-docs to answer my question about Codex."
 
 policy:
   allow_implicit_invocation: true

@@ -6,12 +6,10 @@ path: /docs/app-server
 
 # Codex App Server
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Codex app-server is the interface Codex uses to power rich clients (for example, the Codex VS Code extension). Use it when you want a deep integration inside your own product: authentication, conversation history, approvals, and streamed agent events. The app-server implementation is open source in the Codex GitHub repository ([openai/codex/codex-rs/app-server](https://github.com/openai/codex/tree/main/codex-rs/app-server)). See the [Open Source](https://learn.chatgpt.com/docs/open-source) page for the full list of open-source Codex components.
 
 If you are automating jobs or running Codex in CI, use the
-  [Codex SDK](https://learn.chatgpt.com/docs/codex-sdk) instead.
+[Codex SDK](https://learn.chatgpt.com/docs/codex-sdk) instead.
 
 ## Connect the CLI terminal UI
 
@@ -2170,11 +2168,11 @@ Field notes:
    }
 ```
 
-   By default, a successful browser callback redirects to a local success page.
-   Set `useHostedLoginSuccessPage: true` to use the hosted success page when
-   organization setup isn't required. With hosted success enabled, `appBrand`
-   can be `"codex"` or `"chatgpt"`; omitted or `null` values default to
-   `"codex"`.
+By default, a successful browser callback redirects to a local success page.
+Set `useHostedLoginSuccessPage: true` to use the hosted success page when
+organization setup isn't required. With hosted success enabled, `appBrand`
+can be `"codex"` or `"chatgpt"`; omitted or `null` values default to
+`"codex"`.
 
 ```json
    {

@@ -6,16 +6,14 @@ path: /docs/security/cli/reference
 
 # Codex Security CLI reference
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Look up `codex-security` commands, flags, output formats, and exit behavior.
 For a first scan, follow the
 [CLI quickstart](https://learn.chatgpt.com/docs/security/cli).
 
 Scans use your local permissions and don't pause for approval. Some
-  cybersecurity requests and protected findings require
-  [Trusted Access for Cyber](https://chatgpt.com/cyber)
-  . See [Local scan permissions](#local-scan-permissions).
+cybersecurity requests and protected findings require
+[Trusted Access for Cyber](https://chatgpt.com/cyber)
+. See [Local scan permissions](#local-scan-permissions).
 
 Run the CLI with `npx @openai/codex-security`. The installed package also
 provides the `cs` alias.
@@ -1143,8 +1141,8 @@ destination access; connected-app access is reported as `not-checked`.
 | `--json`                             | Write structured publication results to stdout. Progress remains on stderr.                                                                                      |
 
 Linear issue descriptions and dry-run output can include source code snippets
-  and vulnerability details. Check who can view the destination team or project
-  before publishing.
+and vulnerability details. Check who can view the destination team or project
+before publishing.
 
 Each non-dry-run invocation attempts to create a new issue for every selected
 finding unless `--skip-existing` finds a recorded success for that occurrence,
@@ -1516,7 +1514,7 @@ stderr, even with `--full-output`. These rules also apply to `scans rerun` and
 `scans resume`.
 
 `codex-security scan --json` emits one JSON document. `codex exec --json`
-  emits a JSON Lines event stream.
+emits a JSON Lines event stream.
 
 ## Scan artifacts
 

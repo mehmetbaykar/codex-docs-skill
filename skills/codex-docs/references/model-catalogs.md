@@ -6,8 +6,6 @@ path: /docs/model-catalogs
 
 # Implementing model catalogs for gateways and clouds
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 This page is for developers implementing the Codex Models format, which defines
 the model catalog and powers the model picker. If you build an inference
 provider, such as a gateway or cloud service, use this specification to let the
@@ -126,5 +124,5 @@ Test the resulting catalog with each supported Codex version.
 
 Use crates from the same public Git tag or commit as the client's schema:
 
-- Use [`codex-protocol`](https://github.com/openai/codex/tree/rust-v0.162.1/codex-rs/protocol) for `codex_protocol::openai_models::{ModelsResponse, ModelInfo}`. Parse with `serde_json::from_slice::()`, edit `catalog.models`, and serialize the whole wrapper with `serde_json::to_vec()`. The wrapper handles compatibility fields for model instructions.
+- Use [`codex-protocol`](https://github.com/openai/codex/tree/rust-v0.162.1/codex-rs/protocol) for `codex_protocol::openai_models::{ModelsResponse, ModelInfo}`. Parse with `serde_json::from_slice::<ModelsResponse>()`, edit `catalog.models`, and serialize the whole wrapper with `serde_json::to_vec()`. The wrapper handles compatibility fields for model instructions.
 - Use [`codex-models-manager::bundled_models_response()`](https://github.com/openai/codex/blob/rust-v0.162.1/codex-rs/models-manager/src/lib.rs) to load that revision's static bundled catalog as a `ModelsResponse`. It doesn't fetch current upstream defaults.

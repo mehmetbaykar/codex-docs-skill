@@ -6,8 +6,6 @@ path: /docs/whats-new/devday-2026
 
 # DevDay 2026
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 [Back to What's new](https://learn.chatgpt.com/docs/whats-new#devday-2026)
 
 September 29, 2026

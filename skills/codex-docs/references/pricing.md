@@ -6,10 +6,8 @@ path: /docs/pricing
 
 # Pricing
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 **ChatGPT Work and Codex share usage.** ChatGPT Work usage inside
-  ChatGPT uses the same pricing, credits, and usage limits as Codex.
+ChatGPT uses the same pricing, credits, and usage limits as Codex.
 
 GPT-5.5 retires from Codex with ChatGPT sign-in on October 14, 2026, at noon
 PDT (19:00 UTC). The OpenAI API and Codex sessions authenticated with an API
@@ -23,72 +21,52 @@ estimate included tasks.
 
 <h2 class="sr-only">Pricing options</h2>
 
+- GPT-6 Luna at Standard speed in the desktop app, subject to rollout
+- GPT-6 Luna at Standard speed in the desktop app, subject to rollout
 
+- Codex on the web, in the CLI, in the IDE extension, and on iOS
+- Cloud-based integrations like automatic code review and Slack
+  integration
+- GPT-6.1 Sol and GPT-6 Luna
+- Flexibly extend usage with [ChatGPT credits](#credits-overview)
+- Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
+  Plus plan
 
+- Plans at $100, $200, or $500 USD per month
+- [Ultrafast mode](https://learn.chatgpt.com/docs/agent-configuration/speed#ultrafast-mode)
+  access on Pro $500
+- Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
+  Pro plan
 
+- Codex in the CLI, SDK, or IDE extension
+- No cloud-based features (GitHub code review, Slack, etc.)
+- Model availability follows the API models available to your key
+- Pay for Codex usage based on [API pricing](https://developers.openai.com/api/docs/pricing)
 
-        - GPT-6 Luna at Standard speed in the desktop app, subject to rollout
-        - GPT-6 Luna at Standard speed in the desktop app, subject to rollout
+- Access ChatGPT and Codex across desktop and mobile apps
+- Larger virtual machines to run cloud chats faster
+- Flexibly extend usage with [ChatGPT credits](#credits-overview)
+- A secure, dedicated workspace with essential admin controls, SAML SSO,
+  and MFA
+- No training on your business data by default. [Learn
+  more](https://openai.com/business-data/)
+- Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
+  Business plan
 
-        - Codex on the web, in the CLI, in the IDE extension, and on iOS
-        - Cloud-based integrations like automatic code review and Slack
-          integration
-        - GPT-6.1 Sol and GPT-6 Luna
-        - Flexibly extend usage with [ChatGPT credits](#credits-overview)
-        - Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
-          Plus plan
+- Priority request processing
+- Enterprise-level security and controls, including SCIM, EKM, user
+  analytics, domain verification, and role-based access control
+  ([RBAC](https://help.openai.com/en/articles/11750701-rbac))
+- Audit logs and usage monitoring via the [Compliance
+  API](https://chatgpt.com/public/admin/api-reference#tag/Codex%20Tasks)
+- Data retention and data residency controls
+- Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
+  Enterprise plan
 
-        - Plans at $100, $200, or $500 USD per month
-        - [Ultrafast mode](https://learn.chatgpt.com/docs/agent-configuration/speed#ultrafast-mode)
-          access on Pro $500
-        - Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
-          Pro plan
-
-        - Codex in the CLI, SDK, or IDE extension
-        - No cloud-based features (GitHub code review, Slack, etc.)
-        - Model availability follows the API models available to your key
-        - Pay for Codex usage based on [API pricing](https://developers.openai.com/api/docs/pricing)
-
-
-
-
-
-
-
-
-
-        - Access ChatGPT and Codex across desktop and mobile apps
-        - Larger virtual machines to run cloud chats faster
-        - Flexibly extend usage with [ChatGPT credits](#credits-overview)
-        - A secure, dedicated workspace with essential admin controls, SAML SSO,
-          and MFA
-        - No training on your business data by default. [Learn
-          more](https://openai.com/business-data/)
-        - Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
-          Business plan
-
-        - Priority request processing
-        - Enterprise-level security and controls, including SCIM, EKM, user
-          analytics, domain verification, and role-based access control
-          ([RBAC](https://help.openai.com/en/articles/11750701-rbac))
-        - Audit logs and usage monitoring via the [Compliance
-          API](https://chatgpt.com/public/admin/api-reference#tag/Codex%20Tasks)
-        - Data retention and data residency controls
-        - Other [ChatGPT features](https://chatgpt.com/pricing) as part of the
-          Enterprise plan
-
-
-
-
-
-        - Codex in the CLI, SDK, or IDE extension
-        - No cloud-based features (GitHub code review, Slack, etc.)
-        - Model availability follows the API models available to your key
-        - Pay for Codex usage based on [API pricing](https://developers.openai.com/api/docs/pricing)
-
-
-
-
+- Codex in the CLI, SDK, or IDE extension
+- No cloud-based features (GitHub code review, Slack, etc.)
+- Model availability follows the API models available to your key
+- Pay for Codex usage based on [API pricing](https://developers.openai.com/api/docs/pricing)
 
 ## Invite friends and coworkers
 
@@ -129,64 +107,64 @@ and task. These estimates are not fixed message limits; check your
 [usage dashboard](#where-can-i-see-my-current-usage-limits) for current limits
 and reset times.
 
-  <thead class="whitespace-nowrap">
-    <tr>
-      <th scope="col">Model</th>
-      <th scope="col" style="text-align:center">
-        Plus
-      </th>
-      <th scope="col" style="text-align:center">
-        Standard Business
-      </th>
-    </tr>
-  </thead>
-  <tbody class="whitespace-nowrap">
-    <tr>
-      <td>GPT-6 Astra</td>
-      <td style="text-align:center">5-45</td>
-      <td style="text-align:center">5-45</td>
-    </tr>
-    <tr>
-      <td>GPT-6.1 Sol</td>
-      <td style="text-align:center">15-160</td>
-      <td style="text-align:center">15-160</td>
-    </tr>
-    <tr>
-      <td>GPT-6.1 Terra</td>
-      <td style="text-align:center">35-285</td>
-      <td style="text-align:center">35-285</td>
-    </tr>
-    <tr>
-      <td>GPT-6 Sol</td>
-      <td style="text-align:center">15-150</td>
-      <td style="text-align:center">15-150</td>
-    </tr>
-    <tr>
-      <td>GPT-6 Luna</td>
-      <td style="text-align:center">350-3,000</td>
-      <td style="text-align:center">350-3,000</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3" style="text-align:center">
-        Local messages and cloud chats share your plan's usage allowance. Weekly
-        limits may also apply.
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3" style="text-align:center">
-        Enterprise/Edu users with flexible pricing have no fixed rate limits.
-        Usage scales with [credits](#credits-overview).
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3" style="text-align:center">
-        Enterprise and Edu plans without flexible pricing have the same per-seat
-        usage limits as Plus for most features.
-      </td>
-    </tr>
-  </tfoot>
+<thead class="whitespace-nowrap">
+  <tr>
+    <th scope="col">Model</th>
+    <th scope="col" style="text-align:center">
+      Plus
+    </th>
+    <th scope="col" style="text-align:center">
+      Standard Business
+    </th>
+  </tr>
+</thead>
+<tbody class="whitespace-nowrap">
+  <tr>
+    <td>GPT-6 Astra</td>
+    <td style="text-align:center">5-45</td>
+    <td style="text-align:center">5-45</td>
+  </tr>
+  <tr>
+    <td>GPT-6.1 Sol</td>
+    <td style="text-align:center">15-160</td>
+    <td style="text-align:center">15-160</td>
+  </tr>
+  <tr>
+    <td>GPT-6.1 Terra</td>
+    <td style="text-align:center">35-285</td>
+    <td style="text-align:center">35-285</td>
+  </tr>
+  <tr>
+    <td>GPT-6 Sol</td>
+    <td style="text-align:center">15-150</td>
+    <td style="text-align:center">15-150</td>
+  </tr>
+  <tr>
+    <td>GPT-6 Luna</td>
+    <td style="text-align:center">350-3,000</td>
+    <td style="text-align:center">350-3,000</td>
+  </tr>
+</tbody>
+<tfoot>
+  <tr>
+    <td colspan="3" style="text-align:center">
+      Local messages and cloud chats share your plan's usage allowance. Weekly
+      limits may also apply.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" style="text-align:center">
+      Enterprise/Edu users with flexible pricing have no fixed rate limits.
+      Usage scales with [credits](#credits-overview).
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" style="text-align:center">
+      Enterprise and Edu plans without flexible pricing have the same per-seat
+      usage limits as Plus for most features.
+    </td>
+  </tr>
+</tfoot>
 
 Usage limits are shared with other agentic features once pricing for those
 features is effective. This currently includes [ChatGPT for
@@ -302,127 +280,24 @@ card until we migrate you to the new token-based pricing. For more information,
 [contact OpenAI
 sales](https://chatgpt.com/contact-sales?utm_internal_source=openai_developers_codex).
 
-  <table>
-    <thead>
-      <tr>
-        <th scope="col">Credits per 1M tokens</th>
-        <th scope="col" style="text-align:center">
-          Input Tokens
-        </th>
-        <th scope="col" style="text-align:center">
-          Cached input tokens
-        </th>
-        <th scope="col" style="text-align:center">
-          Output Tokens
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>GPT-6 Astra</td>
-        <td style="text-align:center">250 credits</td>
-        <td style="text-align:center">25 credits</td>
-        <td style="text-align:center">1,250 credits</td>
-      </tr>
-      <tr>
-        <td>GPT-6.1 Sol</td>
-        <td style="text-align:center">50 credits</td>
-        <td style="text-align:center">2.5 credits</td>
-        <td style="text-align:center">250 credits</td>
-      </tr>
-      <tr>
-        <td>GPT-6.1 Terra</td>
-        <td style="text-align:center">25 credits</td>
-        <td style="text-align:center">1.25 credits</td>
-        <td style="text-align:center">125 credits</td>
-      </tr>
-      <tr>
-        <td>GPT-6 Sol</td>
-        <td style="text-align:center">50 credits</td>
-        <td style="text-align:center">5 credits</td>
-        <td style="text-align:center">250 credits</td>
-      </tr>
-      <tr>
-        <td>GPT-6 Luna</td>
-        <td style="text-align:center">2.5 credits</td>
-        <td style="text-align:center">0.25 credits</td>
-        <td style="text-align:center">12.5 credits</td>
-      </tr>
-      <tr>
-        <td>GPT-5.6 Sol</td>
-        <td style="text-align:center">100 credits</td>
-        <td style="text-align:center">10 credits</td>
-        <td style="text-align:center">500 credits</td>
-      </tr>
-      <tr>
-        <td>Daybreak Blue</td>
-        <td style="text-align:center">100 credits</td>
-        <td style="text-align:center">10 credits</td>
-        <td style="text-align:center">500 credits</td>
-      </tr>
-      <tr>
-        <td>Daybreak Red</td>
-        <td style="text-align:center">312.5 credits</td>
-        <td style="text-align:center">31.25 credits</td>
-        <td style="text-align:center">1875 credits</td>
-      </tr>
-      <tr>
-        <td>GPT-5.6 Terra</td>
-        <td style="text-align:center">50 credits</td>
-        <td style="text-align:center">5 credits</td>
-        <td style="text-align:center">300 credits</td>
-      </tr>
-      <tr>
-        <td>GPT-5.6 Luna</td>
-        <td style="text-align:center">5 credits</td>
-        <td style="text-align:center">0.5 credits</td>
-        <td style="text-align:center">30 credits</td>
-      </tr>
-      <tr>
-        <td>GPT-Rosalind-Research</td>
-        <td style="text-align:center">125 credits</td>
-        <td style="text-align:center">12.5 credits</td>
-        <td style="text-align:center">625 credits</td>
-      </tr>
-      <tr>
-        <td>GPT-Image-2 (image)</td>
-        <td style="text-align:center">200 credits</td>
-        <td style="text-align:center">50 credits</td>
-        <td style="text-align:center">750 credits</td>
-      </tr>
-      <tr>
-        <td>GPT-Image-2 (text)</td>
-        <td style="text-align:center">125 credits</td>
-        <td style="text-align:center">31.25 credits</td>
-        <td style="text-align:center">250 credits</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td colspan="4" style="text-align:center">
-          A typical GPT-5.6 Sol task may use 2-15 credits.
-        </td>
-      </tr>
-      <tr>
-        <td colspan="4" style="text-align:center">
-          These are Standard credit rates. For purchased credits and Enterprise
-          pay-as-you-go usage, Fast mode uses 2x the Standard rate where
-          available, and Ultrafast mode uses 6x. Included subscription usage has
-          different multipliers. See
-          [Speed](https://learn.chatgpt.com/docs/agent-configuration/speed) for availability
-          and billing details.
-        </td>
-      </tr>
-      <tr>
-        <td colspan="4" style="text-align:center">
-          Daybreak access requires [Trusted Access for
-          Cyber](https://learn.chatgpt.com/docs/cyber-safety#trusted-access-for-cyber) approval.
-          Daybreak Blue uses GPT-5.6 Sol credit rates. Daybreak Red requires
-          separate approval and provisioning.
-        </td>
-      </tr>
-    </tfoot>
-  </table>
+| Credits per 1M tokens | Input Tokens | Cached input tokens | Output Tokens |
+| --- | --- | --- | --- |
+| GPT-6 Astra | 250 credits | 25 credits | 1,250 credits |
+| GPT-6.1 Sol | 50 credits | 2.5 credits | 250 credits |
+| GPT-6.1 Terra | 25 credits | 1.25 credits | 125 credits |
+| GPT-6 Sol | 50 credits | 5 credits | 250 credits |
+| GPT-6 Luna | 2.5 credits | 0.25 credits | 12.5 credits |
+| GPT-5.6 Sol | 100 credits | 10 credits | 500 credits |
+| Daybreak Blue | 100 credits | 10 credits | 500 credits |
+| Daybreak Red | 312.5 credits | 31.25 credits | 1875 credits |
+| GPT-5.6 Terra | 50 credits | 5 credits | 300 credits |
+| GPT-5.6 Luna | 5 credits | 0.5 credits | 30 credits |
+| GPT-Rosalind-Research | 125 credits | 12.5 credits | 625 credits |
+| GPT-Image-2 (image) | 200 credits | 50 credits | 750 credits |
+| GPT-Image-2 (text) | 125 credits | 31.25 credits | 250 credits |
+| A typical GPT-5.6 Sol task may use 2-15 credits. |  |  |  |
+| These are Standard credit rates. For purchased credits and Enterprise pay-as-you-go usage, Fast mode uses 2x the Standard rate where available, and Ultrafast mode uses 6x. Included subscription usage has different multipliers. See [Speed](https://learn.chatgpt.com/docs/agent-configuration/speed) for availability and billing details. |  |  |  |
+| Daybreak access requires [Trusted Access for Cyber](https://learn.chatgpt.com/docs/cyber-safety#trusted-access-for-cyber) approval. Daybreak Blue uses GPT-5.6 Sol credit rates. Daybreak Red requires separate approval and provisioning. |  |  |  |
 
 _GPT-5.6 Sol’s promotional pricing is available at least through November 21, 2026._
 
@@ -476,7 +351,7 @@ UAE inference residency. It isn't available in Chat. Access requires the corresp
 surface; Enterprise access also depends on workspace availability and
 administrator controls. Overall Work and Codex plan limits are unchanged.
 
-  <sup>*</sup> Feature is currently limited to only specific regions. Check the
-  individual feature documentation to learn more about geographic restrictions.
+<sup>*</sup> Feature is currently limited to only specific regions. Check the
+individual feature documentation to learn more about geographic restrictions.
 
-  <sup>†</sup> Some first party plugins are not available.
+<sup>†</sup> Some first party plugins are not available.

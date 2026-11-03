@@ -6,14 +6,12 @@ path: /docs/security/setup
 
 # Codex Security Cloud setup
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Run a first scan of a connected GitHub repository with Codex Security Cloud,
 then review its findings. Afterward, you can enable monitoring for new commits.
 
 Codex Security Cloud runs scans in [Codex cloud](https://learn.chatgpt.com/docs/cloud). For scans of a
-  local repository in the desktop app or CLI, use the separate [Codex Security
-  plugin](https://learn.chatgpt.com/docs/security/plugin).
+local repository in the desktop app or CLI, use the separate [Codex Security
+plugin](https://learn.chatgpt.com/docs/security/plugin).
 
 ## Before you start
 
@@ -63,10 +61,10 @@ narrow the results. The **Severity and status** chart summarizes the matching
 findings.
 
 <figure className="not-prose my-8">
-  <figcaption className="mt-3 text-sm text-secondary">
-    Filter and review open findings. Repositories, findings, and counts are
-    fictional.
-  </figcaption>
+<figcaption className="mt-3 text-sm text-secondary">
+  Filter and review open findings. Repositories, findings, and counts are
+  fictional.
+</figcaption>
 </figure>
 
 Open a finding from the scan or from **Findings**. Check its affected code and
@@ -97,9 +95,9 @@ arrive:
 5. Select **Create**.
 
 <figure className="not-prose my-8">
-  <figcaption className="mt-3 text-sm text-secondary">
-    Configure continuous scanning. The repository shown is fictional.
-  </figcaption>
+<figcaption className="mt-3 text-sm text-secondary">
+  Configure continuous scanning. The repository shown is fictional.
+</figcaption>
 </figure>
 
 To adjust monitoring, open **Repositories**, select the repository, and open

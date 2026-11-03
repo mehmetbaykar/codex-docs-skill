@@ -6,8 +6,6 @@ path: /docs/models
 
 # Models
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Choosing a model is about finding the right balance of speed, cost, and capability
 for your task. Sometimes you need a quick first draft. Other times, a complex
 problem calls for more careful reasoning. This guide introduces our latest
@@ -15,9 +13,7 @@ models, shows where each one shines, and helps you find a starting point for
 your work.
 
 GPT-5.5 retirement: [See replacement models and migration
-  steps](#gpt-55-retirement).
-
-
+steps](#gpt-55-retirement).
 
 ## Choose a model
 
@@ -34,10 +30,6 @@ beyond a single-agent run. It uses
 [subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) to accelerate complex work,
 making it useful for larger tasks that can be split across subagents.
 
-
-
-
-
 ## Choose a model
 
 These recommendations apply to **ChatGPT Work** on the web. Use the
@@ -53,8 +45,6 @@ the task needs deeper planning or analysis.
 beyond a single-agent run. It uses
 [subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) to accelerate complex work,
 making it useful for larger tasks that can be split across subagents.
-
-
 
 ## Choose a model
 
@@ -85,8 +75,6 @@ beyond a single-agent run. It uses
 [subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) to accelerate complex work,
 making it useful for larger tasks that can be split across subagents.
 
-
-
 ## Choose a model
 
 Use the model switcher below the composer to choose an available model and
@@ -102,13 +90,11 @@ beyond a single-agent run. It uses
 [subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) to accelerate complex work,
 making it useful for larger tasks that can be split across subagents.
 
-
-
 In the ChatGPT desktop app and ChatGPT Work on the web, start with the default
-  Power setting available to your account. Move toward **Smarter** for deeper
-  reasoning or **Faster** for faster, lower-cost work. Open **Advanced** to
-  choose a specific model, reasoning effort, or speed. To try GPT-6.1 Terra in
-  this example, open **Advanced** and choose it from the model list.
+Power setting available to your account. Move toward **Smarter** for deeper
+reasoning or **Faster** for faster, lower-cost work. Open **Advanced** to
+choose a specific model, reasoning effort, or speed. To try GPT-6.1 Terra in
+this example, open **Advanced** and choose it from the model list.
 
 The six Power presets shown are Luna High, GPT-6 Sol Light (selected
 in this example), GPT-6 Sol Medium, Astra Light, Astra Medium, and Astra Extra
@@ -134,9 +120,9 @@ These recommendations apply to ChatGPT Work and Codex. For Chat, see [models in 
 <a id="app-compare-models"></a>
 
 <a
-  id="gpt-61-terra"
-  data-codex-legacy-anchor
-  className="block scroll-mt-24"
+id="gpt-61-terra"
+data-codex-legacy-anchor
+className="block scroll-mt-24"
 ></a>
 
 <a id="gpt-61-sol"></a>

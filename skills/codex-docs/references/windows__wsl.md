@@ -6,8 +6,6 @@ path: /docs/windows/wsl
 
 # WSL
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 When you use WSL2, Codex runs inside the Linux environment instead of using the
 native [Windows sandbox](https://learn.chatgpt.com/docs/windows/windows-sandbox). Choose WSL2 when you need Linux-native
 tooling, your repositories and developer workflow already live in WSL2, or
@@ -45,15 +43,15 @@ This opens a WSL remote window, installs the VS Code Server if needed, and ensur
   echo $WSL_DISTRO_NAME
 ```
 
-  This prints your distribution name.
+This prints your distribution name.
 
 If you don't see "WSL: …" in the status bar, press `Ctrl+Shift+P`, pick `WSL:
-  Reopen Folder in WSL`, and keep your repository under `/home/...` (not `C:\`)
-  for best performance.
+Reopen Folder in WSL`, and keep your repository under `/home/...` (not `C:\`)
+for best performance.
 
 If the Windows app or project picker does not show your WSL repository, type
-  `\\wsl$` into the file picker or Explorer, then navigate to your
-  distribution's home directory.
+`\\wsl$` into the file picker or Explorer, then navigate to your
+distribution's home directory.
 
 ## Use Codex CLI with WSL
 

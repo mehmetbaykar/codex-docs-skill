@@ -6,8 +6,6 @@ path: /docs/features/composer-predictions
 
 # Composer Predictions
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Composer predictions provides autocomplete-style suggestions for your next message in the Codex desktop app. After Codex responds, it uses the current conversation to suggest a follow-up prompt in the message box. Press **Tab** to accept the suggested message as an editable draft, or type your own message.
 
 > Illustration: Codex responds, a prediction appears in the message box, and pressing Tab accepts it as a draft without sending it.

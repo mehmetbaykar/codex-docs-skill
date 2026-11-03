@@ -6,13 +6,11 @@ path: /docs/agent-approvals-security
 
 # Agent approvals & security
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Codex helps protect your code and data and reduces the risk of misuse.
 
 This page covers how to operate Codex safely, including sandboxing, approvals,
-  and network access. If you are looking for Codex Security, the product for
-  scanning connected GitHub repositories, see [Codex Security](https://learn.chatgpt.com/docs/security).
+and network access. If you are looking for Codex Security, the product for
+scanning connected GitHub repositories, see [Codex Security](https://learn.chatgpt.com/docs/security).
 
 By default, the agent runs with network access turned off. Locally, Codex uses an OS-enforced sandbox that limits what it can touch (typically to the current workspace), plus an approval policy that controls when it must stop and ask you before acting.
 
@@ -463,11 +461,11 @@ In that case, configure your Docker container to provide the isolation you need,
 If your host cannot run the Linux sandbox directly, or if your organization already standardizes on containerized development, run Codex with Dev Containers and let Docker provide the outer isolation boundary. This works with Visual Studio Code Dev Containers and compatible tools.
 
 Devcontainers provide substantial protection, but they do not prevent every
-  attack. If you run Codex with `--sandbox danger-full-access` or
-  `--dangerously-bypass-approvals-and-sandbox` inside the container, a malicious
-  project can exfiltrate anything available inside the devcontainer, including
-  Codex credentials. Use this pattern only with trusted repositories, and
-  monitor Codex activity as you would in any other elevated environment.
+attack. If you run Codex with `--sandbox danger-full-access` or
+`--dangerously-bypass-approvals-and-sandbox` inside the container, a malicious
+project can exfiltrate anything available inside the devcontainer, including
+Codex credentials. Use this pattern only with trusted repositories, and
+monitor Codex activity as you would in any other elevated environment.
 
 Inside the container, choose one of these modes:
 

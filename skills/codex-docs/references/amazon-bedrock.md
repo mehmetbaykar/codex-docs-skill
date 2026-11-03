@@ -6,18 +6,16 @@ path: /docs/amazon-bedrock
 
 # Use ChatGPT Work and Codex with Amazon Bedrock
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Configure local ChatGPT Work and Codex surfaces to use OpenAI models available
 through Amazon Bedrock. In this setup, the local client sends model requests to
 Bedrock using AWS-managed authentication and access controls.
 
 This page covers direct access to Bedrock. If your organization already
-  provides a model gateway, follow [Connect to a gateway without ChatGPT
-  sign-in](https://learn.chatgpt.com/docs/enterprise/connect-to-a-gateway). That path supports native
-  gateway OAuth with your organization's identity provider; the gateway manages
-  the Bedrock credentials. To configure a gateway backed by Bedrock, see
-  [Bedrock through LiteLLM](https://learn.chatgpt.com/docs/enterprise/bedrock-through-litellm).
+provides a model gateway, follow [Connect to a gateway without ChatGPT
+sign-in](https://learn.chatgpt.com/docs/enterprise/connect-to-a-gateway). That path supports native
+gateway OAuth with your organization's identity provider; the gateway manages
+the Bedrock credentials. To configure a gateway backed by Bedrock, see
+[Bedrock through LiteLLM](https://learn.chatgpt.com/docs/enterprise/bedrock-through-litellm).
 
 ## How it works
 
@@ -27,8 +25,8 @@ The local client sends model requests to Amazon Bedrock, and Bedrock provides an
 OpenAI-compatible Responses API implementation for supported OpenAI models.
 
 Authentication is AWS-native. Users authenticate with a Bedrock API key or AWS
-  IAM credentials. They do not use ChatGPT sign-in or `OPENAI_API_KEY` for this
-  provider.
+IAM credentials. They do not use ChatGPT sign-in or `OPENAI_API_KEY` for this
+provider.
 
 ## Before you start
 
@@ -57,8 +55,8 @@ web_search = "disabled"
 ```
 
 Hosted web search isn't available on Bedrock Runtime. If you need it, use
-  [Bedrock Mantle](#use-mantle-for-hosted-web-search). The `amazon-bedrock`
-  provider selects Mantle; `amazon-bedrock-runtime` selects Runtime.
+[Bedrock Mantle](#use-mantle-for-hosted-web-search). The `amazon-bedrock`
+provider selects Mantle; `amazon-bedrock-runtime` selects Runtime.
 
 ### Use Mantle for hosted web search
 
@@ -260,18 +258,16 @@ Codex Security CLI uses its own provider configuration. Follow its
 client settings above.
 
 Fast Mode isn't available with Amazon Bedrock. Fast Mode uses priority
-  processing, and the initial Amazon Bedrock offering supports on-demand
-  inference only.
+processing, and the initial Amazon Bedrock offering supports on-demand
+inference only.
 
-    <sup>*</sup> Feature is currently limited to only specific regions. Check
-    the individual feature documentation to learn more about regional restrictions.
+  <sup>*</sup> Feature is currently limited to only specific regions. Check
+  the individual feature documentation to learn more about regional restrictions.
 
-
-    <sup>†</sup> Local plugin bundles and OpenAI-curated plugins that don't
-    require ChatGPT authentication, including Codex Security, are available.
-    Plugins that require ChatGPT authentication, connectors, or cloud-hosted
-    sharing aren't available.
-
+  <sup>†</sup> Local plugin bundles and OpenAI-curated plugins that don't
+  require ChatGPT authentication, including Codex Security, are available.
+  Plugins that require ChatGPT authentication, connectors, or cloud-hosted
+  sharing aren't available.
 
 ## Troubleshooting
 

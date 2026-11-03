@@ -6,8 +6,6 @@ path: /docs/security/threat-model
 
 # Improve the Cloud threat model
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Update a monitored repository's threat model when the generated version misses
 security assumptions or deployment context. This guide applies to Codex
 Security Cloud. For local plugin policy, see [Configure the

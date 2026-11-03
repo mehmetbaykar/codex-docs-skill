@@ -6,8 +6,6 @@ path: /docs/security/plugin/triage-backlog
 
 # Triage a backlog
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use `$codex-security:triage-finding` to review existing security findings
 against the current repository. This workflow performs a read-only static
 analysis: Codex treats each finding as an unproven claim and inspects repository
@@ -25,8 +23,8 @@ existing backlog. Use validation when runtime evidence could resolve a finding
 that static evidence leaves uncertain.
 
 Backlog triage starts from existing findings. To search the repository for new
-  vulnerabilities, [run a security scan](https://learn.chatgpt.com/docs/security/plugin/scans). Triage
-  doesn't modify the repository or implement fixes.
+vulnerabilities, [run a security scan](https://learn.chatgpt.com/docs/security/plugin/scans). Triage
+doesn't modify the repository or implement fixes.
 
 ## Choose the findings to triage
 
@@ -111,9 +109,9 @@ to update them after reviewing the triage results.
   Use $codex-security:validation to dynamically validate finding [triage item ID or source ID] from the backlog triage result. Reproduce or disprove the finding, record what you tested, and list any remaining uncertainty.
 ```
 
-  Unlike triage, validation may build or run code, create a test or
-  proof of concept, or exercise a real interface. See [Codex approval and
-  security policies](https://learn.chatgpt.com/docs/agent-approvals-security) for execution controls.
+Unlike triage, validation may build or run code, create a test or
+proof of concept, or exercise a real interface. See [Codex approval and
+security policies](https://learn.chatgpt.com/docs/agent-approvals-security) for execution controls.
 
 - `needs_review`: If the finding depends on product policy or deployment
   context, answer the listed open questions before changing code.

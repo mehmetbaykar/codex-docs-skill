@@ -6,8 +6,6 @@ path: /docs/security/plugin/deep-scans
 
 # Run a deep security scan
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 A deep scan runs multiple independent standard scans over the same repository
 or folder and combines their findings. Use it when you want repeated review
 and can allow for the additional runtime and token use.
@@ -53,10 +51,10 @@ activity** to inspect its Codex task. Set [runtime limits](#configure-deep-scan-
 to limit concurrency or duration.
 
 <figure className="not-prose my-8">
-  <figcaption className="mt-3 text-sm text-secondary">
-    Track the active deep-scan phase and inspect its Codex activity before
-    reviewing the completed result.
-  </figcaption>
+<figcaption className="mt-3 text-sm text-secondary">
+  Track the active deep-scan phase and inspect its Codex activity before
+  reviewing the completed result.
+</figcaption>
 </figure>
 
 ## Review the result

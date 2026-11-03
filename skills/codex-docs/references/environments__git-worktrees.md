@@ -6,16 +6,14 @@ path: /docs/environments/git-worktrees
 
 # Worktrees
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Worktrees let Codex run multiple independent chats in the same project without interfering with each other. The repository, worktree, and commands remain on the computer or remote development environment that contains the project. You can work directly in the ChatGPT desktop app, or use [Codex](https://learn.chatgpt.com/docs/mobile) in the ChatGPT mobile app to start, guide, approve, and review worktree chats on a connected computer.
 
 For Git repositories, [scheduled tasks](https://learn.chatgpt.com/docs/automations) can run on dedicated background worktrees so they don't conflict with your ongoing work. In non-version-controlled projects, scheduled tasks run directly in the project directory. You can also start chats in a worktree manually and use Handoff to move a chat between Local and Worktree.
 
 Worktrees don't run locally on your phone. The ChatGPT mobile app controls
-  Codex on your connected computer, where the repository and worktree remain, or
-  in the remote development environment that computer uses. The desktop-specific
-  instructions below apply on the connected computer.
+Codex on your connected computer, where the repository and worktree remain, or
+in the remote development environment that computer uses. The desktop-specific
+instructions below apply on the connected computer.
 
 ## What's a worktree
 
@@ -73,8 +71,6 @@ From here you can commit your changes, push your branch to your remote repositor
 
 You can open your IDE to the worktree using the "Open" button in the header, use the integrated terminal, or anything else that you need to do from the worktree directory.
 
-
-
 > Illustration: Worktree chat view with branch controls and worktree details
 
 Remember, if you create a branch on a worktree, you can't check it out in any other worktree, including your local checkout.
@@ -92,8 +88,6 @@ This path works well when you want to read the changes in your usual IDE window,
 Codex handles the Git steps required to move the chat safely between the worktree and your local checkout.
 
 Each chat keeps the same associated worktree over time. If you hand the chat back to a worktree later, Codex returns it to that same background environment so you can pick up where you left off.
-
-
 
 > Illustration: Handoff dialog moving a chat from a worktree to Local
 
@@ -170,19 +164,19 @@ Before deleting a Codex-managed worktree, Codex saves a snapshot of the work on 
 
 ## Frequently asked questions
 
-  Yes. Codex creates managed worktrees under `$CODEX_HOME/worktrees` by
-  default. To choose another location, open **Settings > Worktrees** and change
-  **Worktree root**.
+Yes. Codex creates managed worktrees under `$CODEX_HOME/worktrees` by
+default. To choose another location, open **Settings > Worktrees** and change
+**Worktree root**.
 
 <a id="can-i-move-a-chat-between-local-and-worktree"></a>
 
-  Yes. Use **Hand off** in the chat header to move a chat between your local
-  checkout and a worktree. Codex handles the Git operations needed to move the
-  chat safely between environments. If you hand a chat back to a worktree later,
-  Codex returns it to the same associated worktree.
+Yes. Use **Hand off** in the chat header to move a chat between your local
+checkout and a worktree. Codex handles the Git operations needed to move the
+chat safely between environments. If you hand a chat back to a worktree later,
+Codex returns it to the same associated worktree.
 
 <a id="what-happens-to-chats-if-a-worktree-is-deleted"></a>
 
-  Chats can remain in your history even if the underlying worktree directory is
-  deleted. For Codex-managed worktrees, Codex saves a snapshot before deleting
-  the worktree and offers to restore it if you reopen the associated chat.
+Chats can remain in your history even if the underlying worktree directory is
+deleted. For Codex-managed worktrees, Codex saves a snapshot before deleting
+the worktree and offers to restore it if you reopen the associated chat.

@@ -6,8 +6,6 @@ path: /docs/security/plugin/scans
 
 # Run a Codex Security scan
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use a standard scan to review a repository or a selected folder. This guide
 explains how to set the scope, supply security context, and assess the result.
 If you haven't installed the plugin, start with the [plugin
@@ -86,10 +84,10 @@ support a finding without a runtime reproduction. To resolve uncertainty
 that depends on execution, ask for validation of the specific finding.
 
 <figure className="not-prose my-8">
-  <figcaption className="mt-3 text-sm text-secondary">
-    Review the finding's severity, validation status, root cause, and attack
-    path.
-  </figcaption>
+<figcaption className="mt-3 text-sm text-secondary">
+  Review the finding's severity, validation status, root cause, and attack
+  path.
+</figcaption>
 </figure>
 
 ## Use your first scan as a baseline

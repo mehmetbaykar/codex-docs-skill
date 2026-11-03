@@ -6,12 +6,10 @@ path: /docs/computer-use
 
 # Computer Use
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 In supported regions, Computer Use in the ChatGPT desktop app is available on
-  macOS and Windows with ChatGPT Work and Codex. Install the Computer Use
-  plugin. On macOS, grant Screen Recording and Accessibility permissions when
-  prompted.
+macOS and Windows with ChatGPT Work and Codex. Install the Computer Use
+plugin. On macOS, grant Screen Recording and Accessibility permissions when
+prompted.
 
 With Computer Use, ChatGPT can see and operate graphical user interfaces on macOS
 or Windows. Use it for tasks where command-line tools or structured integrations
@@ -122,8 +120,6 @@ During a task, ChatGPT asks for your permission before it can use an app on your
 computer. You can choose **Always allow** so ChatGPT can use that app in the future
 without asking again. You can remove apps from the **Always allow** list in the
 **Computer Use** section of the ChatGPT desktop app settings.
-
-
 
 > Illustration: Computer Use approval dialog requesting access to Calculator
 

@@ -6,8 +6,6 @@ path: /docs/third-party/linear
 
 # Use Codex in Linear
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use Codex in Linear to delegate work from issues. Assign an issue to Codex or mention `@Codex` in a comment, and Codex creates a cloud chat and replies with progress and results.
 
 Codex in Linear is available on paid plans (see [Pricing](https://learn.chatgpt.com/docs/pricing)).
@@ -28,23 +26,13 @@ You can delegate in two ways:
 
 After you install the integration, you can assign issues to Codex the same way you assign them to teammates. Codex starts work and posts updates back to the issue.
 
-
-
-
 > Illustration: Assigning Codex to a Linear issue
-
-
 
 ### Mention `@Codex` in comments
 
 You can also mention `@Codex` in comment threads to delegate work or ask questions. After Codex replies, follow up in the thread to continue the same chat.
 
-
-
-
 > Illustration: Mentioning Codex in a Linear issue comment
-
-
 
 After Codex starts working on an issue, it [chooses an environment and repo](#how-codex-chooses-an-environment-and-repo) to work in.
 To pin a specific repo, include it in your comment, for example: `@Codex fix this in openai/codex`.
@@ -74,12 +62,7 @@ You can assign issues to Codex automatically using triage rules:
 Linear assigns new issues that enter triage to Codex automatically.
 When you use triage rules, Codex runs chats using the account of the issue creator.
 
-
-
-
 > Illustration: Linear triage rule automatically assigning issues to Codex
-
-
 
 ## Data usage, privacy, and security
 

@@ -6,8 +6,6 @@ path: /docs/security/cli/ci/gitlab
 
 # Run Codex Security in GitLab CI/CD
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Run Codex Security in GitLab CI/CD to scan committed changes and protected
 branches, publish findings to GitLab Security, and optionally propose verified
 fixes in draft merge requests.
@@ -281,7 +279,7 @@ a particular implementation. Apply the same scrutiny to generated test and
 source changes.
 
 <details>
-  <summary>Advanced: repository command isolation</summary>
+<summary>Advanced: repository command isolation</summary>
 
 The `validate`, `patch`, and `verify-fix` commands receive a process-scoped
 `OPENAI_API_KEY` and use `--auth api-key`. Repository-controlled setup and test

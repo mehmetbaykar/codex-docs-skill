@@ -6,10 +6,8 @@ path: /docs/environments/cloud-environment
 
 # Codex Cloud (Legacy)
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 **Codex Cloud (Legacy)** continues to support environments for Code Review and
-  the Linear and GitHub integrations.
+the Linear and GitHub integrations.
 
 For the current experience on web, mobile, and desktop, see the [Cloud environments
 guide](https://learn.chatgpt.com/docs/environments/cloud-environments).
@@ -37,8 +35,8 @@ The Codex agent runs in a default container image called `universal`, which come
 In environment settings, select **Set package versions** to pin versions of Python, Node.js, and other runtimes.
 
 For details on what's installed, see
-  [openai/codex-universal](https://github.com/openai/codex-universal) for a
-  reference Dockerfile and an image that can be pulled and tested locally.
+[openai/codex-universal](https://github.com/openai/codex-universal) for a
+reference Dockerfile and an image that can be pulled and tested locally.
 
 While `codex-universal` comes with languages pre-installed for speed and convenience, you can also install additional packages to the container using [setup scripts](#manual-setup).
 
@@ -69,8 +67,8 @@ pnpm install
 ```
 
 Setup scripts run in a separate Bash session from the agent, so commands like
-  `export` do not persist into the agent phase. To persist environment
-  variables, add them to `~/.bashrc` or configure them in environment settings.
+`export` do not persist into the agent phase. To persist environment
+variables, add them to `~/.bashrc` or configure them in environment settings.
 
 ## Container caching
 
@@ -89,8 +87,8 @@ When a cached container is resumed:
 Codex automatically invalidates the cache if you change the setup script, maintenance script, environment variables, or secrets. If your repo changes in a way that makes the cached state incompatible, select **Reset cache** on the environment page.
 
 For Business and Enterprise users, caches are shared across all users who have
-  access to the environment. Invalidating the cache will affect all users of the
-  environment in your workspace.
+access to the environment. Invalidating the cache will affect all users of the
+environment in your workspace.
 
 ## Internet access and network proxy
 

@@ -6,10 +6,8 @@ path: /docs/extend/record-and-replay
 
 # Record & Replay
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Record & Replay is available on macOS. Computer Use must also be available and
-  enabled.
+enabled.
 
 Record & Replay lets you demonstrate a workflow on your
 Mac and turn it into a reusable skill. Use it when the workflow is repetitive,

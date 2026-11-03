@@ -6,17 +6,15 @@ path: /docs/security/cli/bulk-scans
 
 # Run bulk security scans
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use `npx @openai/codex-security bulk-scan` to review repositories in one
 campaign. Discover repositories from your personal GitHub account or an
 organization, or provide a CSV that pins every repository to an exact Git
 revision.
 
 The `@openai/codex-security` package is public. Scans using OpenAI inference
-  require Codex Security access. Follow the [CLI
-  quickstart](https://learn.chatgpt.com/docs/security/cli) to install the CLI, then [select credentials
-  for your provider](https://learn.chatgpt.com/docs/security/cli/reference#select-scan-authentication).
+require Codex Security access. Follow the [CLI
+quickstart](https://learn.chatgpt.com/docs/security/cli) to install the CLI, then [select credentials
+for your provider](https://learn.chatgpt.com/docs/security/cli/reference#select-scan-authentication).
 
 ## Choose a repository source
 

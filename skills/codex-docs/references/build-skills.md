@@ -6,8 +6,6 @@ path: /docs/build-skills
 
 # Build skills
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use agent skills to extend ChatGPT and Codex with task-specific capabilities. A
 skill packages instructions, resources, and optional scripts so either product
 can follow a workflow reliably. Skills build on the
@@ -28,8 +26,6 @@ ChatGPT on the web, desktop, and mobile.
 In the ChatGPT desktop app, open **Skills** in the sidebar to view and explore skills
 created across your projects.
 
-
-
 > Illustration: Skills picker showing available skills in the ChatGPT desktop app
 
 Skills use **progressive disclosure** to manage context efficiently. ChatGPT and
@@ -48,6 +44,14 @@ different budget, up to 10,000 tokens.
 This budget applies only to the initial skills list. When Codex selects a skill, it still reads the full SKILL.md instructions for that skill.
 
 A skill is a directory with a `SKILL.md` file plus optional scripts and references. The `SKILL.md` file must include `name` and `description`.
+
+- my-skill/
+  - SKILL.md: Required: instructions + metadata
+  - scripts/: Optional: executable code
+  - references/: Optional: documentation
+  - assets/: Optional: templates, resources
+  - agents/
+    - openai.yaml: Optional: appearance and dependencies
 
 <a id="how-codex-uses-skills"></a>
 

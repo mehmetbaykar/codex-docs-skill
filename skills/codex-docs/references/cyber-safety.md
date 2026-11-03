@@ -6,8 +6,6 @@ path: /docs/cyber-safety
 
 # Models and Trusted Access
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 OpenAI Daybreak helps approved users perform authorized defensive cybersecurity work. Daybreak Blue provides access to flagship models with reduced refusals for authorized defensive workflows. Daybreak Red provides separately approved access to specialist cyber models for more advanced security research.
 
 Combine your approved model with a controlled environment, clear limits on approved systems and actions, least-privilege permissions, and automatic review before sensitive actions run. Use the model only with the approved identity, workspace or API organization and project, and product surface.
@@ -41,8 +39,8 @@ Request **Daybreak access** through [Trusted Access for Cyber](https://help.open
 Submitting an application or completing identity verification doesn't guarantee approval.
 
 Applying, verifying your identity, or receiving approval for Daybreak Blue
-  doesn't grant access to Daybreak Red or GPT-Daybreak-Red. The specialist
-  offering requires separate approval and provisioning.
+doesn't grant access to Daybreak Red or GPT-Daybreak-Red. The specialist
+offering requires separate approval and provisioning.
 
 For enterprise access, use the approved workspace, API organization, or project only for your organization's authorized internal work. Don't extend it to external users, third-party customers, externally offered services, downstream product features, or systems outside the approved work. If the approved identity, workspace, API organization, project, model, or surface is unclear, stop and confirm it with your OpenAI representative.
 

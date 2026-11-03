@@ -6,8 +6,6 @@ path: /docs/build-plugins
 
 # Build plugins
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Turn a workflow you repeat into a plugin you can use again in ChatGPT. Describe the task in a conversation, add the instructions and reference material it needs, then test and refine the result.
 
 **Custom GPTs are moving to plugins**

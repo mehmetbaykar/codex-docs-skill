@@ -6,8 +6,6 @@ path: /docs/security/cli/ci
 
 # Codex Security CI/CD overview
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Run Codex Security in CI to review pull-request or merge-request changes, scan
 your default branch, and preserve findings and coverage. See your CI
 provider's guide for the workflow, report handling, and enforcement options.

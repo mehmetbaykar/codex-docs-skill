@@ -6,8 +6,6 @@ path: /docs/security/cli/ci/github
 
 # Run Codex Security in GitHub Actions
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Run Codex Security in GitHub Actions to review pull-request changes or scan
 your repository on a schedule. The Action installs the CLI, saves structured
 reports, and adds a job summary and source annotations. Start with advisory
@@ -32,11 +30,11 @@ credentials and deployment steps in separate jobs.
 ## Add the GitHub Actions workflow
 
 **Scan costs:** These workflows use your API key and may incur charges. Both
-  examples omit `max-cost`, so they have no estimated cost stop threshold. To
-  set a threshold of $5 per scan, add `max-cost: "5"` to the Codex Security
-  Action's `with` settings. This isn't a hard spending cap: requests already in
-  progress can exceed it. See [Set an optional scan
-  budget](#set-an-optional-scan-budget) for pricing-support requirements.
+examples omit `max-cost`, so they have no estimated cost stop threshold. To
+set a threshold of $5 per scan, add `max-cost: "5"` to the Codex Security
+Action's `with` settings. This isn't a hard spending cap: requests already in
+progress can exceed it. See [Set an optional scan
+budget](#set-an-optional-scan-budget) for pricing-support requirements.
 
 ### Scan the repository on a schedule
 
@@ -91,9 +89,9 @@ jobs:
 ```
 
 **About the version:** Both examples pin the Codex Security Action to commit
-  `3f61e5150981a5087c32e4395bbaa8ce5ce0c3e3` for the `action-v0.3.0` release,
-  which installs CLI `0.3.0`. Review a newer Action release before updating the
-  pinned commit.
+`3f61e5150981a5087c32e4395bbaa8ce5ce0c3e3` for the `action-v0.3.0` release,
+which installs CLI `0.3.0`. Review a newer Action release before updating the
+pinned commit.
 
 **Adapting the runner:** The Action needs Node.js 24 and Python 3.11 or later,
 which this runner provides. The sandbox setup installs the `bubblewrap`

@@ -6,8 +6,6 @@ path: /docs/environments/cloud-environments
 
 # Cloud environments
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Codex Cloud runs coding tasks in the cloud, so work can continue while your
 computer is asleep. Use it on the web, on mobile, or in the desktop app to edit
 code, run commands, and review results.
@@ -20,9 +18,9 @@ workspace from the published environment.
 For an introduction, see the [Codex Cloud overview](https://learn.chatgpt.com/docs/cloud).
 
 **Codex Cloud (Legacy)** continues to support Code Review and the Linear and
-  GitHub integrations. We plan to deprecate this experience. See the [legacy
-  guide](https://learn.chatgpt.com/docs/environments/cloud-environment) to create and manage
-  environments for these workflows.
+GitHub integrations. We plan to deprecate this experience. See the [legacy
+guide](https://learn.chatgpt.com/docs/environments/cloud-environment) to create and manage
+environments for these workflows.
 
 ## Start a task in Codex Cloud
 
@@ -55,13 +53,11 @@ Sign in with your ChatGPT account:
 You can also start from **Settings** > **Codex Cloud** > **Environments** >
 **Create environment**.
 
-
-
 > Illustration: Desktop app environment picker with Create environment and Manage environments below the saved environments
 
 Saving stores configuration; some settings apply to the active setup
-  immediately. Publishing captures the prepared filesystem for new tasks.
-  Sharing controls who can use the environment.
+immediately. Publishing captures the prepared filesystem for new tasks.
+Sharing controls who can use the environment.
 
 <a id="default-universal-image"></a>
 <a id="automatic-setup"></a>
@@ -77,8 +73,6 @@ Codex can record the tested setup in two fields:
 
 - **Install script:** commands to install dependencies and prepare development assets.
 - **Start skill:** instructions to start services and check that they're ready.
-
-
 
 > Illustration: Cloud environment setup conversation beside repository, script, network, secret, variable, privacy, and Advanced controls, with Save draft and Publish actions
 
@@ -96,8 +90,6 @@ To update the reusable setup, open **Settings** > **Codex Cloud** > **Environmen
 From the environment's **…** menu, select **Edit**. Describe the change,
 let Codex prepare and test it, save changes, and select **Republish**. Start a
 new task to use the update; existing tasks retain their own state.
-
-
 
 > Illustration: Codex Cloud settings with Environments and Personal vault tabs and the Edit menu open for a published environment
 
@@ -129,8 +121,6 @@ internet access. Direct variables and personal values don't add destinations.
 Review the [saved network policy](#connect-to-services) before testing.
 For workspace requirements, see [Agent Security](#agent-security).
 
-
-
 > Illustration: Manage secrets dialog with a masked registry token, Environment ownership, and packages.example.com as its allowed destination
 
 ### Supply personal values
@@ -152,8 +142,6 @@ To manage values in advance:
    **Type**, and enter the matching **Key** and your **Value**.
 3. Under **Applies to**, choose **All environments** or **Selected environments**,
    then **Save**.
-
-
 
 > Illustration: Personal vault dialog adding the APP_MODE environment variable with the value development for all environments
 

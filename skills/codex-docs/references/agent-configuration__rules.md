@@ -6,8 +6,6 @@ path: /docs/agent-configuration/rules
 
 # Rules
 
-> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
-
 Use rules to control which commands Codex can run outside the sandbox.
 
 Rules are experimental and may change.
