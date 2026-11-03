@@ -461,8 +461,8 @@
       "title": "Subagents"
     },
     "amazon-bedrock.md": {
-      "hash": "fa98783e88f6c94eb6ace7ef4c779ced0f1628208b03525baa16be9f3140c190",
-      "last_updated": "2026-11-03T18:07:28+00:00",
+      "hash": "55b441c1adc3d6ddce5be121a9f0e0b74d39885feb63238081ff59d5522c2fe0",
+      "last_updated": "2026-11-03T19:57:04+00:00",
       "original_url": "https://learn.chatgpt.com/docs/amazon-bedrock",
       "path": "/docs/amazon-bedrock",
       "section": "docs",
@@ -2233,7 +2233,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-03T18:08:50+00:00",
+  "last_updated": "2026-11-03T19:58:20+00:00",
   "skipped": [
     {
       "path": "/docs",
