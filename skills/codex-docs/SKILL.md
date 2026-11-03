@@ -14,7 +14,6 @@ compatibility: Any agent that reads Agent Skills, such as Claude Code, Codex, or
 allowed-tools: Read Grep Glob
 metadata:
   upstream: https://learn.chatgpt.com/docs
-  repository: https://github.com/mehmetbaykar/codex-docs-skill
 ---
 
 # Codex Docs
