@@ -1,7 +1,7 @@
 {
   "name": "codex-docs",
   "displayName": "Codex Docs",
-  "version": "2026.1103.2123",
+  "version": "2026.1104.41",
   "description": "Unofficial: answers OpenAI Codex questions from a local mirror of its documentation, recipes, and guides, refreshed every 3 hours.",
   "author": {
     "name": "Community contributors"

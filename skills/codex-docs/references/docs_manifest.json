@@ -1241,8 +1241,8 @@
       "title": "Sandbox"
     },
     "sandboxing__auto-review.md": {
-      "hash": "02faf1312d7c7af524d0af3aefcb3c7e18f587c065eb3fce6c1c549e162f0d19",
-      "last_updated": "2026-11-03T18:07:58+00:00",
+      "hash": "be88c477966f6b740c3c27df736b44a034dac70c81630ee306453097dfa74965",
+      "last_updated": "2026-11-04T00:40:12+00:00",
       "original_url": "https://learn.chatgpt.com/docs/sandboxing/auto-review",
       "path": "/docs/sandboxing/auto-review",
       "section": "docs",
@@ -2233,7 +2233,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-03T21:23:30+00:00",
+  "last_updated": "2026-11-04T00:41:12+00:00",
   "skipped": [
     {
       "path": "/docs",
