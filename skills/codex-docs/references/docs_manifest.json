@@ -392,17 +392,17 @@
     "fetch_tool_version": "3.0",
     "pages_excluded": 77,
     "pages_failed": 0,
-    "pages_fetched_successfully": 180,
+    "pages_fetched_successfully": 181,
     "pages_skipped": 3,
     "pages_stale": 0,
     "raw_fallback_pages": 0,
     "stale_pages": [],
-    "total_pages_discovered": 260
+    "total_pages_discovered": 261
   },
   "files": {
     "administration.md": {
-      "hash": "83519663b3d1355004932f3416f3b8ea0449d84bbd012e06c6337fdfe39e7987",
-      "last_updated": "2026-11-03T18:07:26+00:00",
+      "hash": "50f6827b186ae31b86f7c3270180af8ba662d13896cc73d7384de3badad764dc",
+      "last_updated": "2026-11-04T21:21:52+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "section": "docs",
@@ -551,8 +551,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "9b85858d63fa5d42b7dc7d21861f8c468567d5cd695a69d9a719611584c7ea73",
-      "last_updated": "2026-11-04T06:31:04+00:00",
+      "hash": "82d3f960c9c9c58f64b96d069f85d1005dcf74fedfa99edb7f2df52a4728c5ba",
+      "last_updated": "2026-11-04T21:21:57+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "section": "docs",
@@ -641,8 +641,8 @@
       "title": "Codex IDE extension"
     },
     "computer-use.md": {
-      "hash": "9996b5c71d3ef4875323a029173aa690884e39121634bed233ce27f9a68bf183",
-      "last_updated": "2026-11-03T18:07:35+00:00",
+      "hash": "750244a3f3ed01daf47a2de434547da376a697008657081ab07a4524778757df",
+      "last_updated": "2026-11-04T21:22:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/computer-use",
       "path": "/docs/computer-use",
       "section": "docs",
@@ -1461,8 +1461,8 @@
       "title": "Use the Codex Security workbench"
     },
     "security__sdk.md": {
-      "hash": "f807360c16e8e6894d9f76e16510099160b2685bbc0d6552d1fe80ae44551991",
-      "last_updated": "2026-11-04T09:23:51+00:00",
+      "hash": "5ff6b399cb99d65d0b8ea4f9555f2d65c49ebf18a0839e2e4f0042ceff977f4b",
+      "last_updated": "2026-11-04T21:22:28+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/sdk",
       "path": "/docs/security/sdk",
       "section": "docs",
@@ -2199,6 +2199,16 @@
       "source_url": "https://learn.chatgpt.com/docs/windows/wsl.md",
       "status": "live",
       "title": "WSL"
+    },
+    "working-with-agents.md": {
+      "hash": "f5a007e6850b9439428ddfc402e8848aa591d05bc946de8fda7ec990a0240c9d",
+      "last_updated": "2026-11-04T21:22:34+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/working-with-agents",
+      "path": "/docs/working-with-agents",
+      "section": "docs",
+      "source_url": "https://learn.chatgpt.com/docs/working-with-agents.md",
+      "status": "live",
+      "title": "Working with agents"
     }
   },
   "filters": {
@@ -2233,7 +2243,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-04T09:24:40+00:00",
+  "last_updated": "2026-11-04T21:23:23+00:00",
   "skipped": [
     {
       "path": "/docs",

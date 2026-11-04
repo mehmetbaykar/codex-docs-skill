@@ -130,6 +130,7 @@ Invoke this skill with a topic: `/codex-docs hooks` in Claude Code or Cursor, `$
 - `windows__windows-app` - [ChatGPT desktop app for Windows](https://learn.chatgpt.com/docs/windows/windows-app)
 - `windows__windows-sandbox` - [Windows sandbox](https://learn.chatgpt.com/docs/windows/windows-sandbox)
 - `windows__wsl` - [WSL](https://learn.chatgpt.com/docs/windows/wsl)
+- `working-with-agents` - [Working with agents](https://learn.chatgpt.com/docs/working-with-agents)
 
 ## Recipes
 

@@ -108,6 +108,7 @@ Review workspace security policies, governance, and audit controls.
 
 - [Governance](https://learn.chatgpt.com/docs/enterprise/governance): Choose the right analytics, spend, and audit surface for each question.
 - [Agent security](https://learn.chatgpt.com/docs/enterprise/agent-security): Manage the Global policy baseline and supported Local and Codex Cloud environment settings.
+- [Safety and security in dots](https://learn.chatgpt.com/docs/enterprise/dots-security): Review dots security controls, data handling, and audit and offboarding considerations.
 - [Prisma AIRS](https://learn.chatgpt.com/docs/enterprise/prisma-airs): Apply workspace-wide security policies to Codex prompts.
 - [HIPAA configuration](https://learn.chatgpt.com/docs/hipaa-configuration): Configure local runtime safeguards for workflows that may handle protected health information.
 - [Compliance API and audit events](https://learn.chatgpt.com/docs/enterprise/compliance-api): Export activity records for audit and investigation workflows.
