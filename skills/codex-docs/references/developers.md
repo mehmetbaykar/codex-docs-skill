@@ -49,7 +49,6 @@ Add Codex to products, systems, and automated workflows.
 
 - [Codex SDK](https://learn.chatgpt.com/docs/codex-sdk): Control Codex programmatically from your application.
 - [App Server](https://learn.chatgpt.com/docs/app-server): Integrate with the protocol that powers Codex clients.
-- [Model catalogs](https://learn.chatgpt.com/docs/model-catalogs): Serve current model defaults through a cloud or gateway integration.
 - [GitHub Action](https://learn.chatgpt.com/docs/github-action): Run Codex from GitHub Actions workflows.
 - [Non-interactive mode](https://learn.chatgpt.com/docs/non-interactive-mode): Run Codex from scripts and other automated systems.
 

@@ -401,8 +401,8 @@
   },
   "files": {
     "administration.md": {
-      "hash": "50f6827b186ae31b86f7c3270180af8ba662d13896cc73d7384de3badad764dc",
-      "last_updated": "2026-11-04T21:21:52+00:00",
+      "hash": "5438471eea5029a47b0e5640882073bb62046f2f22508127aadc453eef2b264c",
+      "last_updated": "2026-11-05T18:25:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/administration",
       "path": "/docs/administration",
       "section": "docs",
@@ -461,8 +461,8 @@
       "title": "Subagents"
     },
     "amazon-bedrock.md": {
-      "hash": "55b441c1adc3d6ddce5be121a9f0e0b74d39885feb63238081ff59d5522c2fe0",
-      "last_updated": "2026-11-03T19:57:04+00:00",
+      "hash": "1488e744c6be9fb0545c03c9316802555b07d15595b718aeae9d7aab16043a13",
+      "last_updated": "2026-11-05T18:25:02+00:00",
       "original_url": "https://learn.chatgpt.com/docs/amazon-bedrock",
       "path": "/docs/amazon-bedrock",
       "section": "docs",
@@ -791,8 +791,8 @@
       "title": "Developer settings"
     },
     "developers.md": {
-      "hash": "fd4a657d923c3f47af5e7a91fb7e320ec0bd8c4b6ffb94eae9bd43868a7fdceb",
-      "last_updated": "2026-11-03T18:07:41+00:00",
+      "hash": "c4fd3796754ca737e6c62c26bf14917f04e203d58e7d6f7c10bf704d8847699c",
+      "last_updated": "2026-11-05T18:25:13+00:00",
       "original_url": "https://learn.chatgpt.com/docs/developers",
       "path": "/docs/developers",
       "section": "docs",
@@ -1059,16 +1059,6 @@
       "source_url": "https://learn.chatgpt.com/docs/mobile.md",
       "status": "live",
       "title": "Codex on mobile"
-    },
-    "model-catalogs.md": {
-      "hash": "591e471f742a54e5af5fcd238e485ba809c492c2f4e2b5d7d3f3ed700ad87de0",
-      "last_updated": "2026-11-03T18:07:51+00:00",
-      "original_url": "https://learn.chatgpt.com/docs/model-catalogs",
-      "path": "/docs/model-catalogs",
-      "section": "docs",
-      "source_url": "https://learn.chatgpt.com/docs/model-catalogs.md",
-      "status": "live",
-      "title": "Implementing model catalogs for gateways and clouds"
     },
     "model-selection.md": {
       "hash": "23b88892da31d9c981a66d04d7cca0787c5cebf4479fb7728fbe371947ae8356",
@@ -2121,8 +2111,8 @@
       "title": "Site tools"
     },
     "whats-new.md": {
-      "hash": "3eca0efd77f0b1372bbf2cd8b9a26d40df703731c40660b043de98de10f528ab",
-      "last_updated": "2026-11-03T18:08:11+00:00",
+      "hash": "3dd8fe505daa47528612cf054f1fb9b3c86655d9e33e75492155269c0ed4aed2",
+      "last_updated": "2026-11-05T18:25:38+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "section": "docs",
@@ -2139,6 +2129,16 @@
       "source_url": "https://learn.chatgpt.com/docs/whats-new/devday-2026.md",
       "status": "live",
       "title": "DevDay 2026"
+    },
+    "whats-new__november-2-6-2026.md": {
+      "hash": "2c116eadefc12a10afb770f3fc3d8823f16a4c94be6cbde3e449429f237668ae",
+      "last_updated": "2026-11-05T18:25:38+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/whats-new/november-2-6-2026",
+      "path": "/docs/whats-new/november-2-6-2026",
+      "section": "docs",
+      "source_url": "https://learn.chatgpt.com/docs/whats-new/november-2-6-2026.md",
+      "status": "live",
+      "title": "November 2\u20136, 2026"
     },
     "whats-new__october-26-30-2026.md": {
       "hash": "fc523a63dcf3b2bbbe14b3cca530f076517fe8a662b4488cf921a5ac8f7f3e7f",
@@ -2243,7 +2243,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-05T09:24:51+00:00",
+  "last_updated": "2026-11-05T18:26:30+00:00",
   "skipped": [
     {
       "path": "/docs",
