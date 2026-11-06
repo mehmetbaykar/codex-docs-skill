@@ -1,26 +1,27 @@
 ---
-title: "Getting Started with Daybreak Blue."
+title: "Getting Started with Daybreak Blue"
 source: https://learn.chatgpt.com/use-cases/getting-started-with-daybreak-blue
 path: /use-cases/getting-started-with-daybreak-blue
 ---
 
-# Getting Started with Daybreak Blue.
+# Getting Started with Daybreak Blue
 
 Give selected team members access and check that they can use Daybreak in Codex.
 
-Daybreak Blue reduces refusals on supported models for authorized defensive work. As a ChatGPT Enterprise workspace owner, give approved team members access to review internal code in Codex.
+Daybreak Blue reduces refusals on supported models for authorized defensive work. As a ChatGPT Business or Enterprise workspace owner, give approved team members access to review internal code in Codex.
 
 ## Recipe details
 
 ```yaml
-name: Getting Started with Daybreak Blue.
+name: Getting Started with Daybreak Blue
 tagline: Give selected team members access and check that they can use Daybreak
   in Codex.
 summary: Daybreak Blue reduces refusals on supported models for authorized
-  defensive work. As a ChatGPT Enterprise workspace owner, give approved team
-  members access to review internal code in Codex.
+  defensive work. As a ChatGPT Business or Enterprise workspace owner, give
+  approved team members access to review internal code in Codex.
 bestFor:
-  - Enterprise workspace owners rolling out Daybreak Blue to an approved group.
+  - ChatGPT Business and Enterprise workspace owners rolling out Daybreak Blue
+    to an approved group.
   - Security team members checking their workspace access in Codex.
 relatedLinks:
   - label: Models and Trusted Access
@@ -31,17 +32,21 @@ relatedLinks:
 
 ## Before you start
 
-Sign in as a **workspace owner** and open [Workspace status and access](https://chatgpt.com/admin/status-and-access) for the Enterprise workspace your team will use. Look for **Daybreak Blue** under **Trusted Access**.
+If your ChatGPT Business workspace is already approved, go to [ChatGPT Business](#chatgpt-business) to give team members access.
+
+For ChatGPT Enterprise, sign in as a **workspace owner** and open [Workspace status and access](https://chatgpt.com/admin/status-and-access) for the Enterprise workspace your team will use. Look for **Daybreak Blue** under **Trusted Access**.
 
 **What you'll accomplish**
 
 1. [Request workspace access](#request-access-for-your-workspace) if you haven't applied. If Daybreak Blue shows **In review**, wait for OpenAI's welcome email.
 2. [Give your team access](#enable-daybreak-for-your-team) when Daybreak Blue shows **Active**.
-3. [Check access in Codex](#check-access-in-codex) with a team member who has the role. If you've already assigned the role, start here.
+3. [Check access in Codex](#check-access-in-codex) with a team member you've granted access to. If you've already granted access, start here.
 
 Using an API key for the Responses API or Codex? [Set up an API project](#set-up-an-api-project). If your team uses both ChatGPT sign-in and API keys, complete both setups.
 
 ## Request access for your workspace
+
+Follow these steps for a ChatGPT Enterprise workspace.
 
 Gather what you'll need for the application.
 
@@ -61,6 +66,14 @@ When OpenAI emails you that the workspace is ready, return to **Trusted Access**
 
 ## Enable Daybreak for your team
 
+### ChatGPT Business
+
+In your approved workspace, open [Admin Console → Models](https://chatgpt.com/admin/models). Under **Specialty Models**, find **Daybreak Blue**, choose **Set access**, and select the approved team members who should have access.
+
+The workspace toggle lets you pause access for everyone. When you turn it back on, your individual selections still apply. Once access is on, [check access in Codex](#check-access-in-codex) with an approved member.
+
+### ChatGPT Enterprise
+
 Open [Admin Console → Models](https://chatgpt.com/admin/models) and check **Workspace default → Cybersecurity**. For a new rollout to selected members, leave **Daybreak Blue** off here. If it's already on, first give everyone who should keep access a role that grants it. Then you can turn the default off and select **Save changes**.
 
 1. In the Admin Console, open **Groups & roles**. Choose a custom role used only by approved team members, or create and save a new role for the team.
@@ -78,7 +91,7 @@ For other rollout options, see the [team setup guide](https://help.openai.com/en
 
 ## Check access in Codex
 
-Ask one member with the role to open the [ChatGPT desktop app](https://developers.openai.com/docs/app), sign in with their ChatGPT account, and select the approved workspace. Have them open **Codex**, start a chat, and open the model menu below the message box.
+Have an approved team member open the [ChatGPT desktop app](https://developers.openai.com/docs/app), sign in with their ChatGPT account, and select the approved workspace. Have them open **Codex**, start a chat, and open the model menu below the message box.
 
 In that menu, turn **Daybreak** on and select the model the owner enabled. **GPT-6 Sol** supports reduced refusals with Blue. For another model, check the [Daybreak model support table](https://help.openai.com/en/articles/20001258-openai-daybreak-trusted-access-for-cyber-overview).
 
@@ -86,7 +99,7 @@ In that menu, turn **Daybreak** on and select the model the owner enabled. **GPT
 
 Have the member try a small task in that chat, such as “Suggest two tests for a patch that rejects expired session tokens.” Check that the chat returns a reply without a model access error.
 
-If the toggle or model is missing, ask the member to refresh the app and check which workspace they're using. As the owner, confirm that the member has the intended role, directly or through their group. Then reopen the role in **Models → Roles** and check its Daybreak Blue and model settings. For access errors, see [Daybreak troubleshooting](https://help.openai.com/en/articles/20001259-troubleshooting-openai-daybreak).
+If the toggle or model is missing, ask the member to refresh the app and check which workspace they're using. In ChatGPT Business, check the workspace toggle and the member’s selection under **Set access**. In ChatGPT Enterprise, confirm that the member has the intended role, directly or through their group. For that role, reopen the override in **Models → Roles** and check its Daybreak Blue and model settings. For access errors, see [Daybreak troubleshooting](https://help.openai.com/en/articles/20001259-troubleshooting-openai-daybreak).
 
 ## Run your first security scan
 
@@ -94,7 +107,7 @@ To review code with the team, follow [Run your first security scan](https://deve
 
 ## Set up an API project
 
-Workspace roles apply to people who sign in with ChatGPT. For API keys, an **API organization owner** enables Daybreak Blue separately for each project that needs it.
+Workspace access settings apply to people who sign in with ChatGPT. For API keys, an **API organization owner** enables Daybreak Blue separately for each project that needs it.
 
 1. **Confirm which organization is approved.** Open [Organization status and access](https://platform.openai.com/settings/organization/status-and-access) in the API Platform and check your Daybreak approval email for the intended API organization. If the email only names your ChatGPT workspace, ask your OpenAI account team to confirm API access before proceeding.
 2. **Enable Blue for the project.** In the approved organization, choose or create a **non-default project** for your team's internal security work. Open **Project settings → General → Daybreak model access**, turn on **Daybreak Blue**, and select **Save**. Add the approved users to the project and allow up to 15 minutes for the change to take effect.

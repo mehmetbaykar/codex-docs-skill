@@ -159,7 +159,7 @@ Invoke this skill with a topic: `/codex-docs hooks` in Claude Code or Cursor, `$
 - `use-cases__fix-a-finding-from-your-security-scan` - [Fix a finding from your security scan](https://learn.chatgpt.com/use-cases/fix-a-finding-from-your-security-scan)
 - `use-cases__follow-goals` - [Follow a goal](https://learn.chatgpt.com/use-cases/follow-goals)
 - `use-cases__frontend-designs` - [Build responsive front-end designs](https://learn.chatgpt.com/use-cases/frontend-designs)
-- `use-cases__getting-started-with-daybreak-blue` - [Getting Started with Daybreak Blue.](https://learn.chatgpt.com/use-cases/getting-started-with-daybreak-blue)
+- `use-cases__getting-started-with-daybreak-blue` - [Getting Started with Daybreak Blue](https://learn.chatgpt.com/use-cases/getting-started-with-daybreak-blue)
 - `use-cases__github-code-reviews` - [Review GitHub pull requests](https://learn.chatgpt.com/use-cases/github-code-reviews)
 - `use-cases__idea-to-proof-of-concept` - [Get from idea to proof of concept](https://learn.chatgpt.com/use-cases/idea-to-proof-of-concept)
 - `use-cases__incident-to-tested-fix` - [Investigate an incident and test a fix](https://learn.chatgpt.com/use-cases/incident-to-tested-fix)

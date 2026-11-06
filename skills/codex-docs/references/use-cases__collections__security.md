@@ -17,7 +17,7 @@ tools you already use.
 If your security team plans to use Daybreak Blue, a ChatGPT Enterprise
 workspace owner can grant access to selected members.
 
-- [Getting Started with Daybreak Blue.](https://developers.openai.com/codex/use-cases/getting-started-with-daybreak-blue): Daybreak Blue reduces refusals on supported models for authorized defensive work
+- [Getting Started with Daybreak Blue](https://developers.openai.com/codex/use-cases/getting-started-with-daybreak-blue): Daybreak Blue reduces refusals on supported models for authorized defensive work
 
 ## Find vulnerabilities
 

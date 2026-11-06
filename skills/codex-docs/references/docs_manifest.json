@@ -591,8 +591,8 @@
       "title": "Codex Cloud"
     },
     "cloud__internet-access.md": {
-      "hash": "dfd90b49d75af118eeab4f33a2f2b2b697016c6cbe02b497adbcef9b4ddbef1a",
-      "last_updated": "2026-11-03T18:07:33+00:00",
+      "hash": "0977425b0552dfcffd7b4dd86ffb0d44b52576ee950566e241f3cd8d26a75a69",
+      "last_updated": "2026-11-06T18:24:49+00:00",
       "original_url": "https://learn.chatgpt.com/docs/cloud/internet-access",
       "path": "/docs/cloud/internet-access",
       "section": "docs",
@@ -801,8 +801,8 @@
       "title": "Developers"
     },
     "environments__cloud-environment.md": {
-      "hash": "81cef298338838deede7daa4bdaa3617d8ed9ae709004321ed7494db90871d12",
-      "last_updated": "2026-11-03T18:07:42+00:00",
+      "hash": "8091dce3dc54000a6b769e4b81f5174871ce72f5d9b7f7ef5618abbca723575e",
+      "last_updated": "2026-11-06T18:24:55+00:00",
       "original_url": "https://learn.chatgpt.com/docs/environments/cloud-environment",
       "path": "/docs/environments/cloud-environment",
       "section": "docs",
@@ -971,8 +971,8 @@
       "title": "Building an AI-Native Engineering Team"
     },
     "hooks.md": {
-      "hash": "a8ba2c01b34860058d9c6317bc98bae5a61b1381cd6df910747b593c9af8338b",
-      "last_updated": "2026-11-03T18:07:48+00:00",
+      "hash": "73d1e5ea374b531089700728c604b4b26de4feed87913d1b92cff15ed0c44cb2",
+      "last_updated": "2026-11-06T18:24:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/hooks",
       "path": "/docs/hooks",
       "section": "docs",
@@ -1151,8 +1151,8 @@
       "title": "Pricing"
     },
     "projects.md": {
-      "hash": "fee099e7e68f4d3ca9d325a8e2eba6835e2770e1741a72bd8dd81a01ef891e54",
-      "last_updated": "2026-11-03T18:07:55+00:00",
+      "hash": "db981ba4a8d5c0d1a56c3f260ae0aac67e1e15e8852e5082b66413cecdaab6a4",
+      "last_updated": "2026-11-06T18:25:05+00:00",
       "original_url": "https://learn.chatgpt.com/docs/projects",
       "path": "/docs/projects",
       "section": "docs",
@@ -1201,8 +1201,8 @@
       "title": "Settings"
     },
     "reference__troubleshooting.md": {
-      "hash": "e89a9e50181f029f40b80bbf50d21bca2d5e3801a482afd34fb3a683e680a951",
-      "last_updated": "2026-11-03T18:07:57+00:00",
+      "hash": "a28743406929ce377724af871291fbbae357fd2d61a98e90becd8f5ece468d60",
+      "last_updated": "2026-11-06T18:25:06+00:00",
       "original_url": "https://learn.chatgpt.com/docs/reference/troubleshooting",
       "path": "/docs/reference/troubleshooting",
       "section": "docs",
@@ -1211,8 +1211,8 @@
       "title": "Troubleshooting"
     },
     "remote-connections.md": {
-      "hash": "749ecb8bedca66dcbccf818606afaa3e8d68f65c9fc393051f7824aa5e416a10",
-      "last_updated": "2026-11-03T18:07:57+00:00",
+      "hash": "69beaea79471a9ee7cd79cb849abe769472b97ba84022cadc8408f9351fe1168",
+      "last_updated": "2026-11-06T18:25:06+00:00",
       "original_url": "https://learn.chatgpt.com/docs/remote-connections",
       "path": "/docs/remote-connections",
       "section": "docs",
@@ -1681,8 +1681,8 @@
       "title": "Production systems"
     },
     "use-cases__collections__security.md": {
-      "hash": "d7e6229e74c88c48f2ce8d405871ac43b87045e453dc44f7c2c3631034e7b15a",
-      "last_updated": "2026-11-03T18:08:26+00:00",
+      "hash": "8ae2d989dcdc2dac8d55f23427d5b881b3d90d73bb9f94a3077b595cabd42444",
+      "last_updated": "2026-11-06T18:25:32+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/collections/security",
       "path": "/use-cases/collections/security",
       "section": "use-cases",
@@ -1801,14 +1801,14 @@
       "title": "Build responsive front-end designs"
     },
     "use-cases__getting-started-with-daybreak-blue.md": {
-      "hash": "3055732f431a689ae0e64ca9cc0aa83ca61c1226df8ad9f87fd4654e68c1dba8",
-      "last_updated": "2026-11-03T18:08:33+00:00",
+      "hash": "569efdf2e32c4a644f19cfd36e25c150c92c8b0a096f079fcbfc42f638098503",
+      "last_updated": "2026-11-06T18:25:41+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/getting-started-with-daybreak-blue",
       "path": "/use-cases/getting-started-with-daybreak-blue",
       "section": "use-cases",
       "source_url": "https://learn.chatgpt.com/use-cases/getting-started-with-daybreak-blue.md",
       "status": "live",
-      "title": "Getting Started with Daybreak Blue."
+      "title": "Getting Started with Daybreak Blue"
     },
     "use-cases__github-code-reviews.md": {
       "hash": "fd5e8f5d770bdab7b3ab950ed875081e6aca386a87ab119d179bad64b9ad371e",
@@ -2243,7 +2243,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-06T12:27:54+00:00",
+  "last_updated": "2026-11-06T18:26:00+00:00",
   "skipped": [
     {
       "path": "/docs",
