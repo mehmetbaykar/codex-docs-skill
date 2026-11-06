@@ -8,6 +8,12 @@ path: /docs/changelog
 
 > Rendered from the changelog RSS feed: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.167.0 (2026-11-06)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-435979892
+
+0.167.0
+
 ## ChatGPT for iOS (2026-11-02)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-11-02-mobile
