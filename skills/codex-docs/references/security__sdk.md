@@ -139,13 +139,17 @@ differ because `run` generates its own unique destination. Capture the actual
 archive path with `onOutputArchived`:
 
 ```typescript
-await security.run(repository, {
-  outputDir: outputDir,
-  archiveExisting: true,
-  onOutputArchived(archiveDir) {
-    console.log("Archived results:", archiveDir);
-  },
-});
+try {
+  await security.run(repository, {
+    outputDir: outputDir,
+    archiveExisting: true,
+    onOutputArchived(archiveDir) {
+      console.log("Archived results:", archiveDir);
+    },
+  });
+} finally {
+  await security.close();
+}
 ```
 
 The scan archives the earlier results and starts with an empty output
@@ -161,9 +165,13 @@ The default target is the complete repository.
 Pass an array of paths inside the repository:
 
 ```typescript
-const result = await security.run(repository, {
-  target: ["services/billing", "packages/auth"],
-});
+try {
+  const result = await security.run(repository, {
+    target: ["services/billing", "packages/auth"],
+  });
+} finally {
+  await security.close();
+}
 ```
 
 Paths can identify files or directories. The SDK resolves each path inside the
@@ -182,7 +190,11 @@ const target = DiffTarget.refs({
   head: "HEAD",
 });
 
-const result = await security.run(repository, { target });
+try {
+  const result = await security.run(repository, { target });
+} finally {
+  await security.close();
+}
 ```
 
 The head defaults to `HEAD`. Pass the Git worktree root as the repository and
@@ -196,7 +208,11 @@ revision:
 ```typescript
 import { DiffTarget } from "@openai/codex-security";
 const target = DiffTarget.workingTree({ base: "HEAD" });
-const result = await security.run(repository, { target });
+try {
+  const result = await security.run(repository, { target });
+} finally {
+  await security.close();
+}
 ```
 
 The base defaults to `HEAD`. Fetch the selected revisions before starting a
@@ -207,15 +223,19 @@ diff or working-tree scan.
 Set `mode: "deep"` for a repository or path scan that needs broader review:
 
 ```typescript
-const result = await security.run(repository, {
-  target: ["services/billing"],
-  mode: "deep",
-  workers: 2,
-  subagents: 0,
-  stopAfterNoNew: 3,
-  maxDiscoveryRuns: 10,
-  maxTimeMinutes: 90,
-});
+try {
+  const result = await security.run(repository, {
+    target: ["services/billing"],
+    mode: "deep",
+    workers: 2,
+    subagents: 0,
+    stopAfterNoNew: 3,
+    maxDiscoveryRuns: 10,
+    maxTimeMinutes: 90,
+  });
+} finally {
+  await security.close();
+}
 ```
 
 Deep mode supports repository and path targets. Use standard mode for diff and
@@ -240,9 +260,13 @@ import { join } from "node:path";
 
 const knowledgeBase = join(repository, "security.md");
 
-const result = await security.run(repository, {
-  knowledgeBasePaths: [knowledgeBase],
-});
+try {
+  const result = await security.run(repository, {
+    knowledgeBasePaths: [knowledgeBase],
+  });
+} finally {
+  await security.close();
+}
 ```
 
 The SDK accepts files or directories and searches directories recursively.
@@ -260,10 +284,14 @@ change or are deleted. Canonical reports don't embed the document text.
 Use `scanPrompt` to focus the scan and `postScanPrompt` to request a follow-up:
 
 ```typescript
-const result = await security.run(repository, {
-  scanPrompt: "Focus on tenant isolation and authorization checks.",
-  postScanPrompt: "Write confirmed findings to post-scan-summary.md.",
-});
+try {
+  const result = await security.run(repository, {
+    scanPrompt: "Focus on tenant isolation and authorization checks.",
+    postScanPrompt: "Write confirmed findings to post-scan-summary.md.",
+  });
+} finally {
+  await security.close();
+}
 ```
 
 If the follow-up fails, the SDK keeps the completed scan and reports the
@@ -303,14 +331,18 @@ Set `maxCostUsd` to stop a scan when its estimated model cost exceeds a limit.
 Use `onCost` to track cost as the scan runs and report `estimatedUsdRange`:
 
 ```typescript
-const result = await security.run(repository, {
-  maxCostUsd: 5,
-  onCost(cost) {
-    console.log(cost.estimatedUsdRange);
-  },
-});
+try {
+  const result = await security.run(repository, {
+    maxCostUsd: 5,
+    onCost(cost) {
+      console.log(cost.estimatedUsdRange);
+    },
+  });
 
-console.log(result.cost?.estimatedUsdRange);
+  console.log(result.cost?.estimatedUsdRange);
+} finally {
+  await security.close();
+}
 ```
 
 The limit uses `estimatedUsd`, the short-context baseline. Requests already
@@ -346,6 +378,9 @@ const result = await runComponentScans({
 });
 
 console.log(result.reportPath);
+if (result.failed > 0) {
+  throw new Error(`${result.failed} component scans failed.`);
+}
 ```
 
 Set `workers` to control how many components run at once. The default is four.
@@ -508,29 +543,33 @@ Pass `ScanOptions` callbacks to report scan startup, worker progress, and
 connection retries:
 
 ```typescript
-const result = await security.run(repository, {
-  outputDir: outputDir,
-  onScanStarted() {
-    console.log("Scan started");
-  },
-  onProgress(progress) {
-    console.log(progress.phase, progress.filesCompleted, progress.filesTotal);
-  },
-  onWorkerStatus(status) {
-    console.log(status.kind, status);
-  },
-  onSessionEvent(session) {
-    console.log(session.threadId, session.worker, session.event["type"]);
-  },
-  onReconnect(attempt, maxAttempts) {
-    console.log(`Reconnect attempt ${attempt} of ${maxAttempts}`);
-  },
-  onObserverError(observer, error) {
-    console.error(`${observer} failed`, error);
-  },
-});
+try {
+  const result = await security.run(repository, {
+    outputDir: outputDir,
+    onScanStarted() {
+      console.log("Scan started");
+    },
+    onProgress(progress) {
+      console.log(progress.phase, progress.filesCompleted, progress.filesTotal);
+    },
+    onWorkerStatus(status) {
+      console.log(status.kind, status);
+    },
+    onSessionEvent(session) {
+      console.log(session.threadId, session.worker, session.event["type"]);
+    },
+    onReconnect(attempt, maxAttempts) {
+      console.log(`Reconnect attempt ${attempt} of ${maxAttempts}`);
+    },
+    onObserverError(observer, error) {
+      console.error(`${observer} failed`, error);
+    },
+  });
 
-console.log(result.reportPath);
+  console.log(result.reportPath);
+} finally {
+  await security.close();
+}
 ```
 
 Pass an `AbortSignal` from your request or job controller to cancel a scan.
@@ -551,6 +590,8 @@ try {
   } else {
     throw error;
   }
+} finally {
+  await security.close();
 }
 ```
 

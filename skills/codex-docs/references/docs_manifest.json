@@ -471,8 +471,8 @@
       "title": "Use ChatGPT Work and Codex with Amazon Bedrock"
     },
     "annotations-extensibility.md": {
-      "hash": "4f524c0f79db7819969bc2f899e91def0e49adad495466b5e53e363d0729db49",
-      "last_updated": "2026-11-03T18:07:28+00:00",
+      "hash": "6f8368b2ae59bfb057049aef20dd7f2228e691aa7410507ca84fb38479955a57",
+      "last_updated": "2026-11-06T00:40:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/annotations-extensibility",
       "path": "/docs/annotations-extensibility",
       "section": "docs",
@@ -481,8 +481,8 @@
       "title": "Annotations Extensibility"
     },
     "app-server.md": {
-      "hash": "3cc7a2edea172f1f5b9cf6512ec7c2debf626c703d0e565d4a641ba29bf92b3b",
-      "last_updated": "2026-11-03T18:07:29+00:00",
+      "hash": "0ed37812877600048f0a4e3c460cc2b5634c4dde7fcde0833c60a135c15cd503",
+      "last_updated": "2026-11-06T00:40:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/app-server",
       "path": "/docs/app-server",
       "section": "docs",
@@ -611,8 +611,8 @@
       "title": "Code review"
     },
     "codex-sdk.md": {
-      "hash": "f6c42b68bfb43b9c196c0c67a87c6f228010ea32f714cc788ee9161d30702820",
-      "last_updated": "2026-11-03T18:07:34+00:00",
+      "hash": "338960d785f8717f2ebc06e06281eeb7f03d1fc53e2786004b6ab0d91ab563cb",
+      "last_updated": "2026-11-06T00:40:27+00:00",
       "original_url": "https://learn.chatgpt.com/docs/codex-sdk",
       "path": "/docs/codex-sdk",
       "section": "docs",
@@ -1451,8 +1451,8 @@
       "title": "Use the Codex Security workbench"
     },
     "security__sdk.md": {
-      "hash": "5ff6b399cb99d65d0b8ea4f9555f2d65c49ebf18a0839e2e4f0042ceff977f4b",
-      "last_updated": "2026-11-04T21:22:28+00:00",
+      "hash": "0d77a7bf80e5fa026b48d38f576dd85e4baf5b85d9e6c372a5dfb445817223d7",
+      "last_updated": "2026-11-06T00:40:51+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/sdk",
       "path": "/docs/security/sdk",
       "section": "docs",
@@ -2243,7 +2243,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-05T18:26:30+00:00",
+  "last_updated": "2026-11-06T00:41:40+00:00",
   "skipped": [
     {
       "path": "/docs",
