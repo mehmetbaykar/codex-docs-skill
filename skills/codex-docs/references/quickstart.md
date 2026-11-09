@@ -127,9 +127,10 @@ Help me plan my event. Ask me about the occasion, guests, date, location, budget
 ```
 
 ## Next steps
-[Learn more about the ChatGPT desktop app
+[Learn more about the ChatGPT desktop app](https://learn.chatgpt.com/docs/app)
 
-Use the ChatGPT desktop app to work with your local projects.](https://learn.chatgpt.com/docs/app)
-[Import your setup
+Use the ChatGPT desktop app to work with your local projects.
 
-Bring supported setup, projects, and recent work into ChatGPT.](https://learn.chatgpt.com/docs/import)
+[Import your setup](https://learn.chatgpt.com/docs/import)
+
+Bring supported setup, projects, and recent work into ChatGPT.

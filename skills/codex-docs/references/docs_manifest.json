@@ -1041,8 +1041,8 @@
       "title": "Codex MCP server removal"
     },
     "migrate-custom-gpts.md": {
-      "hash": "0d20ead34e32007f605c01a1a256b6c0c20693492b8fc5231978f2fe9b082d43",
-      "last_updated": "2026-11-03T18:07:50+00:00",
+      "hash": "a217f674e4fe9b8b46255ed9c0964e216840ea87472d86f1f9d23e0bc4acc2a0",
+      "last_updated": "2026-11-09T03:25:44+00:00",
       "original_url": "https://learn.chatgpt.com/docs/migrate-custom-gpts",
       "path": "/docs/migrate-custom-gpts",
       "section": "docs",
@@ -1161,8 +1161,8 @@
       "title": "Projects and chats"
     },
     "prompting.md": {
-      "hash": "bcbedb7ea4aab1159aee181784a9a2e3577bdfec81f99d6733da03bd893a09f6",
-      "last_updated": "2026-11-03T18:07:55+00:00",
+      "hash": "3ed60f3d695aaa9d710396293ee7a95d096a7029cd834d5256c930d6e67569c1",
+      "last_updated": "2026-11-09T03:25:48+00:00",
       "original_url": "https://learn.chatgpt.com/docs/prompting",
       "path": "/docs/prompting",
       "section": "docs",
@@ -1171,8 +1171,8 @@
       "title": "Prompting"
     },
     "quickstart.md": {
-      "hash": "b5fac3a5db4ae3015c8e8001d1a672fee44ddbff28c5e306ea746a7451b75ab0",
-      "last_updated": "2026-11-03T18:07:56+00:00",
+      "hash": "15cd7efa56e3bdf22c89a51371bd1cd358adfdf77b0374fd7ce4a18736188c43",
+      "last_updated": "2026-11-09T03:25:48+00:00",
       "original_url": "https://learn.chatgpt.com/docs/quickstart",
       "path": "/docs/quickstart",
       "section": "docs",
@@ -1341,8 +1341,8 @@
       "title": "Codex Security Cloud FAQ"
     },
     "security__plugin.md": {
-      "hash": "ffa5cb14f7332a354f4753a4f1bb677667c5380cb05ec5158b74871898a4f3a6",
-      "last_updated": "2026-11-03T18:08:02+00:00",
+      "hash": "590eab8b42d13e64dfe572f7b671b35887348048ddc99bee780794ccb621b051",
+      "last_updated": "2026-11-09T03:25:53+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin",
       "path": "/docs/security/plugin",
       "section": "docs",
@@ -1501,8 +1501,8 @@
       "title": "Sign in with ChatGPT"
     },
     "skills-and-plugins.md": {
-      "hash": "cd7ef2701d8d25b17eed8410f06d2bb805f0cb27c0ae388c744397961eef9fee",
-      "last_updated": "2026-11-03T18:08:09+00:00",
+      "hash": "a225a983d82efabe9e1f39891822872e5730d1d7d27aadb6ba5eb68a20875510",
+      "last_updated": "2026-11-09T03:25:58+00:00",
       "original_url": "https://learn.chatgpt.com/docs/skills-and-plugins",
       "path": "/docs/skills-and-plugins",
       "section": "docs",
@@ -2243,7 +2243,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-06T18:26:00+00:00",
+  "last_updated": "2026-11-09T03:26:48+00:00",
   "skipped": [
     {
       "path": "/docs",

@@ -20,7 +20,7 @@ setup](https://learn.chatgpt.com/docs/security/setup).
 1. Open [Codex in the ChatGPT desktop app](https://learn.chatgpt.com/docs/app).
 2. Open **Plugins**, search for **Codex Security**, or use the button below:
 
-       Install the Codex Security plugin
+     [Install the Codex Security plugin](codex://plugins/install/codex-security?marketplace=openai-curated)
 
 3. Confirm the plugin is enabled, then open **Security** in the sidebar.
 
@@ -30,9 +30,9 @@ For a personal account, see [plugin and app troubleshooting](https://help.openai
 
 1. In your terminal, go to the repository you want to assess and start Codex:
 
-```bash
+   ```bash
    codex
-```
+   ```
 
 2. Enter `/plugins`, search for **Codex Security**, and select **Install
    plugin**.
@@ -125,9 +125,9 @@ with `xhigh` reasoning effort.
 
    Send this prompt in the new chat:
 
-```text
+   ```text
    Run a Codex Security scan on this repository.
-```
+   ```
 
 2. Let the scan finish
 
