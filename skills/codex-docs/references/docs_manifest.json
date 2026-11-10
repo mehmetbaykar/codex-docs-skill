@@ -521,8 +521,8 @@
       "title": "Scheduled tasks"
     },
     "browser.md": {
-      "hash": "1e7fb143e8a6ebed0075af3ad42e8e1bc723ce9eeec2f870a8be2377f135619c",
-      "last_updated": "2026-11-03T18:07:30+00:00",
+      "hash": "08215a428dfe0c3a5ea5cca739d039c7935988be988a020e3563230e8056a788",
+      "last_updated": "2026-11-10T18:22:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/browser",
       "path": "/docs/browser",
       "section": "docs",
@@ -581,8 +581,8 @@
       "title": "CLI customization"
     },
     "cloud.md": {
-      "hash": "c332517a46cbb1b77eb8ca27b5d81f536fb2e515401b920dcdf3617ed19bb835",
-      "last_updated": "2026-11-03T18:07:33+00:00",
+      "hash": "04ca1106c52bb51fd2a1fe8276af0a1220bfb7b6a5d4a1e8c00f1d6c904c651a",
+      "last_updated": "2026-11-10T18:23:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/cloud",
       "path": "/docs/cloud",
       "section": "docs",
@@ -811,8 +811,8 @@
       "title": "Codex Cloud (Legacy)"
     },
     "environments__cloud-environments.md": {
-      "hash": "5e13175febcc6b844d4b19eb0c9682377ff1b8f3e5ead01ebc3c195bf548bd8a",
-      "last_updated": "2026-11-03T18:07:42+00:00",
+      "hash": "95fec51f6d68760780b98613eeba1578933f03820272ef943eea691400db0d19",
+      "last_updated": "2026-11-10T18:23:07+00:00",
       "original_url": "https://learn.chatgpt.com/docs/environments/cloud-environments",
       "path": "/docs/environments/cloud-environments",
       "section": "docs",
@@ -841,8 +841,8 @@
       "title": "Local environments"
     },
     "environments__modes.md": {
-      "hash": "c5d10fa0e63eab14ddb1d60973f13ec9b156bf4023cdcd628543727e31a01372",
-      "last_updated": "2026-11-03T18:07:43+00:00",
+      "hash": "c2f1f7c905ab051ecfb420b999eea2ba3567c0f1cff0ed247f8e6ab775a6872a",
+      "last_updated": "2026-11-10T18:23:08+00:00",
       "original_url": "https://learn.chatgpt.com/docs/environments/modes",
       "path": "/docs/environments/modes",
       "section": "docs",
@@ -1171,8 +1171,8 @@
       "title": "Prompting"
     },
     "quickstart.md": {
-      "hash": "15cd7efa56e3bdf22c89a51371bd1cd358adfdf77b0374fd7ce4a18736188c43",
-      "last_updated": "2026-11-09T03:25:48+00:00",
+      "hash": "2e4b12a455932b8af2345ca3ee93ffe21bbfb529362720708c8d47569083785a",
+      "last_updated": "2026-11-10T18:23:15+00:00",
       "original_url": "https://learn.chatgpt.com/docs/quickstart",
       "path": "/docs/quickstart",
       "section": "docs",
@@ -1491,8 +1491,8 @@
       "title": "Improve the Cloud threat model"
     },
     "sign-in-with-chatgpt.md": {
-      "hash": "b1bfe8cc28fbd578646d5b323b3742f93d02a9bedef172d9b68c433d3981b7e3",
-      "last_updated": "2026-11-03T18:08:08+00:00",
+      "hash": "01b4d22c4ce5b2849edf4baa16dfd121f0a9014b8c21d759003a0975b787743f",
+      "last_updated": "2026-11-10T18:23:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/sign-in-with-chatgpt",
       "path": "/docs/sign-in-with-chatgpt",
       "section": "docs",
@@ -1521,8 +1521,8 @@
       "title": "Review GitHub pull requests with Codex"
     },
     "third-party__gitlab.md": {
-      "hash": "f2b2a25f30464d05dc245269f52e0d7398517b41127c8cbfc320d9ff3f99d129",
-      "last_updated": "2026-11-03T18:08:09+00:00",
+      "hash": "7d85cc660b5afeae8856a23d11ea71a6598aa332e93ea0f91b12cd083b96a1be",
+      "last_updated": "2026-11-10T18:23:24+00:00",
       "original_url": "https://learn.chatgpt.com/docs/third-party/gitlab",
       "path": "/docs/third-party/gitlab",
       "section": "docs",
@@ -2243,7 +2243,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-09T03:26:48+00:00",
+  "last_updated": "2026-11-10T18:24:03+00:00",
   "skipped": [
     {
       "path": "/docs",
