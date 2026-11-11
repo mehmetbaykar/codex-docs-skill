@@ -1,19 +1,18 @@
 ---
-title: "Improve the Cloud threat model"
+title: "Improve the Daybreak threat model"
 source: https://learn.chatgpt.com/docs/security/threat-model
 path: /docs/security/threat-model
 ---
 
-# Improve the Cloud threat model
+# Improve the Daybreak threat model
 
 Update a monitored repository's threat model when the generated version misses
-security assumptions or deployment context. This guide applies to Codex
-Security Cloud. For local plugin policy, see [Configure the
+security assumptions or deployment context. This guide applies to Daybreak Defense Factory. For local plugin policy, see [Configure the
 scan](https://learn.chatgpt.com/docs/security/plugin/scans#configure-the-scan).
 
 ## What a threat model is
 
-A threat model is a short security summary of how your repository works. Codex Security creates the first draft from the code and uses it to guide future commit scans and prioritize findings.
+A threat model is a short security summary of how your repository works. Daybreak creates the first draft from the code and uses it to guide future commit scans and prioritize findings.
 
 A threat model describes:
 
@@ -35,7 +34,7 @@ as internal-only unless that is true of the deployment you want assessed.
 
 ## Edit the threat model
 
-1. Open the Codex Security Cloud plugin. See [Cloud setup](https://learn.chatgpt.com/docs/security/setup)
+1. Open **Daybreak** in the sidebar. See [Cloud setup](https://learn.chatgpt.com/docs/security/setup)
    if you haven't installed it or configured commit monitoring.
 2. Open **Repositories** and select the monitored repository.
 3. Open **Monitoring settings**.

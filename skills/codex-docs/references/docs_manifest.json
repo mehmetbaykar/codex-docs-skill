@@ -1241,8 +1241,8 @@
       "title": "Auto-review"
     },
     "security-administration.md": {
-      "hash": "a5b48938b67b7104bf103dcd78fbd3285f45ad7877ec2304fcbb78dcebb01b15",
-      "last_updated": "2026-11-03T18:07:59+00:00",
+      "hash": "62e3a9e7bcaf1bd9189c6c2eecb534f45de99e9154883397b8993e1d57f690eb",
+      "last_updated": "2026-11-11T21:23:49+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security-administration",
       "path": "/docs/security-administration",
       "section": "docs",
@@ -1251,8 +1251,8 @@
       "title": "Security"
     },
     "security.md": {
-      "hash": "43963feb9d4c2770eb54905d2e2b5c1407cd2e313b5d635a5b7a7c6c00145d52",
-      "last_updated": "2026-11-03T18:07:59+00:00",
+      "hash": "60f72c62d503ec4205362c0c9be3620cf40a34fc99cf932edc8526ce5c834d43",
+      "last_updated": "2026-11-11T21:23:48+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security",
       "path": "/docs/security",
       "section": "docs",
@@ -1331,18 +1331,18 @@
       "title": "Codex Security CLI reference"
     },
     "security__faq.md": {
-      "hash": "829566f95e000f29bfc8aa8be38b8bdc52233179504ed0e61f47efb4370dd988",
-      "last_updated": "2026-11-03T18:08:02+00:00",
+      "hash": "346ea62a7b92eb2751bcb4321f73ea19d4eb057265a129c42b1586b1b60c086f",
+      "last_updated": "2026-11-11T21:23:51+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/faq",
       "path": "/docs/security/faq",
       "section": "docs",
       "source_url": "https://learn.chatgpt.com/docs/security/faq.md",
       "status": "live",
-      "title": "Codex Security Cloud FAQ"
+      "title": "Daybreak Defense Factory FAQ"
     },
     "security__plugin.md": {
-      "hash": "590eab8b42d13e64dfe572f7b671b35887348048ddc99bee780794ccb621b051",
-      "last_updated": "2026-11-09T03:25:53+00:00",
+      "hash": "7991c94c3404da15cd65846be649fa581cc60ead8b7fccb0f1e3288146ea65d5",
+      "last_updated": "2026-11-11T21:23:52+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin",
       "path": "/docs/security/plugin",
       "section": "docs",
@@ -1461,8 +1461,8 @@
       "title": "Codex Security TypeScript SDK"
     },
     "security__security-review.md": {
-      "hash": "31736d2ac8dee186affd9f31548238bccc7f96fe194f72b5e6b002401b85fdf4",
-      "last_updated": "2026-11-03T18:08:07+00:00",
+      "hash": "0dc55fb2f05976905f2ee2ccf8b166b8760de5e8757d9a490a2ab18f21232ac8",
+      "last_updated": "2026-11-11T21:23:55+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/security-review",
       "path": "/docs/security/security-review",
       "section": "docs",
@@ -1471,24 +1471,24 @@
       "title": "Security Review"
     },
     "security__setup.md": {
-      "hash": "498fda752846451c204b9eaae8135968f29bcce06af2eb0a7e99470f2664da27",
-      "last_updated": "2026-11-03T18:08:07+00:00",
+      "hash": "484d29086f434c1d5240b75aac24ab7e64a96b39431b6cef235704f5d52610dc",
+      "last_updated": "2026-11-11T21:23:56+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/setup",
       "path": "/docs/security/setup",
       "section": "docs",
       "source_url": "https://learn.chatgpt.com/docs/security/setup.md",
       "status": "live",
-      "title": "Codex Security Cloud setup"
+      "title": "Daybreak Defense Factory setup"
     },
     "security__threat-model.md": {
-      "hash": "1fb1938ffa73b24b3f0ee86ce8807fc260eb4cc90ffc17b9408a9f0728f751e9",
-      "last_updated": "2026-11-03T18:08:08+00:00",
+      "hash": "ee506304d2fa66c1b521eb36e1568ffef25f3a32930f90333a2cd372de97e96f",
+      "last_updated": "2026-11-11T21:23:56+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/threat-model",
       "path": "/docs/security/threat-model",
       "section": "docs",
       "source_url": "https://learn.chatgpt.com/docs/security/threat-model.md",
       "status": "live",
-      "title": "Improve the Cloud threat model"
+      "title": "Improve the Daybreak threat model"
     },
     "sign-in-with-chatgpt.md": {
       "hash": "01b4d22c4ce5b2849edf4baa16dfd121f0a9014b8c21d759003a0975b787743f",
@@ -2243,7 +2243,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-11T18:24:19+00:00",
+  "last_updated": "2026-11-11T21:24:48+00:00",
   "skipped": [
     {
       "path": "/docs",
