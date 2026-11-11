@@ -411,8 +411,8 @@
       "title": "Administration"
     },
     "agent-approvals-security.md": {
-      "hash": "4110a3c6db49998791ade5aaad437048b95b466798ad17ca3afb07ccfe4ab17d",
-      "last_updated": "2026-11-06T12:26:44+00:00",
+      "hash": "4d0c48560b70a35e092c14476f0ee6e915f8b1476b7bdc4889994eaa3008e043",
+      "last_updated": "2026-11-11T00:40:41+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
       "path": "/docs/agent-approvals-security",
       "section": "docs",
@@ -551,8 +551,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "3f91f839b588808dfbfc9582ee8834ccbc371ec7e684c6c8ef2b536dd369cf6e",
-      "last_updated": "2026-11-06T03:23:36+00:00",
+      "hash": "ab5f443fb5e72a8001ccf261bffa4251357f0fa1e217614143db025abd4bc930",
+      "last_updated": "2026-11-11T00:40:46+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "section": "docs",
@@ -651,8 +651,8 @@
       "title": "Computer Use"
     },
     "config-file__config-advanced.md": {
-      "hash": "6064578d268b333947276e6d9540471743bf03c5c4b3d3b7b079f83b96cd9134",
-      "last_updated": "2026-11-06T12:26:51+00:00",
+      "hash": "9d896d16f2546008efa54cfdefb2f1ffa793a66b7b2b0b8db6a373bd4fbbc858",
+      "last_updated": "2026-11-11T00:40:49+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
       "path": "/docs/config-file/config-advanced",
       "section": "docs",
@@ -671,8 +671,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "0e4ec8f7b0c47bb1995b82c16d084f3823c632757684a5afe0822b26490af8d2",
-      "last_updated": "2026-11-06T12:26:52+00:00",
+      "hash": "fe1c5237a88ebdadaad3af09f0fab6d3f3edc88168a6e7ac471da8f858fee908",
+      "last_updated": "2026-11-11T00:40:50+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "section": "docs",
@@ -761,8 +761,8 @@
       "title": "Models and Trusted Access"
     },
     "cyber-safety__recommended-configuration.md": {
-      "hash": "c9bccffbcfe043f5f5b9bca81afee79936f251e6249627cf4a79b6b7cd385d54",
-      "last_updated": "2026-11-06T12:26:54+00:00",
+      "hash": "37bd138bb22ab501c2964d8107e4a1eeea73246b9180aafe381dd72b3e640013",
+      "last_updated": "2026-11-11T00:40:53+00:00",
       "original_url": "https://learn.chatgpt.com/docs/cyber-safety/recommended-configuration",
       "path": "/docs/cyber-safety/recommended-configuration",
       "section": "docs",
@@ -1231,8 +1231,8 @@
       "title": "Sandbox"
     },
     "sandboxing__auto-review.md": {
-      "hash": "7363ec66d7b45e39b29b33d7f0f4071202a13c0ac3cf7c3cdf5aeca97b9bbeaa",
-      "last_updated": "2026-11-06T12:27:05+00:00",
+      "hash": "01b81d79d9f719d9e87d5d5638279a7f0e815a480f07dae81adf1cf4d275d3a7",
+      "last_updated": "2026-11-11T00:41:08+00:00",
       "original_url": "https://learn.chatgpt.com/docs/sandboxing/auto-review",
       "path": "/docs/sandboxing/auto-review",
       "section": "docs",
@@ -2243,7 +2243,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-10T18:24:03+00:00",
+  "last_updated": "2026-11-11T00:42:12+00:00",
   "skipped": [
     {
       "path": "/docs",
