@@ -1271,8 +1271,8 @@
       "title": "Codex Security CLI quickstart"
     },
     "security__cli__bulk-scans.md": {
-      "hash": "da363b4f2da8acad502c57735fa5227dc2dfb086f2bbd492e13735fcb70edfa5",
-      "last_updated": "2026-11-03T18:08:00+00:00",
+      "hash": "7512cc588a8856d36eccdc657c9cc565944f125f07d30b8b0644d9401a62d028",
+      "last_updated": "2026-11-11T18:23:18+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/bulk-scans",
       "path": "/docs/security/cli/bulk-scans",
       "section": "docs",
@@ -1281,8 +1281,8 @@
       "title": "Run bulk security scans"
     },
     "security__cli__ci.md": {
-      "hash": "508b28c4bf3efd19f7737fab8608ad3bb6a7c242ef3888bdbb1717c074949f9e",
-      "last_updated": "2026-11-03T18:08:00+00:00",
+      "hash": "cea4131924bc01c29aed23e4b8cb7285d31bc62713ecc69ba4057cb14ec28963",
+      "last_updated": "2026-11-11T18:23:19+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/ci",
       "path": "/docs/security/cli/ci",
       "section": "docs",
@@ -1291,8 +1291,8 @@
       "title": "Codex Security CI/CD overview"
     },
     "security__cli__ci__github.md": {
-      "hash": "178d7711e246cbad5bea6d9edd31370cfc89e090b478a467ff59f47d8d416885",
-      "last_updated": "2026-11-03T18:08:00+00:00",
+      "hash": "984384a43d8a5208401c0da1d0b562f35b554f3dffdb21fe0ae31bee5daa849c",
+      "last_updated": "2026-11-11T18:23:19+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/ci/github",
       "path": "/docs/security/cli/ci/github",
       "section": "docs",
@@ -1311,8 +1311,8 @@
       "title": "Run Codex Security in GitLab CI/CD"
     },
     "security__cli__faq.md": {
-      "hash": "56299a7746fd6120a2dd7e49438df41a18f72fa7a8475ad7146d87d0b1921a2a",
-      "last_updated": "2026-11-03T18:08:01+00:00",
+      "hash": "b0155a29bbeb3c21432e7fab1e4b84e6daaafcf4771964e5ec351607fee7d8bd",
+      "last_updated": "2026-11-11T18:23:19+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/faq",
       "path": "/docs/security/cli/faq",
       "section": "docs",
@@ -1321,8 +1321,8 @@
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "b421eb228147e7e98c82eb5d258faeb75a1782ebdfb6280a62faf3fdd7545a7b",
-      "last_updated": "2026-11-11T06:31:00+00:00",
+      "hash": "edd6b1e47faab16100d9995a09aa233fa64f0cd96f8102ef1e5f189823b4be59",
+      "last_updated": "2026-11-11T18:23:20+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "section": "docs",
@@ -1451,8 +1451,8 @@
       "title": "Use the Codex Security workbench"
     },
     "security__sdk.md": {
-      "hash": "0d77a7bf80e5fa026b48d38f576dd85e4baf5b85d9e6c372a5dfb445817223d7",
-      "last_updated": "2026-11-06T00:40:51+00:00",
+      "hash": "65394242b096360f7fae5f432c5eea527006b1c1ef0e110b994f10cdc5118c7f",
+      "last_updated": "2026-11-11T18:23:24+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/sdk",
       "path": "/docs/security/sdk",
       "section": "docs",
@@ -1701,8 +1701,8 @@
       "title": "Web development"
     },
     "use-cases__create-custom-review-workflows-with-github-actions.md": {
-      "hash": "3ce731839c3c9c572025196030874791f62fd02318ca265c2e461b5b8b8d7d82",
-      "last_updated": "2026-11-03T18:08:27+00:00",
+      "hash": "4141c296dcb47de2d0fcb1343b806dfa1903b086e98a37a486f8e0f07fee46aa",
+      "last_updated": "2026-11-11T18:23:48+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/create-custom-review-workflows-with-github-actions",
       "path": "/use-cases/create-custom-review-workflows-with-github-actions",
       "section": "use-cases",
@@ -2243,7 +2243,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-11T06:31:59+00:00",
+  "last_updated": "2026-11-11T18:24:19+00:00",
   "skipped": [
     {
       "path": "/docs",
