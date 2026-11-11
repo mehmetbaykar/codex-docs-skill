@@ -44,10 +44,6 @@ See [Codex code review in GitHub](https://developers.openai.com/codex/third-part
 
 You can set up Codex to automatically review every pull request, or you can request a review with `@codex review` in a pull request comment.
 
-If Codex flags a regression or potential issue, you can ask it to fix it by commenting on the pull request with a follow-up prompt like `@codex fix it`.
-
-This will start a new cloud chat that will fix the issue and update the pull request.
-
 ## Define review guidance
 
 To customize what Codex reviews, add a `## Code Review Rules` section to the

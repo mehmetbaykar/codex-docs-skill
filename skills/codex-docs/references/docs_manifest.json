@@ -461,8 +461,8 @@
       "title": "Subagents"
     },
     "amazon-bedrock.md": {
-      "hash": "1488e744c6be9fb0545c03c9316802555b07d15595b718aeae9d7aab16043a13",
-      "last_updated": "2026-11-05T18:25:02+00:00",
+      "hash": "9f3288e21f91df20a06bdeefe17617e11b257c6650785dc8e21ff8c5bbdb7688",
+      "last_updated": "2026-11-11T06:30:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/amazon-bedrock",
       "path": "/docs/amazon-bedrock",
       "section": "docs",
@@ -741,8 +741,8 @@
       "title": "Memories"
     },
     "customization__overview.md": {
-      "hash": "5d262c98951b6cc8ae4e4622859ccbccfd22d517230686f6118ea91302b7fef9",
-      "last_updated": "2026-11-03T18:07:39+00:00",
+      "hash": "386fe8145c11371ba6e4b152d05b9d765738ce63589c42316142c880288d75bd",
+      "last_updated": "2026-11-11T06:30:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/customization/overview",
       "path": "/docs/customization/overview",
       "section": "docs",
@@ -1261,8 +1261,8 @@
       "title": "Codex Security"
     },
     "security__cli.md": {
-      "hash": "96a787aa9bb011d20015c799d7b7b8598ff95b7a1e9d7fc56944a47d14e6d471",
-      "last_updated": "2026-11-03T18:07:59+00:00",
+      "hash": "f15d3029f7f99e6bcb98e6400f925f3eeca64dd2fbc67407728bff7e9270a16c",
+      "last_updated": "2026-11-11T06:30:58+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli",
       "path": "/docs/security/cli",
       "section": "docs",
@@ -1321,8 +1321,8 @@
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "4d818843739b3426ba4fc3778d2a2b35981f82500013e29f30330c6db3e806db",
-      "last_updated": "2026-11-03T18:08:02+00:00",
+      "hash": "b421eb228147e7e98c82eb5d258faeb75a1782ebdfb6280a62faf3fdd7545a7b",
+      "last_updated": "2026-11-11T06:31:00+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "section": "docs",
@@ -1511,8 +1511,8 @@
       "title": "Skills & Plugins"
     },
     "third-party__github.md": {
-      "hash": "0d79224cf9078469efc86aadd9ef0410edf39fd53720f41ce8a4ca8ecc4cebd7",
-      "last_updated": "2026-11-03T18:08:09+00:00",
+      "hash": "866f011bdb986537047ca2af7da536887dc613be4f133baac4dc40936a0e6c11",
+      "last_updated": "2026-11-11T06:31:05+00:00",
       "original_url": "https://learn.chatgpt.com/docs/third-party/github",
       "path": "/docs/third-party/github",
       "section": "docs",
@@ -1811,8 +1811,8 @@
       "title": "Getting Started with Daybreak Blue"
     },
     "use-cases__github-code-reviews.md": {
-      "hash": "fd5e8f5d770bdab7b3ab950ed875081e6aca386a87ab119d179bad64b9ad371e",
-      "last_updated": "2026-11-03T18:08:33+00:00",
+      "hash": "e872654cb4e5602c483342f0ed4280a72ee3a0db312894420a2c1478f8ba4d9b",
+      "last_updated": "2026-11-11T06:31:36+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/github-code-reviews",
       "path": "/use-cases/github-code-reviews",
       "section": "use-cases",
@@ -2243,7 +2243,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-11T00:42:12+00:00",
+  "last_updated": "2026-11-11T06:31:59+00:00",
   "skipped": [
     {
       "path": "/docs",
