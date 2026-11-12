@@ -8,6 +8,12 @@ path: /docs/changelog
 
 > Rendered from the changelog RSS feed: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.167.2 (2026-11-11)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-442267349
+
+0.167.2
+
 ## Codex CLI Release: 0.167.1 (2026-11-10)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-440934118
@@ -667,12 +673,6 @@ ChatGPT for iOS
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-06-25
 
 Start, track, and approve Codex tasks from your phone with secure one-to-one remote pairing.
-
-## Codex CLI Release: 0.142.2 (2026-06-25)
-
-- Source: https://developers.openai.com/codex/changelog/#github-release-344540546
-
-0.142.2
 
 ## ChatGPT for iOS (2026-06-22)
 
