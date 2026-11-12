@@ -51,6 +51,7 @@ Manage app installation, updates, runtime settings, remote connections, and work
 - [Run Codex with an NFS home directory](https://learn.chatgpt.com/docs/environments/network-file-systems): Migrate a shared Linux home, verify cross-host resume, or keep independent jobs on local scratch.
 - [Manage app updates](https://learn.chatgpt.com/docs/enterprise/manage-app-updates): Control desktop app updates and deploy approved versions through your device management platform.
 - [Managed configuration](https://learn.chatgpt.com/docs/enterprise/managed-configuration): Review the global baseline in Agent Security, policy precedence for this feature, and supported runtime requirements.
+- [Desktop browser policies](https://learn.chatgpt.com/docs/enterprise/desktop-browser-policies): Deploy supported Chrome policies to the built-in desktop browser with device management tools.
 - [Self-host Codex configuration for your team](https://learn.chatgpt.com/docs/enterprise/configuration-server): Serve Codex defaults and required settings from your own HTTPS endpoint.
 - [Codex security cookbook](https://learn.chatgpt.com/docs/enterprise/security-cookbook): Configure and verify enterprise security controls, then combine them for common security goals.
 - [Remote connections](https://learn.chatgpt.com/docs/remote-connections): Start and control work on connected computers.

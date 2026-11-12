@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "codex-docs",
-  "version": "2026.1112.1523",
+  "version": "2026.1112.1825",
   "description": "Unofficial: answers OpenAI Codex questions from a local mirror of its documentation, recipes, and guides, refreshed every 3 hours.",
   "author": {
     "name": "Community contributors"
