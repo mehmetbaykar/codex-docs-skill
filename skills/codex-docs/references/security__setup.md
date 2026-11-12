@@ -1,120 +1,70 @@
 ---
-title: "Daybreak Defense Factory setup"
+title: "Set up Daybreak Defense Factory"
 source: https://learn.chatgpt.com/docs/security/setup
 path: /docs/security/setup
 ---
 
-# Daybreak Defense Factory setup
+# Set up Daybreak Defense Factory
 
-Run a first scan of a connected GitHub repository with Daybreak Defense Factory
-(formerly Codex Security Cloud), then review its findings. Afterward, you can
-enable monitoring for new commits.
+Daybreak Defense Factory scans code in a connected GitHub repository and shares
+the findings with your team. Start with one repository or folder. Once you’ve
+reviewed the results, you can monitor new commits or set a schedule.
 
-Daybreak Defense Factory runs scans in [Codex cloud](https://learn.chatgpt.com/docs/cloud). For scans
-of a local repository in the desktop app or CLI, use the separate [Codex
-Security plugin](https://learn.chatgpt.com/docs/security/plugin).
+> Illustration: Daybreak welcome screen with options to set up PR reviews, run an agentic scan, or connect your tools.
 
-## Before you start
+## Open Daybreak and connect GitHub
 
-Use a workspace with Daybreak Defense Factory access and [Codex cloud](https://learn.chatgpt.com/docs/cloud)
-set up. You need permission to connect the GitHub repository you want to scan.
-You can create its cloud environment during setup.
+1. Open **Plugins** on the web or in the desktop app using a ChatGPT workspace with access to Daybreak. Search for **Daybreak Defense Factory (Preview)**, then install and enable it.
+2. Open **Daybreak** in the sidebar. On the welcome screen, select **Run an agentic scan**.
+3. If prompted, select **Connect GitHub** and sign in with an account that can access the repository.
 
-If the plugin is unavailable, check access with your workspace administrator.
-If a repository is missing, use **Configure access** in the repository picker to
-check the GitHub app's organization and repository access. If you can't grant
-access yourself, ask your GitHub administrator to add the repository.
+Cloud scans run in [Codex cloud](https://learn.chatgpt.com/docs/cloud). Each person who starts a scan
+needs a personal GitHub connection. Daybreak Defense Factory doesn't support workspace connections. If the repository doesn’t appear, check
+which repositories the GitHub app can access under **Configure access**. Ask your GitHub administrator to
+add the repository if needed.
 
-## 1. Install and open the plugin
+## Run your first scan
 
-1. Open **Plugins** in ChatGPT on the web or in the desktop app.
-2. Search the plugin marketplace for **Daybreak Defense Factory (Preview)**.
-3. Install and enable the plugin, then open **Daybreak** in the sidebar.
+1. On **Configure your scan**, select a repository.
+2. Choose **Full repository** to scan the default branch, or **Specific folder or files** to narrow the scan. Enter one path per line, relative to the repository root. For example, enter `src/` to scan only the application code in that folder.
+3. Select **Start Scan**. When **First scan queued** appears, select **View scan**. Check the repository and paths in the scan record. You can return to it from **Scans**.
 
-## 2. Connect GitHub
+> Illustration: Configure your scan with the src/ folder selected in the sample reporting-api repository.
 
-Confirm that [Codex cloud](https://learn.chatgpt.com/docs/cloud) is set up for your workspace. In the
-plugin, select **Scan**. If prompted, select **Connect GitHub** and sign in
-with your own GitHub account. Each person who starts scans needs their own
-connection and access to the repository.
+When the scan finishes, open a finding to see the affected code and how an
+attacker could reach it. If the scan failed or stopped early, check what it
+covered before interpreting the results. See [Review findings and fixes](https://learn.chatgpt.com/docs/security/findings-and-fixes).
 
-Daybreak Defense Factory doesn't support workspace connections.
+## Choose how to scan a repository
 
-## 3. Start a repository scan
+From **New scan**, choose **Cloud**, select the repository, and check the
+[cloud environment](https://learn.chatgpt.com/docs/environments/cloud-environment) that Daybreak will use.
 
-1. In **New Scan**, choose the repository.
-2. Review the environment. **Auto** creates an environment when you start.
-   Use **Customize** to choose an existing environment. See [Codex cloud
-   environments](https://learn.chatgpt.com/docs/environments/cloud-environment) for setup details.
-3. Under **Scan Method**, select **One-Time Scan**.
-4. Select **Create**.
+| Scan method               | When to use it                                                                                                   |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Repository scan**       | Check the current code once. Use this to look for existing issues, including bugs that span several commits.     |
+| **Continuous monitoring** | Check new commits on the default branch. Choose how far back to start if you also want to review recent history. |
+| **Scheduled scan**        | Repeat a repository scan on a schedule. Use this for a regular review of the default branch.                     |
 
-Open the scan in **Scans** to follow progress. Wait for it to finish, then
-check the reported status and target before interpreting its findings. If it
-fails or is canceled, read the available output as an incomplete review.
+> Illustration: New scan panel with the Cloud option selected, the three scan methods, and the choice of a full repository or specific paths.
 
-## 4. Review findings and available fixes
+You can change or pause monitoring in **Continuous scanning settings**. Open
+**Repositories** and select the repository to find these settings. The owner, people with edit access,
+and Daybreak Defense Factory administrators can change these settings for the whole team. You can also
+[edit the repository’s threat model](https://learn.chatgpt.com/docs/security/threat-model) to update the context for future scans.
 
-Open **Findings**. Use **Open findings** to review findings with a **New**,
-**Triaged**, or **In Progress** status. Search the list or use **Filters** to
-narrow the results. The **Severity and status** chart summarizes the matching
-findings.
+You can [enable pull request reviews](https://learn.chatgpt.com/docs/security/security-review) to check
+changes before they merge. [Workspace notifications](https://learn.chatgpt.com/docs/security/notifications)
+let you send scan events to a service you control.
 
-<figure className="not-prose my-8">
-<figcaption className="mt-3 text-sm text-secondary">
-  Filter and review open findings. Repositories, findings, and counts are
-  fictional.
-</figcaption>
-</figure>
+## Scan your local checkout
 
-Open a finding from the scan or from **Findings**. Check its affected code and
-revision, the path an attacker could take, and the validation evidence. Read
-any unresolved assumptions before deciding whether the issue applies. A scan
-with no reported findings doesn't establish that the repository has no
-vulnerabilities.
+In the desktop app, select **New scan**, then **Local**. Choose **Codebase** to
+scan the checkout or **Changes** to review uncommitted work. For a codebase
+scan, you can limit the scope to one folder. Turn on **Deep scan** if you want
+multiple passes and can spend more time and tokens.
 
-When a repository finding offers **Fix with Codex**, selecting it starts a
-Codex conversation to check the finding against current code, implement a fix,
-and run relevant tests. Review the resulting changes and test evidence there.
-
-Findings from commit monitoring can instead offer a suggested patch. Review
-that patch before selecting **Create draft pull request**. These actions have
-different effects, so follow the workflow shown for the finding.
-
-## 5. Monitor new commits
-
-Once you've reviewed the first scan, you can monitor changes as new commits
-arrive:
-
-1. Select **Scan**, then choose the repository and review the environment.
-2. Under **Scan Method**, select **Continuous Scanning**. The plugin scans
-   the repository's default branch.
-3. Choose **Scan commit history from**. Longer windows provide more context,
-   but the initial scan takes longer.
-4. Optionally add threat model scoping guidance.
-5. Select **Create**.
-
-<figure className="not-prose my-8">
-<figcaption className="mt-3 text-sm text-secondary">
-  Configure continuous scanning. The repository shown is fictional.
-</figcaption>
-</figure>
-
-To adjust monitoring, open **Repositories**, select the repository, and open
-**Monitoring settings**. You can change the Cloud environment, choose how
-many days of history to review, and pause or enable monitoring.
-Select **Save** to apply changes.
-
-The scan owner, people granted edit access, and Daybreak Defense Factory administrators
-can change monitoring settings. Changes, including pausing monitoring, apply to
-that repository's shared configuration in the workspace, not just to the person
-making the change. If you can't edit it, ask the scan owner or a Daybreak Defense Factory
-administrator.
-
-Review the generated threat model in **Monitoring settings** and update it
-with deployment or security context the code doesn't establish. See
-[Improve the threat model](https://learn.chatgpt.com/docs/security/threat-model).
-
-For questions about builds, validation, or result interpretation, see the
-[Cloud FAQ](https://learn.chatgpt.com/docs/security/faq). To review GitHub pull requests, use
-[Security Review](https://learn.chatgpt.com/docs/security/security-review).
+Local findings appear in **Overview** on this device. A local scan can send
+relevant code and prompts to the configured model provider. Local scans with
+Daybreak Blue require trusted access. If you see **Apply for Daybreak**, use it
+to request access.

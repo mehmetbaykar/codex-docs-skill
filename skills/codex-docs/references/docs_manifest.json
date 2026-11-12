@@ -392,12 +392,12 @@
     "fetch_tool_version": "3.0",
     "pages_excluded": 77,
     "pages_failed": 0,
-    "pages_fetched_successfully": 181,
+    "pages_fetched_successfully": 184,
     "pages_skipped": 3,
     "pages_stale": 0,
     "raw_fallback_pages": 0,
     "stale_pages": [],
-    "total_pages_discovered": 261
+    "total_pages_discovered": 264
   },
   "files": {
     "administration.md": {
@@ -1241,8 +1241,8 @@
       "title": "Auto-review"
     },
     "security-administration.md": {
-      "hash": "62e3a9e7bcaf1bd9189c6c2eecb534f45de99e9154883397b8993e1d57f690eb",
-      "last_updated": "2026-11-11T21:23:49+00:00",
+      "hash": "4395d8a5e55718f7a3a661919edbd078d2806bb50ef7373e5002c37a0c39bf3d",
+      "last_updated": "2026-11-12T21:21:57+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security-administration",
       "path": "/docs/security-administration",
       "section": "docs",
@@ -1251,8 +1251,8 @@
       "title": "Security"
     },
     "security.md": {
-      "hash": "60f72c62d503ec4205362c0c9be3620cf40a34fc99cf932edc8526ce5c834d43",
-      "last_updated": "2026-11-11T21:23:48+00:00",
+      "hash": "4e472febd33fc92c48be8c0460125c565c0e26424766d4cc4c8f336c2dfa2d32",
+      "last_updated": "2026-11-12T21:21:57+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security",
       "path": "/docs/security",
       "section": "docs",
@@ -1321,8 +1321,8 @@
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "edd6b1e47faab16100d9995a09aa233fa64f0cd96f8102ef1e5f189823b4be59",
-      "last_updated": "2026-11-11T18:23:20+00:00",
+      "hash": "9e491ea55e408c245bf3d09d74fd38776258937c94c19fa7924e0f5d3811f450",
+      "last_updated": "2026-11-12T21:21:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "section": "docs",
@@ -1331,14 +1331,34 @@
       "title": "Codex Security CLI reference"
     },
     "security__faq.md": {
-      "hash": "346ea62a7b92eb2751bcb4321f73ea19d4eb057265a129c42b1586b1b60c086f",
-      "last_updated": "2026-11-11T21:23:51+00:00",
+      "hash": "ed968c8584b8fc99c8f42cd571b2c6c693bb6f23031aa2a456519ed991487694",
+      "last_updated": "2026-11-12T21:21:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/faq",
       "path": "/docs/security/faq",
       "section": "docs",
       "source_url": "https://learn.chatgpt.com/docs/security/faq.md",
       "status": "live",
       "title": "Daybreak Defense Factory FAQ"
+    },
+    "security__findings-and-fixes.md": {
+      "hash": "2038c6898c6abadb63ca119b9e9e608e51ba1ef6855d34acc7426aafff3ad4b9",
+      "last_updated": "2026-11-12T21:21:59+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/security/findings-and-fixes",
+      "path": "/docs/security/findings-and-fixes",
+      "section": "docs",
+      "source_url": "https://learn.chatgpt.com/docs/security/findings-and-fixes.md",
+      "status": "live",
+      "title": "Review findings and fixes in Daybreak"
+    },
+    "security__notifications.md": {
+      "hash": "150b41cbf841fd78713a402963acffa3f986bfa4fef0a7dd7a56f77d9a659037",
+      "last_updated": "2026-11-12T21:21:59+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/security/notifications",
+      "path": "/docs/security/notifications",
+      "section": "docs",
+      "source_url": "https://learn.chatgpt.com/docs/security/notifications.md",
+      "status": "live",
+      "title": "Daybreak notifications"
     },
     "security__plugin.md": {
       "hash": "7991c94c3404da15cd65846be649fa581cc60ead8b7fccb0f1e3288146ea65d5",
@@ -1450,6 +1470,16 @@
       "status": "live",
       "title": "Use the Codex Security workbench"
     },
+    "security__scanner-imports.md": {
+      "hash": "e24d60c8b5fc118df24768da472e80f88012157ea3e82ab611f3f9486b186212",
+      "last_updated": "2026-11-12T21:22:02+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/security/scanner-imports",
+      "path": "/docs/security/scanner-imports",
+      "section": "docs",
+      "source_url": "https://learn.chatgpt.com/docs/security/scanner-imports.md",
+      "status": "live",
+      "title": "Import scanner findings into Daybreak"
+    },
     "security__sdk.md": {
       "hash": "65394242b096360f7fae5f432c5eea527006b1c1ef0e110b994f10cdc5118c7f",
       "last_updated": "2026-11-11T18:23:24+00:00",
@@ -1461,8 +1491,8 @@
       "title": "Codex Security TypeScript SDK"
     },
     "security__security-review.md": {
-      "hash": "0dc55fb2f05976905f2ee2ccf8b166b8760de5e8757d9a490a2ab18f21232ac8",
-      "last_updated": "2026-11-11T21:23:55+00:00",
+      "hash": "5fa5dfc4f18a6c205f703560cad541d34ebaaea7decdabdce2fedccbff0211de",
+      "last_updated": "2026-11-12T21:22:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/security-review",
       "path": "/docs/security/security-review",
       "section": "docs",
@@ -1471,24 +1501,24 @@
       "title": "Security Review"
     },
     "security__setup.md": {
-      "hash": "484d29086f434c1d5240b75aac24ab7e64a96b39431b6cef235704f5d52610dc",
-      "last_updated": "2026-11-11T21:23:56+00:00",
+      "hash": "c4674fff8eb0bf4c8ee01066c94be2b907c7db7a0755bab53cdcf4fbb890ece2",
+      "last_updated": "2026-11-12T21:22:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/setup",
       "path": "/docs/security/setup",
       "section": "docs",
       "source_url": "https://learn.chatgpt.com/docs/security/setup.md",
       "status": "live",
-      "title": "Daybreak Defense Factory setup"
+      "title": "Set up Daybreak Defense Factory"
     },
     "security__threat-model.md": {
-      "hash": "ee506304d2fa66c1b521eb36e1568ffef25f3a32930f90333a2cd372de97e96f",
-      "last_updated": "2026-11-11T21:23:56+00:00",
+      "hash": "d1be261a1bddfe0223175780abfb7731390b42c548592ab2b4b212ab5e368ffa",
+      "last_updated": "2026-11-12T21:22:03+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/threat-model",
       "path": "/docs/security/threat-model",
       "section": "docs",
       "source_url": "https://learn.chatgpt.com/docs/security/threat-model.md",
       "status": "live",
-      "title": "Improve the Daybreak threat model"
+      "title": "Improve the repository threat model"
     },
     "sign-in-with-chatgpt.md": {
       "hash": "01b4d22c4ce5b2849edf4baa16dfd121f0a9014b8c21d759003a0975b787743f",
@@ -2111,8 +2141,8 @@
       "title": "Site tools"
     },
     "whats-new.md": {
-      "hash": "3dd8fe505daa47528612cf054f1fb9b3c86655d9e33e75492155269c0ed4aed2",
-      "last_updated": "2026-11-05T18:25:38+00:00",
+      "hash": "01ac3c7dc88727f6ec756ad60515ad9ca9607ed1c9b977ac9a417247851c7d6d",
+      "last_updated": "2026-11-12T21:22:05+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "section": "docs",
@@ -2243,7 +2273,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-12T18:25:21+00:00",
+  "last_updated": "2026-11-12T21:22:44+00:00",
   "skipped": [
     {
       "path": "/docs",

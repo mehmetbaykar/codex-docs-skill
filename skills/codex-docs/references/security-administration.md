@@ -30,7 +30,8 @@ Find, understand, and remediate vulnerabilities.
 - [Codex Security plugin](https://learn.chatgpt.com/docs/security/plugin): Run security workflows from the ChatGPT desktop app and Codex CLI.
 - [Codex Security CLI](https://learn.chatgpt.com/docs/security/cli): Run local security scans and automate repository reviews.
 - [Codex Security TypeScript SDK](https://learn.chatgpt.com/docs/security/sdk): Integrate security scanning and progress reporting into developer tools.
-- [Daybreak Defense Factory setup](https://learn.chatgpt.com/docs/security/setup): Install the plugin, connect GitHub, and start a security scan.
+- [Daybreak Defense Factory setup](https://learn.chatgpt.com/docs/security/setup): Connect GitHub and scan a repository with Daybreak.
+- [Review findings and fixes](https://learn.chatgpt.com/docs/security/findings-and-fixes): Assess a finding and review its patch before opening a pull request.
 - [Security Review](https://learn.chatgpt.com/docs/security/security-review): Run in-depth security reviews on GitHub pull requests.
 - [Threat model](https://learn.chatgpt.com/docs/security/threat-model): Review and improve the threat model for your codebase.
 - [Daybreak Defense Factory FAQ](https://learn.chatgpt.com/docs/security/faq): Get answers about cloud scans, findings, privacy, and access.
