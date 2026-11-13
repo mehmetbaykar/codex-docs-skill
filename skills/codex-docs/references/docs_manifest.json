@@ -461,8 +461,8 @@
       "title": "Subagents"
     },
     "amazon-bedrock.md": {
-      "hash": "37ce28f99fb4e7349604463c41c5af175cfa20b3bece05067089137b3110e01a",
-      "last_updated": "2026-11-12T18:23:57+00:00",
+      "hash": "5912c137544637712b2b3b9e413ab22626a42e09dea67db07223a838d46b9efa",
+      "last_updated": "2026-11-13T00:41:24+00:00",
       "original_url": "https://learn.chatgpt.com/docs/amazon-bedrock",
       "path": "/docs/amazon-bedrock",
       "section": "docs",
@@ -471,8 +471,8 @@
       "title": "Use ChatGPT Work and Codex with Amazon Bedrock"
     },
     "annotations-extensibility.md": {
-      "hash": "6f8368b2ae59bfb057049aef20dd7f2228e691aa7410507ca84fb38479955a57",
-      "last_updated": "2026-11-06T00:40:23+00:00",
+      "hash": "27121032a1acb0037b864134aa810aabde8aa108fcecc9d0ab991c267eb041d1",
+      "last_updated": "2026-11-13T00:41:24+00:00",
       "original_url": "https://learn.chatgpt.com/docs/annotations-extensibility",
       "path": "/docs/annotations-extensibility",
       "section": "docs",
@@ -1861,8 +1861,8 @@
       "title": "Get from idea to proof of concept"
     },
     "use-cases__incident-to-tested-fix.md": {
-      "hash": "53b8502136d7db8c77e5407a6e496c923322280c0678e16a78cb85e7b8297bef",
-      "last_updated": "2026-11-03T18:08:34+00:00",
+      "hash": "8ab10b399957ea752020aaa7ccb8e9775deea9967c03bf04214e23b7fce31766",
+      "last_updated": "2026-11-13T00:42:25+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/incident-to-tested-fix",
       "path": "/use-cases/incident-to-tested-fix",
       "section": "use-cases",
@@ -1911,8 +1911,8 @@
       "title": "Refactor SwiftUI screens"
     },
     "use-cases__issue-to-tested-pr.md": {
-      "hash": "a725138ae7656c894e4359553ac67e524d7179d0f2c624de211ee6fa68743ef8",
-      "last_updated": "2026-11-03T18:08:35+00:00",
+      "hash": "f707d11853128c78e47e550d0c041fea9ca34dfe2977816adf148db595dff769",
+      "last_updated": "2026-11-13T00:42:27+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/issue-to-tested-pr",
       "path": "/use-cases/issue-to-tested-pr",
       "section": "use-cases",
@@ -2273,7 +2273,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-12T21:22:44+00:00",
+  "last_updated": "2026-11-13T00:42:45+00:00",
   "skipped": [
     {
       "path": "/docs",
