@@ -651,8 +651,8 @@
       "title": "Computer Use"
     },
     "config-file__config-advanced.md": {
-      "hash": "9d896d16f2546008efa54cfdefb2f1ffa793a66b7b2b0b8db6a373bd4fbbc858",
-      "last_updated": "2026-11-11T00:40:49+00:00",
+      "hash": "b2eb9b7fce436335032c6a8a1a7ef4579f2c4177c9791c0fb947d0bcf2a1c7d9",
+      "last_updated": "2026-11-13T18:22:20+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
       "path": "/docs/config-file/config-advanced",
       "section": "docs",
@@ -2273,7 +2273,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-13T09:25:02+00:00",
+  "last_updated": "2026-11-13T18:23:34+00:00",
   "skipped": [
     {
       "path": "/docs",
