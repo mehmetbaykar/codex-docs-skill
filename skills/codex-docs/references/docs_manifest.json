@@ -1711,8 +1711,8 @@
       "title": "Production systems"
     },
     "use-cases__collections__security.md": {
-      "hash": "8ae2d989dcdc2dac8d55f23427d5b881b3d90d73bb9f94a3077b595cabd42444",
-      "last_updated": "2026-11-06T18:25:32+00:00",
+      "hash": "6018862765bc1e411db15daed6d279cde2ef717d3bcd54a99c82ebf542848027",
+      "last_updated": "2026-11-14T00:39:42+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/collections/security",
       "path": "/use-cases/collections/security",
       "section": "use-cases",
@@ -2273,7 +2273,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-13T18:23:34+00:00",
+  "last_updated": "2026-11-14T00:40:11+00:00",
   "skipped": [
     {
       "path": "/docs",

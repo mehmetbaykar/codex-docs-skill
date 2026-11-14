@@ -6,9 +6,9 @@ path: /use-cases/collections/security
 
 # Security
 
-Find and fix vulnerabilities in your code.
+Cybersecurity guides for finding and fixing vulnerabilities in your code.
 
-Use Codex to investigate security risks in your code and dependencies, then
+Use Codex to investigate cyber risks in your code and dependencies, then
 develop and test fixes. Start with a repository, a code change, or findings from
 tools you already use.
 
