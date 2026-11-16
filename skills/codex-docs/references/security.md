@@ -6,9 +6,9 @@ path: /docs/security
 
 # Codex Security
 
-Codex Security reviews code for vulnerabilities and reports evidence you can
-use to investigate and fix them. Choose how to run it based on where your code
-lives and how you want to review the results.
+Codex Security scans code for vulnerabilities and reports findings with supporting
+evidence. Run it in Daybreak Defense Factory, in Codex, from a terminal, or through
+the SDK.
 
 The **Overview** in Daybreak Defense Factory shows proposed fixes and tracks [open and fixed findings](https://learn.chatgpt.com/docs/security/findings-and-fixes) across your repositories.
 
@@ -24,8 +24,6 @@ The **Overview** in Daybreak Defense Factory shows proposed fixes and tracks [op
 | Codex Security SDK       | Run scans and handle results in an application or developer tool.                             | [SDK guide](https://learn.chatgpt.com/docs/security/sdk)                    |
 
 ## Choose the next task
-
-After a local scan, review its scope and findings before deciding what to do next.
 
 | Task                                                  | Guide                                                               |
 | ----------------------------------------------------- | ------------------------------------------------------------------- |

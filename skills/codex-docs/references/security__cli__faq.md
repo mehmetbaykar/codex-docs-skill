@@ -6,9 +6,7 @@ path: /docs/security/cli/faq
 
 # Codex Security CLI FAQ
 
-Find answers to common questions about scanning repositories and managing
-security findings from the terminal. For installation and a first scan, start
-with the [CLI quickstart](https://learn.chatgpt.com/docs/security/cli).
+For installation and a first scan, see the [CLI quickstart](https://learn.chatgpt.com/docs/security/cli).
 
 ## Repository scans
 

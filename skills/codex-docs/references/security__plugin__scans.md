@@ -6,8 +6,7 @@ path: /docs/security/plugin/scans
 
 # Run a Codex Security scan
 
-Use a standard scan to review a repository or a selected folder. This guide
-explains how to set the scope, supply security context, and assess the result.
+Use a standard scan to review a repository or folder.
 If you haven't installed the plugin, start with the [plugin
 quickstart](https://learn.chatgpt.com/docs/security/plugin).
 
@@ -20,9 +19,8 @@ scan](https://learn.chatgpt.com/docs/security/plugin/deep-scans). For a pull req
 In the desktop app, open **Security**, select **Scans**, and select **+ Scan**.
 Choose an existing repository or another folder, then select **Codebase**.
 
-Scan the whole repository when you need broad coverage and the repository is a
-reasonable review unit. For a monorepo, choose one folder when a service,
-package, or component has an owner and security boundary.
+Scan the whole repository, or select a folder to review one service or package
+in a monorepo.
 
 You can also start a scan from a Codex conversation:
 
@@ -67,21 +65,14 @@ finishes, since findings can change while Codex checks the evidence.
 
 ## Review the completed scan
 
-Review the result in this order:
+Check the target, revision, scan area, and any areas the scan deferred. For each
+finding, review the attack path, failed control, supported impact, validation
+method, and unresolved questions. Source analysis can support a finding without
+a runtime reproduction. If execution could resolve an open question, ask Codex
+to validate that finding.
 
-1. Confirm the target, revision, and scan area.
-2. Read reviewed surfaces and any deferred or follow-up areas.
-3. For each finding, check how an attacker reaches the affected code, which
-   control fails, and what impact the evidence supports. Read the validation
-   method and any unresolved questions.
-4. Investigate findings with missing evidence. Dismiss a finding when you can
-   explain why it doesn't apply, and keep that explanation with the result.
-5. Select one accepted finding before starting a fix.
-
-A completed scan and complete coverage are separate claims. Read deferred
-areas even when the scan finishes successfully. Source-based validation can
-support a finding without a runtime reproduction. To resolve uncertainty
-that depends on execution, ask for validation of the specific finding.
+When dismissing a finding, record why it doesn't apply. To address an accepted
+finding, [generate and verify a fix](https://learn.chatgpt.com/docs/security/plugin/fix-findings).
 
 <figure className="not-prose my-8">
 <figcaption className="mt-3 text-sm text-secondary">
@@ -92,14 +83,9 @@ that depends on execution, ask for validation of the specific finding.
 
 ## Use your first scan as a baseline
 
-Before scanning, decide what you want to compare, such as evidence quality
-or false positives. If you
-test against a known finding, record whether you provided it to Codex or
-withheld it from the scan.
-
-Record the repository revision, plugin version, model, and reasoning effort.
-Use this baseline to compare later scans after the code, security controls, or
-scan settings change.
+To compare scans, record the revision, plugin version, model, and reasoning
+effort. If you're testing against a known vulnerability, also record whether
+you supplied it to Codex or withheld it.
 
 ## Reopen a previous scan
 
@@ -113,5 +99,4 @@ earlier scan or its artifacts.
 Open `report.md` for a portable report, and keep its scan directory together
 when sharing or archiving it. Use [Export and track
 findings](https://learn.chatgpt.com/docs/security/plugin/export-findings) for other formats or issue
-tracking. After accepting a finding, [generate and verify a
-fix](https://learn.chatgpt.com/docs/security/plugin/fix-findings).
+tracking.
