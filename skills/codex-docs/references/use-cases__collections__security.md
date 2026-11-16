@@ -8,6 +8,24 @@ path: /use-cases/collections/security
 
 Cybersecurity guides for finding and fixing vulnerabilities in your code.
 
+## In this collection
+
+- [Getting Started with Daybreak Blue](https://developers.openai.com/codex/use-cases/getting-started-with-daybreak-blue)
+- [Run your first security scan](https://developers.openai.com/codex/use-cases/find-vulnerabilities-in-your-code)
+- [Run a deep security scan](https://developers.openai.com/codex/use-cases/deep-security-scan)
+- [Scan multiple repositories](https://developers.openai.com/codex/use-cases/scan-multiple-repositories)
+- [Automate security scans in CI](https://developers.openai.com/codex/use-cases/automate-security-scans-in-ci)
+- [Scan code changes for security](https://developers.openai.com/codex/use-cases/scan-code-changes-for-security)
+- [Audit dependency incidents](https://developers.openai.com/codex/use-cases/dependency-incident-audits)
+- [Fix a finding from your security scan](https://developers.openai.com/codex/use-cases/fix-a-finding-from-your-security-scan)
+- [Remediate a vulnerability backlog](https://developers.openai.com/codex/use-cases/remediate-vulnerability-backlog)
+- [Set up security context](https://developers.openai.com/codex/use-cases/set-up-security-context)
+- [Automate security reviews in GitHub Cloud](https://developers.openai.com/codex/use-cases/automate-security-reviews-in-github-cloud)
+- [Review code changes in Codex Desktop](https://developers.openai.com/codex/use-cases/review-code-changes-in-codex-desktop)
+- [Run security reviews from the CLI](https://developers.openai.com/codex/use-cases/run-security-reviews-from-the-cli)
+- [Create custom review workflows with GitHub Actions](https://developers.openai.com/codex/use-cases/create-custom-review-workflows-with-github-actions)
+- [Manage supply chain risk in the CI/CD](https://developers.openai.com/codex/use-cases/manage-supply-chain-risk-in-cicd)
+
 Use Codex to investigate cyber risks in your code and dependencies, then
 develop and test fixes. Start with a repository, a code change, or findings from
 tools you already use.

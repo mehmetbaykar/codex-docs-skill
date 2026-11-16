@@ -29,7 +29,6 @@ starterPrompt:
   title: Ask Codex to review a pull request
   body: "@codex review for security regressions, missing tests, and risky behavior
     changes."
-  suggestedModel: cloud
 relatedLinks:
   - label: Codex code review in GitHub
     url: https://learn.chatgpt.com/docs/third-party/github

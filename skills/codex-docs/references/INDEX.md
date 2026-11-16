@@ -201,4 +201,5 @@ Invoke this skill with a topic: `/codex-docs hooks` in Claude Code or Cursor, `$
 
 - `/docs` - No .md endpoint
 - `/docs/screenshot-review` - No .md endpoint
+- `/use-cases/all` - No .md endpoint
 - `/use-cases/collections` - No .md endpoint

@@ -197,6 +197,11 @@
       "url": "https://learn.chatgpt.com/use-cases/feedback-synthesis"
     },
     {
+      "path": "/use-cases/fill-out-an-expense-report",
+      "reason": "ChatGPT-only recipe",
+      "url": "https://learn.chatgpt.com/use-cases/fill-out-an-expense-report"
+    },
+    {
       "path": "/use-cases/finance-model-cleanup",
       "reason": "ChatGPT-only recipe",
       "url": "https://learn.chatgpt.com/use-cases/finance-model-cleanup"
@@ -230,6 +235,11 @@
       "path": "/use-cases/learn-a-new-concept",
       "reason": "ChatGPT-only recipe",
       "url": "https://learn.chatgpt.com/use-cases/learn-a-new-concept"
+    },
+    {
+      "path": "/use-cases/make-a-custom-flyer",
+      "reason": "ChatGPT-only recipe",
+      "url": "https://learn.chatgpt.com/use-cases/make-a-custom-flyer"
     },
     {
       "path": "/use-cases/manage-your-inbox",
@@ -390,14 +400,14 @@
   "fetch_metadata": {
     "failed_pages": [],
     "fetch_tool_version": "3.0",
-    "pages_excluded": 77,
+    "pages_excluded": 79,
     "pages_failed": 0,
     "pages_fetched_successfully": 184,
-    "pages_skipped": 3,
+    "pages_skipped": 4,
     "pages_stale": 0,
     "raw_fallback_pages": 0,
     "stale_pages": [],
-    "total_pages_discovered": 264
+    "total_pages_discovered": 267
   },
   "files": {
     "administration.md": {
@@ -1681,8 +1691,8 @@
       "title": "Understand large codebases"
     },
     "use-cases__collections__game-development.md": {
-      "hash": "4bcee909c90fb45499eeed5f2a4ea50d6c3965a5680ef0532dee3f8926a3d448",
-      "last_updated": "2026-11-03T18:08:24+00:00",
+      "hash": "e5e6611c6d71ef44c8836e06836375d006c267976d2a398f93eae8c9c5ed1323",
+      "last_updated": "2026-11-16T00:47:32+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/collections/game-development",
       "path": "/use-cases/collections/game-development",
       "section": "use-cases",
@@ -1691,8 +1701,8 @@
       "title": "Game development"
     },
     "use-cases__collections__native-development.md": {
-      "hash": "e42515c1778abe0ae16e38bb522bc937ff5d889577c5ef46c08cd1a5dc27f81a",
-      "last_updated": "2026-11-03T18:08:25+00:00",
+      "hash": "bd96bd559f14fca7704888f6c79baae6a1b5c4e79ac328325a53389a1c3262a8",
+      "last_updated": "2026-11-16T00:47:33+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/collections/native-development",
       "path": "/use-cases/collections/native-development",
       "section": "use-cases",
@@ -1701,8 +1711,8 @@
       "title": "Native development"
     },
     "use-cases__collections__production-systems.md": {
-      "hash": "46820e102b598f7d8dd5605baa8a15b82526cd2a197d542857708f15786fe14d",
-      "last_updated": "2026-11-03T18:08:25+00:00",
+      "hash": "8a46fdfded5368eb10b59e2737a505fa8a2d12147ab42a0207e5a9303beea415",
+      "last_updated": "2026-11-16T00:47:33+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/collections/production-systems",
       "path": "/use-cases/collections/production-systems",
       "section": "use-cases",
@@ -1711,8 +1721,8 @@
       "title": "Production systems"
     },
     "use-cases__collections__security.md": {
-      "hash": "6018862765bc1e411db15daed6d279cde2ef717d3bcd54a99c82ebf542848027",
-      "last_updated": "2026-11-14T00:39:42+00:00",
+      "hash": "2a89879f34cbf34f319cfb532899992add784c461cd7c92b46ed205b47fdeb8b",
+      "last_updated": "2026-11-16T00:47:34+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/collections/security",
       "path": "/use-cases/collections/security",
       "section": "use-cases",
@@ -1721,8 +1731,8 @@
       "title": "Security"
     },
     "use-cases__collections__web-development.md": {
-      "hash": "11701ecf9c89f340a93df4995bdaaeb7ae7ef362c193d331b6ced81cbb5e9024",
-      "last_updated": "2026-11-03T18:08:26+00:00",
+      "hash": "749c2614e4237a7fde09e1fbf15edc0dd7b1e32422e9be5c64e55aa646e72b8f",
+      "last_updated": "2026-11-16T00:47:34+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/collections/web-development",
       "path": "/use-cases/collections/web-development",
       "section": "use-cases",
@@ -1771,8 +1781,8 @@
       "title": "Deploy an app or website"
     },
     "use-cases__discover-protein-folding-architectures.md": {
-      "hash": "b14a379ef236dfa4107917dfbc8e93ac423419c1cf736e5dafa6930e4223e8ac",
-      "last_updated": "2026-11-03T18:08:30+00:00",
+      "hash": "0de7a42c751fe5025a58c669f885843eed0f670cebe05d063c55715b78535eee",
+      "last_updated": "2026-11-16T00:47:39+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/discover-protein-folding-architectures",
       "path": "/use-cases/discover-protein-folding-architectures",
       "section": "use-cases",
@@ -1841,8 +1851,8 @@
       "title": "Getting Started with Daybreak Blue"
     },
     "use-cases__github-code-reviews.md": {
-      "hash": "e872654cb4e5602c483342f0ed4280a72ee3a0db312894420a2c1478f8ba4d9b",
-      "last_updated": "2026-11-11T06:31:36+00:00",
+      "hash": "94d28e4e8852ab89249ccf09626a935ecf8fd08f718042e3499cb747841ecfed",
+      "last_updated": "2026-11-16T00:47:44+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/github-code-reviews",
       "path": "/use-cases/github-code-reviews",
       "section": "use-cases",
@@ -1991,8 +2001,8 @@
       "title": "Build for macOS"
     },
     "use-cases__qa-your-app-with-computer-use.md": {
-      "hash": "9b98b997d1e0fb30f872ecfb39b40b77e0612519a4e9d73e8015e19a06c459f3",
-      "last_updated": "2026-11-03T18:08:41+00:00",
+      "hash": "0dd320c0b9cec9282e8f59ac43e0e35eb44d891a01455c8692006a904ddc3735",
+      "last_updated": "2026-11-16T00:47:55+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/qa-your-app-with-computer-use",
       "path": "/use-cases/qa-your-app-with-computer-use",
       "section": "use-cases",
@@ -2091,8 +2101,8 @@
       "title": "Set up security context"
     },
     "use-cases__slack-coding-tasks.md": {
-      "hash": "2178dd0e6cdd821284a99d40c1a35cc3edcdc31c0cac8798fa0360e060ab079a",
-      "last_updated": "2026-11-03T18:08:45+00:00",
+      "hash": "69298aa84830fcf7a1b4cc7273b75a3337166d6a849b24fe3480cd8201fb9edb",
+      "last_updated": "2026-11-16T00:48:02+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/slack-coding-tasks",
       "path": "/use-cases/slack-coding-tasks",
       "section": "use-cases",
@@ -2273,7 +2283,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-14T00:40:11+00:00",
+  "last_updated": "2026-11-16T00:48:07+00:00",
   "skipped": [
     {
       "path": "/docs",
@@ -2284,6 +2294,11 @@
       "path": "/docs/screenshot-review",
       "reason": "No .md endpoint",
       "url": "https://learn.chatgpt.com/docs/screenshot-review"
+    },
+    {
+      "path": "/use-cases/all",
+      "reason": "No .md endpoint",
+      "url": "https://learn.chatgpt.com/use-cases/all"
     },
     {
       "path": "/use-cases/collections",
