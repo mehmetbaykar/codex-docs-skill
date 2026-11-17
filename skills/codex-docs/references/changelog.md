@@ -20,11 +20,23 @@ path: /docs/changelog
 
 0.168.0
 
+## Codex app (2026-11-12)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-11-12-app
+
+Codex app
+
 ## Codex CLI Release: 0.167.2 (2026-11-11)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-442267349
 
 0.167.2
+
+## Codex app (2026-11-10)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-11-10-app
+
+Codex app
 
 ## ChatGPT for iOS (2026-11-10)
 
@@ -44,17 +56,41 @@ ChatGPT for iOS
 
 0.167.0
 
+## Codex app (2026-11-05)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-11-05-app
+
+Codex app
+
+## Codex app (2026-11-03)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-11-03-app
+
+Codex app
+
 ## ChatGPT for iOS (2026-11-02)
 
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-11-02-mobile
 
 ChatGPT for iOS
 
+## Codex app (2026-10-29)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-29-app
+
+Codex app
+
 ## Codex CLI Release: 0.166.0 (2026-10-29)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-428320524
 
 0.166.0
+
+## Codex app (2026-10-27)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-27-app
+
+Codex app
 
 ## ChatGPT for iOS (2026-10-27)
 
@@ -74,6 +110,12 @@ ChatGPT for iOS
 
 GPT-6.1 Terra in Work and Codex
 
+## Codex app (2026-10-23)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-23-app
+
+Codex app
+
 ## Codex CLI Release: 0.164.0 (2026-10-23)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-421457270
@@ -85,6 +127,18 @@ GPT-6.1 Terra in Work and Codex
 - Source: https://developers.openai.com/codex/changelog/#codex-2026-10-22-mobile
 
 ChatGPT for iOS
+
+## Codex app (2026-10-20)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-20-app
+
+Codex app
+
+## Codex app (2026-10-15)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-10-15-app
+
+Codex app
 
 ## Codex CLI Release: 0.163.0 (2026-10-15)
 
