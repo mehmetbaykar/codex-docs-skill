@@ -27,7 +27,11 @@ A good default is to include four things in your prompt:
 
 This helps Codex stay scoped, make fewer assumptions, and produce work that’s easier to review.
 
-Use GPT-6.1 Sol when available to your account and client, starting with the reasoning effort available by default in your client. Start with **High** for GPT-6 Luna or **Light** for GPT-6 Astra (`low` in configuration). Adjust based on the task and the result. See [Models](https://learn.chatgpt.com/docs/models) for available reasoning levels.
+If GPT-6.2 Sol is available to you, start there for most tasks. For a change
+that spans packages, choose GPT-6.2 Astra from the model picker.
+With either model, start with the reasoning effort your client selects. For GPT-6 Luna,
+start with **High**. For GPT-6 Astra, start with **Light** (`low` in
+configuration). See [Models](https://learn.chatgpt.com/docs/models) for available reasoning levels.
 
 - Low for faster, well-scoped tasks
 - Medium or High for more complex changes or debugging

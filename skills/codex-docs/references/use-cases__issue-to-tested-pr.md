@@ -167,12 +167,20 @@ To verify your environment, put the files in your selected repository, prepare a
 
 It does not record session tokens or the signing key. Read `README.md` and `openapi.json` for the sample's setup and public contract.
 
+For Ruby, use the complete [Ruby sample project](https://github.com/openai/developers-website/tree/main/src/content/platform/ruby-examples) with its `Gemfile`, lockfile, and `codex-cloud` directory intact. Install its dependencies using Ruby 3.3. From the Ruby project directory, run `bundle exec ruby codex-cloud/api/main.rb`, `bundle exec ruby codex-cloud/test.rb --seeded`, `bundle exec ruby codex-cloud/test.rb`, and `bundle exec ruby codex-cloud/reproduce/main.rb ./evidence`. The seeded test deliberately fails; the corrected test passes. These Ruby commands replace the TypeScript commands above.
+
 ### Inspect the runnable sample
 
-These excerpts come from the files in the download. Run the complete files after extracting the ZIP.
+The TypeScript excerpts come from the ZIP.
+
+The Ruby examples come from the linked Ruby sample project.
+
+Run the complete files for the selected language with the supplied database fixture.
 
 <details>
 <summary>Cursor and ordering implementation</summary>
+Create the example API
+
 ```typescript
 import { createFixtures } from "./fixtures.ts";
 type Fixtures = ReturnType<typeof createFixtures>;
@@ -304,10 +312,202 @@ export async function startApi(
 }
 ```
 
+```ruby
+require "base64"
+require "json"
+require "net/http"
+require "openssl"
+require "time"
+require "timeout"
+require "uri"
+require "webrick"
+require_relative "../fixtures/main"
+
+module PaginationAPI
+  ERRORS = {
+    "invalid_cursor" => [400, "Invalid cursor."],
+    "invalid_limit" => [400, "Limit must be an integer from 1 through 100."],
+    "unauthenticated" => [401, "Authentication required."],
+    "not_found" => [404, "Project not found."]
+  }.freeze
+
+  def self.timestamp(value)
+    match = value.is_a?(String) && value.match(/\A(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})(?:\.(\d{1,9}))?Z\z/)
+    raise ArgumentError, "Invalid timestamp" unless match
+
+    parsed = Time.iso8601(value)
+    raise ArgumentError, "Invalid timestamp" unless parsed.utc.strftime("%Y-%m-%dT%H:%M:%S") == match[1]
+
+    (parsed.to_r * 1_000_000_000).to_i
+  end
+
+  def self.compare(left, right)
+    [timestamp(right.fetch("created_at")), right.fetch("id")] <=> [timestamp(left.fetch("created_at")), left.fetch("id")]
+  end
+
+  def self.encode_cursor(event, tenant, project, key)
+    payload = Base64.urlsafe_encode64(
+      JSON.generate(
+        version: 1, tenant_id: tenant, project_id: project,
+        created_at: event.fetch("created_at"), id: event.fetch("id")
+      ), padding: false
+    )
+    signature = Base64.urlsafe_encode64(OpenSSL::HMAC.digest("SHA256", key, payload), padding: false)
+    "#{payload}.#{signature}"
+  end
+
+  def self.decode_cursor(token, tenant, project, key)
+    raise ArgumentError, "Invalid cursor" unless token.is_a?(String) && token.bytesize <= 2048
+
+    parts = token.split(".", -1)
+    raise ArgumentError, "Invalid cursor" unless parts.length == 2 && parts.all? { |part| part.match?(/\A[A-Za-z0-9_-]+\z/) }
+
+    payload, signature = parts
+    decoded, actual = Base64.urlsafe_decode64(payload), Base64.urlsafe_decode64(signature)
+    expected = OpenSSL::HMAC.digest("SHA256", key, payload)
+    unless Base64.urlsafe_encode64(decoded, padding: false) == payload && Base64.urlsafe_encode64(actual, padding: false) == signature &&
+           actual.bytesize == expected.bytesize && OpenSSL.fixed_length_secure_compare(actual, expected)
+      raise ArgumentError, "Invalid cursor"
+    end
+
+    cursor = JSON.parse(decoded, allow_duplicate_key: false)
+    fields = %w[version tenant_id project_id created_at id]
+    unless cursor.is_a?(Hash) && cursor.keys.sort == fields.sort && cursor["version"].is_a?(Integer) && cursor["version"] == 1 &&
+           cursor["tenant_id"] == tenant && cursor["project_id"] == project && cursor["id"].is_a?(String) && !cursor["id"].empty?
+      raise ArgumentError, "Invalid cursor"
+    end
+
+    timestamp(cursor["created_at"])
+    cursor
+  end
+
+  def self.failure(code)
+    status, message = ERRORS.fetch(code)
+    [
+      status, {
+        error: {
+          code: code,
+          message: message
+        }
+      }
+    ]
+  end
+
+  def self.handle(request, fixtures, seeded_bug)
+    bearer = request["authorization"].to_s.match(/\ABearer ([A-Za-z0-9_-]+)\z/)
+    tenant = bearer && fixtures[:sessions][bearer[1]]
+    return failure("unauthenticated") unless tenant
+
+    begin
+      url = URI.parse(request.unparsed_uri)
+      route = url.path.to_s.match(%r{\A/v1/projects/([^/]+)(/events)?\z})
+      project_id = route && URI.decode_www_form_component(route[1])
+    rescue ArgumentError, URI::InvalidURIError
+      return failure("not_found")
+    end
+    project = project_id && fixtures[:projects][project_id]
+    return failure("not_found") unless request.request_method == "GET" && route && project && project["tenant_id"] == tenant
+    unless route[2]
+      return [
+        200, {
+          id: project_id,
+          name: project["name"]
+        }
+      ]
+    end
+
+    begin
+      parameters = URI.decode_www_form(url.query.to_s)
+    rescue ArgumentError
+      return failure("invalid_cursor")
+    end
+    limits = parameters.filter_map { |key, value| value if key == "limit" }
+    return failure("invalid_limit") if limits.length > 1 || (!limits.empty? && !limits.fetch(0).match?(/\A\d+\z/))
+
+    limit = limits.empty? ? 25 : limits.fetch(0).to_i
+    return failure("invalid_limit") unless (1..100).cover?(limit)
+
+    cursors = parameters.filter_map { |key, value| value if key == "cursor" }
+    cursor = nil
+    unless cursors.empty?
+      begin
+        raise ArgumentError, "Repeated cursor" unless cursors.length == 1
+
+        cursor = decode_cursor(cursors.first, tenant, project_id, fixtures[:signing_key])
+      rescue ArgumentError, JSON::ParserError
+        return failure("invalid_cursor")
+      end
+    end
+    matching = fixtures[:events].select { |event| event["tenant_id"] == tenant && event["project_id"] == project_id }
+                                .sort { |left, right| compare(left, right) }.select do |event|
+      !cursor || (seeded_bug ? timestamp(event["created_at"]) < timestamp(cursor["created_at"]) : compare(event, cursor).positive?)
+    end
+    selected = matching.take(limit)
+    items = selected.map { |event| event.slice("id", "created_at", "type", "summary") }
+    next_cursor = (matching.length > limit) ? encode_cursor(selected.last, tenant, project_id, fixtures[:signing_key]) : nil
+    [
+      200, {
+        items: items,
+        next_cursor: next_cursor
+      }
+    ]
+  end
+
+  def self.start(fixtures, seeded_bug: false)
+    ready = Queue.new
+    server = WEBrick::HTTPServer.new(
+      Port: 0, BindAddress: "127.0.0.1", AccessLog: [],
+      Logger: WEBrick::Log.new(File::NULL), StartCallback: -> { ready << true }
+    )
+    server.mount_proc("/") do |request, response|
+      status, body = handle(request, fixtures, seeded_bug)
+      response.status = status
+      response["content-type"] = "application/json"
+      response.body = JSON.generate(body)
+    end
+    worker = Thread.new { server.start }
+    Timeout.timeout(5) { ready.pop }
+    {
+      url: "http://127.0.0.1:#{server.config[:Port]}",
+
+      close: -> {
+        server.shutdown
+        worker.join
+      }
+    }
+  # Always close the owned listener if startup is interrupted.
+  rescue Exception # standard:disable Lint/RescueException
+    server&.shutdown
+    worker&.join
+    raise
+  end
+
+  def self.fetch(base, path, token)
+    request = Net::HTTP::Get.new(URI("#{base}#{path}"))
+    request["Authorization"] = "Bearer #{token}" if token
+    response = Net::HTTP.start(request.uri.host, request.uri.port, open_timeout: 5, read_timeout: 5) { |http| http.request(request) }
+    [response.code.to_i, JSON.parse(response.body)]
+  end
+end
+
+if $PROGRAM_NAME == __FILE__
+  fixtures = PaginationFixtures.create
+  api = PaginationAPI.start(fixtures)
+  begin
+    status, body = PaginationAPI.fetch(api[:url], "/v1/projects/feed/events?limit=2", fixtures[:token_a])
+    puts JSON.generate(status: status, ids: body.fetch("items").map { |item| item.fetch("id") }, has_next_page: !body["next_cursor"].nil?)
+  ensure
+    api[:close].call
+  end
+end
+```
+
 </details>
 
 <details>
 <summary>Seeded records and project access fixtures</summary>
+Create test fixtures
+
 ```typescript
 export function createFixtures() {
   const tokenA = randomBytes(24).toString("base64url");
@@ -378,10 +578,99 @@ export function createFixtures() {
 }
 ```
 
+```ruby
+require "json"
+require "securerandom"
+require "time"
+
+module PaginationFixtures
+  def self.event(id, created_at, project_id, tenant_id = "tenant_a")
+    {
+      "id" => id,
+
+      "created_at" => created_at,
+
+      "project_id" => project_id,
+      "tenant_id" => tenant_id,
+
+      "type" => "deployment",
+
+      "summary" => "Synthetic event #{id}",
+      "internal_note" => "This field must never enter the HTTP response.",
+
+      "raw_payload" => { "synthetic" => true }
+    }
+  end
+
+  def self.create
+    token_a, token_b = SecureRandom.urlsafe_base64(24), SecureRandom.urlsafe_base64(24)
+    projects = {
+      "feed" => "Activity feed",
+
+      "empty" => "Empty feed",
+
+      "exact" => "Four events",
+      "large" => "Large feed",
+
+      "precision" => "Precise timestamps",
+
+      "other" => "Another project",
+      "private" => "Private project"
+    }.to_h do |id, name|
+      [
+        id, {
+          "tenant_id" => (id == "private") ? "tenant_b" : "tenant_a",
+          "name" => name
+        }
+      ]
+    end
+    feed = [["evt_105", "03"], ["evt_104", "02"], ["evt_103", "02"], ["evt_102", "02"], ["evt_101", "01"]].map do |id, second|
+      event(id, "2026-01-15T12:00:#{second}.123456Z", "feed")
+    end
+    events = feed + feed.take(4).map { |item| item.merge("project_id" => "exact") }
+    105.times do |index|
+      events << event(format("large_%03d", index), (Time.utc(2026, 1, 15, 12) + index).strftime("%Y-%m-%dT%H:%M:%S.123456Z"), "large")
+    end
+    events.concat(
+      [
+        event("precise_a", "2026-01-15T12:00:00.123999Z", "precision"),
+        event("precise_z", "2026-01-15T12:00:00.123001Z", "precision"),
+        event("other_1", "2026-01-15T12:00:00.123456Z", "other"),
+        event("other_2", "2026-01-15T11:59:59.123456Z", "other"),
+        event("private_1", "2026-01-15T12:00:00.123456Z", "private", "tenant_b"),
+        event("private_2", "2026-01-15T11:59:59.123456Z", "private", "tenant_b")
+      ]
+    )
+    {
+      sessions: {
+        token_a => "tenant_a",
+        token_b => "tenant_b"
+      },
+
+      projects: projects,
+      events: events,
+
+      signing_key: SecureRandom.random_bytes(32),
+
+      token_a: token_a,
+
+      token_b: token_b
+    }
+  end
+end
+
+if $PROGRAM_NAME == __FILE__
+  fixtures = PaginationFixtures.create
+  puts JSON.generate(projects: fixtures[:projects].length, events: fixtures[:events].length)
+end
+```
+
 </details>
 
 <details>
 <summary>HTTP contract and regression tests</summary>
+Test the example API
+
 ```typescript
 test("five-event traversal crosses a timestamp tie and replays the same continuation", async () => {
   const expected = ["evt_105", "evt_104", "evt_103", "evt_102", "evt_101"];
@@ -735,10 +1024,247 @@ test("OpenAPI declares operation, limit boundaries, signed cursor, and response 
 });
 ```
 
+```ruby
+require "minitest/autorun"
+require_relative "api/main"
+
+SEEDED_PAGINATION_BUG = !!ARGV.delete("--seeded")
+ARGV << "--verbose"
+
+class PaginationTest < Minitest::Test
+  def setup
+    @fixtures = PaginationFixtures.create
+    @spec = JSON.parse(File.read(File.expand_path("support/openapi.json", __dir__)))
+    @api = PaginationAPI.start(@fixtures, seeded_bug: SEEDED_PAGINATION_BUG)
+  end
+
+  def teardown
+    @api&.fetch(:close)&.call
+  end
+
+  # This oracle implements only the keywords in this fixture's closed schemas.
+  def conforms?(value, schema)
+    if schema["$ref"]
+      resolved = schema["$ref"].delete_prefix("#/").split("/").reduce(@spec) { |item, key| item.fetch(key) }
+      return conforms?(value, resolved)
+    end
+    return schema["oneOf"].count { |choice| conforms?(value, choice) } == 1 if schema["oneOf"]
+
+    case schema["type"]
+    when "null"
+      return value.nil?
+    when "array"
+      return value.is_a?(Array) && value.all? { |item| conforms?(item, schema.fetch("items", {})) }
+    when "object"
+      return false unless value.is_a?(Hash)
+
+      properties = schema.fetch("properties", {})
+      return false unless schema.fetch("required", []).all? { |key| value.key?(key) }
+      return false if schema["additionalProperties"] == false && (value.keys - properties.keys).any?
+
+      return properties.all? { |key, child| !value.key?(key) || conforms?(value[key], child) }
+    when "string"
+      return false unless value.is_a?(String)
+      return false if value.length < schema.fetch("minLength", 0)
+      return false if schema["pattern"] && !Regexp.new(schema["pattern"]).match?(value)
+
+      if schema["format"] == "date-time"
+        begin
+          Time.iso8601(value)
+        rescue ArgumentError
+          return false
+        end
+      end
+    end
+    !schema["enum"] || schema["enum"].include?(value)
+  end
+
+  def request(project = "feed", parameters = {}, token: @fixtures[:token_a], detail: false)
+    path = "/v1/projects/#{project}#{"/events" unless detail}?#{URI.encode_www_form(parameters)}"
+    status, body = PaginationAPI.fetch(@api[:url], path, token)
+    route = detail ? "/v1/projects/{project_id}" : "/v1/projects/{project_id}/events"
+    schema = @spec.fetch("paths").fetch(route).fetch("get").fetch("responses").fetch(status.to_s).fetch("content").fetch("application/json").fetch("schema")
+    assert conforms?(body, schema), "HTTP #{status} must match its closed public schema"
+    [status, body]
+  end
+
+  def ids(body)
+    body.fetch("items").map { |item| item.fetch("id") }
+  end
+
+  def page(project = "feed", parameters = {})
+    status, body = request(project, parameters)
+    assert_equal 200, status
+    body
+  end
+
+  def error(code, project = "feed", parameters = {}, token: @fixtures[:token_a], detail: false, **query)
+    parameters = parameters.merge(query) unless query.empty?
+    status, body = request(project, parameters, token: token, detail: detail)
+    expected_status, expected_body = PaginationAPI.failure(code)
+    assert_equal expected_status, status
+    assert_equal JSON.parse(JSON.generate(expected_body)), body
+    body
+  end
+
+  def test_tuple_pagination_and_replay
+    first = page("feed", limit: 2)
+    assert_equal %w[evt_105 evt_104], ids(first)
+    second = page("feed", limit: 2, cursor: first.fetch("next_cursor"))
+    assert_equal %w[evt_103 evt_102], ids(second)
+    assert_equal second, page("feed", limit: 2, cursor: first.fetch("next_cursor"))
+    third = page("feed", limit: 2, cursor: second.fetch("next_cursor"))
+    assert_equal ["evt_101"], ids(third)
+    assert_nil third["next_cursor"]
+  end
+
+  def test_ties_with_limit_three
+    first = page("feed", limit: 3)
+    assert_equal %w[evt_105 evt_104 evt_103], ids(first)
+    last = page("feed", limit: 3, cursor: first.fetch("next_cursor"))
+    assert_equal %w[evt_102 evt_101], ids(last)
+    assert_nil last["next_cursor"]
+  end
+
+  def test_submillisecond_precision
+    first = page("precision", limit: 1)
+    assert_equal ["precise_a"], ids(first)
+    assert_equal ["precise_z"], ids(page("precision", limit: 1, cursor: first.fetch("next_cursor")))
+  end
+
+  def test_limit_boundaries
+    assert_equal 25, ids(page("large")).length
+    assert_equal 1, ids(page("large", limit: 1)).length
+    assert_equal 100, ids(page("large", limit: 100)).length
+  end
+
+  def test_invalid_limits
+    ["", "0", "101", "-1", "1.5", "1e2", " 2", "NaN", "Infinity"].each do |limit|
+      error("invalid_limit", "feed", limit: limit)
+    end
+    error("invalid_limit", "feed", [["limit", "2"], ["limit", "3"]])
+  end
+
+  def test_final_pages
+    assert_empty ids(page("empty"))
+    assert_nil page("empty")["next_cursor"]
+    assert_nil page("feed", limit: 100)["next_cursor"]
+    first = page("exact", limit: 2)
+    last = page("exact", limit: 2, cursor: first.fetch("next_cursor"))
+    assert_equal 2, ids(last).length
+    assert_nil last["next_cursor"]
+  end
+
+  def test_authentication_precedence
+    [nil, "wrong", "invalid token"].each do |token|
+      error(
+        "unauthenticated", "feed", {
+          cursor: "broken",
+          limit: "0"
+        }, token: token
+      )
+    end
+  end
+
+  def test_authorization_precedence
+    private_error = error("not_found", "private", cursor: "broken", limit: "0")
+    assert_equal private_error, error("not_found", "missing", cursor: "broken", limit: "0")
+  end
+
+  def test_project_cursor_scope
+    cursor = page("other", limit: 1).fetch("next_cursor")
+    error("invalid_cursor", "feed", cursor: cursor)
+  end
+
+  def test_tenant_cursor_scope
+    _, body = request("private", { limit: 1 }, token: @fixtures[:token_b])
+    error("invalid_cursor", "feed", cursor: body.fetch("next_cursor"))
+  end
+
+  def test_malformed_cursors
+    cursor = page("feed", limit: 2).fetch("next_cursor")
+    ["", "broken", "a.b.c", cursor + "=", "!" + cursor, cursor.sub(/.$/, cursor.end_with?("A") ? "B" : "A")].each do |token|
+      error("invalid_cursor", "feed", cursor: token)
+    end
+    error("invalid_cursor", "feed", [["cursor", cursor], ["cursor", cursor]])
+  end
+
+  def test_signed_invalid_cursors
+    valid = {
+      "version" => 1,
+      "tenant_id" => "tenant_a",
+      "project_id" => "feed",
+      "created_at" => "2026-01-15T12:00:02.123456Z",
+      "id" => "evt_104"
+    }
+    [
+      valid.merge("version" => 2), valid.merge("version" => 1.0), valid.merge("extra" => true), valid.except("id"),
+      valid.merge("id" => ""), valid.merge("id" => 5), valid.merge("created_at" => "2026-02-30T00:00:00Z"), nil, []
+    ].each do |value|
+      payload = Base64.urlsafe_encode64(JSON.generate(value), padding: false)
+      signature = Base64.urlsafe_encode64(OpenSSL::HMAC.digest("SHA256", @fixtures[:signing_key], payload), padding: false)
+      error("invalid_cursor", "feed", cursor: "#{payload}.#{signature}")
+    end
+  end
+
+  def test_public_event_fields
+    page("large", limit: 100).fetch("items").each do |event|
+      assert_equal %w[created_at id summary type], event.keys.sort
+    end
+  end
+
+  def test_schema_oracle
+    schema = @spec.fetch("components").fetch("schemas").fetch("Event")
+    valid = page.fetch("items").first
+    assert conforms?(valid, schema)
+    [valid.merge("tenant_id" => "secret"), valid.except("id"), valid.merge("id" => 1), valid.merge("created_at" => "bad-date")].each do |event|
+      refute conforms?(event, schema)
+    end
+  end
+
+  def test_project_detail
+    status, body = request(
+      "feed", {
+        cursor: "broken",
+        limit: "0"
+      }, detail: true
+    )
+    assert_equal 200, status
+    assert_equal(
+      {
+        "id" => "feed",
+        "name" => "Activity feed"
+      }, body
+    )
+    error("not_found", "private", {}, detail: true)
+    error("unauthenticated", "feed", {}, token: nil, detail: true)
+  end
+
+  def test_openapi_contract
+    assert_equal "3.1.0", @spec["openapi"]
+    operation = @spec.fetch("paths").fetch("/v1/projects/{project_id}/events").fetch("get")
+    assert_equal "listProjectEvents", operation["operationId"]
+    limit = operation.fetch("parameters").find { |parameter| parameter["name"] == "limit" }.fetch("schema")
+    assert_equal(
+      {
+        "type" => "integer",
+        "minimum" => 1,
+        "maximum" => 100,
+        "default" => 25
+      }, limit
+    )
+    assert_equal %w[200 400 401 404], operation.fetch("responses").keys.sort
+    assert_equal "bearer", @spec.dig("components", "securitySchemes", "session", "scheme")
+  end
+end
+```
+
 </details>
 
 <details>
 <summary>Evidence capture</summary>
+Reproduce the issue
+
 ```typescript
 mkdirSync(output, { recursive: true });
 const states = [];
@@ -820,6 +1346,97 @@ console.log(
     2
   )
 );
+```
+
+```ruby
+require "digest"
+require "fileutils"
+require "rbconfig"
+require "timeout"
+require_relative "../api/main"
+
+output = File.expand_path(ARGV.fetch(0, "evidence"))
+FileUtils.mkdir_p(output)
+test_path = File.expand_path("../test.rb", __dir__)
+states = [["red", ["--seeded"]], ["green", []]].map do |name, arguments|
+  log_path = File.join(output, "#{name}.log")
+  pid = if arguments.empty?
+          Process.spawn(RbConfig.ruby, test_path, out: log_path, err: [:child, :out])
+        else
+          Process.spawn(RbConfig.ruby, test_path, "--seeded", out: log_path, err: [:child, :out])
+        end
+  begin
+    status = Timeout.timeout(30) { (Process.wait2(pid) or raise "Child process was not reaped").last }
+  rescue Timeout::Error
+    Process.kill("KILL", pid)
+    Process.wait(pid)
+    raise
+  end
+  {
+    name: name,
+    command: [RbConfig.ruby, test_path, *arguments],
+    exit_code: status.exitstatus,
+    signal: status.termsig
+  }
+end
+
+observed = [true, false].to_h do |seeded|
+  fixtures = PaginationFixtures.create
+  api = PaginationAPI.start(fixtures, seeded_bug: seeded)
+  begin
+    pages = []
+    state = { cursor: nil }
+    loop do
+      raise "Traversal exceeded fixture bound" if pages.length >= 3
+
+      parameters = { limit: 2 }
+      parameters[:cursor] = state[:cursor] if state[:cursor]
+      status, body = PaginationAPI.fetch(api[:url], "/v1/projects/feed/events?#{URI.encode_www_form(parameters)}", fixtures[:token_a])
+      pages << {
+        status: status,
+        body: body
+      }
+      state[:cursor] = body.fetch("next_cursor")
+      break unless state[:cursor]
+    end
+    errors = [["feed", fixtures[:token_a]], ["feed", nil], ["private", fixtures[:token_a]]].map do |project, token|
+      status, body = PaginationAPI.fetch(api[:url], "/v1/projects/#{project}/events?cursor=broken", token)
+      {
+        status: status,
+        body: body
+      }
+    end
+    [
+      seeded ? :red : :green, {
+        pages: pages,
+        errors: errors
+      }
+    ]
+  ensure
+    api[:close].call
+  end
+end
+sources = %w[api/main.rb fixtures/main.rb test.rb reproduce/main.rb support/openapi.json].to_h do |name|
+  [name, Digest::SHA256.file(File.expand_path("../#{name}", __dir__)).hexdigest]
+end
+File.write(File.join(output, "observed-http.json"), JSON.pretty_generate(observed))
+File.write(
+  File.join(output, "run-manifest.json"),
+  JSON.pretty_generate(
+    execution: "Synthetic loopback HTTP fixture; no external service", recorded_at: Time.now.utc.iso8601,
+    ruby: RUBY_VERSION, source_sha256: sources, states: states,
+    baseline: "Deliberately seeded timestamp-only continuation; not a historical customer defect",
+    correction: "Descending timestamp-and-ID continuation retaining fractional precision"
+  )
+)
+unless states.fetch(0)[:exit_code] == 1 && states.fetch(1)[:exit_code] == 0
+  raise "Expected seeded failure and corrected success; inspect red.log and green.log"
+end
+
+puts JSON.generate(
+  execution: "synthetic-loopback-http", red_exit: states.fetch(0)[:exit_code], green_exit: states.fetch(1)[:exit_code],
+  green_pages: observed.fetch(:green)[:pages].map { |page| page[:body].fetch("items").map { |item| item.fetch("id") } }, evidence_directory: output
+)
 ```
 
 </details>

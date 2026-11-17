@@ -402,12 +402,12 @@
     "fetch_tool_version": "3.0",
     "pages_excluded": 79,
     "pages_failed": 0,
-    "pages_fetched_successfully": 184,
+    "pages_fetched_successfully": 187,
     "pages_skipped": 4,
     "pages_stale": 0,
     "raw_fallback_pages": 0,
     "stale_pages": [],
-    "total_pages_discovered": 267
+    "total_pages_discovered": 270
   },
   "files": {
     "administration.md": {
@@ -421,8 +421,8 @@
       "title": "Administration"
     },
     "agent-approvals-security.md": {
-      "hash": "4d0c48560b70a35e092c14476f0ee6e915f8b1476b7bdc4889994eaa3008e043",
-      "last_updated": "2026-11-11T00:40:41+00:00",
+      "hash": "fccfd6a21d403371bf0bbbe0023e7c637b1448dcc5aa3015752d9d5812f13d1d",
+      "last_updated": "2026-11-17T18:24:41+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
       "path": "/docs/agent-approvals-security",
       "section": "docs",
@@ -451,18 +451,18 @@
       "title": "Rules"
     },
     "agent-configuration__speed.md": {
-      "hash": "90b3ef7c43f4b60418035ba7749d2d67b877ccfe8ae782f3ecd0ec21fe4c1fbe",
-      "last_updated": "2026-11-03T18:07:27+00:00",
+      "hash": "9b4fe0b79953a2e8ff8213b94cb692f1cbb7367fa17c8d361f76fe2eff6cfa3a",
+      "last_updated": "2026-11-17T18:24:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/speed",
       "path": "/docs/agent-configuration/speed",
       "section": "docs",
       "source_url": "https://learn.chatgpt.com/docs/agent-configuration/speed.md",
       "status": "live",
-      "title": "Speed"
+      "title": "Fast and Ultrafast modes"
     },
     "agent-configuration__subagents.md": {
-      "hash": "78ec66285b0b694c3a8d909a3de0be36023fe6101424ce2250aa33e591b2912f",
-      "last_updated": "2026-11-03T18:07:27+00:00",
+      "hash": "a1d916fd30c2c1203ecc5fabd0663d134a0ff136ce35f5f5bfb7e5349d9f8e8a",
+      "last_updated": "2026-11-17T18:24:42+00:00",
       "original_url": "https://learn.chatgpt.com/docs/agent-configuration/subagents",
       "path": "/docs/agent-configuration/subagents",
       "section": "docs",
@@ -491,8 +491,8 @@
       "title": "Annotations Extensibility"
     },
     "app-server.md": {
-      "hash": "39bac26bc44c68cc61c387dc41be5c73c2ce749883c5285d963891a2063a4172",
-      "last_updated": "2026-11-16T18:25:18+00:00",
+      "hash": "2ab79cecb83213b2c9e74822d2b171ae03b45aae0b130f5848f9ba5ca2c7d554",
+      "last_updated": "2026-11-17T18:24:43+00:00",
       "original_url": "https://learn.chatgpt.com/docs/app-server",
       "path": "/docs/app-server",
       "section": "docs",
@@ -531,8 +531,8 @@
       "title": "Scheduled tasks"
     },
     "browser.md": {
-      "hash": "08215a428dfe0c3a5ea5cca739d039c7935988be988a020e3563230e8056a788",
-      "last_updated": "2026-11-10T18:22:59+00:00",
+      "hash": "9e598ccadf0f6d55a4b99c002db7d11b65d82a1733d40326818c83d11209d68c",
+      "last_updated": "2026-11-17T18:24:44+00:00",
       "original_url": "https://learn.chatgpt.com/docs/browser",
       "path": "/docs/browser",
       "section": "docs",
@@ -561,8 +561,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "ddb0527862624b8a5e0133cd6386ad1ae1235e03d7160a4c2ea1f6ea6e429a9f",
-      "last_updated": "2026-11-17T15:22:06+00:00",
+      "hash": "596e2c072e4acea6329806fb72a5ef4ff5edda24ad969d001ebfb813d6eb3148",
+      "last_updated": "2026-11-17T18:24:45+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "section": "docs",
@@ -621,8 +621,8 @@
       "title": "Code review"
     },
     "codex-sdk.md": {
-      "hash": "338960d785f8717f2ebc06e06281eeb7f03d1fc53e2786004b6ab0d91ab563cb",
-      "last_updated": "2026-11-06T00:40:27+00:00",
+      "hash": "ea35da9a87a291d8a551bbf84b397dec3646c6eee21ad1c43db98140db216969",
+      "last_updated": "2026-11-17T18:24:47+00:00",
       "original_url": "https://learn.chatgpt.com/docs/codex-sdk",
       "path": "/docs/codex-sdk",
       "section": "docs",
@@ -651,8 +651,8 @@
       "title": "Codex IDE extension"
     },
     "computer-use.md": {
-      "hash": "750244a3f3ed01daf47a2de434547da376a697008657081ab07a4524778757df",
-      "last_updated": "2026-11-04T21:22:00+00:00",
+      "hash": "d2c06fe5e4fff9a74908da7ed796d29d2eeafb4d2d7447bff2a41ff0e81fd156",
+      "last_updated": "2026-11-17T18:24:47+00:00",
       "original_url": "https://learn.chatgpt.com/docs/computer-use",
       "path": "/docs/computer-use",
       "section": "docs",
@@ -681,8 +681,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "792377ae3e405e2534cf9dc36f31ba2fd5701ae9e3a45ea96d4c50309f8b3454",
-      "last_updated": "2026-11-17T09:23:36+00:00",
+      "hash": "3de27fca373b1f8ab8bf2b0c74b6be2ea4bc65e1a6710d8bbf555337d7e2987a",
+      "last_updated": "2026-11-17T18:24:48+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "section": "docs",
@@ -781,8 +781,8 @@
       "title": "Recommended configuration"
     },
     "developer-commands.md": {
-      "hash": "eb75e143430e74046c983c0cca3863a3ce688c725f19548583211b57e12b5932",
-      "last_updated": "2026-11-16T18:25:25+00:00",
+      "hash": "5b8fc0de5dd34dce272271a3951128376a3c6eae8b0070dd02dfc9ed22971ed6",
+      "last_updated": "2026-11-17T18:24:51+00:00",
       "original_url": "https://learn.chatgpt.com/docs/developer-commands",
       "path": "/docs/developer-commands",
       "section": "docs",
@@ -791,8 +791,8 @@
       "title": "Developer commands"
     },
     "developer-settings.md": {
-      "hash": "a58cfc8946a3c2476b7a4bab82a3c91063ffa702afd50930295c6c4eb3059250",
-      "last_updated": "2026-11-16T18:25:26+00:00",
+      "hash": "58990eaa1805dec4e83039805fa529e0a80f1d0335c5094357278b94e103d32e",
+      "last_updated": "2026-11-17T18:24:52+00:00",
       "original_url": "https://learn.chatgpt.com/docs/developer-settings",
       "path": "/docs/developer-settings",
       "section": "docs",
@@ -961,8 +961,8 @@
       "title": "Glossary"
     },
     "guides__best-practices.md": {
-      "hash": "ab159d2d452c2e4965f6edae6fbc09a181459a5b135673fc43f9dd9faac7cc15",
-      "last_updated": "2026-11-03T18:08:14+00:00",
+      "hash": "e4acd59d1182302fc67b6436434e4b6cc2022356fcd42dbe31c2ef2e28f2992c",
+      "last_updated": "2026-11-17T18:25:18+00:00",
       "original_url": "https://learn.chatgpt.com/guides/best-practices",
       "path": "/guides/best-practices",
       "section": "guides",
@@ -979,6 +979,26 @@
       "source_url": "https://learn.chatgpt.com/guides/build-ai-native-engineering-team",
       "status": "live",
       "title": "Building an AI-Native Engineering Team"
+    },
+    "guides__prompting-gpt-6-2-astra.md": {
+      "hash": "c265c5f0f21096398b9fff1e2f57f248ebbaa7e2619ef6813a62fd1962d4f0f6",
+      "last_updated": "2026-11-17T18:25:19+00:00",
+      "original_url": "https://learn.chatgpt.com/guides/prompting-gpt-6-2-astra",
+      "path": "/guides/prompting-gpt-6-2-astra",
+      "section": "guides",
+      "source_url": "https://learn.chatgpt.com/guides/prompting-gpt-6-2-astra",
+      "status": "live",
+      "title": "Prompting GPT-6.2 in Codex"
+    },
+    "guides__svg-3d-design.md": {
+      "hash": "29ad8a44663a168e6c232d89c897084213dac34c74b573b03961a4441b81b3fe",
+      "last_updated": "2026-11-17T18:25:20+00:00",
+      "original_url": "https://learn.chatgpt.com/guides/svg-3d-design",
+      "path": "/guides/svg-3d-design",
+      "section": "guides",
+      "source_url": "https://learn.chatgpt.com/guides/svg-3d-design",
+      "status": "live",
+      "title": "From concept art to editable SVGs and 3D scenes"
     },
     "hooks.md": {
       "hash": "00426f30d1ea062d16b45c8e24ad2e2d176edc41c6c1f3d6aba1b87bd791d311",
@@ -1071,8 +1091,8 @@
       "title": "Codex on mobile"
     },
     "model-selection.md": {
-      "hash": "23b88892da31d9c981a66d04d7cca0787c5cebf4479fb7728fbe371947ae8356",
-      "last_updated": "2026-11-03T18:07:51+00:00",
+      "hash": "d6cd31cd14fe599ff91cd20c5ab6b289f7a2fdba4f83770588f522b502225e38",
+      "last_updated": "2026-11-17T18:24:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/model-selection",
       "path": "/docs/model-selection",
       "section": "docs",
@@ -1081,8 +1101,8 @@
       "title": "Model selection"
     },
     "models.md": {
-      "hash": "6751cf11c7d0b4fcb9c38bea580ac9ceebab57b82439f5808dcd376c4ea6b335",
-      "last_updated": "2026-11-03T18:07:52+00:00",
+      "hash": "c73bcb76644d9e464a1491dbb9da2bcce058b389a6dfb30de2f10c43cf8a0a56",
+      "last_updated": "2026-11-17T18:24:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/models",
       "path": "/docs/models",
       "section": "docs",
@@ -1141,8 +1161,8 @@
       "title": "Permissions"
     },
     "plugins.md": {
-      "hash": "7dd86a65e04b537dab1e6c7e9f58db2f847561a4e725b3001cccd8e70432b5a5",
-      "last_updated": "2026-11-03T18:07:54+00:00",
+      "hash": "4d5e79731a71defe17df79652e46676720c7aacee9399e71310ea4dc3a518a67",
+      "last_updated": "2026-11-17T18:25:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/plugins",
       "path": "/docs/plugins",
       "section": "docs",
@@ -1151,8 +1171,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "272d37f37b979255b1c3ecc51110710dcd1e3abf48e5c70514fe24a3ef150f60",
-      "last_updated": "2026-11-03T18:07:55+00:00",
+      "hash": "da1a8de1dc142d660c1470cfab5428b96b4bd0dee8bd881d5b5431dfc2c54f15",
+      "last_updated": "2026-11-17T18:25:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "section": "docs",
@@ -1171,8 +1191,8 @@
       "title": "Projects and chats"
     },
     "prompting.md": {
-      "hash": "3ed60f3d695aaa9d710396293ee7a95d096a7029cd834d5256c930d6e67569c1",
-      "last_updated": "2026-11-09T03:25:48+00:00",
+      "hash": "8243710d5f51873624c314cd2b8c23f3db372645e74f913777723166a8441a57",
+      "last_updated": "2026-11-17T18:25:02+00:00",
       "original_url": "https://learn.chatgpt.com/docs/prompting",
       "path": "/docs/prompting",
       "section": "docs",
@@ -1671,8 +1691,8 @@
       "title": "Build an AI tour guide"
     },
     "use-cases__code-migrations.md": {
-      "hash": "dd5d1321c3b065b4ed03e4ce05f0b3bb01cf4ecfe0f2ff330ae09179a404fca3",
-      "last_updated": "2026-11-03T18:08:22+00:00",
+      "hash": "b63af36a2760aa833f8b7ebe08a031a3cf197cf1aa0778d3e34e1c821f33b341",
+      "last_updated": "2026-11-17T18:25:29+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/code-migrations",
       "path": "/use-cases/code-migrations",
       "section": "use-cases",
@@ -1871,8 +1891,8 @@
       "title": "Get from idea to proof of concept"
     },
     "use-cases__incident-to-tested-fix.md": {
-      "hash": "8ab10b399957ea752020aaa7ccb8e9775deea9967c03bf04214e23b7fce31766",
-      "last_updated": "2026-11-13T00:42:25+00:00",
+      "hash": "d0621df610e00f31acde893693f0716fa14dcbcadb89e1c56884e33a8459c736",
+      "last_updated": "2026-11-17T18:25:43+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/incident-to-tested-fix",
       "path": "/use-cases/incident-to-tested-fix",
       "section": "use-cases",
@@ -1921,8 +1941,8 @@
       "title": "Refactor SwiftUI screens"
     },
     "use-cases__issue-to-tested-pr.md": {
-      "hash": "f707d11853128c78e47e550d0c041fea9ca34dfe2977816adf148db595dff769",
-      "last_updated": "2026-11-13T00:42:27+00:00",
+      "hash": "e5d384624d30a5a95b336a9261a55767a3f6e8abab020d137f8c9442d5d23317",
+      "last_updated": "2026-11-17T18:25:44+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/issue-to-tested-pr",
       "path": "/use-cases/issue-to-tested-pr",
       "section": "use-cases",
@@ -2151,8 +2171,8 @@
       "title": "Site tools"
     },
     "whats-new.md": {
-      "hash": "01ac3c7dc88727f6ec756ad60515ad9ca9607ed1c9b977ac9a417247851c7d6d",
-      "last_updated": "2026-11-12T21:22:05+00:00",
+      "hash": "d7554f157346e7f6aa3232af6e9e276c7cd33c3668b1d854a0ea7778c7e178fe",
+      "last_updated": "2026-11-17T18:25:15+00:00",
       "original_url": "https://learn.chatgpt.com/docs/whats-new",
       "path": "/docs/whats-new",
       "section": "docs",
@@ -2169,6 +2189,16 @@
       "source_url": "https://learn.chatgpt.com/docs/whats-new/devday-2026.md",
       "status": "live",
       "title": "DevDay 2026"
+    },
+    "whats-new__gpt-62-astra-sol.md": {
+      "hash": "8097efafc43bcc08e974b65ee25053fa02073451bd7ad65611e40921d56867d2",
+      "last_updated": "2026-11-17T18:25:15+00:00",
+      "original_url": "https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol",
+      "path": "/docs/whats-new/gpt-62-astra-sol",
+      "section": "docs",
+      "source_url": "https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol.md",
+      "status": "live",
+      "title": "GPT-6.2"
     },
     "whats-new__november-2-6-2026.md": {
       "hash": "2c116eadefc12a10afb770f3fc3d8823f16a4c94be6cbde3e449429f237668ae",
@@ -2283,7 +2313,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-17T15:23:19+00:00",
+  "last_updated": "2026-11-17T18:26:01+00:00",
   "skipped": [
     {
       "path": "/docs",

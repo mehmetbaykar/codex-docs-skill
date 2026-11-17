@@ -8,6 +8,12 @@ path: /docs/changelog
 
 > Rendered from the changelog RSS feed: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## GPT-6.2 Astra and GPT-6.2 Sol in Work and Codex (2026-11-17)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-gpt-62-astra
+
+GPT-6.2 Astra and GPT-6.2 Sol in Work and Codex
+
 ## Codex CLI Release: 0.169.0 (2026-11-13)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-443990865

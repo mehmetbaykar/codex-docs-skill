@@ -66,6 +66,7 @@ starterPrompt:
 
     - Start by mapping the migration surface and proposing the checkpoint plan.
   suggestedModel: gpt-6-astra
+  alternativeModelName: GPT-6.2 Astra
   suggestedEffort: medium
 relatedLinks:
   - label: Modernizing your Codebase with Codex

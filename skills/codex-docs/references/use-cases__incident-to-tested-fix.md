@@ -167,12 +167,20 @@ The final test command exercises the full matrix, including independent connecti
 
 If your installation provides `docker-compose`, use that spelling in place of `docker compose`. Run these commands sequentially; the suite resets only its marked test schema.
 
+For Ruby, use the complete [Ruby sample project](https://github.com/openai/developers-website/tree/main/src/content/platform/ruby-examples) and install its dependencies using Ruby 3.3. Start PostgreSQL with the Compose setup in the ZIP archive. From the Ruby project directory, run `bundle exec ruby codex-cloud/incident-to-tested-fix/main.rb baseline`, then repeat with `regression` and `fixed`. These commands use the same disposable database and produce the expected failing and passing results; use them in place of the Node runner commands.
+
 ### Inspect the transaction handler
 
-This excerpt comes from `main.ts` in the download. Run the complete files after extracting the ZIP; the tests and fixture setup are included there.
+The TypeScript excerpt comes from `main.ts` in the ZIP.
+
+The Ruby examples come from the linked Ruby sample project.
+
+Run the complete files for the selected language with the supplied database fixture.
 
 <details>
 <summary>Receipt claim and order transaction</summary>
+Claim a receipt and write an order
+
 ```typescript
 import type { Client } from "pg";
 
@@ -226,6 +234,45 @@ async function fixed(
     throw error;
   }
 }
+```
+
+```ruby
+def self.fixed(client, input, hook = ->(_boundary) {})
+  assert_not_held(client, input)
+  hook.call("beforeClaim")
+  client.exec("BEGIN ISOLATION LEVEL READ COMMITTED")
+  committed = false
+  begin
+    claimed = client.exec_params(<<~SQL, key(input) + [fingerprint(input)])
+      INSERT INTO event_receipts(provider, account_id, event_id, payload_fingerprint)
+      VALUES ($1,$2,$3,$4)
+      ON CONFLICT (provider, account_id, event_id) DO NOTHING RETURNING event_id
+    SQL
+    trace("receipt-claim-result", client, input, inserted: claimed.ntuples == 1)
+    if claimed.ntuples == 1
+      hook.call("afterClaim")
+      write_order(client, input)
+      hook.call("afterOrder")
+    else
+      # A new READ COMMITTED statement sees the winner after its commit.
+      check_receipt(client, input)
+    end
+    client.exec("COMMIT")
+    committed = true
+    trace("transaction-committed", client, input)
+    hook.call("afterCommit")
+    trace("acknowledged", client, input, **ACK)
+    ACK
+  rescue
+    if committed
+      trace("committed-response-lost-no-ack", client, input)
+    else
+      client.exec("ROLLBACK")
+      trace("transaction-rolled-back-no-ack", client, input)
+    end
+    raise
+  end
+end
 ```
 
 </details>

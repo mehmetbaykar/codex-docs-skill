@@ -92,12 +92,12 @@ Use a dedicated flag when one exists. Common examples include `--model`,
 `--sandbox`, `--ask-for-approval`, `--profile`, and `--search`. Use `-c` or
 `--config` to override any supported configuration key for one run.
 
-The model override below requires GPT-6.1 Sol access. If it isn't available to
+The model override below requires GPT-6.2 Sol access. If it isn't available to
 your account or workspace, omit `--model` or choose a model listed by `/model`.
-See [GPT-6.1 Sol availability by plan](https://learn.chatgpt.com/docs/models#gpt-6.1-sol).
+See [model availability by plan](https://learn.chatgpt.com/docs/pricing#feature-availability).
 
 ```bash
-codex --model gpt-6.1-sol
+codex --model gpt-6.2-sol
 codex --profile deep-review
 codex --config model_reasoning_effort='"medium"'
 ```

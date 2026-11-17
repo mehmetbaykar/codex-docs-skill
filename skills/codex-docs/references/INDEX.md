@@ -10,7 +10,7 @@ Invoke this skill with a topic: `/codex-docs hooks` in Claude Code or Cursor, `$
 - `agent-approvals-security` - [Agent approvals & security](https://learn.chatgpt.com/docs/agent-approvals-security)
 - `agent-configuration__agents-md` - [Custom instructions with AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)
 - `agent-configuration__rules` - [Rules](https://learn.chatgpt.com/docs/agent-configuration/rules)
-- `agent-configuration__speed` - [Speed](https://learn.chatgpt.com/docs/agent-configuration/speed)
+- `agent-configuration__speed` - [Fast and Ultrafast modes](https://learn.chatgpt.com/docs/agent-configuration/speed)
 - `agent-configuration__subagents` - [Subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents)
 - `amazon-bedrock` - [Use ChatGPT Work and Codex with Amazon Bedrock](https://learn.chatgpt.com/docs/amazon-bedrock)
 - `annotations-extensibility` - [Annotations Extensibility](https://learn.chatgpt.com/docs/annotations-extensibility)
@@ -126,6 +126,7 @@ Invoke this skill with a topic: `/codex-docs hooks` in Claude Code or Cursor, `$
 - `webmcp` - [Site tools](https://learn.chatgpt.com/docs/webmcp)
 - `whats-new` - [What's new](https://learn.chatgpt.com/docs/whats-new)
 - `whats-new__devday-2026` - [DevDay 2026](https://learn.chatgpt.com/docs/whats-new/devday-2026)
+- `whats-new__gpt-62-astra-sol` - [GPT-6.2](https://learn.chatgpt.com/docs/whats-new/gpt-62-astra-sol)
 - `whats-new__november-2-6-2026` - [November 2–6, 2026](https://learn.chatgpt.com/docs/whats-new/november-2-6-2026)
 - `whats-new__october-26-30-2026` - [October 26–30, 2026](https://learn.chatgpt.com/docs/whats-new/october-26-30-2026)
 - `whats-new__october-5-9-2026` - [October 5–9, 2026](https://learn.chatgpt.com/docs/whats-new/october-5-9-2026)
@@ -196,6 +197,8 @@ Invoke this skill with a topic: `/codex-docs hooks` in Claude Code or Cursor, `$
 
 - `guides__best-practices` - [Best practices](https://learn.chatgpt.com/guides/best-practices)
 - `guides__build-ai-native-engineering-team` - [Building an AI-Native Engineering Team](https://learn.chatgpt.com/guides/build-ai-native-engineering-team)
+- `guides__prompting-gpt-6-2-astra` - [Prompting GPT-6.2 in Codex](https://learn.chatgpt.com/guides/prompting-gpt-6-2-astra)
+- `guides__svg-3d-design` - [From concept art to editable SVGs and 3D scenes](https://learn.chatgpt.com/guides/svg-3d-design)
 
 ## Skipped Pages
 

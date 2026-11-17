@@ -100,7 +100,7 @@ Remove the setting or choose a supported policy. Project entries with
 for examples and approval tradeoffs.
 
 Set `model` to one available to your signed-in account or workspace. See
-[GPT-6.1 Sol availability](https://learn.chatgpt.com/docs/models#gpt-6.1-sol) before using the example value.
+[model availability by plan](https://learn.chatgpt.com/docs/pricing#feature-availability) before using the example value.
 
 - model: Model to use (e.g., `gpt-6.1-sol`). (Type: string)
 - review_model: Optional model override used by `/review` (defaults to the current session model). (Type: string)
