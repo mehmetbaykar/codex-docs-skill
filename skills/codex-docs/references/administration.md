@@ -8,7 +8,7 @@ path: /docs/administration
 
 Set access and policy boundaries for ChatGPT, Codex developer tools, APIs, plugins, and connected systems.
 
-Start with the rollout guide, then set up identity and access. Use Configuration for app installation, updates, and workspace policies. Use Advanced deployment for Amazon Bedrock, Bedrock in GovCloud, or an organization gateway. Browse the sections for feature controls, usage, and security.
+Start with the rollout guide, then set up identity and access. Use Configuration for app installation, updates, and workspace policies. Use Advanced deployment to connect through a cloud provider or an organization gateway. Browse the sections for feature controls, usage, and security.
 
 [Start your rollout](https://learn.chatgpt.com/docs/enterprise/admin-setup)
 
@@ -59,9 +59,10 @@ Manage app installation, updates, runtime settings, remote connections, and work
 
 ## Advanced deployment
 
-Connect directly to Amazon Bedrock, configure Bedrock in GovCloud, or deploy an organizational gateway that routes requests to your inference provider.
+Configure a direct cloud connection or an organization gateway, then choose which models your users can access.
 
 - [Amazon Bedrock](https://learn.chatgpt.com/docs/amazon-bedrock): Configure supported local clients to use models available through Bedrock.
+- [Google Cloud](https://learn.chatgpt.com/docs/enterprise/connect-to-vertex-ai): Configure Codex CLI for the Vertex AI preview using your Google Cloud project and credentials.
 - [GovCloud deployment](https://learn.chatgpt.com/docs/enterprise/govcloud-configuration): Configure local Codex workflows with Amazon Bedrock in AWS GovCloud.
 - [Connect to a gateway](https://learn.chatgpt.com/docs/enterprise/connect-to-a-gateway): Connect to your organization's model gateway with or without ChatGPT sign-in.
 - [Roll out a gateway](https://learn.chatgpt.com/docs/enterprise/roll-out-a-gateway): Configure model routes, issue credentials, and deploy Codex through your organization’s gateway.
