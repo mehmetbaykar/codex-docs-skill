@@ -561,8 +561,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "2727170c7016ee01f07ddd839a452ccd1e00e5dea51b5917457f2ba46c1bf342",
-      "last_updated": "2026-11-17T09:23:32+00:00",
+      "hash": "ddb0527862624b8a5e0133cd6386ad1ae1235e03d7160a4c2ea1f6ea6e429a9f",
+      "last_updated": "2026-11-17T15:22:06+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "section": "docs",
@@ -981,8 +981,8 @@
       "title": "Building an AI-Native Engineering Team"
     },
     "hooks.md": {
-      "hash": "73d1e5ea374b531089700728c604b4b26de4feed87913d1b92cff15ed0c44cb2",
-      "last_updated": "2026-11-06T18:24:59+00:00",
+      "hash": "00426f30d1ea062d16b45c8e24ad2e2d176edc41c6c1f3d6aba1b87bd791d311",
+      "last_updated": "2026-11-17T15:22:17+00:00",
       "original_url": "https://learn.chatgpt.com/docs/hooks",
       "path": "/docs/hooks",
       "section": "docs",
@@ -2283,7 +2283,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-17T09:24:42+00:00",
+  "last_updated": "2026-11-17T15:23:19+00:00",
   "skipped": [
     {
       "path": "/docs",
