@@ -561,8 +561,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "e2c1a78f9afb01f33c5d71e148537b4d51c31a50c681994e13d59fa2bb2cd7f2",
-      "last_updated": "2026-11-18T18:23:02+00:00",
+      "hash": "6c106e36ec1192278224ea44dba2815ff3bbf4b04f79175d8c460114ec658f8b",
+      "last_updated": "2026-11-18T21:21:59+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "section": "docs",
@@ -1301,8 +1301,8 @@
       "title": "Codex Security CLI quickstart"
     },
     "security__cli__bulk-scans.md": {
-      "hash": "7512cc588a8856d36eccdc657c9cc565944f125f07d30b8b0644d9401a62d028",
-      "last_updated": "2026-11-11T18:23:18+00:00",
+      "hash": "d83231b9aed94836921b7807a52eaee79e6ee0007a60e5c5827484389e337a7c",
+      "last_updated": "2026-11-18T21:22:20+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/bulk-scans",
       "path": "/docs/security/cli/bulk-scans",
       "section": "docs",
@@ -1351,8 +1351,8 @@
       "title": "Codex Security CLI FAQ"
     },
     "security__cli__reference.md": {
-      "hash": "d087a979cdccb0426491dfd0271baf02affc513e1da7950ff50d7788566fe498",
-      "last_updated": "2026-11-17T00:42:06+00:00",
+      "hash": "ef2a8e146d311fa623171235adbbbf3ff08a44ad320df82f36ec36b9575b9d77",
+      "last_updated": "2026-11-18T21:22:21+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/cli/reference",
       "path": "/docs/security/cli/reference",
       "section": "docs",
@@ -1421,8 +1421,8 @@
       "title": "Review code changes for security"
     },
     "security__plugin__deep-scans.md": {
-      "hash": "8485058fd42ae4ee5a1a9b90f6b36729da7a2c7f40f0f1bdd805a598dcc4632e",
-      "last_updated": "2026-11-16T21:22:26+00:00",
+      "hash": "d19aaa93499c3cc981a0a0a5e21c3d6e33ea762ffb3cfb69085f043c4898bbd1",
+      "last_updated": "2026-11-18T21:22:23+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/plugin/deep-scans",
       "path": "/docs/security/plugin/deep-scans",
       "section": "docs",
@@ -1501,8 +1501,8 @@
       "title": "Use the Codex Security workbench"
     },
     "security__scanner-imports.md": {
-      "hash": "b0091594635bccfacd018196639594ca693dbd1ebf7efd206df73b7364c6b664",
-      "last_updated": "2026-11-16T21:22:29+00:00",
+      "hash": "57357acc9c451eee69488128b9a21854c3fe36d88453b86ddde40b24df24c55c",
+      "last_updated": "2026-11-18T21:22:26+00:00",
       "original_url": "https://learn.chatgpt.com/docs/security/scanner-imports",
       "path": "/docs/security/scanner-imports",
       "section": "docs",
@@ -2313,7 +2313,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-18T18:24:09+00:00",
+  "last_updated": "2026-11-18T21:23:13+00:00",
   "skipped": [
     {
       "path": "/docs",
