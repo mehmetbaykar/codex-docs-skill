@@ -1091,8 +1091,8 @@
       "title": "Codex on mobile"
     },
     "model-selection.md": {
-      "hash": "d6cd31cd14fe599ff91cd20c5ab6b289f7a2fdba4f83770588f522b502225e38",
-      "last_updated": "2026-11-17T18:24:59+00:00",
+      "hash": "adc70e67691b16ac337fbebaa67dbf0d0f64f599e902138933c9d9b249eec1cb",
+      "last_updated": "2026-11-18T12:27:43+00:00",
       "original_url": "https://learn.chatgpt.com/docs/model-selection",
       "path": "/docs/model-selection",
       "section": "docs",
@@ -1101,8 +1101,8 @@
       "title": "Model selection"
     },
     "models.md": {
-      "hash": "c73bcb76644d9e464a1491dbb9da2bcce058b389a6dfb30de2f10c43cf8a0a56",
-      "last_updated": "2026-11-17T18:24:59+00:00",
+      "hash": "7f029d894011e1d96b769475c52b5a7334913a7d0f37ba6a16d2be6efe5a542e",
+      "last_updated": "2026-11-18T12:27:44+00:00",
       "original_url": "https://learn.chatgpt.com/docs/models",
       "path": "/docs/models",
       "section": "docs",
@@ -2313,7 +2313,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-18T09:24:06+00:00",
+  "last_updated": "2026-11-18T12:28:45+00:00",
   "skipped": [
     {
       "path": "/docs",
