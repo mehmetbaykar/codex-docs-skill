@@ -14,6 +14,12 @@ path: /docs/changelog
 
 GPT-6.2 Astra and GPT-6.2 Sol in Work and Codex
 
+## Codex CLI Release: 0.169.1 (2026-11-17)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-449266447
+
+0.169.1
+
 ## Codex CLI Release: 0.169.0 (2026-11-13)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-443990865
