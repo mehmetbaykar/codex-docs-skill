@@ -491,8 +491,8 @@
       "title": "Annotations Extensibility"
     },
     "app-server.md": {
-      "hash": "2ab79cecb83213b2c9e74822d2b171ae03b45aae0b130f5848f9ba5ca2c7d554",
-      "last_updated": "2026-11-17T18:24:43+00:00",
+      "hash": "383b6008b42c69e4b08d7f44ce60c1b9c1bb105ab6c3e68e18444b1db4f668fd",
+      "last_updated": "2026-11-19T06:31:56+00:00",
       "original_url": "https://learn.chatgpt.com/docs/app-server",
       "path": "/docs/app-server",
       "section": "docs",
@@ -2313,7 +2313,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-19T03:25:22+00:00",
+  "last_updated": "2026-11-19T06:33:17+00:00",
   "skipped": [
     {
       "path": "/docs",
