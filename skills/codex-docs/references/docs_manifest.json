@@ -561,8 +561,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "6c106e36ec1192278224ea44dba2815ff3bbf4b04f79175d8c460114ec658f8b",
-      "last_updated": "2026-11-18T21:21:59+00:00",
+      "hash": "12159614b7443902f46404350c01454b2282f47a2a295491535cd2b02ead1807",
+      "last_updated": "2026-11-19T00:41:44+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "section": "docs",
@@ -911,8 +911,8 @@
       "title": "Features"
     },
     "features__codex-micro.md": {
-      "hash": "4ac0f741fdcf35a8282923ad1d627153be8e64b471dea48e332168713931fb08",
-      "last_updated": "2026-11-03T18:07:46+00:00",
+      "hash": "acd78e37a8be3dfcbabc3e75b5bd5fa1ab4cabc43c05d315d9fed6e089e749f8",
+      "last_updated": "2026-11-19T00:41:55+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features/codex-micro",
       "path": "/docs/features/codex-micro",
       "section": "docs",
@@ -1141,8 +1141,8 @@
       "title": "Open Source"
     },
     "permission-modes.md": {
-      "hash": "7bde7532bf76e97f6e23cb4bb7f57988b9c45cf18d5f47cb8ad2482a09a8e379",
-      "last_updated": "2026-11-03T18:07:53+00:00",
+      "hash": "3977ed68bc8de2f822b3d67bea2990bcd74ab4f29cacac554964f53f93078c80",
+      "last_updated": "2026-11-19T00:42:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/permission-modes",
       "path": "/docs/permission-modes",
       "section": "docs",
@@ -2313,7 +2313,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-18T21:23:13+00:00",
+  "last_updated": "2026-11-19T00:43:09+00:00",
   "skipped": [
     {
       "path": "/docs",

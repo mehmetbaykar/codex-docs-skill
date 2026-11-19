@@ -6,8 +6,6 @@ path: /docs/permission-modes
 
 # Permissions
 
-{/* vale Microsoft.FirstPerson = NO */}
-
 ## Permission modes
 
 Permissions control how ChatGPT (in the desktop app) and Codex (in the CLI or IDE) handle local actions, such as editing files, running commands, and using the internet. The mode you choose sets the boundary
