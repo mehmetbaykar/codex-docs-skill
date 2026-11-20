@@ -721,7 +721,34 @@ Use `notify` to trigger an external program whenever Codex emits supported event
 notify = ["python3", "/path/to/notify.py"]
 ```
 
-Example `notify.py` (truncated) that reacts to `agent-turn-complete`:
+These programs react to `agent-turn-complete` on macOS. Install `terminal-notifier` first.
+
+For TypeScript, save the source as `notify.ts` and configure `notify = ["node", "--experimental-strip-types", "/path/to/notify.ts"]`.
+
+```typescript
+import { execFileSync } from "node:child_process";
+
+const argument = process.argv[2];
+if (!argument)
+  throw new Error("Pass the Codex notification JSON as one argument");
+const notification = JSON.parse(argument);
+if (notification.type === "agent-turn-complete") {
+  execFileSync(
+    "terminal-notifier",
+    [
+      "-title",
+      `Codex: ${notification["last-assistant-message"] ?? "Turn Complete!"}`,
+      "-message",
+      (notification["input-messages"] ?? []).join(" "),
+      "-group",
+      `codex-${notification["thread-id"] ?? ""}`,
+      "-activate",
+      "com.googlecode.iterm2",
+    ],
+    { stdio: "inherit" }
+  );
+}
+```
 
 ```python
 #!/usr/bin/env python3

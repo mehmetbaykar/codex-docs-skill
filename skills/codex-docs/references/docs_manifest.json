@@ -561,8 +561,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "27a64ee10da3c9536cac2c10df27f57f03fbb4203cfdefc298301aa3f9fbdecb",
-      "last_updated": "2026-11-20T06:31:10+00:00",
+      "hash": "aeb025e4d922035bcfba5505c12d6dc1118b7f67374b64b68ff53fdddb0c6a60",
+      "last_updated": "2026-11-20T18:25:22+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "section": "docs",
@@ -621,8 +621,8 @@
       "title": "Code review"
     },
     "codex-sdk.md": {
-      "hash": "ea35da9a87a291d8a551bbf84b397dec3646c6eee21ad1c43db98140db216969",
-      "last_updated": "2026-11-17T18:24:47+00:00",
+      "hash": "011375f5b19959a37ae35b2d936494d71415e511c83e6374e19f45df0198f98f",
+      "last_updated": "2026-11-20T18:25:24+00:00",
       "original_url": "https://learn.chatgpt.com/docs/codex-sdk",
       "path": "/docs/codex-sdk",
       "section": "docs",
@@ -661,8 +661,8 @@
       "title": "Computer Use"
     },
     "config-file__config-advanced.md": {
-      "hash": "c66f37a0d2e02b7511dc4c25bb6f8c7feb443c5a176f6396687e219850d399e9",
-      "last_updated": "2026-11-16T18:25:22+00:00",
+      "hash": "ca82aea99ac3a5cf6ef43710e804c73f821dba4a96e612cc1a58a81b1910d838",
+      "last_updated": "2026-11-20T18:25:25+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
       "path": "/docs/config-file/config-advanced",
       "section": "docs",
@@ -2313,7 +2313,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-20T06:32:35+00:00",
+  "last_updated": "2026-11-20T18:26:30+00:00",
   "skipped": [
     {
       "path": "/docs",
