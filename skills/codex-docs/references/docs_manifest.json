@@ -901,8 +901,8 @@
       "title": "Feature Maturity"
     },
     "features.md": {
-      "hash": "3a04f03a91921df128932bd14981223d51f47d478c610408cce39943d40a994e",
-      "last_updated": "2026-11-03T18:07:45+00:00",
+      "hash": "9b87c1fe1f97000cc3adf34ef96ab0ab6f4cb24161b4ebcda8bb1e7fec49bd0f",
+      "last_updated": "2026-11-23T21:22:33+00:00",
       "original_url": "https://learn.chatgpt.com/docs/features",
       "path": "/docs/features",
       "section": "docs",
@@ -1171,8 +1171,8 @@
       "title": "Plugins"
     },
     "pricing.md": {
-      "hash": "da1a8de1dc142d660c1470cfab5428b96b4bd0dee8bd881d5b5431dfc2c54f15",
-      "last_updated": "2026-11-17T18:25:01+00:00",
+      "hash": "154524291a82cf1ed63a17dd40c5e68a2823e5e6a208ed9efe43bac1f04235c5",
+      "last_updated": "2026-11-23T21:22:40+00:00",
       "original_url": "https://learn.chatgpt.com/docs/pricing",
       "path": "/docs/pricing",
       "section": "docs",
@@ -2313,7 +2313,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-20T21:22:52+00:00",
+  "last_updated": "2026-11-23T21:23:36+00:00",
   "skipped": [
     {
       "path": "/docs",
