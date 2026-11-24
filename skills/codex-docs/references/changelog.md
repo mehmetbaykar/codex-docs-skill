@@ -14,11 +14,23 @@ path: /docs/changelog
 
 0.172.0
 
+## Codex app (2026-11-23)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-11-23-app
+
+Codex app
+
 ## Codex CLI Release: 0.171.0 (2026-11-20)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-452122665
 
 0.171.0
+
+## Codex app (2026-11-19)
+
+- Source: https://developers.openai.com/codex/changelog/#codex-2026-11-19-app
+
+Codex app
 
 ## ChatGPT for iOS (2026-11-18)
 
