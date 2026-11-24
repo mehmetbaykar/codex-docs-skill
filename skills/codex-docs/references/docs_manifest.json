@@ -491,8 +491,8 @@
       "title": "Annotations Extensibility"
     },
     "app-server.md": {
-      "hash": "383b6008b42c69e4b08d7f44ce60c1b9c1bb105ab6c3e68e18444b1db4f668fd",
-      "last_updated": "2026-11-19T06:31:56+00:00",
+      "hash": "66c9e8d67bd03e319723dd6dbf156f717ea754c2a04c0497ceaed0b273a8d240",
+      "last_updated": "2026-11-24T18:23:55+00:00",
       "original_url": "https://learn.chatgpt.com/docs/app-server",
       "path": "/docs/app-server",
       "section": "docs",
@@ -561,8 +561,8 @@
       "title": "Build skills"
     },
     "changelog.md": {
-      "hash": "22fcb080907ea833dad9d3467bb70b121cc2ad2a5f91608d4a2de33a31c000b6",
-      "last_updated": "2026-11-24T15:22:32+00:00",
+      "hash": "58d86e384953746718b8ef204f339376bcbe436c8acc9f76c58bc898c1797686",
+      "last_updated": "2026-11-24T18:23:57+00:00",
       "original_url": "https://learn.chatgpt.com/docs/changelog",
       "path": "/docs/changelog",
       "section": "docs",
@@ -681,8 +681,8 @@
       "title": "Config basics"
     },
     "config-file__config-reference.md": {
-      "hash": "4e241cb6bd4638ccb36996d28c9cb8d9e14e83bb42ce2910d760ee8398ae7204",
-      "last_updated": "2026-11-24T03:24:51+00:00",
+      "hash": "cfa2009ffe55cdf2eeacdd6078f30412ca35f63b1bc31ae40b6d324a7468b8f5",
+      "last_updated": "2026-11-24T18:24:01+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
       "path": "/docs/config-file/config-reference",
       "section": "docs",
@@ -691,8 +691,8 @@
       "title": "Configuration Reference"
     },
     "config-file__config-sample.md": {
-      "hash": "73a3248e044a218fe78319dbd2543775adebd39b580d96ebc7f03608bbe901eb",
-      "last_updated": "2026-11-16T18:25:23+00:00",
+      "hash": "b650aa0fad5dca9cb59a76260c26d60557095db99c32ce0d6648a32d87b707cc",
+      "last_updated": "2026-11-24T18:24:02+00:00",
       "original_url": "https://learn.chatgpt.com/docs/config-file/config-sample",
       "path": "/docs/config-file/config-sample",
       "section": "docs",
@@ -781,8 +781,8 @@
       "title": "Recommended configuration"
     },
     "developer-commands.md": {
-      "hash": "5b8fc0de5dd34dce272271a3951128376a3c6eae8b0070dd02dfc9ed22971ed6",
-      "last_updated": "2026-11-17T18:24:51+00:00",
+      "hash": "12542924a872131975de17fafcec134eb1b84a3ceb5e6cbe5d0244598775e852",
+      "last_updated": "2026-11-24T18:24:05+00:00",
       "original_url": "https://learn.chatgpt.com/docs/developer-commands",
       "path": "/docs/developer-commands",
       "section": "docs",
@@ -871,8 +871,8 @@
       "title": "Run Codex with an NFS home directory"
     },
     "extend__mcp.md": {
-      "hash": "11074195f4d09462be731d25c17f5ef245309855a16ef47821485cbd2408e822",
-      "last_updated": "2026-11-03T18:07:44+00:00",
+      "hash": "6e1cd22917d5ff87da53c2e1d8d4289c20cca168ae9758bcc4156e41504f3472",
+      "last_updated": "2026-11-24T18:24:08+00:00",
       "original_url": "https://learn.chatgpt.com/docs/extend/mcp",
       "path": "/docs/extend/mcp",
       "section": "docs",
@@ -1111,8 +1111,8 @@
       "title": "Models"
     },
     "non-interactive-mode.md": {
-      "hash": "243a8db239966e7049e0c8573057be56122c4d4a97c4167f029e2b52f4d7973f",
-      "last_updated": "2026-11-16T18:25:33+00:00",
+      "hash": "be892545937eb51709556492c367d8428c1ff05d3154c1058f8c4d54db6a838b",
+      "last_updated": "2026-11-24T18:24:15+00:00",
       "original_url": "https://learn.chatgpt.com/docs/non-interactive-mode",
       "path": "/docs/non-interactive-mode",
       "section": "docs",
@@ -2313,7 +2313,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-24T15:23:55+00:00",
+  "last_updated": "2026-11-24T18:25:19+00:00",
   "skipped": [
     {
       "path": "/docs",
