@@ -8,6 +8,12 @@ path: /docs/changelog
 
 > Rendered from the changelog RSS feed: https://learn.chatgpt.com/docs/changelog/rss.xml
 
+## Codex CLI Release: 0.172.0 (2026-11-24)
+
+- Source: https://developers.openai.com/codex/changelog/#github-release-456141969
+
+0.172.0
+
 ## Codex CLI Release: 0.171.0 (2026-11-20)
 
 - Source: https://developers.openai.com/codex/changelog/#github-release-452122665
