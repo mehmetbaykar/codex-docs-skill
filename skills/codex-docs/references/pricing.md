@@ -239,12 +239,16 @@ sales](https://chatgpt.com/contact-sales?utm_internal_source=openai_developers_c
 | Daybreak Red | 312.5 credits | 31.25 credits | 1875 credits |
 | GPT-5.6 Terra | 50 credits | 5 credits | 300 credits |
 | GPT-5.6 Luna | 5 credits | 0.5 credits | 30 credits |
-| GPT-Rosalind-Research | 125 credits | 12.5 credits | 625 credits |
+| GPT-6 Rosalind Research * | 250 credits | 25 credits | 1,250 credits |
+| GPT-5.5 Rosalind Research | 125 credits | 12.5 credits | 625 credits |
+| GPT-5.5 Rosalind Discovery | 125 credits | 12.5 credits | 625 credits |
 | GPT-Image-2 (image) | 200 credits | 50 credits | 750 credits |
 | GPT-Image-2 (text) | 125 credits | 31.25 credits | 250 credits |
 | A typical GPT-5.6 Sol task may use 2-15 credits. |  |  |  |
 | For USD usage-based billing, GPT-6.2 Astra at Standard speed costs $8 per million input tokens, $0.40 per million cached input tokens, and $40 per million output tokens. GPT-6.2 Sol costs $2, $0.10, and $10 per million input, cached input, and output tokens, respectively. See [Speed](https://learn.chatgpt.com/docs/agent-configuration/speed) for availability and billing details. |  |  |  |
 | Daybreak access requires [Trusted Access for Cyber](https://learn.chatgpt.com/docs/cyber-safety#trusted-access-for-cyber) approval. Daybreak Blue uses GPT-5.6 Sol credit rates. Daybreak Red requires separate approval and provisioning. |  |  |  |
+
+\* GPT‑6 Rosalind Research promotional pricing is available at least through December 31, 2026.
 
 _GPT-5.6 Sol’s promotional pricing is available at least through November 21, 2026._
 
@@ -276,7 +280,11 @@ invitation.
 
 ### How much does Sites cost?
 
-Sites is available in public beta on eligible plans. Availability depends on your region and workspace settings. Hosting is free through December 31, 2026. See [Sites usage and cost](https://learn.chatgpt.com/docs/sites/usage-and-cost) for plan allowances, hosting rates, and a monthly cost estimate.
+Sites is available in public beta on eligible plans. Availability depends on your region and workspace settings.
+
+We plan to show your Sites hosting usage in the app starting January 1, 2027. Hosting is free through January 31, 2027. We plan to start charging Plus, Pro, and Business customers for hosting usage above their monthly allowance on February 1, 2027. Enterprise billing follows your organization’s agreement.
+
+See [Sites usage and cost](https://learn.chatgpt.com/docs/sites/usage-and-cost) for plan allowances, hosting rates, and a monthly cost estimate.
 
 ### How much does Voice cost?
 
