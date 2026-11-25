@@ -1891,8 +1891,8 @@
       "title": "Get from idea to proof of concept"
     },
     "use-cases__incident-to-tested-fix.md": {
-      "hash": "d0621df610e00f31acde893693f0716fa14dcbcadb89e1c56884e33a8459c736",
-      "last_updated": "2026-11-17T18:25:43+00:00",
+      "hash": "bf9b0625e1ad5bc2d19ff15678ae4411a7b17685630048eb92bb897bec3193c0",
+      "last_updated": "2026-11-25T21:23:37+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/incident-to-tested-fix",
       "path": "/use-cases/incident-to-tested-fix",
       "section": "use-cases",
@@ -2313,7 +2313,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-25T03:27:25+00:00",
+  "last_updated": "2026-11-25T21:23:58+00:00",
   "skipped": [
     {
       "path": "/docs",

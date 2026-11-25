@@ -236,6 +236,492 @@ async function fixed(
 }
 ```
 
+```csharp
+using System.Data;
+using System.Diagnostics;
+using System.Security.Cryptography;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using Npgsql;
+
+namespace OpenAI.Docs.Examples.CodexCloud.IncidentToTestedFix;
+
+internal static class IncidentToTestedFixSample
+{
+    // The entry point targets only a marked disposable PostgreSQL fixture.
+    // A native scenario adapter can call RunModeAsync("baseline"|"regression"|"fixed").
+    internal static Task RunAsync() => RunModeAsync("fixed");
+
+    internal static string ParseMode(string[] arguments) => arguments.Length == 1 &&
+        arguments[0] is "baseline" or "regression" or "fixed"
+            ? arguments[0]
+            : throw new ArgumentException("Expected exactly one mode: baseline, regression, or fixed.", nameof(arguments));
+
+    internal sealed record Payload(string type, string orderId, [property: JsonRequired] int amountCents);
+    internal sealed record Incident(string provider, string accountId, string eventId, Payload payload);
+    private sealed record Acknowledgment(int status, object body);
+    private const string FixtureRelativePath = "../../typescript-examples/codex-cloud/incident-to-tested-fix/incidents/INC-DEMO-014/order-created.sanitized.json";
+
+    internal static string ResolveInputPath(string sourceFile, string relativePath) =>
+        Path.GetFullPath(Path.Combine(Path.GetDirectoryName(sourceFile)!, relativePath));
+
+    internal static Incident LoadInput([System.Runtime.CompilerServices.CallerFilePath] string sourceFile = "")
+    {
+        string owned = Path.Combine("codex-cloud", "incident-to-tested-fix", "incidents", "INC-DEMO-014", "order-created.sanitized.json");
+        return ParseInput(File.ReadAllText(File.Exists(owned) ? owned : ResolveInputPath(sourceFile, FixtureRelativePath)));
+    }
+
+    private static readonly JsonSerializerOptions InputJsonOptions = new()
+    { UnmappedMemberHandling = JsonUnmappedMemberHandling.Disallow };
+
+    internal static Incident ParseInput(string json)
+    {
+        Incident? input = JsonSerializer.Deserialize<Incident>(json, InputJsonOptions);
+        if (input is null || string.IsNullOrWhiteSpace(input.provider) ||
+            string.IsNullOrWhiteSpace(input.accountId) || string.IsNullOrWhiteSpace(input.eventId) ||
+            input.payload is null || string.IsNullOrWhiteSpace(input.payload.type) ||
+            string.IsNullOrWhiteSpace(input.payload.orderId) || input.payload.amountCents < 0)
+            throw new FormatException("Invalid sanitized incident fixture.");
+        return input;
+    }
+    private static readonly Acknowledgment Ack = new(200, new { received = true });
+    internal static string Fingerprint(Incident input) => Convert.ToHexStringLower(SHA256.HashData(
+        JsonSerializer.SerializeToUtf8Bytes(new object[] { input.payload.type, input.payload.orderId, input.payload.amountCents })));
+    internal static object[] Key(Incident input) => [input.provider, input.accountId, input.eventId];
+    internal static object[] Values(Incident input) => [.. Key(input), Fingerprint(input)];
+
+    private static void Trace(string action, NpgsqlConnection client, Incident input, object? details = null)
+    {
+        Dictionary<string, object?> value = new(StringComparer.Ordinal)
+        { ["action"] = action, ["pid"] = client.ProcessID, ["key"] = Key(input) };
+        if (details is not null)
+            foreach (var property in JsonSerializer.SerializeToElement(details).EnumerateObject())
+                value.Add(property.Name, property.Value.Clone());
+        Console.WriteLine(JsonSerializer.Serialize(value));
+    }
+
+    private static NpgsqlCommand Command(NpgsqlConnection client, string sql, object[]? values = null,
+        NpgsqlTransaction? transaction = null)
+    {
+        NpgsqlCommand command = new(sql, client, transaction) { CommandTimeout = 8 };
+        // Empty parameter names select Npgsql's positional $1, $2, ... binding.
+        foreach (object value in values ?? []) command.Parameters.Add(new NpgsqlParameter { Value = value });
+        return command;
+    }
+    private static async Task<int> Execute(NpgsqlConnection client, string sql, object[]? values = null,
+        NpgsqlTransaction? transaction = null)
+    {
+        await using NpgsqlCommand command = Command(client, sql, values, transaction);
+        return await command.ExecuteNonQueryAsync();
+    }
+    private static async Task<object?> Scalar(NpgsqlConnection client, string sql, object[]? values = null,
+        NpgsqlTransaction? transaction = null)
+    {
+        await using NpgsqlCommand command = Command(client, sql, values, transaction);
+        return await command.ExecuteScalarAsync();
+    }
+    private static void Require(bool condition, string message)
+    {
+        if (!condition) throw new InvalidOperationException(message);
+    }
+    private static async Task Reject(Func<Task> action, string message)
+    {
+        try { await action(); }
+        catch (InvalidOperationException error) when (error.Message == message) { return; }
+        throw new InvalidOperationException("Expected failure: " + message);
+    }
+    private static Func<string, Task> FailAt(string point) => boundary =>
+        boundary == point ? Task.FromException(new InvalidOperationException("injected:" + point)) : Task.CompletedTask;
+
+    private static async Task WriteOrder(NpgsqlConnection client, Incident input, NpgsqlTransaction? transaction = null)
+    {
+        await Execute(client,
+            "INSERT INTO orders(provider,account_id,event_id,payload_fingerprint) VALUES ($1,$2,$3,$4)", Values(input), transaction);
+        Trace("order-written", client, input);
+    }
+    private static async Task CheckReceipt(NpgsqlConnection client, Incident input, NpgsqlTransaction? transaction = null)
+    {
+        object? value = await Scalar(client,
+            "SELECT payload_fingerprint FROM event_receipts WHERE provider=$1 AND account_id=$2 AND event_id=$3", Key(input), transaction);
+        Require(value is string, "missing-receipt-after-skipped-claim");
+        Require((string)value! == Fingerprint(input), "payload-conflict");
+    }
+
+    // Deliberate legacy defect: its first commit survives the injected failure.
+    private static async Task<Acknowledgment> Baseline(NpgsqlConnection client, Incident input, Func<string, Task>? hook = null)
+    {
+        hook ??= _ => Task.CompletedTask;
+        if (await Scalar(client, "SELECT 1 FROM event_receipts WHERE provider=$1 AND account_id=$2 AND event_id=$3", Key(input)) is not null)
+        {
+            await CheckReceipt(client, input);
+            return Ack;
+        }
+        await using (NpgsqlTransaction transaction = await client.BeginTransactionAsync(IsolationLevel.ReadCommitted))
+        {
+            await WriteOrder(client, input, transaction);
+            await transaction.CommitAsync();
+        }
+        Trace("legacy-order-committed-without-receipt", client, input);
+        await hook("afterOrder");
+        await Execute(client, "INSERT INTO event_receipts(provider,account_id,event_id,payload_fingerprint) VALUES ($1,$2,$3,$4)", Values(input));
+        Trace("legacy-receipt-committed", client, input);
+        return Ack;
+    }
+
+    private static async Task<Acknowledgment> Fixed(NpgsqlConnection client, Incident input, Func<string, Task>? hook = null)
+    {
+        hook ??= _ => Task.CompletedTask;
+        if (await Scalar(client, "SELECT 1 FROM delivery_holds WHERE provider=$1 AND account_id=$2 AND event_id=$3", Key(input)) is not null)
+        {
+            Trace("legacy-retry-held-no-ack", client, input);
+            throw new InvalidOperationException("legacy-retry-held");
+        }
+        await hook("beforeClaim");
+        await using NpgsqlTransaction transaction = await client.BeginTransactionAsync(IsolationLevel.ReadCommitted);
+        bool committed = false;
+        try
+        {
+            object? claimed = await Scalar(client, """
+                INSERT INTO event_receipts(provider,account_id,event_id,payload_fingerprint)
+                VALUES ($1,$2,$3,$4) ON CONFLICT (provider,account_id,event_id)
+                DO NOTHING RETURNING event_id
+                """, Values(input), transaction);
+            Trace("receipt-claim-result", client, input, new { inserted = claimed is not null });
+            if (claimed is not null)
+            {
+                await hook("afterClaim");
+                await WriteOrder(client, input, transaction);
+                await hook("afterOrder");
+            }
+            else
+            {
+                // A new READ COMMITTED statement sees the committed winner.
+                await CheckReceipt(client, input, transaction);
+            }
+            await transaction.CommitAsync();
+            committed = true;
+            Trace("transaction-committed", client, input);
+            await hook("afterCommit");
+            Trace("acknowledged", client, input, Ack);
+            return Ack;
+        }
+        catch (Exception failure)
+        {
+            if (!committed)
+            {
+                try { await transaction.RollbackAsync(); }
+                catch (Exception rollbackFailure)
+                { throw new AggregateException("Transaction failed and rollback could not be confirmed", failure, rollbackFailure); }
+                Trace("transaction-rolled-back-no-ack", client, input);
+            }
+            else Trace("committed-response-lost-no-ack", client, input);
+            throw;
+        }
+    }
+
+    // Run with ingestion paused and legacy consumers drained. This durable hold
+    // models an operator-controlled quarantine, not a production migration.
+    private static async Task<int> HoldOrphans(NpgsqlConnection client)
+    {
+        int held = await Execute(client, """
+            INSERT INTO delivery_holds(provider,account_id,event_id)
+            SELECT DISTINCT o.provider,o.account_id,o.event_id FROM orders o
+            WHERE NOT EXISTS (SELECT 1 FROM event_receipts r
+                WHERE r.provider=o.provider AND r.account_id=o.account_id AND r.event_id=o.event_id)
+            ON CONFLICT DO NOTHING
+            """);
+        Console.WriteLine(JsonSerializer.Serialize(new { action = "pre-resume-orphans-held", keys = held }));
+        return held;
+    }
+    private static async Task Reconcile(NpgsqlConnection client, Incident input)
+    {
+        await using NpgsqlTransaction transaction = await client.BeginTransactionAsync(IsolationLevel.ReadCommitted);
+        try
+        {
+            Require(await Scalar(client, "SELECT 1 FROM delivery_holds WHERE provider=$1 AND account_id=$2 AND event_id=$3 FOR UPDATE",
+                Key(input), transaction) is not null, "reconciliation-requires-hold");
+            List<string?> fingerprints = [];
+            await using (NpgsqlCommand command = Command(client,
+                "SELECT payload_fingerprint FROM orders WHERE provider=$1 AND account_id=$2 AND event_id=$3 FOR UPDATE", Key(input), transaction))
+            await using (NpgsqlDataReader reader = await command.ExecuteReaderAsync())
+                while (await reader.ReadAsync()) fingerprints.Add(reader.IsDBNull(0) ? null : reader.GetString(0));
+            Require(fingerprints.Count == 1 && fingerprints[0] == Fingerprint(input), "legacy-evidence-insufficient-keep-held");
+            await Execute(client, """
+                INSERT INTO event_receipts(provider,account_id,event_id,payload_fingerprint) VALUES ($1,$2,$3,$4)
+                ON CONFLICT DO NOTHING
+                """, Values(input), transaction);
+            await CheckReceipt(client, input, transaction);
+            await Execute(client, "DELETE FROM delivery_holds WHERE provider=$1 AND account_id=$2 AND event_id=$3", Key(input), transaction);
+            await transaction.CommitAsync();
+            Trace("trusted-orphan-reconciled-hold-released", client, input);
+        }
+        catch (Exception failure)
+        {
+            try { await transaction.RollbackAsync(); }
+            catch (Exception rollbackFailure)
+            { throw new AggregateException("Reconciliation failed and rollback could not be confirmed", failure, rollbackFailure); }
+            throw;
+        }
+    }
+    private static async Task Counts(NpgsqlConnection observer, int orders, int receipts, Incident input)
+    {
+        await using NpgsqlCommand command = Command(observer, """
+            SELECT (SELECT count(*)::integer FROM orders WHERE provider=$1 AND account_id=$2 AND event_id=$3),
+                (SELECT count(*)::integer FROM event_receipts WHERE provider=$1 AND account_id=$2 AND event_id=$3)
+            """, Key(input));
+        await using NpgsqlDataReader reader = await command.ExecuteReaderAsync();
+        Require(await reader.ReadAsync(), "Missing committed-state counts");
+        int actualOrders = reader.GetInt32(0), actualReceipts = reader.GetInt32(1);
+        Trace("committed-state", observer, input, new { orders = actualOrders, receipts = actualReceipts });
+        Require(actualOrders == orders && actualReceipts == receipts,
+            $"Expected {orders} order(s)/{receipts} receipt(s); got {actualOrders}/{actualReceipts}");
+    }
+    private static void Acknowledged(Acknowledgment value) => Require(
+        JsonSerializer.Serialize(value) == "{\"status\":200,\"body\":{\"received\":true}}", "Exact delivery acknowledgment");
+
+    internal static async Task RunModeAsync(string mode)
+    {
+        if (mode is not ("baseline" or "regression" or "fixed")) throw new ArgumentException("Expected baseline, regression, or fixed", nameof(mode));
+        Incident original = LoadInput();
+        string password = Environment.GetEnvironmentVariable("CODEX_INCIDENT_DB_PASSWORD")
+            ?? throw new InvalidOperationException("Set CODEX_INCIDENT_DB_PASSWORD to the disposable fixture password");
+        NpgsqlConnectionStringBuilder configuration = new()
+        {
+            Host = "127.0.0.1",
+            Port = 55432,
+            Username = "codex_incident_test",
+            Database = "codex_incident_test",
+            Password = password,
+            Timeout = 5,
+            CommandTimeout = 8,
+            Pooling = false,
+            ApplicationName = "csharp-incident-rehearsal"
+        };
+        await using NpgsqlConnection observer = new(configuration.ConnectionString);
+        await observer.OpenAsync();
+        // Verify all fixture identity evidence before creating or changing any DB object.
+        await using (NpgsqlCommand identity = Command(observer, """
+            SELECT current_database(),current_user,shobj_description(oid,'pg_database'),current_setting('server_version')
+            FROM pg_database WHERE datname=current_database()
+            """))
+        await using (NpgsqlDataReader reader = await identity.ExecuteReaderAsync())
+        {
+            Require(await reader.ReadAsync() && reader.GetString(0) == "codex_incident_test" &&
+                reader.GetString(1) == "codex_incident_test" && !reader.IsDBNull(2) &&
+                reader.GetString(2) == "codex-synthetic-incident-fixture-v1" &&
+                reader.GetString(3) == "17.6 (Debian 17.6-2.pgdg12+1)", "Refusing an unmarked or unexpected database fixture");
+            Console.WriteLine(JsonSerializer.Serialize(new
+            {
+                action = "fixture-environment",
+                mode,
+                runtime = System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription,
+                pg = reader.GetString(3)
+            }));
+        }
+        string schema = "incident_rehearsal_" + Guid.NewGuid().ToString("N");
+        // The generated identifier is hex only; external input never enters this SQL.
+        await Execute(observer, $"CREATE SCHEMA {schema}");
+        List<NpgsqlConnection> clients = [];
+        int tests = 0, failures = 0;
+        try
+        {
+            await Execute(observer, $"SET search_path TO {schema},public");
+            await Execute(observer, """
+                CREATE TABLE event_receipts (
+                    provider text NOT NULL, account_id text NOT NULL, event_id text NOT NULL,
+                    payload_fingerprint text NOT NULL,
+                    CONSTRAINT event_receipts_identity UNIQUE(provider,account_id,event_id) NOT DEFERRABLE);
+                CREATE TABLE orders (id bigserial PRIMARY KEY, provider text NOT NULL,
+                    account_id text NOT NULL, event_id text NOT NULL, payload_fingerprint text);
+                CREATE TABLE delivery_holds (provider text NOT NULL, account_id text NOT NULL,
+                    event_id text NOT NULL, PRIMARY KEY(provider,account_id,event_id));
+                """);
+            Require(await Scalar(observer, """
+                SELECT NOT condeferrable FROM pg_constraint
+                WHERE conname='event_receipts_identity' AND conrelid='event_receipts'::regclass
+                """) is true, "Receipt uniqueness must be nondeferrable");
+            async Task<NpgsqlConnection> Connect()
+            {
+                NpgsqlConnection client = new(configuration.ConnectionString);
+                clients.Add(client);
+                await client.OpenAsync();
+                await Execute(client, $"SET search_path TO {schema},public");
+                await Execute(client, "SET statement_timeout = '8s'");
+                return client;
+            }
+            async Task Case(string name, Func<NpgsqlConnection, Task> test)
+            {
+                tests++;
+                try
+                {
+                    await Execute(observer, "TRUNCATE orders,event_receipts,delivery_holds RESTART IDENTITY");
+                    NpgsqlConnection client = await Connect();
+                    try { await test(client); }
+                    finally { await client.DisposeAsync(); clients.Remove(client); }
+                    Console.WriteLine($"ok {tests} - {name}");
+                }
+                catch (Exception error)
+                {
+                    failures++;
+                    Console.WriteLine($"not ok {tests} - {name}");
+                    Console.WriteLine("# " + error.ToString().Replace("\r", "").Replace("\n", "\n# "));
+                }
+            }
+            await Case("retry after the order boundary leaves exactly one order and one receipt", async client =>
+            {
+                async Task<Acknowledgment> Handle(Func<string, Task>? hook = null) => mode == "baseline"
+                    ? await Baseline(client, original, hook) : await Fixed(client, original, hook);
+                await Reject(async () => { await Handle(FailAt("afterOrder")); }, "injected:afterOrder");
+                await Counts(observer, mode == "baseline" ? 1 : 0, 0, original);
+                Acknowledged(await Handle());
+                await Counts(observer, 1, 1, original);
+            });
+            if (mode == "fixed")
+            {
+                await Case("first delivery and committed duplicate return the exact acknowledgment", async client =>
+                {
+                    Acknowledged(await Fixed(client, original));
+                    Acknowledged(await Fixed(client, original));
+                    await Counts(observer, 1, 1, original);
+                });
+                foreach (string boundary in new[] { "beforeClaim", "afterClaim", "afterOrder" })
+                    await Case("failure " + boundary + " rolls back and remains retryable", async client =>
+                    {
+                        await Reject(async () => { await Fixed(client, original, FailAt(boundary)); }, "injected:" + boundary);
+                        await Counts(observer, 0, 0, original);
+                        Acknowledged(await Fixed(client, original));
+                        await Counts(observer, 1, 1, original);
+                    });
+                await Case("lost acknowledgment after commit does not duplicate the order", async client =>
+                {
+                    await Reject(async () => { await Fixed(client, original, FailAt("afterCommit")); }, "injected:afterCommit");
+                    await Counts(observer, 1, 1, original);
+                    Acknowledged(await Fixed(client, original));
+                    await Counts(observer, 1, 1, original);
+                });
+                foreach (bool rollback in new[] { false, true })
+                    await Case("real overlapping duplicate contention: winner " + (rollback ? "rollback" : "commit"), async winner =>
+                    {
+                        NpgsqlConnection waiter = await Connect();
+                        try
+                        {
+                            Require(winner.ProcessID != waiter.ProcessID, "Contention requires independent backends");
+                            TaskCompletionSource claimed = new(TaskCreationOptions.RunContinuationsAsynchronously);
+                            TaskCompletionSource release = new(TaskCreationOptions.RunContinuationsAsynchronously);
+                            Task<Acknowledgment> winnerTask = Fixed(winner, original, async boundary =>
+                            {
+                                if (boundary != "afterClaim") return;
+                                claimed.TrySetResult();
+                                await release.Task.WaitAsync(TimeSpan.FromSeconds(7));
+                                if (rollback) throw new InvalidOperationException("injected:winner-rollback");
+                            });
+                            Task<Acknowledgment>? waiterTask = null;
+                            try
+                            {
+                                await Task.WhenAny(claimed.Task, winnerTask).WaitAsync(TimeSpan.FromSeconds(5));
+                                if (!claimed.Task.IsCompleted) { await winnerTask; throw new InvalidOperationException("Winner did not claim receipt"); }
+                                await Counts(observer, 0, 0, original);
+                                waiterTask = Fixed(waiter, original);
+                                await WaitForContention(observer, waiter, winner, original);
+                            }
+                            finally
+                            {
+                                release.TrySetResult();
+                                // Observe both outcomes even when the first assertion fails.
+                                await Task.WhenAll(
+                                    ObserveWinner(winnerTask, rollback),
+                                    waiterTask is null ? Task.CompletedTask : ObserveWaiter(waiterTask));
+                            }
+                            await Counts(observer, 1, 1, original);
+                        }
+                        finally { await waiter.DisposeAsync(); clients.Remove(waiter); }
+                    });
+                await Case("event, account, and provider identity; conflicting payload rejected", async client =>
+                {
+                    foreach (Incident input in new[] { original, original with { eventId = "evt_demo_043" },
+                        original with { accountId = "acct_demo_02" }, original with { provider = "synthetic-other" } })
+                    {
+                        Acknowledged(await Fixed(client, input));
+                        await Counts(observer, 1, 1, input);
+                    }
+                    await Reject(async () => { await Fixed(client, original with { payload = original.payload with { amountCents = 9999 } }); }, "payload-conflict");
+                    await Counts(observer, 1, 1, original);
+                });
+                await Case("legacy orphan held before retry and reconciled only from trusted evidence", async client =>
+                {
+                    await WriteOrder(client, original);
+                    await Counts(observer, 1, 0, original);
+                    Require(await HoldOrphans(client) == 1, "Hold the orphan before resuming ingestion");
+                    await Reject(async () => { await Fixed(client, original); }, "legacy-retry-held");
+                    await Reject(
+            () => Reconcile(client, original with
+            {
+                payload = original.payload with { amountCents = 9999 },
+            }),
+            "legacy-evidence-insufficient-keep-held");
+                    await Reject(async () => { await Fixed(client, original); }, "legacy-retry-held");
+                    await Reconcile(client, original);
+                    Acknowledged(await Fixed(client, original));
+                    await Counts(observer, 1, 1, original);
+                });
+                await Case("missing legacy payload evidence stays quarantined", async client =>
+                {
+                    await Execute(client, "INSERT INTO orders(provider,account_id,event_id) VALUES ($1,$2,$3)", Key(original));
+                    Require(await HoldOrphans(client) == 1, "Hold missing-evidence orphan");
+                    await Reject(() => Reconcile(client, original), "legacy-evidence-insufficient-keep-held");
+                    await Reject(async () => { await Fixed(client, original); }, "legacy-retry-held");
+                    await Counts(observer, 1, 0, original);
+                });
+            }
+            Require(tests == (mode == "fixed" ? 11 : 1), "All native incident scenarios must execute");
+            Console.WriteLine($"1..{tests}\n# tests {tests}\n# pass {tests - failures}\n# fail {failures}\n# cancelled 0\n# skipped 0\n# todo 0");
+        }
+        finally
+        {
+            try
+            {
+                foreach (NpgsqlConnection client in clients) await client.DisposeAsync();
+            }
+            finally { await Execute(observer, $"DROP SCHEMA {schema} CASCADE"); }
+        }
+        if (failures != 0) throw new InvalidOperationException($"{failures} native incident regression(s) failed");
+    }
+
+    private static async Task ObserveWinner(Task<Acknowledgment> task, bool rollback)
+    {
+        if (rollback) await Reject(async () => { await task; }, "injected:winner-rollback");
+        else Acknowledged(await task);
+    }
+    private static async Task ObserveWaiter(Task<Acknowledgment> task) => Acknowledged(await task);
+    private static async Task WaitForContention(NpgsqlConnection observer, NpgsqlConnection waiter, NpgsqlConnection winner, Incident input)
+    {
+        Stopwatch elapsed = Stopwatch.StartNew();
+        while (elapsed.Elapsed < TimeSpan.FromSeconds(5))
+        {
+            await using (NpgsqlCommand command = Command(observer, """
+                SELECT wait_event_type,wait_event,pg_blocking_pids(pid)
+                FROM pg_stat_activity WHERE pid=$1
+                """, [waiter.ProcessID]))
+            await using (NpgsqlDataReader reader = await command.ExecuteReaderAsync())
+            {
+                if (await reader.ReadAsync() && !reader.IsDBNull(0) && reader.GetString(0) == "Lock")
+                {
+                    int[] blockers = reader.GetFieldValue<int[]>(2);
+                    if (blockers.Contains(winner.ProcessID))
+                    {
+                        Trace("real-database-contention", waiter, input, new
+                        { winner = winner.ProcessID, wait_event_type = reader.GetString(0), wait_event = reader.GetString(1), blockers });
+                        return;
+                    }
+                }
+            }
+            await Task.Delay(10);
+        }
+        throw new InvalidOperationException("competitor-never-observed-blocking-on-winner");
+    }
+}
+```
+
 ```ruby
 def self.fixed(client, input, hook = ->(_boundary) {})
   assert_not_held(client, input)
