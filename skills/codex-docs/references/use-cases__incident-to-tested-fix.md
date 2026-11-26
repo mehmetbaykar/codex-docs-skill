@@ -167,7 +167,50 @@ The final test command exercises the full matrix, including independent connecti
 
 If your installation provides `docker-compose`, use that spelling in place of `docker compose`. Run these commands sequentially; the suite resets only its marked test schema.
 
+**Java setup**
+
+Use Java 17 or later and Maven with a complete `developers-website` checkout, including the [Java sample project](https://github.com/openai/developers-website/tree/main/src/content/platform/java-examples).
+
+Start at the checkout root in a POSIX shell. The fixture loader requires the sibling `../typescript-examples/codex-cloud/incident-to-tested-fix/incidents/INC-DEMO-014/order-created.sanitized.json` file, relative to the Java project directory, from the same checkout.
+
+The commands use the same Compose project, PostgreSQL service, and cleanup as above. The explicit Compose file path keeps startup and cleanup independent of the Java working directory.
+
+```bash
+incident_fixture_dir="$PWD/src/content/platform/typescript-examples/codex-cloud/incident-to-tested-fix"
+docker compose -f "$incident_fixture_dir/compose.yaml" -p codex-incident-rehearsal up -d --wait postgres
+cd src/content/platform/java-examples
+mvn -q -DskipTests compile dependency:build-classpath -Dmdep.outputFile=target/live-classpath
+PGPASSWORD=synthetic-incident-fixture-only java -cp "target/classes:$(cat target/live-classpath)" com.openai.docs.codexcloud.CodexCloudIncidentToTestedFix baseline
+PGPASSWORD=synthetic-incident-fixture-only java -cp "target/classes:$(cat target/live-classpath)" com.openai.docs.codexcloud.CodexCloudIncidentToTestedFix regression
+PGPASSWORD=synthetic-incident-fixture-only java -cp "target/classes:$(cat target/live-classpath)" com.openai.docs.codexcloud.CodexCloudIncidentToTestedFix fixed
+docker compose -f "$incident_fixture_dir/compose.yaml" -p codex-incident-rehearsal down --volumes
+```
+
+**Expected results**
+
+Each Java command supplies the existing public Compose fixture password through `PGPASSWORD` only for that child process. Expect the baseline failure, regression success, and complete fixed suite described above.
+
 For Ruby, use the complete [Ruby sample project](https://github.com/openai/developers-website/tree/main/src/content/platform/ruby-examples) and install its dependencies using Ruby 3.3. Start PostgreSQL with the Compose setup in the ZIP archive. From the Ruby project directory, run `bundle exec ruby codex-cloud/incident-to-tested-fix/main.rb baseline`, then repeat with `regression` and `fixed`. These commands use the same disposable database and produce the expected failing and passing results; use them in place of the Node runner commands.
+
+Use Go 1.26 or later with a full [repository checkout](https://github.com/openai/developers-website). Keep the `src/content/platform/go-examples/` module (`go.mod` and `go.sum`) and the sibling TypeScript incident fixture intact. Start the commands below at the repository root.
+
+The Go runner uses the same marked PostgreSQL 17.6 fixture on `127.0.0.1:55432`. Use a temporary password file containing only the fixture's public synthetic password, with mode `0600`. Set `PGPASSFILE` for each command and exclude any inherited `PGPASSWORD`.
+
+```bash
+incident_fixture_dir="$PWD/src/content/platform/typescript-examples/codex-cloud/incident-to-tested-fix"
+docker compose -p codex-incident-rehearsal -f "$incident_fixture_dir/compose.yaml" up -d --wait postgres
+codex_pgpass_file=$(mktemp)
+chmod 600 "$codex_pgpass_file"
+printf '%s\n' '127.0.0.1:55432:codex_incident_test:codex_incident_test:synthetic-incident-fixture-only' > "$codex_pgpass_file"
+cd src/content/platform/go-examples/codex-cloud/incident-to-tested-fix
+env -u PGPASSWORD PGPASSFILE="$codex_pgpass_file" go run . -test.v baseline
+env -u PGPASSWORD PGPASSFILE="$codex_pgpass_file" go run . -test.v regression
+env -u PGPASSWORD PGPASSFILE="$codex_pgpass_file" go run . -test.v fixed
+rm -f "$codex_pgpass_file"
+docker compose -p codex-incident-rehearsal -f "$incident_fixture_dir/compose.yaml" down --volumes
+```
+
+The Go runner reads the sibling `typescript-examples/codex-cloud/incident-to-tested-fix/incidents/INC-DEMO-014/order-created.sanitized.json`. Expect exit status `1` from the deliberately failing baseline and `0` from regression and fixed. Use these Go commands in place of the Node runner commands above.
 
 ### Inspect the transaction handler
 
@@ -232,6 +275,888 @@ async function fixed(
       trace("committed-response-lost-no-ack", client, input);
     }
     throw error;
+  }
+}
+```
+
+```go
+// A nondeferrable database identity constraint serializes competing deliveries.
+// Acknowledgment follows commit; losing the response remains safe to retry.
+func fixed(c *client, input incidentEvent, h hook) (result acknowledgment, err error) {
+	if err = assertNotHeld(c, input); err != nil {
+		return result, err
+	}
+	if err = call(h, "beforeClaim"); err != nil {
+		return result, err
+	}
+	tx, err := c.conn.BeginTx(c.ctx, &sql.TxOptions{Isolation: sql.LevelReadCommitted})
+	if err != nil {
+		return result, err
+	}
+	committed, commitAttempted := false, false
+	defer func() {
+		if !committed && !commitAttempted {
+			if rollback(tx, &err) {
+				trace("transaction-rolled-back-no-ack", c, input, nil)
+			} else {
+				trace("rollback-unconfirmed-no-ack", c, input, nil)
+			}
+		}
+	}()
+	var claimedID string
+	err = tx.QueryRowContext(
+		c.ctx,
+		`INSERT INTO event_receipts(provider,account_id,event_id,payload_fingerprint)
+         VALUES ($1,$2,$3,$4)
+         ON CONFLICT (provider,account_id,event_id) DO NOTHING
+         RETURNING event_id`,
+		values(input)...,
+	).Scan(&claimedID)
+	claimed := err == nil
+	if err != nil && !errors.Is(err, sql.ErrNoRows) {
+		return result, err
+	}
+	err = nil
+	trace("receipt-claim-result", c, input, map[string]any{"inserted": claimed})
+	if claimed {
+		if err = call(h, "afterClaim"); err != nil {
+			return result, err
+		}
+		if err = writeOrder(c, tx, input); err != nil {
+			return result, err
+		}
+		if err = call(h, "afterOrder"); err != nil {
+			return result, err
+		}
+	} else {
+		// READ COMMITTED gives this statement a fresh snapshot after the winner commits.
+		if err = checkReceipt(c, tx, input); err != nil {
+			return result, err
+		}
+	}
+	commitAttempted = true
+	if err = tx.Commit(); err != nil {
+		return result, fmt.Errorf("commit outcome unknown; no acknowledgment; reconcile durable state: %w", err)
+	}
+	committed = true
+	trace("transaction-committed", c, input, nil)
+	if err = call(h, "afterCommit"); err != nil {
+		trace("committed-response-lost-no-ack", c, input, nil)
+		return result, err
+	}
+	trace("acknowledged", c, input, map[string]any{"status": ack.Status, "body": ack.Body})
+	return ack, nil
+}
+```
+
+```java
+package com.openai.docs.codexcloud;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.security.MessageDigest;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.HexFormat;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Properties;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
+/**
+ * Synthetic PostgreSQL transaction rehearsal. Requires the owned, marked PostgreSQL 17.6 fixture,
+ * exclusive fixture use, org.postgresql:postgresql, and secret PGPASSWORD. Run baseline (expected
+ * exit 1), regression, then fixed. No provider delivery or unknown-COMMIT transport failure is
+ * being simulated. Never point this program at an application database.
+ */
+public final class CodexCloudIncidentToTestedFix {
+  private static final ObjectMapper JSON = new ObjectMapper();
+  private static final String URL = "jdbc:postgresql://127.0.0.1:55432/codex_incident_test";
+  private static final Map<String, Object> ACK =
+      Map.of("status", 200, "body", Map.of("received", true));
+
+  // Canonical sanitized input from the peer's fictional incident packet.
+  private static final String INCIDENT_EVENT_FILE =
+      "../typescript-examples/codex-cloud/incident-to-tested-fix/incidents/INC-DEMO-014/order-created.sanitized.json";
+  private static IncidentEvent EVENT;
+
+  static IncidentEvent parseIncidentEvent(String data) throws Exception {
+    IncidentEvent input = JSON.readValue(data, IncidentEvent.class);
+    if (input == null
+        || input.provider() == null
+        || input.provider().isBlank()
+        || input.accountId() == null
+        || input.accountId().isBlank()
+        || input.eventId() == null
+        || input.eventId().isBlank()
+        || input.payload() == null
+        || input.payload().type() == null
+        || input.payload().type().isBlank()
+        || input.payload().orderId() == null
+        || input.payload().orderId().isBlank()
+        || input.payload().amountCents() <= 0) {
+      throw new IllegalArgumentException("Incomplete sanitized incident fixture");
+    }
+    return input;
+  }
+
+  public record Payload(String type, String orderId, long amountCents) {}
+
+  public record IncidentEvent(String provider, String accountId, String eventId, Payload payload) {}
+
+  private record Counts(long orders, long receipts) {}
+
+  private record Outcome(Map<String, Object> acknowledgment, Exception failure) {}
+
+  @FunctionalInterface
+  private interface Hook {
+    void at(String boundary) throws Exception;
+  }
+
+  @FunctionalInterface
+  private interface Checked {
+    void run() throws Exception;
+  }
+
+  private static final Hook NO_FAILURE = boundary -> {};
+  private final Connection observer;
+  private final String mode;
+  private int assertions;
+
+  private CodexCloudIncidentToTestedFix(Connection observer, String mode) {
+    this.observer = observer;
+    this.mode = mode;
+  }
+
+  private static Connection connect(String name) throws SQLException {
+    String password = System.getenv("PGPASSWORD");
+    if (password == null || password.isBlank())
+      throw new IllegalArgumentException("Set the disposable fixture's PGPASSWORD secret");
+    Properties properties = new Properties();
+    properties.setProperty("user", "codex_incident_test");
+    properties.setProperty("password", password);
+    properties.setProperty("ApplicationName", "fixture-" + name);
+    properties.setProperty("connectTimeout", "5");
+    properties.setProperty("socketTimeout", "12");
+    Connection connection = DriverManager.getConnection(URL, properties);
+    try {
+      connection.setTransactionIsolation(Connection.TRANSACTION_READ_COMMITTED);
+      execute(connection, "SET search_path TO incident_rehearsal, public");
+      execute(connection, "SET statement_timeout = '8s'");
+      return connection;
+    } catch (SQLException failure) {
+      try {
+        connection.close();
+      } catch (SQLException cleanup) {
+        failure.addSuppressed(cleanup);
+      }
+      throw failure;
+    }
+  }
+
+  private static void execute(Connection client, String sql) throws SQLException {
+    try (Statement statement = client.createStatement()) {
+      statement.execute(sql);
+    }
+  }
+
+  private static PreparedStatement keyed(
+      Connection client, String sql, IncidentEvent input, boolean fingerprint) throws Exception {
+    PreparedStatement statement = client.prepareStatement(sql);
+    try {
+      statement.setString(1, input.provider());
+      statement.setString(2, input.accountId());
+      statement.setString(3, input.eventId());
+      if (fingerprint) statement.setString(4, fingerprint(input));
+      return statement;
+    } catch (Exception failure) {
+      try {
+        statement.close();
+      } catch (SQLException cleanup) {
+        failure.addSuppressed(cleanup);
+      }
+      throw failure;
+    }
+  }
+
+  private static String fingerprint(IncidentEvent input) throws Exception {
+    // Explicit canonical field order, exclusively for this trusted fixture.
+    return HexFormat.of()
+        .formatHex(
+            MessageDigest.getInstance("SHA-256")
+                .digest(
+                    JSON.writeValueAsBytes(
+                        List.of(
+                            input.payload().type(),
+                            input.payload().orderId(),
+                            input.payload().amountCents()))));
+  }
+
+  private static int pid(Connection client) throws SQLException {
+    try (Statement statement = client.createStatement();
+        ResultSet result = statement.executeQuery("SELECT pg_backend_pid()")) {
+      if (!result.next()) throw new SQLException("Missing backend PID");
+      return result.getInt(1);
+    }
+  }
+
+  // The shared evidence reader recognizes JSON trace records with action first.
+  private static void emit(String action, Map<String, Object> detail) throws Exception {
+    Map<String, Object> record = new LinkedHashMap<>();
+    record.put("action", action);
+    record.putAll(detail);
+    System.out.println(JSON.writeValueAsString(record));
+  }
+
+  private static void trace(
+      String action, Connection client, IncidentEvent input, Map<String, Object> detail)
+      throws Exception {
+    Map<String, Object> record = new LinkedHashMap<>();
+    record.put("action", action);
+    record.put("pid", pid(client));
+    record.put("key", List.of(input.provider(), input.accountId(), input.eventId()));
+    record.putAll(detail);
+    System.out.println(JSON.writeValueAsString(record));
+  }
+
+  private void equal(Object actual, Object expected) {
+    assertions++;
+    if (!Objects.equals(actual, expected))
+      throw new AssertionError("Expected " + expected + ", got " + actual);
+  }
+
+  private void require(boolean condition, String message) {
+    assertions++;
+    if (!condition) throw new AssertionError(message);
+  }
+
+  private static Hook failAt(String point) {
+    return boundary -> {
+      if (boundary.equals(point)) throw new IllegalStateException("injected:" + point);
+    };
+  }
+
+  private void rejects(Checked action, String message) throws Exception {
+    try {
+      action.run();
+    } catch (Exception failure) {
+      require(
+          failure.getMessage() != null && failure.getMessage().contains(message),
+          "Expected " + message + ", got " + failure);
+      return;
+    }
+    throw new AssertionError("Expected failure " + message);
+  }
+
+  private Counts counts(IncidentEvent input) throws Exception {
+    try (PreparedStatement statement =
+        keyed(
+            observer,
+            "SELECT (SELECT count(*) FROM orders WHERE provider=? AND account_id=? AND event_id=?)"
+                + " AS orders, (SELECT count(*) FROM event_receipts WHERE provider=? AND"
+                + " account_id=? AND event_id=?) AS receipts",
+            input,
+            false)) {
+      statement.setString(4, input.provider());
+      statement.setString(5, input.accountId());
+      statement.setString(6, input.eventId());
+      try (ResultSet result = statement.executeQuery()) {
+        if (!result.next()) throw new SQLException("Missing counts");
+        Counts counts = new Counts(result.getLong("orders"), result.getLong("receipts"));
+        trace(
+            "committed-state",
+            observer,
+            input,
+            Map.of("orders", counts.orders(), "receipts", counts.receipts()));
+        return counts;
+      }
+    }
+  }
+
+  private void assertCounts(long orders, long receipts, IncidentEvent input) throws Exception {
+    equal(counts(input), new Counts(orders, receipts));
+  }
+
+  private static void writeOrder(Connection client, IncidentEvent input) throws Exception {
+    try (PreparedStatement statement =
+        keyed(
+            client,
+            "INSERT INTO orders(provider,account_id,event_id,payload_fingerprint) VALUES (?,?,?,?)",
+            input,
+            true)) {
+      statement.executeUpdate();
+    }
+    trace("order-written", client, input, Map.of());
+  }
+
+  private static void checkReceipt(Connection client, IncidentEvent input) throws Exception {
+    try (PreparedStatement statement =
+            keyed(
+                client,
+                "SELECT payload_fingerprint FROM event_receipts WHERE provider=? AND account_id=?"
+                    + " AND event_id=?",
+                input,
+                false);
+        ResultSet result = statement.executeQuery()) {
+      if (!result.next()) throw new IllegalStateException("missing-receipt-after-skipped-claim");
+      String stored = result.getString(1);
+      if (!fingerprint(input).equals(stored)) throw new IllegalStateException("payload-conflict");
+      if (result.next()) throw new IllegalStateException("multiple-receipts");
+    }
+  }
+
+  private static void assertNotHeld(Connection client, IncidentEvent input) throws Exception {
+    try (PreparedStatement statement =
+            keyed(
+                client,
+                "SELECT 1 FROM delivery_holds WHERE provider=? AND account_id=? AND event_id=?",
+                input,
+                false);
+        ResultSet result = statement.executeQuery()) {
+      if (result.next()) {
+        trace("legacy-retry-held-no-ack", client, input, Map.of());
+        throw new IllegalStateException("legacy-retry-held");
+      }
+    }
+  }
+
+  /** Legacy defect: the order survives failure before receipt creation. */
+  private static Map<String, Object> baseline(Connection client, IncidentEvent input, Hook hook)
+      throws Exception {
+    try (PreparedStatement statement =
+            keyed(
+                client,
+                "SELECT 1 FROM event_receipts WHERE provider=? AND account_id=? AND event_id=?",
+                input,
+                false);
+        ResultSet result = statement.executeQuery()) {
+      if (result.next()) {
+        checkReceipt(client, input);
+        return ACK;
+      }
+    }
+    client.setAutoCommit(false);
+    boolean restore = true;
+    try {
+      writeOrder(client, input);
+      client.commit();
+    } catch (Exception failure) {
+      restore = rollback(client, failure);
+      throw failure;
+    } finally {
+      if (restore) client.setAutoCommit(true);
+    }
+    trace("legacy-order-committed-without-receipt", client, input, Map.of());
+    hook.at("afterOrder");
+    try (PreparedStatement statement =
+        keyed(
+            client,
+            "INSERT INTO event_receipts(provider,account_id,event_id,payload_fingerprint) VALUES"
+                + " (?,?,?,?)",
+            input,
+            true)) {
+      statement.executeUpdate();
+    }
+    trace("legacy-receipt-committed", client, input, Map.of());
+    return ACK;
+  }
+
+  private static boolean rollback(Connection client, Exception failure) {
+    try {
+      client.rollback();
+      return true;
+    } catch (SQLException cleanup) {
+      failure.addSuppressed(cleanup);
+      try {
+        client.close();
+      } catch (SQLException closing) {
+        failure.addSuppressed(closing);
+      }
+      return false; // Never restore autocommit after an unsuccessful rollback.
+    }
+  }
+
+  /** Claim and business write commit together, with READ COMMITTED duplicate visibility. */
+  private static Map<String, Object> fixed(Connection client, IncidentEvent input, Hook hook)
+      throws Exception {
+    assertNotHeld(client, input);
+    hook.at("beforeClaim");
+    client.setAutoCommit(false);
+    boolean committed = false;
+    boolean commitAttempted = false;
+    boolean restore = true;
+    try {
+      boolean inserted;
+      try (PreparedStatement statement =
+              keyed(
+                  client,
+                  "INSERT INTO event_receipts(provider,account_id,event_id,payload_fingerprint)"
+                      + " VALUES (?,?,?,?) ON CONFLICT (provider,account_id,event_id) DO NOTHING"
+                      + " RETURNING event_id",
+                  input,
+                  true);
+          ResultSet result = statement.executeQuery()) {
+        inserted = result.next();
+      }
+      trace("receipt-claim-result", client, input, Map.of("inserted", inserted));
+      if (inserted) {
+        hook.at("afterClaim");
+        writeOrder(client, input);
+        hook.at("afterOrder");
+      } else {
+        // A new statement sees the winner's commit after a blocked claim returns.
+        checkReceipt(client, input);
+      }
+      commitAttempted = true;
+      client.commit();
+      committed = true;
+      trace("transaction-committed", client, input, Map.of());
+      hook.at("afterCommit");
+      trace("acknowledged", client, input, ACK);
+      return ACK;
+    } catch (Exception failure) {
+      if (!committed && commitAttempted) {
+        // A transport error during COMMIT does not establish whether the commit happened.
+        // This branch is not exercised by the post-commit response-loss rehearsal.
+        restore = false;
+        try {
+          client.close();
+        } catch (SQLException closing) {
+          failure.addSuppressed(closing);
+        }
+        throw new IllegalStateException(
+            "commit-outcome-unknown; discard connection and inspect durable state", failure);
+      } else if (!committed) {
+        restore = rollback(client, failure);
+        if (restore) trace("transaction-rolled-back-no-ack", client, input, Map.of());
+      } else {
+        trace("committed-response-lost-no-ack", client, input, Map.of());
+      }
+      throw failure;
+    } finally {
+      if (restore) client.setAutoCommit(true);
+    }
+  }
+
+  /** Only after ingestion is paused and all legacy consumers have drained. */
+  private static int identifyAndHoldLegacyOrphans(Connection client) throws Exception {
+    int count;
+    try (Statement statement = client.createStatement()) {
+      count =
+          statement.executeUpdate(
+              "INSERT INTO delivery_holds(provider,account_id,event_id) SELECT DISTINCT"
+                  + " o.provider,o.account_id,o.event_id FROM orders o WHERE NOT EXISTS (SELECT 1"
+                  + " FROM event_receipts r WHERE r.provider=o.provider AND"
+                  + " r.account_id=o.account_id AND r.event_id=o.event_id) ON CONFLICT DO NOTHING");
+    }
+    emit("pre-resume-orphans-held", Map.of("keys", count));
+    return count;
+  }
+
+  private void reconcileHeldOrphan(Connection client, IncidentEvent input) throws Exception {
+    client.setAutoCommit(false);
+    boolean restore = true;
+    try {
+      try (PreparedStatement statement =
+              keyed(
+                  client,
+                  "SELECT 1 FROM delivery_holds WHERE provider=? AND account_id=? AND event_id=?"
+                      + " FOR UPDATE",
+                  input,
+                  false);
+          ResultSet result = statement.executeQuery()) {
+        require(result.next(), "Reconciliation requires a durable hold");
+      }
+      try (PreparedStatement statement =
+              keyed(
+                  client,
+                  "SELECT payload_fingerprint FROM orders WHERE provider=? AND account_id=? AND"
+                      + " event_id=? FOR UPDATE",
+                  input,
+                  false);
+          ResultSet result = statement.executeQuery()) {
+        if (!result.next() || !fingerprint(input).equals(result.getString(1)) || result.next()) {
+          throw new IllegalStateException("legacy-evidence-insufficient-keep-held");
+        }
+      }
+      try (PreparedStatement statement =
+          keyed(
+              client,
+              "INSERT INTO event_receipts(provider,account_id,event_id,payload_fingerprint) VALUES"
+                  + " (?,?,?,?) ON CONFLICT DO NOTHING",
+              input,
+              true)) {
+        statement.executeUpdate();
+      }
+      checkReceipt(client, input);
+      try (PreparedStatement statement =
+          keyed(
+              client,
+              "DELETE FROM delivery_holds WHERE provider=? AND account_id=? AND event_id=?",
+              input,
+              false)) {
+        equal(statement.executeUpdate(), 1);
+      }
+      client.commit();
+      trace("trusted-orphan-reconciled-hold-released", client, input, Map.of());
+    } catch (Exception failure) {
+      restore = rollback(client, failure);
+      throw failure;
+    } finally {
+      if (restore) client.setAutoCommit(true);
+    }
+  }
+
+  private void waitForContention(int waiter, int winner) throws Exception {
+    long deadline = System.nanoTime() + Duration.ofSeconds(5).toNanos();
+    while (System.nanoTime() < deadline) {
+      try (PreparedStatement statement =
+          observer.prepareStatement(
+              "SELECT wait_event_type, wait_event, pg_blocking_pids(pid) AS blockers FROM"
+                  + " pg_stat_activity WHERE pid=?")) {
+        statement.setInt(1, waiter);
+        try (ResultSet result = statement.executeQuery()) {
+          if (result.next()) {
+            java.sql.Array array = result.getArray("blockers");
+            List<Integer> blockers = new ArrayList<>();
+            try {
+              Object values = array.getArray();
+              for (int index = 0; index < java.lang.reflect.Array.getLength(values); index++) {
+                blockers.add(((Number) java.lang.reflect.Array.get(values, index)).intValue());
+              }
+            } finally {
+              array.free();
+            }
+            if ("Lock".equals(result.getString("wait_event_type")) && blockers.contains(winner)) {
+              Map<String, Object> record = new LinkedHashMap<>();
+              record.put("action", "real-database-contention");
+              record.put("pid", waiter);
+              record.put("winner", winner);
+              record.put("wait_event_type", "Lock");
+              record.put("wait_event", result.getString("wait_event"));
+              record.put("blockers", blockers);
+              System.out.println(JSON.writeValueAsString(record));
+              return;
+            }
+          }
+        }
+      }
+      Thread.sleep(10);
+    }
+    throw new IllegalStateException("competitor-never-observed-blocking-on-winner");
+  }
+
+  private static void await(CountDownLatch latch) throws Exception {
+    if (!latch.await(7, TimeUnit.SECONDS))
+      throw new IllegalStateException("Timed out awaiting transaction boundary");
+  }
+
+  private static Outcome outcome(Connection client, Hook hook) {
+    try {
+      return new Outcome(fixed(client, EVENT, hook), null);
+    } catch (Exception failure) {
+      return new Outcome(null, failure);
+    }
+  }
+
+  private void overlap(boolean winnerRollsBack) throws Exception {
+    ExecutorService workers = Executors.newFixedThreadPool(2);
+    CountDownLatch claimed = new CountDownLatch(1);
+    CountDownLatch release = new CountDownLatch(1);
+    try (Connection winner = connect("winner");
+        Connection waiter = connect("waiter")) {
+      int winnerPid = pid(winner), waiterPid = pid(waiter);
+      require(winnerPid != waiterPid, "Independent database backends");
+      CompletableFuture<Outcome> first =
+          CompletableFuture.supplyAsync(
+              () ->
+                  outcome(
+                      winner,
+                      boundary -> {
+                        if (!boundary.equals("afterClaim")) return;
+                        claimed.countDown();
+                        await(release);
+                        if (winnerRollsBack)
+                          throw new IllegalStateException("injected:winner-rollback");
+                      }),
+              workers);
+      CompletableFuture<Outcome> second = null;
+      try {
+        await(claimed);
+        assertCounts(0, 0, EVENT);
+        second = CompletableFuture.supplyAsync(() -> outcome(waiter, NO_FAILURE), workers);
+        waitForContention(waiterPid, winnerPid);
+      } finally {
+        release.countDown();
+        // Join while connections remain open, including failure paths.
+        Outcome a = first.get(12, TimeUnit.SECONDS);
+        Outcome b = second == null ? null : second.get(12, TimeUnit.SECONDS);
+        if (winnerRollsBack)
+          require(
+              a.failure() != null && a.failure().getMessage().contains("winner-rollback"),
+              "Winner rollback");
+        else {
+          equal(a.failure(), null);
+          equal(a.acknowledgment(), ACK);
+        }
+        require(b != null, "Waiter started");
+        equal(b.failure(), null);
+        equal(b.acknowledgment(), ACK);
+      }
+      assertCounts(1, 1, EVENT);
+    } finally {
+      release.countDown();
+      workers.shutdownNow();
+      if (!workers.awaitTermination(15, TimeUnit.SECONDS))
+        throw new IllegalStateException("Transaction workers did not stop");
+    }
+  }
+
+  private void verifyFixture() throws Exception {
+    try (Statement statement = observer.createStatement();
+        ResultSet result =
+            statement.executeQuery(
+                "SELECT current_database(), current_user, shobj_description(oid,'pg_database') FROM"
+                    + " pg_database WHERE datname=current_database()")) {
+      require(result.next(), "Database identity");
+      equal(result.getString(1), "codex_incident_test");
+      equal(result.getString(2), "codex_incident_test");
+      equal(result.getString(3), "codex-synthetic-incident-fixture-v1");
+    }
+    String version;
+    try (Statement statement = observer.createStatement();
+        ResultSet result = statement.executeQuery("SHOW server_version")) {
+      require(result.next(), "Database version");
+      version = result.getString(1);
+      equal(version, "17.6 (Debian 17.6-2.pgdg12+1)");
+    }
+    try (Statement statement = observer.createStatement();
+        ResultSet result = statement.executeQuery("SELECT pg_try_advisory_lock(14014)")) {
+      require(result.next() && result.getBoolean(1), "Exclusive synthetic fixture lease");
+    }
+    emit(
+        "fixture-environment",
+        Map.of(
+            "java",
+            System.getProperty("java.version"),
+            "pg",
+            version,
+            "mode",
+            mode,
+            "event_source",
+            "canonical-sanitized-incident-record"));
+  }
+
+  private void createSchema() throws Exception {
+    execute(observer, "DROP SCHEMA IF EXISTS incident_rehearsal CASCADE");
+    execute(observer, "CREATE SCHEMA incident_rehearsal");
+    execute(observer, "SET search_path TO incident_rehearsal, public");
+    execute(
+        observer,
+        "CREATE TABLE event_receipts(provider text NOT NULL,account_id text NOT NULL,event_id text"
+            + " NOT NULL,payload_fingerprint text NOT NULL,CONSTRAINT event_receipts_identity"
+            + " UNIQUE(provider,account_id,event_id) NOT DEFERRABLE)");
+    execute(
+        observer,
+        "CREATE TABLE orders(id bigserial PRIMARY KEY,provider text NOT NULL,account_id text NOT"
+            + " NULL,event_id text NOT NULL,payload_fingerprint text)");
+    execute(
+        observer,
+        "CREATE TABLE delivery_holds(provider text NOT NULL,account_id text NOT NULL,event_id text"
+            + " NOT NULL,PRIMARY KEY(provider,account_id,event_id))");
+    try (Statement statement = observer.createStatement();
+        ResultSet result =
+            statement.executeQuery(
+                "SELECT condeferrable,pg_get_constraintdef(oid) FROM pg_constraint WHERE"
+                    + " conrelid='incident_rehearsal.event_receipts'::regclass AND"
+                    + " conname='event_receipts_identity'")) {
+      require(result.next(), "Receipt uniqueness");
+      equal(result.getBoolean(1), false);
+      emit(
+          "receipt-schema",
+          Map.of(
+              "conname",
+              "event_receipts_identity",
+              "condeferrable",
+              result.getBoolean(1),
+              "definition",
+              result.getString(2)));
+    }
+  }
+
+  private int run() throws Exception {
+    Map<String, Checked> tests = new LinkedHashMap<>();
+    tests.put(
+        "retry after the order boundary leaves exactly one order and one receipt",
+        () -> {
+          try (Connection client = connect("regression")) {
+            rejects(
+                () -> {
+                  if (mode.equals("baseline")) baseline(client, EVENT, failAt("afterOrder"));
+                  else fixed(client, EVENT, failAt("afterOrder"));
+                },
+                "injected:afterOrder");
+            assertCounts(mode.equals("baseline") ? 1 : 0, 0, EVENT);
+            equal(
+                mode.equals("baseline")
+                    ? baseline(client, EVENT, NO_FAILURE)
+                    : fixed(client, EVENT, NO_FAILURE),
+                ACK);
+            assertCounts(
+                1, 1, EVENT); // Baseline deliberately fails here, after exposing two orders.
+          }
+        });
+    if (mode.equals("fixed")) {
+      tests.put(
+          "first delivery and committed duplicate return the exact acknowledgment",
+          () -> {
+            try (Connection client = connect("duplicate")) {
+              equal(fixed(client, EVENT, NO_FAILURE), ACK);
+              equal(fixed(client, EVENT, NO_FAILURE), ACK);
+              assertCounts(1, 1, EVENT);
+            }
+          });
+      for (String boundary : List.of("beforeClaim", "afterClaim", "afterOrder")) {
+        tests.put(
+            "failure " + boundary + " rolls back and remains retryable",
+            () -> {
+              try (Connection client = connect("failure-" + boundary)) {
+                rejects(() -> fixed(client, EVENT, failAt(boundary)), "injected:" + boundary);
+                assertCounts(0, 0, EVENT);
+                equal(fixed(client, EVENT, NO_FAILURE), ACK);
+                assertCounts(1, 1, EVENT);
+              }
+            });
+      }
+      tests.put(
+          "lost acknowledgment after commit does not duplicate the order",
+          () -> {
+            try (Connection client = connect("lost-ack")) {
+              rejects(() -> fixed(client, EVENT, failAt("afterCommit")), "injected:afterCommit");
+              assertCounts(1, 1, EVENT);
+              equal(fixed(client, EVENT, NO_FAILURE), ACK);
+              assertCounts(1, 1, EVENT);
+            }
+          });
+      tests.put("real overlapping duplicate contention: winner commit", () -> overlap(false));
+      tests.put("real overlapping duplicate contention: winner rollback", () -> overlap(true));
+      tests.put(
+          "event, account, and provider scope remain independent; conflicting payload is rejected",
+          () -> {
+            try (Connection client = connect("identity")) {
+              for (IncidentEvent input :
+                  List.of(
+                      EVENT,
+                      new IncidentEvent(
+                          EVENT.provider(), EVENT.accountId(), "evt_demo_043", EVENT.payload()),
+                      new IncidentEvent(
+                          EVENT.provider(), "acct_demo_02", EVENT.eventId(), EVENT.payload()),
+                      new IncidentEvent(
+                          "synthetic-other",
+                          EVENT.accountId(),
+                          EVENT.eventId(),
+                          EVENT.payload()))) {
+                equal(fixed(client, input, NO_FAILURE), ACK);
+                assertCounts(1, 1, input);
+              }
+              rejects(() -> fixed(client, changedPayload(), NO_FAILURE), "payload-conflict");
+              assertCounts(1, 1, EVENT);
+            }
+          });
+      tests.put(
+          "legacy orphan is held before retry and reconciled only from trusted evidence",
+          () -> {
+            try (Connection client = connect("legacy-orphan")) {
+              writeOrder(client, EVENT);
+              assertCounts(1, 0, EVENT);
+              equal(identifyAndHoldLegacyOrphans(client), 1);
+              rejects(() -> fixed(client, EVENT, NO_FAILURE), "legacy-retry-held");
+              assertCounts(1, 0, EVENT);
+              rejects(() -> reconcileHeldOrphan(client, changedPayload()), "evidence-insufficient");
+              rejects(() -> fixed(client, EVENT, NO_FAILURE), "legacy-retry-held");
+              reconcileHeldOrphan(client, EVENT);
+              equal(fixed(client, EVENT, NO_FAILURE), ACK);
+              assertCounts(1, 1, EVENT);
+            }
+          });
+      tests.put(
+          "missing legacy payload evidence stays quarantined without a fabricated receipt",
+          () -> {
+            try (Connection client = connect("legacy-missing-evidence")) {
+              try (PreparedStatement statement =
+                  keyed(
+                      client,
+                      "INSERT INTO orders(provider,account_id,event_id) VALUES (?,?,?)",
+                      EVENT,
+                      false)) {
+                statement.executeUpdate();
+              }
+              equal(identifyAndHoldLegacyOrphans(client), 1);
+              rejects(() -> reconcileHeldOrphan(client, EVENT), "evidence-insufficient");
+              rejects(() -> fixed(client, EVENT, NO_FAILURE), "legacy-retry-held");
+              assertCounts(1, 0, EVENT);
+            }
+          });
+    }
+    int failures = 0, index = 0;
+    for (Map.Entry<String, Checked> test : tests.entrySet()) {
+      index++;
+      try {
+        execute(observer, "TRUNCATE orders,event_receipts,delivery_holds RESTART IDENTITY");
+        test.getValue().run();
+        System.out.println("ok " + index + " - " + test.getKey());
+      } catch (Exception | AssertionError failure) {
+        failures++;
+        System.out.println("not ok " + index + " - " + test.getKey());
+        failure.printStackTrace(System.err);
+      }
+    }
+    System.out.printf(
+        "# tests %d%n# assertions %d%n# fail %d%n# cancelled 0%n# skipped 0%n# todo 0%n",
+        tests.size(), assertions, failures);
+    return failures;
+  }
+
+  private static IncidentEvent changedPayload() {
+    return new IncidentEvent(
+        EVENT.provider(),
+        EVENT.accountId(),
+        EVENT.eventId(),
+        new Payload(EVENT.payload().type(), EVENT.payload().orderId(), 9999));
+  }
+
+  public static void main(String[] args) throws Exception {
+    if (args.length > 1) throw new IllegalArgumentException("Usage: baseline|regression|fixed");
+    String mode = args.length == 0 ? "fixed" : args[0];
+    if (!List.of("baseline", "regression", "fixed").contains(mode))
+      throw new IllegalArgumentException("Unknown incident mode");
+    EVENT =
+        parseIncidentEvent(
+            java.nio.file.Files.readString(java.nio.file.Path.of(INCIDENT_EVENT_FILE)));
+    int failures;
+    try (Connection observer = connect("observer")) {
+      CodexCloudIncidentToTestedFix suite = new CodexCloudIncidentToTestedFix(observer, mode);
+      suite.verifyFixture(); // No schema mutation before all identity and lease checks pass.
+      try {
+        suite.createSchema();
+        failures = suite.run();
+      } finally {
+        execute(observer, "DROP SCHEMA IF EXISTS incident_rehearsal CASCADE");
+        execute(observer, "SELECT pg_advisory_unlock(14014)");
+      }
+    }
+    if (failures != 0) System.exit(1);
   }
 }
 ```
