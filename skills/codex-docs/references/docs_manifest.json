@@ -1891,8 +1891,8 @@
       "title": "Get from idea to proof of concept"
     },
     "use-cases__incident-to-tested-fix.md": {
-      "hash": "f81d135d185a3d7ce6acac83509203065d71c905cef67814294d29992f55dc8a",
-      "last_updated": "2026-11-26T09:25:04+00:00",
+      "hash": "87b9a1f856181329a31b1bcc61ba684f52ead6c2264130b6c39c0897063c1a9b",
+      "last_updated": "2026-11-26T18:26:04+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/incident-to-tested-fix",
       "path": "/use-cases/incident-to-tested-fix",
       "section": "use-cases",
@@ -1941,8 +1941,8 @@
       "title": "Refactor SwiftUI screens"
     },
     "use-cases__issue-to-tested-pr.md": {
-      "hash": "04d9fae62042c25d2d274aa5a49dfeaa4f5e1cb4012c8be7c7b4f46cf9ce8646",
-      "last_updated": "2026-11-26T09:25:06+00:00",
+      "hash": "ff021e38009b6f4ffb4f46d0dd87610623977154c6fe15e0d33de5a7536039e8",
+      "last_updated": "2026-11-26T18:26:06+00:00",
       "original_url": "https://learn.chatgpt.com/use-cases/issue-to-tested-pr",
       "path": "/use-cases/issue-to-tested-pr",
       "section": "use-cases",
@@ -2313,7 +2313,7 @@
       "/guides/*"
     ]
   },
-  "last_updated": "2026-11-26T09:25:23+00:00",
+  "last_updated": "2026-11-26T18:26:24+00:00",
   "skipped": [
     {
       "path": "/docs",

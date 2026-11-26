@@ -167,6 +167,28 @@ To verify your environment, put the files in your selected repository, prepare a
 
 It does not record session tokens or the signing key. Read `README.md` and `openapi.json` for the sample's setup and public contract.
 
+Use Python 3.11 or later and uv with a complete [Python sample project](https://github.com/openai/developers-website/tree/main/src/content/platform/python-examples) from a `developers-website` checkout. Keep `codex-cloud/api.py`, `fixtures.py`, `test.py`, and [the complete reproduction program](https://github.com/openai/developers-website/blob/main/src/content/platform/python-examples/codex-cloud/reproduce.py) together with the project's `pyproject.toml` and `uv.lock`. The ZIP above contains only TypeScript.
+
+Start at the repository checkout root in a POSIX shell. Install the locked dependencies, including `jsonschema`, then run the Python commands below instead of the Node commands above:
+
+```bash
+cd src/content/platform/python-examples
+uv sync --locked
+.venv/bin/python codex-cloud/api.py
+.venv/bin/python codex-cloud/fixtures.py
+.venv/bin/python codex-cloud/test.py --seeded
+.venv/bin/python codex-cloud/test.py
+.venv/bin/python codex-cloud/reproduce.py ./evidence
+```
+
+The programs read the canonical `../typescript-examples/codex-cloud/issue-to-tested-pr/openapi.json`, relative to the Python project directory, from the same checkout. Keep that sibling fixture intact. The API, test, and reproduction commands manage their own synthetic in-memory records and loopback HTTP servers; no database or API key is required. The fixtures command prints record counts. The API command prints one page summary and stops, so do not leave a separate server running.
+
+Expect these results:
+
+- The seeded test exits with `1` to expose the deliberate pagination defect; continue to the corrected test.
+- All 16 corrected tests pass and the corrected test exits with `0`.
+- The reproduction command runs both suites and writes `red.log`, `green.log`, `observed-http.json`, and `run-manifest.json` to a new `./evidence` directory. Use a new directory on each run; the program refuses to overwrite existing evidence.
+
 **Java setup**
 
 Use Java 17 or later and Maven with a complete `developers-website` checkout, including the [Java sample project](https://github.com/openai/developers-website/tree/main/src/content/platform/java-examples), its `pom.xml`, and `src/main/java/codex-cloud` files intact.
@@ -210,6 +232,20 @@ Expected results
 - The seeded test exits with a nonzero status.
 - The corrected test exits successfully.
 - The reproduction writes red and green logs to a new `./evidence` directory.
+
+The C# excerpts come from the complete [.NET sample project](https://github.com/openai/developers-website/tree/main/src/content/platform/dotnet-examples). The project targets .NET 10, with SDK 10.0.100 and `latestFeature` roll-forward recorded in `global.json`.
+
+Run these commands from the repository root.
+
+```sh
+cd src/content/platform/dotnet-examples
+dotnet restore OpenAI.Docs.Examples.slnx --locked-mode
+dotnet run --project OpenAI.Docs.Examples.csproj --no-restore -- codex-cloud-pagination
+```
+
+The complete checkout supplies `src/content/platform/typescript-examples/codex-cloud/issue-to-tested-pr/openapi.json`, the shared OpenAPI 3.1.0 contract with API version 1.0.0. The C# program locates that file relative to its source file.
+
+The launcher covers the API, fixtures, test, and reproduction sections in one process. It starts owned loopback servers and runs both the deliberately seeded and corrected suites, with generated session tokens and signing keys. Its success requires the seeded suite to fail and all 16 corrected checks to pass. It writes `red.log`, `green.log`, `observed-http.json`, and `run-manifest.json` into `evidence/` under the .NET project directory.
 
 ### Inspect the runnable sample
 
@@ -354,6 +390,285 @@ export async function startApi(
       ),
   };
 }
+```
+
+```python
+import base64
+import binascii
+import hmac
+import http.client
+import json
+import re
+import threading
+from contextlib import contextmanager
+from datetime import datetime
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
+from urllib.parse import parse_qs, unquote, urlsplit
+
+from fixtures import Fixtures, create_fixtures
+
+ERRORS = {
+    "invalid_cursor": (400, "Invalid cursor."),
+    "invalid_limit": (400, "Limit must be an integer from 1 through 100."),
+    "unauthenticated": (401, "Authentication required."),
+    "not_found": (404, "Project not found."),
+}
+PUBLIC_FIELDS = ("id", "created_at", "type", "summary")
+
+def timestamp_value(value: str) -> int:
+    """Preserve all nine fractional digits without float or datetime rounding."""
+    if not isinstance(value, str):
+        raise ValueError("Invalid timestamp")
+    match = re.fullmatch(
+        r"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})(?:\.(\d{1,9}))?Z", value
+    )
+    if not match:
+        raise ValueError("Invalid timestamp")
+    instant = datetime.strptime(match[1], "%Y-%m-%dT%H:%M:%S")
+    delta = instant - datetime(1970, 1, 1)
+    return (delta.days * 86400 + delta.seconds) * 10**9 + int(
+        (match[2] or "").ljust(9, "0")
+    )
+
+def event_key(event: dict) -> tuple[int, str]:
+    return timestamp_value(event["created_at"]), event["id"]
+
+def base64url(data: bytes) -> str:
+    return base64.urlsafe_b64encode(data).decode("ascii").rstrip("=")
+
+def unbase64url(value: str) -> bytes:
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", value):
+        raise ValueError("Invalid cursor")
+    decoded = base64.b64decode(
+        value + "=" * (-len(value) % 4), altchars=b"-_", validate=True
+    )
+    if base64url(decoded) != value:
+        raise ValueError("Invalid cursor")
+    return decoded
+
+def encode_cursor(event, tenant_id, project_id, signing_key):
+    payload = base64url(
+        json.dumps(
+            {
+                "version": 1,
+                "tenant_id": tenant_id,
+                "project_id": project_id,
+                "created_at": event["created_at"],
+                "id": event["id"],
+            },
+            separators=(",", ":"),
+        ).encode()
+    )
+    signature = hmac.digest(signing_key, payload.encode("ascii"), "sha256")
+    return f"{payload}.{base64url(signature)}"
+
+def unique_object(pairs):
+    result = {}
+    for name, value in pairs:
+        if name in result:
+            raise ValueError("Duplicate cursor field")
+        result[name] = value
+    return result
+
+def decode_cursor(token, tenant_id, project_id, signing_key):
+    if not isinstance(token, str) or len(token) > 2048:
+        raise ValueError("Invalid cursor")
+    parts = token.split(".")
+    if len(parts) != 2:
+        raise ValueError("Invalid cursor")
+    payload, signature = parts
+    decoded, actual = unbase64url(payload), unbase64url(signature)
+    expected = hmac.digest(signing_key, payload.encode("ascii"), "sha256")
+    if not hmac.compare_digest(actual, expected):
+        raise ValueError("Invalid cursor")
+    cursor = json.loads(decoded.decode("utf-8"), object_pairs_hook=unique_object)
+    fields = {"version", "tenant_id", "project_id", "created_at", "id"}
+    if (
+        not isinstance(cursor, dict)
+        or set(cursor) != fields
+        or type(cursor["version"]) is not int
+        or cursor["version"] != 1
+        or cursor["tenant_id"] != tenant_id
+        or cursor["project_id"] != project_id
+        or not isinstance(cursor["id"], str)
+        or not cursor["id"]
+    ):
+        raise ValueError("Invalid cursor")
+    timestamp_value(cursor["created_at"])
+    return cursor
+
+# Keep the language variants on the same authored OpenAPI contract.
+SPECIFICATION_PATH = (
+    Path(__file__).resolve().parents[2]
+    / "typescript-examples/codex-cloud/issue-to-tested-pr/openapi.json"
+)
+if not SPECIFICATION_PATH.is_file():
+    # The shared runner copies the canonical fixture beside the authored program.
+    SPECIFICATION_PATH = Path(__file__).parent / "issue-to-tested-pr/openapi.json"
+SPECIFICATION = json.loads(SPECIFICATION_PATH.read_text(encoding="utf-8"))
+SCHEMAS = SPECIFICATION["components"]["schemas"]
+EVENT_SCHEMA = SCHEMAS["Event"]
+PAGE_SCHEMA = SCHEMAS["EventPage"]
+DETAIL_SCHEMA = SCHEMAS["Project"]
+ERROR_SCHEMAS = {
+    code: SCHEMAS[name]
+    for code, name in {
+        "invalid_cursor": "InvalidCursor",
+        "invalid_limit": "InvalidLimit",
+        "unauthenticated": "Unauthenticated",
+        "not_found": "NotFound",
+    }.items()
+}
+
+def dispatch(fixtures: Fixtures, method, target, authorization, *, seeded_bug=False):
+    """Pure request boundary, shared by the HTTP server and isolated unit checks."""
+
+    def fail(code):
+        status, message = ERRORS[code]
+        return status, {"error": {"code": code, "message": message}}
+
+    bearer = re.fullmatch(r"Bearer ([A-Za-z0-9_-]+)", authorization)
+    tenant = fixtures.sessions.get(bearer[1]) if bearer else None
+    if not tenant:
+        return fail("unauthenticated")
+    try:
+        url = urlsplit(target)
+        route = re.fullmatch(r"/v1/projects/([^/]+)(/events)?", url.path)
+        project_id = unquote(route[1], errors="strict") if route else None
+    except (ValueError, UnicodeError):
+        return fail("not_found")
+    project = fixtures.projects.get(project_id)
+    if method != "GET" or not route or not project or project["tenant_id"] != tenant:
+        return fail("not_found")
+    if not route[2]:
+        return 200, {"id": project_id, "name": project["name"]}
+    try:
+        parameters = parse_qs(url.query, keep_blank_values=True, max_num_fields=100)
+    except ValueError:
+        return fail("invalid_limit")
+    limits = parameters.get("limit", ["25"])
+    if (
+        len(limits) != 1
+        or not re.fullmatch(r"[0-9]+", limits[0])
+        or len(limits[0]) > 100
+    ):
+        return fail("invalid_limit")
+    limit = int(limits[0])
+    if not 1 <= limit <= 100:
+        return fail("invalid_limit")
+    cursor = None
+    if "cursor" in parameters:
+        try:
+            if len(parameters["cursor"]) != 1:
+                raise ValueError("Repeated cursor")
+            cursor = decode_cursor(
+                parameters["cursor"][0], tenant, project_id, fixtures.signing_key
+            )
+        except (ValueError, UnicodeError, binascii.Error, RecursionError):
+            return fail("invalid_cursor")
+    matching = sorted(
+        (
+            event
+            for event in fixtures.events
+            if event["tenant_id"] == tenant and event["project_id"] == project_id
+        ),
+        key=event_key,
+        reverse=True,
+    )
+    if cursor:
+        # Deliberately seeded baseline loses rows tied on the timestamp.
+        matching = [
+            event
+            for event in matching
+            if (
+                timestamp_value(event["created_at"])
+                < timestamp_value(cursor["created_at"])
+                if seeded_bug
+                else event_key(event) < event_key(cursor)
+            )
+        ]
+    selected = matching[:limit]
+    next_cursor = (
+        encode_cursor(selected[-1], tenant, project_id, fixtures.signing_key)
+        if len(matching) > limit
+        else None
+    )
+    return 200, {
+        "items": [{name: event[name] for name in PUBLIC_FIELDS} for event in selected],
+        "next_cursor": next_cursor,
+    }
+
+@contextmanager
+def start_api(fixtures: Fixtures, *, seeded_bug=False):
+    class Handler(BaseHTTPRequestHandler):
+        timeout = 5
+
+        def respond(self):
+            authorizations = self.headers.get_all("Authorization", [])
+            status, body = dispatch(
+                fixtures,
+                self.command,
+                self.path,
+                authorizations[0] if len(authorizations) == 1 else "",
+                seeded_bug=seeded_bug,
+            )
+            encoded = json.dumps(body, separators=(",", ":")).encode()
+            self.send_response(status)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Length", str(len(encoded)))
+            self.end_headers()
+            self.wfile.write(encoded)
+
+        do_GET = do_POST = do_PUT = do_DELETE = do_PATCH = do_HEAD = do_OPTIONS = (
+            respond
+        )
+
+        def log_message(self, format, *args):
+            # Requests contain bearer-bound cursors; keep them out of access logs.
+            return
+
+    server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+    server.daemon_threads = False
+    thread = threading.Thread(target=server.serve_forever, name="pagination-fixture")
+    thread.start()
+    try:
+        yield f"http://127.0.0.1:{server.server_port}"
+    finally:
+        server.shutdown()
+        server.server_close()
+        thread.join(timeout=5)
+        if thread.is_alive():
+            raise RuntimeError("Owned HTTP server failed to stop")
+
+if __name__ == "__main__":
+    fixtures = create_fixtures()
+    with start_api(fixtures) as base_url:
+        address = urlsplit(base_url)
+        connection = http.client.HTTPConnection(
+            address.hostname, address.port, timeout=5
+        )
+        try:
+            connection.request(
+                "GET",
+                "/v1/projects/feed/events?limit=2",
+                headers={"Authorization": f"Bearer {fixtures.token_a}"},
+            )
+            response = connection.getresponse()
+            body = json.load(response)
+            if response.status != 200:
+                raise RuntimeError(f"Unexpected HTTP status {response.status}")
+            print(
+                json.dumps(
+                    {
+                        "status": response.status,
+                        "ids": [item["id"] for item in body["items"]],
+                        "has_next_page": body["next_cursor"] is not None,
+                    }
+                )
+            )
+        finally:
+            connection.close()
 ```
 
 ```go
@@ -1049,6 +1364,60 @@ public final class CodexCloudApi implements AutoCloseable {
 }
 ```
 
+```csharp
+internal static IResult Handle(HttpRequest request, Fixtures fixtures, bool seeded)
+{
+    Match bearer = Regex.Match(request.Headers.Authorization.ToString(), @"\ABearer ([A-Za-z0-9_-]+)\z",
+        RegexOptions.CultureInvariant);
+    if (!bearer.Success || !fixtures.Sessions.TryGetValue(bearer.Groups[1].Value, out string? tenant))
+        return Fail("unauthenticated");
+    Match route = Regex.Match(request.Path.Value ?? "", @"\A/v1/projects/([^/]+)(/events)?\z",
+        RegexOptions.CultureInvariant);
+    string projectId;
+    try { projectId = Uri.UnescapeDataString(route.Groups[1].Value); }
+    catch (UriFormatException) { return Fail("not_found"); }
+    if (request.Method != "GET" || !route.Success ||
+        !fixtures.Projects.TryGetValue(projectId, out Project? project) || project.tenant_id != tenant)
+        return Fail("not_found");
+    if (!route.Groups[2].Success) return Results.Json(new { id = projectId, name = project.name });
+    int limit = 25;
+    if (request.Query.TryGetValue("limit", out var values) &&
+        (values.Count != 1 || !Regex.IsMatch(values[0] ?? "", @"\A[0-9]+\z", RegexOptions.CultureInvariant) ||
+         !int.TryParse(values[0], NumberStyles.None, CultureInfo.InvariantCulture, out limit) || limit is < 1 or > 100))
+        return Fail("invalid_limit");
+    (string Time, string Id)? cursor = null;
+    if (request.Query.TryGetValue("cursor", out var tokens))
+    {
+        if (tokens.Count != 1) return Fail("invalid_cursor");
+        try { cursor = DecodeCursor(tokens[0] ?? "", tenant, projectId, fixtures.SigningKey); }
+        catch (Exception error) when (error is FormatException or JsonException or InvalidOperationException)
+        { return Fail("invalid_cursor"); }
+    }
+    Event[] matching = fixtures.Events.Where(item => item.tenant_id == tenant && item.project_id == projectId)
+        .OrderBy(
+            item => item,
+            Comparer<Event>.Create((left, right) =>
+                Compare(left.created_at, left.id, right.created_at, right.id)))
+        .Where(item => cursor is null || (seeded
+            ? Timestamp(item.created_at) < Timestamp(cursor.Value.Time)
+            : Compare(item.created_at, item.id, cursor.Value.Time, cursor.Value.Id) > 0)).Take(limit + 1).ToArray();
+    Event[] selected = matching.Take(limit).ToArray();
+    string? next = matching.Length > limit ? Sign(new
+    {
+        version = 1,
+        tenant_id = tenant,
+        project_id = projectId,
+        created_at = selected[^1].created_at,
+        id = selected[^1].id
+    }, fixtures.SigningKey) : null;
+    return Results.Json(new
+    {
+        items = selected.Select(item => new { item.id, item.created_at, item.type, item.summary }),
+        next_cursor = next
+    });
+}
+```
+
 ```ruby
 require "base64"
 require "json"
@@ -1315,6 +1684,89 @@ export function createFixtures() {
 }
 ```
 
+```python
+import json
+import secrets
+from dataclasses import dataclass
+from datetime import datetime, timedelta, timezone
+
+@dataclass
+class Fixtures:
+    sessions: dict[str, str]
+    projects: dict[str, dict[str, str]]
+    events: list[dict]
+    signing_key: bytes
+    token_a: str
+    token_b: str
+
+def create_fixtures() -> Fixtures:
+    token_a, token_b = secrets.token_urlsafe(24), secrets.token_urlsafe(24)
+    projects = {
+        name: {"tenant_id": tenant, "name": title}
+        for name, tenant, title in [
+            ("feed", "tenant_a", "Activity feed"),
+            ("empty", "tenant_a", "Empty feed"),
+            ("exact", "tenant_a", "Four events"),
+            ("large", "tenant_a", "Large feed"),
+            ("precision", "tenant_a", "Precise timestamps"),
+            ("other", "tenant_a", "Another project"),
+            ("private", "tenant_b", "Private project"),
+        ]
+    }
+
+    def event(identifier, created_at, project_id, tenant_id="tenant_a"):
+        return {
+            "id": identifier,
+            "created_at": created_at,
+            "project_id": project_id,
+            "tenant_id": tenant_id,
+            "type": "deployment",
+            "summary": f"Synthetic event {identifier}",
+            "internal_note": "This field must never enter the HTTP response.",
+            "raw_payload": {"synthetic": True},
+        }
+
+    feed = [
+        event(f"evt_{identifier}", f"2026-01-15T12:00:0{second}.123456Z", "feed")
+        for identifier, second in [(105, 3), (104, 2), (103, 2), (102, 2), (101, 1)]
+    ]
+    start = datetime(2026, 1, 15, 12, tzinfo=timezone.utc)
+    events = [
+        *feed,
+        *[{**item, "project_id": "exact"} for item in feed[:4]],
+        *[
+            event(
+                f"large_{index:03d}",
+                (start + timedelta(seconds=index)).strftime("%Y-%m-%dT%H:%M:%S")
+                + ".123456Z",
+                "large",
+            )
+            for index in range(105)
+        ],
+        # Reverse ID order makes submillisecond timestamp ordering observable.
+        event("precise_a", "2026-01-15T12:00:00.123999Z", "precision"),
+        event("precise_z", "2026-01-15T12:00:00.123001Z", "precision"),
+        event("other_1", "2026-01-15T12:00:00.123456Z", "other"),
+        event("other_2", "2026-01-15T11:59:59.123456Z", "other"),
+        event("private_1", "2026-01-15T12:00:00.123456Z", "private", "tenant_b"),
+        event("private_2", "2026-01-15T11:59:59.123456Z", "private", "tenant_b"),
+    ]
+    return Fixtures(
+        {token_a: "tenant_a", token_b: "tenant_b"},
+        projects,
+        events,
+        secrets.token_bytes(32),
+        token_a,
+        token_b,
+    )
+
+if __name__ == "__main__":
+    fixtures = create_fixtures()
+    print(
+        json.dumps({"projects": len(fixtures.projects), "events": len(fixtures.events)})
+    )
+```
+
 ```go
 type event struct {
 	ID        string `json:"id"`
@@ -1526,6 +1978,62 @@ public final class CodexCloudFixtures {
                 Map.of(
                     "projects", fixtures.projects().size(), "events", fixtures.events().size())));
   }
+}
+```
+
+```csharp
+internal sealed record Event(string id, string created_at, string project_id, string tenant_id,
+    string type, string summary, string internal_note, object raw_payload);
+internal sealed record Project(string tenant_id, string name);
+internal sealed record Fixtures(Dictionary<string, string> Sessions, Dictionary<string, Project> Projects,
+    List<Event> Events, byte[] SigningKey, string TokenA, string TokenB);
+
+internal static Fixtures CreateFixtures()
+{
+    string tokenA = Base64Url(RandomNumberGenerator.GetBytes(24));
+    string tokenB = Base64Url(RandomNumberGenerator.GetBytes(24));
+    Dictionary<string, string> sessions = new(StringComparer.Ordinal)
+    {
+        [tokenA] = "tenant_a",
+        [tokenB] = "tenant_b"
+    };
+    Dictionary<string, Project> projects = new(StringComparer.Ordinal)
+    {
+        ["feed"] = new("tenant_a", "Activity feed"),
+        ["empty"] = new("tenant_a", "Empty feed"),
+        ["exact"] = new("tenant_a", "Four events"),
+        ["large"] = new("tenant_a", "Large feed"),
+        ["precision"] = new("tenant_a", "Precise timestamps"),
+        ["other"] = new("tenant_a", "Another project"),
+        ["private"] = new("tenant_b", "Private project")
+    };
+    static Event Make(string id, string time, string project, string tenant = "tenant_a") =>
+        new(id, time, project, tenant, "deployment", $"Synthetic event {id}",
+            "This field must never enter the HTTP response.", new { synthetic = true });
+    List<Event> feed =
+    [
+        Make("evt_105", "2026-01-15T12:00:03.123456Z", "feed"),
+        Make("evt_104", "2026-01-15T12:00:02.123456Z", "feed"),
+        Make("evt_103", "2026-01-15T12:00:02.123456Z", "feed"),
+        Make("evt_102", "2026-01-15T12:00:02.123456Z", "feed"),
+        Make("evt_101", "2026-01-15T12:00:01.123456Z", "feed")
+    ];
+    List<Event> events = [.. feed, .. feed.Take(4).Select(item => item with { project_id = "exact" })];
+    for (int index = 0; index < 105; index++)
+    {
+        string time = new DateTimeOffset(2026, 1, 15, 12, 0, 0, TimeSpan.Zero)
+            .AddSeconds(index).ToString("yyyy-MM-dd'T'HH:mm:ss", CultureInfo.InvariantCulture) + ".123456Z";
+        events.Add(Make($"large_{index:D3}", time, "large"));
+    }
+    events.AddRange([
+        Make("precise_a", "2026-01-15T12:00:00.123999Z", "precision"),
+        Make("precise_z", "2026-01-15T12:00:00.123001Z", "precision"),
+        Make("other_1", "2026-01-15T12:00:00.123456Z", "other"),
+        Make("other_2", "2026-01-15T11:59:59.123456Z", "other"),
+        Make("private_1", "2026-01-15T12:00:00.123456Z", "private", "tenant_b"),
+        Make("private_2", "2026-01-15T11:59:59.123456Z", "private", "tenant_b")
+    ]);
+    return new(sessions, projects, events, RandomNumberGenerator.GetBytes(32), tokenA, tokenB);
 }
 ```
 
@@ -1973,6 +2481,389 @@ test("OpenAPI declares operation, limit boundaries, signed cursor, and response 
     "bearer"
   );
 });
+```
+
+```python
+import copy
+import hashlib
+import hmac
+import http.client
+import json
+import sys
+import unittest
+from urllib.parse import urlencode, urlsplit
+
+from api import (
+    ERROR_SCHEMAS,
+    PAGE_SCHEMA,
+    SPECIFICATION,
+    base64url,
+    start_api,
+    timestamp_value,
+)
+from fixtures import create_fixtures
+from jsonschema import Draft202012Validator, FormatChecker
+
+EXPECTED = ["evt_105", "evt_104", "evt_103", "evt_102", "evt_101"]
+
+def ids(page):
+    return [item["id"] for item in page["items"]]
+
+FORMAT_CHECKER = FormatChecker()
+
+@FORMAT_CHECKER.checks("date-time", raises=ValueError)
+def valid_timestamp(value):
+    # This application's timestamps use UTC and up to nine fractional digits.
+    # Do not rely on jsonschema's optional, undeclared date-time dependency.
+    if isinstance(value, str):
+        timestamp_value(value)
+    return True
+
+def conforms(value, schema):
+    # The response schemas use local OpenAPI component references. Preserve that
+    # exact root context instead of reimplementing the schema in each language.
+    root = {**schema, "components": SPECIFICATION["components"]}
+    return Draft202012Validator(root, format_checker=FORMAT_CHECKER).is_valid(value)
+
+class PaginationTest(unittest.TestCase):
+    seeded_bug = False
+
+    @classmethod
+    def setUpClass(cls):
+        cls.fixtures = create_fixtures()
+        cls.server = start_api(cls.fixtures, seeded_bug=cls.seeded_bug)
+        cls.base_url = cls.server.__enter__()
+        cls.addClassCleanup(cls.server.__exit__, None, None, None)
+
+    def request(self, project="feed", parameters=(), token="own", detail=False):
+        if token == "own":
+            token = self.fixtures.token_a
+        address = urlsplit(self.base_url)
+        headers = {"Authorization": f"Bearer {token}"} if token else {}
+        path = f"/v1/projects/{project}{'' if detail else '/events'}?{urlencode(parameters)}"
+        connection = http.client.HTTPConnection(
+            address.hostname, address.port, timeout=5
+        )
+        try:
+            connection.request("GET", path, headers=headers)
+            response = connection.getresponse()
+            self.assertEqual(response.getheader("Content-Type"), "application/json")
+            body = json.load(response)
+            route = "/v1/projects/{project_id}" + ("" if detail else "/events")
+            operation = SPECIFICATION["paths"][route]["get"]
+            self.assertIn(str(response.status), operation["responses"])
+            schema = operation["responses"][str(response.status)]["content"][
+                "application/json"
+            ]["schema"]
+            self.assertTrue(conforms(body, schema), f"HTTP {response.status}: {body!r}")
+            return response.status, body
+        finally:
+            connection.close()
+
+    def traverse(self, project, limit, expected):
+        pages, cursor = [], None
+        bound = max(1, (len(expected) + limit - 1) // limit)
+        while True:
+            self.assertLess(
+                len(pages),
+                bound,
+                "Traversal must terminate without an empty extra page",
+            )
+            parameters = {"limit": str(limit)}
+            if cursor:
+                parameters["cursor"] = cursor
+            status, page = self.request(project, parameters)
+            self.assertEqual(status, 200)
+            pages.append(page)
+            cursor = page["next_cursor"]
+            if cursor is None:
+                break
+        observed = [identifier for page in pages for identifier in ids(page)]
+        self.assertEqual(observed, expected)
+        self.assertEqual(len(set(observed)), len(expected))
+        return pages
+
+    def assert_error(self, result, code, status):
+        actual_status, body = result
+        self.assertEqual(actual_status, status)
+        self.assertTrue(conforms(body, ERROR_SCHEMAS[code]))
+
+    def sign_fixture(self, payload):
+        data = (
+            payload
+            if isinstance(payload, str)
+            else json.dumps(payload, separators=(",", ":"))
+        )
+        encoded = base64url(data.encode())
+        signature = hmac.new(
+            self.fixtures.signing_key, encoded.encode(), hashlib.sha256
+        ).digest()
+        return f"{encoded}.{base64url(signature)}"
+
+    def test_tuple_pagination_and_replay(self):
+        pages = self.traverse("feed", 2, EXPECTED)
+        expected_pages = [["evt_105", "evt_104"], ["evt_103", "evt_102"], ["evt_101"]]
+        self.assertEqual(list(map(ids, pages)), expected_pages)
+        for previous, following in zip(pages, pages[1:]):
+            status, replay = self.request(
+                parameters={"limit": "2", "cursor": previous["next_cursor"]}
+            )
+            self.assertEqual(status, 200)
+            self.assertEqual(replay, following)
+        print(
+            json.dumps(
+                {
+                    "fixture": "five-event-tie",
+                    "pages": list(map(ids, pages)),
+                    "requests": len(pages),
+                    "replay": ids(pages[1]),
+                }
+            ),
+            flush=True,
+        )
+
+    def test_ties_with_limit_three(self):
+        pages = self.traverse("feed", 3, EXPECTED)
+        self.assertEqual(list(map(ids, pages)), [EXPECTED[:3], EXPECTED[3:]])
+
+    def test_submillisecond_precision(self):
+        pages = self.traverse("precision", 1, ["precise_a", "precise_z"])
+        self.assertEqual(
+            pages[0]["items"][0]["created_at"], "2026-01-15T12:00:00.123999Z"
+        )
+        self.assertEqual(
+            pages[1]["items"][0]["created_at"], "2026-01-15T12:00:00.123001Z"
+        )
+
+    def test_limit_boundaries(self):
+        for parameters, count in [
+            ({}, 25),
+            ({"limit": "1"}, 1),
+            ({"limit": "100"}, 100),
+        ]:
+            with self.subTest(parameters=parameters):
+                status, body = self.request("large", parameters)
+                self.assertEqual(status, 200)
+                self.assertEqual(len(body["items"]), count)
+                self.assertTrue(body["next_cursor"])
+        pages = self.traverse(
+            "large", 100, [f"large_{i:03d}" for i in range(104, -1, -1)]
+        )
+        self.assertEqual([len(page["items"]) for page in pages], [100, 5])
+
+    def test_invalid_limits(self):
+        for limit in ["0", "101", "-1", "1.5", "many", "", "1e2", "Infinity"]:
+            with self.subTest(limit=limit):
+                self.assert_error(
+                    self.request(parameters={"limit": limit}), "invalid_limit", 400
+                )
+        self.assert_error(
+            self.request(parameters=[("limit", "1"), ("limit", "2")]),
+            "invalid_limit",
+            400,
+        )
+
+    def test_final_pages(self):
+        self.assertEqual(
+            self.request("empty"), (200, {"items": [], "next_cursor": None})
+        )
+        partial = self.traverse("feed", 2, EXPECTED)
+        self.assertEqual(len(partial[-1]["items"]), 1)
+        exact = self.traverse("exact", 2, EXPECTED[:4])
+        self.assertEqual([len(page["items"]) for page in exact], [2, 2])
+        self.assertIsNone(exact[-1]["next_cursor"])
+
+    def test_authentication_precedence(self):
+        private_cursor = self.request("private", {"limit": "1"}, self.fixtures.token_b)[
+            1
+        ]["next_cursor"]
+        for token in [None, "invalid_session"]:
+            for parameters in [
+                {"cursor": "broken"},
+                {"cursor": private_cursor},
+                {"limit": "0", "cursor": "broken"},
+            ]:
+                with self.subTest(token=token, parameters=parameters):
+                    self.assert_error(
+                        self.request(parameters=parameters, token=token),
+                        "unauthenticated",
+                        401,
+                    )
+
+    def test_authorization_precedence(self):
+        cursor = self.request(parameters={"limit": "1"})[1]["next_cursor"]
+        for project in ["private", "missing"]:
+            for parameters in [
+                {},
+                {"cursor": "broken"},
+                {"cursor": cursor},
+                {"limit": "0", "cursor": "broken"},
+            ]:
+                with self.subTest(project=project, parameters=parameters):
+                    self.assert_error(
+                        self.request(project, parameters), "not_found", 404
+                    )
+
+    def test_project_cursor_scope(self):
+        cursor = self.request("other", {"limit": "1"})[1]["next_cursor"]
+        self.assertTrue(cursor)
+        self.assert_error(
+            self.request(parameters={"cursor": cursor}), "invalid_cursor", 400
+        )
+
+    def test_tenant_cursor_scope(self):
+        cursor = self.request("private", {"limit": "1"}, self.fixtures.token_b)[1][
+            "next_cursor"
+        ]
+        self.assertTrue(cursor)
+        self.assert_error(
+            self.request(parameters={"cursor": cursor}), "invalid_cursor", 400
+        )
+
+    def test_malformed_cursors(self):
+        cursor = self.request(parameters={"limit": "1"})[1]["next_cursor"]
+        payload, signature = cursor.split(".")
+        tampered = f"{payload}.{'B' if signature[0] == 'A' else 'A'}{signature[1:]}"
+        for token in ["broken", "", "%%%.___", "a.b.c", "x" * 2049, tampered]:
+            with self.subTest(token=token):
+                self.assert_error(
+                    self.request(parameters={"cursor": token}), "invalid_cursor", 400
+                )
+        self.assert_error(
+            self.request(parameters=[("cursor", cursor), ("cursor", cursor)]),
+            "invalid_cursor",
+            400,
+        )
+
+    def test_signed_invalid_cursors(self):
+        valid = {
+            "version": 1,
+            "tenant_id": "tenant_a",
+            "project_id": "feed",
+            "created_at": "2026-01-15T12:00:02.123456Z",
+            "id": "evt_104",
+        }
+        missing = {name: value for name, value in valid.items() if name != "id"}
+        cases = [
+            missing,
+            {**valid, "id": 104},
+            {**valid, "id": ""},
+            {**valid, "created_at": 0},
+            {**valid, "created_at": "2026-02-30T12:00:00Z"},
+            {**valid, "version": 2},
+            {**valid, "version": True},
+            {**valid, "extra": True},
+            {**valid, "tenant_id": 1},
+            {**valid, "project_id": None},
+            None,
+            [],
+            "not-json",
+        ]
+        for payload in cases:
+            with self.subTest(payload=payload):
+                self.assert_error(
+                    self.request(parameters={"cursor": self.sign_fixture(payload)}),
+                    "invalid_cursor",
+                    400,
+                )
+
+    def test_public_event_fields(self):
+        status, body = self.request(parameters={"limit": "100"})
+        self.assertEqual(status, 200)
+        for item in body["items"]:
+            self.assertEqual(set(item), {"id", "created_at", "type", "summary"})
+        self.assertTrue(
+            any(
+                event.get("raw_payload") and event.get("internal_note")
+                for event in self.fixtures.events
+            )
+        )
+
+    def test_schema_oracle(self):
+        page = {
+            "items": [
+                {
+                    "id": "evt_1",
+                    "created_at": "2026-01-15T12:00:00.123456Z",
+                    "type": "deployment",
+                    "summary": "Synthetic",
+                }
+            ],
+            "next_cursor": None,
+        }
+        self.assertTrue(conforms(page, PAGE_SCHEMA))
+        invalid = [
+            {**page, "tenant_id": "tenant_a"},
+            {"items": page["items"]},
+            {**page, "next_cursor": ""},
+        ]
+        for change in [
+            {"raw_payload": {}},
+            {"id": 1},
+            {"created_at": "yesterday"},
+            {"type": ""},
+        ]:
+            invalid.append({**page, "items": [{**page["items"][0], **change}]})
+        for value in invalid:
+            self.assertFalse(conforms(value, PAGE_SCHEMA))
+        for error in [
+            {
+                "error": {
+                    "code": "invalid_cursor",
+                    "message": "Invalid cursor.",
+                    "stack": "internal",
+                }
+            },
+            {"error": {"code": "invalid_cursor", "message": "tenant_a"}},
+        ]:
+            self.assertFalse(conforms(error, ERROR_SCHEMAS["invalid_cursor"]))
+        missing = copy.deepcopy(page)
+        del missing["items"][0]["summary"]
+        self.assertFalse(conforms(missing, PAGE_SCHEMA))
+
+    def test_project_detail(self):
+        self.assertEqual(
+            self.request(parameters={"cursor": "broken", "limit": "0"}, detail=True),
+            (200, {"id": "feed", "name": "Activity feed"}),
+        )
+        self.assert_error(self.request("private", detail=True), "not_found", 404)
+        self.assert_error(self.request(token=None, detail=True), "unauthenticated", 401)
+
+    def test_openapi_contract(self):
+        """OpenAPI declares operation, limit boundaries, signed cursor, and response statuses"""
+        self.assertEqual(SPECIFICATION["openapi"], "3.1.0")
+        operation = SPECIFICATION["paths"]["/v1/projects/{project_id}/events"]["get"]
+        self.assertEqual(operation["operationId"], "listProjectEvents")
+        limit = next(
+            p["schema"] for p in operation["parameters"] if p["name"] == "limit"
+        )
+        self.assertEqual(
+            limit, {"type": "integer", "minimum": 1, "maximum": 100, "default": 25}
+        )
+        self.assertEqual(set(operation["responses"]), {"200", "400", "401", "404"})
+        self.assertEqual(
+            SPECIFICATION["components"]["securitySchemes"]["session"]["scheme"],
+            "bearer",
+        )
+        Draft202012Validator.check_schema(PAGE_SCHEMA)
+
+def run_suite(suite):
+    # Native unittest remains responsible for assertions and nonzero failure exit.
+    result = unittest.TextTestRunner(stream=sys.stdout, verbosity=2).run(suite)
+    print(
+        f"# tests {result.testsRun}\n# fail {len(result.failures) + len(result.errors)}\n"
+        f"# cancelled 0\n# skipped {len(result.skipped)}\n# todo 0",
+        flush=True,
+    )
+    return 0 if result.wasSuccessful() else 1
+
+if __name__ == "__main__":
+    if any(arg != "--seeded" for arg in sys.argv[1:]):
+        raise SystemExit("Usage: python test.py [--seeded]")
+    PaginationTest.seeded_bug = "--seeded" in sys.argv
+    raise SystemExit(
+        run_suite(unittest.defaultTestLoader.loadTestsFromTestCase(PaginationTest))
+    )
 ```
 
 ```go
@@ -2990,6 +3881,231 @@ public final class CodexCloudTest {
 }
 ```
 
+```csharp
+private static async Task<SuiteResult> RunSuiteAsync(bool seeded, TextWriter output)
+{
+    Fixtures fixtures = CreateFixtures();
+    await using OwnedApi api = await StartApiAsync(fixtures, seeded);
+    using HttpClient client = NewClient(api.Address);
+    JsonObject document = Specification();
+    int tests = 0, failures = 0;
+    List<string[]> observedPages = [];
+    async Task Case(string name, Func<Task> test)
+    {
+        tests++;
+        if (!await ReportCaseAsync(tests, name, test, output)) failures++;
+    }
+    async Task<JsonObject> Page(string project = "feed", string query = "", string? token = null)
+    {
+        var result = await RequestAsync(client, fixtures, project, query, token);
+        Require(result.Status == 200 && PublicPage(result.Body) &&
+            Conforms(result.Body, document["components"]!["schemas"]!["EventPage"]!.AsObject(), document), "Expected a closed public page");
+        return result.Body;
+    }
+    async Task Error(int status, string code, string project = "feed", string query = "",
+        string? token = null, bool authenticated = true)
+    {
+        var result = await RequestAsync(client, fixtures, project, query, token, authenticated);
+        Require(result.Status == status, $"Expected HTTP {status}, got {result.Status}");
+        string message = code switch
+        {
+            "invalid_cursor" => "Invalid cursor.",
+            "invalid_limit" => "Limit must be an integer from 1 through 100.",
+            "unauthenticated" => "Authentication required.",
+            "not_found" => "Project not found.",
+            _ => throw new ArgumentOutOfRangeException(nameof(code))
+        };
+        Equal(result.Body, new { error = new { code, message } }, "Closed error body");
+        JsonObject responseSchema = document["paths"]!["/v1/projects/{project_id}/events"]!["get"]!
+            ["responses"]![status.ToString(CultureInfo.InvariantCulture)]!
+            ["content"]!["application/json"]!["schema"]!.AsObject();
+        Require(Conforms(result.Body, responseSchema, document), "Error matches declared response schema");
+    }
+    async Task<List<JsonObject>> Traverse(string project, int limit, string[] expected)
+    {
+        List<JsonObject> pages = [];
+        string? cursor = null;
+        do
+        {
+            Require(pages.Count < Math.Max(1, (expected.Length + limit - 1) / limit), "Traversal request bound");
+            JsonObject page = await Page(project, $"limit={limit}" +
+                (cursor is null ? "" : "&cursor=" + Uri.EscapeDataString(cursor)));
+            pages.Add(page);
+            cursor = page["next_cursor"]?.GetValue<string>();
+        } while (cursor is not null);
+        string[] actual = pages.SelectMany(Ids).ToArray();
+        Require(actual.SequenceEqual(expected) && actual.Distinct().Count() == actual.Length,
+            "Complete ordered traversal without duplicate or lost events");
+        return pages;
+    }
+    string[] feed = ["evt_105", "evt_104", "evt_103", "evt_102", "evt_101"];
+    await Case("tuple_pagination_and_replay", async () =>
+    {
+        var pages = await Traverse("feed", 2, feed);
+        observedPages.AddRange(pages.Select(Ids));
+        var replay = await Page(query: "limit=2&cursor=" + Uri.EscapeDataString(pages[0]["next_cursor"]!.GetValue<string>()));
+        Equal(replay, pages[1], "Replay returns the same owned continuation");
+        var last = await Page(query: "limit=2&cursor=" + Uri.EscapeDataString(replay["next_cursor"]!.GetValue<string>()));
+        Equal(last, pages[2], "Replay reaches the same final page");
+        await output.WriteLineAsync(JsonSerializer.Serialize(new
+        { fixture = "five-event-tie", pages = pages.Select(Ids), requests = pages.Count, replay = Ids(replay) }));
+    });
+    await Case("ties_with_limit_three", async () => { await Traverse("feed", 3, feed); });
+    await Case("submillisecond_precision", async () =>
+    {
+        var pages = await Traverse("precision", 1, ["precise_a", "precise_z"]);
+        Equal(pages[0]["items"]![0]!["created_at"], "2026-01-15T12:00:00.123999Z", "Exact first timestamp");
+        Equal(pages[1]["items"]![0]!["created_at"], "2026-01-15T12:00:00.123001Z", "Exact second timestamp");
+        Require(Timestamp("2026-01-15T12:00:00.123456789Z") > Timestamp("2026-01-15T12:00:00.123456788Z"), "Nanosecond precision");
+        fixtures.Events.AddRange([
+            new("nano_a", "2026-01-15T12:00:00.123456789Z", "precision", "tenant_a", "deployment", "Nine digits", "private", new { synthetic = true }),
+            new("nano_z", "2026-01-15T12:00:00.123456788Z", "precision", "tenant_a", "deployment", "Nine digits", "private", new { synthetic = true })
+        ]);
+        await Traverse("precision", 1, ["precise_a", "nano_a", "nano_z", "precise_z"]);
+    });
+    await Case("limit_boundaries", async () =>
+    {
+        foreach (var (query, count) in new[] { ("", 25), ("limit=1", 1), ("limit=100", 100) })
+        {
+            var page = await Page("large", query);
+            Require(Ids(page).Length == count && page["next_cursor"] is not null, "Limit boundary");
+        }
+        await Traverse("large", 100, Enumerable.Range(0, 105).Reverse().Select(i => $"large_{i:D3}").ToArray());
+    });
+    await Case("invalid_limits", async () =>
+    {
+        foreach (string limit in InvalidLimits)
+            await Error(400, "invalid_limit", query: "limit=" + Uri.EscapeDataString(limit));
+        await Error(400, "invalid_limit", query: "limit=1&limit=2");
+    });
+    await Case("final_pages", async () =>
+    {
+        Equal(await Page("empty"), new { items = Array.Empty<object>(), next_cursor = (string?)null }, "Empty page");
+        await Traverse("exact", 2, feed.Take(4).ToArray());
+        await Traverse("feed", 2, feed);
+    });
+    await Case("authentication_precedence", async () =>
+    {
+        foreach (bool authenticated in AuthenticationStates)
+            foreach (string query in AuthenticationQueries)
+                await Error(401, "unauthenticated", query: query, token: "invalid_session", authenticated: authenticated);
+    });
+    await Case("authorization_precedence", async () =>
+    {
+        foreach (string project in InaccessibleProjects)
+            foreach (string query in AuthorizationQueries)
+                await Error(404, "not_found", project, query);
+    });
+    await Case("project_cursor_scope", async () =>
+    {
+        var page = await Page("other", "limit=1");
+        await Error(400, "invalid_cursor", query: "cursor=" + Uri.EscapeDataString(page["next_cursor"]!.GetValue<string>()));
+    });
+    await Case("tenant_cursor_scope", async () =>
+    {
+        var page = await Page("private", "limit=1", fixtures.TokenB);
+        string query = "cursor=" + Uri.EscapeDataString(page["next_cursor"]!.GetValue<string>());
+        await Error(400, "invalid_cursor", query: query);
+        await Error(401, "unauthenticated", query: query, authenticated: false);
+    });
+    await Case("malformed_cursors", async () =>
+    {
+        var page = await Page(query: "limit=1");
+        string token = page["next_cursor"]!.GetValue<string>();
+        string[] parts = token.Split('.');
+        string tampered = parts[0] + "." + (parts[1][0] == 'A' ? 'B' : 'A') + parts[1][1..];
+        foreach (string cursor in new[] { "broken", "", "%%%.___", "a.b.c", new string('x', 2049), tampered })
+            await Error(400, "invalid_cursor", query: "cursor=" + Uri.EscapeDataString(cursor));
+        await Error(400, "invalid_cursor", query: $"cursor={token}&cursor={token}");
+    });
+    await Case("signed_invalid_cursors", async () =>
+    {
+        JsonObject valid = new()
+        {
+            ["version"] = 1,
+            ["tenant_id"] = "tenant_a",
+            ["project_id"] = "feed",
+            ["created_at"] = "2026-01-15T12:00:02.123456Z",
+            ["id"] = "evt_104"
+        };
+        foreach (var (field, value) in new (string, JsonNode?)[]
+        {
+            ("id", null), ("id", JsonValue.Create(104)), ("id", JsonValue.Create("")),
+            ("created_at", JsonValue.Create(0)), ("created_at", JsonValue.Create("2026-02-30T12:00:00Z")),
+            ("version", JsonValue.Create(2)), ("extra", JsonValue.Create(true)),
+            ("tenant_id", JsonValue.Create(1)), ("project_id", null)
+        })
+        {
+            JsonObject payload = (JsonObject)valid.DeepClone();
+            if (value is null && field == "id") payload.Remove(field); else payload[field] = value?.DeepClone();
+            await Error(400, "invalid_cursor", query: "cursor=" + Sign(payload, fixtures.SigningKey));
+        }
+        foreach (object? payload in new object?[] { null, Array.Empty<object>(), "not-json" })
+            await Error(400, "invalid_cursor", query: "cursor=" + Sign(payload!, fixtures.SigningKey));
+    });
+    await Case("public_event_fields", async () =>
+    {
+        Require(fixtures.Events.Any(item => item.internal_note.Length > 0 && item.raw_payload is not null), "Private fixture fields exist");
+        foreach (string project in fixtures.Projects.Keys.Where(id => id != "private"))
+        {
+            var page = await Page(project, "limit=100");
+            Require(PublicPage(page), "Every public event has only the four documented fields");
+        }
+    });
+    await Case("schema_oracle", () =>
+    {
+        JsonObject page = new()
+        {
+            ["items"] = new JsonArray(new JsonObject
+            {
+                ["id"] = "evt_1",
+                ["created_at"] = "2026-01-15T12:00:00.123456Z",
+                ["type"] = "deployment",
+                ["summary"] = "Synthetic"
+            }),
+            ["next_cursor"] = null
+        };
+        Require(PublicPage(page), "Accept valid public page");
+        foreach (string field in PageFields)
+        { var bad = (JsonObject)page.DeepClone(); bad.Remove(field); Require(!PublicPage(bad), "Reject missing page field"); }
+        var extra = (JsonObject)page.DeepClone(); extra["tenant_id"] = "tenant_a";
+        Require(!PublicPage(extra), "Reject extra page field");
+        foreach (string field in EventFields)
+        {
+            var missing = (JsonObject)page.DeepClone(); missing["items"]![0]!.AsObject().Remove(field);
+            Require(!PublicPage(missing), "Reject missing event field");
+            var wrong = (JsonObject)page.DeepClone(); wrong["items"]![0]![field] = 1;
+            Require(!PublicPage(wrong), "Reject wrong event field type");
+        }
+        return Task.CompletedTask;
+    });
+    await Case("project_detail", async () =>
+    {
+        var own = await RequestAsync(client, fixtures, query: "cursor=broken&limit=0", detail: true);
+        Require(own.Status == 200, "Detail ignores pagination");
+        Equal(own.Body, new { id = "feed", name = "Activity feed" }, "Existing detail body");
+        Require((await RequestAsync(client, fixtures, "private", detail: true)).Status == 404, "Detail authorization");
+        Require((await RequestAsync(client, fixtures, authenticated: false, detail: true)).Status == 401, "Detail authentication");
+    });
+    await Case("OpenAPI declares operation, limit boundaries, signed cursor, and response statuses", () =>
+    {
+        Equal(document["openapi"], "3.1.0", "OpenAPI version");
+        var operation = document["paths"]!["/v1/projects/{project_id}/events"]!["get"]!;
+        Equal(operation["operationId"], "listProjectEvents", "Operation identity");
+        JsonNode limit = operation["parameters"]!.AsArray().Single(item => item!["name"]!.GetValue<string>() == "limit")!["schema"]!;
+        Equal(limit, new { type = "integer", minimum = 1, maximum = 100, @default = 25 }, "Declared limit contract");
+        Require(operation["responses"]!.AsObject().Select(pair => pair.Key).Order().SequenceEqual(ResponseStatuses), "Response status set");
+        Equal(document["components"]!["securitySchemes"]!["session"]!["scheme"], "bearer", "Session authentication");
+        var bad = JsonSerializer.SerializeToNode(new { error = new { code = "invalid_cursor", message = "tenant_a", stack = "internal" } });
+        Require(!Conforms(bad, document["components"]!["schemas"]!["InvalidCursor"]!.AsObject(), document), "Reject extra or sensitive error fields");
+        return Task.CompletedTask;
+    });
+    await output.WriteLineAsync($"1..{tests}");
+    await output.WriteLineAsync($"# tests {tests}\n# pass {tests - failures}\n# fail {failures}\n# cancelled 0\n# skipped 0\n# todo 0");
+    return new(tests, failures, observedPages);
+}
+```
+
 ```ruby
 require "minitest/autorun"
 require_relative "api/main"
@@ -3312,6 +4428,188 @@ console.log(
     2
   )
 );
+```
+
+```python
+import hashlib
+import http.client
+import json
+import platform
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+from urllib.parse import urlencode, urlsplit
+
+from api import SPECIFICATION_PATH, start_api
+from fixtures import create_fixtures
+
+def observe(seeded_bug):
+    fixtures = create_fixtures()
+    with start_api(fixtures, seeded_bug=seeded_bug) as base_url:
+        address = urlsplit(base_url)
+
+        def request(project, parameters, authenticated=True):
+            connection = http.client.HTTPConnection(
+                address.hostname, address.port, timeout=5
+            )
+            try:
+                connection.request(
+                    "GET",
+                    f"/v1/projects/{project}/events?{urlencode(parameters)}",
+                    headers={"Authorization": f"Bearer {fixtures.token_a}"}
+                    if authenticated
+                    else {},
+                )
+                response = connection.getresponse()
+                if response.getheader("Content-Type") != "application/json":
+                    raise RuntimeError("Expected JSON response")
+                return {"status": response.status, "body": json.load(response)}
+            finally:
+                connection.close()
+
+        pages, cursor = [], None
+        while True:
+            if len(pages) >= 3:
+                raise RuntimeError("Traversal exceeded the fixed-fixture request bound")
+            parameters = {"limit": "2"}
+            if cursor:
+                parameters["cursor"] = cursor
+            response = request("feed", parameters)
+            if response["status"] != 200:
+                raise RuntimeError(f"Traversal failed: {response}")
+            pages.append(response)
+            cursor = response["body"]["next_cursor"]
+            if cursor is None:
+                break
+        errors = [
+            request("feed", {"cursor": "broken"}),
+            request("feed", {"cursor": "broken"}, False),
+            request("private", {"cursor": "broken"}),
+        ]
+        if [error["status"] for error in errors] != [400, 401, 404]:
+            raise RuntimeError("Authentication or authorization precedence changed")
+        return {"pages": pages, "errors": errors}
+
+def main():
+    if len(sys.argv) > 2:
+        raise SystemExit("Usage: python reproduce.py [new-evidence-directory]")
+    directory = Path(__file__).resolve().parent
+    output = Path(sys.argv[1] if len(sys.argv) == 2 else "./evidence").resolve()
+    output.mkdir(parents=True, exist_ok=False)
+
+    def write_json(name, value):
+        (output / name).write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8")
+
+    states, logs = [], {}
+    for name, arguments in [("red", ["--seeded"]), ("green", [])]:
+        command = [sys.executable, str(directory / "test.py"), *arguments]
+        try:
+            result = subprocess.run(
+                command,
+                cwd=directory,
+                capture_output=True,
+                text=True,
+                timeout=30,
+                check=False,
+            )
+            log = result.stdout + result.stderr
+            state = {
+                "name": name,
+                "command": command,
+                "exit_code": result.returncode,
+                "signal": -result.returncode if result.returncode < 0 else None,
+                "error": None,
+            }
+        except subprocess.TimeoutExpired as error:
+
+            def decoded(value):
+                return (
+                    value.decode("utf-8", errors="replace")
+                    if isinstance(value, bytes)
+                    else (value or "")
+                )
+
+            log = decoded(error.stdout) + decoded(error.stderr)
+            state = {
+                "name": name,
+                "command": command,
+                "exit_code": None,
+                "signal": None,
+                "error": "Timed out after 30 seconds",
+            }
+        (output / f"{name}.log").write_text(log, encoding="utf-8")
+        logs[name] = log
+        states.append(state)
+    sources = {
+        path.name: hashlib.sha256(path.read_bytes()).hexdigest()
+        for path in (
+            directory / name
+            for name in [
+                "api.py",
+                "fixtures.py",
+                "test.py",
+                "reproduce.py",
+            ]
+        )
+    }
+    sources[str(SPECIFICATION_PATH)] = hashlib.sha256(
+        SPECIFICATION_PATH.read_bytes()
+    ).hexdigest()
+    observed = {"red": observe(True), "green": observe(False)}
+    write_json("observed-http.json", observed)
+    write_json(
+        "run-manifest.json",
+        {
+            "execution": "Synthetic loopback HTTP fixture; no external service",
+            "recorded_at": datetime.now(timezone.utc).isoformat(),
+            "python": platform.python_version(),
+            "minimum_python": "3.11",
+            "dependencies": "Python standard library and jsonschema (regression oracle)",
+            "baseline": "Deliberately seeded timestamp-only continuation; not a historical customer defect",
+            "correction": "Descending timestamp-and-ID tuple continuation using full fractional precision",
+            "source_sha256": sources,
+            "states": states,
+        },
+    )
+    green_pages = [
+        [item["id"] for item in page["body"]["items"]]
+        for page in observed["green"]["pages"]
+    ]
+    red_ids = [
+        item["id"]
+        for page in observed["red"]["pages"]
+        for item in page["body"]["items"]
+    ]
+    if (
+        states[0]["exit_code"] != 1
+        or states[1]["exit_code"] != 0
+        or "# tests 16\n" not in logs["red"]
+        or "AssertionError" not in logs["red"]
+        or "FAIL: test_tuple_pagination_and_replay" not in logs["red"]
+        or "# tests 16\n" not in logs["green"]
+        or "# fail 0\n" not in logs["green"]
+        or green_pages != [["evt_105", "evt_104"], ["evt_103", "evt_102"], ["evt_101"]]
+        or red_ids != ["evt_105", "evt_104", "evt_101"]
+    ):
+        raise RuntimeError(
+            "Expected the unchanged suite to detect the seeded defect and pass the correction; inspect evidence"
+        )
+    print(
+        json.dumps(
+            {
+                "execution": "synthetic-loopback-http",
+                "red_exit": states[0]["exit_code"],
+                "green_exit": states[1]["exit_code"],
+                "green_pages": green_pages,
+                "evidence_directory": str(output),
+            },
+            indent=2,
+        )
+    )
+
+if __name__ == "__main__":
+    main()
 ```
 
 ```go
@@ -3643,6 +4941,75 @@ public final class CodexCloudReproduce {
                 "evidence_directory",
                 output.toString())));
   }
+}
+```
+
+```csharp
+using System.Globalization;
+using System.Net;
+using System.Net.Http.Headers;
+using System.Numerics;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Hosting.Server.Features;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+internal static async Task RunAsync()
+{
+    string output = Path.GetFullPath("evidence");
+    Directory.CreateDirectory(output);
+    SuiteResult red;
+    SuiteResult green;
+    using (StringWriter log = new(CultureInfo.InvariantCulture))
+    {
+        red = await RunSuiteAsync(seeded: true, log);
+        await File.WriteAllTextAsync(Path.Combine(output, "red.log"), log.ToString());
+    }
+    using (StringWriter log = new(CultureInfo.InvariantCulture))
+    {
+        green = await RunSuiteAsync(seeded: false, log);
+        await File.WriteAllTextAsync(Path.Combine(output, "green.log"), log.ToString());
+    }
+    int redExit = red.Failures == 0 ? 0 : 1;
+    int greenExit = green.Failures == 0 ? 0 : 1;
+    var observed = new { red = await ObserveAsync(true), green = await ObserveAsync(false) };
+    await File.WriteAllTextAsync(Path.Combine(output, "observed-http.json"), JsonSerializer.Serialize(observed));
+    string sourcePath = SourceFile();
+    Dictionary<string, string> hashes = new(StringComparer.Ordinal)
+    {
+        [Path.GetFileName(sourcePath)] = Convert.ToHexStringLower(SHA256.HashData(await File.ReadAllBytesAsync(sourcePath)))
+    };
+    await File.WriteAllTextAsync(Path.Combine(output, "run-manifest.json"), JsonSerializer.Serialize(new
+    {
+        execution = "Synthetic loopback HTTP fixture; no external service",
+        recorded_at = DateTimeOffset.UtcNow,
+        runtime = System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription,
+        dependencies = "Microsoft.AspNetCore.App shared framework; no OpenAI API or SDK calls",
+        baseline = "Deliberately seeded timestamp-only continuation; not a historical customer defect",
+        correction = "Descending timestamp-and-ID tuple continuation using nine-digit fractional precision",
+        source_sha256 = hashes,
+        states = new[] { new { name = "red", exit_code = redExit }, new { name = "green", exit_code = greenExit } },
+        execution_driver = "The same native behavioral suite runs in-process twice; exit_code is its failure status."
+    }));
+    if (redExit != 1 || greenExit != 0 || green.Tests != 16)
+        throw new InvalidOperationException("Expected failing seeded baseline and passing corrected suite; inspect evidence logs");
+    Console.WriteLine(JsonSerializer.Serialize(new
+    {
+        execution = "synthetic-loopback-http",
+        red_exit = redExit,
+        green_exit = greenExit,
+        green_pages = green.Pages,
+        evidence_directory = output
+    }));
 }
 ```
 

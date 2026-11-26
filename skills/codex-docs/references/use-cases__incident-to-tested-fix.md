@@ -167,6 +167,27 @@ The final test command exercises the full matrix, including independent connecti
 
 If your installation provides `docker-compose`, use that spelling in place of `docker compose`. Run these commands sequentially; the suite resets only its marked test schema.
 
+Use the [complete Python incident program](https://github.com/openai/developers-website/blob/main/src/content/platform/python-examples/codex-cloud/incident-to-tested-fix.py) from a complete [Python sample project](https://github.com/openai/developers-website/tree/main/src/content/platform/python-examples) checkout. The excerpt below shows `fixed()`; use the linked full program for its supporting helpers and test runner. Keep `codex-cloud/incidents/`, `pyproject.toml`, and `uv.lock` intact. The ZIP above contains only TypeScript.
+
+Install Python 3.11 or later, uv, and Docker Compose. The locked Python dependencies include `psycopg[binary]==3.3.9`; `uv sync --locked` installs Psycopg and its binary package. Start at the repository checkout root in a POSIX shell. Keep the sibling `typescript-examples/codex-cloud/incident-to-tested-fix/compose.yaml` and `init.sql` together; the commands below start the shared PostgreSQL 17.6 fixture on `127.0.0.1:55432`.
+
+Reserve this fixture for the rehearsal and keep application data out of it. Run the following Python commands instead of the Node runner commands above. Expect the deliberately failing baseline to exit with `1`, then continue with regression and fixed:
+
+```bash
+incident_fixture_dir="$PWD/src/content/platform/typescript-examples/codex-cloud/incident-to-tested-fix"
+docker compose -f "$incident_fixture_dir/compose.yaml" -p codex-incident-rehearsal up -d --wait postgres
+cd src/content/platform/python-examples
+uv sync --locked
+CODEX_INCIDENT_TEST_PASSWORD=synthetic-incident-fixture-only .venv/bin/python codex-cloud/incident-to-tested-fix.py baseline
+CODEX_INCIDENT_TEST_PASSWORD=synthetic-incident-fixture-only .venv/bin/python codex-cloud/incident-to-tested-fix.py regression
+CODEX_INCIDENT_TEST_PASSWORD=synthetic-incident-fixture-only .venv/bin/python codex-cloud/incident-to-tested-fix.py fixed
+docker compose -f "$incident_fixture_dir/compose.yaml" -p codex-incident-rehearsal down --volumes
+```
+
+Use only the public synthetic fixture password shown above. Each Python command supplies it through `CODEX_INCIDENT_TEST_PASSWORD` for that child process; no production credential is needed. The runner connects to the fixture's `codex_incident_test` database and user. Expect regression and fixed to exit with `0`.
+
+Run the final Compose command after the checks, including after a failure, to remove the disposable fixture. The absolute Compose path keeps cleanup valid after changing to the Python directory. Do not run this fixture alongside another rehearsal using the same project or port.
+
 **Java setup**
 
 Use Java 17 or later and Maven with a complete `developers-website` checkout, including the [Java sample project](https://github.com/openai/developers-website/tree/main/src/content/platform/java-examples).
@@ -277,6 +298,45 @@ async function fixed(
     throw error;
   }
 }
+```
+
+```python
+# Requires an autocommit Psycopg connection dedicated to this delivery, with the
+# fixture's immediate UNIQUE(provider,account_id,event_id) receipt constraint.
+# Existing legacy orphans must be held before consumers resume ingestion.
+def fixed(client, input_event, hook=no_failure):
+    assert_not_held(client, input_event)
+    hook("beforeClaim")
+    client.execute("BEGIN ISOLATION LEVEL READ COMMITTED")
+    committed = False
+    try:
+        claim = client.execute(
+            """INSERT INTO event_receipts(provider,account_id,event_id,payload_fingerprint)
+               VALUES (%s,%s,%s,%s)
+               ON CONFLICT (provider,account_id,event_id) DO NOTHING RETURNING event_id""",
+            [*key(input_event), fingerprint(input_event)],
+        ).fetchone()
+        trace("receipt-claim-result", client, input_event, inserted=claim is not None)
+        if claim is not None:
+            hook("afterClaim")
+            write_order(client, input_event)
+            hook("afterOrder")
+        else:
+            # A new READ COMMITTED statement sees the winner after its commit.
+            check_receipt(client, input_event)
+        client.execute("COMMIT")
+        committed = True
+        trace("transaction-committed", client, input_event)
+        hook("afterCommit")
+        trace("acknowledged", client, input_event, **ACKNOWLEDGMENT)
+        return copy.deepcopy(ACKNOWLEDGMENT)
+    except BaseException:
+        if not committed:
+            client.execute("ROLLBACK")
+            trace("transaction-rolled-back-no-ack", client, input_event)
+        else:
+            trace("committed-response-lost-no-ack", client, input_event)
+        raise
 ```
 
 ```go
